@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "act:bns_2023",
+    "label": "Act",
+    "name": "Bharatiya Nyaya Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "3f3031ee-d873-5818-8563-6076d4b6ee21",
+    "page": 1
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:147",
+    "label": "Section",
+    "name": "Section 147",
+    "confidence": 1.0,
+    "source_chunk_id": "4d645230-329a-5e11-8f00-98d7caaaffee",
+    "page": 8
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:84",
+    "label": "Section",
+    "name": "Section 84",
+    "confidence": 1.0,
+    "source_chunk_id": "c7bf4ab4-40bc-5e72-8f34-cc15691aa321",
+    "page": 10
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:337",
+    "label": "Section",
+    "name": "Section 337",
+    "confidence": 1.0,
+    "source_chunk_id": "0b807657-bcfe-5e08-93e1-63d673b5a797",
+    "page": 14
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:338",
+    "label": "Section",
+    "name": "Section 338",
+    "confidence": 1.0,
+    "source_chunk_id": "0b807657-bcfe-5e08-93e1-63d673b5a797",
+    "page": 14
+  },
+  {
+    "id": "act:bns_2023",
+    "label": "Act",
+    "name": "Bharatiya Nyaya Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "0b807657-bcfe-5e08-93e1-63d673b5a797",
+    "page": 14
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:106",
+    "label": "Section",
+    "name": "Section 106",
+    "confidence": 1.0,
+    "source_chunk_id": "3804e0ca-36a1-5392-a491-17c958d19d87",
+    "page": 16
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3804e0ca-36a1-5392-a491-17c958d19d87",
+    "page": 16
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "3804e0ca-36a1-5392-a491-17c958d19d87",
+    "page": 16
+  },
+  {
+    "id": "act:nothing-in-this-sanhita-shall-affect-the-provisions-of-any-act",
+    "label": "Act",
+    "name": "Nothing in this Sanhita shall affect the provisions of any Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3804e0ca-36a1-5392-a491-17c958d19d87",
+    "page": 16
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:127",
+    "label": "Section",
+    "name": "Section 127",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:308",
+    "label": "Section",
+    "name": "Section 308",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:330",
+    "label": "Section",
+    "name": "Section 330",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:189",
+    "label": "Section",
+    "name": "Section 189",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:329",
+    "label": "Section",
+    "name": "Section 329",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "act:bnss_2023",
+    "label": "Act",
+    "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "act:general-clauses-act-1897",
+    "label": "Act",
+    "name": "General Clauses Act, 1897",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "act:central-or-state-act",
+    "label": "Act",
+    "name": "Central or State Act",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "act:companies-act-2013",
+    "label": "Act",
+    "name": "Companies Act, 2013",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "act:sanhita-but-defined-in-the-information-technology-act-2000",
+    "label": "Act",
+    "name": "Sanhita but defined in the Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "330e8a45-804b-5e31-acbc-88d64aca547a",
+    "page": 18
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:474",
+    "label": "Section",
+    "name": "Section 474",
+    "confidence": 1.0,
+    "source_chunk_id": "636a476f-3393-599a-8cf7-d5c272c22443",
+    "page": 21
+  },
+  {
+    "id": "act:bnss_2023",
+    "label": "Act",
+    "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "636a476f-3393-599a-8cf7-d5c272c22443",
+    "page": 21
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:37",
+    "label": "Section",
+    "name": "Section 37",
+    "confidence": 1.0,
+    "source_chunk_id": "14a09065-d0d4-5aa7-8eb4-a6daba968843",
+    "page": 24
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:38",
+    "label": "Section",
+    "name": "Section 38",
+    "confidence": 1.0,
+    "source_chunk_id": "14a09065-d0d4-5aa7-8eb4-a6daba968843",
+    "page": 24
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "14a09065-d0d4-5aa7-8eb4-a6daba968843",
+    "page": 24
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:51",
+    "label": "Section",
+    "name": "Section 51",
+    "confidence": 1.0,
+    "source_chunk_id": "ed7c084c-e614-5f5f-9cd7-61158d9101fe",
+    "page": 30
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:64",
+    "label": "Section",
+    "name": "Section 64",
+    "confidence": 1.0,
+    "source_chunk_id": "fe0faaaa-e8be-5451-97f2-6777399a69f4",
+    "page": 36
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:63",
+    "label": "Section",
+    "name": "Section 63",
+    "confidence": 1.0,
+    "source_chunk_id": "fe0faaaa-e8be-5451-97f2-6777399a69f4",
+    "page": 36
+  },
+  {
+    "id": "act:police-act-1861",
+    "label": "Act",
+    "name": "Police Act, 1861",
+    "confidence": 1.0,
+    "source_chunk_id": "fe0faaaa-e8be-5451-97f2-6777399a69f4",
+    "page": 36
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:64",
+    "label": "Section",
+    "name": "Section 64",
+    "confidence": 1.0,
+    "source_chunk_id": "73464b28-11ee-58ec-a99f-ef365c04acfd",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:65",
+    "label": "Section",
+    "name": "Section 65",
+    "confidence": 1.0,
+    "source_chunk_id": "73464b28-11ee-58ec-a99f-ef365c04acfd",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "73464b28-11ee-58ec-a99f-ef365c04acfd",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "73464b28-11ee-58ec-a99f-ef365c04acfd",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:64",
+    "label": "Section",
+    "name": "Section 64",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:65",
+    "label": "Section",
+    "name": "Section 65",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:67",
+    "label": "Section",
+    "name": "Section 67",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:68",
+    "label": "Section",
+    "name": "Section 68",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:69",
+    "label": "Section",
+    "name": "Section 69",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:71",
+    "label": "Section",
+    "name": "Section 71",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:72",
+    "label": "Section",
+    "name": "Section 72",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a65cdf3c-3d44-57da-beeb-2433853abe8a",
+    "page": 39
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "39585511-c116-5019-b691-de86805f8428",
+    "page": 41
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:85",
+    "label": "Section",
+    "name": "Section 85",
+    "confidence": 1.0,
+    "source_chunk_id": "39585511-c116-5019-b691-de86805f8428",
+    "page": 41
+  },
+  {
+    "id": "act:dowry-prohibition-act-1961",
+    "label": "Act",
+    "name": "Dowry Prohibition Act, 1961",
+    "confidence": 1.0,
+    "source_chunk_id": "39585511-c116-5019-b691-de86805f8428",
+    "page": 41
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:88",
+    "label": "Section",
+    "name": "Section 88",
+    "confidence": 1.0,
+    "source_chunk_id": "e67d95aa-69c7-5aab-921f-2f7d0033b6d5",
+    "page": 42
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:98",
+    "label": "Section",
+    "name": "Section 98",
+    "confidence": 1.0,
+    "source_chunk_id": "e67d95aa-69c7-5aab-921f-2f7d0033b6d5",
+    "page": 42
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:98",
+    "label": "Section",
+    "name": "Section 98",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:122",
+    "label": "Section",
+    "name": "Section 122",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:101",
+    "label": "Section",
+    "name": "Section 101",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:131",
+    "label": "Section",
+    "name": "Section 131",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "act:national-medical-commission-act-2019",
+    "label": "Act",
+    "name": "National Medical Commission Act, 2019",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "act:medical-register-or-a-state-medical-register-under-that-act",
+    "label": "Act",
+    "name": "Medical Register or a State Medical Register under that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ad1254c-fd68-570b-be0d-c9d25fcb98a4",
+    "page": 44
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:147",
+    "label": "Section",
+    "name": "Section 147",
+    "confidence": 1.0,
+    "source_chunk_id": "190d51e4-5bd3-52a5-a1dc-dfda6ea03316",
+    "page": 59
+  },
+  {
+    "id": "act:no-person-subject-to-the-air-force-act-1950",
+    "label": "Act",
+    "name": "No person subject to the Air Force Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "2bcae038-46f5-5bbc-b6ee-0e488e4098e9",
+    "page": 61
+  },
+  {
+    "id": "act:army-act-1950",
+    "label": "Act",
+    "name": "Army Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "2bcae038-46f5-5bbc-b6ee-0e488e4098e9",
+    "page": 61
+  },
+  {
+    "id": "act:navy-act-1957",
+    "label": "Act",
+    "name": "Navy Act, 1957",
+    "confidence": 1.0,
+    "source_chunk_id": "2bcae038-46f5-5bbc-b6ee-0e488e4098e9",
+    "page": 61
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "4b02fc6e-a494-54fc-bd87-0c1dfe351584",
+    "page": 64
+  },
+  {
+    "id": "act:coinage-act-2011",
+    "label": "Act",
+    "name": "Coinage Act, 2011",
+    "confidence": 1.0,
+    "source_chunk_id": "4b02fc6e-a494-54fc-bd87-0c1dfe351584",
+    "page": 64
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "90edc0ae-ae52-5135-914f-37b7b04ff310",
+    "page": 65
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "aee8c02a-96b3-5f89-b644-19bb5f44e734",
+    "page": 66
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:173",
+    "label": "Section",
+    "name": "Section 173",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:64",
+    "label": "Section",
+    "name": "Section 64",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:65",
+    "label": "Section",
+    "name": "Section 65",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:67",
+    "label": "Section",
+    "name": "Section 67",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:68",
+    "label": "Section",
+    "name": "Section 68",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:71",
+    "label": "Section",
+    "name": "Section 71",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:74",
+    "label": "Section",
+    "name": "Section 74",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "act:bnss_2023",
+    "label": "Act",
+    "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "637d858f-907b-5fc0-901a-57e2ff695d5c",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:64",
+    "label": "Section",
+    "name": "Section 64",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:65",
+    "label": "Section",
+    "name": "Section 65",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:67",
+    "label": "Section",
+    "name": "Section 67",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:68",
+    "label": "Section",
+    "name": "Section 68",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:71",
+    "label": "Section",
+    "name": "Section 71",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:74",
+    "label": "Section",
+    "name": "Section 74",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:76",
+    "label": "Section",
+    "name": "Section 76",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:77",
+    "label": "Section",
+    "name": "Section 77",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:124",
+    "label": "Section",
+    "name": "Section 124",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:143",
+    "label": "Section",
+    "name": "Section 143",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:144",
+    "label": "Section",
+    "name": "Section 144",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "act:bnss_2023",
+    "label": "Act",
+    "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9b7840-2833-55ed-8c29-41d9e95dc366",
+    "page": 69
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:84",
+    "label": "Section",
+    "name": "Section 84",
+    "confidence": 1.0,
+    "source_chunk_id": "4c405c8a-52ff-54e5-9dbd-e66d95734e64",
+    "page": 70
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:394",
+    "label": "Section",
+    "name": "Section 394",
+    "confidence": 1.0,
+    "source_chunk_id": "4c405c8a-52ff-54e5-9dbd-e66d95734e64",
+    "page": 70
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:211",
+    "label": "Section",
+    "name": "Section 211",
+    "confidence": 1.0,
+    "source_chunk_id": "4c405c8a-52ff-54e5-9dbd-e66d95734e64",
+    "page": 70
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "4c405c8a-52ff-54e5-9dbd-e66d95734e64",
+    "page": 70
+  },
+  {
+    "id": "act:bnss_2023",
+    "label": "Act",
+    "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "4c405c8a-52ff-54e5-9dbd-e66d95734e64",
+    "page": 70
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "0dda2286-bc30-5224-990c-9cf15ec8c7eb",
+    "page": 72
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:310",
+    "label": "Section",
+    "name": "Section 310",
+    "confidence": 1.0,
+    "source_chunk_id": "0dda2286-bc30-5224-990c-9cf15ec8c7eb",
+    "page": 72
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:326",
+    "label": "Section",
+    "name": "Section 326",
+    "confidence": 1.0,
+    "source_chunk_id": "0dda2286-bc30-5224-990c-9cf15ec8c7eb",
+    "page": 72
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:331",
+    "label": "Section",
+    "name": "Section 331",
+    "confidence": 1.0,
+    "source_chunk_id": "0dda2286-bc30-5224-990c-9cf15ec8c7eb",
+    "page": 72
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:332",
+    "label": "Section",
+    "name": "Section 332",
+    "confidence": 1.0,
+    "source_chunk_id": "0dda2286-bc30-5224-990c-9cf15ec8c7eb",
+    "page": 72
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:236",
+    "label": "Section",
+    "name": "Section 236",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:310",
+    "label": "Section",
+    "name": "Section 310",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:326",
+    "label": "Section",
+    "name": "Section 326",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:331",
+    "label": "Section",
+    "name": "Section 331",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:332",
+    "label": "Section",
+    "name": "Section 332",
+    "confidence": 1.0,
+    "source_chunk_id": "1d44375a-34e4-5b8f-a141-5f6e0dc8baf7",
+    "page": 74
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "8b613679-a8e7-5ebb-b4ce-3df4aaeac9e6",
+    "page": 79
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:310",
+    "label": "Section",
+    "name": "Section 310",
+    "confidence": 1.0,
+    "source_chunk_id": "8b613679-a8e7-5ebb-b4ce-3df4aaeac9e6",
+    "page": 79
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:326",
+    "label": "Section",
+    "name": "Section 326",
+    "confidence": 1.0,
+    "source_chunk_id": "8b613679-a8e7-5ebb-b4ce-3df4aaeac9e6",
+    "page": 79
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:331",
+    "label": "Section",
+    "name": "Section 331",
+    "confidence": 1.0,
+    "source_chunk_id": "8b613679-a8e7-5ebb-b4ce-3df4aaeac9e6",
+    "page": 79
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:332",
+    "label": "Section",
+    "name": "Section 332",
+    "confidence": 1.0,
+    "source_chunk_id": "8b613679-a8e7-5ebb-b4ce-3df4aaeac9e6",
+    "page": 79
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:250",
+    "label": "Section",
+    "name": "Section 250",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:259",
+    "label": "Section",
+    "name": "Section 259",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:260",
+    "label": "Section",
+    "name": "Section 260",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:261",
+    "label": "Section",
+    "name": "Section 261",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:262",
+    "label": "Section",
+    "name": "Section 262",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:263",
+    "label": "Section",
+    "name": "Section 263",
+    "confidence": 1.0,
+    "source_chunk_id": "03d48e85-3a36-5455-8b05-0eab5fd8e426",
+    "page": 80
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:294",
+    "label": "Section",
+    "name": "Section 294",
+    "confidence": 1.0,
+    "source_chunk_id": "e233adf0-b92e-5474-94a3-f964128d7086",
+    "page": 83
+  },
+  {
+    "id": "act:ancient-monuments-and-archaeological-sites-and-remains-act-1958",
+    "label": "Act",
+    "name": "Ancient Monuments and Archaeological Sites and Remains Act, 1958",
+    "confidence": 1.0,
+    "source_chunk_id": "e233adf0-b92e-5474-94a3-f964128d7086",
+    "page": 83
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "e7309705-313f-5422-ab0e-3ac9ded2082d",
+    "page": 94
+  },
+  {
+    "id": "act:provident-funds-and-miscellaneous-provisions-act-1952",
+    "label": "Act",
+    "name": "Provident Funds and Miscellaneous Provisions Act, 1952",
+    "confidence": 1.0,
+    "source_chunk_id": "e7309705-313f-5422-ab0e-3ac9ded2082d",
+    "page": 94
+  },
+  {
+    "id": "act:state-insurance-act-1948",
+    "label": "Act",
+    "name": "State Insurance Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "e7309705-313f-5422-ab0e-3ac9ded2082d",
+    "page": 94
+  },
+  {
+    "id": "act:fund-in-violation-of-the-said-act",
+    "label": "Act",
+    "name": "Fund in violation of the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e7309705-313f-5422-ab0e-3ac9ded2082d",
+    "page": 94
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "7dffd297-f6a6-59d4-a410-1518d3379a36",
+    "page": 101
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:337",
+    "label": "Section",
+    "name": "Section 337",
+    "confidence": 1.0,
+    "source_chunk_id": "7dffd297-f6a6-59d4-a410-1518d3379a36",
+    "page": 101
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:338",
+    "label": "Section",
+    "name": "Section 338",
+    "confidence": 1.0,
+    "source_chunk_id": "7dffd297-f6a6-59d4-a410-1518d3379a36",
+    "page": 101
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "7dffd297-f6a6-59d4-a410-1518d3379a36",
+    "page": 101
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "7dffd297-f6a6-59d4-a410-1518d3379a36",
+    "page": 101
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:338",
+    "label": "Section",
+    "name": "Section 338",
+    "confidence": 1.0,
+    "source_chunk_id": "30d76e3d-ce93-503b-80e4-c8d628635d0b",
+    "page": 104
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:338",
+    "label": "Section",
+    "name": "Section 338",
+    "confidence": 1.0,
+    "source_chunk_id": "413bb31e-fead-5b65-83e5-c45f8ac297ef",
+    "page": 104
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:338",
+    "label": "Section",
+    "name": "Section 338",
+    "confidence": 1.0,
+    "source_chunk_id": "33e36344-985e-5649-a124-5d164770e10c",
+    "page": 105
+  },
+  {
+    "id": "section:bharatiya-nyaya-sanhita-2023:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:bns_2023",
+    "label": "Act",
+    "name": "Bharatiya Nyaya Sanhita, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:the-indian-penal-code",
+    "label": "Act",
+    "name": "The Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:notwithstanding-the-repeal-of-the-code",
+    "label": "Act",
+    "name": "Notwithstanding the repeal of the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:general-clauses-act-1897",
+    "label": "Act",
+    "name": "General Clauses Act, 1897",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "cd3d8b2e-6f5e-5aff-80eb-984f9bf92311",
+    "page": 110
+  }
+]

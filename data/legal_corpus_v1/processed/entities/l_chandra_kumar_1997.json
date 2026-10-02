@@ -1,0 +1,1578 @@
+[
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "judgment:l-chandra-kumar",
+    "label": "Judgment",
+    "name": "L. Chandra Kumar",
+    "confidence": 1.0,
+    "source_chunk_id": "0ce86a9f-0f7b-5675-8ce8-7937f08f876b",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:227",
+    "label": "Article",
+    "name": "Article 227",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6bbd2cca-e3cf-53cc-b3c4-1cecbfd221ce",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:329",
+    "label": "Article",
+    "name": "Article 329",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:46",
+    "label": "Section",
+    "name": "Section 46",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "act:administrative-tribunals-act-1985",
+    "label": "Act",
+    "name": "Administrative Tribunals Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "d2fb5c10-7c71-5f45-b255-6564efb2c383",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:323",
+    "label": "Article",
+    "name": "Article 323",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "act:parliament-enacted-the-administrative-tribunals-act-1985",
+    "label": "Act",
+    "name": "Parliament enacted the Administrative Tribunals Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "666b3d63-41fb-5782-8068-6c6d6e89aa3b",
+    "page": 3
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f39952c2-71d2-5a5f-a9f7-74c1aef3dab3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "f39952c2-71d2-5a5f-a9f7-74c1aef3dab3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f39952c2-71d2-5a5f-a9f7-74c1aef3dab3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "f39952c2-71d2-5a5f-a9f7-74c1aef3dab3",
+    "page": 4
+  },
+  {
+    "id": "act:an-amending-act",
+    "label": "Act",
+    "name": "An amending Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f39952c2-71d2-5a5f-a9f7-74c1aef3dab3",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "7cd11849-bcb2-56a1-a083-93774d61bccc",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "7cd11849-bcb2-56a1-a083-93774d61bccc",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "7cd11849-bcb2-56a1-a083-93774d61bccc",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d66c81-f89e-5721-b7ae-6ba56c435404",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d66c81-f89e-5721-b7ae-6ba56c435404",
+    "page": 4
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d66c81-f89e-5721-b7ae-6ba56c435404",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:309",
+    "label": "Article",
+    "name": "Article 309",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:28",
+    "label": "Section",
+    "name": "Section 28",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:29",
+    "label": "Section",
+    "name": "Section 29",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:36",
+    "label": "Section",
+    "name": "Section 36",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:37",
+    "label": "Section",
+    "name": "Section 37",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "act:industrial-disputes-act-1947",
+    "label": "Act",
+    "name": "Industrial Disputes Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "person:bench-in-j",
+    "label": "Person",
+    "name": "Bench. In J.",
+    "confidence": 1.0,
+    "source_chunk_id": "db7bdfa4-d17d-5821-a517-147e639c143d",
+    "page": 6
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:371d",
+    "label": "Article",
+    "name": "Article 371D",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:28",
+    "label": "Section",
+    "name": "Section 28",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d5b3e508-a66d-5cdd-872b-3ccb7f304261",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "67da6f11-0459-57a5-bb15-daa22f11adfd",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "67da6f11-0459-57a5-bb15-daa22f11adfd",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "67da6f11-0459-57a5-bb15-daa22f11adfd",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "67da6f11-0459-57a5-bb15-daa22f11adfd",
+    "page": 10
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:227",
+    "label": "Article",
+    "name": "Article 227",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:323",
+    "label": "Article",
+    "name": "Article 323",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:215",
+    "label": "Article",
+    "name": "Article 215",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "act:west-bengal-taxation-tribunal-act-1987",
+    "label": "Act",
+    "name": "West Bengal Taxation Tribunal Act, 1987",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "act:rajasthan-taxation-tribunal-act-1995",
+    "label": "Act",
+    "name": "Rajasthan Taxation Tribunal Act, 1995",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "act:amendment-act-1985",
+    "label": "Act",
+    "name": "Amendment Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "act:tamil-nadu-taxation-special-tribunal-act-1992",
+    "label": "Act",
+    "name": "Tamil Nadu Taxation Special Tribunal Act, 1992",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "act:tamil-nadu-general-sales-tax-act-and-additional-sales-tax-act",
+    "label": "Act",
+    "name": "Tamil Nadu General Sales Tax Act and Additional Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "court:madras-high-court",
+    "label": "Court",
+    "name": "Madras High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "3ec229c4-f16b-5a1d-ba33-cc77e016a704",
+    "page": 10
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "3a6ed36f-17f4-56e0-a13f-4a4ca9d23c77",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "doctrine:doctrine-of-severability",
+    "label": "Doctrine",
+    "name": "Doctrine Of Severability",
+    "confidence": 1.0,
+    "source_chunk_id": "9540903f-0080-5f88-9ad5-4a5cfc8f8ac6",
+    "page": 13
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:262",
+    "label": "Article",
+    "name": "Article 262",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:103",
+    "label": "Article",
+    "name": "Article 103",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:329",
+    "label": "Article",
+    "name": "Article 329",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "court:madras-high-court",
+    "label": "Court",
+    "name": "Madras High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "doctrine:doctrine-of-severability",
+    "label": "Doctrine",
+    "name": "Doctrine Of Severability",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "7eab6b06-52ca-5837-b15d-1d11f492728a",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "380e512a-74a5-5bbd-9f33-9442d8affb80",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:256",
+    "label": "Section",
+    "name": "Section 256",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:130",
+    "label": "Section",
+    "name": "Section 130",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:rpa_1951",
+    "label": "Act",
+    "name": "The Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:high-courts-under-the-representation-of-the-people-act-1951",
+    "label": "Act",
+    "name": "High Courts under the Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:companies-act-1956",
+    "label": "Act",
+    "name": "Companies Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:indian-companies-act-1556",
+    "label": "Act",
+    "name": "Indian Companies Act, 1556",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:wealth-tax-act-1957",
+    "label": "Act",
+    "name": "Wealth Tax Act, 1957",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:gift-tax-act-1958",
+    "label": "Act",
+    "name": "Gift Tax Act, 1958",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:surtax-act-1964",
+    "label": "Act",
+    "name": "Surtax Act, 1964",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "act:customs-act-1962",
+    "label": "Act",
+    "name": "Customs Act, 1962",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "76b3e962-5393-5059-99b5-507da40034c6",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:227",
+    "label": "Article",
+    "name": "Article 227",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:130",
+    "label": "Section",
+    "name": "Section 130",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:354",
+    "label": "Section",
+    "name": "Section 354",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:rpa_1951",
+    "label": "Act",
+    "name": "The Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:surtax-act-1964",
+    "label": "Act",
+    "name": "Surtax Act, 1964",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:customs-act-1962",
+    "label": "Act",
+    "name": "Customs Act, 1962",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:central-excises-and-salt-act-1944",
+    "label": "Act",
+    "name": "Central Excises and Salt Act, 1944",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:indian-divorce-act-1869",
+    "label": "Act",
+    "name": "Indian Divorce Act, 1869",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:parsi-marriage-and-divorce-act-1936",
+    "label": "Act",
+    "name": "Parsi Marriage and Divorce Act, 1936",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:sales-tax-act",
+    "label": "Act",
+    "name": "Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:representation-of-the-people-act",
+    "label": "Act",
+    "name": "Representation of the People Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:banking-companies-act",
+    "label": "Act",
+    "name": "Banking Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "act:administrative-tribunals-under-the-administrative-tribunals-act-1985",
+    "label": "Act",
+    "name": "Administrative Tribunals under the Administrative Tribunals Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "court:including-high-court",
+    "label": "Court",
+    "name": "Including High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "69eb0962-43fe-5cef-8935-79a04a3198fc",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "act:tribunal-which-is-a-creature-of-an-act",
+    "label": "Act",
+    "name": "Tribunal which is a creature of an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b2ee6b63-e298-51c4-9936-b8e2b03962d1",
+    "page": 26
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:323a",
+    "label": "Article",
+    "name": "Article 323A",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:323b",
+    "label": "Article",
+    "name": "Article 323B",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "section:l-chandra-kumar-v-union-of-india:28",
+    "label": "Section",
+    "name": "Section 28",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "f5b1a62f-fc6f-5a1d-90b9-c509f212b496",
+    "page": 27
+  }
+]

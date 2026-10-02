@@ -1,0 +1,578 @@
+[
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "9e4a7a1e-de10-5935-abd9-7724d9d53e5f",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "9e4a7a1e-de10-5935-abd9-7724d9d53e5f",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "9e4a7a1e-de10-5935-abd9-7724d9d53e5f",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9e4a7a1e-de10-5935-abd9-7724d9d53e5f",
+    "page": 1
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "9e4a7a1e-de10-5935-abd9-7724d9d53e5f",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:179",
+    "label": "Section",
+    "name": "Section 179",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:103",
+    "label": "Section",
+    "name": "Section 103",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:727",
+    "label": "Section",
+    "name": "Section 727",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:444",
+    "label": "Section",
+    "name": "Section 444",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "act:severability-of-act",
+    "label": "Act",
+    "name": "Severability of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "ROMESH THAPPAR",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "KANIA C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "93059ce8-beae-5320-995d-2456fc9a7139",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:435",
+    "label": "Section",
+    "name": "Section 435",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:179",
+    "label": "Section",
+    "name": "Section 179",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:103",
+    "label": "Section",
+    "name": "Section 103",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:727",
+    "label": "Section",
+    "name": "Section 727",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:100",
+    "label": "Section",
+    "name": "Section 100",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act-1949",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act, 1949",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:madras-act",
+    "label": "Act",
+    "name": "Madras Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:procedure-code",
+    "label": "Act",
+    "name": "Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:civil-procedure-code",
+    "label": "Act",
+    "name": "Civil Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:government-of-india-act",
+    "label": "Act",
+    "name": "Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:list-ii-of-the-seventh-schedule-to-that-act",
+    "label": "Act",
+    "name": "List II of the Seventh Schedule to that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "act:in-the-classification-of-offences-in-the-indian-penal-code",
+    "label": "Act",
+    "name": "In the classification of offenCes in the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "concept:romesh-thappar-v-state-of-madras:that-jurisdiction",
+    "label": "Concept",
+    "name": "that jurisdiction",
+    "confidence": 0.9,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "Kania C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "9e9263b8-62b2-51f6-ab05-3c401cf1e7b9",
+    "page": 3
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:279",
+    "label": "Section",
+    "name": "Section 279",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:280",
+    "label": "Section",
+    "name": "Section 280",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:121",
+    "label": "Section",
+    "name": "Section 121",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:124",
+    "label": "Section",
+    "name": "Section 124",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "act:in-the-classification-of-offences-in-the-indian-penal-code",
+    "label": "Act",
+    "name": "In the classification of offenCes in the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c9c4e9fc-8d06-5259-b211-8de713ebb375",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:121",
+    "label": "Section",
+    "name": "Section 121",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:124",
+    "label": "Section",
+    "name": "Section 124",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:141",
+    "label": "Section",
+    "name": "Section 141",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:146",
+    "label": "Section",
+    "name": "Section 146",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:153a",
+    "label": "Section",
+    "name": "Section 153A",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:57",
+    "label": "Section",
+    "name": "Section 57",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "act:but-whatever-ends-the-impugned-act",
+    "label": "Act",
+    "name": "But whatever ends the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "act:the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "The Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "concept:romesh-thappar-v-state-of-madras:of-fences-against-the-public-tranquillity",
+    "label": "Concept",
+    "name": "of- fences against the public tranquillity",
+    "confidence": 0.9,
+    "source_chunk_id": "70fc0861-06fd-5e87-b5dc-b14eae956128",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e9b0a46e-9dbe-5967-99ec-1ec32a60cb8f",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "e9b0a46e-9dbe-5967-99ec-1ec32a60cb8f",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e9b0a46e-9dbe-5967-99ec-1ec32a60cb8f",
+    "page": 7
+  },
+  {
+    "id": "section:romesh-thappar-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "e9b0a46e-9dbe-5967-99ec-1ec32a60cb8f",
+    "page": 7
+  }
+]

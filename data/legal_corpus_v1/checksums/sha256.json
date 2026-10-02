@@ -1,0 +1,174 @@
+{
+  "documents": {
+    "constitution_of_india": {
+      "file": "constitution/englishconstitution.pdf",
+      "sha256": "ed1820c0a1100c2c6aa8ece835a8c8a60f996ae7eba30cc1798233683c66cfba",
+      "file_bytes": 4867813
+    },
+    "crpc_1973": {
+      "file": "acts/The_Code_of_Criminal_Procedure_1973.PDF",
+      "sha256": "f9101373ae31442067bb7cc5bd080c485b5fafa85feaa2edaca5594d37531b2d",
+      "file_bytes": 820616
+    },
+    "iea_1872": {
+      "file": "acts/The_Indian_Evidence_Act_1872.PDF",
+      "sha256": "6360cc2d6f7429388e3e1400748ebd7b1e75ce91ed15cbe8005fae70a9cf582f",
+      "file_bytes": 405285
+    },
+    "ipc_1860": {
+      "file": "acts/The_Indian_Penal_Code_1860.PDF",
+      "sha256": "9a7db2a49a428fce7316b4e3263b22fd8c945535776a36590dcfcd7ad478023a",
+      "file_bytes": 468737
+    },
+    "phra_1993": {
+      "file": "acts/The_Protection_of_Human_Rights_Act_1993.PDF",
+      "sha256": "0781b905d48923fed4385720e46dcf4402d2dfe625c182d89f1bf83379c442b3",
+      "file_bytes": 213874
+    },
+    "rpa_1951": {
+      "file": "acts/The_Representation_of_the_People_Act_1951.PDF",
+      "sha256": "e30d5af40f0b7e5f5583bde7fa7231785c574429efce6d2e58c088a23442e4a2",
+      "file_bytes": 290783
+    },
+    "bnss_2023": {
+      "file": "acts/bharatiya_nagarik_suraksha_sanhita.pdf",
+      "sha256": "572c79880b9f8effc8fa6e39b864101835a0fb5d85b194b90a99d170121a0562",
+      "file_bytes": 2872470
+    },
+    "bns_2023": {
+      "file": "acts/bharatiya_nyaya_sanhita.pdf",
+      "sha256": "d4449e9995b21fd52627811d08f9d21feda6a3678b7e5355b651242d152167f5",
+      "file_bytes": 1115210
+    },
+    "bsa_2023": {
+      "file": "acts/bharatiya_sakshya_adhiniyam.pdf",
+      "sha256": "554b2b4ae3d9f09bf31e6e1ba2b2cb8a4e7f4f5ffd6f3156736752cbbce116d5",
+      "file_bytes": 642831
+    },
+    "it_act_2000": {
+      "file": "acts/information_technology_act.pdf",
+      "sha256": "003b3218fe399b293c73f6aef9ca52e5c1d080388c43fb0523572c1dc5f3d529",
+      "file_bytes": 838383
+    },
+    "rti_act_2005": {
+      "file": "acts/right_to_information_2005.pdf",
+      "sha256": "c1ef189ec4f34d4f346886d6c2fc4a6e8aec2da0eedcfeff9c10401ec9cfb2f5",
+      "file_bytes": 447103
+    },
+    "const_amendment_44": {
+      "file": "constitutional_amendments/THE_CONSTITUTION_FORTY_FOURTH_AMENDMENT_ACT_1978.PDF",
+      "sha256": "d757f49dc9af81352f011e25d425c2d83cb3fc62502278db643ff00b8dddaf87",
+      "file_bytes": 342607
+    },
+    "const_amendment_42": {
+      "file": "constitutional_amendments/THE_CONSTITUTION_FORTY_SECOND_AMENDMENT_ACT_1976.PDF",
+      "sha256": "34734e66c92277962bbcbf6b56bcca26d722132b2a9e3066f12a29082ac59719",
+      "file_bytes": 354138
+    },
+    "const_amendment_101": {
+      "file": "constitutional_amendments/THE_CONSTITUTION_ONE_HUNDRED_AND_FIRST_AMENDMENT_ACT_2016.PDF",
+      "sha256": "53b7dcdc4a0480be68bad501c6d67132d237c5762b28297ab70dc4f81cc517da",
+      "file_bytes": 300083
+    },
+    "const_amendment_73": {
+      "file": "constitutional_amendments/THE_CONSTITUTION_SEVENTY_THIRD_AMENDMENT_ACT_1992.PDF",
+      "sha256": "32e8ee7fc06bd73ea9a53b5cee9de8e4c7367d598f3e9dc848994101b7b1b0d3",
+      "file_bytes": 333498
+    },
+    "kesavananda_bharati_1973": {
+      "file": "judgements/supreme_court/01_kesavananda_bharati_1973.pdf",
+      "sha256": "58eb213f1619dc2cf64351524d709c1cdab7132ec3772803498b3203364964bd",
+      "file_bytes": 37444076
+    },
+    "indira_gandhi_1975": {
+      "file": "judgements/supreme_court/02_indira_nehru_gandhi_raj_narain_1975.pdf",
+      "sha256": "17c4fe873af90508d6c102fa160bb4f877944c60fc00b829eba0150559fbed36",
+      "file_bytes": 24846919
+    },
+    "minerva_mills_1980": {
+      "file": "judgements/supreme_court/03_minerva_mills_1980.pdf",
+      "sha256": "786391e5278ecb9e037aeeeb1296e9280e5f84ac7cd67ef6f7f378fe7c9e8856",
+      "file_bytes": 3253095
+    },
+    "ir_coelho_2007": {
+      "file": "judgements/supreme_court/04_ir_coelho_2007.pdf",
+      "sha256": "2f68ac75129d68094b5a61006da321135ca471e44f702189619c579695ea6655",
+      "file_bytes": 278959
+    },
+    "l_chandra_kumar_1997": {
+      "file": "judgements/supreme_court/05_l_chandra_kumar_1997.pdf",
+      "sha256": "4acc638ed43aff1427e71f23d302d5757695835a23b84902209254dd964852b4",
+      "file_bytes": 1276154
+    },
+    "ep_royappa_1974": {
+      "file": "judgements/supreme_court/06_ep_royappa_1973_1974.pdf",
+      "sha256": "b7acd88d10a3a58bce77b6e0c6c4a1937a1cba5a180ade665f3f4b05ea2150e9",
+      "file_bytes": 1279508
+    },
+    "maneka_gandhi_1978": {
+      "file": "judgements/supreme_court/07_maneka_gandhi_1978.pdf",
+      "sha256": "39b4c680498e56d9f4c0acdb616c727273edc5c9657596e7f8c515e7a6bf6c2b",
+      "file_bytes": 4027458
+    },
+    "shayara_bano_2017": {
+      "file": "judgements/supreme_court/08_shayara_bano_2017.pdf",
+      "sha256": "373b415f018a47c0e92fa774428bb12ceec0341070eb44fae2ba0e936041befc",
+      "file_bytes": 323836
+    },
+    "romesh_thappar_1950": {
+      "file": "judgements/supreme_court/09_romesh_thappar_1950.pdf",
+      "sha256": "d29894086167c2f503e455a027b49a1dccc22b04566f9dc4507d76ee5b1dca61",
+      "file_bytes": 581386
+    },
+    "bennett_coleman_1973": {
+      "file": "judgements/supreme_court/10_bennett_coleman_1973.pdf",
+      "sha256": "6387f852fb24374dab0a9bde6466a58572f8ab53ffa73a6c7f56090ea0f5301a",
+      "file_bytes": 928524
+    },
+    "shreya_singhal_2015": {
+      "file": "judgements/supreme_court/11_shreya_singhal_2015.pdf",
+      "sha256": "e8db04ebf94fd9676f239893d333b3ed31258b49fa3f5728eea92d28fb5d27fe",
+      "file_bytes": 1631272
+    },
+    "ak_gopalan_1950": {
+      "file": "judgements/supreme_court/12_ak_gopalan_1950.pdf",
+      "sha256": "443987dabb16c59f1eeb09aa8f07a231aa29e9f9e836bcdda7cfade488283f27",
+      "file_bytes": 4030918
+    },
+    "puttaswamy_privacy_2017": {
+      "file": "judgements/supreme_court/13_puttaswamy_privacy_2017.pdf",
+      "sha256": "5367b5b41e21f3d550e185242932b8f5796852de0fabac76699295a644055bf6",
+      "file_bytes": 3059898
+    },
+    "common_cause_2018": {
+      "file": "judgements/supreme_court/14_common_cause_2018.pdf",
+      "sha256": "1f8699303452437b6ade5b8b6cf325419aeb87bd80a9b56c0a2c60a226b827c8",
+      "file_bytes": 5654657
+    },
+    "sr_bommai_1994": {
+      "file": "judgements/supreme_court/15_sr_bommai_1994.pdf",
+      "sha256": "58e74e45aabbe75cbd8315f98e430428ce5c6160ba263a646c6dd043288d69d5",
+      "file_bytes": 5219481
+    },
+    "vishaka_1997": {
+      "file": "judgements/supreme_court/16_vishaka_1997.pdf",
+      "sha256": "c4e8765174665030537b435df465e76de186cfeaa9dbbe54a3620a1f75d94606",
+      "file_bytes": 569771
+    },
+    "nalsa_2014": {
+      "file": "judgements/supreme_court/17_nalsa_2014.pdf",
+      "sha256": "4e2f44003fbb6672342a516760903a635012aa70f5f078891c357d1ac0d584e3",
+      "file_bytes": 1415128
+    },
+    "navtej_johar_2018": {
+      "file": "judgements/supreme_court/18_navtej_singh_johar_2018.pdf",
+      "sha256": "b753e52a3982fb6694d66a45c2941093873f3c443879beb2d61622b73e6228ba",
+      "file_bytes": 1793869
+    },
+    "puttaswamy_aadhaar_2018": {
+      "file": "judgements/supreme_court/19_puttaswamy_aadhaar_2018.pdf",
+      "sha256": "e839ccef1ada58efdca59f84d5bb63f2a240bf318041d17c2db3790851c1f371",
+      "file_bytes": 6727163
+    }
+  }
+}

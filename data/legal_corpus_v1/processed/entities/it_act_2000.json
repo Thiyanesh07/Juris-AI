@@ -1,0 +1,1466 @@
+[
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "fa458b03-a4a9-5d9d-be9c-8c5942e18d56",
+    "page": 1
+  },
+  {
+    "id": "act:indiacode-the-information-technology-act-2000",
+    "label": "Act",
+    "name": "IndiaCode The Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "fa458b03-a4a9-5d9d-be9c-8c5942e18d56",
+    "page": 1
+  },
+  {
+    "id": "act:the-finance-act-2017",
+    "label": "Act",
+    "name": "The Finance Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "fa458b03-a4a9-5d9d-be9c-8c5942e18d56",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:government-agencies-and-further-to-amend-the-indian-penal-code",
+    "label": "Act",
+    "name": "Government agencies and further to amend the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:indian-evidence-act-1872",
+    "label": "Act",
+    "name": "Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:books-evidence-act-1891",
+    "label": "Act",
+    "name": "Books Evidence Act, 1891",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "act:reserve-bank-of-india-act-1934",
+    "label": "Act",
+    "name": "Reserve Bank of India Act, 1934",
+    "confidence": 1.0,
+    "source_chunk_id": "292759b9-b02c-57ea-9d7a-39d8479604d5",
+    "page": 5
+  },
+  {
+    "id": "section:information-technology-act-2000:46",
+    "label": "Section",
+    "name": "Section 46",
+    "confidence": 1.0,
+    "source_chunk_id": "5904b9fb-0142-594c-a373-5de4dc5b4b64",
+    "page": 7
+  },
+  {
+    "id": "section:information-technology-act-2000:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "5904b9fb-0142-594c-a373-5de4dc5b4b64",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:48",
+    "label": "Section",
+    "name": "Section 48",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:169",
+    "label": "Section",
+    "name": "Section 169",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "section:information-technology-act-2000:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "661cefe5-1f98-5c9f-9979-68c54cbbffb9",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:240",
+    "label": "Article",
+    "name": "Article 240",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:70b",
+    "label": "Section",
+    "name": "Section 70B",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "act:bills-enacted-as-president-s-act",
+    "label": "Act",
+    "name": "Bills enacted as President's Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3c1cad9a-c3ae-5b1c-86a2-474616c50829",
+    "page": 9
+  },
+  {
+    "id": "section:information-technology-act-2000:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "dd36882c-da57-554c-9bd4-d5d48750f76b",
+    "page": 10
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "dd36882c-da57-554c-9bd4-d5d48750f76b",
+    "page": 10
+  },
+  {
+    "id": "section:information-technology-act-2000:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "dd36882c-da57-554c-9bd4-d5d48750f76b",
+    "page": 10
+  },
+  {
+    "id": "section:information-technology-act-2000:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "dd36882c-da57-554c-9bd4-d5d48750f76b",
+    "page": 10
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "e3d71eff-b581-5126-9518-02d7f76beea5",
+    "page": 11
+  },
+  {
+    "id": "section:information-technology-act-2000:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "e3d71eff-b581-5126-9518-02d7f76beea5",
+    "page": 11
+  },
+  {
+    "id": "section:information-technology-act-2000:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "e3d71eff-b581-5126-9518-02d7f76beea5",
+    "page": 11
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "4d9a401b-304c-500b-9e80-cc653a1107b5",
+    "page": 13
+  },
+  {
+    "id": "section:information-technology-act-2000:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "4d9a401b-304c-500b-9e80-cc653a1107b5",
+    "page": 13
+  },
+  {
+    "id": "section:information-technology-act-2000:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "4d9a401b-304c-500b-9e80-cc653a1107b5",
+    "page": 13
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "efff1f57-2017-5f5d-a81d-07976372a1b2",
+    "page": 14
+  },
+  {
+    "id": "section:information-technology-act-2000:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "efff1f57-2017-5f5d-a81d-07976372a1b2",
+    "page": 14
+  },
+  {
+    "id": "section:information-technology-act-2000:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "efff1f57-2017-5f5d-a81d-07976372a1b2",
+    "page": 14
+  },
+  {
+    "id": "section:information-technology-act-2000:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "efff1f57-2017-5f5d-a81d-07976372a1b2",
+    "page": 14
+  },
+  {
+    "id": "section:information-technology-act-2000:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "efff1f57-2017-5f5d-a81d-07976372a1b2",
+    "page": 14
+  },
+  {
+    "id": "section:information-technology-act-2000:69",
+    "label": "Section",
+    "name": "Section 69",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:37",
+    "label": "Section",
+    "name": "Section 37",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:38",
+    "label": "Section",
+    "name": "Section 38",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "76f29872-2016-5a9c-aad5-dfa30c867e2f",
+    "page": 17
+  },
+  {
+    "id": "section:information-technology-act-2000:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:20",
+    "label": "Section",
+    "name": "Section 20",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "section:information-technology-act-2000:58",
+    "label": "Section",
+    "name": "Section 58",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "act:order-xxi-of-the-civil-procedure-code-1908",
+    "label": "Act",
+    "name": "Order XXI of the Civil Procedure Code, 1908",
+    "confidence": 1.0,
+    "source_chunk_id": "333fac10-6771-5bd3-ba00-29fbc65998bd",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:169",
+    "label": "Section",
+    "name": "Section 169",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:29",
+    "label": "Section",
+    "name": "Section 29",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:196",
+    "label": "Section",
+    "name": "Section 196",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:195",
+    "label": "Section",
+    "name": "Section 195",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:telecom-regulatory-authority-of-india-act-1997",
+    "label": "Act",
+    "name": "Telecom Regulatory Authority of India Act, 1997",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:part-xiv-of-chapter-vi-of-the-finance-act-2017",
+    "label": "Act",
+    "name": "Part XIV of Chapter VI of the Finance Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:omitted-by-the-finance-act-2017",
+    "label": "Act",
+    "name": "Omitted by the Finance Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:chapter-xxvi-of-the-code",
+    "label": "Act",
+    "name": "Chapter XXVI of the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "act:the-provisions-of-the-limitation-act-1963",
+    "label": "Act",
+    "name": "The provisions of the Limitation Act, 1963",
+    "confidence": 1.0,
+    "source_chunk_id": "29ae05ab-0e0c-57bf-89ad-16beadd4153d",
+    "page": 23
+  },
+  {
+    "id": "section:information-technology-act-2000:169",
+    "label": "Section",
+    "name": "Section 169",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:31",
+    "label": "Section",
+    "name": "Section 31",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:67",
+    "label": "Section",
+    "name": "Section 67",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:67a",
+    "label": "Section",
+    "name": "Section 67A",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:33",
+    "label": "Section",
+    "name": "Section 33",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:34",
+    "label": "Section",
+    "name": "Section 34",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:69",
+    "label": "Section",
+    "name": "Section 69",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:36",
+    "label": "Section",
+    "name": "Section 36",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:37",
+    "label": "Section",
+    "name": "Section 37",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:38",
+    "label": "Section",
+    "name": "Section 38",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:77",
+    "label": "Section",
+    "name": "Section 77",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:39",
+    "label": "Section",
+    "name": "Section 39",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:40",
+    "label": "Section",
+    "name": "Section 40",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "act:notwithstanding-anything-contained-in-the-code",
+    "label": "Act",
+    "name": "Notwithstanding anything contained in the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "judgment:shreya-singhal",
+    "label": "Judgment",
+    "name": "Shreya Singhal",
+    "confidence": 1.0,
+    "source_chunk_id": "f8256ee7-9c66-5ea8-89f3-6896cb3d4d8a",
+    "page": 25
+  },
+  {
+    "id": "section:information-technology-act-2000:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:42",
+    "label": "Section",
+    "name": "Section 42",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:169",
+    "label": "Section",
+    "name": "Section 169",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:82",
+    "label": "Section",
+    "name": "Section 82",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:45",
+    "label": "Section",
+    "name": "Section 45",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:3a",
+    "label": "Section",
+    "name": "Section 3A",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:notwithstanding-anything-contained-in-the-code",
+    "label": "Act",
+    "name": "Notwithstanding anything contained in the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:the-provisions-of-the-code",
+    "label": "Act",
+    "name": "The provisions of the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:copyright-act-1957",
+    "label": "Act",
+    "name": "Copyright Act, 1957",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:patents-act-1970",
+    "label": "Act",
+    "name": "Patents Act, 1970",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:negotiable-instruments-act-1881",
+    "label": "Act",
+    "name": "Negotiable Instruments Act, 1881",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e585223c-31b7-5d2e-bb03-013bb994d020",
+    "page": 33
+  },
+  {
+    "id": "section:information-technology-act-2000:3a",
+    "label": "Section",
+    "name": "Section 3A",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:6a",
+    "label": "Section",
+    "name": "Section 6A",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:40a",
+    "label": "Section",
+    "name": "Section 40A",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:43a",
+    "label": "Section",
+    "name": "Section 43A",
+    "confidence": 1.0,
+    "source_chunk_id": "724d2fda-f2e5-5992-8f0b-b2a70b504bda",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:43a",
+    "label": "Section",
+    "name": "Section 43A",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:46",
+    "label": "Section",
+    "name": "Section 46",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:57",
+    "label": "Section",
+    "name": "Section 57",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:58",
+    "label": "Section",
+    "name": "Section 58",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:52a",
+    "label": "Section",
+    "name": "Section 52A",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:67c",
+    "label": "Section",
+    "name": "Section 67C",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:69",
+    "label": "Section",
+    "name": "Section 69",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:69b",
+    "label": "Section",
+    "name": "Section 69B",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "f84a690f-54cb-5985-8927-fa985e23c5f8",
+    "page": 35
+  },
+  {
+    "id": "section:information-technology-act-2000:70",
+    "label": "Section",
+    "name": "Section 70",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:70b",
+    "label": "Section",
+    "name": "Section 70B",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:84",
+    "label": "Section",
+    "name": "Section 84",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:70a",
+    "label": "Section",
+    "name": "Section 70A",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:169",
+    "label": "Section",
+    "name": "Section 169",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:46",
+    "label": "Section",
+    "name": "Section 46",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:34",
+    "label": "Section",
+    "name": "Section 34",
+    "confidence": 1.0,
+    "source_chunk_id": "a204100e-275c-5e54-8e9b-8b74b761bcd0",
+    "page": 36
+  },
+  {
+    "id": "section:information-technology-act-2000:34",
+    "label": "Section",
+    "name": "Section 34",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:42",
+    "label": "Section",
+    "name": "Section 42",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:48",
+    "label": "Section",
+    "name": "Section 48",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:47",
+    "label": "Section",
+    "name": "Section 47",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:1a",
+    "label": "Section",
+    "name": "Section 1A",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:49",
+    "label": "Section",
+    "name": "Section 49",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:3a",
+    "label": "Section",
+    "name": "Section 3A",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "section:information-technology-act-2000:50",
+    "label": "Section",
+    "name": "Section 50",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:amendment-of-act",
+    "label": "Act",
+    "name": "Amendment of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:negotiable-instrument-act-1881",
+    "label": "Act",
+    "name": "Negotiable Instrument Act, 1881",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:attorney-act-1882",
+    "label": "Act",
+    "name": "Attorney Act, 1882",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:indian-trust-act-1882",
+    "label": "Act",
+    "name": "Indian Trust Act, 1882",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:indian-succession-act-1925",
+    "label": "Act",
+    "name": "Indian Succession Act, 1925",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:indian-penal-code-and-the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "Indian Penal Code and the Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:it-is-also-proposed-to-amend-the-reserve-bank-of-india-act-1934",
+    "label": "Act",
+    "name": "It is also proposed to amend the Reserve Bank of India Act, 1934",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  },
+  {
+    "id": "act:bankers-books-evidence-act-1891",
+    "label": "Act",
+    "name": "Bankers' Books Evidence Act, 1891",
+    "confidence": 1.0,
+    "source_chunk_id": "6283cc98-cfca-5a1e-923e-265484ce384a",
+    "page": 37
+  }
+]

@@ -1,0 +1,3386 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:228",
+    "label": "Article",
+    "name": "Article 228",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "01ad6cac-639c-5b74-a5a0-3e4a7f7f1966",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:228",
+    "label": "Article",
+    "name": "Article 228",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "577f3261-ff71-56bc-8c00-ab60d9be9538",
+    "page": 7
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:494",
+    "label": "Section",
+    "name": "Section 494",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:495",
+    "label": "Section",
+    "name": "Section 495",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "act:chapter-xx-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "Chapter XX of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bcd7d6c2-f80d-5041-8ca7-a65f374925f9",
+    "page": 11
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "87acd0d8-d4d0-560c-a17d-0915279095f6",
+    "page": 13
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "87acd0d8-d4d0-560c-a17d-0915279095f6",
+    "page": 13
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "87acd0d8-d4d0-560c-a17d-0915279095f6",
+    "page": 13
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "87acd0d8-d4d0-560c-a17d-0915279095f6",
+    "page": 13
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "87acd0d8-d4d0-560c-a17d-0915279095f6",
+    "page": 13
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "86059825-d607-5f46-8646-255bb415773c",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "86059825-d607-5f46-8646-255bb415773c",
+    "page": 15
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "86059825-d607-5f46-8646-255bb415773c",
+    "page": 15
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "86059825-d607-5f46-8646-255bb415773c",
+    "page": 15
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:392",
+    "label": "Section",
+    "name": "Section 392",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb8b335-2681-5614-a7f0-f29463015554",
+    "page": 15
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c6b6b729-5362-5641-86c2-bae2a92c31eb",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c6b6b729-5362-5641-86c2-bae2a92c31eb",
+    "page": 22
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "c6b6b729-5362-5641-86c2-bae2a92c31eb",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "judgment:e-p-royappa",
+    "label": "Judgment",
+    "name": "E.P. Royappa",
+    "confidence": 1.0,
+    "source_chunk_id": "633290f6-95d6-53fe-888d-4ecbfddc0cae",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "act:protection-of-women-from-domestic-violence-act-2005",
+    "label": "Act",
+    "name": "Protection of Women from Domestic Violence Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "judgment:common-cause",
+    "label": "Judgment",
+    "name": "Common Cause",
+    "confidence": 1.0,
+    "source_chunk_id": "de493d2a-4baf-5079-b126-676b4028bce8",
+    "page": 27
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:125",
+    "label": "Section",
+    "name": "Section 125",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "act:protection-of-women-from-domestic-violence-act-2005",
+    "label": "Act",
+    "name": "Protection of Women from Domestic Violence Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "3c521ffc-ae17-5f0b-b2aa-2770ecf107c1",
+    "page": 51
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498a",
+    "label": "Section",
+    "name": "Section 498A",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:494",
+    "label": "Section",
+    "name": "Section 494",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0576c0ac-a73e-5840-8a20-a18b2bfcd3d3",
+    "page": 54
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:494",
+    "label": "Section",
+    "name": "Section 494",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:473",
+    "label": "Section",
+    "name": "Section 473",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:section-lix-of-the-divorce-and-matrimonial-causes-act-1857",
+    "label": "Act",
+    "name": "Section LIX of the Divorce and Matrimonial Causes Act, 1857",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:section-xxxiii-of-the-same-act",
+    "label": "Act",
+    "name": "Section XXXIII of the same Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:matrimonial-causes-act-1923",
+    "label": "Act",
+    "name": "Matrimonial Causes Act, 1923",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:model-penal-code",
+    "label": "Act",
+    "name": "Model Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:court-commissioners-reviewed-the-penal-code",
+    "label": "Act",
+    "name": "Court Commissioners reviewed the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:the-punishment-prescribed-by-the-code",
+    "label": "Act",
+    "name": "The punishment prescribed by the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:by-the-french-code",
+    "label": "Act",
+    "name": "By the French Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "act:if-the-offence-of-adultery-is-admitted-into-the-penal-code",
+    "label": "Act",
+    "name": "If the offence of adultery is admitted into the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1179b5e3-6c69-585f-b326-b05e02f9daa7",
+    "page": 60
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:199",
+    "label": "Section",
+    "name": "Section 199",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:494",
+    "label": "Section",
+    "name": "Section 494",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "act:even-when-this-code-was-replaced-by-the-code",
+    "label": "Act",
+    "name": "Even when this Code was replaced by the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "act:chapter-xx-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "Chapter XX of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "36916953-7a79-506c-a274-0a6b13e0690f",
+    "page": 75
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:494",
+    "label": "Section",
+    "name": "Section 494",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:495",
+    "label": "Section",
+    "name": "Section 495",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "ca239a22-506c-5333-9b2a-9e7b81b94a47",
+    "page": 76
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:372",
+    "label": "Article",
+    "name": "Article 372",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "3f75bc97-338a-5826-a3e4-faf87fcfe028",
+    "page": 79
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "aa82aa56-6364-5b36-bc89-f8d2bd34e4ac",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "aa82aa56-6364-5b36-bc89-f8d2bd34e4ac",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "aa82aa56-6364-5b36-bc89-f8d2bd34e4ac",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "aa82aa56-6364-5b36-bc89-f8d2bd34e4ac",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:366",
+    "label": "Article",
+    "name": "Article 366",
+    "confidence": 1.0,
+    "source_chunk_id": "aa82aa56-6364-5b36-bc89-f8d2bd34e4ac",
+    "page": 81
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "act:hindu-code",
+    "label": "Act",
+    "name": "Hindu Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f7526be7-4392-5995-8458-9431450115c0",
+    "page": 82
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "judgment:shayara-bano",
+    "label": "Judgment",
+    "name": "Shayara Bano",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "53398013-5e2a-5e53-ad0a-43ec30ebb80e",
+    "page": 94
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ed418525-8e35-52e9-9837-ded616720893",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "ed418525-8e35-52e9-9837-ded616720893",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ed418525-8e35-52e9-9837-ded616720893",
+    "page": 98
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "47fd2142-038a-5078-8220-80ca83908cb5",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "47fd2142-038a-5078-8220-80ca83908cb5",
+    "page": 100
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "47fd2142-038a-5078-8220-80ca83908cb5",
+    "page": 100
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "47fd2142-038a-5078-8220-80ca83908cb5",
+    "page": 100
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "47fd2142-038a-5078-8220-80ca83908cb5",
+    "page": 100
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "judgment:shayara-bano",
+    "label": "Judgment",
+    "name": "Shayara Bano",
+    "confidence": 1.0,
+    "source_chunk_id": "9925272f-b9c4-5cc5-9baa-165f902647ad",
+    "page": 102
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "df3c30a3-166d-52cb-8b29-39cad44c9536",
+    "page": 106
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "df3c30a3-166d-52cb-8b29-39cad44c9536",
+    "page": 106
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "a6c57246-ca2a-5eb3-90ed-e0019a0560c3",
+    "page": 108
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "a6c57246-ca2a-5eb3-90ed-e0019a0560c3",
+    "page": 108
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "a6c57246-ca2a-5eb3-90ed-e0019a0560c3",
+    "page": 108
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "a6c57246-ca2a-5eb3-90ed-e0019a0560c3",
+    "page": 108
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:228",
+    "label": "Article",
+    "name": "Article 228",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "ec9fea2d-f9c3-5cfd-b492-eeefbe81987b",
+    "page": 109
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "7615f5e5-9a40-57c6-80b3-b40db54a0a93",
+    "page": 111
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f7df98-b546-55db-a206-57b0da302f74",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "8c1f39ad-0eb8-590a-98ac-9986eff120b4",
+    "page": 115
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "8c1f39ad-0eb8-590a-98ac-9986eff120b4",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "8d712eff-5041-5c13-94b7-cbb023d00b5b",
+    "page": 117
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "8d712eff-5041-5c13-94b7-cbb023d00b5b",
+    "page": 117
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "8d712eff-5041-5c13-94b7-cbb023d00b5b",
+    "page": 117
+  },
+  {
+    "id": "concept:navtej-singh-johar-v-union-of-india:what-constitutes-the-offence",
+    "label": "Concept",
+    "name": "what constitutes the offence",
+    "confidence": 0.9,
+    "source_chunk_id": "8d712eff-5041-5c13-94b7-cbb023d00b5b",
+    "page": 117
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "017de742-9c27-52fc-9b48-f0b8716e1dfb",
+    "page": 119
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "017de742-9c27-52fc-9b48-f0b8716e1dfb",
+    "page": 119
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "017de742-9c27-52fc-9b48-f0b8716e1dfb",
+    "page": 119
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "095bc237-352d-531f-b51d-05db1efca2ed",
+    "page": 121
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:218",
+    "label": "Section",
+    "name": "Section 218",
+    "confidence": 1.0,
+    "source_chunk_id": "2b3dad39-415c-5462-ad7e-811772895858",
+    "page": 122
+  },
+  {
+    "id": "act:england-enacted-the-infamous-act",
+    "label": "Act",
+    "name": "England enacted the infamous Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2b3dad39-415c-5462-ad7e-811772895858",
+    "page": 122
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:218",
+    "label": "Section",
+    "name": "Section 218",
+    "confidence": 1.0,
+    "source_chunk_id": "dadd20f5-a7d3-5883-880e-2dcf3eb880b1",
+    "page": 124
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "dadd20f5-a7d3-5883-880e-2dcf3eb880b1",
+    "page": 124
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "11494062-e6ff-5cf1-9f39-0dba84b032bc",
+    "page": 126
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "11494062-e6ff-5cf1-9f39-0dba84b032bc",
+    "page": 126
+  },
+  {
+    "id": "act:draft-penal-code",
+    "label": "Act",
+    "name": "Draft Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "11494062-e6ff-5cf1-9f39-0dba84b032bc",
+    "page": 126
+  },
+  {
+    "id": "act:second-report-on-the-draft-penal-code",
+    "label": "Act",
+    "name": "Second Report on the Draft Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "11494062-e6ff-5cf1-9f39-0dba84b032bc",
+    "page": 126
+  },
+  {
+    "id": "act:macaulay-s-draft-penal-code",
+    "label": "Act",
+    "name": "Macaulay's Draft Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "11494062-e6ff-5cf1-9f39-0dba84b032bc",
+    "page": 126
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:macaulay-s-draft-penal-code",
+    "label": "Act",
+    "name": "Macaulay's Draft Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:the-silence-of-the-penal-code",
+    "label": "Act",
+    "name": "The silence of the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:second-report-on-the-indian-penal-code",
+    "label": "Act",
+    "name": "Second Report on the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:a-penal-code",
+    "label": "Act",
+    "name": "A Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "act:the-second-report-on-the-indian-penal-code",
+    "label": "Act",
+    "name": "The Second Report on the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bed2cd4f-1183-5812-82eb-2d18499d5841",
+    "page": 127
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "act:a-penal-code",
+    "label": "Act",
+    "name": "A Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "act:the-second-report-on-the-indian-penal-code",
+    "label": "Act",
+    "name": "The Second Report on the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "eeba5f0d-deb4-5a1e-899a-5776eb5b4970",
+    "page": 128
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "f7c9e364-9704-546a-bb74-ad5fdd5ab9f1",
+    "page": 130
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "702b4e92-431c-5298-9f8c-80919a6f50c9",
+    "page": 132
+  },
+  {
+    "id": "article:constitution_of_india:241",
+    "label": "Article",
+    "name": "Article 241",
+    "confidence": 1.0,
+    "source_chunk_id": "702b4e92-431c-5298-9f8c-80919a6f50c9",
+    "page": 132
+  },
+  {
+    "id": "article:constitution_of_india:10",
+    "label": "Article",
+    "name": "Article 10",
+    "confidence": 1.0,
+    "source_chunk_id": "702b4e92-431c-5298-9f8c-80919a6f50c9",
+    "page": 132
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "702b4e92-431c-5298-9f8c-80919a6f50c9",
+    "page": 132
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "article:constitution_of_india:24",
+    "label": "Article",
+    "name": "Article 24",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "article:constitution_of_india:33",
+    "label": "Article",
+    "name": "Article 33",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:154",
+    "label": "Section",
+    "name": "Section 154",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "54d7fa2b-455b-57ad-aad6-e67e77f6d357",
+    "page": 136
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:154",
+    "label": "Section",
+    "name": "Section 154",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:623",
+    "label": "Section",
+    "name": "Section 623",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:678",
+    "label": "Section",
+    "name": "Section 678",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "act:penal-code-act",
+    "label": "Act",
+    "name": "Penal Code Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ed9343b3-ec98-591c-b7c1-28d7cd00b9ca",
+    "page": 137
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4f6807a8-1fa0-5e7a-a16b-16d75659f17f",
+    "page": 139
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:623",
+    "label": "Section",
+    "name": "Section 623",
+    "confidence": 1.0,
+    "source_chunk_id": "4f6807a8-1fa0-5e7a-a16b-16d75659f17f",
+    "page": 139
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "4f6807a8-1fa0-5e7a-a16b-16d75659f17f",
+    "page": 139
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:678",
+    "label": "Section",
+    "name": "Section 678",
+    "confidence": 1.0,
+    "source_chunk_id": "4f6807a8-1fa0-5e7a-a16b-16d75659f17f",
+    "page": 139
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:609",
+    "label": "Section",
+    "name": "Section 609",
+    "confidence": 1.0,
+    "source_chunk_id": "4f6807a8-1fa0-5e7a-a16b-16d75659f17f",
+    "page": 139
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c8068e12-3125-5199-83af-2021d51fee30",
+    "page": 141
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:609",
+    "label": "Section",
+    "name": "Section 609",
+    "confidence": 1.0,
+    "source_chunk_id": "c8068e12-3125-5199-83af-2021d51fee30",
+    "page": 141
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:747",
+    "label": "Section",
+    "name": "Section 747",
+    "confidence": 1.0,
+    "source_chunk_id": "c8068e12-3125-5199-83af-2021d51fee30",
+    "page": 141
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c8068e12-3125-5199-83af-2021d51fee30",
+    "page": 141
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "235c7c9d-079a-5692-8bc0-53c8466679a7",
+    "page": 143
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "235c7c9d-079a-5692-8bc0-53c8466679a7",
+    "page": 143
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:438",
+    "label": "Section",
+    "name": "Section 438",
+    "confidence": 1.0,
+    "source_chunk_id": "235c7c9d-079a-5692-8bc0-53c8466679a7",
+    "page": 143
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "235c7c9d-079a-5692-8bc0-53c8466679a7",
+    "page": 143
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "235c7c9d-079a-5692-8bc0-53c8466679a7",
+    "page": 143
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "62167764-aeac-5a54-8692-9e7328573195",
+    "page": 145
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f30feb21-df03-5f91-a0bf-465bb3342aa9",
+    "page": 147
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f30feb21-df03-5f91-a0bf-465bb3342aa9",
+    "page": 147
+  },
+  {
+    "id": "judgment:shayara-bano",
+    "label": "Judgment",
+    "name": "Shayara Bano",
+    "confidence": 1.0,
+    "source_chunk_id": "f30feb21-df03-5f91-a0bf-465bb3342aa9",
+    "page": 147
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "judgment:shayara-bano",
+    "label": "Judgment",
+    "name": "Shayara Bano",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "judgment:navtej-singh-johar",
+    "label": "Judgment",
+    "name": "Navtej Singh Johar",
+    "confidence": 1.0,
+    "source_chunk_id": "82878aa9-edbd-515e-a319-650acadd2e57",
+    "page": 148
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "act:while-engrafting-the-provision-into-chapter-xx-of-the-penal-code",
+    "label": "Act",
+    "name": "While engrafting the provision into Chapter XX of the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "act:cognizance-of-an-offence-under-chapter-xx-of-the-penal-code",
+    "label": "Act",
+    "name": "Cognizance of an offence under Chapter XX of the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "272fdede-78c4-52ed-acd2-cdec2d3e92ab",
+    "page": 150
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f4427b9a-7ede-5322-96c3-edb12303953f",
+    "page": 152
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "f4427b9a-7ede-5322-96c3-edb12303953f",
+    "page": 152
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "f4427b9a-7ede-5322-96c3-edb12303953f",
+    "page": 152
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "863c8d02-ae9d-525a-bc2f-3061d3969f9a",
+    "page": 154
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "80fb6cb5-1251-543e-b52e-cfc73cdc4fca",
+    "page": 156
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "80fb6cb5-1251-543e-b52e-cfc73cdc4fca",
+    "page": 156
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "80fb6cb5-1251-543e-b52e-cfc73cdc4fca",
+    "page": 156
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "de9647ad-24d8-52fe-a76d-3e28d0cd2000",
+    "page": 158
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "988b7728-fdaf-5423-a5dc-e2e178966f7d",
+    "page": 160
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "988b7728-fdaf-5423-a5dc-e2e178966f7d",
+    "page": 160
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "988b7728-fdaf-5423-a5dc-e2e178966f7d",
+    "page": 160
+  },
+  {
+    "id": "act:punjab-excise-act-1914",
+    "label": "Act",
+    "name": "Punjab Excise Act, 1914",
+    "confidence": 1.0,
+    "source_chunk_id": "988b7728-fdaf-5423-a5dc-e2e178966f7d",
+    "page": 160
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf591ea-41b0-5325-b299-829adbd37290",
+    "page": 161
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf591ea-41b0-5325-b299-829adbd37290",
+    "page": 161
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf591ea-41b0-5325-b299-829adbd37290",
+    "page": 161
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf591ea-41b0-5325-b299-829adbd37290",
+    "page": 161
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9dd54274-88d4-5e58-9cfa-00dd5bef2492",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "9dd54274-88d4-5e58-9cfa-00dd5bef2492",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "9dd54274-88d4-5e58-9cfa-00dd5bef2492",
+    "page": 162
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "9dd54274-88d4-5e58-9cfa-00dd5bef2492",
+    "page": 162
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b87e2dd2-8bf5-5441-a468-3b4034fee769",
+    "page": 165
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "b87e2dd2-8bf5-5441-a468-3b4034fee769",
+    "page": 165
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "b87e2dd2-8bf5-5441-a468-3b4034fee769",
+    "page": 165
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "094efaf0-f2e8-55c6-aae1-cf772d4649d5",
+    "page": 167
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "094efaf0-f2e8-55c6-aae1-cf772d4649d5",
+    "page": 167
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "094efaf0-f2e8-55c6-aae1-cf772d4649d5",
+    "page": 167
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "66f9ff11-8086-5740-b8de-a4648a22acec",
+    "page": 169
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "66f9ff11-8086-5740-b8de-a4648a22acec",
+    "page": 169
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "31fc61d1-b8af-5522-ab8b-447592594836",
+    "page": 170
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "31fc61d1-b8af-5522-ab8b-447592594836",
+    "page": 170
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1501c2f9-add0-545c-bd1c-c4424e816183",
+    "page": 172
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "1501c2f9-add0-545c-bd1c-c4424e816183",
+    "page": 172
+  },
+  {
+    "id": "concept:navtej-singh-johar-v-union-of-india:the-individualism-of",
+    "label": "Concept",
+    "name": "the individualism of",
+    "confidence": 0.9,
+    "source_chunk_id": "1501c2f9-add0-545c-bd1c-c4424e816183",
+    "page": 172
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "1501c2f9-add0-545c-bd1c-c4424e816183",
+    "page": 172
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "018672a8-6356-5cb5-9592-ee2b5947f79b",
+    "page": 174
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "018672a8-6356-5cb5-9592-ee2b5947f79b",
+    "page": 174
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "018672a8-6356-5cb5-9592-ee2b5947f79b",
+    "page": 174
+  },
+  {
+    "id": "concept:navtej-singh-johar-v-union-of-india:the-sanctity-of-marriage-in-terms-of",
+    "label": "Concept",
+    "name": "the sanctity of marriage in terms of",
+    "confidence": 0.9,
+    "source_chunk_id": "018672a8-6356-5cb5-9592-ee2b5947f79b",
+    "page": 174
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "d6515c8f-9916-5cf2-86a4-e8657c16f76a",
+    "page": 176
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "67461317-b957-5367-9ef9-efc5ac8723ff",
+    "page": 177
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "67461317-b957-5367-9ef9-efc5ac8723ff",
+    "page": 177
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "466df6b7-1681-5211-a0e2-8345bf69b2fa",
+    "page": 179
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "466df6b7-1681-5211-a0e2-8345bf69b2fa",
+    "page": 179
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "466df6b7-1681-5211-a0e2-8345bf69b2fa",
+    "page": 179
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d3e7073e-2d6f-58d6-b0d1-a94a744fcace",
+    "page": 181
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "article:constitution_of_india:255",
+    "label": "Article",
+    "name": "Article 255",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:59",
+    "label": "Section",
+    "name": "Section 59",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:33",
+    "label": "Section",
+    "name": "Section 33",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:matrimonial-causes-act-1857",
+    "label": "Act",
+    "name": "Matrimonial Causes Act, 1857",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:matrimonial-causes-act",
+    "label": "Act",
+    "name": "Matrimonial Causes Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:matrimonial-causes-act-1923",
+    "label": "Act",
+    "name": "Matrimonial Causes Act, 1923",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:a-penal-code",
+    "label": "Act",
+    "name": "A Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:report-on-the-indian-penal-code",
+    "label": "Act",
+    "name": "Report on the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:the-second-report-on-the-indian-penal-code",
+    "label": "Act",
+    "name": "The Second Report on the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:the-silence-of-the-penal-code",
+    "label": "Act",
+    "name": "The silence of the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:indian-law-commissioners-while-drafting-the-indian-penal-code",
+    "label": "Act",
+    "name": "Indian Law Commissioners while drafting the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:adultery-is-punishable-by-the-code",
+    "label": "Act",
+    "name": "Adultery is punishable by the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:it-is-provided-for-in-the-code",
+    "label": "Act",
+    "name": "It is provided for in the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:illinois-criminal-code",
+    "label": "Act",
+    "name": "Illinois Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:utah-code",
+    "label": "Act",
+    "name": "Utah Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "act:criminal-code",
+    "label": "Act",
+    "name": "Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "6dc498bc-c527-5bce-a0fd-01da880bf9b7",
+    "page": 182
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "article:constitution_of_india:770",
+    "label": "Article",
+    "name": "Article 770",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "article:constitution_of_india:241",
+    "label": "Article",
+    "name": "Article 241",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "article:constitution_of_india:10",
+    "label": "Article",
+    "name": "Article 10",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:172",
+    "label": "Section",
+    "name": "Section 172",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:54",
+    "label": "Section",
+    "name": "Section 54",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:58",
+    "label": "Section",
+    "name": "Section 58",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:183",
+    "label": "Section",
+    "name": "Section 183",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:criminal-code",
+    "label": "Act",
+    "name": "Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:the-criminal-code",
+    "label": "Act",
+    "name": "The Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:divorce-act-1968",
+    "label": "Act",
+    "name": "Divorce Act, 1968",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:japan-under-the-civil-code",
+    "label": "Act",
+    "name": "Japan under the Civil Code",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:penal-code-1907",
+    "label": "Act",
+    "name": "Penal Code, 1907",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:revision-of-criminal-code",
+    "label": "Act",
+    "name": "Revision of Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:civil-code-1896",
+    "label": "Act",
+    "name": "Civil Code, 1896",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "act:turkish-penal-code",
+    "label": "Act",
+    "name": "Turkish Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "62c4cc0a-0dc1-596b-a550-74613bab7fc0",
+    "page": 208
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "cba73b12-878f-5d6f-8dcb-78700aeaf443",
+    "page": 215
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "15e96044-4333-5d97-92b5-4bd25d955ae6",
+    "page": 218
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "15e96044-4333-5d97-92b5-4bd25d955ae6",
+    "page": 218
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "15e96044-4333-5d97-92b5-4bd25d955ae6",
+    "page": 218
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "15e96044-4333-5d97-92b5-4bd25d955ae6",
+    "page": 218
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:479",
+    "label": "Section",
+    "name": "Section 479",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "d4bad6b0-ae43-53cd-a76d-499c6e35017b",
+    "page": 219
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "11bd9e3f-75c3-5d86-95d6-ed8c9938e657",
+    "page": 227
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "11bd9e3f-75c3-5d86-95d6-ed8c9938e657",
+    "page": 227
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "11bd9e3f-75c3-5d86-95d6-ed8c9938e657",
+    "page": 227
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "11bd9e3f-75c3-5d86-95d6-ed8c9938e657",
+    "page": 227
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "aeb0b394-f380-55ee-aaf7-9c5a170636d5",
+    "page": 231
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "aeb0b394-f380-55ee-aaf7-9c5a170636d5",
+    "page": 231
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "aeb0b394-f380-55ee-aaf7-9c5a170636d5",
+    "page": 231
+  },
+  {
+    "id": "act:a-penal-code",
+    "label": "Act",
+    "name": "A Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "aeb0b394-f380-55ee-aaf7-9c5a170636d5",
+    "page": 231
+  },
+  {
+    "id": "concept:navtej-singh-johar-v-union-of-india:the-contours-of-the-discussion-which-is-going-to-ensue",
+    "label": "Concept",
+    "name": "the contours of the discussion which is going to ensue",
+    "confidence": 0.9,
+    "source_chunk_id": "aeb0b394-f380-55ee-aaf7-9c5a170636d5",
+    "page": 231
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "03005c7a-859d-508c-b7dd-fae925827f38",
+    "page": 233
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "03005c7a-859d-508c-b7dd-fae925827f38",
+    "page": 233
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "03005c7a-859d-508c-b7dd-fae925827f38",
+    "page": 233
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "03005c7a-859d-508c-b7dd-fae925827f38",
+    "page": 233
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "03005c7a-859d-508c-b7dd-fae925827f38",
+    "page": 233
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "819a65d4-5d6d-5b60-ba16-08dc125e2fd0",
+    "page": 235
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "819a65d4-5d6d-5b60-ba16-08dc125e2fd0",
+    "page": 235
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "819a65d4-5d6d-5b60-ba16-08dc125e2fd0",
+    "page": 235
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2d5a1201-39c7-59da-b7c6-f48affb3e35c",
+    "page": 237
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "2d5a1201-39c7-59da-b7c6-f48affb3e35c",
+    "page": 237
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "2d5a1201-39c7-59da-b7c6-f48affb3e35c",
+    "page": 237
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "54f7c686-63ef-5e37-8d39-b071c858a365",
+    "page": 243
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:497",
+    "label": "Section",
+    "name": "Section 497",
+    "confidence": 1.0,
+    "source_chunk_id": "54f7c686-63ef-5e37-8d39-b071c858a365",
+    "page": 243
+  },
+  {
+    "id": "section:navtej-singh-johar-v-union-of-india:198",
+    "label": "Section",
+    "name": "Section 198",
+    "confidence": 1.0,
+    "source_chunk_id": "54f7c686-63ef-5e37-8d39-b071c858a365",
+    "page": 243
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "54f7c686-63ef-5e37-8d39-b071c858a365",
+    "page": 243
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "54f7c686-63ef-5e37-8d39-b071c858a365",
+    "page": 243
+  }
+]

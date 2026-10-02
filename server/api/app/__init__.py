@@ -1,0 +1,1 @@
+"""LegalGraph API application package."""

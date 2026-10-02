@@ -1,0 +1,23 @@
+{
+  "eval_q05": {
+    "target_year": 1978,
+    "effective_status": "IN_FORCE",
+    "milestone": "Maneka Gandhi v. Union of India decision"
+  },
+  "eval_q07": {
+    "target_year": 1978,
+    "temporal_operator": "BEFORE",
+    "effective_status": "SUPERSEDED",
+    "milestone": "Pre-44th Constitutional Amendment Act"
+  },
+  "eval_q08": {
+    "temporal_operator": "AFTER",
+    "effective_status": "IN_FORCE",
+    "milestone": "Post-44th Constitutional Amendment Act"
+  },
+  "eval_q09": {
+    "target_year": 1978,
+    "effective_status": "HISTORICAL",
+    "milestone": "1978 Constitutional Landscape"
+  }
+}

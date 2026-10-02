@@ -1,0 +1,4266 @@
+[
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "059a5d61-f0f0-5bed-8d23-6f105030d57b",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:18a",
+    "label": "Section",
+    "name": "Section 18A",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "act:act-which-inserted-the-impugned-nationalisation-act",
+    "label": "Act",
+    "name": "Act which inserted the impugned Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "person:per-chandrachud-c-j",
+    "label": "Person",
+    "name": "Per Chandrachud. C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "c6648cbc-79ce-59ac-8b78-b2af28bbd436",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "1d60afdf-6548-59cd-aca0-0dbd9542e96b",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "5b2509db-c8a3-5a36-bfec-d7cd0ed5ee18",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4becd2fa-0079-550d-a3ae-2cb881a5914c",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "4becd2fa-0079-550d-a3ae-2cb881a5914c",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "4becd2fa-0079-550d-a3ae-2cb881a5914c",
+    "page": 6
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "4becd2fa-0079-550d-a3ae-2cb881a5914c",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "fc29348a-97c1-531d-973d-e60c049cea37",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "fc29348a-97c1-531d-973d-e60c049cea37",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "fc29348a-97c1-531d-973d-e60c049cea37",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b46d6f9d-76e2-53c1-9b31-07a4a4db52c0",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "b46d6f9d-76e2-53c1-9b31-07a4a4db52c0",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "b46d6f9d-76e2-53c1-9b31-07a4a4db52c0",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "b46d6f9d-76e2-53c1-9b31-07a4a4db52c0",
+    "page": 8
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "b46d6f9d-76e2-53c1-9b31-07a4a4db52c0",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:39",
+    "label": "Section",
+    "name": "Section 39",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "act:now-either-the-nationalisation-act",
+    "label": "Act",
+    "name": "Now either the Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1e71e71e-e7cf-551a-b004-ca012706f088",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "concept:minerva-mills-ltd-v-union-of-india:the-limits-of-those",
+    "label": "Concept",
+    "name": "the limits of those",
+    "confidence": 0.9,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "9752979b-24ae-5851-af5b-044455cf7963",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "401b31fd-3798-58b1-b572-ad9fbae903de",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "401b31fd-3798-58b1-b572-ad9fbae903de",
+    "page": 11
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "401b31fd-3798-58b1-b572-ad9fbae903de",
+    "page": 11
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "401b31fd-3798-58b1-b572-ad9fbae903de",
+    "page": 11
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "401b31fd-3798-58b1-b572-ad9fbae903de",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "611e985d-050c-5275-906a-b344f066a66d",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "611e985d-050c-5275-906a-b344f066a66d",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "611e985d-050c-5275-906a-b344f066a66d",
+    "page": 11
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "611e985d-050c-5275-906a-b344f066a66d",
+    "page": 11
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "611e985d-050c-5275-906a-b344f066a66d",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:23",
+    "label": "Article",
+    "name": "Article 23",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "6472ee58-2257-5218-adf2-1e41b96a2d0f",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c1aeca13-4ea6-5a5e-8c2b-7dd7d2a09a3c",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "c1aeca13-4ea6-5a5e-8c2b-7dd7d2a09a3c",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "c1aeca13-4ea6-5a5e-8c2b-7dd7d2a09a3c",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4dfb9431-2b2c-5b64-8450-214397d0bf99",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "4dfb9431-2b2c-5b64-8450-214397d0bf99",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4dfb9431-2b2c-5b64-8450-214397d0bf99",
+    "page": 15
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6a5946-3b6c-54d5-8c73-620767104ac7",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "777113d4-6c77-5cef-9d03-34780ced50bb",
+    "page": 17
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "777113d4-6c77-5cef-9d03-34780ced50bb",
+    "page": 17
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "777113d4-6c77-5cef-9d03-34780ced50bb",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "a664e525-7063-512c-b006-c354a5ea19e8",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "1f2f1a2b-dd01-575b-bd45-62e0e291766f",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "1f2f1a2b-dd01-575b-bd45-62e0e291766f",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "1f2f1a2b-dd01-575b-bd45-62e0e291766f",
+    "page": 18
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "f32fe32b-2a2d-55ad-bf86-dde156b9aa93",
+    "page": 19
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "a9349667-11fd-521b-b9aa-c1709fcf22bb",
+    "page": 19
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "act:golakhnath-s-case-and-the-twenty-ninth-amendment-act",
+    "label": "Act",
+    "name": "Golakhnath's case and the Twenty Ninth Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "8e9e84c3-b62e-5b63-a15e-9f7267d3ed5b",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6b1d38c9-a559-594e-96f1-fb3b390871df",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6b1d38c9-a559-594e-96f1-fb3b390871df",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6b1d38c9-a559-594e-96f1-fb3b390871df",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "6b1d38c9-a559-594e-96f1-fb3b390871df",
+    "page": 21
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "6b1d38c9-a559-594e-96f1-fb3b390871df",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "act:fortieth-amendment-act-1976",
+    "label": "Act",
+    "name": "Fortieth Amendment Act, 1976",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "act:amendment-act-1975",
+    "label": "Act",
+    "name": "Amendment Act, 1975",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "e5a5a55b-9efc-5520-8f3f-459662a93d39",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "act:amendment-act-1975",
+    "label": "Act",
+    "name": "Amendment Act, 1975",
+    "confidence": 1.0,
+    "source_chunk_id": "831e26e6-b78a-5ab2-8327-247972d47ea9",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6b869bf0-6553-53bb-a579-fe877d47a48b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "6b869bf0-6553-53bb-a579-fe877d47a48b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "6b869bf0-6553-53bb-a579-fe877d47a48b",
+    "page": 23
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "6b869bf0-6553-53bb-a579-fe877d47a48b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "1d603bdc-7521-539c-8088-ab97eff2e37e",
+    "page": 25
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "1d603bdc-7521-539c-8088-ab97eff2e37e",
+    "page": 25
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "1d603bdc-7521-539c-8088-ab97eff2e37e",
+    "page": 25
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:18a",
+    "label": "Section",
+    "name": "Section 18A",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "act:development-and-regulation-act-1951",
+    "label": "Act",
+    "name": "Development and Regulation Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "act:act-which-inserted-the-impugned-nationalisation-act",
+    "label": "Act",
+    "name": "Act which inserted the impugned Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "amendment:const_amendment_39",
+    "label": "Amendment",
+    "name": "39th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "063c8d05-2b0c-5ea0-8cca-d2327fe89473",
+    "page": 26
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "dadbd53f-a0de-577c-8626-d9e15bfd6a86",
+    "page": 28
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "5b894b23-c497-59a8-93ac-0d6873725f41",
+    "page": 29
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:329a",
+    "label": "Article",
+    "name": "Article 329A",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c7c44661-6d66-5b73-8b83-5550a89b8ac6",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "7817c6fc-535c-524c-a9bb-ef71b07ea862",
+    "page": 31
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "93dbc3fe-6620-5af6-8eeb-23f37e55d8b9",
+    "page": 31
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bd50ecbe-7e0c-50d5-85c8-19a783d1d17b",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "bd50ecbe-7e0c-50d5-85c8-19a783d1d17b",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "bd50ecbe-7e0c-50d5-85c8-19a783d1d17b",
+    "page": 32
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "bd50ecbe-7e0c-50d5-85c8-19a783d1d17b",
+    "page": 32
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "bd50ecbe-7e0c-50d5-85c8-19a783d1d17b",
+    "page": 32
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "b3d002a3-aaa0-502b-83a2-875d14cd3513",
+    "page": 32
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a443622b-4514-5b8c-a154-6bbff96269f6",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "a443622b-4514-5b8c-a154-6bbff96269f6",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "a443622b-4514-5b8c-a154-6bbff96269f6",
+    "page": 33
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "a443622b-4514-5b8c-a154-6bbff96269f6",
+    "page": 33
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "a443622b-4514-5b8c-a154-6bbff96269f6",
+    "page": 33
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:18a",
+    "label": "Section",
+    "name": "Section 18A",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "e1ed4fdd-0800-50b9-b2f4-f67cb09903d9",
+    "page": 33
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "1619bb98-9114-5442-be3d-65634844015e",
+    "page": 38
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "34f6d0f1-2e2b-5da3-880a-fe068504fd03",
+    "page": 39
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "3a90b735-54a8-5370-980b-64e67d3f7b94",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "act:acts-were-passed-by-the-legislature-amending-the-principal-act",
+    "label": "Act",
+    "name": "Acts were passed by the legislature amending the principal Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "d7a34283-980f-5fc5-a19a-d6ba2c754697",
+    "page": 41
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:18a",
+    "label": "Section",
+    "name": "Section 18A",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "85e52085-4e9d-50ef-8a08-2508fd313b93",
+    "page": 44
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "f16d4517-f8f6-5bc3-a17a-4729862be6a6",
+    "page": 45
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:39",
+    "label": "Section",
+    "name": "Section 39",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "act:amendment-act-1976",
+    "label": "Act",
+    "name": "Amendment Act, 1976",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "act:now-either-the-nationalisation-act",
+    "label": "Act",
+    "name": "Now either the Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d7b35d13-527d-5fae-8336-27c6659a5922",
+    "page": 45
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d61e9414-976d-502f-a3cd-45664b6df227",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "d61e9414-976d-502f-a3cd-45664b6df227",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "d61e9414-976d-502f-a3cd-45664b6df227",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "d61e9414-976d-502f-a3cd-45664b6df227",
+    "page": 46
+  },
+  {
+    "id": "act:nationalisation-act",
+    "label": "Act",
+    "name": "Nationalisation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d61e9414-976d-502f-a3cd-45664b6df227",
+    "page": 46
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "person:sikri-c-j",
+    "label": "Person",
+    "name": "Sikri C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "26eb936b-7b41-56f7-a6b7-819c126164c5",
+    "page": 47
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:141",
+    "label": "Article",
+    "name": "Article 141",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "990c75f0-69e2-55b2-8738-a897cc9d63df",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c24c1a77-561b-5ee4-ba64-01bdbabf574d",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "c24c1a77-561b-5ee4-ba64-01bdbabf574d",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "c24c1a77-561b-5ee4-ba64-01bdbabf574d",
+    "page": 49
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "c24c1a77-561b-5ee4-ba64-01bdbabf574d",
+    "page": 49
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c24c1a77-561b-5ee4-ba64-01bdbabf574d",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "96ec0397-f962-55e6-805c-b52311fc9db7",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "96ec0397-f962-55e6-805c-b52311fc9db7",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "96ec0397-f962-55e6-805c-b52311fc9db7",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "96ec0397-f962-55e6-805c-b52311fc9db7",
+    "page": 50
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:141",
+    "label": "Article",
+    "name": "Article 141",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:329a",
+    "label": "Article",
+    "name": "Article 329A",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "person:sikri-c-j",
+    "label": "Person",
+    "name": "Sikri. C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "06c3a665-3da5-5458-95e2-5b644a458181",
+    "page": 50
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "concept:minerva-mills-ltd-v-union-of-india:the-limits-of-those-powers",
+    "label": "Concept",
+    "name": "the limits of those powers",
+    "confidence": 0.9,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "amendment:const_amendment_1976",
+    "label": "Amendment",
+    "name": "1976th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "94d327ba-7ac7-5834-84bb-127cd81288dd",
+    "page": 52
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ca05fbc4-b64d-59a4-bf4b-b20a7d0f948c",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "ca05fbc4-b64d-59a4-bf4b-b20a7d0f948c",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:329a",
+    "label": "Article",
+    "name": "Article 329A",
+    "confidence": 1.0,
+    "source_chunk_id": "ca05fbc4-b64d-59a4-bf4b-b20a7d0f948c",
+    "page": 56
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "ca05fbc4-b64d-59a4-bf4b-b20a7d0f948c",
+    "page": 56
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "ca05fbc4-b64d-59a4-bf4b-b20a7d0f948c",
+    "page": 56
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "3cca6ea9-c382-58a0-b421-0968187ad815",
+    "page": 56
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0a91f6-8650-5713-9920-9700f53f5d77",
+    "page": 57
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "91cbff0d-ef35-514e-a3e8-3dc259f0faf6",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "91cbff0d-ef35-514e-a3e8-3dc259f0faf6",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "91cbff0d-ef35-514e-a3e8-3dc259f0faf6",
+    "page": 57
+  },
+  {
+    "id": "act:first-amendment-act",
+    "label": "Act",
+    "name": "First Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "91cbff0d-ef35-514e-a3e8-3dc259f0faf6",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "545c9aa8-de0a-51fa-909e-688044d20282",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "545c9aa8-de0a-51fa-909e-688044d20282",
+    "page": 58
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "545c9aa8-de0a-51fa-909e-688044d20282",
+    "page": 58
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7e0e7909-a9d6-5a08-990e-bf030251f39b",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "7e0e7909-a9d6-5a08-990e-bf030251f39b",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "7e0e7909-a9d6-5a08-990e-bf030251f39b",
+    "page": 58
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7e0e7909-a9d6-5a08-990e-bf030251f39b",
+    "page": 58
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "7e0e7909-a9d6-5a08-990e-bf030251f39b",
+    "page": 58
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:31b",
+    "label": "Article",
+    "name": "Article 31B",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "act:the-west-bengal-land-development-and-planning-act-1948",
+    "label": "Act",
+    "name": "The West Bengal Land Development and Planning Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "act:west-bengal-act",
+    "label": "Act",
+    "name": "West Bengal Act",
+    "confidence": 1.0,
+    "source_chunk_id": "13675473-c13a-5602-bca3-7a0d47fb6023",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "8b3db851-a5bb-5cc8-82c4-fd5633c053fc",
+    "page": 60
+  },
+  {
+    "id": "act:west-bengal-acts-as-also-the-abovementioned-central-act",
+    "label": "Act",
+    "name": "West Bengal Acts as also the abovementioned Central Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8b3db851-a5bb-5cc8-82c4-fd5633c053fc",
+    "page": 60
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:3113",
+    "label": "Article",
+    "name": "Article 3113",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "act:west-bengal-acts-as-also-the-abovementioned-central-act",
+    "label": "Act",
+    "name": "West Bengal Acts as also the abovementioned Central Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "act:case-recast-ai-the-same-amending-act",
+    "label": "Act",
+    "name": "CASE RECAST AI the same amending Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "act:the-validity-of-the-twenty-ninth-amendment-act",
+    "label": "Act",
+    "name": "The validity of the Twenty Ninth Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "act:golak-nath-s-case-and-the-twenty-ninth-amendment-act",
+    "label": "Act",
+    "name": "Golak Nath's case and the Twenty Ninth Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "person:ray-c-j",
+    "label": "Person",
+    "name": "Ray. C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "1534be7f-cd6a-5e3c-92cd-e19411bc9755",
+    "page": 60
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cfa83d0a-a9e5-564d-a1e2-806075a600cb",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "cfa83d0a-a9e5-564d-a1e2-806075a600cb",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "cfa83d0a-a9e5-564d-a1e2-806075a600cb",
+    "page": 61
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "cfa83d0a-a9e5-564d-a1e2-806075a600cb",
+    "page": 61
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "cfa83d0a-a9e5-564d-a1e2-806075a600cb",
+    "page": 61
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "12645b45-7631-5178-b57c-f665264380af",
+    "page": 62
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "59d64667-566e-5681-be81-fdbffd9c8be9",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "59d64667-566e-5681-be81-fdbffd9c8be9",
+    "page": 62
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "59d64667-566e-5681-be81-fdbffd9c8be9",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4fab3705-652f-5b16-9928-75851bc72acc",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "4fab3705-652f-5b16-9928-75851bc72acc",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "4fab3705-652f-5b16-9928-75851bc72acc",
+    "page": 63
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:318",
+    "label": "Article",
+    "name": "Article 318",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:31a",
+    "label": "Article",
+    "name": "Article 31A",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:35",
+    "label": "Article",
+    "name": "Article 35",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:48",
+    "label": "Section",
+    "name": "Section 48",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "act:extension-of-duration-act-1976",
+    "label": "Act",
+    "name": "Extension of Duration Act, 1976",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "act:amendments-act-1976",
+    "label": "Act",
+    "name": "Amendments Act, 1976",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "4353b85e-e048-5f1a-b926-936070588347",
+    "page": 63
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:250",
+    "label": "Article",
+    "name": "Article 250",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:353",
+    "label": "Article",
+    "name": "Article 353",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:354",
+    "label": "Article",
+    "name": "Article 354",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:358",
+    "label": "Article",
+    "name": "Article 358",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:35",
+    "label": "Article",
+    "name": "Article 35",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "act:extension-of-duration-act-1976",
+    "label": "Act",
+    "name": "Extension of Duration Act, 1976",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "5f5dcd5e-ca5d-5e06-be78-d4db0ad65532",
+    "page": 66
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "202f2cbf-6a4a-59b1-837d-15219cca48f8",
+    "page": 70
+  },
+  {
+    "id": "article:constitution_of_india:83",
+    "label": "Article",
+    "name": "Article 83",
+    "confidence": 1.0,
+    "source_chunk_id": "202f2cbf-6a4a-59b1-837d-15219cca48f8",
+    "page": 70
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "202f2cbf-6a4a-59b1-837d-15219cca48f8",
+    "page": 70
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "202f2cbf-6a4a-59b1-837d-15219cca48f8",
+    "page": 70
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "4d6b114a-39d1-5268-8274-5884e73f244d",
+    "page": 71
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0e6fe88b-497c-56ba-99eb-9e7c4851ccf9",
+    "page": 73
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "0e6fe88b-497c-56ba-99eb-9e7c4851ccf9",
+    "page": 73
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "0e6fe88b-497c-56ba-99eb-9e7c4851ccf9",
+    "page": 73
+  },
+  {
+    "id": "article:constitution_of_india:23",
+    "label": "Article",
+    "name": "Article 23",
+    "confidence": 1.0,
+    "source_chunk_id": "0e6fe88b-497c-56ba-99eb-9e7c4851ccf9",
+    "page": 73
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3be68193-d54b-5b3b-aabc-7faedc059d88",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "3be68193-d54b-5b3b-aabc-7faedc059d88",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:45",
+    "label": "Article",
+    "name": "Article 45",
+    "confidence": 1.0,
+    "source_chunk_id": "3be68193-d54b-5b3b-aabc-7faedc059d88",
+    "page": 76
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "957baa5b-6a6b-56f3-bba5-401fabebf50e",
+    "page": 77
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:37",
+    "label": "Article",
+    "name": "Article 37",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "7e4aaa7d-145c-54c8-b938-7115ac6b46a6",
+    "page": 79
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "d83f82df-0112-5cf2-900c-04bf9e224172",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "d83f82df-0112-5cf2-900c-04bf9e224172",
+    "page": 83
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:47",
+    "label": "Article",
+    "name": "Article 47",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "act:bombay-prohibition-act-1949",
+    "label": "Act",
+    "name": "Bombay Prohibition Act, 1949",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "act:first-amendment-act-1951",
+    "label": "Act",
+    "name": "First Amendment Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "act:prohibition-act",
+    "label": "Act",
+    "name": "Prohibition Act",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "33128716-e02a-5487-9735-b0388bc63421",
+    "page": 83
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "section:minerva-mills-ltd-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "f9971f40-5632-51a2-9d95-301ac46a9ff3",
+    "page": 85
+  }
+]

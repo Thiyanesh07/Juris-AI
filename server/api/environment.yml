@@ -1,0 +1,42 @@
+# Conda environment for the LegalGraph API (alternative to uv + server/api/.venv).
+#
+# Create / update:
+#   cd server/api
+#   conda env create -f environment.yml    # first time
+#   conda env update -f environment.yml    # refresh deps
+#
+# Activate:
+#   conda activate juris
+#
+# Run (from server/api, with juris active):
+#   python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+#   python -m pytest
+#   python -m alembic upgrade head
+
+name: juris
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - alembic>=1.13,<2.0
+      - asyncpg>=0.29,<1.0
+      - fastapi>=0.115,<1.0
+      - httpx>=0.28,<1.0
+      - itsdangerous>=2.2,<3.0
+      - pydantic>=2.10,<3.0
+      - pydantic-settings>=2.2,<3.0
+      - pymupdf>=1.24,<2.0
+      - numpy>=2.0,<3.0
+      - neo4j>=5.26,<6.0
+      - faiss-cpu>=1.10,<2.0
+      - python-multipart>=0.0.9
+      - sqlalchemy[asyncio]>=2.0,<3.0
+      - uvicorn>=0.34,<1.0
+      - torch>=2.6,<3.0
+      - transformers>=4.48,<5.0
+      - mypy>=1.15,<2.0
+      - pytest>=8.3,<10.0
+      - pytest-asyncio>=0.24,<2.0
+      - ruff>=0.11,<1.0

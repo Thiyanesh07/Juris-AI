@@ -1,0 +1,4498 @@
+[
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "bc72d5a3-081a-536f-bb5e-cd512baa33c7",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bc72d5a3-081a-536f-bb5e-cd512baa33c7",
+    "page": 1
+  },
+  {
+    "id": "judgment:s-r-bommai",
+    "label": "Judgment",
+    "name": "S.R. BOMMAI",
+    "confidence": 1.0,
+    "source_chunk_id": "bc72d5a3-081a-536f-bb5e-cd512baa33c7",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:51",
+    "label": "Section",
+    "name": "Section 51",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "act:government-of-union-territories-act-1963",
+    "label": "Act",
+    "name": "Government of Union Territories Act, 1963",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "act:such-emergency-powers-existed-under-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Such emergency powers existed under the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "judgment:s-r-bommai",
+    "label": "Judgment",
+    "name": "S.R. BOMMAI",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f725e4-b1af-5ec7-afae-a68c350292a0",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "act:under-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Under the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e044338c-2798-563a-8021-7a19e2bd07fd",
+    "page": 3
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "a6f9d358-ae44-5320-a583-1cc4b6e947c3",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "52996756-63b0-54fd-9bad-5a5de7350bc6",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:248",
+    "label": "Article",
+    "name": "Article 248",
+    "confidence": 1.0,
+    "source_chunk_id": "52996756-63b0-54fd-9bad-5a5de7350bc6",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:73",
+    "label": "Article",
+    "name": "Article 73",
+    "confidence": 1.0,
+    "source_chunk_id": "52996756-63b0-54fd-9bad-5a5de7350bc6",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "52996756-63b0-54fd-9bad-5a5de7350bc6",
+    "page": 5
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "52996756-63b0-54fd-9bad-5a5de7350bc6",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:275",
+    "label": "Article",
+    "name": "Article 275",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:282",
+    "label": "Article",
+    "name": "Article 282",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:131",
+    "label": "Article",
+    "name": "Article 131",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:248",
+    "label": "Article",
+    "name": "Article 248",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:26",
+    "label": "Article",
+    "name": "Article 26",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:27",
+    "label": "Article",
+    "name": "Article 27",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:28",
+    "label": "Article",
+    "name": "Article 28",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "act:commissions-of-inquiry-act-1952",
+    "label": "Act",
+    "name": "Commissions of Inquiry Act, 1952",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "court:madras-high-court",
+    "label": "Court",
+    "name": "Madras High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "person:beg-c-j",
+    "label": "Person",
+    "name": "Beg C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "fb710687-3dfb-5f23-b250-7603e76e02db",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "436998bd-a014-53c2-a103-1ff336d13e87",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "436998bd-a014-53c2-a103-1ff336d13e87",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:360",
+    "label": "Article",
+    "name": "Article 360",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "act:of-course-the-privilege-available-under-the-evidence-act",
+    "label": "Act",
+    "name": "Of course the privilege available under the Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a1cff19d-c20f-5140-b40c-96729e87adec",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:365",
+    "label": "Article",
+    "name": "Article 365",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:353",
+    "label": "Article",
+    "name": "Article 353",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:354",
+    "label": "Article",
+    "name": "Article 354",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:358",
+    "label": "Article",
+    "name": "Article 358",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "act:evidence-act-1872",
+    "label": "Act",
+    "name": "Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "5b021a74-07d7-5cb2-8506-0491621e3ee7",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:277",
+    "label": "Article",
+    "name": "Article 277",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:277a",
+    "label": "Article",
+    "name": "Article 277A",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:360",
+    "label": "Article",
+    "name": "Article 360",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a96fb091-a96d-550b-aed0-d08932335aac",
+    "page": 18
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "df6d8604-b8c7-5a85-977f-040cc079c489",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:58",
+    "label": "Article",
+    "name": "Article 58",
+    "confidence": 1.0,
+    "source_chunk_id": "df6d8604-b8c7-5a85-977f-040cc079c489",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:48",
+    "label": "Article",
+    "name": "Article 48",
+    "confidence": 1.0,
+    "source_chunk_id": "df6d8604-b8c7-5a85-977f-040cc079c489",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "38a39acf-591d-5e9e-b332-0475b0fdbcc7",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:58",
+    "label": "Article",
+    "name": "Article 58",
+    "confidence": 1.0,
+    "source_chunk_id": "38a39acf-591d-5e9e-b332-0475b0fdbcc7",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:48",
+    "label": "Article",
+    "name": "Article 48",
+    "confidence": 1.0,
+    "source_chunk_id": "38a39acf-591d-5e9e-b332-0475b0fdbcc7",
+    "page": 22
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:237",
+    "label": "Section",
+    "name": "Section 237",
+    "confidence": 1.0,
+    "source_chunk_id": "38a39acf-591d-5e9e-b332-0475b0fdbcc7",
+    "page": 22
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "38a39acf-591d-5e9e-b332-0475b0fdbcc7",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:72",
+    "label": "Article",
+    "name": "Article 72",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:365",
+    "label": "Article",
+    "name": "Article 365",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:58",
+    "label": "Article",
+    "name": "Article 58",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:237",
+    "label": "Section",
+    "name": "Section 237",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a795d5b3-3c2b-53a8-a4c5-42d53bd32d37",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "act:government-of-india-act-1915",
+    "label": "Act",
+    "name": "Government of India Act, 1915",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "act:indian-evidence-act",
+    "label": "Act",
+    "name": "Indian Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "concept:s-r-bommai-v-union-of-india:these-relations-in-the-act-or-to-impose-an-obligation-on-the-governor-general-or-governor-to-be-guided-by-the-advice-of-their-ministers",
+    "label": "Concept",
+    "name": "these relations in the Act or to impose an obligation on the Governor General or Governor to be guided by the advice of their Ministers",
+    "confidence": 0.9,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "0e3af6f7-f838-5454-8f17-7149b788bc42",
+    "page": 29
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:254",
+    "label": "Article",
+    "name": "Article 254",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:4",
+    "label": "Article",
+    "name": "Article 4",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:106",
+    "label": "Section",
+    "name": "Section 106",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "3e7f742f-1c95-58d6-bbb2-e104e42e96da",
+    "page": 30
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "25859a0c-02af-51d4-876a-ada9538e6bd5",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "25859a0c-02af-51d4-876a-ada9538e6bd5",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "25859a0c-02af-51d4-876a-ada9538e6bd5",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "25859a0c-02af-51d4-876a-ada9538e6bd5",
+    "page": 36
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1780d586-cc26-5510-87fd-87407fd58708",
+    "page": 38
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "1780d586-cc26-5510-87fd-87407fd58708",
+    "page": 38
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ac9d9204-0f41-556e-b915-40833f42ce75",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "ac9d9204-0f41-556e-b915-40833f42ce75",
+    "page": 39
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ac9d9204-0f41-556e-b915-40833f42ce75",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "f98fbbb9-59da-5bc8-a1f0-0a16f2cfd2f3",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f98fbbb9-59da-5bc8-a1f0-0a16f2cfd2f3",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:174",
+    "label": "Article",
+    "name": "Article 174",
+    "confidence": 1.0,
+    "source_chunk_id": "f98fbbb9-59da-5bc8-a1f0-0a16f2cfd2f3",
+    "page": 39
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e03a3710-4e83-5546-85c7-e6a8fd034a77",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "e03a3710-4e83-5546-85c7-e6a8fd034a77",
+    "page": 40
+  },
+  {
+    "id": "court:karnataka-high-court",
+    "label": "Court",
+    "name": "Karnataka High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "e03a3710-4e83-5546-85c7-e6a8fd034a77",
+    "page": 40
+  },
+  {
+    "id": "judgment:s-r-bommai",
+    "label": "Judgment",
+    "name": "S.R. Bommai",
+    "confidence": 1.0,
+    "source_chunk_id": "e03a3710-4e83-5546-85c7-e6a8fd034a77",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fdbe4336-5a8b-55e9-9df7-fd475b1dee18",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "fdbe4336-5a8b-55e9-9df7-fd475b1dee18",
+    "page": 41
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:26",
+    "label": "Article",
+    "name": "Article 26",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "court:gauhati-high-court",
+    "label": "Court",
+    "name": "Gauhati High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "e989f8df-d6bf-58fc-a41f-637bfa3e2ddd",
+    "page": 43
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:44",
+    "label": "Article",
+    "name": "Article 44",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:174",
+    "label": "Article",
+    "name": "Article 174",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "act:representation-of-the-people-act-1951",
+    "label": "Act",
+    "name": "Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "court:gauhati-high-court",
+    "label": "Court",
+    "name": "Gauhati High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "eda2c8fa-1ffd-5e9d-852c-9bf7d8fb7656",
+    "page": 52
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "judgment:s-r-bommai",
+    "label": "Judgment",
+    "name": "S.R. Bommai",
+    "confidence": 1.0,
+    "source_chunk_id": "f004f3a7-43ae-5ecc-84e4-b6b5e7a18003",
+    "page": 56
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3e01c975-68d8-5555-8186-8a147b3a7687",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "3e01c975-68d8-5555-8186-8a147b3a7687",
+    "page": 57
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "3e01c975-68d8-5555-8186-8a147b3a7687",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f5ff99de-351f-5122-beef-d26b63a4af89",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "f5ff99de-351f-5122-beef-d26b63a4af89",
+    "page": 58
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "731e3b21-ed62-5349-b76b-64006c34e411",
+    "page": 58
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:123",
+    "label": "Article",
+    "name": "Article 123",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:143",
+    "label": "Article",
+    "name": "Article 143",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "act:federation-embodied-in-the-said-act",
+    "label": "Act",
+    "name": "Federation embodied in the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "act:states-reorganisation-act-1956",
+    "label": "Act",
+    "name": "States Reorganisation Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "61dd681c-0d85-5f06-9820-3c7e65f1fe1d",
+    "page": 60
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:254",
+    "label": "Article",
+    "name": "Article 254",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:248",
+    "label": "Article",
+    "name": "Article 248",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:73",
+    "label": "Article",
+    "name": "Article 73",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:80",
+    "label": "Article",
+    "name": "Article 80",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "act:states-reorganisation-act-1956",
+    "label": "Act",
+    "name": "States Reorganisation Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "amendment:const_amendment_73",
+    "label": "Amendment",
+    "name": "73th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e0b3fbb8-6b44-5cce-a072-160e14c4387d",
+    "page": 60
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:80",
+    "label": "Article",
+    "name": "Article 80",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:54",
+    "label": "Article",
+    "name": "Article 54",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:249",
+    "label": "Article",
+    "name": "Article 249",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:252",
+    "label": "Article",
+    "name": "Article 252",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:261",
+    "label": "Article",
+    "name": "Article 261",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:339",
+    "label": "Article",
+    "name": "Article 339",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:360",
+    "label": "Article",
+    "name": "Article 360",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:312",
+    "label": "Article",
+    "name": "Article 312",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:263",
+    "label": "Article",
+    "name": "Article 263",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:280",
+    "label": "Article",
+    "name": "Article 280",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:155",
+    "label": "Article",
+    "name": "Article 155",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:154",
+    "label": "Article",
+    "name": "Article 154",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:159",
+    "label": "Article",
+    "name": "Article 159",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:26",
+    "label": "Article",
+    "name": "Article 26",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:27",
+    "label": "Article",
+    "name": "Article 27",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:28",
+    "label": "Article",
+    "name": "Article 28",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "4eb63cfc-eddd-5ad9-b4a6-6da00647be5e",
+    "page": 62
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b83d64a-7c6f-5b2e-919a-da8ceff2150a",
+    "page": 68
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "5b83d64a-7c6f-5b2e-919a-da8ceff2150a",
+    "page": 68
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "5b83d64a-7c6f-5b2e-919a-da8ceff2150a",
+    "page": 68
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "5b83d64a-7c6f-5b2e-919a-da8ceff2150a",
+    "page": 68
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "5b83d64a-7c6f-5b2e-919a-da8ceff2150a",
+    "page": 68
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "act:it-is-significant-to-note-that-the-oaths-act-1873",
+    "label": "Act",
+    "name": "It is significant to note that the Oaths Act, 1873",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "act:oaths-act-1966",
+    "label": "Act",
+    "name": "Oaths Act, 1966",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d4dccdf7-9a1a-504b-a92c-7b560cd4dfa9",
+    "page": 68
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:324",
+    "label": "Article",
+    "name": "Article 324",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:29",
+    "label": "Section",
+    "name": "Section 29",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "act:rpa_1951",
+    "label": "Act",
+    "name": "The Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "act:a-of-the-representation-of-the-people-act-1951",
+    "label": "Act",
+    "name": "A of the Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "7d3a7c56-691b-5b0d-a8bf-971d1bac92e6",
+    "page": 69
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:133",
+    "label": "Article",
+    "name": "Article 133",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:123",
+    "label": "Article",
+    "name": "Article 123",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "act:amendment-act-1975",
+    "label": "Act",
+    "name": "Amendment Act, 1975",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "act:amendment-act-1978",
+    "label": "Act",
+    "name": "Amendment Act, 1978",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "db0ddd35-8fd2-5fa8-9f83-8025608c28e4",
+    "page": 72
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:77",
+    "label": "Article",
+    "name": "Article 77",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:142",
+    "label": "Article",
+    "name": "Article 142",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:85",
+    "label": "Article",
+    "name": "Article 85",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:86",
+    "label": "Article",
+    "name": "Article 86",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:123",
+    "label": "Article",
+    "name": "Article 123",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:200",
+    "label": "Article",
+    "name": "Article 200",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:201",
+    "label": "Article",
+    "name": "Article 201",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "25758ab6-8210-5791-b82a-27b83f83ace7",
+    "page": 74
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bf3e8142-01f2-5f67-938c-ab8a06ae155e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "bf3e8142-01f2-5f67-938c-ab8a06ae155e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:73",
+    "label": "Article",
+    "name": "Article 73",
+    "confidence": 1.0,
+    "source_chunk_id": "bf3e8142-01f2-5f67-938c-ab8a06ae155e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:71",
+    "label": "Article",
+    "name": "Article 71",
+    "confidence": 1.0,
+    "source_chunk_id": "bf3e8142-01f2-5f67-938c-ab8a06ae155e",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "bf3e8142-01f2-5f67-938c-ab8a06ae155e",
+    "page": 77
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "act:government-of-india-act",
+    "label": "Act",
+    "name": "Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "83f63cab-146a-522e-80dc-dcfe7a5669de",
+    "page": 77
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:278",
+    "label": "Article",
+    "name": "Article 278",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:188",
+    "label": "Article",
+    "name": "Article 188",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:277",
+    "label": "Article",
+    "name": "Article 277",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:114",
+    "label": "Section",
+    "name": "Section 114",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "act:government-of-india-act",
+    "label": "Act",
+    "name": "Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "53dfdb6c-7ba1-5812-af79-03bd6e54b58e",
+    "page": 78
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:277",
+    "label": "Article",
+    "name": "Article 277",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:100",
+    "label": "Article",
+    "name": "Article 100",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:73",
+    "label": "Article",
+    "name": "Article 73",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:365",
+    "label": "Article",
+    "name": "Article 365",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:257",
+    "label": "Article",
+    "name": "Article 257",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:353",
+    "label": "Article",
+    "name": "Article 353",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:360",
+    "label": "Article",
+    "name": "Article 360",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:339",
+    "label": "Article",
+    "name": "Article 339",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "act:the-analogy-of-the-provisions-in-the-government-of-india-act",
+    "label": "Act",
+    "name": "The analogy of the provisions in the Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "d066871d-e12b-54a5-81e6-e33164563ecf",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "3e64b8a9-7066-5588-b8e1-b6f865bbc254",
+    "page": 83
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:61",
+    "label": "Article",
+    "name": "Article 61",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "concept:s-r-bommai-v-union-of-india:the-use-of-constitutional-discretion",
+    "label": "Concept",
+    "name": "the use of constitutional discretion",
+    "confidence": 0.9,
+    "source_chunk_id": "579d40c0-c030-5eae-91d4-1d74103f2c36",
+    "page": 83
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "article:constitution_of_india:324",
+    "label": "Article",
+    "name": "Article 324",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "article:constitution_of_india:172",
+    "label": "Article",
+    "name": "Article 172",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_38",
+    "label": "Amendment",
+    "name": "38th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_59",
+    "label": "Amendment",
+    "name": "59th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_64",
+    "label": "Amendment",
+    "name": "64th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "amendment:const_amendment_68",
+    "label": "Amendment",
+    "name": "68th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "e25cacb3-b339-5317-b41f-ade9f4dac5f2",
+    "page": 86
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:168",
+    "label": "Article",
+    "name": "Article 168",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:172",
+    "label": "Article",
+    "name": "Article 172",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:324",
+    "label": "Article",
+    "name": "Article 324",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:329",
+    "label": "Article",
+    "name": "Article 329",
+    "confidence": 1.0,
+    "source_chunk_id": "88d6f9b0-a02e-59a6-a1fa-384bfcdaa1a0",
+    "page": 89
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:329",
+    "label": "Article",
+    "name": "Article 329",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:168",
+    "label": "Article",
+    "name": "Article 168",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:136",
+    "label": "Article",
+    "name": "Article 136",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "5a24df63-ad97-5f04-aba7-158bc4f9e0f7",
+    "page": 90
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:142",
+    "label": "Article",
+    "name": "Article 142",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:61",
+    "label": "Article",
+    "name": "Article 61",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:58",
+    "label": "Article",
+    "name": "Article 58",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:112",
+    "label": "Article",
+    "name": "Article 112",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:45",
+    "label": "Section",
+    "name": "Section 45",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:93",
+    "label": "Section",
+    "name": "Section 93",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "act:indian-evidence-act",
+    "label": "Act",
+    "name": "Indian Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "concept:s-r-bommai-v-union-of-india:the-parameters-of-this-power-and-the-parameters",
+    "label": "Concept",
+    "name": "the parameters of this power and the parameters",
+    "confidence": 0.9,
+    "source_chunk_id": "3f01cac5-ee4c-50e4-9ed2-6d9f5f547e75",
+    "page": 91
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:277",
+    "label": "Article",
+    "name": "Article 277",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:278",
+    "label": "Article",
+    "name": "Article 278",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:93",
+    "label": "Section",
+    "name": "Section 93",
+    "confidence": 1.0,
+    "source_chunk_id": "282247b9-fd69-5dae-b38f-50445f6270b5",
+    "page": 96
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:357",
+    "label": "Article",
+    "name": "Article 357",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:360",
+    "label": "Article",
+    "name": "Article 360",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "act:as-a-result-of-the-reorganization-of-states-act-1956",
+    "label": "Act",
+    "name": "As a result of the Reorganization of States Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "f4fe4217-1689-5404-b059-8acf0a379aec",
+    "page": 98
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:249",
+    "label": "Article",
+    "name": "Article 249",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:250",
+    "label": "Article",
+    "name": "Article 250",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:143",
+    "label": "Article",
+    "name": "Article 143",
+    "confidence": 1.0,
+    "source_chunk_id": "cb52cb09-2ec3-5587-ae63-5c12d7409cd8",
+    "page": 99
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:741",
+    "label": "Article",
+    "name": "Article 741",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:155",
+    "label": "Article",
+    "name": "Article 155",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:154",
+    "label": "Article",
+    "name": "Article 154",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:163",
+    "label": "Article",
+    "name": "Article 163",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:159",
+    "label": "Article",
+    "name": "Article 159",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:174",
+    "label": "Article",
+    "name": "Article 174",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:172",
+    "label": "Article",
+    "name": "Article 172",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "act:under-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Under the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "act:government-of-india-act",
+    "label": "Act",
+    "name": "Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "amendment:const_amendment_38",
+    "label": "Amendment",
+    "name": "38th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "6768fc5e-e493-51af-b194-8041aeabfaaa",
+    "page": 100
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "940654d7-1a17-5647-95ac-a21f5575a8ef",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "940654d7-1a17-5647-95ac-a21f5575a8ef",
+    "page": 106
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3c395075-597e-5054-bf64-65baad910ac5",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "3c395075-597e-5054-bf64-65baad910ac5",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "3c395075-597e-5054-bf64-65baad910ac5",
+    "page": 107
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "88b09dc3-eec2-5369-a6de-7a86058c9d0b",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "88b09dc3-eec2-5369-a6de-7a86058c9d0b",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:352",
+    "label": "Article",
+    "name": "Article 352",
+    "confidence": 1.0,
+    "source_chunk_id": "88b09dc3-eec2-5369-a6de-7a86058c9d0b",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "88b09dc3-eec2-5369-a6de-7a86058c9d0b",
+    "page": 108
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d13b99ee-3b25-5d75-be5c-6dc376f5ea3f",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "d13b99ee-3b25-5d75-be5c-6dc376f5ea3f",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d13b99ee-3b25-5d75-be5c-6dc376f5ea3f",
+    "page": 108
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "d13b99ee-3b25-5d75-be5c-6dc376f5ea3f",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "0672541e-07d7-532a-a59a-cd85f102a1b2",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:27",
+    "label": "Article",
+    "name": "Article 27",
+    "confidence": 1.0,
+    "source_chunk_id": "0672541e-07d7-532a-a59a-cd85f102a1b2",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:28",
+    "label": "Article",
+    "name": "Article 28",
+    "confidence": 1.0,
+    "source_chunk_id": "0672541e-07d7-532a-a59a-cd85f102a1b2",
+    "page": 109
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:28",
+    "label": "Article",
+    "name": "Article 28",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:44",
+    "label": "Article",
+    "name": "Article 44",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "act:rpa_1951",
+    "label": "Act",
+    "name": "The Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "act:representation-of-the-people-act-1951",
+    "label": "Act",
+    "name": "Representation of the People Act, 1951",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "7012ee6c-4627-59de-a6a1-b54e0592588e",
+    "page": 109
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:29",
+    "label": "Section",
+    "name": "Section 29",
+    "confidence": 1.0,
+    "source_chunk_id": "17b9c369-b740-512e-941a-63851f2be877",
+    "page": 112
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:53",
+    "label": "Article",
+    "name": "Article 53",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:77",
+    "label": "Article",
+    "name": "Article 77",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:78",
+    "label": "Article",
+    "name": "Article 78",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "act:the-government-of-india-act",
+    "label": "Act",
+    "name": "The Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "ff5a9044-1b52-555d-9757-791a1e130dee",
+    "page": 113
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "85b93fbd-be1e-58a6-b7d7-bee1b9f2b0a7",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "85b93fbd-be1e-58a6-b7d7-bee1b9f2b0a7",
+    "page": 115
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "85b93fbd-be1e-58a6-b7d7-bee1b9f2b0a7",
+    "page": 115
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "85b93fbd-be1e-58a6-b7d7-bee1b9f2b0a7",
+    "page": 115
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "85b93fbd-be1e-58a6-b7d7-bee1b9f2b0a7",
+    "page": 115
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f205488e-8a88-5b37-8af3-9df6137420d0",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "f205488e-8a88-5b37-8af3-9df6137420d0",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f205488e-8a88-5b37-8af3-9df6137420d0",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "f205488e-8a88-5b37-8af3-9df6137420d0",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:4",
+    "label": "Article",
+    "name": "Article 4",
+    "confidence": 1.0,
+    "source_chunk_id": "f205488e-8a88-5b37-8af3-9df6137420d0",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f282191f-0d79-51ae-a2b7-71389f40dbfa",
+    "page": 117
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:355",
+    "label": "Article",
+    "name": "Article 355",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:72",
+    "label": "Article",
+    "name": "Article 72",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:150",
+    "label": "Article",
+    "name": "Article 150",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:131",
+    "label": "Article",
+    "name": "Article 131",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:72",
+    "label": "Section",
+    "name": "Section 72",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "act:government-of-india-act-1919",
+    "label": "Act",
+    "name": "Government of India Act, 1919",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "act:governor-dismissed-the-appellant-under-the-new-act",
+    "label": "Act",
+    "name": "Governor dismissed the appellant under the new Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "act:it-found-that-the-proclamation-of-emergency-and-the-impugned-act",
+    "label": "Act",
+    "name": "It found that the Proclamation of emergency and the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "act:government-including-the-proclamation-and-the-impugned-act",
+    "label": "Act",
+    "name": "Government including the Proclamation and the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7c0eb4ad-90d2-56ad-ba76-61d825a77d54",
+    "page": 117
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:131",
+    "label": "Article",
+    "name": "Article 131",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:58",
+    "label": "Article",
+    "name": "Article 58",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:48",
+    "label": "Article",
+    "name": "Article 48",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:112",
+    "label": "Article",
+    "name": "Article 112",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:91",
+    "label": "Article",
+    "name": "Article 91",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:72",
+    "label": "Article",
+    "name": "Article 72",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:4",
+    "label": "Article",
+    "name": "Article 4",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:302",
+    "label": "Section",
+    "name": "Section 302",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "act:criminal-law-amendment-act-1908",
+    "label": "Act",
+    "name": "Criminal Law Amendment Act, 1908",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "act:council-was-not-issued-under-powers-conferred-by-any-act",
+    "label": "Act",
+    "name": "Council was not issued under powers conferred by any Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "court:lahore-high-court",
+    "label": "Court",
+    "name": "Lahore High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "judgment:indira-gandhi",
+    "label": "Judgment",
+    "name": "Indira Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "person:cornelius-c-j",
+    "label": "Person",
+    "name": "Cornelius C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "1c299b3e-3aa5-598a-98ac-06129fd734da",
+    "page": 122
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:237",
+    "label": "Section",
+    "name": "Section 237",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:235",
+    "label": "Section",
+    "name": "Section 235",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:33",
+    "label": "Section",
+    "name": "Section 33",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:165",
+    "label": "Section",
+    "name": "Section 165",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "act:companies-act-1956",
+    "label": "Act",
+    "name": "Companies Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "act:according-to-the-land-rights-act",
+    "label": "Act",
+    "name": "According to the Land Rights Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "act:planning-act-was-enacted-superseding-an-earlier-act",
+    "label": "Act",
+    "name": "Planning Act was enacted superseding an earlier Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "act:planning-act",
+    "label": "Act",
+    "name": "Planning Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "act:administrator-of-the-northern-territory-under-the-planning-act",
+    "label": "Act",
+    "name": "Administrator of the Northern Territory under the Planning Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a6cbc367-cb39-5e4e-b7c3-0b9369c5c329",
+    "page": 129
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "article:constitution_of_india:72",
+    "label": "Article",
+    "name": "Article 72",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:58",
+    "label": "Section",
+    "name": "Section 58",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "act:indian-evidence-act",
+    "label": "Act",
+    "name": "Indian Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "amendment:const_amendment_38",
+    "label": "Amendment",
+    "name": "38th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "77f9a2fa-444e-5403-91b8-ee5f01021410",
+    "page": 131
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:365",
+    "label": "Article",
+    "name": "Article 365",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:256",
+    "label": "Article",
+    "name": "Article 256",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:257",
+    "label": "Article",
+    "name": "Article 257",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:361",
+    "label": "Article",
+    "name": "Article 361",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "court:karnataka-high-court",
+    "label": "Court",
+    "name": "Karnataka High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "judgment:s-r-bommai",
+    "label": "Judgment",
+    "name": "S.R. Bommai",
+    "confidence": 1.0,
+    "source_chunk_id": "e0f9b1fb-0340-58ea-9ba6-c94d9d1c678a",
+    "page": 135
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "c1631494-1ef8-53c5-b4bc-acef5c946a59",
+    "page": 137
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0f643ce7-aeaf-543c-9feb-6ff1f34db0e6",
+    "page": 137
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "0f643ce7-aeaf-543c-9feb-6ff1f34db0e6",
+    "page": 137
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "257e7e68-0264-5993-a7b9-90d1dc023a74",
+    "page": 139
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "257e7e68-0264-5993-a7b9-90d1dc023a74",
+    "page": 139
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "257e7e68-0264-5993-a7b9-90d1dc023a74",
+    "page": 139
+  },
+  {
+    "id": "court:karnataka-high-court",
+    "label": "Court",
+    "name": "Karnataka High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "257e7e68-0264-5993-a7b9-90d1dc023a74",
+    "page": 139
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5c1f240e-0a2c-5dcb-9e50-d8f76a65680c",
+    "page": 141
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "5c1f240e-0a2c-5dcb-9e50-d8f76a65680c",
+    "page": 141
+  },
+  {
+    "id": "article:constitution_of_india:144",
+    "label": "Article",
+    "name": "Article 144",
+    "confidence": 1.0,
+    "source_chunk_id": "5c1f240e-0a2c-5dcb-9e50-d8f76a65680c",
+    "page": 141
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5c1f240e-0a2c-5dcb-9e50-d8f76a65680c",
+    "page": 141
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4ae3a05f-1488-54c8-acf3-6e20a5d83682",
+    "page": 142
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "court:guwahati-high-court",
+    "label": "Court",
+    "name": "Guwahati High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "f0987be5-31a9-5729-8b53-56e7b78fd9b1",
+    "page": 142
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "article:constitution_of_india:356",
+    "label": "Article",
+    "name": "Article 356",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "section:s-r-bommai-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "act:evidence-act",
+    "label": "Act",
+    "name": "Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "940eb9be-54d8-59b9-b1fe-3c8128ecc3d2",
+    "page": 143
+  }
+]

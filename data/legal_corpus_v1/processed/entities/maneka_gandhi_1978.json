@@ -1,0 +1,3858 @@
+[
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c8be4b0c-d96f-5887-9d75-1eec6f046d7a",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c8be4b0c-d96f-5887-9d75-1eec6f046d7a",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c8be4b0c-d96f-5887-9d75-1eec6f046d7a",
+    "page": 1
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c8be4b0c-d96f-5887-9d75-1eec6f046d7a",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "97202467-646a-5033-a88f-b1f4b3aa97a0",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "97202467-646a-5033-a88f-b1f4b3aa97a0",
+    "page": 1
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "MANEKA GANDHI",
+    "confidence": 1.0,
+    "source_chunk_id": "97202467-646a-5033-a88f-b1f4b3aa97a0",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "act:passport-act-1967",
+    "label": "Act",
+    "name": "Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "2526e5fc-124c-573a-b68f-46dce292f01e",
+    "page": 3
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "0b07bbfd-5236-587a-a108-2df8ebfc41ee",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "act:there-is-no-procedure-prescribed-by-the-passport-act",
+    "label": "Act",
+    "name": "There is no procedure prescribed by the Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "act:even-if-some-procedure-can-be-traced-in-the-said-act",
+    "label": "Act",
+    "name": "Even if some procedure can be traced in the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "act:blackstone-termed-natural-law-are-embodied-in-act",
+    "label": "Act",
+    "name": "Blackstone termed 'natural law' are embodied in Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "1e4f78c4-9652-53c0-81eb-a51543f7d3dd",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4df9d3b9-9606-589e-8d1e-689df2b3ac35",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4df9d3b9-9606-589e-8d1e-689df2b3ac35",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "4df9d3b9-9606-589e-8d1e-689df2b3ac35",
+    "page": 8
+  },
+  {
+    "id": "judgment:bennett-coleman",
+    "label": "Judgment",
+    "name": "Bennett Coleman",
+    "confidence": 1.0,
+    "source_chunk_id": "4df9d3b9-9606-589e-8d1e-689df2b3ac35",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05fec528-49cf-5546-bce4-e8b628d7977b",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "05fec528-49cf-5546-bce4-e8b628d7977b",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "05fec528-49cf-5546-bce4-e8b628d7977b",
+    "page": 9
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "05fec528-49cf-5546-bce4-e8b628d7977b",
+    "page": 9
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "05fec528-49cf-5546-bce4-e8b628d7977b",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "82f8fde0-615d-593d-9026-8b51a6bd0f1f",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "82f8fde0-615d-593d-9026-8b51a6bd0f1f",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "82f8fde0-615d-593d-9026-8b51a6bd0f1f",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "82f8fde0-615d-593d-9026-8b51a6bd0f1f",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "001f2bea-62ca-5e06-a833-ed9a74b041e2",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "001f2bea-62ca-5e06-a833-ed9a74b041e2",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "001f2bea-62ca-5e06-a833-ed9a74b041e2",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "act:it-is-true-that-the-passports-act",
+    "label": "Act",
+    "name": "It is true that the Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "judgment:e-p-royappa",
+    "label": "Judgment",
+    "name": "E.P. Royappa",
+    "confidence": 1.0,
+    "source_chunk_id": "75f6d4ed-bc13-546c-9451-c76ab05b424c",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "act:passports-act",
+    "label": "Act",
+    "name": "Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "c54603e7-3474-5c35-b380-1e04373a4d3e",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "0e79cd46-955b-542b-a00c-374f4985e7cf",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "0e79cd46-955b-542b-a00c-374f4985e7cf",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "0e79cd46-955b-542b-a00c-374f4985e7cf",
+    "page": 16
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "0e79cd46-955b-542b-a00c-374f4985e7cf",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "15325eac-49f0-52a1-84b7-7ffbadf6b1ab",
+    "page": 17
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "act:but-when-applying-the-passports-act",
+    "label": "Act",
+    "name": "But when applying the Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "d57b070b-f18c-5f76-b60e-6abfd9b01659",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "concept:maneka-gandhi-v-union-of-india:the-state-as-including-the-government-and-parliament-of-india-and-the-government-and-the-legislature-of-each-of-the-states-and-of-local-or-other-authorities",
+    "label": "Concept",
+    "name": "the State as including the Government and Parliament of India and the Government and the Legislature of each of the States and of local or other authorities",
+    "confidence": 0.9,
+    "source_chunk_id": "151d9c8d-263c-521c-b9fc-92b648119265",
+    "page": 19
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "10d801d8-9fc1-57cc-8cc4-1981f7bdeb72",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "10d801d8-9fc1-57cc-8cc4-1981f7bdeb72",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "10d801d8-9fc1-57cc-8cc4-1981f7bdeb72",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "554cc02f-8e79-5dde-bbd2-5c59f7de40b1",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "554cc02f-8e79-5dde-bbd2-5c59f7de40b1",
+    "page": 20
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "554cc02f-8e79-5dde-bbd2-5c59f7de40b1",
+    "page": 20
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "554cc02f-8e79-5dde-bbd2-5c59f7de40b1",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "96e5e177-e3dc-5cf6-a178-968a6a49cf9b",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "96e5e177-e3dc-5cf6-a178-968a6a49cf9b",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "96e5e177-e3dc-5cf6-a178-968a6a49cf9b",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "96e5e177-e3dc-5cf6-a178-968a6a49cf9b",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "104e2435-e309-5203-96ac-31af63e4dcf4",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "104e2435-e309-5203-96ac-31af63e4dcf4",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "104e2435-e309-5203-96ac-31af63e4dcf4",
+    "page": 20
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "104e2435-e309-5203-96ac-31af63e4dcf4",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "act:the-passport-act",
+    "label": "Act",
+    "name": "The Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "act:since-the-said-act",
+    "label": "Act",
+    "name": "Since the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "65bd7b7b-ae93-5626-bc1a-8265b25fa9e2",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7492c542-f045-554e-9be1-e125f2bd758a",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "7492c542-f045-554e-9be1-e125f2bd758a",
+    "page": 21
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "7492c542-f045-554e-9be1-e125f2bd758a",
+    "page": 21
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "7492c542-f045-554e-9be1-e125f2bd758a",
+    "page": 21
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "7492c542-f045-554e-9be1-e125f2bd758a",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "person:kania-cj",
+    "label": "Person",
+    "name": "Kania CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "67c34e9f-0cbe-54da-bf0c-bcf7ae55d59b",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "309b5a82-94f7-5e8f-b4d5-e0aa28f1b31a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "309b5a82-94f7-5e8f-b4d5-e0aa28f1b31a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "309b5a82-94f7-5e8f-b4d5-e0aa28f1b31a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "309b5a82-94f7-5e8f-b4d5-e0aa28f1b31a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "309b5a82-94f7-5e8f-b4d5-e0aa28f1b31a",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2a242e05-ef1a-5b30-a645-04c0749f0e6c",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "aaa77ae4-dd13-539a-a3c6-18330716c859",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "aaa77ae4-dd13-539a-a3c6-18330716c859",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "aaa77ae4-dd13-539a-a3c6-18330716c859",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "aaa77ae4-dd13-539a-a3c6-18330716c859",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "aaa77ae4-dd13-539a-a3c6-18330716c859",
+    "page": 24
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "15ac90d1-26ea-54eb-bdd8-22676c4f23d5",
+    "page": 24
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "person:subba-rao-c-j",
+    "label": "Person",
+    "name": "Subba Rao C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "626534ee-dd9c-5c25-88a9-3b2158bd5028",
+    "page": 26
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "act:passport-act-1967",
+    "label": "Act",
+    "name": "Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "act:the-passport-act",
+    "label": "Act",
+    "name": "The Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "act:maintenance-of-internal-security-act-1971",
+    "label": "Act",
+    "name": "Maintenance of Internal Security Act, 1971",
+    "confidence": 1.0,
+    "source_chunk_id": "d56bfcc2-9535-5437-ab1f-c25614b34c47",
+    "page": 30
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "judgment:bennett-coleman",
+    "label": "Judgment",
+    "name": "Bennett Coleman",
+    "confidence": 1.0,
+    "source_chunk_id": "07076ddb-7e05-5708-9a7d-fc94cf5526d7",
+    "page": 33
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "25590712-3b53-507f-9e28-1a9ad2fa31d5",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "25590712-3b53-507f-9e28-1a9ad2fa31d5",
+    "page": 34
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "25590712-3b53-507f-9e28-1a9ad2fa31d5",
+    "page": 34
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "25590712-3b53-507f-9e28-1a9ad2fa31d5",
+    "page": 34
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "25590712-3b53-507f-9e28-1a9ad2fa31d5",
+    "page": 34
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "act:passport-act-1967",
+    "label": "Act",
+    "name": "Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "cd2321b1-3176-525e-a480-4a636a296d26",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "48b21b6a-3d9c-5d3d-a6a5-bda998185e0d",
+    "page": 36
+  },
+  {
+    "id": "act:passport-act-1967",
+    "label": "Act",
+    "name": "Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "48b21b6a-3d9c-5d3d-a6a5-bda998185e0d",
+    "page": 36
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "act:there-is-no-procedure-prescribed-by-the-passport-act-1967",
+    "label": "Act",
+    "name": "There is no procedure prescribed by the Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "e59759ee-4e81-5644-b7bb-d6192196872e",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "048bfff1-ff85-5520-bbe8-362859336e02",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "048bfff1-ff85-5520-bbe8-362859336e02",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "048bfff1-ff85-5520-bbe8-362859336e02",
+    "page": 39
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "048bfff1-ff85-5520-bbe8-362859336e02",
+    "page": 39
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf78b6f-5581-5904-a829-e4617b702305",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf78b6f-5581-5904-a829-e4617b702305",
+    "page": 39
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "fdf78b6f-5581-5904-a829-e4617b702305",
+    "page": 39
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "act:maintenance-of-internal-security-act-1971",
+    "label": "Act",
+    "name": "Maintenance of Internal Security Act, 1971",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "act:prior-to-the-enactment-of-the-passports-act-1967",
+    "label": "Act",
+    "name": "Prior to the enactment of the Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "16c29639-a353-5747-a963-c8ab28bce773",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:191",
+    "label": "Article",
+    "name": "Article 191",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "act:parliament-enacted-the-passports-act-1967",
+    "label": "Act",
+    "name": "Parliament enacted the Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "act:maintenance-of-internal-security-act-1971",
+    "label": "Act",
+    "name": "Maintenance of Internal Security Act, 1971",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "773048f2-02ce-5460-b75e-a9ea1dc0b63b",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "act:case-recast-ai-no-express-provision-in-the-passports-act-1967",
+    "label": "Act",
+    "name": "CASE RECAST AI no express provision in the Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "eaa90486-fd9c-5e4b-89a5-c313c289be93",
+    "page": 42
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "46e92e16-ed97-534b-8627-fd1e5f62c2f7",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "act:miscellaneous-act-1955",
+    "label": "Act",
+    "name": "Miscellaneous Act, 1955",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "judgment:bennett-coleman",
+    "label": "Judgment",
+    "name": "Bennett Coleman",
+    "confidence": 1.0,
+    "source_chunk_id": "7a105009-1a57-5cbb-8e22-5f57bc972fd6",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "07caed29-1930-5d56-8f35-9c1a10503278",
+    "page": 53
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "07caed29-1930-5d56-8f35-9c1a10503278",
+    "page": 53
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "07caed29-1930-5d56-8f35-9c1a10503278",
+    "page": 53
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "court:karnataka-high-court",
+    "label": "Court",
+    "name": "Karnataka High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "ba37ed80-a1f3-5bab-a949-8566a6f7fdc0",
+    "page": 54
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ae70e74d-848b-593c-a6b6-0cb409a56195",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1ddaa14b-b6f7-53e3-8f34-9140d1cb6740",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "1ddaa14b-b6f7-53e3-8f34-9140d1cb6740",
+    "page": 57
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1ddaa14b-b6f7-53e3-8f34-9140d1cb6740",
+    "page": 57
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0f8d1297-160f-5dfd-9210-e3bb4e985192",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "0f8d1297-160f-5dfd-9210-e3bb4e985192",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "0f8d1297-160f-5dfd-9210-e3bb4e985192",
+    "page": 57
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "0f8d1297-160f-5dfd-9210-e3bb4e985192",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2b78f3af-2f36-5b0a-bad8-503f0b3910b5",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "act:passport-act-1926",
+    "label": "Act",
+    "name": "Passport Act, 1926",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "act:subversive-activities-control-act-1950",
+    "label": "Act",
+    "name": "Subversive Activities Control Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "a9d60299-c3dc-5792-b5e5-24ca71794ea9",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:500",
+    "label": "Section",
+    "name": "Section 500",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:34a",
+    "label": "Section",
+    "name": "Section 34A",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "act:cuba-was-authorised-by-the-broad-language-of-the-passport-act-1926",
+    "label": "Act",
+    "name": "Cuba was authorised by the broad language of the Passport Act, 1926",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "act:banking-companies-act",
+    "label": "Act",
+    "name": "Banking Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "05027629-7e1f-5189-bf32-dbfebfc3264b",
+    "page": 59
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a1706d6e-d5ae-5601-aa4e-77d9591b4f12",
+    "page": 61
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "a1706d6e-d5ae-5601-aa4e-77d9591b4f12",
+    "page": 61
+  },
+  {
+    "id": "act:industrial-disputes-act",
+    "label": "Act",
+    "name": "Industrial Disputes Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a1706d6e-d5ae-5601-aa4e-77d9591b4f12",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd665-90ba-5d11-8f96-b9f4afd32dc9",
+    "page": 61
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd665-90ba-5d11-8f96-b9f4afd32dc9",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3eadb41c-8154-54d0-aeb9-7f8e68b330d3",
+    "page": 62
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "3eadb41c-8154-54d0-aeb9-7f8e68b330d3",
+    "page": 62
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "act:essential-commodities-act-1955",
+    "label": "Act",
+    "name": "Essential Commodities Act, 1955",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "act:essential-commodities-act",
+    "label": "Act",
+    "name": "Essential Commodities Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3751049f-90e7-5741-8a5d-36a1cf63699f",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "54aaafb0-9726-5573-8cd7-c7fb755c2f2b",
+    "page": 64
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "54aaafb0-9726-5573-8cd7-c7fb755c2f2b",
+    "page": 64
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "28043e80-7f35-5443-9e33-24be74233f5a",
+    "page": 66
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "28043e80-7f35-5443-9e33-24be74233f5a",
+    "page": 66
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:500",
+    "label": "Section",
+    "name": "Section 500",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "concept:maneka-gandhi-v-union-of-india:my-terms",
+    "label": "Concept",
+    "name": "my terms",
+    "confidence": 0.9,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "person:tambe-cj",
+    "label": "Person",
+    "name": "Tambe CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "962bf2d5-24f8-5253-ae48-72b994db0fc9",
+    "page": 67
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:10",
+    "label": "Article",
+    "name": "Article 10",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:the-passport-act",
+    "label": "Act",
+    "name": "The Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:but-when-applying-the-passports-act",
+    "label": "Act",
+    "name": "But when applying the Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:passports-act",
+    "label": "Act",
+    "name": "Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:passport-act-1967",
+    "label": "Act",
+    "name": "Passport Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "act:passports-act-1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "person:bhagwati-j",
+    "label": "Person",
+    "name": "Bhagwati J.",
+    "confidence": 1.0,
+    "source_chunk_id": "f94b58d2-3f2e-5869-9f9b-3b924eb27024",
+    "page": 74
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "511b97ee-c2c8-5c91-aa8a-0d8ec827a132",
+    "page": 84
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "511b97ee-c2c8-5c91-aa8a-0d8ec827a132",
+    "page": 84
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:248",
+    "label": "Article",
+    "name": "Article 248",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:99",
+    "label": "Section",
+    "name": "Section 99",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:but-whether-any-particular-act",
+    "label": "Act",
+    "name": "But whether any particular Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:workmen-s-compensation-act-1906",
+    "label": "Act",
+    "name": "Workmen's Compensation Act, 1906",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:prima-facie-an-act",
+    "label": "Act",
+    "name": "Prima facie an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:indian-legislature-by-the-constitution-act",
+    "label": "Act",
+    "name": "Indian Legislature by the Constitution Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:federal-court-was-considering-the-validity-of-the-indian-army-act",
+    "label": "Act",
+    "name": "Federal Court was considering the validity of the Indian Army Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:indian-army-act",
+    "label": "Act",
+    "name": "Indian Army Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:in-the-penal-code",
+    "label": "Act",
+    "name": "In the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:it-win-now-be-considered-whether-an-act",
+    "label": "Act",
+    "name": "It win now be considered whether an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:the-indian-penal-code",
+    "label": "Act",
+    "name": "The Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "concept:maneka-gandhi-v-union-of-india:the-state",
+    "label": "Concept",
+    "name": "the State",
+    "confidence": 0.9,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "Kania C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "person:india-kania-c-j",
+    "label": "Person",
+    "name": "India. Kania C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "69602ad9-18b5-509e-b1d2-db0ba1e2419b",
+    "page": 85
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a6535055-07ce-5c09-8fd5-783ff7c36d4b",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a6535055-07ce-5c09-8fd5-783ff7c36d4b",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a6535055-07ce-5c09-8fd5-783ff7c36d4b",
+    "page": 91
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "a6535055-07ce-5c09-8fd5-783ff7c36d4b",
+    "page": 91
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "94de6861-c668-57f5-ac2d-c4b492655d02",
+    "page": 92
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7be17982-49b9-5a29-9428-1af211915981",
+    "page": 95
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4c694c9a-5470-5de1-82fa-3f386cf43f6a",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "4c694c9a-5470-5de1-82fa-3f386cf43f6a",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "4c694c9a-5470-5de1-82fa-3f386cf43f6a",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "act:court-ruled-that-the-impugned-act",
+    "label": "Act",
+    "name": "Court ruled that the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "Kania C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "b3cbd90c-1516-5d14-af09-8993971fa5f6",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "act:the-indian-penal-code",
+    "label": "Act",
+    "name": "The Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "Kania C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "e1b17061-b4fa-594e-ba24-85ea0c3466d2",
+    "page": 99
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "act:maintenance-of-internal-security-act",
+    "label": "Act",
+    "name": "Maintenance of Internal Security Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05befbac-8511-53d7-8c14-c6de7924e6b0",
+    "page": 99
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "act:internal-security-act",
+    "label": "Act",
+    "name": "Internal Security Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "act:import-control-act",
+    "label": "Act",
+    "name": "Import Control Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "act:government-of-ireland-act",
+    "label": "Act",
+    "name": "Government of Ireland Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "act:the-passport-act",
+    "label": "Act",
+    "name": "The passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "8ca20908-797b-5c37-8ad3-90b0f39a5600",
+    "page": 100
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:500",
+    "label": "Section",
+    "name": "Section 500",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "act:it-will-be-necessary-to-consider-whether-the-impugned-act",
+    "label": "Act",
+    "name": "It will be necessary to consider whether the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "act:case-recast-ai-the-provisions-of-passport-act",
+    "label": "Act",
+    "name": "CASE RECAST AI the provisions of Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "66c38e03-ee97-50aa-a82b-85cbf336bdcd",
+    "page": 102
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:500",
+    "label": "Section",
+    "name": "Section 500",
+    "confidence": 1.0,
+    "source_chunk_id": "bced6133-cd1a-568c-b4d1-47d3d36e0413",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "bced6133-cd1a-568c-b4d1-47d3d36e0413",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "bced6133-cd1a-568c-b4d1-47d3d36e0413",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "bced6133-cd1a-568c-b4d1-47d3d36e0413",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "bced6133-cd1a-568c-b4d1-47d3d36e0413",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "ce88d11f-c78a-5c11-a8d4-f8599cb4ef2d",
+    "page": 103
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "c42a32d4-f1d4-58a0-9030-3ea064d71bf9",
+    "page": 104
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "c42a32d4-f1d4-58a0-9030-3ea064d71bf9",
+    "page": 104
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "846ccbbe-ec8a-5c2f-8a34-4993f5234e38",
+    "page": 104
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "846ccbbe-ec8a-5c2f-8a34-4993f5234e38",
+    "page": 104
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "846ccbbe-ec8a-5c2f-8a34-4993f5234e38",
+    "page": 104
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "7c37af8a-49e1-5e9b-9682-dd357cc8f8db",
+    "page": 104
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "7c37af8a-49e1-5e9b-9682-dd357cc8f8db",
+    "page": 104
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7c37af8a-49e1-5e9b-9682-dd357cc8f8db",
+    "page": 104
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "act:indian-electricity-act",
+    "label": "Act",
+    "name": "Indian Electricity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "act:passport-act",
+    "label": "Act",
+    "name": "Passport Act",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "act:passports-act",
+    "label": "Act",
+    "name": "Passports Act",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "20d57e87-94bc-542d-acb5-dd9e36170b37",
+    "page": 105
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  },
+  {
+    "id": "section:maneka-gandhi-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "f7b40574-a7fc-5c43-821f-cdfebcc50a22",
+    "page": 110
+  }
+]

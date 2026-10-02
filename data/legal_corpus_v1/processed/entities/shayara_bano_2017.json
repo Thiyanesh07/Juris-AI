@@ -1,0 +1,18 @@
+[
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d2333376-eebd-5f51-8c62-e6f2062b04d6",
+    "page": 1
+  },
+  {
+    "id": "judgment:shayara-bano",
+    "label": "Judgment",
+    "name": "SHAYARA BANO",
+    "confidence": 1.0,
+    "source_chunk_id": "d2333376-eebd-5f51-8c62-e6f2062b04d6",
+    "page": 1
+  }
+]

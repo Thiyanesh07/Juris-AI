@@ -1,0 +1,208 @@
+{
+  "versions": {
+    "constitution_of_india": {
+      "version": "1.0",
+      "effective_from": "1950-01-26",
+      "effective_to": null,
+      "status": "current"
+    },
+    "crpc_1973": {
+      "version": "1.0",
+      "effective_from": "1973-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "iea_1872": {
+      "version": "1.0",
+      "effective_from": "1872-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "ipc_1860": {
+      "version": "1.0",
+      "effective_from": "1860-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "phra_1993": {
+      "version": "1.0",
+      "effective_from": "1993-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "rpa_1951": {
+      "version": "1.0",
+      "effective_from": "1951-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "bnss_2023": {
+      "version": "1.0",
+      "effective_from": "2023-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "bns_2023": {
+      "version": "1.0",
+      "effective_from": "2023-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "bsa_2023": {
+      "version": "1.0",
+      "effective_from": "2023-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "it_act_2000": {
+      "version": "1.0",
+      "effective_from": "2000-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "rti_act_2005": {
+      "version": "1.0",
+      "effective_from": "2005-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "const_amendment_44": {
+      "version": "1.0",
+      "effective_from": "1978-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "const_amendment_42": {
+      "version": "1.0",
+      "effective_from": "1976-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "const_amendment_101": {
+      "version": "1.0",
+      "effective_from": "2016-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "const_amendment_73": {
+      "version": "1.0",
+      "effective_from": "1992-01-01",
+      "effective_to": null,
+      "status": "current"
+    },
+    "kesavananda_bharati_1973": {
+      "version": "1.0",
+      "effective_from": "1973-04-24",
+      "effective_to": null,
+      "status": "current"
+    },
+    "indira_gandhi_1975": {
+      "version": "1.0",
+      "effective_from": "1975-11-07",
+      "effective_to": null,
+      "status": "current"
+    },
+    "minerva_mills_1980": {
+      "version": "1.0",
+      "effective_from": "1980-07-31",
+      "effective_to": null,
+      "status": "current"
+    },
+    "ir_coelho_2007": {
+      "version": "1.0",
+      "effective_from": "2007-01-11",
+      "effective_to": null,
+      "status": "current"
+    },
+    "l_chandra_kumar_1997": {
+      "version": "1.0",
+      "effective_from": "1997-03-18",
+      "effective_to": null,
+      "status": "current"
+    },
+    "ep_royappa_1974": {
+      "version": "1.0",
+      "effective_from": "1973-11-23",
+      "effective_to": null,
+      "status": "current"
+    },
+    "maneka_gandhi_1978": {
+      "version": "1.0",
+      "effective_from": "1978-01-25",
+      "effective_to": null,
+      "status": "current"
+    },
+    "shayara_bano_2017": {
+      "version": "1.0",
+      "effective_from": "2017-08-22",
+      "effective_to": null,
+      "status": "current"
+    },
+    "romesh_thappar_1950": {
+      "version": "1.0",
+      "effective_from": "1950-05-26",
+      "effective_to": null,
+      "status": "current"
+    },
+    "bennett_coleman_1973": {
+      "version": "1.0",
+      "effective_from": "1972-10-30",
+      "effective_to": null,
+      "status": "current"
+    },
+    "shreya_singhal_2015": {
+      "version": "1.0",
+      "effective_from": "2015-03-24",
+      "effective_to": null,
+      "status": "current"
+    },
+    "ak_gopalan_1950": {
+      "version": "1.0",
+      "effective_from": "1950-05-19",
+      "effective_to": null,
+      "status": "current"
+    },
+    "puttaswamy_privacy_2017": {
+      "version": "1.0",
+      "effective_from": "2017-08-24",
+      "effective_to": null,
+      "status": "current"
+    },
+    "common_cause_2018": {
+      "version": "1.0",
+      "effective_from": "2018-03-09",
+      "effective_to": null,
+      "status": "current"
+    },
+    "sr_bommai_1994": {
+      "version": "1.0",
+      "effective_from": "1994-03-11",
+      "effective_to": null,
+      "status": "current"
+    },
+    "vishaka_1997": {
+      "version": "1.0",
+      "effective_from": "1997-08-13",
+      "effective_to": null,
+      "status": "current"
+    },
+    "nalsa_2014": {
+      "version": "1.0",
+      "effective_from": "2014-04-15",
+      "effective_to": null,
+      "status": "current"
+    },
+    "navtej_johar_2018": {
+      "version": "1.0",
+      "effective_from": "2018-09-06",
+      "effective_to": null,
+      "status": "current"
+    },
+    "puttaswamy_aadhaar_2018": {
+      "version": "1.0",
+      "effective_from": "2018-09-26",
+      "effective_to": null,
+      "status": "current"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    /* --- Approved Reconciled Color Tokens --- */
+    --background: #E7EDF4;
+    --surface: #EFF3F7;
+    --surface-elevated: #F5F7FA;
+    --surface-overlay: #FFFFFF;
+
+    --primary-text: #17253A;
+    --secondary-text: #526176;
+    --muted-text: #718096;
+
+    --border: #C9D4E1;
+    --border-subtle: #D9E1EA;
+
+    --primary: #2563A8;
+    --primary-dark: #183B5B;
+    --primary-dim: #1E5296;
+
+    --accent: #3B82D0;
+    --soft-blue: #D9E7F5;
+
+    --success: #1E6B45;
+    --success-fill: #D0EDDB;
+
+    --warning: #7A5A0F;
+    --warning-fill: #FBF3D4;
+
+    --error: #8B2E2E;
+    --error-fill: #F5D9D9;
+
+    --destructive: #DC2626;
+
+    /* --- Spacing Tokens --- */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --grid-gutter: 16px;
+
+    /* --- Radius Tokens --- */
+    --radius-xs: 4px;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+
+    /* --- Typography Font Tokens --- */
+    --font-serif: var(--font-dm-serif, 'DM Serif Display', Georgia, serif);
+    --font-sans: var(--font-instrument-sans, 'Instrument Sans', system-ui, -apple-system, sans-serif);
+    --font-mono: var(--font-jetbrains-mono, 'JetBrains Mono', monospace);
+
+    /* --- Elevation / Shadow Tokens --- */
+    --shadow-layer-0: none;
+    --shadow-layer-1: 0 0 0 1px #C5D5E8;
+    --shadow-layer-2: 0 2px 4px rgba(23, 37, 58, 0.04), 0 1px 2px rgba(23, 37, 58, 0.06);
+    --shadow-layer-3: 0 8px 40px rgba(23, 37, 58, 0.14);
+    --shadow-layer-4-drawer: -8px 0 40px rgba(23, 37, 58, 0.10);
+
+    /* --- Standard Theme Alias Mappings --- */
+    --foreground: var(--primary-text);
+    --card: var(--surface-elevated);
+    --card-foreground: var(--primary-text);
+    --popover: var(--surface-overlay);
+    --popover-foreground: var(--primary-text);
+    --primary-foreground: #FFFFFF;
+    --secondary-foreground: var(--primary-text);
+    --muted-foreground: var(--muted-text);
+    --input: var(--surface);
+    --ring: var(--accent);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--primary-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Component Tokens and Utility Classes */
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dim);
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  color: var(--primary-text);
+  border: 1px solid #C5D5E8;
+  transition: all 0.15s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: var(--soft-blue);
+}
+
+.btn-destructive {
+  background-color: var(--error-fill);
+  color: var(--error);
+  border: 1px solid #E5C5C5;
+  transition: all 0.15s ease-in-out;
+}
+.btn-destructive:hover {
+  background-color: #F0C4C4;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--secondary-text);
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+.btn-ghost:hover {
+  background-color: var(--background);
+  color: var(--primary-text);
+}
+
+/* Input Fields */
+.input-field {
+  background-color: var(--surface);
+  border: 1px solid #C5D5E8;
+  color: var(--primary-text);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.input-field::placeholder {
+  color: var(--muted-text);
+}
+.input-field:focus {
+  outline: none;
+  background-color: var(--surface-overlay);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 208, 0.15);
+}
+
+.input-dense {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.875rem;
+}
+.input-comfortable {
+  height: 38px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 0.875rem;
+}
+
+/* Elevation utilities */
+.elevation-0 {
+  box-shadow: var(--shadow-layer-0);
+}
+.elevation-1 {
+  border: 1px solid #C5D5E8;
+}
+.elevation-2 {
+  box-shadow: var(--shadow-layer-2);
+  border: 1px solid #C5D5E8;
+}
+.elevation-3 {
+  box-shadow: var(--shadow-layer-3);
+}
+.elevation-4-drawer {
+  box-shadow: var(--shadow-layer-4-drawer);
+}

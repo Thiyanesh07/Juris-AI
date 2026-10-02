@@ -1,0 +1,5434 @@
+[
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "03154ffc-cae5-567d-becf-37bffa613251",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "act:detention-act-1950",
+    "label": "Act",
+    "name": "Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. GOPALAN",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "person:kania-c-j",
+    "label": "Person",
+    "name": "KANIA C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "person:kania-cj",
+    "label": "Person",
+    "name": "KANIA CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "person:per-kania-c-j",
+    "label": "Person",
+    "name": "Per KANIA C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "153088dc-a797-5928-8773-4ae689e86378",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "person:per-kania-c-j",
+    "label": "Person",
+    "name": "Per KANIA C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "b87538b5-6406-5cb3-bde4-093516216030",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:99",
+    "label": "Article",
+    "name": "Article 99",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:in-construing-the-provisions-of-an-act",
+    "label": "Act",
+    "name": "In construing the provisions of an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:the-relevant-provisions-of-the-preventive-detention-act-1950",
+    "label": "Act",
+    "name": "The relevant provisions of the Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "act:foreigners-act-1946",
+    "label": "Act",
+    "name": "Foreigners Act, 1946",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "person:per-kania-c-j",
+    "label": "Person",
+    "name": "Per KANIA C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "a0bee322-f79a-5bcf-9b7e-508b07791a4d",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:53",
+    "label": "Article",
+    "name": "Article 53",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "act:the-question-of-the-validity-of-act",
+    "label": "Act",
+    "name": "The question of the validity of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "78cb20dc-fb82-5d16-b765-647916e3e7ce",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "act:it-is-not-disputed-that-act",
+    "label": "Act",
+    "name": "It is not disputed that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "90ce37cc-4975-5ee7-bceb-f23ecbce3cc9",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "20fe83f9-9291-5a17-a770-a934417899f1",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3443e6f5-6465-51e8-8e90-9ff6acfc807c",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f7cdca41-27d3-5925-a40c-b2f1c49ff318",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f7cdca41-27d3-5925-a40c-b2f1c49ff318",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f7cdca41-27d3-5925-a40c-b2f1c49ff318",
+    "page": 12
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "f7cdca41-27d3-5925-a40c-b2f1c49ff318",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6fe55c67-7074-55a3-acae-36b6caa91dd8",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:214",
+    "label": "Article",
+    "name": "Article 214",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:70",
+    "label": "Article",
+    "name": "Article 70",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "01c7565e-cdea-52c7-a3a7-bb50bf47c564",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "0aaefa34-2eee-54a9-9f12-1fd28f0e9f10",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "0aaefa34-2eee-54a9-9f12-1fd28f0e9f10",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "a2461334-240e-57cb-8f23-c8043987c6f4",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a2461334-240e-57cb-8f23-c8043987c6f4",
+    "page": 17
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "a2461334-240e-57cb-8f23-c8043987c6f4",
+    "page": 17
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a2461334-240e-57cb-8f23-c8043987c6f4",
+    "page": 17
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:act-is-an-act",
+    "label": "Act",
+    "name": "Act is an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:silence-on-these-points-does-not-make-the-impugned-act",
+    "label": "Act",
+    "name": "Silence on these points does not make the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:in-the-case-of-an-act",
+    "label": "Act",
+    "name": "In the case of an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:in-in-re-the-central-provinces-and-berar-act",
+    "label": "Act",
+    "name": "In In re The Central Provinces and Berar Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:courts-are-not-at-liberty-to-declare-an-act",
+    "label": "Act",
+    "name": "Courts are not at liberty to declare an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:it-has-therefore-been-considered-that-a-punitive-detention-act",
+    "label": "Act",
+    "name": "It has therefore been considered that a punitive detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "act:a-perusal-of-the-provisions-of-the-impugned-act",
+    "label": "Act",
+    "name": "A perusal of the provisions of the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "person:sir-maurice-gwyer-c-j",
+    "label": "Person",
+    "name": "Sir Maurice Gwyer C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "60967d93-f424-5c39-ae56-b6e88ca0717d",
+    "page": 18
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8142e969-e603-553c-9c15-a8b327506a11",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "8142e969-e603-553c-9c15-a8b327506a11",
+    "page": 20
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "8142e969-e603-553c-9c15-a8b327506a11",
+    "page": 20
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "8142e969-e603-553c-9c15-a8b327506a11",
+    "page": 20
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "8142e969-e603-553c-9c15-a8b327506a11",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:253",
+    "label": "Section",
+    "name": "Section 253",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "act:board-constituted-under-the-housing-act",
+    "label": "Act",
+    "name": "Board constituted under the Housing Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "8ba855b9-f213-5df9-841d-6bf43be3d6c9",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:265",
+    "label": "Section",
+    "name": "Section 265",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "fc5f8631-8b83-5ec9-9fbc-69470084b0c4",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6c2b8b41-eb2e-585f-bb9a-7a90c5a13839",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:in-my-opinion-therefore-act",
+    "label": "Act",
+    "name": "In my opinion therefore Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:foreigners-act-1946",
+    "label": "Act",
+    "name": "Foreigners Act, 1946",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "act:foreigners-act",
+    "label": "Act",
+    "name": "Foreigners Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f2e0597e-e07c-5b17-9624-d2daae5dea72",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5e4db7e8-80ed-5604-a3dd-f05516c48076",
+    "page": 25
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "5e4db7e8-80ed-5604-a3dd-f05516c48076",
+    "page": 25
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "5e4db7e8-80ed-5604-a3dd-f05516c48076",
+    "page": 25
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "5e4db7e8-80ed-5604-a3dd-f05516c48076",
+    "page": 25
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "5e4db7e8-80ed-5604-a3dd-f05516c48076",
+    "page": 25
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "884ba49a-b6df-5abe-8200-72ac69f2233d",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "884ba49a-b6df-5abe-8200-72ac69f2233d",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "884ba49a-b6df-5abe-8200-72ac69f2233d",
+    "page": 26
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "884ba49a-b6df-5abe-8200-72ac69f2233d",
+    "page": 26
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "884ba49a-b6df-5abe-8200-72ac69f2233d",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "494b75f9-681a-5149-b9a9-3167f970fbc7",
+    "page": 28
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "49c9aa0b-a894-5f82-bf3d-5c7411c4f1b9",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "49c9aa0b-a894-5f82-bf3d-5c7411c4f1b9",
+    "page": 28
+  },
+  {
+    "id": "act:government-of-india-act-1935",
+    "label": "Act",
+    "name": "Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "49c9aa0b-a894-5f82-bf3d-5c7411c4f1b9",
+    "page": 28
+  },
+  {
+    "id": "act:defence-of-india-act-1939",
+    "label": "Act",
+    "name": "Defence of India Act, 1939",
+    "confidence": 1.0,
+    "source_chunk_id": "49c9aa0b-a894-5f82-bf3d-5c7411c4f1b9",
+    "page": 28
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b5dfc117-4f4f-5055-8560-44714198b310",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b5dfc117-4f4f-5055-8560-44714198b310",
+    "page": 29
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "court:patna-high-court",
+    "label": "Court",
+    "name": "Patna High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "person:meredith-c-j",
+    "label": "Person",
+    "name": "Meredith C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "46617b2b-9aff-5c23-997b-fb15db130364",
+    "page": 29
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:i-am-certain-that-no-court-would-interfere-with-a-code",
+    "label": "Act",
+    "name": "I am certain that no Court would interfere with a Code",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:the-indian-penal-code",
+    "label": "Act",
+    "name": "The Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "court:state-high-court",
+    "label": "Court",
+    "name": "State High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "person:meredith-c-j",
+    "label": "Person",
+    "name": "Meredith C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "50ca0442-6820-5be3-bd14-047e90f1ca32",
+    "page": 30
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:221",
+    "label": "Article",
+    "name": "Article 221",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:75",
+    "label": "Article",
+    "name": "Article 75",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:10",
+    "label": "Article",
+    "name": "Article 10",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "act:west-bengal-security-act-1948",
+    "label": "Act",
+    "name": "West Bengal Security Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "act:east-punjab-public-safety-act-1949",
+    "label": "Act",
+    "name": "East Punjab Public Safety Act, 1949",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act-1947",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "87b5a65f-80a5-5353-b79a-d84cfab8305e",
+    "page": 31
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "act:west-bengal-security-act-1948",
+    "label": "Act",
+    "name": "West Bengal Security Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "act:east-punjab-public-safety-act-1949",
+    "label": "Act",
+    "name": "East Punjab Public Safety Act, 1949",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act-1947",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "act:maintenance-of-public-order-temporary-act-1947",
+    "label": "Act",
+    "name": "Maintenance of Public Order Temporary Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "act:bombay-public-security-measures-act-1947",
+    "label": "Act",
+    "name": "Bombay Public Security Measures Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "21007608-f4e9-584e-af44-4ce0071590a2",
+    "page": 34
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:512",
+    "label": "Section",
+    "name": "Section 512",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:409",
+    "label": "Section",
+    "name": "Section 409",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "act:supreme-court-to-examine-whether-an-act",
+    "label": "Act",
+    "name": "Supreme Court to examine whether an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "act:the-whole-of-the-criminal-procedure-code",
+    "label": "Act",
+    "name": "The whole of the Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:it-and-in-one-of-the-cases-it-was-ob-served-as-follows",
+    "label": "Concept",
+    "name": "it and in one of the cases it was ob- served as follows",
+    "confidence": 0.9,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "person:erie-c-j",
+    "label": "Person",
+    "name": "Erie C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "b80677a2-c874-5834-9151-edb2cf5eb5b1",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "0450fc91-0ea3-5b2f-9e28-078db36f3f5b",
+    "page": 41
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "81cda595-4820-5f74-866a-90d30b42a448",
+    "page": 42
+  },
+  {
+    "id": "act:i-must-necessarily-refer-to-the-impugned-act",
+    "label": "Act",
+    "name": "I must necessarily refer to the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "81cda595-4820-5f74-866a-90d30b42a448",
+    "page": 42
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "act:i-must-necessarily-refer-to-the-impugned-act",
+    "label": "Act",
+    "name": "I must necessarily refer to the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "act:foreigners-act-1946",
+    "label": "Act",
+    "name": "Foreigners Act, 1946",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "act:it-states-in-substance-that-the-parliament-may-by-an-act",
+    "label": "Act",
+    "name": "It states in substance that the Parliament may by an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "182cb2c7-7545-5b7d-bf4e-c68fc0a699a1",
+    "page": 42
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "462fc001-ed89-5220-8efe-c878901f56be",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "462fc001-ed89-5220-8efe-c878901f56be",
+    "page": 44
+  },
+  {
+    "id": "act:parliament-may-pass-an-act",
+    "label": "Act",
+    "name": "Parliament may pass an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "462fc001-ed89-5220-8efe-c878901f56be",
+    "page": 44
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "act:british-act",
+    "label": "Act",
+    "name": "British Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:and-cir-cumscribe-the-area-of-an-exceptional-piece-of-legislation",
+    "label": "Concept",
+    "name": "and cir- cumscribe the area of an exceptional piece of legislation",
+    "confidence": 0.9,
+    "source_chunk_id": "e892b61a-8d6c-5fa6-b6c1-f4ef0a0a911b",
+    "page": 44
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "7a7826fe-967f-5361-8c30-5a7e79085179",
+    "page": 46
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:107",
+    "label": "Section",
+    "name": "Section 107",
+    "confidence": 1.0,
+    "source_chunk_id": "1fcaa106-5980-57fb-aae2-27130c07958a",
+    "page": 47
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:145",
+    "label": "Section",
+    "name": "Section 145",
+    "confidence": 1.0,
+    "source_chunk_id": "1fcaa106-5980-57fb-aae2-27130c07958a",
+    "page": 47
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "1fcaa106-5980-57fb-aae2-27130c07958a",
+    "page": 47
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "1fcaa106-5980-57fb-aae2-27130c07958a",
+    "page": 47
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1fcaa106-5980-57fb-aae2-27130c07958a",
+    "page": 47
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:in-studying-the-provisions-of-the-impugned-act",
+    "label": "Act",
+    "name": "In studying the provisions of the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:i-could-not-also-help-noticing-that-the-impugned-act",
+    "label": "Act",
+    "name": "I could not also help noticing that the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:government-of-madras-under-the-preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Government of Madras under the Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:public-order-act-1947",
+    "label": "Act",
+    "name": "Public Order Act, 1947",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:detention-act-1950",
+    "label": "Act",
+    "name": "Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "act:the-petitioner-contends-that-the-impugned-act",
+    "label": "Act",
+    "name": "The petitioner contends that the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "91176230-0bed-593f-be61-6d29872e25df",
+    "page": 48
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:the-state",
+    "label": "Concept",
+    "name": "the State",
+    "confidence": 0.9,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "8ab0e5ea-5e9d-5824-822d-a15eeacb661f",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "court:allahabad-high-court",
+    "label": "Court",
+    "name": "Allahabad High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "a9760c43-7bb2-51a7-82bd-3b454a3edaba",
+    "page": 50
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a07b58db-5352-584a-9747-f46d88ed6947",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "a07b58db-5352-584a-9747-f46d88ed6947",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a07b58db-5352-584a-9747-f46d88ed6947",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a07b58db-5352-584a-9747-f46d88ed6947",
+    "page": 52
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:697",
+    "label": "Section",
+    "name": "Section 697",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:97",
+    "label": "Section",
+    "name": "Section 97",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:596",
+    "label": "Section",
+    "name": "Section 596",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:and-its-protection-generally-takes-the-form-of",
+    "label": "Concept",
+    "name": "and its protection generally takes the form of",
+    "confidence": 0.9,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "8185c17d-92f7-513e-beaa-56cd0a972600",
+    "page": 52
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:65",
+    "label": "Article",
+    "name": "Article 65",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:340",
+    "label": "Section",
+    "name": "Section 340",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "act:public-safety-act",
+    "label": "Act",
+    "name": "Public Safety Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "act:courts-under-the-criminal-procedure-code",
+    "label": "Act",
+    "name": "Courts under the Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "act:it-can-be-no-objection-to-this-view-that-the-code",
+    "label": "Act",
+    "name": "It can be no objection to this view that the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "act:parliament-passed-an-act",
+    "label": "Act",
+    "name": "Parliament passed an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "d84da27c-1e14-5d52-8a54-7ee564ce72ca",
+    "page": 56
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "act:i-will-now-proceed-to-examine-whether-the-impugned-act",
+    "label": "Act",
+    "name": "I will now proceed to examine whether the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "f419d892-1b8d-5360-a394-2e9961d7487f",
+    "page": 57
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "act:parliament-has-proceeded-in-enacting-the-impugned-act",
+    "label": "Act",
+    "name": "Parliament has proceeded in enacting the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "act:parliament-passed-an-act",
+    "label": "Act",
+    "name": "Parliament passed an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "act:turning-next-to-the-provisions-of-the-impugned-act",
+    "label": "Act",
+    "name": "Turning next to the provisions of the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "3367fe24-ad5d-5274-ae92-1569c34f7ec5",
+    "page": 58
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "act:defence-of-india-rules-framed-under-the-defence-of-india-act-1939",
+    "label": "Act",
+    "name": "Defence of India Rules framed under the Defence of India Act, 1939",
+    "confidence": 1.0,
+    "source_chunk_id": "8455d148-98be-5c47-a331-78cfcdf15bc6",
+    "page": 60
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "act:the-return-to-the-writ-is-that-the-detention-is-legal-under-act",
+    "label": "Act",
+    "name": "The return to the writ is that the detention is legal under Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "act:the-decision-of-the-question-whether-act",
+    "label": "Act",
+    "name": "The decision of the question whether Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "e676c47e-c392-577a-8632-ccd9e544c1bb",
+    "page": 62
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "act:it-may-also-be-observed-that-an-act",
+    "label": "Act",
+    "name": "It may also be observed that an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "act:defence-of-the-realm-act",
+    "label": "Act",
+    "name": "Defence of the Realm Act",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "act:india-under-the-defence-of-india-act",
+    "label": "Act",
+    "name": "India under the Defence of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "act:the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "The Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "act:schedule-was-a-complete-code",
+    "label": "Act",
+    "name": "Schedule was a complete Code",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "38f9268e-cd76-5769-a92b-99deace0aee2",
+    "page": 63
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "be255377-b559-5de7-90fc-cc9bed4e36bc",
+    "page": 66
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "187ceaf7-5817-5898-ae70-c3a0300930c9",
+    "page": 67
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:by-this-section-act",
+    "label": "Act",
+    "name": "By this section Act",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:according-to-act",
+    "label": "Act",
+    "name": "According to Act",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:hurt-is-an-offence-under-the-indian-penal-code",
+    "label": "Act",
+    "name": "Hurt is an offence under the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:another-illustration-is-furnished-by-the-criminal-procedure-code",
+    "label": "Act",
+    "name": "Another illustration is furnished by the Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "act:defence-of-india-act",
+    "label": "Act",
+    "name": "Defence of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "847031ec-f4ac-53d5-a914-68581d111b5f",
+    "page": 68
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:516",
+    "label": "Section",
+    "name": "Section 516",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "act:madras-maintainance-of-public-order-act",
+    "label": "Act",
+    "name": "Madras Maintainance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "court:madras-high-court",
+    "label": "Court",
+    "name": "Madras High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "9117b619-0c6d-5d5f-9662-cf37fd35e27d",
+    "page": 72
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:10",
+    "label": "Article",
+    "name": "Article 10",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "act:legislative-lists-of-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Legislative Lists of the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "b470d006-cdb7-5885-b15b-6fbceabb06ff",
+    "page": 75
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "act:legislative-lists-of-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Legislative Lists of the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "act:defence-of-realm-consolidation-act-1914",
+    "label": "Act",
+    "name": "Defence of Realm Consolidation Act, 1914",
+    "confidence": 1.0,
+    "source_chunk_id": "47145229-413e-52c7-b4c5-5b2e280fa0f0",
+    "page": 76
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "63ad7c81-1484-5c3f-8470-7ab7cb15ec80",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "63ad7c81-1484-5c3f-8470-7ab7cb15ec80",
+    "page": 77
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "63ad7c81-1484-5c3f-8470-7ab7cb15ec80",
+    "page": 77
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "63ad7c81-1484-5c3f-8470-7ab7cb15ec80",
+    "page": 77
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "b40452a0-c840-55a6-8c0a-c072e6eb66b9",
+    "page": 78
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:301",
+    "label": "Article",
+    "name": "Article 301",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:75",
+    "label": "Article",
+    "name": "Article 75",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:111",
+    "label": "Article",
+    "name": "Article 111",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:114",
+    "label": "Article",
+    "name": "Article 114",
+    "confidence": 1.0,
+    "source_chunk_id": "eef3bb4e-5eca-552c-be8b-1bbe73e17c70",
+    "page": 78
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "833128a2-f1b5-5eb4-8489-f9c5bed234e6",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "833128a2-f1b5-5eb4-8489-f9c5bed234e6",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:76",
+    "label": "Article",
+    "name": "Article 76",
+    "confidence": 1.0,
+    "source_chunk_id": "833128a2-f1b5-5eb4-8489-f9c5bed234e6",
+    "page": 80
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:516",
+    "label": "Section",
+    "name": "Section 516",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:45",
+    "label": "Section",
+    "name": "Section 45",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:379",
+    "label": "Section",
+    "name": "Section 379",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:470",
+    "label": "Section",
+    "name": "Section 470",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "act:as-the-impugned-act",
+    "label": "Act",
+    "name": "As the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:even-at-the-present-day",
+    "label": "Concept",
+    "name": "even at the present day",
+    "confidence": 0.9,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "300cff6f-8975-52ac-ac99-2e4cca95e725",
+    "page": 81
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "82c11ce5-8110-51c1-ba35-9425a3ad2c08",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "82c11ce5-8110-51c1-ba35-9425a3ad2c08",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "82c11ce5-8110-51c1-ba35-9425a3ad2c08",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "82c11ce5-8110-51c1-ba35-9425a3ad2c08",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "82c11ce5-8110-51c1-ba35-9425a3ad2c08",
+    "page": 88
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:34",
+    "label": "Article",
+    "name": "Article 34",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "act:nambiar-that-the-preventive-detention-act",
+    "label": "Act",
+    "name": "Nambiar that the Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "4411ff40-ce09-536a-b51c-9eea7a27fb3d",
+    "page": 88
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46c6b29e-cbd5-5bf7-9545-61cc8ee0aedf",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "46c6b29e-cbd5-5bf7-9545-61cc8ee0aedf",
+    "page": 89
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "46c6b29e-cbd5-5bf7-9545-61cc8ee0aedf",
+    "page": 89
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "46c6b29e-cbd5-5bf7-9545-61cc8ee0aedf",
+    "page": 89
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "46c6b29e-cbd5-5bf7-9545-61cc8ee0aedf",
+    "page": 89
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "act:detention-act",
+    "label": "Act",
+    "name": "Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "cd625e2f-dd20-54a1-b352-40b2a0383733",
+    "page": 89
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:the-whole-act",
+    "label": "Act",
+    "name": "The whole Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "act:his-contention-is-that-the-impugned-act",
+    "label": "Act",
+    "name": "His contention is that the impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "b1bdf4b7-8522-5867-9d7a-bb3f7543edd7",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "3322acba-97cf-5fe4-959e-4db93241ba99",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a0758a6e-6b9f-5c8e-a49a-6d085422ea34",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a0758a6e-6b9f-5c8e-a49a-6d085422ea34",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "a0758a6e-6b9f-5c8e-a49a-6d085422ea34",
+    "page": 96
+  },
+  {
+    "id": "person:harries-c-j",
+    "label": "Person",
+    "name": "Harries C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "a0758a6e-6b9f-5c8e-a49a-6d085422ea34",
+    "page": 96
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e2b61d-54ae-5d56-b68a-3cb730b29a31",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e2b61d-54ae-5d56-b68a-3cb730b29a31",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e2b61d-54ae-5d56-b68a-3cb730b29a31",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9f9ba0-dcd2-5960-90af-2941aa20eb1f",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "cf9f9ba0-dcd2-5960-90af-2941aa20eb1f",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "62d3108b-2c42-54c3-a1ae-916248378025",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "62d3108b-2c42-54c3-a1ae-916248378025",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "62d3108b-2c42-54c3-a1ae-916248378025",
+    "page": 97
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "62d3108b-2c42-54c3-a1ae-916248378025",
+    "page": 97
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "62d3108b-2c42-54c3-a1ae-916248378025",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5dad075a-f4ff-5af0-8f03-f4ebd0fd982c",
+    "page": 99
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "5dad075a-f4ff-5af0-8f03-f4ebd0fd982c",
+    "page": 99
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5dad075a-f4ff-5af0-8f03-f4ebd0fd982c",
+    "page": 99
+  },
+  {
+    "id": "act:the-argument-that-every-section-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "The argument that every section of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5dad075a-f4ff-5af0-8f03-f4ebd0fd982c",
+    "page": 99
+  },
+  {
+    "id": "act:jail-code",
+    "label": "Act",
+    "name": "Jail Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5dad075a-f4ff-5af0-8f03-f4ebd0fd982c",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "69951406-98b5-5d9b-9d15-4d47a10b279b",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "69951406-98b5-5d9b-9d15-4d47a10b279b",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "69951406-98b5-5d9b-9d15-4d47a10b279b",
+    "page": 100
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "67a6b23f-e234-5681-ab77-4b60bb4fc282",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "67a6b23f-e234-5681-ab77-4b60bb4fc282",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "67a6b23f-e234-5681-ab77-4b60bb4fc282",
+    "page": 101
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:124",
+    "label": "Section",
+    "name": "Section 124",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:366",
+    "label": "Section",
+    "name": "Section 366",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:561",
+    "label": "Section",
+    "name": "Section 561",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "act:a-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "A of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "act:code-of-civil-procedure-or-the-code",
+    "label": "Act",
+    "name": "Code of Civil Procedure or the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:the-substantive-fundamental-right-to-which-protection-is-given-and-does-not-purport-to-prescribe-any-particular-procedure-at-all",
+    "label": "Concept",
+    "name": "the substantive fundamental right to which protection is given and does not purport to prescribe any particular procedure at all",
+    "confidence": 0.9,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:the-ambit-of-the-right-to-life-and-personal-liberty-which-is-to-be-protected-as",
+    "label": "Concept",
+    "name": "the ambit of the right to life and personal liberty which is to be protected as",
+    "confidence": 0.9,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:the-phrase",
+    "label": "Concept",
+    "name": "the phrase",
+    "confidence": 0.9,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:with-precision-the-words",
+    "label": "Concept",
+    "name": "with precision the words",
+    "confidence": 0.9,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "amendment:const_amendment_5",
+    "label": "Amendment",
+    "name": "5th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "c35fb6e3-a734-5013-a991-caf7d20753ea",
+    "page": 101
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:516",
+    "label": "Section",
+    "name": "Section 516",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "64b76d67-bedd-5f5f-b385-30ab1e8ec343",
+    "page": 105
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "act:legislature-could-repeal-the-whole-of-the-criminal-procedure-code",
+    "label": "Act",
+    "name": "Legislature could repeal the whole of the Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3a8e27ec-32bc-59c1-bbf7-e2f5db00f5ab",
+    "page": 106
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:50",
+    "label": "Article",
+    "name": "Article 50",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:107",
+    "label": "Article",
+    "name": "Article 107",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:75",
+    "label": "Article",
+    "name": "Article 75",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:114",
+    "label": "Article",
+    "name": "Article 114",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:74",
+    "label": "Article",
+    "name": "Article 74",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "c5d57222-a600-57b6-920c-81090a91790e",
+    "page": 107
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "560c15e7-acd1-5252-b5f1-a85bd026e21a",
+    "page": 108
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "67f404f0-05f4-57be-8aab-b5f6464d1412",
+    "page": 109
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "act:the-impugned-act",
+    "label": "Act",
+    "name": "The impugned Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "concept:a-k-gopalan-v-state-of-madras:and-say-whether",
+    "label": "Concept",
+    "name": "and say whether",
+    "confidence": 0.9,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "3d44d213-6b62-51df-ab33-4f544f81d041",
+    "page": 109
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "act:i-can-see-no-reason-why-parliament-cannot-do-both-by-the-same-act",
+    "label": "Act",
+    "name": "I can see no reason why Parliament cannot do both by the same Act",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "24615b98-0948-508d-8f7d-011498abcaae",
+    "page": 111
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "person:meredith-c-j",
+    "label": "Person",
+    "name": "Meredith C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "edf1748d-5ca8-5bfa-9fb4-fbe00ed0d260",
+    "page": 112
+  },
+  {
+    "id": "section:a-k-gopalan-v-state-of-madras:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "02a99818-3f03-547b-9e8f-a24c8f91026e",
+    "page": 112
+  }
+]

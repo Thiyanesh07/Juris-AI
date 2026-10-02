@@ -1,0 +1,210 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:279",
+    "label": "Article",
+    "name": "Article 279",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:248",
+    "label": "Article",
+    "name": "Article 248",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:249",
+    "label": "Article",
+    "name": "Article 249",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:250",
+    "label": "Article",
+    "name": "Article 250",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:268",
+    "label": "Article",
+    "name": "Article 268",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "section:constitution_of_india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "69345d34-ba5a-5643-afb9-5242a7e9de68",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:268",
+    "label": "Article",
+    "name": "Article 268",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:269",
+    "label": "Article",
+    "name": "Article 269",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:246",
+    "label": "Article",
+    "name": "Article 246",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:270",
+    "label": "Article",
+    "name": "Article 270",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:271",
+    "label": "Article",
+    "name": "Article 271",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:279",
+    "label": "Article",
+    "name": "Article 279",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:286",
+    "label": "Article",
+    "name": "Article 286",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:366",
+    "label": "Article",
+    "name": "Article 366",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "section:constitution_of_india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "a08729c7-153a-5581-ad71-dc0999f45526",
+    "page": 3
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:241",
+    "label": "Article",
+    "name": "Article 241",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:279",
+    "label": "Article",
+    "name": "Article 279",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  },
+  {
+    "id": "amendment:const_amendment_101",
+    "label": "Amendment",
+    "name": "101th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "5f9fa4ac-9e2a-59cc-b9f9-464f4365b421",
+    "page": 6
+  }
+]

@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:union-of-india-india-the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "UNION OF INDIA India The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "act:nhrc-has-suggested-various-amendments-to-the-said-act",
+    "label": "Act",
+    "name": "NHRC has suggested various amendments to the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fab7adfb-809e-58e9-8808-c5c66f725d40",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:338",
+    "label": "Article",
+    "name": "Article 338",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:74",
+    "label": "Section",
+    "name": "Section 74",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:rights-of-persons-with-disabilities-act-2016",
+    "label": "Act",
+    "name": "Rights of Persons with Disabilities Act, 2016",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:national-commission-for-backward-classes-act-1993",
+    "label": "Act",
+    "name": "National Commission for Backward Classes Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:national-commission-for-minorities-act-1992",
+    "label": "Act",
+    "name": "National Commission for Minorities Act, 1992",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:commissions-for-protection-of-child-rights-act-2005",
+    "label": "Act",
+    "name": "Commissions for Protection of Child Rights Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "act:national-commission-for-women-act-1990",
+    "label": "Act",
+    "name": "National Commission for Women Act, 1990",
+    "confidence": 1.0,
+    "source_chunk_id": "01e02594-204a-5ce6-adad-134d69f1dc8f",
+    "page": 3
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a8a56135-4ad0-52e6-862a-2f6603f5c696",
+    "page": 4
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "a8a56135-4ad0-52e6-862a-2f6603f5c696",
+    "page": 4
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "a8a56135-4ad0-52e6-862a-2f6603f5c696",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:40b",
+    "label": "Section",
+    "name": "Section 40B",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-chief-justice-by-act",
+    "label": "Act",
+    "name": "Substituted 'Chief Justice' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-two-members-by-act",
+    "label": "Act",
+    "name": "Substituted 'two Members' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-the-national-commission-for-minorities-by-act",
+    "label": "Act",
+    "name": "Substituted 'the National Commission for Minorities' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-and-the-national-commission-for-women-by-act",
+    "label": "Act",
+    "name": "Substituted 'and the National Commission for Women' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:substituted-five-years-by-act",
+    "label": "Act",
+    "name": "Substituted 'five years' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "act:omitted-for-another-term-of-five-years-by-act",
+    "label": "Act",
+    "name": "Omitted 'for another term of five years' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "59baab90-228d-5616-af55-24c97e8b4865",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:176",
+    "label": "Section",
+    "name": "Section 176",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:177",
+    "label": "Section",
+    "name": "Section 177",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:100",
+    "label": "Section",
+    "name": "Section 100",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:175",
+    "label": "Section",
+    "name": "Section 175",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:178",
+    "label": "Section",
+    "name": "Section 178",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:179",
+    "label": "Section",
+    "name": "Section 179",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:180",
+    "label": "Section",
+    "name": "Section 180",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:228",
+    "label": "Section",
+    "name": "Section 228",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:346",
+    "label": "Section",
+    "name": "Section 346",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:196",
+    "label": "Section",
+    "name": "Section 196",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:195",
+    "label": "Section",
+    "name": "Section 195",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:substituted-byd-act",
+    "label": "Act",
+    "name": "Substituted byd Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:court-trying-a-suit-under-the-code",
+    "label": "Act",
+    "name": "Court trying a suit under the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "act:chapter-xxvi-of-the-code",
+    "label": "Act",
+    "name": "Chapter XXVI of the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6ebab4d6-9713-5ee7-80fe-a408c8898e4b",
+    "page": 7
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69298cb0-a2ee-5607-b571-187d4f48ce1e",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:state-commission-as-it-may-delegate-to-him-by-act",
+    "label": "Act",
+    "name": "State Commission as it may delegate to him' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:substituted-five-years-by-act",
+    "label": "Act",
+    "name": "Substituted 'five years' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "act:omitted-for-another-term-of-five-years-by-act",
+    "label": "Act",
+    "name": "Omitted 'for another term of five years' by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2a1036bb-3faf-5b44-a994-35a663aaeb35",
+    "page": 10
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "4c78c299-e185-596a-a97f-3be4dc65ed76",
+    "page": 14
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "4c78c299-e185-596a-a97f-3be4dc65ed76",
+    "page": 14
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "bbee623c-fb77-5e5d-83f2-acb00184818e",
+    "page": 14
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "bbee623c-fb77-5e5d-83f2-acb00184818e",
+    "page": 14
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:21",
+    "label": "Section",
+    "name": "Section 21",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "bc2b81ea-025d-5d5f-b97e-c0c501482203",
+    "page": 16
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:34",
+    "label": "Section",
+    "name": "Section 34",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:40",
+    "label": "Section",
+    "name": "Section 40",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:18",
+    "label": "Section",
+    "name": "Section 18",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2e189791-c57a-53c7-ab2e-b01ec1a0bc4f",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "section:the-protection-of-human-rights-act-1993:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "11fcdbc8-d466-57f5-9e71-90aaca6c16b3",
+    "page": 17
+  }
+]

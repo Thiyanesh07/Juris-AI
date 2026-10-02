@@ -1,0 +1,666 @@
+[
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "24892436-f06d-5af3-9722-d5537d442cfd",
+    "page": 1
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "24892436-f06d-5af3-9722-d5537d442cfd",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:115",
+    "label": "Article",
+    "name": "Article 115",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:95",
+    "label": "Article",
+    "name": "Article 95",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:635b",
+    "label": "Section",
+    "name": "Section 635B",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:291",
+    "label": "Section",
+    "name": "Section 291",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:265",
+    "label": "Section",
+    "name": "Section 265",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "act:chapter-xxxviii-of-the-civil-procedure-code",
+    "label": "Act",
+    "name": "Chapter XXXVIII of the Civil Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "39e2ec35-cdba-5046-a93f-9c16787957b2",
+    "page": 1
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:262",
+    "label": "Section",
+    "name": "Section 262",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:404",
+    "label": "Section",
+    "name": "Section 404",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "act:supreme-court-under-the-delhi-shops-and-establishments-act",
+    "label": "Act",
+    "name": "Supreme Court under the Delhi Shops and Establishments Act",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2eb02fad-2ec4-5f67-a248-70f30bcedd3f",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:95",
+    "label": "Article",
+    "name": "Article 95",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "act:companies-act-1956",
+    "label": "Act",
+    "name": "Companies Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "902baa21-55ff-5c26-9ce0-b7a58eddeb1f",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "6223aac6-9cbe-58cc-ab1e-195fad47f695",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "6223aac6-9cbe-58cc-ab1e-195fad47f695",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "6223aac6-9cbe-58cc-ab1e-195fad47f695",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "6223aac6-9cbe-58cc-ab1e-195fad47f695",
+    "page": 9
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "eed8f952-633d-52e2-8066-5456aef6983b",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "eed8f952-633d-52e2-8066-5456aef6983b",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "eed8f952-633d-52e2-8066-5456aef6983b",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "b80be527-2bd2-50fa-99bd-f0364359986e",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "b80be527-2bd2-50fa-99bd-f0364359986e",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "b80be527-2bd2-50fa-99bd-f0364359986e",
+    "page": 10
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "4e3d049d-9e59-5fce-b180-de6415942443",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "4e3d049d-9e59-5fce-b180-de6415942443",
+    "page": 11
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "4e3d049d-9e59-5fce-b180-de6415942443",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:95",
+    "label": "Article",
+    "name": "Article 95",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a5dd9657-b934-5edc-b505-92c978647140",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:95",
+    "label": "Article",
+    "name": "Article 95",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:404",
+    "label": "Section",
+    "name": "Section 404",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:36",
+    "label": "Section",
+    "name": "Section 36",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "act:delhi-shops-and-establishments-act",
+    "label": "Act",
+    "name": "Delhi Shops and Establishments Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "act:delhi-shops-and-establishments-act-1954",
+    "label": "Act",
+    "name": "Delhi Shops and Establishments Act, 1954",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6e3fff81-c2c9-52f0-824c-0d0c07be788b",
+    "page": 12
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:22",
+    "label": "Section",
+    "name": "Section 22",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:397",
+    "label": "Section",
+    "name": "Section 397",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:153c",
+    "label": "Section",
+    "name": "Section 153C",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "act:delhi-shops-and-establishments-act",
+    "label": "Act",
+    "name": "Delhi Shops and Establishments Act",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "act:companies-act-1956",
+    "label": "Act",
+    "name": "Companies Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "court:calcutta-high-court",
+    "label": "Court",
+    "name": "Calcutta High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "43eee400-1081-59cb-8aba-8503a1679829",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:95",
+    "label": "Article",
+    "name": "Article 95",
+    "confidence": 1.0,
+    "source_chunk_id": "4f2faaef-2f83-5836-b3ad-b6607b8cf0d0",
+    "page": 15
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:398",
+    "label": "Section",
+    "name": "Section 398",
+    "confidence": 1.0,
+    "source_chunk_id": "4f2faaef-2f83-5836-b3ad-b6607b8cf0d0",
+    "page": 15
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:402",
+    "label": "Section",
+    "name": "Section 402",
+    "confidence": 1.0,
+    "source_chunk_id": "4f2faaef-2f83-5836-b3ad-b6607b8cf0d0",
+    "page": 15
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "4f2faaef-2f83-5836-b3ad-b6607b8cf0d0",
+    "page": 15
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:408",
+    "label": "Section",
+    "name": "Section 408",
+    "confidence": 1.0,
+    "source_chunk_id": "4f2faaef-2f83-5836-b3ad-b6607b8cf0d0",
+    "page": 15
+  },
+  {
+    "id": "section:bennett-coleman-co-v-union-of-india:255",
+    "label": "Section",
+    "name": "Section 255",
+    "confidence": 1.0,
+    "source_chunk_id": "c026ba1c-1c1b-56a0-8f9c-5d18624a02db",
+    "page": 16
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c026ba1c-1c1b-56a0-8f9c-5d18624a02db",
+    "page": 16
+  }
+]

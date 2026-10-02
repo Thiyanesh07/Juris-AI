@@ -1,0 +1,11 @@
+{
+  "eval_q01": ["article:constitution_of_india:21"],
+  "eval_q02": ["article:constitution_of_india:21", "judgment:maneka_gandhi"],
+  "eval_q03": ["section:it_act_2000:66a", "article:constitution_of_india:19"],
+  "eval_q04": ["judgment:kesavananda_bharati", "concept:basic_structure"],
+  "eval_q05": ["judgment:maneka_gandhi", "article:constitution_of_india:21"],
+  "eval_q06": ["judgment:shreya_singhal", "section:it_act_2000:66a"],
+  "eval_q07": ["article:constitution_of_india:21", "amendment:const_amendment_44"],
+  "eval_q08": ["amendment:const_amendment_44", "article:constitution_of_india:19"],
+  "eval_q09": ["article:constitution_of_india:21", "judgment:maneka_gandhi"]
+}

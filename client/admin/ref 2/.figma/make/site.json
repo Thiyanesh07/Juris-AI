@@ -1,0 +1,10 @@
+{
+  "description": "Manage and oversee the Juris AI legal research platform through a comprehensive Admin Portal, enabling efficient control of users, documents, and knowledge management.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

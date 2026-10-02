@@ -1,0 +1,554 @@
+[
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "53958fa8-2011-53f9-b8b1-13fb5426b990",
+    "page": 1
+  },
+  {
+    "id": "act:indiacode-the-right-to-information-act-2005",
+    "label": "Act",
+    "name": "IndiaCode The Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "53958fa8-2011-53f9-b8b1-13fb5426b990",
+    "page": 1
+  },
+  {
+    "id": "act:the-jammu-and-kashmir-reorganisation-act-2019",
+    "label": "Act",
+    "name": "The Jammu and Kashmir Reorganisation Act, 2019",
+    "confidence": 1.0,
+    "source_chunk_id": "53958fa8-2011-53f9-b8b1-13fb5426b990",
+    "page": 1
+  },
+  {
+    "id": "act:the-digital-personal-data-protection-act-2023",
+    "label": "Act",
+    "name": "The Digital Personal Data Protection Act, 2023",
+    "confidence": 1.0,
+    "source_chunk_id": "53958fa8-2011-53f9-b8b1-13fb5426b990",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ddec248f-a757-56ab-be77-c9f172c456b3",
+    "page": 4
+  },
+  {
+    "id": "section:right-to-information-act-2005:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "ddec248f-a757-56ab-be77-c9f172c456b3",
+    "page": 4
+  },
+  {
+    "id": "section:right-to-information-act-2005:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "ddec248f-a757-56ab-be77-c9f172c456b3",
+    "page": 4
+  },
+  {
+    "id": "section:right-to-information-act-2005:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "ddec248f-a757-56ab-be77-c9f172c456b3",
+    "page": 4
+  },
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "ddec248f-a757-56ab-be77-c9f172c456b3",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:239",
+    "label": "Article",
+    "name": "Article 239",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "section:right-to-information-act-2005:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "section:right-to-information-act-2005:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "section:right-to-information-act-2005:95",
+    "label": "Section",
+    "name": "Section 95",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "section:right-to-information-act-2005:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a4e149b4-7df5-5d1e-905e-9028bf612ffb",
+    "page": 5
+  },
+  {
+    "id": "section:right-to-information-act-2005:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "3d7d513a-5e0c-5322-bf7f-5372771ed3ab",
+    "page": 7
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3d7d513a-5e0c-5322-bf7f-5372771ed3ab",
+    "page": 7
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "3d7d513a-5e0c-5322-bf7f-5372771ed3ab",
+    "page": 7
+  },
+  {
+    "id": "section:right-to-information-act-2005:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "3d7d513a-5e0c-5322-bf7f-5372771ed3ab",
+    "page": 7
+  },
+  {
+    "id": "section:right-to-information-act-2005:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "1022fbc9-ca2e-57b4-8048-842e3b23d051",
+    "page": 10
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "1022fbc9-ca2e-57b4-8048-842e3b23d051",
+    "page": 10
+  },
+  {
+    "id": "section:right-to-information-act-2005:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "1022fbc9-ca2e-57b4-8048-842e3b23d051",
+    "page": 10
+  },
+  {
+    "id": "act:notwithstanding-anything-in-the-official-secrets-act-1923",
+    "label": "Act",
+    "name": "Notwithstanding anything in the Official Secrets Act, 1923",
+    "confidence": 1.0,
+    "source_chunk_id": "1022fbc9-ca2e-57b4-8048-842e3b23d051",
+    "page": 10
+  },
+  {
+    "id": "section:right-to-information-act-2005:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "5739320f-5ba1-5bcc-b0c4-5f923c590b10",
+    "page": 11
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5739320f-5ba1-5bcc-b0c4-5f923c590b10",
+    "page": 11
+  },
+  {
+    "id": "section:right-to-information-act-2005:44",
+    "label": "Section",
+    "name": "Section 44",
+    "confidence": 1.0,
+    "source_chunk_id": "5739320f-5ba1-5bcc-b0c4-5f923c590b10",
+    "page": 11
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "5739320f-5ba1-5bcc-b0c4-5f923c590b10",
+    "page": 11
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "8faf4376-f5a1-5ad6-8e21-e855693a1a12",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "8faf4376-f5a1-5ad6-8e21-e855693a1a12",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "8faf4376-f5a1-5ad6-8e21-e855693a1a12",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a72f510e-ccb5-59b5-8a7b-5f31caca6296",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "a72f510e-ccb5-59b5-8a7b-5f31caca6296",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "a72f510e-ccb5-59b5-8a7b-5f31caca6296",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "a72f510e-ccb5-59b5-8a7b-5f31caca6296",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a72f510e-ccb5-59b5-8a7b-5f31caca6296",
+    "page": 12
+  },
+  {
+    "id": "section:right-to-information-act-2005:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "3149b1b0-c7f8-563c-8874-065f70202b20",
+    "page": 14
+  },
+  {
+    "id": "section:right-to-information-act-2005:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "3149b1b0-c7f8-563c-8874-065f70202b20",
+    "page": 14
+  },
+  {
+    "id": "section:right-to-information-act-2005:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3149b1b0-c7f8-563c-8874-065f70202b20",
+    "page": 14
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3149b1b0-c7f8-563c-8874-065f70202b20",
+    "page": 14
+  },
+  {
+    "id": "section:right-to-information-act-2005:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3c52e841-7e4b-5145-9f17-14de3a115335",
+    "page": 16
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3c52e841-7e4b-5145-9f17-14de3a115335",
+    "page": 16
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "3c52e841-7e4b-5145-9f17-14de3a115335",
+    "page": 16
+  },
+  {
+    "id": "section:right-to-information-act-2005:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "3c52e841-7e4b-5145-9f17-14de3a115335",
+    "page": 16
+  },
+  {
+    "id": "act:notwithstanding-anything-inconsistent-contained-in-any-other-act",
+    "label": "Act",
+    "name": "Notwithstanding anything inconsistent contained in any other Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3c52e841-7e4b-5145-9f17-14de3a115335",
+    "page": 16
+  },
+  {
+    "id": "section:right-to-information-act-2005:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "c25a0f71-14d6-5b24-9715-f5eda62a4af2",
+    "page": 18
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "c25a0f71-14d6-5b24-9715-f5eda62a4af2",
+    "page": 18
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "act:official-secrets-act-1923",
+    "label": "Act",
+    "name": "Official Secrets Act, 1923",
+    "confidence": 1.0,
+    "source_chunk_id": "867bbc0d-42dc-5a4b-b4bc-2534cf7e73ca",
+    "page": 19
+  },
+  {
+    "id": "section:right-to-information-act-2005:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "section:right-to-information-act-2005:16",
+    "label": "Section",
+    "name": "Section 16",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "section:right-to-information-act-2005:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "section:right-to-information-act-2005:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "section:right-to-information-act-2005:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "section:right-to-information-act-2005:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "act:the-freedom-of-information-act-2002",
+    "label": "Act",
+    "name": "The Freedom of Information Act, 2002",
+    "confidence": 1.0,
+    "source_chunk_id": "2cf65eff-a174-5e60-a300-238d263b985c",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b742ba66-984b-5d13-a6a4-7b9da2189e6a",
+    "page": 23
+  },
+  {
+    "id": "act:the-freedom-of-information-act-2002",
+    "label": "Act",
+    "name": "The Freedom of Information Act, 2002",
+    "confidence": 1.0,
+    "source_chunk_id": "b742ba66-984b-5d13-a6a4-7b9da2189e6a",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  },
+  {
+    "id": "section:right-to-information-act-2005:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  },
+  {
+    "id": "act:government-resolved-that-the-freedom-of-information-act-2002",
+    "label": "Act",
+    "name": "Government resolved that the Freedom of Information Act, 2002",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  },
+  {
+    "id": "act:in-view-of-significant-changes-proposed-in-the-existing-act",
+    "label": "Act",
+    "name": "In view of significant changes proposed in the existing Act",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  },
+  {
+    "id": "act:government-also-decided-to-repeal-the-freedom-of-information-act-2002",
+    "label": "Act",
+    "name": "Government also decided to repeal the Freedom of Information Act, 2002",
+    "confidence": 1.0,
+    "source_chunk_id": "be136212-f71e-52a5-968c-ac67364a58bb",
+    "page": 24
+  }
+]

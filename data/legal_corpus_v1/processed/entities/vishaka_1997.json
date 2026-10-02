@@ -1,0 +1,242 @@
+[
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "2cbbc007-a9f6-5fce-9648-27535403e628",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2cbbc007-a9f6-5fce-9648-27535403e628",
+    "page": 1
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "VISHAKA",
+    "confidence": 1.0,
+    "source_chunk_id": "2cbbc007-a9f6-5fce-9648-27535403e628",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "406bb99c-f2ad-5b62-a08e-17905d4ef453",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "406bb99c-f2ad-5b62-a08e-17905d4ef453",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "406bb99c-f2ad-5b62-a08e-17905d4ef453",
+    "page": 1
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "VISHAKA",
+    "confidence": 1.0,
+    "source_chunk_id": "406bb99c-f2ad-5b62-a08e-17905d4ef453",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "article:constitution_of_india:42",
+    "label": "Article",
+    "name": "Article 42",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "article:constitution_of_india:51a",
+    "label": "Article",
+    "name": "Article 51A",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "99ff09e6-db7c-590b-8030-ada1cf0be9d0",
+    "page": 2
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f76c8dde-491c-5b9e-93b7-db6842caadbe",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "f76c8dde-491c-5b9e-93b7-db6842caadbe",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "f76c8dde-491c-5b9e-93b7-db6842caadbe",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:73",
+    "label": "Article",
+    "name": "Article 73",
+    "confidence": 1.0,
+    "source_chunk_id": "f76c8dde-491c-5b9e-93b7-db6842caadbe",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "f76c8dde-491c-5b9e-93b7-db6842caadbe",
+    "page": 4
+  },
+  {
+    "id": "article:constitution_of_india:11",
+    "label": "Article",
+    "name": "Article 11",
+    "confidence": 1.0,
+    "source_chunk_id": "68ec730f-8635-5f5c-9863-a6d6428c2b9d",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ccd7baa1-bef4-5bf6-a768-60908bcbed4c",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:24",
+    "label": "Article",
+    "name": "Article 24",
+    "confidence": 1.0,
+    "source_chunk_id": "ccd7baa1-bef4-5bf6-a768-60908bcbed4c",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:11",
+    "label": "Article",
+    "name": "Article 11",
+    "confidence": 1.0,
+    "source_chunk_id": "ccd7baa1-bef4-5bf6-a768-60908bcbed4c",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "ccd7baa1-bef4-5bf6-a768-60908bcbed4c",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:141",
+    "label": "Article",
+    "name": "Article 141",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "section:vishaka-v-state-of-rajasthan:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "ca6c84a9-594b-5b9c-a12f-00ed1bf275d2",
+    "page": 6
+  }
+]

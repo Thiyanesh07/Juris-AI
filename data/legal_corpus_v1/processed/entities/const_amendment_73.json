@@ -1,0 +1,106 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:40",
+    "label": "Article",
+    "name": "Article 40",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:243b",
+    "label": "Article",
+    "name": "Article 243B",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:334",
+    "label": "Article",
+    "name": "Article 334",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:239",
+    "label": "Article",
+    "name": "Article 239",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:244",
+    "label": "Article",
+    "name": "Article 244",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:243k",
+    "label": "Article",
+    "name": "Article 243K",
+    "confidence": 1.0,
+    "source_chunk_id": "a385fcae-c3fe-5a29-a185-1e6d08f207fb",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2c6dabfd-c832-545e-a2c1-6c7a5e9b88fd",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:243g",
+    "label": "Article",
+    "name": "Article 243G",
+    "confidence": 1.0,
+    "source_chunk_id": "2c6dabfd-c832-545e-a2c1-6c7a5e9b88fd",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:243",
+    "label": "Article",
+    "name": "Article 243",
+    "confidence": 1.0,
+    "source_chunk_id": "2c6dabfd-c832-545e-a2c1-6c7a5e9b88fd",
+    "page": 8
+  },
+  {
+    "id": "concept:the-constitution-seventy-third-amendment-act-1992:the-gram-sabha",
+    "label": "Concept",
+    "name": "the gram sabha",
+    "confidence": 0.9,
+    "source_chunk_id": "2c6dabfd-c832-545e-a2c1-6c7a5e9b88fd",
+    "page": 8
+  },
+  {
+    "id": "act:this-amendment-act",
+    "label": "Act",
+    "name": "This amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "0db6fbe7-b30e-544d-89c8-8037a240de38",
+    "page": 10
+  }
+]

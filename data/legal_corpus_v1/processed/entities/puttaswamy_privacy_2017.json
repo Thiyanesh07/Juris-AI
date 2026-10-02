@@ -1,0 +1,6650 @@
+[
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b3a0856-4174-5bb3-9595-149f79600395",
+    "page": 1
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "5b3a0856-4174-5bb3-9595-149f79600395",
+    "page": 1
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "PUTTASWAMY",
+    "confidence": 1.0,
+    "source_chunk_id": "5b3a0856-4174-5bb3-9595-149f79600395",
+    "page": 1
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "eb5b21b1-ba73-5bc4-ae53-2362206a1839",
+    "page": 4
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7b1b5156-1985-5e39-869f-d58b5db73d78",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7b1b5156-1985-5e39-869f-d58b5db73d78",
+    "page": 6
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "7b1b5156-1985-5e39-869f-d58b5db73d78",
+    "page": 6
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "273d0d07-f9b2-53d2-85da-c5fa581786c3",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "273d0d07-f9b2-53d2-85da-c5fa581786c3",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "273d0d07-f9b2-53d2-85da-c5fa581786c3",
+    "page": 8
+  },
+  {
+    "id": "act:union-government-under-the-companies-act",
+    "label": "Act",
+    "name": "Union government under the Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "273d0d07-f9b2-53d2-85da-c5fa581786c3",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "74df100f-d683-51b3-af09-03a3305e2f58",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "74df100f-d683-51b3-af09-03a3305e2f58",
+    "page": 10
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "74df100f-d683-51b3-af09-03a3305e2f58",
+    "page": 10
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "74df100f-d683-51b3-af09-03a3305e2f58",
+    "page": 10
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "2dc64a5f-444b-5418-874b-75bf5276fcf9",
+    "page": 11
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "22eed849-f289-5e4c-9cba-709d1d22830d",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "22eed849-f289-5e4c-9cba-709d1d22830d",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "22eed849-f289-5e4c-9cba-709d1d22830d",
+    "page": 13
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2ab4fff2-c7bd-575b-91bf-013aa7498530",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2ab4fff2-c7bd-575b-91bf-013aa7498530",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2ab4fff2-c7bd-575b-91bf-013aa7498530",
+    "page": 15
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ce8cfd5b-9faf-5c1c-9dad-d386a25881e3",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ce8cfd5b-9faf-5c1c-9dad-d386a25881e3",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ce8cfd5b-9faf-5c1c-9dad-d386a25881e3",
+    "page": 16
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-right-of-personal-liberty-in-article",
+    "label": "Concept",
+    "name": "the right of personal liberty in Article",
+    "confidence": 0.9,
+    "source_chunk_id": "ce8cfd5b-9faf-5c1c-9dad-d386a25881e3",
+    "page": 16
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "42e4ef3e-9b9f-51aa-8e97-ebdc6e21a484",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "42e4ef3e-9b9f-51aa-8e97-ebdc6e21a484",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "42e4ef3e-9b9f-51aa-8e97-ebdc6e21a484",
+    "page": 17
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2ddf961e-d310-51a5-b99d-81f467d8465f",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2ddf961e-d310-51a5-b99d-81f467d8465f",
+    "page": 18
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "2ddf961e-d310-51a5-b99d-81f467d8465f",
+    "page": 18
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "2ddf961e-d310-51a5-b99d-81f467d8465f",
+    "page": 18
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "2ddf961e-d310-51a5-b99d-81f467d8465f",
+    "page": 18
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "13c19dd6-7dee-51a2-8b24-1b41adb815e8",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "13c19dd6-7dee-51a2-8b24-1b41adb815e8",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "13c19dd6-7dee-51a2-8b24-1b41adb815e8",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "13c19dd6-7dee-51a2-8b24-1b41adb815e8",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e156cb5b-eefd-560c-ad41-9774e84b94ad",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e156cb5b-eefd-560c-ad41-9774e84b94ad",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e156cb5b-eefd-560c-ad41-9774e84b94ad",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "act:passports_act_1967",
+    "label": "Act",
+    "name": "Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "act:prior-to-the-enactment-of-the-passports-act-1967",
+    "label": "Act",
+    "name": "Prior to the enactment of the Passports Act, 1967",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "36ce2688-fbab-5f4d-ad53-691ee7dad8dd",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "32351ffd-60cf-51a0-97d3-0f253cd2dd1b",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "32351ffd-60cf-51a0-97d3-0f253cd2dd1b",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "32351ffd-60cf-51a0-97d3-0f253cd2dd1b",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "32351ffd-60cf-51a0-97d3-0f253cd2dd1b",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "32351ffd-60cf-51a0-97d3-0f253cd2dd1b",
+    "page": 24
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2ef9601a-9b7a-57c9-8008-97c508aa4c73",
+    "page": 25
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "2ef9601a-9b7a-57c9-8008-97c508aa4c73",
+    "page": 25
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2ef9601a-9b7a-57c9-8008-97c508aa4c73",
+    "page": 25
+  },
+  {
+    "id": "act:the-sedition-act",
+    "label": "Act",
+    "name": "The Sedition Act",
+    "confidence": 1.0,
+    "source_chunk_id": "9d818e7e-1dde-543e-befd-b84314bae84f",
+    "page": 33
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "dd749afd-ae49-5833-ae6f-548e966e06ca",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7671606b-ac7f-5203-ac78-d48dac7c6440",
+    "page": 39
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "7671606b-ac7f-5203-ac78-d48dac7c6440",
+    "page": 39
+  },
+  {
+    "id": "act:indian-telegraph-act-1885",
+    "label": "Act",
+    "name": "Indian Telegraph Act, 1885",
+    "confidence": 1.0,
+    "source_chunk_id": "7671606b-ac7f-5203-ac78-d48dac7c6440",
+    "page": 39
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "7671606b-ac7f-5203-ac78-d48dac7c6440",
+    "page": 39
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "7671606b-ac7f-5203-ac78-d48dac7c6440",
+    "page": 39
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5c22370e-613f-5640-b430-5cb8160222c3",
+    "page": 41
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5c22370e-613f-5640-b430-5cb8160222c3",
+    "page": 41
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4a6befa6-a3d1-5747-b00a-c51aaff482c4",
+    "page": 43
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9366240a-cb82-5390-b160-ea5e1d95fd23",
+    "page": 44
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "9366240a-cb82-5390-b160-ea5e1d95fd23",
+    "page": 44
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "9366240a-cb82-5390-b160-ea5e1d95fd23",
+    "page": 44
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:23",
+    "label": "Section",
+    "name": "Section 23",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "act:police-act",
+    "label": "Act",
+    "name": "Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d75864c0-d9b3-5292-b38d-e0e270b26884",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "febed907-617a-5063-822a-66d94666c63d",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "febed907-617a-5063-822a-66d94666c63d",
+    "page": 47
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "febed907-617a-5063-822a-66d94666c63d",
+    "page": 47
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "34906911-1f70-5038-828c-70031d28b6dd",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "34906911-1f70-5038-828c-70031d28b6dd",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "34906911-1f70-5038-828c-70031d28b6dd",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "85873796-cd0d-520d-9c7a-106ab3182339",
+    "page": 51
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "85873796-cd0d-520d-9c7a-106ab3182339",
+    "page": 51
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "32265e00-fe61-5105-a6d3-c5f649495542",
+    "page": 52
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "32265e00-fe61-5105-a6d3-c5f649495542",
+    "page": 52
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "60e16199-1bd6-5f22-a1c8-c00d76c5da53",
+    "page": 53
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "60e16199-1bd6-5f22-a1c8-c00d76c5da53",
+    "page": 53
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "60e16199-1bd6-5f22-a1c8-c00d76c5da53",
+    "page": 53
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4b4d0f9d-6536-53ff-ba32-1151af7b841e",
+    "page": 55
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4b4d0f9d-6536-53ff-ba32-1151af7b841e",
+    "page": 55
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0e57d3d2-257d-5802-984a-ed1179b6dc98",
+    "page": 56
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "0e57d3d2-257d-5802-984a-ed1179b6dc98",
+    "page": 56
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "0e57d3d2-257d-5802-984a-ed1179b6dc98",
+    "page": 56
+  },
+  {
+    "id": "act:indian-telegraph-act-1885",
+    "label": "Act",
+    "name": "Indian Telegraph Act, 1885",
+    "confidence": 1.0,
+    "source_chunk_id": "0e57d3d2-257d-5802-984a-ed1179b6dc98",
+    "page": 56
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "0e57d3d2-257d-5802-984a-ed1179b6dc98",
+    "page": 56
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:it-judicially",
+    "label": "Concept",
+    "name": "it judicially",
+    "confidence": 0.9,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "25f8c414-f5d2-5b72-9d90-bf28aef0badf",
+    "page": 57
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "act:telegraph-act",
+    "label": "Act",
+    "name": "Telegraph Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c19ca237-6a36-5498-ab47-3203120a32a7",
+    "page": 59
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c79a32f8-a2ca-5d44-bc5c-f9523da03dab",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c79a32f8-a2ca-5d44-bc5c-f9523da03dab",
+    "page": 61
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:151",
+    "label": "Section",
+    "name": "Section 151",
+    "confidence": 1.0,
+    "source_chunk_id": "c79a32f8-a2ca-5d44-bc5c-f9523da03dab",
+    "page": 61
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:73",
+    "label": "Section",
+    "name": "Section 73",
+    "confidence": 1.0,
+    "source_chunk_id": "c79a32f8-a2ca-5d44-bc5c-f9523da03dab",
+    "page": 61
+  },
+  {
+    "id": "act:court-considered-the-provisions-of-the-indian-stamp-act-1899",
+    "label": "Act",
+    "name": "Court considered the provisions of the Indian Stamp Act, 1899",
+    "confidence": 1.0,
+    "source_chunk_id": "c79a32f8-a2ca-5d44-bc5c-f9523da03dab",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b62376c8-ef2d-5914-babc-df33518c2c45",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b62376c8-ef2d-5914-babc-df33518c2c45",
+    "page": 63
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:73",
+    "label": "Section",
+    "name": "Section 73",
+    "confidence": 1.0,
+    "source_chunk_id": "b62376c8-ef2d-5914-babc-df33518c2c45",
+    "page": 63
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b6bc6028-29ed-5a10-8421-15e64c6fb435",
+    "page": 64
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b6bc6028-29ed-5a10-8421-15e64c6fb435",
+    "page": 64
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:73",
+    "label": "Section",
+    "name": "Section 73",
+    "confidence": 1.0,
+    "source_chunk_id": "b6bc6028-29ed-5a10-8421-15e64c6fb435",
+    "page": 64
+  },
+  {
+    "id": "act:indian-stamp-act",
+    "label": "Act",
+    "name": "Indian Stamp Act",
+    "confidence": 1.0,
+    "source_chunk_id": "b6bc6028-29ed-5a10-8421-15e64c6fb435",
+    "page": 64
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3ac59d97-1234-5662-8591-9da135d1d7c3",
+    "page": 65
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3ac59d97-1234-5662-8591-9da135d1d7c3",
+    "page": 65
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:73",
+    "label": "Section",
+    "name": "Section 73",
+    "confidence": 1.0,
+    "source_chunk_id": "3ac59d97-1234-5662-8591-9da135d1d7c3",
+    "page": 65
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-officers-by-designation-or-state-that-the-power-can-be-delegated-to-officers-not-below",
+    "label": "Concept",
+    "name": "the officers by designation or state that the power can be delegated to officers not below",
+    "confidence": 0.9,
+    "source_chunk_id": "3ac59d97-1234-5662-8591-9da135d1d7c3",
+    "page": 65
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:132",
+    "label": "Section",
+    "name": "Section 132",
+    "confidence": 1.0,
+    "source_chunk_id": "26a9b0cd-70fa-5eb5-8543-cd99ff1dda91",
+    "page": 67
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "26a9b0cd-70fa-5eb5-8543-cd99ff1dda91",
+    "page": 67
+  },
+  {
+    "id": "act:income-tax-act-1961",
+    "label": "Act",
+    "name": "Income Tax Act, 1961",
+    "confidence": 1.0,
+    "source_chunk_id": "26a9b0cd-70fa-5eb5-8543-cd99ff1dda91",
+    "page": 67
+  },
+  {
+    "id": "act:punjab-excise-act-1914",
+    "label": "Act",
+    "name": "Punjab Excise Act, 1914",
+    "confidence": 1.0,
+    "source_chunk_id": "26a9b0cd-70fa-5eb5-8543-cd99ff1dda91",
+    "page": 67
+  },
+  {
+    "id": "act:narcotic-drugs-and-psychotropic-substances-act-1985",
+    "label": "Act",
+    "name": "Narcotic Drugs and Psychotropic Substances Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "26a9b0cd-70fa-5eb5-8543-cd99ff1dda91",
+    "page": 67
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5d49a7eb-4d37-529b-8f3b-05347ca12f05",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5d49a7eb-4d37-529b-8f3b-05347ca12f05",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "5d49a7eb-4d37-529b-8f3b-05347ca12f05",
+    "page": 69
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "5d49a7eb-4d37-529b-8f3b-05347ca12f05",
+    "page": 69
+  },
+  {
+    "id": "act:maharashtra-control-of-organized-crime-act",
+    "label": "Act",
+    "name": "Maharashtra Control of Organized Crime Act",
+    "confidence": 1.0,
+    "source_chunk_id": "5d49a7eb-4d37-529b-8f3b-05347ca12f05",
+    "page": 69
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "act:medical-termination-of-pregnancy-act",
+    "label": "Act",
+    "name": "Medical Termination of Pregnancy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "act:mtp-act-1971",
+    "label": "Act",
+    "name": "MTP Act, 1971",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "act:mtp-act",
+    "label": "Act",
+    "name": "MTP Act",
+    "confidence": 1.0,
+    "source_chunk_id": "12d0a8c0-162e-51c8-ac80-f0910359d012",
+    "page": 71
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "da4d2af7-d345-5fe6-84d4-f1708d9989f2",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "da4d2af7-d345-5fe6-84d4-f1708d9989f2",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "da4d2af7-d345-5fe6-84d4-f1708d9989f2",
+    "page": 72
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fdfc7643-c11d-5cb0-aeb0-47922c6dcfb8",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "fdfc7643-c11d-5cb0-aeb0-47922c6dcfb8",
+    "page": 74
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "fdfc7643-c11d-5cb0-aeb0-47922c6dcfb8",
+    "page": 74
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "fdfc7643-c11d-5cb0-aeb0-47922c6dcfb8",
+    "page": 74
+  },
+  {
+    "id": "act:evidence-act-1872",
+    "label": "Act",
+    "name": "Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "fdfc7643-c11d-5cb0-aeb0-47922c6dcfb8",
+    "page": 74
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b06d9207-c9b3-5452-8f80-2d3cb5a03cd9",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "b06d9207-c9b3-5452-8f80-2d3cb5a03cd9",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b06d9207-c9b3-5452-8f80-2d3cb5a03cd9",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "b06d9207-c9b3-5452-8f80-2d3cb5a03cd9",
+    "page": 75
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "682260b5-48ef-5321-b002-dff92fda3443",
+    "page": 77
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "682260b5-48ef-5321-b002-dff92fda3443",
+    "page": 77
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e6609480-7a9f-59bc-b805-63d7dcc71a28",
+    "page": 78
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e6609480-7a9f-59bc-b805-63d7dcc71a28",
+    "page": 78
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "e6609480-7a9f-59bc-b805-63d7dcc71a28",
+    "page": 78
+  },
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "e6609480-7a9f-59bc-b805-63d7dcc71a28",
+    "page": 78
+  },
+  {
+    "id": "act:right-to-information-act-2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "e6609480-7a9f-59bc-b805-63d7dcc71a28",
+    "page": 78
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "act:right-to-information-act-2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "act:rti-act",
+    "label": "Act",
+    "name": "RTI Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "court:kerala-high-court",
+    "label": "Court",
+    "name": "Kerala High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "d477246c-f2b1-5f9f-a1b4-fd3c0300733b",
+    "page": 80
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:75",
+    "label": "Article",
+    "name": "Article 75",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "f0fc8057-44ef-5208-8c96-98c678467120",
+    "page": 82
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "18d56259-0073-5f8c-8569-40098a94d246",
+    "page": 84
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "18d56259-0073-5f8c-8569-40098a94d246",
+    "page": 84
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "18d56259-0073-5f8c-8569-40098a94d246",
+    "page": 84
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "18d56259-0073-5f8c-8569-40098a94d246",
+    "page": 84
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "18d56259-0073-5f8c-8569-40098a94d246",
+    "page": 84
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5e3932b3-b01d-5ee6-83bf-53b376e26f81",
+    "page": 86
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5e3932b3-b01d-5ee6-83bf-53b376e26f81",
+    "page": 86
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "5e3932b3-b01d-5ee6-83bf-53b376e26f81",
+    "page": 86
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d14bccaf-b1a9-5d6f-88f5-11de6566f4bf",
+    "page": 87
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "d14bccaf-b1a9-5d6f-88f5-11de6566f4bf",
+    "page": 87
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d14bccaf-b1a9-5d6f-88f5-11de6566f4bf",
+    "page": 87
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d14bccaf-b1a9-5d6f-88f5-11de6566f4bf",
+    "page": 87
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d14bccaf-b1a9-5d6f-88f5-11de6566f4bf",
+    "page": 87
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "62eb20eb-b975-501c-bd7d-a8f4e0f9f3d4",
+    "page": 89
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "62eb20eb-b975-501c-bd7d-a8f4e0f9f3d4",
+    "page": 89
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bb5bbb05-29b1-5bea-a2ed-967e1d1fe2a6",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "bb5bbb05-29b1-5bea-a2ed-967e1d1fe2a6",
+    "page": 91
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "bb5bbb05-29b1-5bea-a2ed-967e1d1fe2a6",
+    "page": 91
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "bb5bbb05-29b1-5bea-a2ed-967e1d1fe2a6",
+    "page": 91
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bd1a842e-0e18-5d21-9789-e68e35a8e7b7",
+    "page": 93
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "bd1a842e-0e18-5d21-9789-e68e35a8e7b7",
+    "page": 93
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "bd1a842e-0e18-5d21-9789-e68e35a8e7b7",
+    "page": 93
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "bd1a842e-0e18-5d21-9789-e68e35a8e7b7",
+    "page": 93
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "bd1a842e-0e18-5d21-9789-e68e35a8e7b7",
+    "page": 93
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "356299d1-3bec-53a8-9cc5-e22e05bd4995",
+    "page": 95
+  },
+  {
+    "id": "article:constitution_of_india:39",
+    "label": "Article",
+    "name": "Article 39",
+    "confidence": 1.0,
+    "source_chunk_id": "356299d1-3bec-53a8-9cc5-e22e05bd4995",
+    "page": 95
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0aedc29e-d52c-5b26-92fd-81e30f5e7262",
+    "page": 97
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "0aedc29e-d52c-5b26-92fd-81e30f5e7262",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4110b53e-30d9-5b17-ac60-18c6f50c4787",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4110b53e-30d9-5b17-ac60-18c6f50c4787",
+    "page": 99
+  },
+  {
+    "id": "act:punjab-security-of-land-tenures-act-1953",
+    "label": "Act",
+    "name": "Punjab Security of Land Tenures Act, 1953",
+    "confidence": 1.0,
+    "source_chunk_id": "4110b53e-30d9-5b17-ac60-18c6f50c4787",
+    "page": 99
+  },
+  {
+    "id": "act:mysore-land-reforms-act",
+    "label": "Act",
+    "name": "Mysore Land Reforms Act",
+    "confidence": 1.0,
+    "source_chunk_id": "4110b53e-30d9-5b17-ac60-18c6f50c4787",
+    "page": 99
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4110b53e-30d9-5b17-ac60-18c6f50c4787",
+    "page": 99
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ff27ab88-5866-5f57-afe2-1b883870c515",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "ff27ab88-5866-5f57-afe2-1b883870c515",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "ff27ab88-5866-5f57-afe2-1b883870c515",
+    "page": 101
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ff27ab88-5866-5f57-afe2-1b883870c515",
+    "page": 101
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "ff27ab88-5866-5f57-afe2-1b883870c515",
+    "page": 101
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e72f083e-4280-5ce4-9909-b3c0d2f11853",
+    "page": 103
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e72f083e-4280-5ce4-9909-b3c0d2f11853",
+    "page": 103
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "e72f083e-4280-5ce4-9909-b3c0d2f11853",
+    "page": 103
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d78eba76-f638-545a-85f3-ee664bba42c7",
+    "page": 104
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "d78eba76-f638-545a-85f3-ee664bba42c7",
+    "page": 104
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6e7a157d-5951-5134-8254-9469397a055b",
+    "page": 105
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "6e7a157d-5951-5134-8254-9469397a055b",
+    "page": 105
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "6e7a157d-5951-5134-8254-9469397a055b",
+    "page": 105
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "judgment:indira-nehru-gandhi",
+    "label": "Judgment",
+    "name": "Indira Nehru Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "81afd2e8-8c32-5e12-8975-9d78d70ed025",
+    "page": 106
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "79691190-4b59-5edb-af6e-f28adfc34221",
+    "page": 108
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "79691190-4b59-5edb-af6e-f28adfc34221",
+    "page": 108
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "79691190-4b59-5edb-af6e-f28adfc34221",
+    "page": 108
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "380fe1cc-2c91-5ce9-b29e-5a45255998dd",
+    "page": 110
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "380fe1cc-2c91-5ce9-b29e-5a45255998dd",
+    "page": 110
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "380fe1cc-2c91-5ce9-b29e-5a45255998dd",
+    "page": 110
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "83aaf2e5-b792-5d5d-a1b4-849d4a8f70e8",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "83aaf2e5-b792-5d5d-a1b4-849d4a8f70e8",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "83aaf2e5-b792-5d5d-a1b4-849d4a8f70e8",
+    "page": 112
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "83aaf2e5-b792-5d5d-a1b4-849d4a8f70e8",
+    "page": 112
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "87ec3fb6-02cb-58b9-8901-8809b01cac66",
+    "page": 114
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "87ec3fb6-02cb-58b9-8901-8809b01cac66",
+    "page": 114
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f57d290d-a003-58bb-805b-a9f9a629ab05",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "f57d290d-a003-58bb-805b-a9f9a629ab05",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f57d290d-a003-58bb-805b-a9f9a629ab05",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:372",
+    "label": "Article",
+    "name": "Article 372",
+    "confidence": 1.0,
+    "source_chunk_id": "f57d290d-a003-58bb-805b-a9f9a629ab05",
+    "page": 115
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f65d1399-65f8-5851-a1c3-feb8af9105f7",
+    "page": 116
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f65d1399-65f8-5851-a1c3-feb8af9105f7",
+    "page": 116
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "be932f34-4868-5804-95e7-2d4a09e19f11",
+    "page": 117
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "be932f34-4868-5804-95e7-2d4a09e19f11",
+    "page": 117
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "975bc3a1-4826-5b26-8083-8313e2fd53ee",
+    "page": 118
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "975bc3a1-4826-5b26-8083-8313e2fd53ee",
+    "page": 118
+  },
+  {
+    "id": "article:constitution_of_india:372",
+    "label": "Article",
+    "name": "Article 372",
+    "confidence": 1.0,
+    "source_chunk_id": "975bc3a1-4826-5b26-8083-8313e2fd53ee",
+    "page": 118
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "975bc3a1-4826-5b26-8083-8313e2fd53ee",
+    "page": 118
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "court:delhi-high-court",
+    "label": "Court",
+    "name": "Delhi High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "a98aa4a6-a768-5083-8c12-e1b1071068a5",
+    "page": 120
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c316004d-dce8-5dda-a280-4b35f9d32d03",
+    "page": 122
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "68843d06-79a0-5fab-9d5d-8b11ac9349d4",
+    "page": 124
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "68843d06-79a0-5fab-9d5d-8b11ac9349d4",
+    "page": 124
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "act:the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:human-rights",
+    "label": "Concept",
+    "name": "human rights",
+    "confidence": 0.9,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:international-covenants",
+    "label": "Concept",
+    "name": "International Covenants",
+    "confidence": 0.9,
+    "source_chunk_id": "05e35088-061a-58ea-8196-0d6bd094e26b",
+    "page": 126
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:9",
+    "label": "Article",
+    "name": "Article 9",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "5419c97e-1c26-5a1e-ada7-06e4a0cd0ff2",
+    "page": 128
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "act:human-rights-act",
+    "label": "Act",
+    "name": "Human Rights Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "judgment:nalsa",
+    "label": "Judgment",
+    "name": "NALSA",
+    "confidence": 1.0,
+    "source_chunk_id": "c2d90cf0-4899-56f7-b8b7-aa265ea14b1e",
+    "page": 129
+  },
+  {
+    "id": "person:king-lord-camden-cj",
+    "label": "Person",
+    "name": "King. Lord Camden CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "90ed58f0-85c3-5c34-b3f1-a39ade9ea7a2",
+    "page": 131
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "c8a8fa8e-cfbb-5aaa-bf0c-2e25ce4d7a47",
+    "page": 133
+  },
+  {
+    "id": "act:criminal-justice-act",
+    "label": "Act",
+    "name": "Criminal Justice Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c8a8fa8e-cfbb-5aaa-bf0c-2e25ce4d7a47",
+    "page": 133
+  },
+  {
+    "id": "act:human-rights-act-1998",
+    "label": "Act",
+    "name": "Human Rights Act, 1998",
+    "confidence": 1.0,
+    "source_chunk_id": "c8a8fa8e-cfbb-5aaa-bf0c-2e25ce4d7a47",
+    "page": 133
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "22245138-3958-50c0-84c0-3210fceac36c",
+    "page": 135
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "22245138-3958-50c0-84c0-3210fceac36c",
+    "page": 135
+  },
+  {
+    "id": "act:human-rights-act-1998",
+    "label": "Act",
+    "name": "Human Rights Act, 1998",
+    "confidence": 1.0,
+    "source_chunk_id": "22245138-3958-50c0-84c0-3210fceac36c",
+    "page": 135
+  },
+  {
+    "id": "act:human-rights-act",
+    "label": "Act",
+    "name": "Human Rights Act",
+    "confidence": 1.0,
+    "source_chunk_id": "22245138-3958-50c0-84c0-3210fceac36c",
+    "page": 135
+  },
+  {
+    "id": "act:the-uk-human-rights-act",
+    "label": "Act",
+    "name": "The UK Human Rights Act",
+    "confidence": 1.0,
+    "source_chunk_id": "22245138-3958-50c0-84c0-3210fceac36c",
+    "page": 135
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "8b2d8464-9136-5c6e-8e56-9c0a7077d5de",
+    "page": 136
+  },
+  {
+    "id": "person:lord-woolf-cj",
+    "label": "Person",
+    "name": "Lord Woolf CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "8b2d8464-9136-5c6e-8e56-9c0a7077d5de",
+    "page": 136
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "cb2ad252-4385-5188-8eb9-d1bf67bb35b2",
+    "page": 137
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "cb2ad252-4385-5188-8eb9-d1bf67bb35b2",
+    "page": 137
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "0c3039d1-721f-5548-b627-111ddba1f0ec",
+    "page": 139
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0c3039d1-721f-5548-b627-111ddba1f0ec",
+    "page": 139
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5acdb857-fecc-538d-825f-1087f0b8968a",
+    "page": 141
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "135adb10-ef80-5b48-af13-68b215825123",
+    "page": 143
+  },
+  {
+    "id": "act:oregon-compulsory-education-act",
+    "label": "Act",
+    "name": "Oregon Compulsory Education Act",
+    "confidence": 1.0,
+    "source_chunk_id": "135adb10-ef80-5b48-af13-68b215825123",
+    "page": 143
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8882e4c0-d686-550d-935b-7099f0b81187",
+    "page": 145
+  },
+  {
+    "id": "amendment:const_amendment_4",
+    "label": "Amendment",
+    "name": "4th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "8882e4c0-d686-550d-935b-7099f0b81187",
+    "page": 145
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6480bb26-a56a-5700-a87c-3128eb1e0d68",
+    "page": 147
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6480bb26-a56a-5700-a87c-3128eb1e0d68",
+    "page": 147
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a3434e78-eb14-56bb-93d2-4c7bf10acabc",
+    "page": 149
+  },
+  {
+    "id": "act:bank-secrecy-act",
+    "label": "Act",
+    "name": "Bank Secrecy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a3434e78-eb14-56bb-93d2-4c7bf10acabc",
+    "page": 149
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a3434e78-eb14-56bb-93d2-4c7bf10acabc",
+    "page": 149
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "a3434e78-eb14-56bb-93d2-4c7bf10acabc",
+    "page": 149
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e5ecbb4f-85e1-5467-8f52-a92f364ce483",
+    "page": 151
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-attributes-of-personhood-were-they-formed",
+    "label": "Concept",
+    "name": "the attributes of personhood were they formed",
+    "confidence": 0.9,
+    "source_chunk_id": "7086cfd7-9893-594e-b0c0-9afaa095974b",
+    "page": 155
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:91",
+    "label": "Section",
+    "name": "Section 91",
+    "confidence": 1.0,
+    "source_chunk_id": "a27a63e5-aa15-5fa9-a3d8-45165f861e6d",
+    "page": 156
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a27a63e5-aa15-5fa9-a3d8-45165f861e6d",
+    "page": 156
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "64772b4e-7d1f-5a8c-a294-3ae09fd6a2e9",
+    "page": 158
+  },
+  {
+    "id": "act:presidential-recordings-and-material-preservation-act-1974",
+    "label": "Act",
+    "name": "Presidential Recordings and Material Preservation Act, 1974",
+    "confidence": 1.0,
+    "source_chunk_id": "64772b4e-7d1f-5a8c-a294-3ae09fd6a2e9",
+    "page": 158
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "64772b4e-7d1f-5a8c-a294-3ae09fd6a2e9",
+    "page": 158
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "966bcfd9-1246-54f7-85fc-9c9f319fa8cb",
+    "page": 159
+  },
+  {
+    "id": "act:presidential-recordings-and-material-preservation-act-1974",
+    "label": "Act",
+    "name": "Presidential Recordings and Material Preservation Act, 1974",
+    "confidence": 1.0,
+    "source_chunk_id": "966bcfd9-1246-54f7-85fc-9c9f319fa8cb",
+    "page": 159
+  },
+  {
+    "id": "act:privacy-act",
+    "label": "Act",
+    "name": "Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "966bcfd9-1246-54f7-85fc-9c9f319fa8cb",
+    "page": 159
+  },
+  {
+    "id": "act:in-light-of-the-protection-provided-by-the-privacy-act",
+    "label": "Act",
+    "name": "In light of the protection provided by the Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "966bcfd9-1246-54f7-85fc-9c9f319fa8cb",
+    "page": 159
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20ca2b6f-ce24-5204-843e-ff762d871bd7",
+    "page": 163
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20ca2b6f-ce24-5204-843e-ff762d871bd7",
+    "page": 163
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "20ca2b6f-ce24-5204-843e-ff762d871bd7",
+    "page": 163
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "570ed107-468f-5e6e-80fd-84ffe7ff1892",
+    "page": 165
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "570ed107-468f-5e6e-80fd-84ffe7ff1892",
+    "page": 165
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "570ed107-468f-5e6e-80fd-84ffe7ff1892",
+    "page": 165
+  },
+  {
+    "id": "act:companies-act",
+    "label": "Act",
+    "name": "Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "570ed107-468f-5e6e-80fd-84ffe7ff1892",
+    "page": 165
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "570ed107-468f-5e6e-80fd-84ffe7ff1892",
+    "page": 165
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "171b3506-f630-5bde-bf8c-7608101f3658",
+    "page": 167
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "67fcd67b-ad16-5078-8eda-25fcead241e2",
+    "page": 168
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "67fcd67b-ad16-5078-8eda-25fcead241e2",
+    "page": 168
+  },
+  {
+    "id": "act:national-prosecuting-authority-act",
+    "label": "Act",
+    "name": "National Prosecuting Authority Act",
+    "confidence": 1.0,
+    "source_chunk_id": "67fcd67b-ad16-5078-8eda-25fcead241e2",
+    "page": 168
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0a470e20-b3fb-582a-90fb-ec04064c0954",
+    "page": 170
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8279",
+    "label": "Section",
+    "name": "Section 8279",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:7280",
+    "label": "Section",
+    "name": "Section 7280",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:privacy-act",
+    "label": "Act",
+    "name": "Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:the-personal-information-protection-and-electronic-documents-act",
+    "label": "Act",
+    "name": "The Personal Information Protection and Electronic Documents Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:combines-investigation-act",
+    "label": "Act",
+    "name": "Combines Investigation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:the-court-unanimously-held-that-the-combines-investigation-act",
+    "label": "Act",
+    "name": "The Court unanimously held that the Combines Investigation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:supreme-court-of-canada-recognised-the-privacy-act",
+    "label": "Act",
+    "name": "Supreme Court of Canada recognised the Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "act:the-privacy-act",
+    "label": "Act",
+    "name": "The Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ed988f1b-1dcf-5639-83d7-63c41c76e675",
+    "page": 172
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "d8b94ae1-6ddf-52fa-85d5-da5a8b511116",
+    "page": 174
+  },
+  {
+    "id": "act:the-privacy-act",
+    "label": "Act",
+    "name": "The Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d8b94ae1-6ddf-52fa-85d5-da5a8b511116",
+    "page": 174
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "58fcd1ba-ce9b-5b02-8909-5a3140fbe907",
+    "page": 176
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "58fcd1ba-ce9b-5b02-8909-5a3140fbe907",
+    "page": 176
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "adbec3c0-3c21-57b2-8db8-0ab003b8c600",
+    "page": 178
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "adbec3c0-3c21-57b2-8db8-0ab003b8c600",
+    "page": 178
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "2f694bf0-59fb-5166-89a1-34b7b2378113",
+    "page": 180
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2f694bf0-59fb-5166-89a1-34b7b2378113",
+    "page": 180
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "5ec2a7c1-a075-5e81-93b8-8e37fe60af18",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "5ec2a7c1-a075-5e81-93b8-8e37fe60af18",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:52",
+    "label": "Article",
+    "name": "Article 52",
+    "confidence": 1.0,
+    "source_chunk_id": "5ec2a7c1-a075-5e81-93b8-8e37fe60af18",
+    "page": 181
+  },
+  {
+    "id": "article:constitution_of_india:52",
+    "label": "Article",
+    "name": "Article 52",
+    "confidence": 1.0,
+    "source_chunk_id": "b5e43450-601b-55bc-a973-2312edb0e3db",
+    "page": 182
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "b5e43450-601b-55bc-a973-2312edb0e3db",
+    "page": 182
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "b5e43450-601b-55bc-a973-2312edb0e3db",
+    "page": 182
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "d97b67d2-9e48-50de-8955-e7a4282ea1fb",
+    "page": 184
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "f3ed6b80-e66d-5636-94c7-c7eab2dbf6d2",
+    "page": 185
+  },
+  {
+    "id": "act:data-protection-act",
+    "label": "Act",
+    "name": "Data Protection Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f3ed6b80-e66d-5636-94c7-c7eab2dbf6d2",
+    "page": 185
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "7a34f5d8-3cbf-5a1e-b99c-29df90e5a2b2",
+    "page": 186
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "7a34f5d8-3cbf-5a1e-b99c-29df90e5a2b2",
+    "page": 186
+  },
+  {
+    "id": "article:constitution_of_india:52",
+    "label": "Article",
+    "name": "Article 52",
+    "confidence": 1.0,
+    "source_chunk_id": "577763d5-c0c7-5a94-8454-89c72bc52b66",
+    "page": 188
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "020fba30-9a33-5693-970f-a1293e723f1c",
+    "page": 189
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "020fba30-9a33-5693-970f-a1293e723f1c",
+    "page": 189
+  },
+  {
+    "id": "article:constitution_of_india:11",
+    "label": "Article",
+    "name": "Article 11",
+    "confidence": 1.0,
+    "source_chunk_id": "2ceb378b-e6f6-5802-81d9-10eb4ff5a1c7",
+    "page": 190
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:his-or-her-own-personal-relationships",
+    "label": "Concept",
+    "name": "his or her own personal relationships",
+    "confidence": 0.9,
+    "source_chunk_id": "2ceb378b-e6f6-5802-81d9-10eb4ff5a1c7",
+    "page": 190
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "20301679-988f-5922-871d-a551a4133218",
+    "page": 192
+  },
+  {
+    "id": "article:constitution_of_india:11",
+    "label": "Article",
+    "name": "Article 11",
+    "confidence": 1.0,
+    "source_chunk_id": "20301679-988f-5922-871d-a551a4133218",
+    "page": 192
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "cad34aab-d12e-5d0b-9c4f-555bec103ff1",
+    "page": 193
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0f6ae399-9d74-5f04-9442-b911f36f8644",
+    "page": 196
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0f6ae399-9d74-5f04-9442-b911f36f8644",
+    "page": 196
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:ourselves-and-our-relations-to",
+    "label": "Concept",
+    "name": "ourselves and our relations to",
+    "confidence": 0.9,
+    "source_chunk_id": "4b55173d-43ab-50de-b409-a4ea7b9489eb",
+    "page": 198
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4e152fbf-d42e-5967-98e9-749d1384343f",
+    "page": 202
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "14b1676a-e995-5616-b909-addea1052266",
+    "page": 204
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:165",
+    "label": "Section",
+    "name": "Section 165",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "act:indian-evidence-act",
+    "label": "Act",
+    "name": "Indian Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4328b8e1-abd9-5671-8458-ab6b276c95d9",
+    "page": 205
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "27172924-aae6-50aa-a1b6-62a560d127ef",
+    "page": 207
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "27172924-aae6-50aa-a1b6-62a560d127ef",
+    "page": 207
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "27172924-aae6-50aa-a1b6-62a560d127ef",
+    "page": 207
+  },
+  {
+    "id": "act:indian-post-office-act-1898",
+    "label": "Act",
+    "name": "Indian Post Office Act, 1898",
+    "confidence": 1.0,
+    "source_chunk_id": "27172924-aae6-50aa-a1b6-62a560d127ef",
+    "page": 207
+  },
+  {
+    "id": "act:indian-telegraph-act-1885",
+    "label": "Act",
+    "name": "Indian Telegraph Act, 1885",
+    "confidence": 1.0,
+    "source_chunk_id": "27172924-aae6-50aa-a1b6-62a560d127ef",
+    "page": 207
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ef20e527-d52c-57ce-864b-221a1a6ff8be",
+    "page": 209
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ef20e527-d52c-57ce-864b-221a1a6ff8be",
+    "page": 209
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ef20e527-d52c-57ce-864b-221a1a6ff8be",
+    "page": 209
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "026b18a4-43df-5046-92d5-9f9e2c971593",
+    "page": 211
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "026b18a4-43df-5046-92d5-9f9e2c971593",
+    "page": 211
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-ambit-of-what-the-right-comprehends",
+    "label": "Concept",
+    "name": "the ambit of what the right comprehends",
+    "confidence": 0.9,
+    "source_chunk_id": "026b18a4-43df-5046-92d5-9f9e2c971593",
+    "page": 211
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0d653d8d-8f4a-5049-8d6a-5397e7e87c5b",
+    "page": 213
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "0d653d8d-8f4a-5049-8d6a-5397e7e87c5b",
+    "page": 213
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "72cdaf04-5a75-544c-9ac3-a36fa9488fb9",
+    "page": 215
+  },
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "72cdaf04-5a75-544c-9ac3-a36fa9488fb9",
+    "page": 215
+  },
+  {
+    "id": "act:right-to-information-act-2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "72cdaf04-5a75-544c-9ac3-a36fa9488fb9",
+    "page": 215
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b4041b1f-a01c-5611-8c9d-8ff12f0709b7",
+    "page": 221
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b4041b1f-a01c-5611-8c9d-8ff12f0709b7",
+    "page": 221
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b4041b1f-a01c-5611-8c9d-8ff12f0709b7",
+    "page": 221
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:their-personal-identity-such-as-sexuality",
+    "label": "Concept",
+    "name": "their personal identity such as sexuality",
+    "confidence": 0.9,
+    "source_chunk_id": "b4041b1f-a01c-5611-8c9d-8ff12f0709b7",
+    "page": 221
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d902efc1-2b8e-530d-b210-978b329f5386",
+    "page": 223
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d902efc1-2b8e-530d-b210-978b329f5386",
+    "page": 223
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "d902efc1-2b8e-530d-b210-978b329f5386",
+    "page": 223
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "d902efc1-2b8e-530d-b210-978b329f5386",
+    "page": 223
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4bf4c675-4049-5359-b64c-cf9d8b678d08",
+    "page": 225
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4bf4c675-4049-5359-b64c-cf9d8b678d08",
+    "page": 225
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "4bf4c675-4049-5359-b64c-cf9d8b678d08",
+    "page": 225
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "4bf4c675-4049-5359-b64c-cf9d8b678d08",
+    "page": 225
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "4bf4c675-4049-5359-b64c-cf9d8b678d08",
+    "page": 225
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e7d50159-316c-5d92-8a53-89b75d0d5f0e",
+    "page": 226
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "e7d50159-316c-5d92-8a53-89b75d0d5f0e",
+    "page": 226
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "8faa3da7-a1f1-5c7f-a7ca-a383f5cc68f2",
+    "page": 227
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "act:preventive_detention_act_1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "act:preventive-detention-act-1950",
+    "label": "Act",
+    "name": "Preventive Detention Act, 1950",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "57f2c4bb-f960-5123-8d68-4ff47ba7d82c",
+    "page": 228
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6f61f0c3-d678-5082-8e13-08ac7bc0363c",
+    "page": 229
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6f61f0c3-d678-5082-8e13-08ac7bc0363c",
+    "page": 229
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6f61f0c3-d678-5082-8e13-08ac7bc0363c",
+    "page": 229
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "6f61f0c3-d678-5082-8e13-08ac7bc0363c",
+    "page": 229
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6f61f0c3-d678-5082-8e13-08ac7bc0363c",
+    "page": 229
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "act:prisons-act-1894",
+    "label": "Act",
+    "name": "Prisons Act, 1894",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "act:prisons-act",
+    "label": "Act",
+    "name": "Prisons Act",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "10303798-3338-5f86-941a-3f81ab700856",
+    "page": 230
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:303",
+    "label": "Section",
+    "name": "Section 303",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:235",
+    "label": "Section",
+    "name": "Section 235",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "70dc5ccc-8006-5e22-84e2-e14cbc0a7603",
+    "page": 232
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "49f19b36-4ace-5bfc-95eb-e21ac0cea051",
+    "page": 234
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "49f19b36-4ace-5bfc-95eb-e21ac0cea051",
+    "page": 234
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:303",
+    "label": "Section",
+    "name": "Section 303",
+    "confidence": 1.0,
+    "source_chunk_id": "49f19b36-4ace-5bfc-95eb-e21ac0cea051",
+    "page": 234
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "49f19b36-4ace-5bfc-95eb-e21ac0cea051",
+    "page": 234
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:380",
+    "label": "Section",
+    "name": "Section 380",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "act:hindu-marriage-act-1955",
+    "label": "Act",
+    "name": "Hindu Marriage Act, 1955",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "1e1be6d4-7375-50ce-b670-64f112c0dbb0",
+    "page": 235
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:380",
+    "label": "Section",
+    "name": "Section 380",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "f4d6f78a-f62f-5e8e-bea3-6f21dcba738b",
+    "page": 237
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "780ac3ee-75e3-5f4a-98f5-60647e7ccac5",
+    "page": 239
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a19271da-4301-5b49-8998-00a293ba4b1a",
+    "page": 240
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a19271da-4301-5b49-8998-00a293ba4b1a",
+    "page": 240
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "a19271da-4301-5b49-8998-00a293ba4b1a",
+    "page": 240
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "a19271da-4301-5b49-8998-00a293ba4b1a",
+    "page": 240
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "a19271da-4301-5b49-8998-00a293ba4b1a",
+    "page": 240
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "746d8b39-73a8-5133-a949-8c4f82c7313b",
+    "page": 242
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "746d8b39-73a8-5133-a949-8c4f82c7313b",
+    "page": 242
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9fd4422a-5393-523f-9893-c815f95d73c2",
+    "page": 244
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "9fd4422a-5393-523f-9893-c815f95d73c2",
+    "page": 244
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "9fd4422a-5393-523f-9893-c815f95d73c2",
+    "page": 244
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "9fd4422a-5393-523f-9893-c815f95d73c2",
+    "page": 244
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-area-upon-which-construction-can-be-raised-or-the-height-of-the-boundary-wall-around-the-property",
+    "label": "Concept",
+    "name": "the area upon which construction can be raised or the height of the boundary wall around the property",
+    "confidence": 0.9,
+    "source_chunk_id": "57c5f8f7-98d5-5d9d-9e0e-49f8bf5ec356",
+    "page": 246
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d1cfc96c-a402-58dc-b4eb-157768388ba7",
+    "page": 254
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "d1cfc96c-a402-58dc-b4eb-157768388ba7",
+    "page": 254
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "d1cfc96c-a402-58dc-b4eb-157768388ba7",
+    "page": 254
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "85f5d4ca-b719-5bab-82d5-e891af47f7f2",
+    "page": 256
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "85f5d4ca-b719-5bab-82d5-e891af47f7f2",
+    "page": 256
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "e802d9e2-7b9d-5691-9e14-26a79c35d5a6",
+    "page": 260
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e802d9e2-7b9d-5691-9e14-26a79c35d5a6",
+    "page": 260
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e802d9e2-7b9d-5691-9e14-26a79c35d5a6",
+    "page": 260
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e802d9e2-7b9d-5691-9e14-26a79c35d5a6",
+    "page": 260
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1520d432-077d-5c29-a965-3ad7873c5fcb",
+    "page": 261
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "1520d432-077d-5c29-a965-3ad7873c5fcb",
+    "page": 261
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcfad0e-55cd-5e88-b185-eabe489c8415",
+    "page": 263
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcfad0e-55cd-5e88-b185-eabe489c8415",
+    "page": 263
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "57bc3684-9784-5ffb-8ec6-a5ade82fdb9c",
+    "page": 266
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "57bc3684-9784-5ffb-8ec6-a5ade82fdb9c",
+    "page": 266
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "57bc3684-9784-5ffb-8ec6-a5ade82fdb9c",
+    "page": 266
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "57bc3684-9784-5ffb-8ec6-a5ade82fdb9c",
+    "page": 266
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e20d2b52-70f5-5e2d-bafb-d247c489794a",
+    "page": 270
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "e20d2b52-70f5-5e2d-bafb-d247c489794a",
+    "page": 270
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "e20d2b52-70f5-5e2d-bafb-d247c489794a",
+    "page": 270
+  },
+  {
+    "id": "act:a-change-was-introduced-by-the-criminal-evidence-act",
+    "label": "Act",
+    "name": "A change was introduced by the Criminal Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e20d2b52-70f5-5e2d-bafb-d247c489794a",
+    "page": 270
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "e20d2b52-70f5-5e2d-bafb-d247c489794a",
+    "page": 270
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "eb178021-b626-55ef-801f-8c2d84b55402",
+    "page": 272
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "eb178021-b626-55ef-801f-8c2d84b55402",
+    "page": 272
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "eb178021-b626-55ef-801f-8c2d84b55402",
+    "page": 272
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "eb178021-b626-55ef-801f-8c2d84b55402",
+    "page": 272
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "c6e06eb4-8bba-56bb-afa4-9356dd3226d3",
+    "page": 273
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c6e06eb4-8bba-56bb-afa4-9356dd3226d3",
+    "page": 273
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c6e06eb4-8bba-56bb-afa4-9356dd3226d3",
+    "page": 273
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:113",
+    "label": "Section",
+    "name": "Section 113",
+    "confidence": 1.0,
+    "source_chunk_id": "c6e06eb4-8bba-56bb-afa4-9356dd3226d3",
+    "page": 273
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c6e06eb4-8bba-56bb-afa4-9356dd3226d3",
+    "page": 273
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c19a0ef8-4c98-5edf-9e7f-96cac522f00c",
+    "page": 276
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c19a0ef8-4c98-5edf-9e7f-96cac522f00c",
+    "page": 276
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "c19a0ef8-4c98-5edf-9e7f-96cac522f00c",
+    "page": 276
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c19a0ef8-4c98-5edf-9e7f-96cac522f00c",
+    "page": 276
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "article:constitution_of_india:2133",
+    "label": "Article",
+    "name": "Article 2133",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "article:constitution_of_india:2134",
+    "label": "Article",
+    "name": "Article 2134",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-powers-of-the-legislature-and-the-procedures",
+    "label": "Concept",
+    "name": "the powers of the legislature and the procedures",
+    "confidence": 0.9,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "person:unnikrishnan-j",
+    "label": "Person",
+    "name": "Unnikrishnan J.",
+    "confidence": 1.0,
+    "source_chunk_id": "c5587581-3ba0-5b35-a6a3-60500d13429b",
+    "page": 278
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "88465c41-924f-5ea1-af5e-46868893826b",
+    "page": 293
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "88465c41-924f-5ea1-af5e-46868893826b",
+    "page": 293
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "88465c41-924f-5ea1-af5e-46868893826b",
+    "page": 293
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:357",
+    "label": "Section",
+    "name": "Section 357",
+    "confidence": 1.0,
+    "source_chunk_id": "88465c41-924f-5ea1-af5e-46868893826b",
+    "page": 293
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "88465c41-924f-5ea1-af5e-46868893826b",
+    "page": 293
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:557",
+    "label": "Section",
+    "name": "Section 557",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:535",
+    "label": "Section",
+    "name": "Section 535",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:270",
+    "label": "Section",
+    "name": "Section 270",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:as-crimes",
+    "label": "Concept",
+    "name": "as crimes",
+    "confidence": 0.9,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "f3f1987e-692a-5ee6-bdf5-465a80e9261c",
+    "page": 296
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "863ede17-984a-5f44-87bf-dfb62e827eec",
+    "page": 305
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "863ede17-984a-5f44-87bf-dfb62e827eec",
+    "page": 305
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "863ede17-984a-5f44-87bf-dfb62e827eec",
+    "page": 305
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:144",
+    "label": "Section",
+    "name": "Section 144",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "judgment:e-p-royappa",
+    "label": "Judgment",
+    "name": "E.P. Royappa",
+    "confidence": 1.0,
+    "source_chunk_id": "6e414692-0cae-5d27-96cd-a9b6c95755eb",
+    "page": 307
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:126",
+    "label": "Section",
+    "name": "Section 126",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:42",
+    "label": "Section",
+    "name": "Section 42",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:the-indian-easements-act-1882",
+    "label": "Act",
+    "name": "The Indian Easements Act, 1882",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:the-indian-telegraph-act-1885",
+    "label": "Act",
+    "name": "The Indian Telegraph Act, 1885",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:the-indian-post-office-act-1898",
+    "label": "Act",
+    "name": "The Indian Post Office Act, 1898",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:narcotic-drugs-and-psychotropic-substances-act-1985",
+    "label": "Act",
+    "name": "Narcotic Drugs and Psychotropic Substances Act, 1985",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "act:civil-procedure-code",
+    "label": "Act",
+    "name": "Civil Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:natural-rights",
+    "label": "Concept",
+    "name": "natural rights",
+    "confidence": 0.9,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "judgment:ak-gopalan",
+    "label": "Judgment",
+    "name": "AK Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "8a613ea5-0356-5635-a3b1-10a1351f94ef",
+    "page": 310
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "58e5e7f9-b89c-541b-93fc-a8c827e815fe",
+    "page": 332
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "58e5e7f9-b89c-541b-93fc-a8c827e815fe",
+    "page": 332
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:132",
+    "label": "Section",
+    "name": "Section 132",
+    "confidence": 1.0,
+    "source_chunk_id": "58e5e7f9-b89c-541b-93fc-a8c827e815fe",
+    "page": 332
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "684a817e-adde-5742-a393-7b51205f973e",
+    "page": 336
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "684a817e-adde-5742-a393-7b51205f973e",
+    "page": 336
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "684a817e-adde-5742-a393-7b51205f973e",
+    "page": 336
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "article:constitution_of_india:26",
+    "label": "Article",
+    "name": "Article 26",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "article:constitution_of_india:28",
+    "label": "Article",
+    "name": "Article 28",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "754a9a0c-a690-5fca-a88c-707ecace0e32",
+    "page": 339
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "352d3743-2c87-5cb7-a0d6-642228ba5678",
+    "page": 350
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "PUTTASWAMY",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "86a4f783-8ce7-57d0-b9aa-bf6928aa0fa3",
+    "page": 350
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bdb9698c-bdd6-5b3e-86f3-29a254cbe7af",
+    "page": 359
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "bdb9698c-bdd6-5b3e-86f3-29a254cbe7af",
+    "page": 359
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bdb9698c-bdd6-5b3e-86f3-29a254cbe7af",
+    "page": 359
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "bdb9698c-bdd6-5b3e-86f3-29a254cbe7af",
+    "page": 359
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:393",
+    "label": "Section",
+    "name": "Section 393",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "act:preventive-detention-act",
+    "label": "Act",
+    "name": "Preventive Detention Act",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:anew-the-exact-nature-and-extent-of-such-protection",
+    "label": "Concept",
+    "name": "anew the exact nature and extent of such protection",
+    "confidence": 0.9,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "69adab9b-6b2e-52f8-93d3-05773caaf868",
+    "page": 364
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "article:constitution_of_india:31",
+    "label": "Article",
+    "name": "Article 31",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "6a1bd37d-8d46-594d-9bf6-f884ec68242c",
+    "page": 370
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "042cba8b-fece-570b-b7ea-c6e68f64a5b8",
+    "page": 376
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "042cba8b-fece-570b-b7ea-c6e68f64a5b8",
+    "page": 376
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "042cba8b-fece-570b-b7ea-c6e68f64a5b8",
+    "page": 376
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "042cba8b-fece-570b-b7ea-c6e68f64a5b8",
+    "page": 376
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "042cba8b-fece-570b-b7ea-c6e68f64a5b8",
+    "page": 376
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:the-right-of-personal-liberty-in-article",
+    "label": "Concept",
+    "name": "the right of personal liberty in Article",
+    "confidence": 0.9,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "d8451be4-c3f6-51ba-a727-06ae0ba18230",
+    "page": 378
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:phra_1993",
+    "label": "Act",
+    "name": "The Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:court-highlighted-the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Court highlighted the Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:parliament-enacted-the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Parliament enacted the Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:under-the-provisions-of-the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Under the provisions of the Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "act:rights-have-been-defined-in-the-protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Rights have been defined in the Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "381aa4b2-8687-50cf-9857-9aae70e47cb2",
+    "page": 386
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "19067e53-7ebc-5ea3-aaa9-6c868e8238be",
+    "page": 392
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "19067e53-7ebc-5ea3-aaa9-6c868e8238be",
+    "page": 392
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "19067e53-7ebc-5ea3-aaa9-6c868e8238be",
+    "page": 392
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "19067e53-7ebc-5ea3-aaa9-6c868e8238be",
+    "page": 392
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:113",
+    "label": "Section",
+    "name": "Section 113",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "d4912b0e-796d-5879-ab5a-4fc1d40828f6",
+    "page": 393
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a6017d3c-cc5c-5e32-8a92-47b648cc89ae",
+    "page": 395
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a6017d3c-cc5c-5e32-8a92-47b648cc89ae",
+    "page": 395
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a6017d3c-cc5c-5e32-8a92-47b648cc89ae",
+    "page": 395
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "a6017d3c-cc5c-5e32-8a92-47b648cc89ae",
+    "page": 395
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3401",
+    "label": "Section",
+    "name": "Section 3401",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "act:aadhar-act",
+    "label": "Act",
+    "name": "Aadhar Act",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "act:congressional-act",
+    "label": "Act",
+    "name": "Congressional Act",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "act:congress-enacted-the-right-to-financial-privacy-act-1978",
+    "label": "Act",
+    "name": "Congress enacted the Right to Financial Privacy Act, 1978",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "79ebb0ac-97db-5121-b6f5-8e7d2aa5ff88",
+    "page": 396
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3401",
+    "label": "Section",
+    "name": "Section 3401",
+    "confidence": 1.0,
+    "source_chunk_id": "d5900b64-029f-5b34-ab6c-8a7d3baa90bb",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3402",
+    "label": "Section",
+    "name": "Section 3402",
+    "confidence": 1.0,
+    "source_chunk_id": "d5900b64-029f-5b34-ab6c-8a7d3baa90bb",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3403",
+    "label": "Section",
+    "name": "Section 3403",
+    "confidence": 1.0,
+    "source_chunk_id": "d5900b64-029f-5b34-ab6c-8a7d3baa90bb",
+    "page": 407
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3404",
+    "label": "Section",
+    "name": "Section 3404",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3405",
+    "label": "Section",
+    "name": "Section 3405",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3406",
+    "label": "Section",
+    "name": "Section 3406",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3407",
+    "label": "Section",
+    "name": "Section 3407",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:3408",
+    "label": "Section",
+    "name": "Section 3408",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:301",
+    "label": "Section",
+    "name": "Section 301",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:510",
+    "label": "Section",
+    "name": "Section 510",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:347",
+    "label": "Section",
+    "name": "Section 347",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:83",
+    "label": "Section",
+    "name": "Section 83",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:tushar-mehta-cited-provisions-of-the-right-to-information-act-2005",
+    "label": "Act",
+    "name": "Tushar Mehta cited provisions of the Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:indian-easements-act-1882",
+    "label": "Act",
+    "name": "Indian Easements Act, 1882",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:indian-telegraph-act-1885",
+    "label": "Act",
+    "name": "Indian Telegraph Act, 1885",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:books-evidence-act-1891",
+    "label": "Act",
+    "name": "Books Evidence Act, 1891",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:payment-and-settlement-systems-act-2007",
+    "label": "Act",
+    "name": "Payment and Settlement Systems Act, 2007",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:tax-act-1961",
+    "label": "Act",
+    "name": "Tax Act, 1961",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:census-act-1948",
+    "label": "Act",
+    "name": "Census Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:collection-of-statistics-act-2008",
+    "label": "Act",
+    "name": "Collection of Statistics Act, 2008",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:protection-of-children-from-sexual-offences-act-2012",
+    "label": "Act",
+    "name": "Protection of Children from Sexual Offences Act, 2012",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "act:congress-enacted-the-right-to-financial-privacy-act-1978",
+    "label": "Act",
+    "name": "Congress enacted the Right to Financial Privacy Act, 1978",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0e2c7d40-3d1f-5792-a5dc-b87e02e604b5",
+    "page": 407
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "article:constitution_of_india:145",
+    "label": "Article",
+    "name": "Article 145",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:316",
+    "label": "Section",
+    "name": "Section 316",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:present-rights-and-obligations",
+    "label": "Concept",
+    "name": "present rights and obligations",
+    "confidence": 0.9,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "judgment:i-r-coelho",
+    "label": "Judgment",
+    "name": "I.R. Coelho",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "10d898fb-a57e-5976-a763-c5d3ba72e07d",
+    "page": 421
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:438",
+    "label": "Section",
+    "name": "Section 438",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:479",
+    "label": "Section",
+    "name": "Section 479",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:113",
+    "label": "Section",
+    "name": "Section 113",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:535",
+    "label": "Section",
+    "name": "Section 535",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:158",
+    "label": "Section",
+    "name": "Section 158",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:510",
+    "label": "Section",
+    "name": "Section 510",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:400",
+    "label": "Section",
+    "name": "Section 400",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:73",
+    "label": "Section",
+    "name": "Section 73",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:589",
+    "label": "Section",
+    "name": "Section 589",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "act:official-secrets-act-1923",
+    "label": "Act",
+    "name": "Official Secrets Act, 1923",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "act:andhra-pradesh-stamp-act",
+    "label": "Act",
+    "name": "Andhra Pradesh Stamp Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "act:evidence-act-1872",
+    "label": "Act",
+    "name": "Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:it-judicially",
+    "label": "Concept",
+    "name": "it judicially",
+    "confidence": 0.9,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "6219dca6-ccc1-5da6-b14d-50fadec757e5",
+    "page": 430
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "04f9b3eb-ff82-5a1d-804a-e366d8654395",
+    "page": 451
+  },
+  {
+    "id": "article:constitution_of_india:4",
+    "label": "Article",
+    "name": "Article 4",
+    "confidence": 1.0,
+    "source_chunk_id": "04f9b3eb-ff82-5a1d-804a-e366d8654395",
+    "page": 451
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "04f9b3eb-ff82-5a1d-804a-e366d8654395",
+    "page": 451
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:rti_act_2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:we-were-referred-to-the-indian-telegraph-act",
+    "label": "Act",
+    "name": "We were referred to the Indian Telegraph Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:indian-post-office-act-1898",
+    "label": "Act",
+    "name": "Indian Post Office Act, 1898",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:right-to-information-act-2005",
+    "label": "Act",
+    "name": "Right to Information Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:universal-declaration-of-human-rights-act-1948",
+    "label": "Act",
+    "name": "Universal Declaration of Human Rights Act, 1948",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:international-covenant-on-civil-and-political-rights-act-1966",
+    "label": "Act",
+    "name": "International Covenant on Civil and Political Rights Act, 1966",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "act:rti-act",
+    "label": "Act",
+    "name": "RTI Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "7a55a16e-20a8-5cca-a7b1-f16327eab9fc",
+    "page": 455
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ab234e26-f6bb-5be4-a764-56ff5d30eb13",
+    "page": 465
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ab234e26-f6bb-5be4-a764-56ff5d30eb13",
+    "page": 465
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "ab234e26-f6bb-5be4-a764-56ff5d30eb13",
+    "page": 465
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "act:protection-of-human-rights-act-1993",
+    "label": "Act",
+    "name": "Protection of Human Rights Act, 1993",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "judgment:i-r-coelho",
+    "label": "Judgment",
+    "name": "I.R. Coelho",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "judgment:a-k-gopalan",
+    "label": "Judgment",
+    "name": "A.K. Gopalan",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "49e504ec-6c9b-520f-b4df-61e6c13096af",
+    "page": 466
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "50814e40-8e70-592e-aced-f02e35ba8e27",
+    "page": 469
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "611c26ee-1ce6-568e-8edc-f3e17a321e25",
+    "page": 471
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "act:court-while-interpreting-the-provisions-of-indian-companies-act",
+    "label": "Act",
+    "name": "Court while interpreting the provisions of Indian Companies Act",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "concept:k-s-puttaswamy-v-union-of-india-right-to-privacy:profiling",
+    "label": "Concept",
+    "name": "Profiling",
+    "confidence": 0.9,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "PUTTASWAMY",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "person:harv-j",
+    "label": "Person",
+    "name": "Harv. J.",
+    "confidence": 1.0,
+    "source_chunk_id": "bfb23fae-feb9-5065-b420-911c95c21fc9",
+    "page": 481
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8fdae063-cf51-5101-9778-6fa5003cec2a",
+    "page": 509
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:604",
+    "label": "Section",
+    "name": "Section 604",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "section:k-s-puttaswamy-v-union-of-india-right-to-privacy:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "act:specifically-the-privacy-act",
+    "label": "Act",
+    "name": "Specifically the Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "act:principles-to-form-the-bedrock-of-the-proposed-privacy-act",
+    "label": "Act",
+    "name": "Principles to form the bedrock of the proposed Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "act:privacy-act",
+    "label": "Act",
+    "name": "Privacy Act",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "court:delhi-high-court",
+    "label": "Court",
+    "name": "Delhi High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "judgment:i-r-coelho",
+    "label": "Judgment",
+    "name": "I.R. Coelho",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "PUTTASWAMY",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  },
+  {
+    "id": "person:harv-j",
+    "label": "Person",
+    "name": "Harv. J.",
+    "confidence": 1.0,
+    "source_chunk_id": "090f071b-d70f-59b6-80f9-11b726db62c3",
+    "page": 511
+  }
+]

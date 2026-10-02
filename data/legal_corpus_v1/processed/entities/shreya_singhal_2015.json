@@ -1,0 +1,1898 @@
+[
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "8a2017b3-afc7-578e-9edc-4254bb8557d3",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "8a2017b3-afc7-578e-9edc-4254bb8557d3",
+    "page": 1
+  },
+  {
+    "id": "judgment:shreya-singhal",
+    "label": "Judgment",
+    "name": "Shreya Singhal",
+    "confidence": 1.0,
+    "source_chunk_id": "8a2017b3-afc7-578e-9edc-4254bb8557d3",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:information-technology-act",
+    "label": "Act",
+    "name": "Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:reasons-appended-to-the-bill-which-introduced-the-amendment-act",
+    "label": "Act",
+    "name": "Reasons appended to the Bill which introduced the Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:indian-evidence-act",
+    "label": "Act",
+    "name": "Indian Evidence Act",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "act:sections-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "Sections of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "judgment:shreya-singhal",
+    "label": "Judgment",
+    "name": "SHREYA SINGHAL",
+    "confidence": 1.0,
+    "source_chunk_id": "fffadd55-72a3-5e37-9b53-758ff3e23d7c",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6dd1cfe1-ea23-53fb-9a1f-842b8c09ea21",
+    "page": 3
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:296",
+    "label": "Section",
+    "name": "Section 296",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "judgment:bennett-coleman",
+    "label": "Judgment",
+    "name": "Bennett Coleman",
+    "confidence": 1.0,
+    "source_chunk_id": "143ec1e3-bd66-5c46-9691-0707e687ada5",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "concept:shreya-singhal-v-union-of-india:information-as-follows",
+    "label": "Concept",
+    "name": "information as follows",
+    "confidence": 0.9,
+    "source_chunk_id": "32e8aae3-c476-55f8-b856-12f8632b890c",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "11777583-819f-50b2-9d6b-ceb2ced53014",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "11777583-819f-50b2-9d6b-ceb2ced53014",
+    "page": 7
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "11777583-819f-50b2-9d6b-ceb2ced53014",
+    "page": 7
+  },
+  {
+    "id": "act:chief-justice-was-only-making-a-distinction-between-an-act",
+    "label": "Act",
+    "name": "Chief Justice was only making a distinction between an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "11777583-819f-50b2-9d6b-ceb2ced53014",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "act:cinematograph-act",
+    "label": "Act",
+    "name": "Cinematograph Act",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "act:punjab-maintenance-of-public-order-act",
+    "label": "Act",
+    "name": "Punjab Maintenance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "concept:shreya-singhal-v-union-of-india:the-scope-of-the-judicial-review",
+    "label": "Concept",
+    "name": "the scope of the judicial review",
+    "confidence": 0.9,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "46e9d17b-3836-5eff-b086-8e7ccaaf572d",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:418",
+    "label": "Section",
+    "name": "Section 418",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:616",
+    "label": "Section",
+    "name": "Section 616",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "act:east-punjab-public-safety-act-1949",
+    "label": "Act",
+    "name": "East Punjab Public Safety Act, 1949",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f4c9aa69-003e-5965-8b69-121421911a84",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:295a",
+    "label": "Section",
+    "name": "Section 295A",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:124a",
+    "label": "Section",
+    "name": "Section 124A",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:499",
+    "label": "Section",
+    "name": "Section 499",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "act:representation-of-people-act",
+    "label": "Act",
+    "name": "Representation of People Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "act:they-may-be-ingredients-of-certain-offences-under-the-penal-code",
+    "label": "Act",
+    "name": "They may be ingredients of certain offences under the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "3daa50ec-78a1-54ed-89a7-c8cfa9af4e48",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:444",
+    "label": "Section",
+    "name": "Section 444",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:568",
+    "label": "Section",
+    "name": "Section 568",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:46",
+    "label": "Section",
+    "name": "Section 46",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:385",
+    "label": "Section",
+    "name": "Section 385",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:242",
+    "label": "Section",
+    "name": "Section 242",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:214",
+    "label": "Section",
+    "name": "Section 214",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:844",
+    "label": "Section",
+    "name": "Section 844",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:223",
+    "label": "Section",
+    "name": "Section 223",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:156",
+    "label": "Section",
+    "name": "Section 156",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:451",
+    "label": "Section",
+    "name": "Section 451",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:285",
+    "label": "Section",
+    "name": "Section 285",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:104",
+    "label": "Section",
+    "name": "Section 104",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:4a",
+    "label": "Section",
+    "name": "Section 4A",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "act:communications-decency-act",
+    "label": "Act",
+    "name": "Communications Decency Act",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "act:goondas-act",
+    "label": "Act",
+    "name": "Goondas Act",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "act:division-bench-of-this-court-lays-down-that-an-indian-act",
+    "label": "Act",
+    "name": "Division Bench of this Court lays down that an Indian Act",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "act:central-provinces-and-berar-goondas-act",
+    "label": "Act",
+    "name": "Central Provinces and Berar Goondas Act",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "act:gold-control-act",
+    "label": "Act",
+    "name": "Gold Control Act",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "concept:shreya-singhal-v-union-of-india:guilt-in",
+    "label": "Concept",
+    "name": "guilt in",
+    "confidence": 0.9,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "concept:shreya-singhal-v-union-of-india:the-criminal-offence-with-sufficient-definiteness",
+    "label": "Concept",
+    "name": "the criminal offence with sufficient definiteness",
+    "confidence": 0.9,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "812e980f-2d3b-5c38-b299-be7aa66c23bb",
+    "page": 15
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "2e5373f6-6cde-5262-b7fa-1a9ea74a71b4",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "2e5373f6-6cde-5262-b7fa-1a9ea74a71b4",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:27",
+    "label": "Section",
+    "name": "Section 27",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:114",
+    "label": "Section",
+    "name": "Section 114",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:67b",
+    "label": "Section",
+    "name": "Section 67B",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66b",
+    "label": "Section",
+    "name": "Section 66B",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66c",
+    "label": "Section",
+    "name": "Section 66C",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66d",
+    "label": "Section",
+    "name": "Section 66D",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66f",
+    "label": "Section",
+    "name": "Section 66F",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:national-security-act",
+    "label": "Act",
+    "name": "National Security Act",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:maintenance-of-supplies-of-essential-commodities-act-1980",
+    "label": "Act",
+    "name": "Maintenance of Supplies of Essential Commodities Act, 1980",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:essential-commodities-act",
+    "label": "Act",
+    "name": "Essential Commodities Act",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:essential-commodities-act-1955",
+    "label": "Act",
+    "name": "Essential Commodities Act, 1955",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "act:in-the-indian-penal-code",
+    "label": "Act",
+    "name": "In the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "90991693-8f0b-56bf-b2da-2398acf76062",
+    "page": 23
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:268",
+    "label": "Section",
+    "name": "Section 268",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:294",
+    "label": "Section",
+    "name": "Section 294",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:510",
+    "label": "Section",
+    "name": "Section 510",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "act:in-the-indian-penal-code",
+    "label": "Act",
+    "name": "In the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "act:information-technology-act",
+    "label": "Act",
+    "name": "Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c1afa66b-c442-5581-b96b-62d863a806e4",
+    "page": 25
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:133",
+    "label": "Section",
+    "name": "Section 133",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:127",
+    "label": "Section",
+    "name": "Section 127",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:information-technology-act",
+    "label": "Act",
+    "name": "Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:the-provisions-of-the-maharashtra-control-of-organised-crime-act",
+    "label": "Act",
+    "name": "The provisions of the Maharashtra Control of Organised Crime Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:communications-act-2003",
+    "label": "Act",
+    "name": "Communications Act, 2003",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:communications-act",
+    "label": "Act",
+    "name": "Communications Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "act:special-powers-act",
+    "label": "Act",
+    "name": "Special Powers Act",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "doctrine:doctrine-of-severability",
+    "label": "Doctrine",
+    "name": "Doctrine Of Severability",
+    "confidence": 1.0,
+    "source_chunk_id": "e81b42fe-08e2-5bc6-917f-09a7a3155eb7",
+    "page": 26
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "act:madras-maintenance-of-public-order-act",
+    "label": "Act",
+    "name": "Madras Maintenance of Public Order Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "act:madras-act",
+    "label": "Act",
+    "name": "Madras Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "doctrine:doctrine-of-severability",
+    "label": "Doctrine",
+    "name": "Doctrine Of Severability",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "ee6b9a79-5972-5004-80eb-016faa364fc5",
+    "page": 31
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "act:madras-act",
+    "label": "Act",
+    "name": "Madras Act",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "judgment:romesh-thappar",
+    "label": "Judgment",
+    "name": "Romesh Thappar",
+    "confidence": 1.0,
+    "source_chunk_id": "872d71b3-5c3e-5aaf-be49-80dd0d0b40d0",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:199",
+    "label": "Section",
+    "name": "Section 199",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:96",
+    "label": "Section",
+    "name": "Section 96",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:196",
+    "label": "Section",
+    "name": "Section 196",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:153",
+    "label": "Section",
+    "name": "Section 153",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:295",
+    "label": "Section",
+    "name": "Section 295",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:505",
+    "label": "Section",
+    "name": "Section 505",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:108",
+    "label": "Section",
+    "name": "Section 108",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:120",
+    "label": "Section",
+    "name": "Section 120",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:195",
+    "label": "Section",
+    "name": "Section 195",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:155",
+    "label": "Section",
+    "name": "Section 155",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:information-technology-act",
+    "label": "Act",
+    "name": "Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:criminal-procedure-code",
+    "label": "Act",
+    "name": "Criminal Procedure Code",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:a-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "A of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "act:b-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "B of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "0ae2ca68-08e3-5773-84ec-b31e1beda56d",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:118",
+    "label": "Section",
+    "name": "Section 118",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "act:kerala-police-act",
+    "label": "Act",
+    "name": "Kerala Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "act:kerala-act",
+    "label": "Act",
+    "name": "Kerala Act",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "act:the-kerala-police-act",
+    "label": "Act",
+    "name": "The Kerala Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "doctrine:pith-and-substance",
+    "label": "Doctrine",
+    "name": "Pith And Substance",
+    "confidence": 1.0,
+    "source_chunk_id": "80ad7fa1-8930-53f5-bd75-fdb383316978",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "db17614e-c8ae-591e-bddf-61a2533e6af7",
+    "page": 35
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "db17614e-c8ae-591e-bddf-61a2533e6af7",
+    "page": 35
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "db17614e-c8ae-591e-bddf-61a2533e6af7",
+    "page": 35
+  },
+  {
+    "id": "act:information-technology-act",
+    "label": "Act",
+    "name": "Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "db17614e-c8ae-591e-bddf-61a2533e6af7",
+    "page": 35
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:95",
+    "label": "Section",
+    "name": "Section 95",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "54b65af2-da11-5760-ab95-ff668486dfe9",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:95",
+    "label": "Section",
+    "name": "Section 95",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "92887589-0eaf-5462-a4bc-ba4e988cc5a2",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66a",
+    "label": "Section",
+    "name": "Section 66A",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:69a",
+    "label": "Section",
+    "name": "Section 69A",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:118",
+    "label": "Section",
+    "name": "Section 118",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:49",
+    "label": "Section",
+    "name": "Section 49",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "act:kerala-police-act",
+    "label": "Act",
+    "name": "Kerala Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "act:uk-post-office-act-1953",
+    "label": "Act",
+    "name": "UK Post Office Act, 1953",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "act:british-telecommunication-act-1981",
+    "label": "Act",
+    "name": "British Telecommunication Act, 1981",
+    "confidence": 1.0,
+    "source_chunk_id": "15aeaa50-7d05-5427-a897-0ec290827e84",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:49",
+    "label": "Section",
+    "name": "Section 49",
+    "confidence": 1.0,
+    "source_chunk_id": "b43d85a0-44cd-507c-8303-aab16c4c96c7",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "b43d85a0-44cd-507c-8303-aab16c4c96c7",
+    "page": 39
+  },
+  {
+    "id": "act:british-telecommunication-act-1981",
+    "label": "Act",
+    "name": "British Telecommunication Act, 1981",
+    "confidence": 1.0,
+    "source_chunk_id": "b43d85a0-44cd-507c-8303-aab16c4c96c7",
+    "page": 39
+  },
+  {
+    "id": "act:british-telecommunication-act-1984",
+    "label": "Act",
+    "name": "British Telecommunication Act, 1984",
+    "confidence": 1.0,
+    "source_chunk_id": "b43d85a0-44cd-507c-8303-aab16c4c96c7",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:49",
+    "label": "Section",
+    "name": "Section 49",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "section:shreya-singhal-v-union-of-india:127",
+    "label": "Section",
+    "name": "Section 127",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "act:british-telecommunication-act-1981",
+    "label": "Act",
+    "name": "British Telecommunication Act, 1981",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "act:british-telecommunication-act-1984",
+    "label": "Act",
+    "name": "British Telecommunication Act, 1984",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "act:telecommunication-act-2003",
+    "label": "Act",
+    "name": "Telecommunication Act, 2003",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  },
+  {
+    "id": "act:broadcasting-act",
+    "label": "Act",
+    "name": "Broadcasting Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ef0a782f-c0af-5a3d-9108-d593597f5029",
+    "page": 39
+  }
+]

@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "act:amendment-act-2005",
+    "label": "Act",
+    "name": "Amendment Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1fe18e12-5f47-5c08-a9bb-162ebdf6f5f2",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a5c487f9-64d5-5fa5-a1a2-d3257efe178c",
+    "page": 3
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "act:university-grants-commission-act-1956",
+    "label": "Act",
+    "name": "University Grants Commission Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "act:central-government-under-the-societies-registration-act-1860",
+    "label": "Act",
+    "name": "Central Government under the Societies Registration Act, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0d4b4ace-a925-560e-9318-80412b6bf192",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:341",
+    "label": "Article",
+    "name": "Article 341",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:342",
+    "label": "Article",
+    "name": "Article 342",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "act:national-commission-for-minority-educational-institutions-act-2004",
+    "label": "Act",
+    "name": "National Commission for Minority Educational Institutions Act, 2004",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "act:central-government-with-the-societies-registration-act-1960",
+    "label": "Act",
+    "name": "Central Government with the Societies Registration Act, 1960",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "concept:i-r-coelho-v-state-of-tamil-nadu:other-backward-classes",
+    "label": "Concept",
+    "name": "Other Backward Classes",
+    "confidence": 0.9,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "concept:i-r-coelho-v-state-of-tamil-nadu:scheduled-castes",
+    "label": "Concept",
+    "name": "Scheduled Castes",
+    "confidence": 0.9,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "concept:i-r-coelho-v-state-of-tamil-nadu:scheduled-tribes",
+    "label": "Concept",
+    "name": "Scheduled Tribes",
+    "confidence": 0.9,
+    "source_chunk_id": "908da7d1-1119-5959-ae91-e90167d99f81",
+    "page": 5
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "37fd51ee-12f8-5201-ace5-c3a1c66fb869",
+    "page": 8
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "act:it-was-argued-that-act",
+    "label": "Act",
+    "name": "It was argued that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "judgment:i-r-coelho",
+    "label": "Judgment",
+    "name": "I.R. Coelho",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "56035cc8-b8cc-5d59-a9ac-e01997b08520",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:45",
+    "label": "Article",
+    "name": "Article 45",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:20",
+    "label": "Article",
+    "name": "Article 20",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "act:amendment-act-2005",
+    "label": "Act",
+    "name": "Amendment Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "doctrine:doctrine-of-severability",
+    "label": "Doctrine",
+    "name": "Doctrine Of Severability",
+    "confidence": 1.0,
+    "source_chunk_id": "2d276dab-0b6d-5dc9-9785-3e8629e52545",
+    "page": 10
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "19ab600c-49fe-52eb-92d9-514a37b0a7ff",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:26",
+    "label": "Article",
+    "name": "Article 26",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "401d4d8b-02da-5ac0-bb89-d366119ca3d6",
+    "page": 13
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:45",
+    "label": "Article",
+    "name": "Article 45",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "amendment:const_amendment_86",
+    "label": "Amendment",
+    "name": "86th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "760b04f3-fa45-555f-82ed-744a944434e2",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "amendment:const_amendment_24",
+    "label": "Amendment",
+    "name": "24th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "amendment:const_amendment_44",
+    "label": "Amendment",
+    "name": "44th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "amendment:const_amendment_1",
+    "label": "Amendment",
+    "name": "1th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "06036813-85c1-5b21-8878-77924bfe6706",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "7f37c708-4b65-5d9f-9142-6149c051081b",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "7f37c708-4b65-5d9f-9142-6149c051081b",
+    "page": 16
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "act:parliament-itself-should-have-determined-obcs-and-that-act",
+    "label": "Act",
+    "name": "Parliament itself should have determined OBCs and that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "amendment:const_amendment_73",
+    "label": "Amendment",
+    "name": "73th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "1b621132-62d1-5054-a289-f79505814249",
+    "page": 16
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "e380886c-9046-5849-9807-0c9196fa0845",
+    "page": 19
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e84b1c88-af6a-5b1a-94af-7932c3ed2fc4",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "e84b1c88-af6a-5b1a-94af-7932c3ed2fc4",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "e84b1c88-af6a-5b1a-94af-7932c3ed2fc4",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "e84b1c88-af6a-5b1a-94af-7932c3ed2fc4",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "act:amendment-of-the-us-supreme-court-read-with-civil-rights-act-1964",
+    "label": "Act",
+    "name": "Amendment of the US Supreme Court read with Civil Rights Act, 1964",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "c2b4c1ef-061c-534a-ad30-0076f82d719a",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3137b082-85a5-5e17-83de-97ebbd0be349",
+    "page": 25
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3137b082-85a5-5e17-83de-97ebbd0be349",
+    "page": 25
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3137b082-85a5-5e17-83de-97ebbd0be349",
+    "page": 25
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b7d28e6b-4fc8-547a-af84-d276f090ba1f",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "b7d28e6b-4fc8-547a-af84-d276f090ba1f",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "b7d28e6b-4fc8-547a-af84-d276f090ba1f",
+    "page": 26
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "b7d28e6b-4fc8-547a-af84-d276f090ba1f",
+    "page": 26
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b7d28e6b-4fc8-547a-af84-d276f090ba1f",
+    "page": 26
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "4f325d26-3db2-5492-ae15-fea788c69404",
+    "page": 27
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "act:the-learned-counsel-had-further-challenged-the-validity-of-act",
+    "label": "Act",
+    "name": "The learned Counsel had further challenged the validity of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "act:central-act-or-set-up-by-an-act",
+    "label": "Act",
+    "name": "Central Act or set up by an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "act:central-government-under-the-societies-registration-act-1860",
+    "label": "Act",
+    "name": "Central Government under the Societies Registration Act, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "amendment:const_amendment_73",
+    "label": "Amendment",
+    "name": "73th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "doctrine:basic-structure-doctrine",
+    "label": "Doctrine",
+    "name": "Basic Structure Doctrine",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "bc50c318-c5a9-5efd-a76a-307471aca433",
+    "page": 28
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:13",
+    "label": "Article",
+    "name": "Article 13",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:31c",
+    "label": "Article",
+    "name": "Article 31C",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "article:constitution_of_india:143",
+    "label": "Article",
+    "name": "Article 143",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "act:amendment-act",
+    "label": "Act",
+    "name": "Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_24",
+    "label": "Amendment",
+    "name": "24th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "amendment:const_amendment_25",
+    "label": "Amendment",
+    "name": "25th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "434921d0-0319-5abe-9c31-ea977856484b",
+    "page": 31
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:143",
+    "label": "Article",
+    "name": "Article 143",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "61061b22-a485-59b0-8eea-ebd532da0fb7",
+    "page": 32
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "772153e3-4edb-5ade-a010-fc6ee66ad0ca",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "772153e3-4edb-5ade-a010-fc6ee66ad0ca",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "772153e3-4edb-5ade-a010-fc6ee66ad0ca",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "772153e3-4edb-5ade-a010-fc6ee66ad0ca",
+    "page": 33
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "772153e3-4edb-5ade-a010-fc6ee66ad0ca",
+    "page": 33
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "act:third-amendment-act-2005",
+    "label": "Act",
+    "name": "Third Amendment Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "653c0dd1-ff67-55fe-90a4-79e2c7c76f84",
+    "page": 33
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "act:third-amendment-act-2005",
+    "label": "Act",
+    "name": "Third Amendment Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "566a66f6-c531-52fe-bbb3-90c1d7b0651d",
+    "page": 34
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:30",
+    "label": "Article",
+    "name": "Article 30",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c4349589-db2a-5870-8b60-df3ef9c38e5b",
+    "page": 35
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:245",
+    "label": "Article",
+    "name": "Article 245",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "article:constitution_of_india:29",
+    "label": "Article",
+    "name": "Article 29",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "amendment:const_amendment_42",
+    "label": "Amendment",
+    "name": "42th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "a5ff6e16-c8e9-51a3-97e5-bc1d2d5f68ee",
+    "page": 36
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c4b67abe-cb32-5472-a71f-fa6385f3d905",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "c4b67abe-cb32-5472-a71f-fa6385f3d905",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "c4b67abe-cb32-5472-a71f-fa6385f3d905",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "c4b67abe-cb32-5472-a71f-fa6385f3d905",
+    "page": 40
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c4b67abe-cb32-5472-a71f-fa6385f3d905",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "63817e5e-9596-55a0-b06a-dd764796a756",
+    "page": 42
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "63817e5e-9596-55a0-b06a-dd764796a756",
+    "page": 42
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "63817e5e-9596-55a0-b06a-dd764796a756",
+    "page": 42
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "a2217aa6-f23c-582f-ad0f-d6f95af144b4",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "a2217aa6-f23c-582f-ad0f-d6f95af144b4",
+    "page": 43
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a2217aa6-f23c-582f-ad0f-d6f95af144b4",
+    "page": 43
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:340",
+    "label": "Article",
+    "name": "Article 340",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "concept:i-r-coelho-v-state-of-tamil-nadu:the",
+    "label": "Concept",
+    "name": "the",
+    "confidence": 0.9,
+    "source_chunk_id": "dbe28221-9f67-586f-be41-62c40432c328",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "b57b7f9c-8116-5ae1-9bf2-136e130e9ff8",
+    "page": 48
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "b57b7f9c-8116-5ae1-9bf2-136e130e9ff8",
+    "page": 48
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b57b7f9c-8116-5ae1-9bf2-136e130e9ff8",
+    "page": 48
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2afbb1b3-5091-5714-81cb-64049c6e6c32",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "2afbb1b3-5091-5714-81cb-64049c6e6c32",
+    "page": 49
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "2afbb1b3-5091-5714-81cb-64049c6e6c32",
+    "page": 49
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "2afbb1b3-5091-5714-81cb-64049c6e6c32",
+    "page": 49
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "055c95f3-1e26-5e17-aed4-f8ee76f2acc3",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "055c95f3-1e26-5e17-aed4-f8ee76f2acc3",
+    "page": 50
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "055c95f3-1e26-5e17-aed4-f8ee76f2acc3",
+    "page": 50
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:341",
+    "label": "Article",
+    "name": "Article 341",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "act:wealth-tax-act",
+    "label": "Act",
+    "name": "Wealth Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "act:third-constitutional-amendment-act",
+    "label": "Act",
+    "name": "Third Constitutional Amendment Act",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "a4d1a2fc-0997-5596-b5d5-6da756a84cce",
+    "page": 50
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6a727fdf-e9e4-5114-aa7f-8cffbe6fc572",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "6a727fdf-e9e4-5114-aa7f-8cffbe6fc572",
+    "page": 62
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "6a727fdf-e9e4-5114-aa7f-8cffbe6fc572",
+    "page": 62
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6a727fdf-e9e4-5114-aa7f-8cffbe6fc572",
+    "page": 62
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "article:constitution_of_india:340",
+    "label": "Article",
+    "name": "Article 340",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "act:civil-rights-act",
+    "label": "Act",
+    "name": "Civil Rights Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "act:we-are-of-the-view-that-the-challenge-of-act",
+    "label": "Act",
+    "name": "We are of the view that the challenge of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "act:it-is-only-for-the-purpose-of-act",
+    "label": "Act",
+    "name": "It is only for the purpose of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "act:the-challenge-of-act",
+    "label": "Act",
+    "name": "The challenge of Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "amendment:const_amendment_14",
+    "label": "Amendment",
+    "name": "14th Constitutional Amendment",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "judgment:minerva-mills",
+    "label": "Judgment",
+    "name": "Minerva Mills",
+    "confidence": 1.0,
+    "source_chunk_id": "6c53dd83-907f-5da8-9842-78827b3c836e",
+    "page": 63
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "370d60e7-b550-58eb-b90a-008bbb43b03b",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "370d60e7-b550-58eb-b90a-008bbb43b03b",
+    "page": 69
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:46",
+    "label": "Article",
+    "name": "Article 46",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "act:shri-sushil-kumar-jain-is-that-the-entire-act",
+    "label": "Act",
+    "name": "Shri Sushil Kumar Jain is that the entire Act",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "451e94b8-7050-5690-915d-a2c837614a5f",
+    "page": 69
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "50a400fb-ac8b-5856-bdc1-e94eeff1d4a2",
+    "page": 71
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:162",
+    "label": "Article",
+    "name": "Article 162",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:368",
+    "label": "Article",
+    "name": "Article 368",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  },
+  {
+    "id": "section:i-r-coelho-v-state-of-tamil-nadu:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b917e5f0-7e8c-5511-93b2-f10ffc51b3df",
+    "page": 72
+  }
+]

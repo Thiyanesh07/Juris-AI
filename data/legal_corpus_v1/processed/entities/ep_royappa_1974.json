@@ -1,0 +1,226 @@
+[
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "848b9714-70fb-5af5-b62d-fd33736e4a73",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "848b9714-70fb-5af5-b62d-fd33736e4a73",
+    "page": 1
+  },
+  {
+    "id": "act:special-duty-for-streamlining-and-rationalising-the-sales-tax-act",
+    "label": "Act",
+    "name": "Special Duty for streamlining and rationalising the Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "848b9714-70fb-5af5-b62d-fd33736e4a73",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "848b9714-70fb-5af5-b62d-fd33736e4a73",
+    "page": 1
+  },
+  {
+    "id": "person:per-ray-c-j",
+    "label": "Person",
+    "name": "Per Ray C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "848b9714-70fb-5af5-b62d-fd33736e4a73",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:314",
+    "label": "Article",
+    "name": "Article 314",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:the-general-sales-tax-act",
+    "label": "Act",
+    "name": "The General Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:sales-tax-act",
+    "label": "Act",
+    "name": "Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:entertainment-tax-act",
+    "label": "Act",
+    "name": "Entertainment Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:local-authorities-finance-act",
+    "label": "Act",
+    "name": "Local Authorities Finance Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:motor-spirit-taxation-act",
+    "label": "Act",
+    "name": "Motor Spirit Taxation Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:betting-tax-act-being-all-state-acts-and-the-central-sales-act",
+    "label": "Act",
+    "name": "Betting Tax Act being all State Acts and the Central Sales Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "act:general-sales-tax-act",
+    "label": "Act",
+    "name": "General Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f00c427a-5d5b-5b58-bac6-cf1cada01ceb",
+    "page": 6
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "section:e-p-royappa-v-state-of-tamil-nadu:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "section:e-p-royappa-v-state-of-tamil-nadu:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "act:city-police-act",
+    "label": "Act",
+    "name": "City Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "act:district-police-act",
+    "label": "Act",
+    "name": "District Police Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "act:the-home-ministry-code",
+    "label": "Act",
+    "name": "The Home Ministry Code",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "act:tamil-nadu-general-sales-tax-act",
+    "label": "Act",
+    "name": "Tamil Nadu General Sales Tax Act",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "judgment:e-p-royappa",
+    "label": "Judgment",
+    "name": "E.P. Royappa",
+    "confidence": 1.0,
+    "source_chunk_id": "7597788d-fe88-5cc9-8180-a5bddc594a82",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a01dd72c-5dbb-553d-bc35-abc11cd78fcf",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:311",
+    "label": "Article",
+    "name": "Article 311",
+    "confidence": 1.0,
+    "source_chunk_id": "a01dd72c-5dbb-553d-bc35-abc11cd78fcf",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "a01dd72c-5dbb-553d-bc35-abc11cd78fcf",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "a01dd72c-5dbb-553d-bc35-abc11cd78fcf",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "a01dd72c-5dbb-553d-bc35-abc11cd78fcf",
+    "page": 24
+  }
+]

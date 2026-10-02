@@ -1,0 +1,3586 @@
+[
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "judgment:common-cause",
+    "label": "Judgment",
+    "name": "Common Cause",
+    "confidence": 1.0,
+    "source_chunk_id": "ee4ac541-63c7-5bc7-ac37-9941449d53e5",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:126",
+    "label": "Article",
+    "name": "Article 126",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:135",
+    "label": "Article",
+    "name": "Article 135",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:or-describe-them",
+    "label": "Concept",
+    "name": "or describe them",
+    "confidence": 0.9,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "judgment:common-cause",
+    "label": "Judgment",
+    "name": "Common Cause",
+    "confidence": 1.0,
+    "source_chunk_id": "be7a4542-94ec-57cb-ad61-45d2c6fff23a",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "5523aadb-2430-59bd-8046-5516600f365a",
+    "page": 6
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "349ef532-352c-5688-84b1-a508740a75db",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "349ef532-352c-5688-84b1-a508740a75db",
+    "page": 7
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "349ef532-352c-5688-84b1-a508740a75db",
+    "page": 7
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "349ef532-352c-5688-84b1-a508740a75db",
+    "page": 7
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcac798-7882-5fc8-8b7e-5adea2d42247",
+    "page": 7
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcac798-7882-5fc8-8b7e-5adea2d42247",
+    "page": 7
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcac798-7882-5fc8-8b7e-5adea2d42247",
+    "page": 7
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcac798-7882-5fc8-8b7e-5adea2d42247",
+    "page": 7
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "4fcac798-7882-5fc8-8b7e-5adea2d42247",
+    "page": 7
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "ec430a1f-5b6b-52ef-b1b2-b51777755e93",
+    "page": 9
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "ec430a1f-5b6b-52ef-b1b2-b51777755e93",
+    "page": 9
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "ec430a1f-5b6b-52ef-b1b2-b51777755e93",
+    "page": 9
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c3fbe4c5-6824-5805-b4e3-a6b5cf4460a4",
+    "page": 10
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c3fbe4c5-6824-5805-b4e3-a6b5cf4460a4",
+    "page": 10
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c3fbe4c5-6824-5805-b4e3-a6b5cf4460a4",
+    "page": 10
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c8496cfd-1e82-5910-8864-3b464dbb755a",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "c8496cfd-1e82-5910-8864-3b464dbb755a",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c8496cfd-1e82-5910-8864-3b464dbb755a",
+    "page": 12
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c8496cfd-1e82-5910-8864-3b464dbb755a",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "a6b83bef-0aed-59ce-8f29-41033c19ce0d",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "a6b83bef-0aed-59ce-8f29-41033c19ce0d",
+    "page": 14
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "a6b83bef-0aed-59ce-8f29-41033c19ce0d",
+    "page": 14
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "a6b83bef-0aed-59ce-8f29-41033c19ce0d",
+    "page": 14
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "a6b83bef-0aed-59ce-8f29-41033c19ce0d",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:922",
+    "label": "Section",
+    "name": "Section 922",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:261",
+    "label": "Section",
+    "name": "Section 261",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:241",
+    "label": "Section",
+    "name": "Section 241",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "act:criminal-code",
+    "label": "Act",
+    "name": "Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "act:canadian-criminal-code",
+    "label": "Act",
+    "name": "Canadian Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "court:british-high-court",
+    "label": "Court",
+    "name": "British High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "person:rehnquist-cj",
+    "label": "Person",
+    "name": "Rehnquist CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "69bc15db-558a-5b69-91be-d1bd2f5955ee",
+    "page": 14
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:18",
+    "label": "Article",
+    "name": "Article 18",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:canadian-criminal-code",
+    "label": "Act",
+    "name": "Canadian Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:court-declared-the-infringing-provisions-of-the-criminal-code",
+    "label": "Act",
+    "name": "Court declared the infringing provisions of the Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:quebec-passed-an-act",
+    "label": "Act",
+    "name": "Quebec passed an Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:quebec-act",
+    "label": "Act",
+    "name": "Quebec Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:the-quebec-act",
+    "label": "Act",
+    "name": "The Quebec Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:health-insurance-act",
+    "label": "Act",
+    "name": "Health Insurance Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:the-provisions-of-the-said-act",
+    "label": "Act",
+    "name": "The provisions of the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:it-has-been-observed-that-the-said-act",
+    "label": "Act",
+    "name": "It has been observed that the said Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:reference-has-been-made-to-the-swiss-criminal-code",
+    "label": "Act",
+    "name": "Reference has been made to the Swiss Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "act:belgium-act",
+    "label": "Act",
+    "name": "Belgium Act",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "338f772a-d8f0-51d0-b5d0-89a78f2a441d",
+    "page": 28
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:38",
+    "label": "Article",
+    "name": "Article 38",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:39a",
+    "label": "Article",
+    "name": "Article 39A",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:35",
+    "label": "Section",
+    "name": "Section 35",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:302",
+    "label": "Section",
+    "name": "Section 302",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "act:france-making-changes-in-the-french-code",
+    "label": "Act",
+    "name": "France making changes in the French Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "act:french-public-health-code",
+    "label": "Act",
+    "name": "French Public Health Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "act:public-health-code",
+    "label": "Act",
+    "name": "Public Health Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "act:advocates-act-1961",
+    "label": "Act",
+    "name": "Advocates Act, 1961",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "person:king-c-j",
+    "label": "Person",
+    "name": "King C.J",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "person:mason-cj",
+    "label": "Person",
+    "name": "Mason CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "person:robins-j",
+    "label": "Person",
+    "name": "Robins J.",
+    "confidence": 1.0,
+    "source_chunk_id": "9f4faf75-5992-54bd-ace4-68d2109101fb",
+    "page": 30
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "act:the-canadian-criminal-code",
+    "label": "Act",
+    "name": "The Canadian Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd67eaa-1cd1-596c-b6d2-8eeec4f22ee0",
+    "page": 40
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "05bb929c-5564-575f-b67c-febf57068cf4",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "05bb929c-5564-575f-b67c-febf57068cf4",
+    "page": 43
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "22cd44b5-29e6-5121-80d0-f3b2f47b1568",
+    "page": 43
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "22cd44b5-29e6-5121-80d0-f3b2f47b1568",
+    "page": 43
+  },
+  {
+    "id": "act:patient-selfdetermination-act",
+    "label": "Act",
+    "name": "Patient SelfDetermination Act",
+    "confidence": 1.0,
+    "source_chunk_id": "22cd44b5-29e6-5121-80d0-f3b2f47b1568",
+    "page": 43
+  },
+  {
+    "id": "act:the-mental-capacity-act",
+    "label": "Act",
+    "name": "The Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "22cd44b5-29e6-5121-80d0-f3b2f47b1568",
+    "page": 43
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:an-advance-medical-directive-as",
+    "label": "Concept",
+    "name": "an advance medical directive as",
+    "confidence": 0.9,
+    "source_chunk_id": "22cd44b5-29e6-5121-80d0-f3b2f47b1568",
+    "page": 43
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "3212cde4-13e7-5a82-87fa-1af4a7126fec",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "3212cde4-13e7-5a82-87fa-1af4a7126fec",
+    "page": 46
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:142",
+    "label": "Article",
+    "name": "Article 142",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "article:constitution_of_india:141",
+    "label": "Article",
+    "name": "Article 141",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:115",
+    "label": "Section",
+    "name": "Section 115",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "court:australian-high-court",
+    "label": "Court",
+    "name": "Australian High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:euthanasia",
+    "label": "Concept",
+    "name": "euthanasia",
+    "confidence": 0.9,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "judgment:common-cause",
+    "label": "Judgment",
+    "name": "Common Cause",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "person:dr-j",
+    "label": "Person",
+    "name": "Dr. J.",
+    "confidence": 1.0,
+    "source_chunk_id": "375b8273-8d9e-55c5-b20f-980efba04d4b",
+    "page": 46
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd732-eb66-5392-b997-d69d25df1ee9",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd732-eb66-5392-b997-d69d25df1ee9",
+    "page": 61
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd732-eb66-5392-b997-d69d25df1ee9",
+    "page": 61
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd732-eb66-5392-b997-d69d25df1ee9",
+    "page": 61
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "b3bdd732-eb66-5392-b997-d69d25df1ee9",
+    "page": 61
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "court:delhi-high-court",
+    "label": "Court",
+    "name": "Delhi High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "court:bombay-high-court",
+    "label": "Court",
+    "name": "Bombay High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "court:pradesh-high-court",
+    "label": "Court",
+    "name": "Pradesh High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "b638c521-76e9-5710-b947-f2ada44d6602",
+    "page": 61
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "0c7ecad2-3028-511b-9177-ad9f3644556a",
+    "page": 61
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "0c7ecad2-3028-511b-9177-ad9f3644556a",
+    "page": 61
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:261",
+    "label": "Section",
+    "name": "Section 261",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:110q",
+    "label": "Section",
+    "name": "Section 110Q",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:transplantation-of-human-organs-and-tissues-act-1994",
+    "label": "Act",
+    "name": "Transplantation of Human Organs and Tissues Act, 1994",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:mental-capacity-act-2005",
+    "label": "Act",
+    "name": "Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:dutch-civil-code",
+    "label": "Act",
+    "name": "Dutch Civil Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:western-australia-guardianship-and-administration-act-1990",
+    "label": "Act",
+    "name": "Western Australia Guardianship and Administration Act, 1990",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:south-australia-advance-directives-act-2013",
+    "label": "Act",
+    "name": "South Australia Advance Directives Act, 2013",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:oregon-death-with-dignity-act-2002",
+    "label": "Act",
+    "name": "Oregon Death with Dignity Act, 2002",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:uk-mental-capacity-act-2005",
+    "label": "Act",
+    "name": "UK Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "act:oregon-death-with-dignity-act-2005",
+    "label": "Act",
+    "name": "Oregon Death with Dignity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:this-term",
+    "label": "Concept",
+    "name": "this term",
+    "confidence": 0.9,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:the-basis-but-the-conditions",
+    "label": "Concept",
+    "name": "the basis but the conditions",
+    "confidence": 0.9,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:as-crimes",
+    "label": "Concept",
+    "name": "as crimes",
+    "confidence": 0.9,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d5a91523-3ce6-56b7-9759-67a835913d15",
+    "page": 71
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:373",
+    "label": "Article",
+    "name": "Article 373",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:110s",
+    "label": "Section",
+    "name": "Section 110S",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:110v",
+    "label": "Section",
+    "name": "Section 110V",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "act:western-australia-guardianship-and-administration-act-1990",
+    "label": "Act",
+    "name": "Western Australia Guardianship and Administration Act, 1990",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "act:uk-mental-capacity-act",
+    "label": "Act",
+    "name": "UK Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "act:swiss-civil-code",
+    "label": "Act",
+    "name": "Swiss Civil Code",
+    "confidence": 1.0,
+    "source_chunk_id": "788a1f31-e319-55a9-a912-4fdf937c781c",
+    "page": 90
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:the-core-of-our-existence",
+    "label": "Concept",
+    "name": "the core of our existence",
+    "confidence": 0.9,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:how-we-should-be-treated-in-progressing-towards-the-end",
+    "label": "Concept",
+    "name": "how we should be treated in progressing towards the end",
+    "confidence": 0.9,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:when-that-endpoint-will",
+    "label": "Concept",
+    "name": "when that endpoint will",
+    "confidence": 0.9,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "judgment:common-cause",
+    "label": "Judgment",
+    "name": "Common Cause",
+    "confidence": 1.0,
+    "source_chunk_id": "b807274b-9488-5cee-8286-230e5015a8a8",
+    "page": 92
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e2135158-be3c-5a14-9358-ea1a12342f6b",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e2135158-be3c-5a14-9358-ea1a12342f6b",
+    "page": 96
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e8813a-a82e-5022-9a05-81f9f87fe18b",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e8813a-a82e-5022-9a05-81f9f87fe18b",
+    "page": 97
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e8813a-a82e-5022-9a05-81f9f87fe18b",
+    "page": 97
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e8813a-a82e-5022-9a05-81f9f87fe18b",
+    "page": 97
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e2e8813a-a82e-5022-9a05-81f9f87fe18b",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "03967d15-17f0-5a11-9146-556255b29214",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "03967d15-17f0-5a11-9146-556255b29214",
+    "page": 97
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "03967d15-17f0-5a11-9146-556255b29214",
+    "page": 97
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "03967d15-17f0-5a11-9146-556255b29214",
+    "page": 97
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "03967d15-17f0-5a11-9146-556255b29214",
+    "page": 97
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:115",
+    "label": "Section",
+    "name": "Section 115",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "act:mental-healthcare-act",
+    "label": "Act",
+    "name": "Mental Healthcare Act",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "act:such-a-person-shall-not-be-tried-and-punished-under-the-penal-code",
+    "label": "Act",
+    "name": "Such a person shall not be tried and punished under the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "adedc1ca-a3ff-5618-96e6-f30ad737c98c",
+    "page": 98
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "fc1e0ff2-c829-50b7-8983-d0494d3f09c6",
+    "page": 99
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "fc1e0ff2-c829-50b7-8983-d0494d3f09c6",
+    "page": 99
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:302",
+    "label": "Section",
+    "name": "Section 302",
+    "confidence": 1.0,
+    "source_chunk_id": "fc1e0ff2-c829-50b7-8983-d0494d3f09c6",
+    "page": 99
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "fc1e0ff2-c829-50b7-8983-d0494d3f09c6",
+    "page": 99
+  },
+  {
+    "id": "doctrine:due-process-of-law",
+    "label": "Doctrine",
+    "name": "Due Process Of Law",
+    "confidence": 1.0,
+    "source_chunk_id": "fc1e0ff2-c829-50b7-8983-d0494d3f09c6",
+    "page": 99
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:302",
+    "label": "Section",
+    "name": "Section 302",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e902f3ed-3c82-5852-9184-8a0ce6a85368",
+    "page": 101
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e07fb517-c928-5948-8b13-a50f227a1a1b",
+    "page": 103
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "4d0d41e7-01b5-5a20-8495-e11812b9240e",
+    "page": 103
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "4d0d41e7-01b5-5a20-8495-e11812b9240e",
+    "page": 103
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "4d0d41e7-01b5-5a20-8495-e11812b9240e",
+    "page": 103
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "4d0d41e7-01b5-5a20-8495-e11812b9240e",
+    "page": 103
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "79b57f05-e819-5d74-97ab-0d41ec4e91f3",
+    "page": 105
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "79b57f05-e819-5d74-97ab-0d41ec4e91f3",
+    "page": 105
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "79b57f05-e819-5d74-97ab-0d41ec4e91f3",
+    "page": 105
+  },
+  {
+    "id": "act:in-every-part-of-this-code",
+    "label": "Act",
+    "name": "In every part of this Code",
+    "confidence": 1.0,
+    "source_chunk_id": "79b57f05-e819-5d74-97ab-0d41ec4e91f3",
+    "page": 105
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "79b57f05-e819-5d74-97ab-0d41ec4e91f3",
+    "page": 105
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "15bd0e27-eee9-54b4-a8d3-5b9cb8a10962",
+    "page": 107
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "15bd0e27-eee9-54b4-a8d3-5b9cb8a10962",
+    "page": 107
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e2fb9ceb-630c-561f-8920-4d21119dbeb8",
+    "page": 115
+  },
+  {
+    "id": "article:constitution_of_india:359",
+    "label": "Article",
+    "name": "Article 359",
+    "confidence": 1.0,
+    "source_chunk_id": "e2fb9ceb-630c-561f-8920-4d21119dbeb8",
+    "page": 115
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "e2fb9ceb-630c-561f-8920-4d21119dbeb8",
+    "page": 115
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "e2fb9ceb-630c-561f-8920-4d21119dbeb8",
+    "page": 115
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "e2fb9ceb-630c-561f-8920-4d21119dbeb8",
+    "page": 115
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "55a736ca-262d-5bc5-9e01-27868ca17200",
+    "page": 118
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "55a736ca-262d-5bc5-9e01-27868ca17200",
+    "page": 118
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "55a736ca-262d-5bc5-9e01-27868ca17200",
+    "page": 118
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "55a736ca-262d-5bc5-9e01-27868ca17200",
+    "page": 118
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "55a736ca-262d-5bc5-9e01-27868ca17200",
+    "page": 118
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "48ef2b45-6313-59fd-bbcc-ea263b49a0fe",
+    "page": 119
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "48ef2b45-6313-59fd-bbcc-ea263b49a0fe",
+    "page": 119
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "81c07572-3b5e-53c5-a248-ceb6e41e75ff",
+    "page": 120
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "81c07572-3b5e-53c5-a248-ceb6e41e75ff",
+    "page": 120
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "act:aruna-shanbaug-did-not-dwell-on-the-provisions-of-the-penal-code",
+    "label": "Act",
+    "name": "Aruna Shanbaug did not dwell on the provisions of the Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "person:lord-judge-cj",
+    "label": "Person",
+    "name": "Lord Judge CJ",
+    "confidence": 1.0,
+    "source_chunk_id": "5f8b70db-f929-5734-be0d-25713e7730ed",
+    "page": 121
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d1e3d2-ec92-5e8c-b267-e8b32daefe5c",
+    "page": 123
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d1e3d2-ec92-5e8c-b267-e8b32daefe5c",
+    "page": 123
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:81",
+    "label": "Section",
+    "name": "Section 81",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d1e3d2-ec92-5e8c-b267-e8b32daefe5c",
+    "page": 123
+  },
+  {
+    "id": "act:in-every-part-of-this-code",
+    "label": "Act",
+    "name": "In every part of this Code",
+    "confidence": 1.0,
+    "source_chunk_id": "b2d1e3d2-ec92-5e8c-b267-e8b32daefe5c",
+    "page": 123
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "13252733-8db9-5c4a-ae41-7b42cbf5dcac",
+    "page": 124
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "13252733-8db9-5c4a-ae41-7b42cbf5dcac",
+    "page": 124
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "678827f6-a397-5c3e-94a4-94a1f6888078",
+    "page": 124
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:107",
+    "label": "Section",
+    "name": "Section 107",
+    "confidence": 1.0,
+    "source_chunk_id": "678827f6-a397-5c3e-94a4-94a1f6888078",
+    "page": 124
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:299",
+    "label": "Section",
+    "name": "Section 299",
+    "confidence": 1.0,
+    "source_chunk_id": "678827f6-a397-5c3e-94a4-94a1f6888078",
+    "page": 124
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:300",
+    "label": "Section",
+    "name": "Section 300",
+    "confidence": 1.0,
+    "source_chunk_id": "678827f6-a397-5c3e-94a4-94a1f6888078",
+    "page": 124
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "678827f6-a397-5c3e-94a4-94a1f6888078",
+    "page": 124
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:300",
+    "label": "Section",
+    "name": "Section 300",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd3f3cc-c058-553b-8ced-118796efb089",
+    "page": 125
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "dcd3f3cc-c058-553b-8ced-118796efb089",
+    "page": 125
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:299",
+    "label": "Section",
+    "name": "Section 299",
+    "confidence": 1.0,
+    "source_chunk_id": "f3787dd8-b379-51d2-ad2e-7891c140f63b",
+    "page": 126
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:43",
+    "label": "Section",
+    "name": "Section 43",
+    "confidence": 1.0,
+    "source_chunk_id": "f3787dd8-b379-51d2-ad2e-7891c140f63b",
+    "page": 126
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "f3787dd8-b379-51d2-ad2e-7891c140f63b",
+    "page": 126
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f3787dd8-b379-51d2-ad2e-7891c140f63b",
+    "page": 126
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:the-expression-illegal-to-mean",
+    "label": "Concept",
+    "name": "the expression illegal to mean",
+    "confidence": 0.9,
+    "source_chunk_id": "f3787dd8-b379-51d2-ad2e-7891c140f63b",
+    "page": 126
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "9e13642e-27a9-5155-88d5-0ee10098fc11",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "9e13642e-27a9-5155-88d5-0ee10098fc11",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "9e13642e-27a9-5155-88d5-0ee10098fc11",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:107",
+    "label": "Section",
+    "name": "Section 107",
+    "confidence": 1.0,
+    "source_chunk_id": "9e13642e-27a9-5155-88d5-0ee10098fc11",
+    "page": 127
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "9e13642e-27a9-5155-88d5-0ee10098fc11",
+    "page": 127
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:299",
+    "label": "Section",
+    "name": "Section 299",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:88",
+    "label": "Section",
+    "name": "Section 88",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304a",
+    "label": "Section",
+    "name": "Section 304A",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:300",
+    "label": "Section",
+    "name": "Section 300",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "act:the-transplantation-of-human-organs-and-tissues-act",
+    "label": "Act",
+    "name": "The Transplantation of Human Organs and Tissues Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "act:transplantation-of-human-organs-and-tissues-act",
+    "label": "Act",
+    "name": "Transplantation of Human Organs and Tissues Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "f1ee7b17-1012-57f9-8dfb-687912aec4d9",
+    "page": 127
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:the-mental-capacity-act",
+    "label": "Act",
+    "name": "The Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:part-j-until-the-implementation-of-the-mental-capacity-act",
+    "label": "Act",
+    "name": "PART J Until the implementation of the Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:even-after-the-enforcement-of-the-mental-capacity-act",
+    "label": "Act",
+    "name": "Even after the enforcement of the Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:mental-capacity-act-2005",
+    "label": "Act",
+    "name": "Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:the-mental-healthcare-act",
+    "label": "Act",
+    "name": "The Mental Healthcare Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ccbd269f-6f23-538d-83cf-ebe6c421201a",
+    "page": 132
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:11185",
+    "label": "Section",
+    "name": "Section 11185",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "7a47677c-cc2d-59d6-bba1-dda4f46fd985",
+    "page": 137
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "act:chapter-iv-of-the-mental-healthcare-act",
+    "label": "Act",
+    "name": "Chapter IV of the Mental Healthcare Act",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "act:mental-capacity-act-2005",
+    "label": "Act",
+    "name": "Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "312f35a6-d749-5bed-b49f-1e5ff7470b19",
+    "page": 138
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:25",
+    "label": "Section",
+    "name": "Section 25",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "act:capacity-act",
+    "label": "Act",
+    "name": "Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "act:mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "act:mental-capacity-act-2005",
+    "label": "Act",
+    "name": "Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6efb6a69-b51f-5caa-8eaf-62b7aaa24580",
+    "page": 139
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:26",
+    "label": "Section",
+    "name": "Section 26",
+    "confidence": 1.0,
+    "source_chunk_id": "28a5adfc-f511-5e62-94fe-899143a23eda",
+    "page": 139
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "28a5adfc-f511-5e62-94fe-899143a23eda",
+    "page": 139
+  },
+  {
+    "id": "act:mental-capacity-act",
+    "label": "Act",
+    "name": "Mental Capacity Act",
+    "confidence": 1.0,
+    "source_chunk_id": "663b80f5-190f-5f29-a174-daf2c3c84da7",
+    "page": 139
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "050f876d-768e-59b1-a1f4-76d9a60f828c",
+    "page": 140
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "ddfcce21-4ce0-53b3-8230-e123d1236f80",
+    "page": 141
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "ddfcce21-4ce0-53b3-8230-e123d1236f80",
+    "page": 141
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "ddfcce21-4ce0-53b3-8230-e123d1236f80",
+    "page": 141
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "ddfcce21-4ce0-53b3-8230-e123d1236f80",
+    "page": 141
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "e65f92ce-bdff-5aa8-981e-da5a9caab741",
+    "page": 141
+  },
+  {
+    "id": "article:constitution_of_india:142",
+    "label": "Article",
+    "name": "Article 142",
+    "confidence": 1.0,
+    "source_chunk_id": "e65f92ce-bdff-5aa8-981e-da5a9caab741",
+    "page": 141
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "e65f92ce-bdff-5aa8-981e-da5a9caab741",
+    "page": 141
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "e65f92ce-bdff-5aa8-981e-da5a9caab741",
+    "page": 141
+  },
+  {
+    "id": "act:penal-code",
+    "label": "Act",
+    "name": "Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "e65f92ce-bdff-5aa8-981e-da5a9caab741",
+    "page": 141
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "act:the-indian-penal-code-1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "act:the-provisions-of-indian-penal-code",
+    "label": "Act",
+    "name": "The provisions of Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "7b5a4207-5057-5c5b-818e-2508dfed8f8c",
+    "page": 143
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:299",
+    "label": "Section",
+    "name": "Section 299",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:the-provisions-of-indian-penal-code",
+    "label": "Act",
+    "name": "The provisions of Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:indian-medical-council-act-1956",
+    "label": "Act",
+    "name": "Indian Medical Council Act, 1956",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:transplantation-of-human-organ-act-1994",
+    "label": "Act",
+    "name": "Transplantation of Human Organ Act, 1994",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "act:penal-code-1860",
+    "label": "Act",
+    "name": "Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "79f175b1-d179-5096-9a30-767d7310adb1",
+    "page": 147
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "act:penal-code-1860",
+    "label": "Act",
+    "name": "Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "164e9c7a-bb3e-554d-8c92-b243d05af91e",
+    "page": 149
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "f6174544-cd55-5c57-9194-4f52fe38012d",
+    "page": 149
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:302",
+    "label": "Section",
+    "name": "Section 302",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "act:penal-code-1860",
+    "label": "Act",
+    "name": "Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "act:suicide-act-1961",
+    "label": "Act",
+    "name": "Suicide Act, 1961",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "c18ef2aa-8f7c-535e-9994-564da9c44789",
+    "page": 149
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:250",
+    "label": "Section",
+    "name": "Section 250",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:241",
+    "label": "Section",
+    "name": "Section 241",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "act:fundamental-freedoms-as-schedule-to-the-human-rights-act-1998",
+    "label": "Act",
+    "name": "Fundamental Freedoms as Schedule to the Human Rights Act, 1998",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "act:criminal-code",
+    "label": "Act",
+    "name": "Criminal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "doctrine:due-process",
+    "label": "Doctrine",
+    "name": "Due Process",
+    "confidence": 1.0,
+    "source_chunk_id": "282cb902-4189-5b8d-8881-eb85d1c6cd68",
+    "page": 156
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:241",
+    "label": "Section",
+    "name": "Section 241",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:306",
+    "label": "Section",
+    "name": "Section 306",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:309",
+    "label": "Section",
+    "name": "Section 309",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5b367989-00ab-5601-b2de-ea52fb85a8c9",
+    "page": 160
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "5300f3eb-5655-5ec0-8ff6-af6a7e91e1be",
+    "page": 161
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:226",
+    "label": "Article",
+    "name": "Article 226",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:32",
+    "label": "Article",
+    "name": "Article 32",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "article:constitution_of_india:25",
+    "label": "Article",
+    "name": "Article 25",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:14",
+    "label": "Section",
+    "name": "Section 14",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "act:natural-death-act",
+    "label": "Act",
+    "name": "Natural Death Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "act:the-mental-healthcare-act-2017",
+    "label": "Act",
+    "name": "The Mental Healthcare Act, 2017",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "act:transplantation-of-human-organs-and-tissues-act-1994",
+    "label": "Act",
+    "name": "Transplantation of Human Organs and Tissues Act, 1994",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:euthanasia-as-following",
+    "label": "Concept",
+    "name": "Euthanasia as following",
+    "confidence": 0.9,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:euthanasia",
+    "label": "Concept",
+    "name": "euthanasia",
+    "confidence": 0.9,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:it-as",
+    "label": "Concept",
+    "name": "it as",
+    "confidence": 0.9,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "concept:common-cause-v-union-of-india:the-advance-medical-directive-as",
+    "label": "Concept",
+    "name": "the Advance Medical Directive as",
+    "confidence": 0.9,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "judgment:puttaswamy",
+    "label": "Judgment",
+    "name": "Puttaswamy",
+    "confidence": 1.0,
+    "source_chunk_id": "c9358176-5611-5d99-8e3b-fecf8f91167f",
+    "page": 162
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "section:common-cause-v-union-of-india:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "act:the-belgian-act",
+    "label": "Act",
+    "name": "The Belgian Act",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "act:swiss-civil-code",
+    "label": "Act",
+    "name": "Swiss Civil Code",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "act:mental-capacity-act-2005",
+    "label": "Act",
+    "name": "Mental Capacity Act, 2005",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  },
+  {
+    "id": "act:pennsylvania-act",
+    "label": "Act",
+    "name": "Pennsylvania Act",
+    "confidence": 1.0,
+    "source_chunk_id": "833a8dde-71aa-58e5-bc26-97d51b83d67d",
+    "page": 171
+  }
+]

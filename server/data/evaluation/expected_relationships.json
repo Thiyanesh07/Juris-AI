@@ -1,0 +1,11 @@
+{
+  "eval_q01": [{"source": "article:constitution_of_india:21", "relation": "PROTECTS", "target": "concept:life_and_personal_liberty"}],
+  "eval_q02": [{"source": "judgment:maneka_gandhi", "relation": "EXPANDS", "target": "article:constitution_of_india:21"}],
+  "eval_q03": [{"source": "judgment:shreya_singhal", "relation": "STRUCK_DOWN", "target": "section:it_act_2000:66a"}],
+  "eval_q04": [{"source": "judgment:kesavananda_bharati", "relation": "ESTABLISHES", "target": "concept:basic_structure"}],
+  "eval_q05": [{"source": "judgment:maneka_gandhi", "relation": "INTERPRETS", "target": "article:constitution_of_india:21"}],
+  "eval_q06": [{"source": "judgment:shreya_singhal", "relation": "DECLARES_UNCONSTITUTIONAL", "target": "section:it_act_2000:66a"}],
+  "eval_q07": [{"source": "amendment:const_amendment_44", "relation": "AMENDS", "target": "article:constitution_of_india:21"}],
+  "eval_q08": [{"source": "amendment:const_amendment_44", "relation": "OMITS", "target": "article:constitution_of_india:19_1_f"}],
+  "eval_q09": [{"source": "judgment:maneka_gandhi", "relation": "DECIDED_IN", "target": "year:1978"}]
+}

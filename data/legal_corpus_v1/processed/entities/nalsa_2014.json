@@ -1,0 +1,762 @@
+[
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "81ae5732-c750-5a4d-a796-1cc512fce9f1",
+    "page": 1
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "81ae5732-c750-5a4d-a796-1cc512fce9f1",
+    "page": 1
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:legal-services-authority-act-1997",
+    "label": "Act",
+    "name": "Legal Services Authority Act, 1997",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:reference-was-also-made-to-the-repealed-criminal-tribes-act-1871",
+    "label": "Act",
+    "name": "Reference was also made to the repealed Criminal Tribes Act, 1871",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:criminal-tribes-act-1871",
+    "label": "Act",
+    "name": "Criminal Tribes Act, 1871",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:ipc-found-a-place-in-the-indian-penal-code-1860",
+    "label": "Act",
+    "name": "IPC found a place in the Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:criminal-tribles-act",
+    "label": "Act",
+    "name": "Criminal Tribles Act",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:gender-reassignment-act-2000",
+    "label": "Act",
+    "name": "Gender Reassignment Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "act:in-that-act",
+    "label": "Act",
+    "name": "In that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "court:allahabad-high-court",
+    "label": "Court",
+    "name": "Allahabad High Court",
+    "confidence": 1.0,
+    "source_chunk_id": "44f9ca40-3a77-59bc-888e-8adb631294a5",
+    "page": 1
+  },
+  {
+    "id": "article:constitution_of_india:8",
+    "label": "Article",
+    "name": "Article 8",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:12",
+    "label": "Article",
+    "name": "Article 12",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:22",
+    "label": "Article",
+    "name": "Article 22",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:1",
+    "label": "Article",
+    "name": "Article 1",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:3",
+    "label": "Article",
+    "name": "Article 3",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:6",
+    "label": "Article",
+    "name": "Article 6",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:5",
+    "label": "Article",
+    "name": "Article 5",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:7",
+    "label": "Article",
+    "name": "Article 7",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "article:constitution_of_india:17",
+    "label": "Article",
+    "name": "Article 17",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:15",
+    "label": "Section",
+    "name": "Section 15",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:55",
+    "label": "Section",
+    "name": "Section 55",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:gender-reassignment-act-2000",
+    "label": "Act",
+    "name": "Gender Reassignment Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:in-that-act",
+    "label": "Act",
+    "name": "In that Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:family-law-act-1986",
+    "label": "Act",
+    "name": "Family Law Act, 1986",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:deaths-and-marriages-act-1995",
+    "label": "Act",
+    "name": "Deaths and Marriages Act, 1995",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:united-kingdom-has-passed-the-general-recommendation-act-2004",
+    "label": "Act",
+    "name": "United Kingdom has passed the General Recommendation Act, 2004",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:reference-in-this-connection-may-be-made-to-the-equality-act-2010",
+    "label": "Act",
+    "name": "Reference in this connection may be made to the Equality Act, 2010",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:sex-discrimination-act-1986",
+    "label": "Act",
+    "name": "Sex Discrimination Act, 1986",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:sex-discrimination-act-1984",
+    "label": "Act",
+    "name": "Sex Discrimination Act, 1984",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:equal-treatment-and-the-promotion-of-equal-opportunities-act-2003",
+    "label": "Act",
+    "name": "Equal Treatment and the Promotion of Equal Opportunities Act, 2003",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:hate-crimes-prevention-act-2009",
+    "label": "Act",
+    "name": "Hate Crimes Prevention Act, 2009",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:alteration-of-sex-description-and-sex-status-act-2003",
+    "label": "Act",
+    "name": "Alteration of Sex Description and Sex Status Act, 2003",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "act:german-civil-statutes-act",
+    "label": "Act",
+    "name": "German Civil Statutes Act",
+    "confidence": 1.0,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "concept:national-legal-services-authority-v-union-of-india:certain-characteristics-to-be",
+    "label": "Concept",
+    "name": "certain characteristics to be",
+    "confidence": 0.9,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "concept:national-legal-services-authority-v-union-of-india:gender-identity-as-the-appearance-or-mannerisms-or-other-gender-related-characteristics-of",
+    "label": "Concept",
+    "name": "gender identity as the appearance or mannerisms or other gender- related characteristics of",
+    "confidence": 0.9,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "concept:national-legal-services-authority-v-union-of-india:aravanis-as-biological-males-who-self-identify-themselves-as",
+    "label": "Concept",
+    "name": "Aravanis as biological males who self-identify themselves as",
+    "confidence": 0.9,
+    "source_chunk_id": "c2f450a9-c4b8-5924-9c25-d1a4ce52d64b",
+    "page": 12
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "733cbe84-9f2f-527c-803f-f7028b16c943",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "733cbe84-9f2f-527c-803f-f7028b16c943",
+    "page": 19
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "733cbe84-9f2f-527c-803f-f7028b16c943",
+    "page": 19
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:51",
+    "label": "Article",
+    "name": "Article 51",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:253",
+    "label": "Article",
+    "name": "Article 253",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "article:constitution_of_india:141",
+    "label": "Article",
+    "name": "Article 141",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "judgment:kesavananda-bharati",
+    "label": "Judgment",
+    "name": "Kesavananda Bharati",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "judgment:vishaka",
+    "label": "Judgment",
+    "name": "Vishaka",
+    "confidence": 1.0,
+    "source_chunk_id": "240954e4-05ff-5aa3-9375-5f4d7110d4ac",
+    "page": 20
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "f8cce1e7-dce4-5d73-9c32-d48ce3ba8b93",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "f8cce1e7-dce4-5d73-9c32-d48ce3ba8b93",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "f8cce1e7-dce4-5d73-9c32-d48ce3ba8b93",
+    "page": 21
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "f8cce1e7-dce4-5d73-9c32-d48ce3ba8b93",
+    "page": 21
+  },
+  {
+    "id": "doctrine:basic-structure",
+    "label": "Doctrine",
+    "name": "Basic Structure",
+    "confidence": 1.0,
+    "source_chunk_id": "f8cce1e7-dce4-5d73-9c32-d48ce3ba8b93",
+    "page": 21
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46830a59-1e3f-55a7-94d2-a4793137cab2",
+    "page": 22
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "46830a59-1e3f-55a7-94d2-a4793137cab2",
+    "page": 22
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "46830a59-1e3f-55a7-94d2-a4793137cab2",
+    "page": 22
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d91933eb-2d7d-56d6-b9df-07222dec2b51",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "d91933eb-2d7d-56d6-b9df-07222dec2b51",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d91933eb-2d7d-56d6-b9df-07222dec2b51",
+    "page": 23
+  },
+  {
+    "id": "doctrine:procedure-established-by-law",
+    "label": "Doctrine",
+    "name": "Procedure Established By Law",
+    "confidence": 1.0,
+    "source_chunk_id": "d91933eb-2d7d-56d6-b9df-07222dec2b51",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "df3caca3-7b5e-52eb-a09c-189adc4ef3ad",
+    "page": 23
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "df3caca3-7b5e-52eb-a09c-189adc4ef3ad",
+    "page": 23
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "df3caca3-7b5e-52eb-a09c-189adc4ef3ad",
+    "page": 23
+  },
+  {
+    "id": "act:binary-notion-of-gender-reflects-in-the-indian-penal-code",
+    "label": "Act",
+    "name": "Binary notion of gender reflects in the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "df3caca3-7b5e-52eb-a09c-189adc4ef3ad",
+    "page": 23
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "df3caca3-7b5e-52eb-a09c-189adc4ef3ad",
+    "page": 23
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:14",
+    "label": "Article",
+    "name": "Article 14",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:15",
+    "label": "Article",
+    "name": "Article 15",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:16",
+    "label": "Article",
+    "name": "Article 16",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:19",
+    "label": "Article",
+    "name": "Article 19",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "article:constitution_of_india:2",
+    "label": "Article",
+    "name": "Article 2",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "act:binary-notion-of-gender-reflects-in-the-indian-penal-code",
+    "label": "Act",
+    "name": "Binary notion of gender reflects in the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "act:criminal-tribes-act-1871",
+    "label": "Act",
+    "name": "Criminal Tribes Act, 1871",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "act:government-of-india-act",
+    "label": "Act",
+    "name": "Government of India Act",
+    "confidence": 1.0,
+    "source_chunk_id": "65ff59ff-eaa1-59f2-9056-482270e55e22",
+    "page": 24
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "d58c9db5-92b6-58ae-bd48-53ac743eaebb",
+    "page": 27
+  },
+  {
+    "id": "article:constitution_of_india:21",
+    "label": "Article",
+    "name": "Article 21",
+    "confidence": 1.0,
+    "source_chunk_id": "d58c9db5-92b6-58ae-bd48-53ac743eaebb",
+    "page": 27
+  },
+  {
+    "id": "act:criminal-tribes-act-1871",
+    "label": "Act",
+    "name": "Criminal Tribes Act, 1871",
+    "confidence": 1.0,
+    "source_chunk_id": "d58c9db5-92b6-58ae-bd48-53ac743eaebb",
+    "page": 27
+  },
+  {
+    "id": "judgment:maneka-gandhi",
+    "label": "Judgment",
+    "name": "Maneka Gandhi",
+    "confidence": 1.0,
+    "source_chunk_id": "d58c9db5-92b6-58ae-bd48-53ac743eaebb",
+    "page": 27
+  },
+  {
+    "id": "person:unni-krishnan-j",
+    "label": "Person",
+    "name": "Unni Krishnan J.",
+    "confidence": 1.0,
+    "source_chunk_id": "d58c9db5-92b6-58ae-bd48-53ac743eaebb",
+    "page": 27
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "79fc7047-c85e-52e0-9a34-5c8e58ef1045",
+    "page": 31
+  },
+  {
+    "id": "section:national-legal-services-authority-v-union-of-india:377",
+    "label": "Section",
+    "name": "Section 377",
+    "confidence": 1.0,
+    "source_chunk_id": "79fc7047-c85e-52e0-9a34-5c8e58ef1045",
+    "page": 31
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "79fc7047-c85e-52e0-9a34-5c8e58ef1045",
+    "page": 31
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "79fc7047-c85e-52e0-9a34-5c8e58ef1045",
+    "page": 31
+  },
+  {
+    "id": "court:supreme-court-of-india",
+    "label": "Court",
+    "name": "Supreme Court of India",
+    "confidence": 1.0,
+    "source_chunk_id": "79fc7047-c85e-52e0-9a34-5c8e58ef1045",
+    "page": 31
+  }
+]

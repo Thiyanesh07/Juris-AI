@@ -1,0 +1,81 @@
+[
+  {
+    "id": "eval_q01",
+    "query": "What does Article 21 protect?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_entities": ["article:constitution_of_india:21", "concept:life_and_personal_liberty"],
+    "expected_citations": ["Article 21"]
+  },
+  {
+    "id": "eval_q02",
+    "query": "How has the Supreme Court interpreted Article 21?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_entities": ["article:constitution_of_india:21", "judgment:maneka_gandhi"],
+    "expected_citations": ["Article 21", "(1978) 1 SCC 248"]
+  },
+  {
+    "id": "eval_q03",
+    "query": "What is the relationship between Section 66A of the IT Act and freedom of speech under Article 19?",
+    "category": "STATUTORY",
+    "is_temporal": false,
+    "expected_entities": ["section:it_act_2000:66a", "article:constitution_of_india:19", "judgment:shreya_singhal"],
+    "expected_citations": ["Section 66A", "Article 19", "(2015) 5 SCC 1"]
+  },
+  {
+    "id": "eval_q04",
+    "query": "What is the Basic Structure Doctrine?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_entities": ["judgment:kesavananda_bharati", "concept:basic_structure"],
+    "expected_citations": ["AIR 1973 SC 1461"]
+  },
+  {
+    "id": "eval_q05",
+    "query": "How did Maneka Gandhi change the interpretation of Article 21?",
+    "category": "CASE_LAW",
+    "is_temporal": true,
+    "target_year": 1978,
+    "expected_entities": ["judgment:maneka_gandhi", "article:constitution_of_india:21"],
+    "expected_citations": ["(1978) 1 SCC 248"]
+  },
+  {
+    "id": "eval_q06",
+    "query": "How does Shreya Singhal relate Section 66A to freedom of speech?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_entities": ["judgment:shreya_singhal", "section:it_act_2000:66a", "article:constitution_of_india:19"],
+    "expected_citations": ["(2015) 5 SCC 1"]
+  },
+  {
+    "id": "eval_q07",
+    "query": "What did Article 21 mean before the 44th Amendment?",
+    "category": "TEMPORAL",
+    "is_temporal": true,
+    "target_year": 1978,
+    "temporal_operator": "BEFORE",
+    "referenced_amendment": "44th Amendment",
+    "expected_entities": ["article:constitution_of_india:21", "amendment:const_amendment_44"],
+    "expected_citations": ["44th Constitutional Amendment"]
+  },
+  {
+    "id": "eval_q08",
+    "query": "What changed after the 44th Constitutional Amendment?",
+    "category": "TEMPORAL",
+    "is_temporal": true,
+    "temporal_operator": "AFTER",
+    "referenced_amendment": "44th Constitutional Amendment",
+    "expected_entities": ["amendment:const_amendment_44", "article:constitution_of_india:21", "article:constitution_of_india:19"],
+    "expected_citations": ["44th Constitutional Amendment"]
+  },
+  {
+    "id": "eval_q09",
+    "query": "What was the legal position in 1978?",
+    "category": "TEMPORAL",
+    "is_temporal": true,
+    "target_year": 1978,
+    "expected_entities": ["article:constitution_of_india:21", "judgment:maneka_gandhi"],
+    "expected_citations": ["1978"]
+  }
+]

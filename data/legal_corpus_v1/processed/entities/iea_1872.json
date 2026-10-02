@@ -1,0 +1,1906 @@
+[
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f3a6925d-bb12-5941-8ad6-27a017b175ca",
+    "page": 1
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f3a6925d-bb12-5941-8ad6-27a017b175ca",
+    "page": 1
+  },
+  {
+    "id": "act:union-of-india-india-the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "UNION OF INDIA India The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f3a6925d-bb12-5941-8ad6-27a017b175ca",
+    "page": 1
+  },
+  {
+    "id": "act:indian-evidence-act-1872",
+    "label": "Act",
+    "name": "Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f3a6925d-bb12-5941-8ad6-27a017b175ca",
+    "page": 1
+  },
+  {
+    "id": "concept:the-indian-evidence-act-1872:and-amend-the-law-of-evidence",
+    "label": "Concept",
+    "name": "and amend the law of Evidence",
+    "confidence": 0.9,
+    "source_chunk_id": "f3a6925d-bb12-5941-8ad6-27a017b175ca",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:127",
+    "label": "Section",
+    "name": "Section 127",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:30",
+    "label": "Section",
+    "name": "Section 30",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:19",
+    "label": "Section",
+    "name": "Section 19",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:29",
+    "label": "Section",
+    "name": "Section 29",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:army-act",
+    "label": "Act",
+    "name": "Army Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:naval-discipline-act",
+    "label": "Act",
+    "name": "Naval Discipline Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:air-force-act",
+    "label": "Act",
+    "name": "Air Force Act",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:repealed-by-the-repealing-act-1938",
+    "label": "Act",
+    "name": "Repealed by the Repealing Act, 1938",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:general-clauses-act-1897",
+    "label": "Act",
+    "name": "General Clauses Act, 1897",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "act:now-see-the-code",
+    "label": "Act",
+    "name": "Now see the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "6562fea2-1820-535f-a627-5eccfe80fea0",
+    "page": 1
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:general-clauses-act-1897",
+    "label": "Act",
+    "name": "General Clauses Act, 1897",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "abb1502b-d1fd-5db7-8afd-4e4ba4f84c68",
+    "page": 2
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:157",
+    "label": "Section",
+    "name": "Section 157",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:126",
+    "label": "Section",
+    "name": "Section 126",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:316",
+    "label": "Section",
+    "name": "Section 316",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:162",
+    "label": "Section",
+    "name": "Section 162",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:20",
+    "label": "Section",
+    "name": "Section 20",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:24",
+    "label": "Section",
+    "name": "Section 24",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:13",
+    "label": "Section",
+    "name": "Section 13",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:39",
+    "label": "Section",
+    "name": "Section 39",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:41",
+    "label": "Section",
+    "name": "Section 41",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:79",
+    "label": "Section",
+    "name": "Section 79",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:now-see-the-code",
+    "label": "Act",
+    "name": "Now see the Code",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:coroners-act-1871",
+    "label": "Act",
+    "name": "Coroners Act, 1871",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:provincial-act",
+    "label": "Act",
+    "name": "Provincial Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:the-last-paragraph-omitted-by-act",
+    "label": "Act",
+    "name": "The Last paragraph omitted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "act:a-of-the-information-technology-act",
+    "label": "Act",
+    "name": "A of the Information Technology Act",
+    "confidence": 1.0,
+    "source_chunk_id": "05b4b75f-3405-5c32-b730-26a7fd72129a",
+    "page": 3
+  },
+  {
+    "id": "constitution:india",
+    "label": "Constitution",
+    "name": "Constitution of India",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:354",
+    "label": "Section",
+    "name": "Section 354",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:354a",
+    "label": "Section",
+    "name": "Section 354A",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:354b",
+    "label": "Section",
+    "name": "Section 354B",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:354c",
+    "label": "Section",
+    "name": "Section 354C",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:354d",
+    "label": "Section",
+    "name": "Section 354D",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376a",
+    "label": "Section",
+    "name": "Section 376A",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376b",
+    "label": "Section",
+    "name": "Section 376B",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376c",
+    "label": "Section",
+    "name": "Section 376C",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376d",
+    "label": "Section",
+    "name": "Section 376D",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376e",
+    "label": "Section",
+    "name": "Section 376E",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:54",
+    "label": "Section",
+    "name": "Section 54",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:indian-divorce-act",
+    "label": "Act",
+    "name": "Indian Divorce Act",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "5f89acd4-b5e1-5f47-b652-b6372dca3977",
+    "page": 19
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:54",
+    "label": "Section",
+    "name": "Section 54",
+    "confidence": 1.0,
+    "source_chunk_id": "d77d440a-9a1d-5f9b-b38a-17c56866cd41",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "d77d440a-9a1d-5f9b-b38a-17c56866cd41",
+    "page": 21
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d77d440a-9a1d-5f9b-b38a-17c56866cd41",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:5",
+    "label": "Section",
+    "name": "Section 5",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "834b2f40-9675-5717-bd30-d8a1c6cf74c7",
+    "page": 21
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "12b584ee-dce8-53f2-b88c-14390fff72ea",
+    "page": 22
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "12b584ee-dce8-53f2-b88c-14390fff72ea",
+    "page": 22
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "12b584ee-dce8-53f2-b88c-14390fff72ea",
+    "page": 22
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "12b584ee-dce8-53f2-b88c-14390fff72ea",
+    "page": 22
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:76",
+    "label": "Section",
+    "name": "Section 76",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:66",
+    "label": "Section",
+    "name": "Section 66",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:74",
+    "label": "Section",
+    "name": "Section 74",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:65b",
+    "label": "Section",
+    "name": "Section 65B",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:65",
+    "label": "Section",
+    "name": "Section 65",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:17",
+    "label": "Section",
+    "name": "Section 17",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:151",
+    "label": "Section",
+    "name": "Section 151",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:78",
+    "label": "Section",
+    "name": "Section 78",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:bankers-books-evidence-act-1891",
+    "label": "Act",
+    "name": "Bankers'Books Evidence Act, 1891",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:indian-registration-act-1908",
+    "label": "Act",
+    "name": "Indian Registration Act, 1908",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:revenue-act-1887",
+    "label": "Act",
+    "name": "Revenue Act, 1887",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "act:amended-by-act",
+    "label": "Act",
+    "name": "Amended by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "8fa85202-5cc7-507d-866e-247620d07eaf",
+    "page": 23
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "3f4496e7-4043-57ea-b854-000e24c98f1f",
+    "page": 31
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:4",
+    "label": "Section",
+    "name": "Section 4",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:81",
+    "label": "Section",
+    "name": "Section 81",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:90",
+    "label": "Section",
+    "name": "Section 90",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:it_act_2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:general-clauses-act-1897",
+    "label": "Act",
+    "name": "General Clauses Act, 1897",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "act:information-technology-act-2000",
+    "label": "Act",
+    "name": "Information Technology Act, 2000",
+    "confidence": 1.0,
+    "source_chunk_id": "73d60429-abc8-5188-926a-9933b3395044",
+    "page": 32
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:90",
+    "label": "Section",
+    "name": "Section 90",
+    "confidence": 1.0,
+    "source_chunk_id": "db0cb886-5ff3-50d2-a433-98d9d1f0f0b8",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:81a",
+    "label": "Section",
+    "name": "Section 81A",
+    "confidence": 1.0,
+    "source_chunk_id": "db0cb886-5ff3-50d2-a433-98d9d1f0f0b8",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "db0cb886-5ff3-50d2-a433-98d9d1f0f0b8",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:52",
+    "label": "Section",
+    "name": "Section 52",
+    "confidence": 1.0,
+    "source_chunk_id": "db0cb886-5ff3-50d2-a433-98d9d1f0f0b8",
+    "page": 33
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "db0cb886-5ff3-50d2-a433-98d9d1f0f0b8",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:81a",
+    "label": "Section",
+    "name": "Section 81A",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:463",
+    "label": "Section",
+    "name": "Section 463",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:8",
+    "label": "Section",
+    "name": "Section 8",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:indian-succession-act",
+    "label": "Act",
+    "name": "Indian Succession Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:saving-of-provisions-of-indian-succession-act",
+    "label": "Act",
+    "name": "Saving of provisions of Indian Succession Act",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:now-see-the-indian-succession-act-1925",
+    "label": "Act",
+    "name": "Now see the Indian Succession Act, 1925",
+    "confidence": 1.0,
+    "source_chunk_id": "f807b2c6-9e08-5c39-b8ae-08e6cc0145a4",
+    "page": 33
+  },
+  {
+    "id": "act:indian-succession-act",
+    "label": "Act",
+    "name": "Indian Succession Act",
+    "confidence": 1.0,
+    "source_chunk_id": "ac6e6ac7-330e-594e-ad25-29558d5750c6",
+    "page": 37
+  },
+  {
+    "id": "act:now-see-the-indian-succession-act-1925",
+    "label": "Act",
+    "name": "Now see the Indian Succession Act, 1925",
+    "confidence": 1.0,
+    "source_chunk_id": "ac6e6ac7-330e-594e-ad25-29558d5750c6",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:325",
+    "label": "Section",
+    "name": "Section 325",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:335",
+    "label": "Section",
+    "name": "Section 335",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:20",
+    "label": "Section",
+    "name": "Section 20",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:121",
+    "label": "Section",
+    "name": "Section 121",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:122",
+    "label": "Section",
+    "name": "Section 122",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:7",
+    "label": "Section",
+    "name": "Section 7",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:indian-succession-act",
+    "label": "Act",
+    "name": "Indian Succession Act",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:now-see-the-indian-succession-act-1925",
+    "label": "Act",
+    "name": "Now see the Indian Succession Act, 1925",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:general-exceptions-in-the-indian-penal-code",
+    "label": "Act",
+    "name": "General Exceptions in the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:indian-penal-code-1860",
+    "label": "Act",
+    "name": "Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "act:part-iii-of-the-government-of-india-act-1935",
+    "label": "Act",
+    "name": "Part III of the Government of India Act, 1935",
+    "confidence": 1.0,
+    "source_chunk_id": "284d2a53-6bff-55bc-8426-92e74b151d41",
+    "page": 37
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:498",
+    "label": "Section",
+    "name": "Section 498",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:12",
+    "label": "Section",
+    "name": "Section 12",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:304",
+    "label": "Section",
+    "name": "Section 304",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:375",
+    "label": "Section",
+    "name": "Section 375",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:114a",
+    "label": "Section",
+    "name": "Section 114A",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:a-of-the-indian-penal-code",
+    "label": "Act",
+    "name": "A of the Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:b-of-indian-penal-code",
+    "label": "Act",
+    "name": "B of Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "d917a43b-e797-53bb-996b-85b5a36878db",
+    "page": 40
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:114a",
+    "label": "Section",
+    "name": "Section 114A",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:6",
+    "label": "Section",
+    "name": "Section 6",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "1f771ee1-2e02-5717-b892-5d42cfdd9a87",
+    "page": 41
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:119",
+    "label": "Section",
+    "name": "Section 119",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:1",
+    "label": "Section",
+    "name": "Section 1",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:123",
+    "label": "Section",
+    "name": "Section 123",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:10",
+    "label": "Section",
+    "name": "Section 10",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:126",
+    "label": "Section",
+    "name": "Section 126",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:92",
+    "label": "Section",
+    "name": "Section 92",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:131",
+    "label": "Section",
+    "name": "Section 131",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "act:inserted-by-act",
+    "label": "Act",
+    "name": "Inserted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "99a7c1e9-9210-5936-9c9e-a9e84473aa48",
+    "page": 42
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:32",
+    "label": "Section",
+    "name": "Section 32",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:145",
+    "label": "Section",
+    "name": "Section 145",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:172",
+    "label": "Section",
+    "name": "Section 172",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376",
+    "label": "Section",
+    "name": "Section 376",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376a",
+    "label": "Section",
+    "name": "Section 376A",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376b",
+    "label": "Section",
+    "name": "Section 376B",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376c",
+    "label": "Section",
+    "name": "Section 376C",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376d",
+    "label": "Section",
+    "name": "Section 376D",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:376e",
+    "label": "Section",
+    "name": "Section 376E",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:132",
+    "label": "Section",
+    "name": "Section 132",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:148",
+    "label": "Section",
+    "name": "Section 148",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:154",
+    "label": "Section",
+    "name": "Section 154",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:9",
+    "label": "Section",
+    "name": "Section 9",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:11",
+    "label": "Section",
+    "name": "Section 11",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:3",
+    "label": "Section",
+    "name": "Section 3",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:159",
+    "label": "Section",
+    "name": "Section 159",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:161",
+    "label": "Section",
+    "name": "Section 161",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:166",
+    "label": "Section",
+    "name": "Section 166",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:crpc_1973",
+    "label": "Act",
+    "name": "The Code of Criminal Procedure, 1973",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:ipc_1860",
+    "label": "Act",
+    "name": "The Indian Penal Code, 1860",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:iea_1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:the-indian-evidence-act-1872",
+    "label": "Act",
+    "name": "The Indian Evidence Act, 1872",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:indian-penal-code",
+    "label": "Act",
+    "name": "Indian Penal Code",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "act:substituted-by-act",
+    "label": "Act",
+    "name": "Substituted by Act",
+    "confidence": 1.0,
+    "source_chunk_id": "595edcd8-2057-5311-9f32-186c361c7344",
+    "page": 46
+  },
+  {
+    "id": "section:the-indian-evidence-act-1872:2",
+    "label": "Section",
+    "name": "Section 2",
+    "confidence": 1.0,
+    "source_chunk_id": "62916d50-4ba3-5c64-ad81-12cb1062af3b",
+    "page": 54
+  },
+  {
+    "id": "act:repealed-by-the-repealing-act-1938",
+    "label": "Act",
+    "name": "Repealed by the Repealing Act, 1938",
+    "confidence": 1.0,
+    "source_chunk_id": "62916d50-4ba3-5c64-ad81-12cb1062af3b",
+    "page": 54
+  }
+]
