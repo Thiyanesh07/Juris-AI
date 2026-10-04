@@ -23,6 +23,7 @@ dependencies = [
     "transformers>=4.48,<5.0",
     "bcrypt>=5.0.0",
     "email-validator>=2.3.0",
+    "psycopg[binary]>=3.2,<4.0",
 ]
 
 [dependency-groups]
