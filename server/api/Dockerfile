@@ -17,7 +17,10 @@ ENV DATA_DIR=/app/data
 
 # Copy project configuration & dependency lockfile from server/api
 COPY server/api/pyproject.toml server/api/uv.lock* ./
-RUN uv pip install --system -r <(uv pip compile pyproject.toml) || pip install --no-cache-dir fastapi uvicorn sqlalchemy asyncpg alembic pydantic pydantic-settings faiss-cpu sentence-transformers httpx python-multipart neo4j
+
+# Compile dependencies to requirements.txt and install system-wide (compatible with /bin/sh)
+RUN uv pip compile pyproject.toml -o requirements.txt && \
+    uv pip install --system -r requirements.txt
 
 # Copy application source code and migration scripts from server/api
 COPY server/api/app ./app
