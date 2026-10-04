@@ -1,0 +1,43 @@
+# Git & Documentation
+.git
+.gitignore
+*.md
+docs/
+PAPER_FIGURES_TABLES.md
+FINAL_EXPERIMENTAL_RESULTS.md
+RESEARCH_CONTENT.md
+
+# Frontend applications (not needed in backend container)
+client/
+
+# Raw legal corpus and non-runtime data directories
+data/legal_corpus_v1/raw/
+data/raw/
+data/chunks/
+data/processed/
+data/legal_corpus_v1/processed/
+data/legal_corpus_v1/metadata/
+data/legal_corpus_v1/checksums/
+
+# Python caches and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment files with potential secrets
+.env
+.env.local
+.env.*

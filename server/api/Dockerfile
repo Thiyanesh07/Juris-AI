@@ -12,12 +12,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install uv package manager
 RUN pip install --no-cache-dir uv
 
-# Copy project configuration
-COPY pyproject.toml .
+# Set environment defaults for container runtime
+ENV DATA_DIR=/app/data
+
+# Copy project configuration & dependency lockfile from server/api
+COPY server/api/pyproject.toml server/api/uv.lock* ./
 RUN uv pip install --system -r <(uv pip compile pyproject.toml) || pip install --no-cache-dir fastapi uvicorn sqlalchemy asyncpg alembic pydantic pydantic-settings faiss-cpu sentence-transformers httpx python-multipart neo4j
 
-# Copy application source code
-COPY . .
+# Copy application source code and migration scripts from server/api
+COPY server/api/app ./app
+COPY server/api/alembic ./alembic
+COPY server/api/alembic.ini .
+
+# Copy runtime-required FAISS vector index artifacts from root data directory
+COPY data/indexes/legal_chunks ./data/indexes/legal_chunks
 
 EXPOSE 8000
 
