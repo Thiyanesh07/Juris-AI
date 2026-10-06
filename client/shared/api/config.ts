@@ -8,13 +8,23 @@
  * Never put secrets here.
  */
 
-/**
- * Backend base URL.
- * Reads NEXT_PUBLIC_API_URL from the environment; falls back to localhost:8000.
- */
-export const API_BASE_URL: string =
-  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_API_URL) ||
-  'http://localhost:8000';
+export function getApiBaseUrl(): string {
+  const envUrl = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_API_URL : undefined;
+  if (envUrl && envUrl.trim() !== '') {
+    return envUrl.trim().replace(/\/+$/, '');
+  }
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
+      return 'https://juris-ai-fhjw.onrender.com';
+    }
+  } else if (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') {
+    return 'https://juris-ai-fhjw.onrender.com';
+  }
+  return 'http://localhost:8000';
+}
+
+export const API_BASE_URL: string = getApiBaseUrl();
 
 /**
  * Default headers for JSON API requests.

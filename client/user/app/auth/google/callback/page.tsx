@@ -29,7 +29,12 @@ function UserCallbackContent() {
 
     const processOAuth = async () => {
       try {
-        const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+        const envUrl = process.env.NEXT_PUBLIC_API_URL;
+        const backendUrl = (envUrl && envUrl.trim())
+          ? envUrl.trim().replace(/\/+$/, '')
+          : (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
+          ? 'https://juris-ai-fhjw.onrender.com'
+          : 'http://localhost:8000';
         const currentRedirectUri = typeof window !== 'undefined'
           ? `${window.location.origin}${window.location.pathname}`
           : 'http://localhost:3002/auth/google/callback';

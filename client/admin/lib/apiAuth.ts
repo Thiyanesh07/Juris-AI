@@ -61,7 +61,9 @@ export async function logout(): Promise<void> {
   await apiClient.post<void>('/auth/logout');
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+import { getApiBaseUrl } from './apiClient';
+
+const API_BASE_URL = getApiBaseUrl();
 
 export function buildGoogleLoginUrl(
   intent: 'signin' | 'signup',

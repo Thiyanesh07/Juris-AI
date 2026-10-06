@@ -21,7 +21,8 @@ const PUBLIC_PATHS = [
   '/admin/auth',
 ];
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+const envApiUrl = process.env.NEXT_PUBLIC_API_URL;
+const API_BASE = (envApiUrl && envApiUrl.trim()) ? envApiUrl.trim().replace(/\/+$/, '') : 'https://juris-ai-fhjw.onrender.com';
 
 function isPublicPath(pathname: string): boolean {
   return PUBLIC_PATHS.some(p => pathname.startsWith(p));

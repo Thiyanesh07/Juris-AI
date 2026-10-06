@@ -17,9 +17,9 @@
 export type { AuthUser } from './apiTypes';
 
 import type { AuthUser } from './apiTypes';
-import { fetchCurrentUser as apiFetchCurrentUser, logout as apiLogout } from './apiAuth';
+import { apiClient, ApiError, getApiBaseUrl } from './apiClient';
 
-const _API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+const _API_BASE = getApiBaseUrl();
 
 /**
  * GET /auth/me

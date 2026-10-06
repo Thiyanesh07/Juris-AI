@@ -10,9 +10,9 @@
  * by JavaScript. It is forwarded automatically on every credentials:'include' request.
  */
 
-import { apiClient, ApiError } from './apiClient';
+import { apiClient, ApiError, getApiBaseUrl } from './apiClient';
 
-const _API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+const _API_BASE = getApiBaseUrl();
 
 export type BackendUserRole = 'user' | 'admin' | 'super_admin';
 

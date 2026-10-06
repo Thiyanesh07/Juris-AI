@@ -23,7 +23,8 @@ export async function middleware(request: NextRequest) {
   }
 
   // Check backend session
-  const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+  const envUrl = process.env.NEXT_PUBLIC_API_URL;
+  const backendUrl = (envUrl && envUrl.trim()) ? envUrl.trim().replace(/\/+$/, '') : 'https://juris-ai-fhjw.onrender.com';
   const cookieHeader = request.headers.get('cookie') || '';
 
   try {

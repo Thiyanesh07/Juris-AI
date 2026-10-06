@@ -4,7 +4,12 @@ import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Scale, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+const envApiUrl = process.env.NEXT_PUBLIC_API_URL;
+const API_BASE = (envApiUrl && envApiUrl.trim())
+  ? envApiUrl.trim().replace(/\/+$/, '')
+  : (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
+  ? 'https://juris-ai-fhjw.onrender.com'
+  : 'http://localhost:8000';
 
 type Status = 'processing' | 'success' | 'error';
 
