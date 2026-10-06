@@ -24,7 +24,7 @@ settings = get_settings()
 app = FastAPI(
     title="Juris AI LegalGraph API",
     description="Indian legal research platform powered by GraphRAG and hybrid search.",
-    version="0.6.0",
+    version="0.6.1",
 )
 
 raw_origins = [
