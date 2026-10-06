@@ -27,7 +27,7 @@ app = FastAPI(
     version="0.6.0",
 )
 
-allowed_origins = list({
+raw_origins = [
     settings.frontend_url,
     "http://localhost:3000",
     "http://localhost:3001",
@@ -37,22 +37,33 @@ allowed_origins = list({
     "http://127.0.0.1:3001",
     "http://127.0.0.1:3002",
     "http://127.0.0.1:5173",
+    "https://juris-ai-landing-ten.vercel.app",
+    "https://juris-ai-user.vercel.app",
+    "https://juris-ai-admin.vercel.app",
+    *(o for o in settings.extra_cors_origins.split(",") if o.strip()),
+]
+
+allowed_origins = list({
+    origin.strip().strip("'\"").rstrip("/")
+    for origin in raw_origins
+    if origin and origin.strip()
 })
+
 
 app.add_middleware(
     SessionMiddleware,
     secret_key=settings.session_secret,
     session_cookie="legalgraph_session",
     max_age=settings.session_max_age_seconds,
-    same_site="lax",
+    same_site="none" if settings.session_cookie_secure else "lax",
     https_only=settings.session_cookie_secure,
 )
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization", "Accept", "multipart/form-data"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_headers=["*"],
 )
 
 # Standard root routers

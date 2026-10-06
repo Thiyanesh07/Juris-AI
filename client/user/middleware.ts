@@ -9,7 +9,7 @@ import type { NextRequest } from 'next/server';
  * Protected routes: /home, /research, /documents, /citations, /history, /settings, /
  */
 
-const PUBLIC_PATH_PREFIXES = ['/login', '/auth', '/_next', '/favicon.ico', '/api'];
+const PUBLIC_PATH_PREFIXES = ['/login', '/signup', '/auth', '/_next', '/favicon.ico', '/api'];
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
