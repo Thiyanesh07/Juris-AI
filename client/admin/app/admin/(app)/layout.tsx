@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { Loader2 } from 'lucide-react';
 import { useSidebar } from '@/hooks/useSidebar';
 import { AdminSidebar } from '@/components/layout/AdminSidebar';
 import { AdminTopbar } from '@/components/layout/AdminTopbar';
@@ -10,6 +11,7 @@ import { DocumentStoreProvider } from '@/context/DocumentStoreContext';
 import { ValidationStoreProvider } from '@/context/ValidationStoreContext';
 import { AuditStoreProvider } from '@/context/AuditStoreContext';
 import { SettingsStoreProvider } from '@/context/SettingsStoreContext';
+import { useAuth, useRequireAdmin } from '@/context/AuthContext';
 import { cn } from '@/lib/utils';
 
 export default function AdminAppLayout({
@@ -19,6 +21,16 @@ export default function AdminAppLayout({
 }) {
   const { isCollapsed, toggleSidebar } = useSidebar();
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const { loading } = useAuth();
+  const adminUser = useRequireAdmin();
+
+  if (loading || !adminUser) {
+    return (
+      <div className="min-h-screen bg-[#E7EDF4] flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-[#1B365D]" />
+      </div>
+    );
+  }
 
   return (
     <UserStoreProvider>

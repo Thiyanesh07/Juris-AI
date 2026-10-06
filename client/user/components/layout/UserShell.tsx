@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -17,6 +17,7 @@ import {
   Settings,
   Sparkles,
   ShieldAlert,
+  Loader2,
 } from 'lucide-react';
 import { cn, getInitials } from '@/lib/utils';
 import { useAuth } from '@/context/AuthContext';
@@ -43,7 +44,23 @@ export const UserShell: React.FC<UserShellProps> = ({ children }) => {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const { user, logout } = useAuth();
+  const { user, isLoading, logout } = useAuth();
+
+  useEffect(() => {
+    if (!isLoading && !user) {
+      window.location.href = `/login?from=${encodeURIComponent(pathname)}`;
+    }
+  }, [user, isLoading, pathname]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-[#F0F4F8] flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-[#1D4E8A]" />
+      </div>
+    );
+  }
+
+  if (!user) return null;
 
   const userName = user?.name || 'Legal Researcher';
   const userRole = user?.role || 'USER';
