@@ -27,8 +27,11 @@ app = FastAPI(
     version="0.6.1",
 )
 
+extra_origins_str = getattr(settings, "extra_cors_origins", "") or ""
+frontend_url_str = getattr(settings, "frontend_url", "http://localhost:5173") or ""
+
 raw_origins = [
-    settings.frontend_url,
+    frontend_url_str,
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
@@ -40,7 +43,7 @@ raw_origins = [
     "https://juris-ai-landing-ten.vercel.app",
     "https://juris-ai-user.vercel.app",
     "https://juris-ai-admin.vercel.app",
-    *(o for o in settings.extra_cors_origins.split(",") if o.strip()),
+    *(o for o in extra_origins_str.split(",") if o.strip()),
 ]
 
 allowed_origins = list({
