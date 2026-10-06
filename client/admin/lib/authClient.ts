@@ -18,6 +18,7 @@ export type { AuthUser } from './apiTypes';
 
 import type { AuthUser } from './apiTypes';
 import { apiClient, ApiError, getApiBaseUrl } from './apiClient';
+import { fetchCurrentUser as apiFetchCurrentUser, logout as apiLogout } from './apiAuth';
 
 const _API_BASE = getApiBaseUrl();
 
