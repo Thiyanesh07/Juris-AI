@@ -40,7 +40,8 @@ export function getGoogleLoginUrl(returnTo?: string): string {
   const origin =
     typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3001';
   const callbackUrl = `${origin}/admin/auth/google/callback`;
-  const base = `${_API_BASE}/auth/google/login?intent=signin&redirect_uri=${encodeURIComponent(callbackUrl)}`;
+  const apiBase = getApiBaseUrl();
+  const base = `${apiBase}/auth/google/login?intent=signin&redirect_uri=${encodeURIComponent(callbackUrl)}`;
   if (returnTo) {
     return `${base}&return_to=${encodeURIComponent(returnTo)}`;
   }

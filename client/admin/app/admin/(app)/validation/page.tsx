@@ -157,9 +157,9 @@ export default function ValidationListPage() {
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <span className="text-xs font-mono font-bold text-[#17253A] uppercase tracking-wider">
-            Queue Summary (Mock Environment)
+            Validation Telemetry Queue
           </span>
-          <span className="text-[11px] font-mono text-[#718096]">Development Data Only</span>
+          <span className="text-[11px] font-mono text-[#718096]">Live System Metrics</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <MetricCard

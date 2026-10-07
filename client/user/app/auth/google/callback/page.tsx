@@ -4,6 +4,8 @@ import React, { useEffect, useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Scale, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 
+import { getApiBaseUrl } from '@/lib/apiClient';
+
 function UserCallbackContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -29,12 +31,7 @@ function UserCallbackContent() {
 
     const processOAuth = async () => {
       try {
-        const envUrl = process.env.NEXT_PUBLIC_API_URL;
-        const backendUrl = (envUrl && envUrl.trim())
-          ? envUrl.trim().replace(/\/+$/, '')
-          : (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
-          ? 'https://juris-ai-fhjw.onrender.com'
-          : 'http://localhost:8000';
+        const backendUrl = getApiBaseUrl();
         const currentRedirectUri = typeof window !== 'undefined'
           ? `${window.location.origin}${window.location.pathname}`
           : 'http://localhost:3002/auth/google/callback';

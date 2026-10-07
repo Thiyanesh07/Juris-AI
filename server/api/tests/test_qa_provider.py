@@ -18,8 +18,8 @@ from app.qa.provider import (
 )
 
 
-def _settings(**overrides: object) -> Settings:
-    base = {
+def _settings(**overrides: Any) -> Settings:
+    base: dict[str, Any] = {
         "session_secret": "x",
         "llm_provider": "openai_compatible",
         "llm_model": "gpt-4o-mini",
@@ -47,7 +47,15 @@ class _FakeAsyncClient:
         headers: dict[str, str],
         json: dict[str, Any],
     ) -> httpx.Response:
-        return await self.handler(url, headers=headers, json=json)
+        res: httpx.Response = await self.handler(url, headers=headers, json=json)
+        return res
+
+
+def _make_client(handler: Any) -> Any:
+    def _factory(*args: object, **kwargs: Any) -> _FakeAsyncClient:
+        return _FakeAsyncClient(handler, **kwargs)
+
+    return _factory
 
 
 @pytest.mark.asyncio
@@ -92,7 +100,7 @@ async def test_timeout(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     with pytest.raises(LLMProviderTimeout):
@@ -111,7 +119,7 @@ async def test_connection_failure(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     with pytest.raises(LLMProviderUnavailable):
@@ -130,7 +138,7 @@ async def test_http_5xx(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     with pytest.raises(LLMProviderUnavailable):
@@ -149,7 +157,7 @@ async def test_http_4xx(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     with pytest.raises(LLMProviderUnavailable):
@@ -187,7 +195,7 @@ async def test_malformed_response_shapes(
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     with pytest.raises(LLMProviderMalformedResponse):
@@ -214,7 +222,7 @@ async def test_api_key_not_logged(
 
     monkeypatch.setattr(
         "app.qa.provider.httpx.AsyncClient",
-        lambda *args, **kwargs: _FakeAsyncClient(handler, **kwargs),
+        _make_client(handler),
     )
     provider = OpenAICompatibleProvider(_settings())
     await provider.generate(
@@ -225,3 +233,30 @@ async def test_api_key_not_logged(
     )
     joined = " ".join(record.message for record in caplog.records)
     assert "secret-key" not in joined
+
+
+@pytest.mark.asyncio
+async def test_google_genai_provider_success(monkeypatch: pytest.MonkeyPatch) -> None:
+    async def handler(url: str, *, headers: dict[str, str], json: dict[str, Any]) -> httpx.Response:
+        assert "generativelanguage.googleapis.com" in url
+        assert json["system_instruction"]["parts"][0]["text"] == "sys"
+        assert json["contents"][0]["parts"][0]["text"] == "user"
+        return httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": '{"answer":"gemini_ok"}'}]}}]},
+        )
+
+    monkeypatch.setattr(
+        "app.qa.provider.httpx.AsyncClient",
+        _make_client(handler),
+    )
+    settings = _settings(llm_provider="google_genai", llm_model="gemini-1.5-flash", llm_base_url="")
+    provider = build_llm_provider(settings)
+    text = await provider.generate(
+        system_message="sys",
+        user_message="user",
+        timeout_seconds=5,
+        max_output_tokens=100,
+    )
+    assert "gemini_ok" in text
+

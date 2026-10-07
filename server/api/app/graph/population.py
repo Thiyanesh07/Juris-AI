@@ -100,12 +100,14 @@ async def _mark_job(
 
 
 def _build_graph_payload(
-    document: Document,
+    doc_id: UUID,
+    doc_title: str,
+    doc_type: str,
     chunks: list[Chunk],
     entities_by_chunk: dict[str, list[Entity]],
     relations_by_chunk: dict[str, list[Relation]],
 ) -> dict[str, Any]:
-    document_id = str(document.id)
+    document_id = str(doc_id)
     chunk_rows: list[dict[str, Any]] = []
     entity_nodes: dict[str, dict[str, Any]] = {}
     supported_by: list[dict[str, Any]] = []
@@ -168,8 +170,8 @@ def _build_graph_payload(
         "document_id": document_id,
         "document": {
             "id": document_id,
-            "title": document.title,
-            "document_type": document.type.value,
+            "title": doc_title,
+            "document_type": doc_type,
         },
         "chunks": chunk_rows,
         "entity_nodes": list(entity_nodes.values()),
@@ -186,9 +188,11 @@ async def _populate_one_document(
     document: Document,
 ) -> DocumentPopulationOutcome:
     document_id = document.id
+    doc_title = document.title
+    doc_type = document.type.value if hasattr(document.type, "value") else str(document.type)
     outcome = DocumentPopulationOutcome(
         document_id=str(document_id),
-        title=document.title,
+        title=doc_title,
         success=False,
     )
     chunks = list(
@@ -215,11 +219,12 @@ async def _populate_one_document(
 
     try:
         await _mark_job(db, job_entity, ProcessingJobStatus.RUNNING)
+        await db.commit()
         for chunk in chunks:
             chunk_id = str(chunk.id)
             entities = extract_entities(
                 chunk.text,
-                document_title=document.title,
+                document_title=doc_title,
                 document_id=str(document_id),
             )
             entities_by_chunk[chunk_id] = entities
@@ -227,20 +232,25 @@ async def _populate_one_document(
         await _mark_job(db, job_entity, ProcessingJobStatus.COMPLETED)
         await db.commit()
     except Exception as exc:
-        await _mark_job(db, job_entity, ProcessingJobStatus.FAILED, str(exc))
+        await db.rollback()
+        try:
+            await _mark_job(db, job_entity, ProcessingJobStatus.FAILED, str(exc))
+            await db.commit()
+        except Exception:
+            pass
         outcome.error = f"Entity extraction failed: {exc}"
-        await db.commit()
         return outcome
 
     try:
         await _mark_job(db, job_relation, ProcessingJobStatus.RUNNING)
+        await db.commit()
         for chunk in chunks:
             chunk_id = str(chunk.id)
             entities = entities_by_chunk[chunk_id]
             relations = extract_relations(
                 chunk.text,
                 entities,
-                document_title=document.title,
+                document_title=doc_title,
                 document_id=str(document_id),
             )
             relations_by_chunk[chunk_id] = relations
@@ -248,29 +258,38 @@ async def _populate_one_document(
         await _mark_job(db, job_relation, ProcessingJobStatus.COMPLETED)
         await db.commit()
     except Exception as exc:
-        await _mark_job(db, job_relation, ProcessingJobStatus.FAILED, str(exc))
+        await db.rollback()
+        try:
+            await _mark_job(db, job_relation, ProcessingJobStatus.FAILED, str(exc))
+            await db.commit()
+        except Exception:
+            pass
         outcome.error = f"Relation extraction failed: {exc}"
-        await db.commit()
         return outcome
 
-    payload = _build_graph_payload(document, chunks, entities_by_chunk, relations_by_chunk)
+    payload = _build_graph_payload(document_id, doc_title, doc_type, chunks, entities_by_chunk, relations_by_chunk)
     outcome.entity_count = total_entities
     outcome.relation_count = total_relations
 
     try:
         await _mark_job(db, job_graph, ProcessingJobStatus.RUNNING)
-        await db.flush()
+        await db.commit()
         await client.replace_document_graph(payload)
         await _mark_job(db, job_graph, ProcessingJobStatus.COMPLETED)
         await db.commit()
         outcome.success = True
         return outcome
     except Exception as exc:
-        await _mark_job(db, job_graph, ProcessingJobStatus.FAILED, str(exc))
-        await db.commit()
+        await db.rollback()
+        try:
+            await _mark_job(db, job_graph, ProcessingJobStatus.FAILED, str(exc))
+            await db.commit()
+        except Exception:
+            pass
         outcome.error = f"Graph population failed: {exc}"
         logger.exception("Graph population failed for document %s", document_id)
         return outcome
+
 
 
 async def populate_graph(
@@ -286,15 +305,15 @@ async def populate_graph(
     if clear and document_id is None:
         await client.clear_graph()
 
-    query = select(Document).where(Document.status == DocumentStatus.READY)
+    query = select(Document.id).where(Document.status == DocumentStatus.READY)
     if document_id is not None:
         query = query.where(Document.id == document_id)
     query = query.order_by(Document.created_at)
     if limit is not None:
         query = query.limit(limit)
 
-    documents = (await db.execute(query)).scalars().all()
-    if document_id is not None and not documents:
+    doc_ids = list((await db.execute(query)).scalars().all())
+    if document_id is not None and not doc_ids:
         summary.skipped = 1
         summary.failures.append(
             DocumentPopulationOutcome(
@@ -306,15 +325,35 @@ async def populate_graph(
         )
         return summary
 
-    for document in documents:
+    for doc_id in doc_ids:
         summary.processed += 1
-        outcome = await _populate_one_document(db, client, document)
-        if outcome.success:
-            summary.successes.append(outcome)
-        else:
-            summary.failures.append(outcome)
+        doc_title = ""
+        try:
+            document = (
+                await db.execute(select(Document).where(Document.id == doc_id))
+            ).scalar_one_or_none()
+            if not document:
+                continue
+            doc_title = document.title
+            outcome = await _populate_one_document(db, client, document)
+            if outcome.success:
+                summary.successes.append(outcome)
+            else:
+                summary.failures.append(outcome)
+        except Exception as exc:
+            await db.rollback()
+            logger.warning("Doc %s failed due to unexpected exception: %s", doc_id, exc)
+            summary.failures.append(
+                DocumentPopulationOutcome(
+                    document_id=str(doc_id),
+                    title=doc_title,
+                    success=False,
+                    error=str(exc),
+                )
+            )
 
     return summary
+
 
 
 async def graph_stats(client: Neo4jClient) -> dict[str, Any]:

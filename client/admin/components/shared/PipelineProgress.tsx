@@ -23,6 +23,7 @@ export const PipelineProgress: React.FC<PipelineProgressProps> = ({
   const statusBadgeVariant = {
     QUEUED: 'default',
     PARSING: 'primary',
+    PROCESSING: 'primary',
     EXTRACTING_ENTITIES: 'primary',
     BUILDING_INDEX: 'primary',
     COMPLETED: 'success',

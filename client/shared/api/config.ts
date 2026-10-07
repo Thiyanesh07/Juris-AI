@@ -9,17 +9,37 @@
  */
 
 export function getApiBaseUrl(): string {
-  const envUrl = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_API_URL : undefined;
-  if (envUrl && envUrl.trim() !== '') {
-    return envUrl.trim().replace(/\/+$/, '');
-  }
+  // 1. Browser runtime check
   if (typeof window !== 'undefined') {
     const hostname = window.location.hostname;
-    if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
+    const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.local');
+
+    if (!isLocal) {
+      const envUrl = process.env.NEXT_PUBLIC_API_URL;
+      if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
+        return envUrl.trim().replace(/\/+$/, '');
+      }
       return 'https://juris-ai-fhjw.onrender.com';
     }
-  } else if (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') {
+
+    const envUrl = process.env.NEXT_PUBLIC_API_URL;
+    if (envUrl && envUrl.trim() !== '') {
+      return envUrl.trim().replace(/\/+$/, '');
+    }
+    return 'http://localhost:8000';
+  }
+
+  // 2. Server-side / Node / Build-time check
+  const envUrl = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_API_URL : undefined;
+  if (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') {
+    if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
+      return envUrl.trim().replace(/\/+$/, '');
+    }
     return 'https://juris-ai-fhjw.onrender.com';
+  }
+
+  if (envUrl && envUrl.trim() !== '') {
+    return envUrl.trim().replace(/\/+$/, '');
   }
   return 'http://localhost:8000';
 }

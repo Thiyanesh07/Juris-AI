@@ -3,9 +3,11 @@ from __future__ import annotations
 
 from collections import Counter
 from collections.abc import Awaitable, Callable
+import json
 from typing import Any
 
 from app.core.config import Settings
+
 
 _LABELS = {
     "Article",
@@ -81,6 +83,8 @@ class Neo4jClient:
             self._driver = AsyncGraphDatabase.driver(
                 self.settings.neo4j_uri,
                 auth=(self.settings.neo4j_username, self.settings.neo4j_password),
+                max_connection_lifetime=60.0,
+                liveness_check_timeout=30.0,
             )
         return self._driver
 
@@ -216,91 +220,118 @@ class Neo4jClient:
                 document_type=document["document_type"],
             )
 
+            # 1. Batch Chunks & CONTAINS relations
+            chunk_batch = []
             for chunk in payload["chunks"]:
+                cp = dict(chunk)
+                if isinstance(cp.get("hierarchy_json"), (dict, list)):
+                    cp["hierarchy_json"] = json.dumps(cp["hierarchy_json"])
+                chunk_batch.append(cp)
+
+            if chunk_batch:
                 await tx.run(
                     """
-                    MERGE (c:Chunk {id: $id})
-                    SET c.document_id = $document_id,
-                        c.chunk_index = $chunk_index,
-                        c.page_start = $page_start,
-                        c.page_end = $page_end,
-                        c.citation_ref = $citation_ref,
-                        c.hierarchy_json = $hierarchy_json
-                    WITH c
-                    MATCH (d:Document {id: $document_id})
-                    MERGE (d)-[r:CONTAINS {provenance_key: $provenance_key}]->(c)
-                    SET r.document_id = $document_id,
-                        r.chunk_id = $id,
+                    UNWIND $chunks AS chunk
+                    MERGE (c:Chunk {id: chunk.id})
+                    SET c.document_id = chunk.document_id,
+                        c.chunk_index = chunk.chunk_index,
+                        c.page_start = chunk.page_start,
+                        c.page_end = chunk.page_end,
+                        c.citation_ref = chunk.citation_ref,
+                        c.hierarchy_json = chunk.hierarchy_json
+                    WITH c, chunk
+                    MATCH (d:Document {id: chunk.document_id})
+                    MERGE (d)-[r:CONTAINS {provenance_key: chunk.provenance_key}]->(c)
+                    SET r.document_id = chunk.document_id,
+                        r.chunk_id = chunk.id,
                         r.confidence = 1.0,
-                        r.extraction_method = $extraction_method
+                        r.extraction_method = chunk.extraction_method
                     """,
-                    **chunk,
+                    chunks=chunk_batch,
                 )
 
+            # 2. Batch Entity Nodes grouped by label
+            entities_by_label: dict[str, list[dict[str, Any]]] = {}
             for node in payload["entity_nodes"]:
                 label = node["label"]
                 if label not in _LABELS:
                     raise GraphError("Invalid graph node label or stable ID")
+                entities_by_label.setdefault(label, []).append(node)
+
+            for label, nodes in entities_by_label.items():
                 await tx.run(
                     f"""
-                    MERGE (n:{label} {{id: $id}})
-                    SET n.name = $name, n.confidence = $confidence
+                    UNWIND $nodes AS node
+                    MERGE (n:{label} {{id: node.id}})
+                    SET n.name = node.name, n.confidence = node.confidence
                     """,
-                    id=node["id"],
-                    name=node["name"],
-                    confidence=node["confidence"],
+                    nodes=nodes,
                 )
 
-            for rel in payload["supported_by"]:
+            # 3. Batch SUPPORTED_BY relations
+            if payload.get("supported_by"):
                 await tx.run(
                     """
-                    MATCH (source {id: $source_id}), (target:Chunk {id: $target_id})
-                    MERGE (source)-[r:SUPPORTED_BY {provenance_key: $provenance_key}]->(target)
-                    SET r.document_id = $document_id,
-                        r.chunk_id = $chunk_id,
-                        r.confidence = $confidence,
-                        r.extraction_method = $extraction_method
+                    UNWIND $rels AS rel
+                    MATCH (source {id: rel.source_id}), (target:Chunk {id: rel.target_id})
+                    MERGE (source)-[r:SUPPORTED_BY {provenance_key: rel.provenance_key}]->(target)
+                    SET r.document_id = rel.document_id,
+                        r.chunk_id = rel.chunk_id,
+                        r.confidence = rel.confidence,
+                        r.extraction_method = rel.extraction_method
                     """,
-                    **rel,
+                    rels=payload["supported_by"],
                 )
 
-            for rel in payload.get("defines", []):
+            # 4. Batch DEFINES relations
+            if payload.get("defines"):
                 await tx.run(
                     """
-                    MATCH (source {id: $source_id}), (target {id: $target_id})
-                    MERGE (source)-[r:DEFINES {provenance_key: $provenance_key}]->(target)
-                    SET r.document_id = $document_id,
-                        r.chunk_id = $chunk_id,
-                        r.confidence = $confidence,
-                        r.extraction_method = $extraction_method
+                    UNWIND $rels AS rel
+                    MATCH (source {id: rel.source_id}), (target {id: rel.target_id})
+                    MERGE (source)-[r:DEFINES {provenance_key: rel.provenance_key}]->(target)
+                    SET r.document_id = rel.document_id,
+                        r.chunk_id = rel.chunk_id,
+                        r.confidence = rel.confidence,
+                        r.extraction_method = rel.extraction_method
                     """,
-                    **rel,
+                    rels=payload["defines"],
                 )
 
+            # 5. Batch custom relations grouped by type
+            relations_by_type: dict[str, list[dict[str, Any]]] = {}
             for rel in payload.get("relations", []):
                 rel_type = rel.get("type")
                 if rel_type and rel_type in _RELATION_TYPES:
-                    await tx.run(
-                        f"""
-                        MATCH (source {{id: $source_id}}), (target {{id: $target_id}})
-                        MERGE (source)-[r:{rel_type} {{provenance_key: $provenance_key}}]->(target)
-                        SET r.document_id = $document_id,
-                            r.chunk_id = $chunk_id,
-                            r.page = $page,
-                            r.evidence_text = $evidence_text,
-                            r.confidence = $confidence,
-                            r.extraction_method = $extraction_method
-                        """,
-                        source_id=rel["source_id"],
-                        target_id=rel["target_id"],
-                        provenance_key=rel["provenance_key"],
-                        document_id=rel.get("document_id"),
-                        chunk_id=rel.get("chunk_id"),
-                        page=rel.get("page"),
-                        evidence_text=rel.get("evidence_text", ""),
-                        confidence=rel.get("confidence", 1.0),
-                        extraction_method=rel.get("extraction_method", "deterministic_rule"),
+                    relations_by_type.setdefault(rel_type, []).append(
+                        {
+                            "source_id": rel["source_id"],
+                            "target_id": rel["target_id"],
+                            "provenance_key": rel["provenance_key"],
+                            "document_id": rel.get("document_id"),
+                            "chunk_id": rel.get("chunk_id"),
+                            "page": rel.get("page"),
+                            "evidence_text": rel.get("evidence_text", ""),
+                            "confidence": rel.get("confidence", 1.0),
+                            "extraction_method": rel.get("extraction_method", "deterministic_rule"),
+                        }
                     )
+
+            for rel_type, rels in relations_by_type.items():
+                await tx.run(
+                    f"""
+                    UNWIND $rels AS rel
+                    MATCH (source {{id: rel.source_id}}), (target {{id: rel.target_id}})
+                    MERGE (source)-[r:{rel_type} {{provenance_key: rel.provenance_key}}]->(target)
+                    SET r.document_id = rel.document_id,
+                        r.chunk_id = rel.chunk_id,
+                        r.page = rel.page,
+                        r.evidence_text = rel.evidence_text,
+                        r.confidence = rel.confidence,
+                        r.extraction_method = rel.extraction_method
+                    """,
+                    rels=rels,
+                )
 
 
         await self.execute_write(_replace)

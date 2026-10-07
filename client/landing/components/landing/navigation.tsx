@@ -66,18 +66,18 @@ export function Navigation() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="http://localhost:3002/login"
+              href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/login`}
               className={`text-muted-foreground hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}
             >
               Sign In
             </a>
             <a
-              href="http://localhost:3002/signup"
+              href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/signup`}
               className={`text-muted-foreground hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}
             >
               Sign Up
             </a>
-            <a href="http://localhost:3002/signup">
+            <a href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/signup`}>
               <Button
                 size="sm"
                 className={`bg-primary hover:bg-[#3B82D0] text-[#F5F7FA] rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
@@ -141,7 +141,7 @@ export function Navigation() {
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
             <div className="flex gap-3">
-              <a href="http://localhost:3002/login" className="flex-1">
+              <a href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/login`} className="flex-1">
                 <Button 
                   variant="outline" 
                   className="w-full rounded-full h-12 text-sm border-border text-foreground hover:bg-secondary"
@@ -150,7 +150,7 @@ export function Navigation() {
                   Sign In
                 </Button>
               </a>
-              <a href="http://localhost:3002/signup" className="flex-1">
+              <a href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/signup`} className="flex-1">
                 <Button 
                   variant="outline" 
                   className="w-full rounded-full h-12 text-sm border-border text-foreground hover:bg-secondary"
@@ -160,7 +160,7 @@ export function Navigation() {
                 </Button>
               </a>
             </div>
-            <a href="http://localhost:3002/signup" className="w-full">
+            <a href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/signup`} className="w-full">
               <Button 
                 className="w-full bg-primary hover:bg-accent text-primary-foreground rounded-full h-12 text-sm"
                 onClick={() => setIsMobileMenuOpen(false)}

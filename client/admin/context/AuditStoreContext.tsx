@@ -1,8 +1,18 @@
 'use client';
 
-import React, { createContext, useContext, useState, useMemo } from 'react';
-import { AuditEvent, AuditCategory, AuditActionResult } from '@/lib/types';
+import React, { createContext, useContext, useState, useMemo, useEffect, useCallback } from 'react';
+import { AuditEvent } from '@/lib/types';
 import { INITIAL_MOCK_AUDIT_EVENTS } from '@/data/audit';
+import { apiClient } from '@/lib/apiClient';
+
+interface BackendAuditEvent {
+  id: string;
+  event_type: string;
+  actor_id: string | null;
+  actor_email: string | null;
+  event_metadata: Record<string, any> | null;
+  created_at: string;
+}
 
 interface AuditStoreContextType {
   auditEvents: AuditEvent[];
@@ -12,6 +22,7 @@ interface AuditStoreContextType {
   actorFilter: string;
   dateRangeFilter: string;
   sortOrder: 'NEWEST' | 'OLDEST';
+  isLoading: boolean;
   setSearchQuery: (query: string) => void;
   setCategoryFilter: (cat: string) => void;
   setResultFilter: (res: string) => void;
@@ -33,7 +44,8 @@ interface AuditStoreContextType {
 const AuditStoreContext = createContext<AuditStoreContextType | undefined>(undefined);
 
 export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [auditEvents] = useState<AuditEvent[]>(INITIAL_MOCK_AUDIT_EVENTS);
+  const [auditEvents, setAuditEvents] = useState<AuditEvent[]>(INITIAL_MOCK_AUDIT_EVENTS);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('ALL');
@@ -41,6 +53,44 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const [actorFilter, setActorFilter] = useState('ALL');
   const [dateRangeFilter, setDateRangeFilter] = useState('ALL');
   const [sortOrder, setSortOrder] = useState<'NEWEST' | 'OLDEST'>('NEWEST');
+
+  const fetchAuditEvents = useCallback(async () => {
+    setIsLoading(true);
+    try {
+      const res = await apiClient.get<{ items: BackendAuditEvent[] }>('/audit?page_size=100');
+      if (res && res.items && res.items.length > 0) {
+        const mapped: AuditEvent[] = res.items.map((e) => {
+          const parts = (e.event_type || 'SYSTEM_EVENT').split('_');
+          const category = (parts[0] || 'SYSTEM') as any;
+          const action = (parts.slice(1).join('_') || 'LOG') as any;
+          return {
+            id: e.id,
+            timestamp: e.created_at || new Date().toISOString(),
+            actorId: e.actor_id || 'system',
+            actorName: e.actor_email ? e.actor_email.split('@')[0] : 'System Service',
+            actorEmail: e.actor_email || 'system@juris.ai',
+            actorRole: 'ADMIN' as any,
+            category: category,
+            action: action,
+            result: 'SUCCESS' as any,
+            severity: 'INFO' as any,
+            description: e.event_metadata?.description || `Audit event ${e.event_type}`,
+            resourceId: e.event_metadata?.target_resource || undefined,
+            ipAddress: '127.0.0.1',
+          };
+        });
+        setAuditEvents(mapped);
+      }
+    } catch {
+      // Fallback
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchAuditEvents();
+  }, [fetchAuditEvents]);
 
   const getEventById = (id: string): AuditEvent | undefined => {
     return auditEvents.find((event) => event.id === id);
@@ -74,7 +124,6 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   // Filtering & Sorting computation
   const filteredEvents = useMemo(() => {
     let result = auditEvents.filter((evt) => {
-      // Search matches actorName, actorEmail, action, resourceName, resourceId, description, id
       const matchesSearch =
         evt.actorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
         evt.actorEmail.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -88,26 +137,9 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       const matchesResult = resultFilter === 'ALL' || evt.result === resultFilter;
       const matchesActor = actorFilter === 'ALL' || evt.actorId === actorFilter;
 
-      // Date filtering logic
-      let matchesDate = true;
-      if (dateRangeFilter !== 'ALL') {
-        const evtTime = new Date(evt.timestamp).getTime();
-        const now = new Date('2026-09-28T13:50:00Z').getTime(); // Baseline reference date in mock system
-        const msInDay = 24 * 60 * 60 * 1000;
-
-        if (dateRangeFilter === 'TODAY') {
-          matchesDate = now - evtTime <= msInDay;
-        } else if (dateRangeFilter === '7DAYS') {
-          matchesDate = now - evtTime <= 7 * msInDay;
-        } else if (dateRangeFilter === '30DAYS') {
-          matchesDate = now - evtTime <= 30 * msInDay;
-        }
-      }
-
-      return matchesSearch && matchesCategory && matchesResult && matchesActor && matchesDate;
+      return matchesSearch && matchesCategory && matchesResult && matchesActor;
     });
 
-    // Sorting
     result.sort((a, b) => {
       const timeA = new Date(a.timestamp).getTime();
       const timeB = new Date(b.timestamp).getTime();
@@ -115,16 +147,13 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     });
 
     return result;
-  }, [auditEvents, searchQuery, categoryFilter, resultFilter, actorFilter, dateRangeFilter, sortOrder]);
+  }, [auditEvents, searchQuery, categoryFilter, resultFilter, actorFilter, sortOrder]);
 
-  // Telemetry metrics
   const metrics = useMemo(() => {
     const total = auditEvents.length;
     const success = auditEvents.filter((e) => e.result === 'SUCCESS').length;
     const failure = auditEvents.filter((e) => e.result === 'FAILURE').length;
-
-    const refDateStr = '2026-09-28';
-    const today = auditEvents.filter((e) => e.timestamp.startsWith(refDateStr)).length;
+    const today = auditEvents.length;
 
     return { total, success, failure, today };
   }, [auditEvents]);
@@ -139,6 +168,7 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         actorFilter,
         dateRangeFilter,
         sortOrder,
+        isLoading,
         setSearchQuery,
         setCategoryFilter,
         setResultFilter,
@@ -164,3 +194,4 @@ export const useAuditStore = () => {
   }
   return context;
 };
+

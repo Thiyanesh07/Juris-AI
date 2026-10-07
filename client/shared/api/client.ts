@@ -20,7 +20,7 @@
  *   const user = await apiClient.get<AuthUser>('/auth/me');
  */
 
-import { API_BASE_URL, JSON_HEADERS, DEFAULT_FETCH_OPTIONS } from './config';
+import { getApiBaseUrl, JSON_HEADERS, DEFAULT_FETCH_OPTIONS } from './config';
 import { ApiError, statusToErrorCode, extractDetail } from './errors';
 
 async function parseError(res: Response): Promise<ApiError> {
@@ -42,7 +42,7 @@ export async function apiFetch<T>(
   path: string,
   init: RequestInit = {},
 ): Promise<T> {
-  const url = `${API_BASE_URL}${path}`;
+  const url = `${getApiBaseUrl()}${path}`;
 
   let res: Response;
   try {

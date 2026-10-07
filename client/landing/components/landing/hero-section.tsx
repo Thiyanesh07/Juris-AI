@@ -117,7 +117,7 @@ export function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              <a href="http://localhost:3002/signup">
+              <a href={`${process.env.NEXT_PUBLIC_USER_URL || 'http://localhost:3002'}/signup`}>
                 <Button 
                   size="lg" 
                   className="bg-[#2563A8] hover:bg-[#3B82D0] text-[#F5F7FA] px-8 h-14 text-base rounded-full group shadow-none cursor-pointer"

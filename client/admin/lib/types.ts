@@ -28,7 +28,11 @@ export type DocumentTypeCategory =
   | 'Regulation'
   | 'Judgment'
   | 'Notification'
-  | 'Other';
+  | 'Other'
+  | 'CONSTITUTION'
+  | 'ACT'
+  | 'JUDGMENT'
+  | 'OTHER';
 
 export type DocumentStatus = 'UPLOADED' | 'PROCESSING' | 'READY' | 'FAILED' | 'ARCHIVED';
 
@@ -56,6 +60,7 @@ export interface Document {
 export type IngestionJobStatus =
   | 'QUEUED'
   | 'PARSING'
+  | 'PROCESSING'
   | 'EXTRACTING_ENTITIES'
   | 'BUILDING_INDEX'
   | 'COMPLETED'

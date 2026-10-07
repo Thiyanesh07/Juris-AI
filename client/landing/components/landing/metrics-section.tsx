@@ -44,30 +44,30 @@ function AnimatedCounter({ end, suffix = "", prefix = "" }: { end: number; suffi
   );
 }
 
-const metrics = [
+const defaultMetrics = [
   { 
-    value: 4, 
+    value: 6235, 
     suffix: "", 
     prefix: "",
-    label: "Core Research Pillars",
+    label: "Knowledge Graph Nodes",
   },
   { 
-    value: 4, 
+    value: 26014, 
     suffix: "", 
     prefix: "",
-    label: "GraphRAG Capabilities",
+    label: "Graph Relationships",
   },
   { 
-    value: 3, 
+    value: 2412, 
     suffix: "", 
     prefix: "",
-    label: "Reasoning Stages",
+    label: "FAISS Vector Chunks",
   },
   { 
-    value: 395, 
+    value: 34, 
     suffix: "", 
     prefix: "",
-    label: "Constitutional Articles*",
+    label: "Indexed Corpus Documents",
   },
 ];
 
@@ -75,7 +75,29 @@ export function MetricsSection() {
   const [time, setTime] = useState<Date | null>(null);
   const [mounted, setMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [metrics, setMetrics] = useState(defaultMetrics);
   const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.endsWith('.local'));
+    const envUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiBase = isLocal
+      ? (envUrl && envUrl.trim() !== '' ? envUrl.trim() : 'http://localhost:8000')
+      : (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1') ? envUrl.trim() : 'https://juris-ai-fhjw.onrender.com');
+    fetch(`${apiBase.replace(/\/+$/, '')}/api/v1/public/stats`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.graph && data.vector && data.documents) {
+          setMetrics([
+            { value: data.graph.total_nodes || 6235, suffix: "", prefix: "", label: "Knowledge Graph Nodes" },
+            { value: data.graph.total_relationships || 26014, suffix: "", prefix: "", label: "Graph Relationships" },
+            { value: data.vector.total_vectors || 2412, suffix: "", prefix: "", label: "FAISS Vector Chunks" },
+            { value: data.documents.total_documents || 34, suffix: "", prefix: "", label: "Indexed Corpus Documents" },
+          ]);
+        }
+      })
+      .catch((err) => console.log("Public stats fetch fallback:", err));
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -148,7 +170,7 @@ export function MetricsSection() {
         
         {/* Footnote */}
         <p className="mt-6 text-xs text-muted-foreground font-mono">
-          *Original Constitution of India structure.
+          *Live production corpus, vector index, and knowledge graph metrics.
         </p>
       </div>
     </section>

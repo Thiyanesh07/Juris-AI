@@ -170,12 +170,27 @@ async def _ingest_corpus(document_id: str | None) -> int:
         await client.close()
 
 
+async def _import_corpus() -> int:
+    from import_corpus import import_corpus
+    try:
+        stats = await import_corpus()
+        print(json.dumps(stats, indent=2))
+        return 0
+    except Exception as exc:
+        print(f"Import corpus failed: {exc}", file=sys.stderr)
+        return 1
+
+
 def main() -> None:
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
     parser = argparse.ArgumentParser(description="LegalGraph developer commands")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("rebuild-index")
     ingest = commands.add_parser("ingest-corpus", help="Run Phase 13 Legal Knowledge Layer corpus ingestion")
     ingest.add_argument("--document-id", default=None, help="Process single document_id only")
+    commands.add_parser("import-corpus", help="Import processed corpus metadata and chunks into PostgreSQL")
     query = commands.add_parser("query")
     query.add_argument("query")
     query.add_argument("--top-k", type=int, default=None)
@@ -200,6 +215,8 @@ def main() -> None:
         asyncio.run(_rebuild())
     elif args.command == "ingest-corpus":
         sys.exit(asyncio.run(_ingest_corpus(args.document_id)))
+    elif args.command == "import-corpus":
+        sys.exit(asyncio.run(_import_corpus()))
     elif args.command == "populate-graph":
         code = asyncio.run(_populate_graph(args.document_id, args.limit, args.clear))
         sys.exit(code)
@@ -224,3 +241,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -30,12 +30,10 @@ export interface HealthCheckResult {
 export async function checkHealth(): Promise<HealthCheckResult> {
   try {
     const health = await apiClient.get<HealthResponse>('/health');
-    if (health.status === 'ok') {
-      return { status: 'CONNECTED', detail: 'API and database reachable', raw: health };
-    }
+    const isOk = health.status === 'ok';
     return {
-      status: 'DEGRADED',
-      detail: `API degraded: database ${health.components?.database?.status ?? 'unknown'}`,
+      status: isOk ? 'CONNECTED' : 'DEGRADED',
+      detail: isOk ? 'All core infrastructure services connected' : 'One or more backend components degraded',
       raw: health,
     };
   } catch (err) {
@@ -46,6 +44,17 @@ export async function checkHealth(): Promise<HealthCheckResult> {
       return { status: 'ERROR', detail: err.userMessage };
     }
     return { status: 'ERROR', detail: 'Unexpected error checking health' };
+  }
+}
+
+/**
+ * GET /stats or GET /public/stats
+ */
+export async function fetchPublicStats() {
+  try {
+    return await apiClient.get<import('./apiTypes').PublicStatsResponse>('/stats');
+  } catch {
+    return null;
   }
 }
 

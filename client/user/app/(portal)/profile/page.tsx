@@ -1,25 +1,25 @@
 'use client';
 
 import React, { useState } from 'react';
-import { MOCK_USER_PROFILE } from '@/data/research';
+import { useAuth } from '@/context/AuthContext';
 import { getInitials } from '@/lib/utils';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import {
   User,
   Mail,
-  Building,
   Shield,
   CheckCircle2,
-  Globe,
   Sliders,
-  Sparkles,
   Save,
+  Loader2,
 } from 'lucide-react';
 import { ResearchMode } from '@/lib/types';
 
 export default function ProfilePage() {
-  const [profile, setProfile] = useState(MOCK_USER_PROFILE);
+  const { user, isLoading } = useAuth();
+  const [preferredMode, setPreferredMode] = useState<ResearchMode>('COMPREHENSIVE');
+  const [language, setLanguage] = useState('English (India)');
   const [savedSuccess, setSavedSuccess] = useState(false);
 
   const handleSave = (e: React.FormEvent) => {
@@ -28,17 +28,29 @@ export default function ProfilePage() {
     setTimeout(() => setSavedSuccess(false), 2500);
   };
 
+  if (isLoading) {
+    return (
+      <div className="p-12 flex flex-col items-center justify-center min-h-[50vh] space-y-3">
+        <Loader2 className="h-8 w-8 text-[#1D4E8A] animate-spin" />
+        <p className="text-sm font-mono text-[#526176]">Loading user profile...</p>
+      </div>
+    );
+  }
+
+  const displayName = user?.name || (user?.email ? user.email.split('@')[0] : 'Legal Researcher');
+  const displayRole = user?.role ? user.role.toUpperCase().replace('_', ' ') : 'RESEARCHER';
+
   return (
     <div className="p-6 lg:p-8 max-w-4xl mx-auto space-y-6 pb-20">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E2E8F0] pb-4">
         <div>
-          <h1 className="text-2xl text-[#17253A] flex items-center gap-2">
+          <h1 className="text-2xl text-[#17253A] flex items-center gap-2 font-display font-semibold">
             <User className="h-6 w-6 text-[#1D4E8A]" />
             Researcher Profile & Preferences
           </h1>
           <p className="text-xs font-mono text-[#526176] mt-0.5">
-            Manage your legal researcher identity, defaults, and workspace preferences
+            Authenticated legal researcher identity and workspace preferences
           </p>
         </div>
       </div>
@@ -46,20 +58,19 @@ export default function ProfilePage() {
       {/* Profile Overview Card */}
       <div className="card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5 border-[#CBD5E0]">
         <div className="h-16 w-16 rounded-full bg-[#1D4E8A] flex items-center justify-center text-white text-xl font-bold font-mono shrink-0 shadow-md">
-          {getInitials(profile.name)}
+          {getInitials(displayName)}
         </div>
         <div className="flex-1 space-y-1">
           <div className="flex flex-wrap items-center gap-2">
-            <h2 className="text-xl font-bold text-[#17253A] font-sans">{profile.name}</h2>
-            <Badge variant="primary">{profile.role}</Badge>
+            <h2 className="text-xl font-bold text-[#17253A] font-sans">{displayName}</h2>
+            <Badge variant="primary">{displayRole}</Badge>
           </div>
-          <p className="text-xs font-mono text-[#526176]">{profile.organization}</p>
           <div className="flex items-center gap-4 text-xs font-mono text-[#718096] pt-1">
             <span className="flex items-center gap-1">
-              <Mail className="h-3.5 w-3.5" /> {profile.email}
+              <Mail className="h-3.5 w-3.5" /> {user?.email || 'N/A'}
             </span>
-            <span className="flex items-center gap-1">
-              <Shield className="h-3.5 w-3.5 text-[#166534]" /> Verified Advocate
+            <span className="flex items-center gap-1 text-[#166534]">
+              <Shield className="h-3.5 w-3.5" /> Account Active
             </span>
           </div>
         </div>
@@ -78,14 +89,14 @@ export default function ProfilePage() {
             <div className="space-y-1.5">
               <label className="text-xs font-mono font-bold text-[#526176]">Preferred Research Mode</label>
               <select
-                value={profile.preferredMode}
-                onChange={e => setProfile({ ...profile, preferredMode: e.target.value as ResearchMode })}
+                value={preferredMode}
+                onChange={e => setPreferredMode(e.target.value as ResearchMode)}
                 className="input-field text-xs h-9 px-3"
               >
-                <option value="COMPREHENSIVE">Comprehensive (Default)</option>
-                <option value="CONSTITUTIONAL">Constitutional Law</option>
+                <option value="COMPREHENSIVE">Comprehensive (Hybrid GraphRAG)</option>
+                <option value="CONSTITUTIONAL">Constitutional Analysis</option>
                 <option value="STATUTORY">Statutory Interpretation</option>
-                <option value="CASE_LAW">Case Law & Precedent</option>
+                <option value="CASE_LAW">Precedent & Case Law</option>
               </select>
             </div>
 
@@ -94,7 +105,7 @@ export default function ProfilePage() {
               <input
                 type="text"
                 disabled
-                value="India — Constitution, Central & State Statutes, Supreme Court"
+                value="India — Constitution, Statutes, Supreme Court"
                 className="input-field text-xs h-9 px-3 bg-[#F8FAFC] cursor-not-allowed"
               />
             </div>
@@ -102,12 +113,11 @@ export default function ProfilePage() {
             <div className="space-y-1.5">
               <label className="text-xs font-mono font-bold text-[#526176]">Interface Language</label>
               <select
-                value={profile.language}
-                onChange={e => setProfile({ ...profile, language: e.target.value })}
+                value={language}
+                onChange={e => setLanguage(e.target.value)}
                 className="input-field text-xs h-9 px-3"
               >
                 <option value="English (India)">English (India)</option>
-                <option value="Hindi">Hindi (Demonstration)</option>
               </select>
             </div>
 
@@ -129,7 +139,7 @@ export default function ProfilePage() {
             {savedSuccess && (
               <span className="flex items-center gap-1.5 text-xs font-mono text-[#166534] font-bold animate-fade-in-up">
                 <CheckCircle2 className="h-4 w-4 text-[#166534]" />
-                Profile preferences updated!
+                Profile preferences saved!
               </span>
             )}
           </div>
@@ -138,17 +148,7 @@ export default function ProfilePage() {
           </Button>
         </div>
       </form>
-
-      {/* Demo Notice */}
-      <div className="p-4 rounded-xl bg-[#E8F0FD] border border-[#BFDBFE] flex items-start gap-3 text-xs font-mono text-[#1D4E8A]">
-        <Sparkles className="h-4 w-4 shrink-0 mt-0.5" />
-        <div>
-          <span className="font-bold">MOCK USER PROFILE: </span>
-          <span className="text-[#3B82D0]">
-            Profile and preferences are stored in frontend state for demonstration purposes. Backend persistence and single sign-on integration will be connected in Phase 11+.
-          </span>
-        </div>
-      </div>
     </div>
   );
 }
+

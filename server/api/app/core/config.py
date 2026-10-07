@@ -74,6 +74,9 @@ class Settings(BaseSettings):
     backend_host: str = "127.0.0.1"
     backend_port: int = 8000
     frontend_url: str = "http://localhost:5173"
+    # Comma-separated list of additional CORS origins (e.g. production Vercel URLs).
+    # EXTRA_CORS_ORIGINS="https://juris-ai.vercel.app,https://juris-ai-admin.vercel.app"
+    extra_cors_origins: str = ""
     session_secret: str = "dev-secret-change-in-production-min-32-chars-long"
     session_cookie_secure: bool = False
     session_max_age_seconds: int = 60 * 60 * 24 * 7

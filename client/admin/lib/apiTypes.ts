@@ -98,23 +98,44 @@ export interface ProcessingJob {
   updated_at: string;
 }
 
-// ── Health ────────────────────────────────────────────────────────────────────
+// ── Health & Stats ─────────────────────────────────────────────────────────────
 
-export interface DatabaseComponent {
-  status: 'ok' | 'unreachable';
-  error: string | null;
+export interface ComponentHealth {
+  status: 'ok' | 'degraded' | 'unreachable' | 'unavailable';
+  detail?: string | null;
+  metrics?: Record<string, any> | null;
+  error?: string | null;
 }
 
 export interface HealthResponse {
   status: 'ok' | 'degraded';
-  service: 'legalgraph-api';
+  service: string;
   version: string;
-  components: { database: DatabaseComponent };
+  components: {
+    database?: ComponentHealth;
+    neo4j?: ComponentHealth;
+    vector_index?: ComponentHealth;
+    llm?: ComponentHealth;
+    [key: string]: ComponentHealth | undefined;
+  };
 }
 
 export interface DatabaseHealthResponse {
   status: 'ok' | 'unavailable';
-  database: DatabaseComponent;
+  database: ComponentHealth;
+}
+
+export interface PublicStatsResponse {
+  total_documents: number;
+  ready_documents: number;
+  total_chunks: number;
+  graph_nodes: number;
+  graph_relationships: number;
+  vector_count: number;
+  vector_dimension: number;
+  embedding_model: string;
+  graph_labels: Record<string, number>;
+  graph_relationship_types: Record<string, number>;
 }
 
 // ── Evaluation ────────────────────────────────────────────────────────────────

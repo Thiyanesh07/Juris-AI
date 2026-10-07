@@ -4,12 +4,7 @@ import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Scale, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 
-const envApiUrl = process.env.NEXT_PUBLIC_API_URL;
-const API_BASE = (envApiUrl && envApiUrl.trim())
-  ? envApiUrl.trim().replace(/\/+$/, '')
-  : (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
-  ? 'https://juris-ai-fhjw.onrender.com'
-  : 'http://localhost:8000';
+import { getApiBaseUrl } from '@/lib/apiClient';
 
 type Status = 'processing' | 'success' | 'error';
 
@@ -41,11 +36,12 @@ function AdminGoogleCallbackContent() {
     }
 
     // Forward the code + state to the backend for secure server-side exchange
+    const apiBase = getApiBaseUrl();
     const currentRedirectUri = typeof window !== 'undefined'
       ? `${window.location.origin}${window.location.pathname}`
       : 'http://localhost:3001/admin/auth/google/callback';
     const params = new URLSearchParams({ code, redirect_uri: currentRedirectUri, ...(state ? { state } : {}) });
-    const backendCallback = `${API_BASE}/auth/google/callback?${params.toString()}`;
+    const backendCallback = `${apiBase}/auth/google/callback?${params.toString()}`;
 
     fetch(backendCallback, {
       credentials: 'include',
@@ -53,7 +49,7 @@ function AdminGoogleCallbackContent() {
     })
       .then(async (res) => {
         if (res.ok || res.status === 0 /* opaque redirect */) {
-          const meRes = await fetch(`${API_BASE}/auth/me`, {
+          const meRes = await fetch(`${apiBase}/auth/me`, {
             credentials: 'include',
           });
           if (!meRes.ok) {

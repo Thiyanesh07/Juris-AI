@@ -15,7 +15,7 @@ class RetrievalRequest(BaseModel):
 
 
 class RetrievalEvidence(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="ignore")
     rank: int
     score: float
     chunk_id: UUID
@@ -29,6 +29,9 @@ class RetrievalEvidence(BaseModel):
     citation_ref: str | None = None
     source_url: str | None = None
     document_title: str
+    document_type: str | None = None
+    char_count: int | None = None
+    checksum: str | None = None
 
 
 class RetrievalResponse(BaseModel):

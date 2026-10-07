@@ -102,6 +102,7 @@ def test_google_login_json_response(client: TestClient) -> None:
 
 @patch("app.api.routes.auth.exchange_code_for_identity")
 def test_google_callback_success(mock_exchange: AsyncMock, client: TestClient) -> None:
+    client.cookies.clear()
     mock_exchange.return_value = GoogleIdentity(
         subject="google-sub-12345",
         email="googleuser@example.com",
