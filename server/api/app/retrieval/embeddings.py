@@ -72,12 +72,7 @@ class InLegalBertEmbedder:
             if hasattr(torch, "set_num_threads"):
                 torch.set_num_threads(1)
             self._tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
-            try:
-                self._model = AutoModel.from_pretrained(
-                    self.config.model_name, low_cpu_mem_usage=True
-                )
-            except Exception:
-                self._model = AutoModel.from_pretrained(self.config.model_name)
+            self._model = AutoModel.from_pretrained(self.config.model_name)
         except Exception as exc:  # pragma: no cover - network/cache dependent
             raise EmbeddingError(
                 f"Unable to load embedding model {self.config.model_name!r}: {exc}"
