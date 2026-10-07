@@ -17,7 +17,7 @@
       "language": "en",
       "checksum": "ed1820c0a1100c2c6aa8ece835a8c8a60f996ae7eba30cc1798233683c66cfba",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:23:58.357293+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:37.369762+00:00",
       "status": "ready"
     },
     "crpc_1973": {
@@ -37,7 +37,7 @@
       "language": "en",
       "checksum": "f9101373ae31442067bb7cc5bd080c485b5fafa85feaa2edaca5594d37531b2d",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:05.122125+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:39.002664+00:00",
       "status": "ready"
     },
     "iea_1872": {
@@ -57,7 +57,7 @@
       "language": "en",
       "checksum": "6360cc2d6f7429388e3e1400748ebd7b1e75ce91ed15cbe8005fae70a9cf582f",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:09.672284+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:40.146420+00:00",
       "status": "ready"
     },
     "ipc_1860": {
@@ -77,7 +77,7 @@
       "language": "en",
       "checksum": "9a7db2a49a428fce7316b4e3263b22fd8c945535776a36590dcfcd7ad478023a",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:10.642886+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:40.356280+00:00",
       "status": "ready"
     },
     "phra_1993": {
@@ -97,7 +97,7 @@
       "language": "en",
       "checksum": "0781b905d48923fed4385720e46dcf4402d2dfe625c182d89f1bf83379c442b3",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:13.548119+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:40.839728+00:00",
       "status": "ready"
     },
     "rpa_1951": {
@@ -117,7 +117,7 @@
       "language": "en",
       "checksum": "e30d5af40f0b7e5f5583bde7fa7231785c574429efce6d2e58c088a23442e4a2",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:14.026397+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:40.962682+00:00",
       "status": "ready"
     },
     "bnss_2023": {
@@ -137,7 +137,7 @@
       "language": "en",
       "checksum": "572c79880b9f8effc8fa6e39b864101835a0fb5d85b194b90a99d170121a0562",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:15.840361+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:41.249532+00:00",
       "status": "ready"
     },
     "bns_2023": {
@@ -157,7 +157,7 @@
       "language": "en",
       "checksum": "d4449e9995b21fd52627811d08f9d21feda6a3678b7e5355b651242d152167f5",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:23.448892+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:42.561720+00:00",
       "status": "ready"
     },
     "bsa_2023": {
@@ -177,7 +177,7 @@
       "language": "en",
       "checksum": "554b2b4ae3d9f09bf31e6e1ba2b2cb8a4e7f4f5ffd6f3156736752cbbce116d5",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:27.266288+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:43.165630+00:00",
       "status": "ready"
     },
     "it_act_2000": {
@@ -197,7 +197,7 @@
       "language": "en",
       "checksum": "003b3218fe399b293c73f6aef9ca52e5c1d080388c43fb0523572c1dc5f3d529",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:28.758317+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:43.455224+00:00",
       "status": "ready"
     },
     "rti_act_2005": {
@@ -217,7 +217,7 @@
       "language": "en",
       "checksum": "c1ef189ec4f34d4f346886d6c2fc4a6e8aec2da0eedcfeff9c10401ec9cfb2f5",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:29.909156+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:43.702978+00:00",
       "status": "ready"
     },
     "const_amendment_44": {
@@ -237,7 +237,7 @@
       "language": "en",
       "checksum": "d757f49dc9af81352f011e25d425c2d83cb3fc62502278db643ff00b8dddaf87",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:30.703698+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:43.859112+00:00",
       "status": "ready"
     },
     "const_amendment_42": {
@@ -257,7 +257,7 @@
       "language": "en",
       "checksum": "34734e66c92277962bbcbf6b56bcca26d722132b2a9e3066f12a29082ac59719",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:31.213604+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:43.949317+00:00",
       "status": "ready"
     },
     "const_amendment_101": {
@@ -277,7 +277,7 @@
       "language": "en",
       "checksum": "53b7dcdc4a0480be68bad501c6d67132d237c5762b28297ab70dc4f81cc517da",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:31.758582+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:44.057962+00:00",
       "status": "ready"
     },
     "const_amendment_73": {
@@ -297,7 +297,7 @@
       "language": "en",
       "checksum": "32e8ee7fc06bd73ea9a53b5cee9de8e4c7367d598f3e9dc848994101b7b1b0d3",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:31.995433+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:44.115003+00:00",
       "status": "ready"
     },
     "kesavananda_bharati_1973": {
@@ -317,7 +317,7 @@
       "language": "en",
       "checksum": "58eb213f1619dc2cf64351524d709c1cdab7132ec3772803498b3203364964bd",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:24:32.783048+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:44.269063+00:00",
       "status": "ready"
     },
     "indira_gandhi_1975": {
@@ -337,7 +337,7 @@
       "language": "en",
       "checksum": "17c4fe873af90508d6c102fa160bb4f877944c60fc00b829eba0150559fbed36",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:02.432442+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:50.920392+00:00",
       "status": "ready"
     },
     "minerva_mills_1980": {
@@ -357,7 +357,7 @@
       "language": "en",
       "checksum": "786391e5278ecb9e037aeeeb1296e9280e5f84ac7cd67ef6f7f378fe7c9e8856",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:02.975570+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:51.623861+00:00",
       "status": "ready"
     },
     "ir_coelho_2007": {
@@ -377,7 +377,7 @@
       "language": "en",
       "checksum": "2f68ac75129d68094b5a61006da321135ca471e44f702189619c579695ea6655",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:06.314543+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:52.270242+00:00",
       "status": "ready"
     },
     "l_chandra_kumar_1997": {
@@ -397,7 +397,7 @@
       "language": "en",
       "checksum": "4acc638ed43aff1427e71f23d302d5757695835a23b84902209254dd964852b4",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:14.509902+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:53.487442+00:00",
       "status": "ready"
     },
     "ep_royappa_1974": {
@@ -417,7 +417,7 @@
       "language": "en",
       "checksum": "b7acd88d10a3a58bce77b6e0c6c4a1937a1cba5a180ade665f3f4b05ea2150e9",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:26.987424+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:55.187239+00:00",
       "status": "ready"
     },
     "maneka_gandhi_1978": {
@@ -437,7 +437,7 @@
       "language": "en",
       "checksum": "39b4c680498e56d9f4c0acdb616c727273edc5c9657596e7f8c515e7a6bf6c2b",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:34.155406+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:56.147834+00:00",
       "status": "ready"
     },
     "shayara_bano_2017": {
@@ -457,7 +457,7 @@
       "language": "en",
       "checksum": "373b415f018a47c0e92fa774428bb12ceec0341070eb44fae2ba0e936041befc",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:46.629316+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:58.260429+00:00",
       "status": "ready"
     },
     "romesh_thappar_1950": {
@@ -477,7 +477,7 @@
       "language": "en",
       "checksum": "d29894086167c2f503e455a027b49a1dccc22b04566f9dc4507d76ee5b1dca61",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:52.197668+00:00",
+      "ingestion_timestamp": "2026-10-05T11:11:59.043671+00:00",
       "status": "ready"
     },
     "bennett_coleman_1973": {
@@ -497,7 +497,7 @@
       "language": "en",
       "checksum": "6387f852fb24374dab0a9bde6466a58572f8ab53ffa73a6c7f56090ea0f5301a",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:57.767123+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:00.013312+00:00",
       "status": "ready"
     },
     "shreya_singhal_2015": {
@@ -517,7 +517,7 @@
       "language": "en",
       "checksum": "e8db04ebf94fd9676f239893d333b3ed31258b49fa3f5728eea92d28fb5d27fe",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:25:58.360293+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:01.085830+00:00",
       "status": "ready"
     },
     "ak_gopalan_1950": {
@@ -537,7 +537,7 @@
       "language": "en",
       "checksum": "443987dabb16c59f1eeb09aa8f07a231aa29e9f9e836bcdda7cfade488283f27",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:02.393901+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:01.831811+00:00",
       "status": "ready"
     },
     "puttaswamy_privacy_2017": {
@@ -557,7 +557,7 @@
       "language": "en",
       "checksum": "5367b5b41e21f3d550e185242932b8f5796852de0fabac76699295a644055bf6",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:06.029290+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:02.696463+00:00",
       "status": "ready"
     },
     "common_cause_2018": {
@@ -577,7 +577,7 @@
       "language": "en",
       "checksum": "1f8699303452437b6ade5b8b6cf325419aeb87bd80a9b56c0a2c60a226b827c8",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:12.863128+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:05.146908+00:00",
       "status": "ready"
     },
     "sr_bommai_1994": {
@@ -597,7 +597,7 @@
       "language": "en",
       "checksum": "58e74e45aabbe75cbd8315f98e430428ce5c6160ba263a646c6dd043288d69d5",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:21.619224+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:07.091737+00:00",
       "status": "ready"
     },
     "vishaka_1997": {
@@ -617,7 +617,7 @@
       "language": "en",
       "checksum": "c4e8765174665030537b435df465e76de186cfeaa9dbbe54a3620a1f75d94606",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:26.295252+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:09.315117+00:00",
       "status": "ready"
     },
     "nalsa_2014": {
@@ -637,7 +637,7 @@
       "language": "en",
       "checksum": "4e2f44003fbb6672342a516760903a635012aa70f5f078891c357d1ac0d584e3",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:26.765475+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:10.646429+00:00",
       "status": "ready"
     },
     "navtej_johar_2018": {
@@ -657,7 +657,7 @@
       "language": "en",
       "checksum": "b753e52a3982fb6694d66a45c2941093873f3c443879beb2d61622b73e6228ba",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:28.084785+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:10.948362+00:00",
       "status": "ready"
     },
     "puttaswamy_aadhaar_2018": {
@@ -677,7 +677,7 @@
       "language": "en",
       "checksum": "e839ccef1ada58efdca59f84d5bb63f2a240bf318041d17c2db3790851c1f371",
       "ingestion_version": "1.0",
-      "ingestion_timestamp": "2026-10-02T11:26:31.055105+00:00",
+      "ingestion_timestamp": "2026-10-05T11:12:11.617378+00:00",
       "status": "ready"
     }
   }
