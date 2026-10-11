@@ -1,3 +1,7 @@
+/**
+ * ISOLATED DEVELOPMENT / TESTING FIXTURES ONLY.
+ * Never use as initial state, fallback, or live production data.
+ */
 import { AuditEvent } from '@/lib/types';
 
 export const INITIAL_MOCK_AUDIT_EVENTS: AuditEvent[] = [

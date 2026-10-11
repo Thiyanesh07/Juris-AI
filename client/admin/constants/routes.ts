@@ -34,5 +34,7 @@ export const ADMIN_DYNAMIC_ROUTES = {
   GRAPH_ENTITY_DETAIL: (id: string) => `/admin/graph/entity/${id}`,
   GRAPH_RELATIONSHIP_DETAIL: (id: string) => `/admin/graph/relationship/${id}`,
 
+  VALIDATION_ITEM_DETAIL: (id: string) => `/admin/validation/${id}`,
+
   AUDIT_EVENT_DETAIL: (eventId: string) => `/admin/audit/${eventId}`,
 } as const;

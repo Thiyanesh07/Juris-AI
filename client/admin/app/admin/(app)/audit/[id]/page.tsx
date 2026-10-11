@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { useAuditStore } from '@/context/AuditStoreContext';
-import { AuditActionResult, AuditCategory, AuditSeverity } from '@/lib/types';
+import { AuditEvent, AuditActionResult, AuditSeverity } from '@/lib/types';
 import { ADMIN_ROUTES } from '@/constants/routes';
 import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
@@ -20,18 +20,12 @@ import {
   User,
   ShieldCheck,
   FileText,
-  Cpu,
-  GitFork,
-  CheckSquare,
   Lock,
   Activity,
   ExternalLink,
   Code2,
   Monitor,
   Terminal,
-  ArrowRight,
-  ShieldAlert,
-  HelpCircle,
 } from 'lucide-react';
 
 export default function AuditEventDetailPage() {
@@ -39,10 +33,53 @@ export default function AuditEventDetailPage() {
   const router = useRouter();
   const id = params?.id as string;
 
-  const { getEventById } = useAuditStore();
-  const event = getEventById(id);
+  const { getEventById, fetchEventById } = useAuditStore();
+  const [event, setEvent] = useState<AuditEvent | null>(() => getEventById(id) || null);
+  const [isLoading, setIsLoading] = useState<boolean>(!event);
+  const [error, setError] = useState<string | null>(null);
 
-  if (!event) {
+  const loadEvent = useCallback(async () => {
+    if (!id) return;
+    setIsLoading(true);
+    setError(null);
+    try {
+      const fetched = await fetchEventById(id);
+      if (fetched) {
+        setEvent(fetched);
+      } else {
+        setError(`No audit event record exists with ID "${id}".`);
+      }
+    } catch (err: any) {
+      setError(err?.message || 'Failed to fetch audit event details.');
+    } finally {
+      setIsLoading(false);
+    }
+  }, [id, fetchEventById]);
+
+  useEffect(() => {
+    if (!event) {
+      loadEvent();
+    }
+  }, [event, loadEvent]);
+
+  if (isLoading) {
+    return (
+      <div className="space-y-6">
+        <Link
+          href={ADMIN_ROUTES.AUDIT}
+          className="inline-flex items-center text-xs font-mono text-[#526176] hover:text-[#2563A8] transition-colors"
+        >
+          <ChevronLeft className="h-4 w-4 mr-1" /> Back to Audit Logs
+        </Link>
+        <div className="p-12 rounded-xl bg-white border border-[#C9D4E1] flex flex-col items-center justify-center space-y-3">
+          <div className="h-6 w-6 border-2 border-[#2563A8] border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-mono text-[#526176]">Loading audit event details from server...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !event) {
     return (
       <div className="space-y-6">
         <Link
@@ -53,11 +90,16 @@ export default function AuditEventDetailPage() {
         </Link>
         <EmptyState
           title="Audit Event Not Found"
-          description={`No audit event record exists with ID "${id}".`}
+          description={error || `No audit event record exists with ID "${id}".`}
           action={
-            <Button variant="primary" size="sm" onClick={() => router.push(ADMIN_ROUTES.AUDIT)}>
-              Return to Audit Logs
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button variant="secondary" size="sm" onClick={loadEvent}>
+                Retry
+              </Button>
+              <Button variant="primary" size="sm" onClick={() => router.push(ADMIN_ROUTES.AUDIT)}>
+                Return to Audit Logs
+              </Button>
+            </div>
           }
         />
       </div>
@@ -180,12 +222,12 @@ export default function AuditEventDetailPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
               <div className="p-3 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
                 <span className="text-[#718096] text-[10px] uppercase block">Actor Name</span>
-                <span className="font-bold text-[#17253A] block">{event.actorName}</span>
-                <span className="text-[#526176] text-[11px] block">{event.actorEmail}</span>
+                <span className="font-bold text-[#17253A] block">{event.actorName || 'System Service'}</span>
+                <span className="text-[#526176] text-[11px] block">{event.actorEmail || 'No Email Recorded'}</span>
               </div>
               <div className="p-3 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
                 <span className="text-[#718096] text-[10px] uppercase block">Actor ID</span>
-                <span className="font-bold text-[#2563A8] block">{event.actorId}</span>
+                <span className="font-bold text-[#2563A8] block">{event.actorId || 'system'}</span>
                 <span className="text-[#526176] text-[11px] block">Role: {event.actorRole}</span>
               </div>
             </div>
@@ -198,7 +240,7 @@ export default function AuditEventDetailPage() {
                 </span>
                 <span className="font-semibold text-[#17253A] mt-0.5 block flex items-center gap-1">
                   <Monitor className="h-3.5 w-3.5 text-[#718096]" />
-                  {event.ipAddress || '127.0.0.1 (Internal)'}
+                  {event.ipAddress || 'Not Recorded'}
                 </span>
               </div>
               <div>
@@ -206,7 +248,7 @@ export default function AuditEventDetailPage() {
                   User Agent / Client
                 </span>
                 <span className="font-semibold text-[#526176] mt-0.5 block truncate text-[11px]">
-                  {event.userAgent || 'Juris AI Core Engine / System Task'}
+                  {event.userAgent || 'Not Recorded'}
                 </span>
               </div>
             </div>
@@ -229,11 +271,11 @@ export default function AuditEventDetailPage() {
               )}
             </div>
 
-            {event.resourceType ? (
+            {event.resourceType || event.resourceName ? (
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
                 <div className="p-3 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA]">
                   <span className="text-[#718096] text-[10px] uppercase block">Resource Type</span>
-                  <span className="font-bold text-[#17253A] mt-0.5 block">{event.resourceType}</span>
+                  <span className="font-bold text-[#17253A] mt-0.5 block">{event.resourceType || 'General Resource'}</span>
                 </div>
                 <div className="p-3 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA]">
                   <span className="text-[#718096] text-[10px] uppercase block">Resource ID</span>
@@ -248,7 +290,7 @@ export default function AuditEventDetailPage() {
               </div>
             ) : (
               <p className="text-xs font-mono text-[#718096]">
-                This action is a system-wide or authentication event without a specific target entity resource.
+                This action is a system-wide or platform event without an explicit target resource.
               </p>
             )}
           </div>

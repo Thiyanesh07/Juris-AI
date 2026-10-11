@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useValidationStore } from '@/context/ValidationStoreContext';
 import { ValidationItem, ValidationCategory, ValidationStatus } from '@/lib/types';
-import { ADMIN_ROUTES, ADMIN_DYNAMIC_ROUTES } from '@/constants/routes';
+import { ADMIN_DYNAMIC_ROUTES } from '@/constants/routes';
 import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
 import { FilterBar } from '@/components/shared/FilterBar';
@@ -29,13 +29,14 @@ import {
   MoreVertical,
   CheckSquare,
   Sparkles,
-  GitFork,
   ArrowRight,
+  RefreshCw,
 } from 'lucide-react';
 
 export default function ValidationListPage() {
   const router = useRouter();
   const {
+    validationItems,
     filteredItems,
     searchQuery,
     setSearchQuery,
@@ -50,6 +51,11 @@ export default function ValidationListPage() {
     rejectItem,
     bulkApproveItems,
     metrics,
+    isLoading,
+    error,
+    isSubmitting,
+    submittingIds,
+    refreshValidationItems,
   } = useValidationStore();
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,6 +67,7 @@ export default function ValidationListPage() {
   const [rejectReason, setRejectReason] = useState('');
   const [rejectError, setRejectError] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   const totalPages = Math.ceil(filteredItems.length / pageSize) || 1;
   const paginatedItems = useMemo(() => {
@@ -84,13 +91,18 @@ export default function ValidationListPage() {
     }
   };
 
-  const handleBulkApprove = () => {
-    if (selectedIds.length === 0) return;
-    bulkApproveItems(selectedIds);
-    setSelectedIds([]);
+  const handleBulkApprove = async () => {
+    if (selectedIds.length === 0 || isSubmitting) return;
+    setActionError(null);
+    try {
+      await bulkApproveItems(selectedIds);
+      setSelectedIds([]);
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to bulk approve items.');
+    }
   };
 
-  const handleConfirmReject = () => {
+  const handleConfirmReject = async () => {
     if (!rejectReason.trim()) {
       setRejectError('A rejection note/reason is required for quality audit logging.');
       return;
@@ -98,13 +110,17 @@ export default function ValidationListPage() {
     if (!rejectTarget) return;
 
     setIsProcessing(true);
-    setTimeout(() => {
-      rejectItem(rejectTarget.id, rejectReason);
-      setIsProcessing(false);
+    setRejectError(null);
+    try {
+      await rejectItem(rejectTarget.id, rejectReason);
       setRejectTarget(null);
       setRejectReason('');
       setRejectError(null);
-    }, 300);
+    } catch (err: any) {
+      setRejectError(err?.message || 'Failed to reject item on server.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const getConfidenceBadge = (score: number) => {
@@ -134,6 +150,18 @@ export default function ValidationListPage() {
       <PageHeader
         title="Validation Queue"
         subtitle="Review extracted legal entities, relationships, citations, and metadata before they enter the trusted knowledge layer."
+        actions={
+          <Button
+            variant="secondary"
+            size="sm"
+            onClick={() => refreshValidationItems()}
+            disabled={isLoading}
+            className="text-xs font-mono"
+          >
+            <RefreshCw className={`h-3.5 w-3.5 mr-1.5 ${isLoading ? 'animate-spin' : ''}`} />
+            Refresh
+          </Button>
+        }
       />
 
       {/* Workflow Banner */}
@@ -152,6 +180,22 @@ export default function ValidationListPage() {
           <span className="px-2 py-0.5 rounded bg-[#D0EDDB] text-[#1E6B45] font-bold">Trusted Knowledge Layer</span>
         </div>
       </div>
+
+      {/* Action Error Banner */}
+      {actionError && (
+        <div className="p-4 rounded-xl bg-[#FBE8E8] border border-[#F4B8B8] flex items-center justify-between text-xs font-mono text-[#8B2E2E] animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>{actionError}</span>
+          </div>
+          <button
+            onClick={() => setActionError(null)}
+            className="font-bold hover:underline cursor-pointer"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
 
       {/* Telemetry Summary Cards */}
       <div className="space-y-2">
@@ -259,10 +303,21 @@ export default function ValidationListPage() {
             {selectedIds.length} validation items selected
           </span>
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" onClick={() => setSelectedIds([])}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setSelectedIds([])}
+              disabled={isSubmitting}
+            >
               Deselect All
             </Button>
-            <Button variant="primary" size="sm" onClick={handleBulkApprove}>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={handleBulkApprove}
+              disabled={isSubmitting}
+              isLoading={isSubmitting}
+            >
               <CheckCircle2 className="h-3.5 w-3.5 mr-1" /> Approve Selected ({selectedIds.length})
             </Button>
           </div>
@@ -270,9 +325,34 @@ export default function ValidationListPage() {
       )}
 
       {/* Main Validation Table / Card View */}
-      {filteredItems.length === 0 ? (
+      {isLoading ? (
+        <div className="p-12 rounded-xl bg-white border border-[#C9D4E1] flex flex-col items-center justify-center space-y-3">
+          <div className="h-6 w-6 border-2 border-[#2563A8] border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-mono text-[#526176]">Loading validation items from server...</p>
+        </div>
+      ) : error && validationItems.length === 0 ? (
         <EmptyState
-          title="No validation items found"
+          title="Unable to load validation queue"
+          description={error}
+          action={
+            <Button variant="primary" size="sm" onClick={() => refreshValidationItems()}>
+              Retry Connection
+            </Button>
+          }
+        />
+      ) : validationItems.length === 0 ? (
+        <EmptyState
+          title="Validation queue is empty"
+          description="All extracted entities, relationships, citations, and metadata have been reviewed, or no items are currently queued."
+          action={
+            <Button variant="secondary" size="sm" onClick={() => refreshValidationItems()}>
+              Refresh Queue
+            </Button>
+          }
+        />
+      ) : filteredItems.length === 0 ? (
+        <EmptyState
+          title="No matching validation items"
           description="No records match your search or active filter parameters."
           action={
             <Button variant="secondary" size="sm" onClick={resetFilters}>
@@ -309,91 +389,113 @@ export default function ValidationListPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#D9E1EA]">
-                  {paginatedItems.map((item) => (
-                    <tr
-                      key={item.id}
-                      onClick={() => router.push(ADMIN_DYNAMIC_ROUTES.USER_DETAIL(item.id).replace('/users/', '/validation/'))}
-                      className="hover:bg-[#EFF3F7]/50 transition-colors cursor-pointer"
-                    >
-                      <td className="px-4 py-3.5" onClick={(e) => e.stopPropagation()}>
-                        <input
-                          type="checkbox"
-                          checked={selectedIds.includes(item.id)}
-                          onChange={() => handleToggleSelect(item.id)}
-                          className="rounded border-[#C9D4E1] text-[#2563A8] focus:ring-[#3B82D0] cursor-pointer"
-                        />
-                      </td>
-                      <td className="px-4 py-3.5">
-                        <div className="flex flex-col max-w-xs">
-                          <span className="font-semibold text-[#17253A] text-xs leading-tight truncate">
-                            {item.title}
-                          </span>
-                          <span className="text-[11px] font-mono text-[#718096] truncate mt-0.5">
-                            Label: {item.proposedLabel}
-                          </span>
-                        </div>
-                      </td>
-                      <td className="px-4 py-3.5">
-                        <Badge variant="outline">{item.itemType}</Badge>
-                      </td>
-                      <td className="px-4 py-3.5 text-xs text-[#526176] max-w-[180px] truncate">
-                        <Link
-                          href={ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(item.sourceDocumentId)}
-                          onClick={(e) => e.stopPropagation()}
-                          className="hover:text-[#2563A8] hover:underline flex items-center gap-1"
-                        >
-                          <FileText className="h-3 w-3 text-[#718096] shrink-0" />
-                          <span className="truncate">{item.sourceDocumentTitle}</span>
-                        </Link>
-                      </td>
-                      <td className="px-4 py-3.5 font-mono text-xs">
-                        {getConfidenceBadge(item.confidenceScore)}
-                      </td>
-                      <td className="px-4 py-3.5">{getStatusBadge(item.status)}</td>
-                      <td className="px-4 py-3.5 font-mono text-xs text-[#718096]">
-                        {formatDate(item.createdAt)}
-                      </td>
-                      <td className="px-4 py-3.5 text-right" onClick={(e) => e.stopPropagation()}>
-                        <Dropdown
-                          trigger={
-                            <button className="p-1.5 rounded-lg hover:bg-[#D9E7F5] text-[#526176] transition-colors cursor-pointer">
-                              <MoreVertical className="h-4 w-4" />
-                            </button>
-                          }
-                          items={[
-                            {
-                              id: 'review',
-                              label: 'Review Details',
-                              icon: <Eye className="h-3.5 w-3.5" />,
-                              onClick: () =>
-                                router.push(`/admin/validation/${item.id}`),
-                            },
-                            ...(item.status === 'PENDING'
-                              ? [
-                                  {
-                                    id: 'approve',
-                                    label: 'Quick Approve',
-                                    icon: <CheckCircle2 className="h-3.5 w-3.5 text-[#1E6B45]" />,
-                                    onClick: () => approveItem(item.id),
-                                  },
-                                  {
-                                    id: 'reject',
-                                    label: 'Reject Item',
-                                    icon: <XCircle className="h-3.5 w-3.5 text-[#8B2E2E]" />,
-                                    danger: true,
-                                    onClick: () => {
-                                      setRejectTarget(item);
-                                      setRejectReason('');
-                                      setRejectError(null);
+                  {paginatedItems.map((item) => {
+                    const isItemSubmitting = submittingIds.has(item.id);
+                    return (
+                      <tr
+                        key={item.id}
+                        onClick={() => router.push(ADMIN_DYNAMIC_ROUTES.VALIDATION_ITEM_DETAIL(item.id))}
+                        className="hover:bg-[#EFF3F7]/50 transition-colors cursor-pointer"
+                      >
+                        <td className="px-4 py-3.5" onClick={(e) => e.stopPropagation()}>
+                          <input
+                            type="checkbox"
+                            checked={selectedIds.includes(item.id)}
+                            onChange={() => handleToggleSelect(item.id)}
+                            className="rounded border-[#C9D4E1] text-[#2563A8] focus:ring-[#3B82D0] cursor-pointer"
+                          />
+                        </td>
+                        <td className="px-4 py-3.5">
+                          <div className="flex flex-col max-w-xs">
+                            <span className="font-semibold text-[#17253A] text-xs leading-tight truncate">
+                              {item.title}
+                            </span>
+                            <span className="text-[11px] font-mono text-[#718096] truncate mt-0.5">
+                              Label: {item.proposedLabel}
+                            </span>
+                          </div>
+                        </td>
+                        <td className="px-4 py-3.5">
+                          <Badge variant="outline">{item.itemType}</Badge>
+                        </td>
+                        <td className="px-4 py-3.5 text-xs text-[#526176] max-w-[180px] truncate">
+                          {item.sourceDocumentId ? (
+                            <Link
+                              href={ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(item.sourceDocumentId)}
+                              onClick={(e) => e.stopPropagation()}
+                              className="hover:text-[#2563A8] hover:underline flex items-center gap-1"
+                            >
+                              <FileText className="h-3 w-3 text-[#718096] shrink-0" />
+                              <span className="truncate">{item.sourceDocumentTitle}</span>
+                            </Link>
+                          ) : (
+                            <span className="flex items-center gap-1">
+                              <FileText className="h-3 w-3 text-[#718096] shrink-0" />
+                              <span className="truncate">{item.sourceDocumentTitle}</span>
+                            </span>
+                          )}
+                        </td>
+                        <td className="px-4 py-3.5 font-mono text-xs">
+                          {getConfidenceBadge(item.confidenceScore)}
+                        </td>
+                        <td className="px-4 py-3.5">{getStatusBadge(item.status)}</td>
+                        <td className="px-4 py-3.5 font-mono text-xs text-[#718096]">
+                          {formatDate(item.createdAt)}
+                        </td>
+                        <td className="px-4 py-3.5 text-right" onClick={(e) => e.stopPropagation()}>
+                          <Dropdown
+                            trigger={
+                              <button
+                                disabled={isItemSubmitting}
+                                className="p-1.5 rounded-lg hover:bg-[#D9E7F5] text-[#526176] transition-colors cursor-pointer disabled:opacity-50"
+                              >
+                                <MoreVertical className="h-4 w-4" />
+                              </button>
+                            }
+                            items={[
+                              {
+                                id: 'review',
+                                label: 'Review Details',
+                                icon: <Eye className="h-3.5 w-3.5" />,
+                                onClick: () =>
+                                  router.push(ADMIN_DYNAMIC_ROUTES.VALIDATION_ITEM_DETAIL(item.id)),
+                              },
+                              ...(item.status === 'PENDING'
+                                ? [
+                                    {
+                                      id: 'approve',
+                                      label: isItemSubmitting ? 'Approving...' : 'Quick Approve',
+                                      icon: <CheckCircle2 className="h-3.5 w-3.5 text-[#1E6B45]" />,
+                                      disabled: isItemSubmitting,
+                                      onClick: async () => {
+                                        setActionError(null);
+                                        try {
+                                          await approveItem(item.id);
+                                        } catch (err: any) {
+                                          setActionError(err?.message || 'Failed to approve item.');
+                                        }
+                                      },
                                     },
-                                  },
-                                ]
-                              : []),
-                          ]}
-                        />
-                      </td>
-                    </tr>
-                  ))}
+                                    {
+                                      id: 'reject',
+                                      label: 'Reject Item',
+                                      icon: <XCircle className="h-3.5 w-3.5 text-[#8B2E2E]" />,
+                                      danger: true,
+                                      disabled: isItemSubmitting,
+                                      onClick: () => {
+                                        setRejectTarget(item);
+                                        setRejectReason('');
+                                        setRejectError(null);
+                                      },
+                                    },
+                                  ]
+                                : []),
+                            ]}
+                          />
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -404,7 +506,7 @@ export default function ValidationListPage() {
             {paginatedItems.map((item) => (
               <div
                 key={item.id}
-                onClick={() => router.push(`/admin/validation/${item.id}`)}
+                onClick={() => router.push(ADMIN_DYNAMIC_ROUTES.VALIDATION_ITEM_DETAIL(item.id))}
                 className="p-4 rounded-xl bg-white border border-[#C9D4E1] shadow-xs space-y-3 cursor-pointer hover:border-[#3B82D0] transition-colors"
               >
                 <div className="flex items-center justify-between">

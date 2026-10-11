@@ -29,15 +29,14 @@ import {
   GitFork,
   CheckSquare,
   Lock,
-  ArrowUpDown,
-  Filter,
   Activity,
-  Layers,
+  RefreshCw,
 } from 'lucide-react';
 
 export default function AuditLogsPage() {
   const router = useRouter();
   const {
+    auditEvents,
     filteredEvents,
     searchQuery,
     setSearchQuery,
@@ -54,6 +53,9 @@ export default function AuditLogsPage() {
     resetFilters,
     uniqueActors,
     metrics,
+    isLoading,
+    error,
+    fetchAuditEvents,
   } = useAuditStore();
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -141,6 +143,18 @@ export default function AuditLogsPage() {
       <PageHeader
         title="Audit Logs"
         subtitle="Review administrative activity and system events across the Juris AI platform."
+        actions={
+          <Button
+            variant="secondary"
+            size="sm"
+            onClick={() => fetchAuditEvents()}
+            disabled={isLoading}
+            className="text-xs font-mono"
+          >
+            <RefreshCw className={`h-3.5 w-3.5 mr-1.5 ${isLoading ? 'animate-spin' : ''}`} />
+            Refresh
+          </Button>
+        }
       />
 
       {/* Audit Immutability & Compliance Callout Banner */}
@@ -154,7 +168,7 @@ export default function AuditLogsPage() {
         </div>
         <div className="flex items-center gap-2 text-[#718096]">
           <span className="px-2 py-0.5 rounded bg-[#EFF3F7] text-[#17253A] font-bold">
-            Development Environment Data
+            Live Stream
           </span>
         </div>
       </div>
@@ -163,9 +177,9 @@ export default function AuditLogsPage() {
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <span className="text-xs font-mono font-bold text-[#17253A] uppercase tracking-wider">
-            Audit Activity Telemetry (Mock Environment)
+            Audit Activity Telemetry
           </span>
-          <span className="text-[11px] font-mono text-[#718096]">Development Data Only</span>
+          <span className="text-[11px] font-mono text-[#718096]">Immutable Event Log</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <MetricCard
@@ -184,13 +198,13 @@ export default function AuditLogsPage() {
             label="Failed / Flagged Events"
             value={metrics.failure}
             icon={<XCircle className="h-4 w-4 text-[#8B2E2E]" />}
-            footerText="Failed logins & job errors"
+            footerText="Failed operations & errors"
           />
           <MetricCard
-            label="Recorded Today"
+            label="Recorded (24h)"
             value={metrics.today}
             icon={<Clock className="h-4 w-4" />}
-            footerText="Activity in 24-hour window"
+            footerText="Activity in last 24 hours"
           />
         </div>
       </div>
@@ -276,7 +290,7 @@ export default function AuditLogsPage() {
               className="w-32 bg-white text-xs"
             >
               <option value="ALL">All Time</option>
-              <option value="TODAY">Today</option>
+              <option value="TODAY">Last 24 Hours</option>
               <option value="7DAYS">Last 7 Days</option>
               <option value="30DAYS">Last 30 Days</option>
             </Select>
@@ -298,10 +312,48 @@ export default function AuditLogsPage() {
         }
       />
 
+      {/* Error Banner */}
+      {error && (
+        <div className="p-4 rounded-xl bg-[#FBE8E8] border border-[#F4B8B8] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono animate-in fade-in">
+          <div className="flex items-center gap-2 text-[#8B2E2E]">
+            <AlertTriangle className="h-4 w-4 shrink-0" />
+            <span>Failed to load audit events: {error}</span>
+          </div>
+          <Button variant="secondary" size="sm" onClick={() => fetchAuditEvents()}>
+            Retry
+          </Button>
+        </div>
+      )}
+
       {/* Main Audit List Content */}
-      {filteredEvents.length === 0 ? (
+      {isLoading ? (
+        <div className="p-12 rounded-xl bg-white border border-[#C9D4E1] flex flex-col items-center justify-center space-y-3">
+          <div className="h-6 w-6 border-2 border-[#2563A8] border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-mono text-[#526176]">Loading audit events from server...</p>
+        </div>
+      ) : error && auditEvents.length === 0 ? (
         <EmptyState
-          title="No audit events found"
+          title="Unable to load audit logs"
+          description={error}
+          action={
+            <Button variant="primary" size="sm" onClick={() => fetchAuditEvents()}>
+              Retry Connection
+            </Button>
+          }
+        />
+      ) : auditEvents.length === 0 ? (
+        <EmptyState
+          title="No audit events recorded"
+          description="There are currently no persistent audit log records in the database. Operational events will be recorded here as platform actions occur."
+          action={
+            <Button variant="secondary" size="sm" onClick={() => fetchAuditEvents()}>
+              Refresh
+            </Button>
+          }
+        />
+      ) : filteredEvents.length === 0 ? (
+        <EmptyState
+          title="No matching audit events"
           description="No administrative activity matches your current search or active filters."
           action={
             <Button variant="secondary" size="sm" onClick={resetFilters}>
@@ -342,11 +394,12 @@ export default function AuditLogsPage() {
                         <td className="px-4 py-3.5">
                           <div className="flex items-center gap-2">
                             <div className="h-7 w-7 rounded-full bg-[#D9E7F5] border border-[#B5D3EE] text-[#2563A8] font-mono text-xs font-bold flex items-center justify-center shrink-0">
-                              {evt.actorName
+                              {(evt.actorName || 'A')
                                 .split(' ')
                                 .map((n) => n[0])
                                 .join('')
-                                .substring(0, 2)}
+                                .substring(0, 2)
+                                .toUpperCase()}
                             </div>
                             <div className="flex flex-col max-w-[140px]">
                               <span className="font-semibold text-[#17253A] text-xs truncate">

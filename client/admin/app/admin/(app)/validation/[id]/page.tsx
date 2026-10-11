@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { useValidationStore } from '@/context/ValidationStoreContext';
-import { ValidationCategory, ValidationStatus } from '@/lib/types';
+import { ValidationItem, ValidationCategory, ValidationStatus } from '@/lib/types';
 import { ADMIN_ROUTES, ADMIN_DYNAMIC_ROUTES } from '@/constants/routes';
 import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
@@ -21,15 +21,12 @@ import {
   GitFork,
   ExternalLink,
   Clock,
-  User,
   Sparkles,
   AlertCircle,
   ShieldCheck,
   ArrowRight,
   BookOpen,
   Layers,
-  Scale,
-  MessageSquare,
   HelpCircle,
   History,
 } from 'lucide-react';
@@ -39,16 +36,60 @@ export default function ValidationDetailPage() {
   const router = useRouter();
   const id = params?.id as string;
 
-  const { getItemById, approveItem, rejectItem } = useValidationStore();
-  const item = getItemById(id);
+  const { getItemById, fetchItemById, approveItem, rejectItem } = useValidationStore();
+  const [item, setItem] = useState<ValidationItem | null>(() => getItemById(id) || null);
+  const [isLoading, setIsLoading] = useState<boolean>(!item);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const [reviewerNote, setReviewerNote] = useState('');
   const [rejectError, setRejectError] = useState<string | null>(null);
   const [confirmModal, setConfirmModal] = useState<'APPROVE' | 'REJECT' | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
   const [actionFeedback, setActionFeedback] = useState<string | null>(null);
 
-  if (!item) {
+  const loadItem = useCallback(async () => {
+    if (!id) return;
+    setIsLoading(true);
+    setLoadError(null);
+    try {
+      const fetched = await fetchItemById(id);
+      if (fetched) {
+        setItem(fetched);
+      } else {
+        setLoadError(`No validation record exists with ID "${id}".`);
+      }
+    } catch (err: any) {
+      setLoadError(err?.message || 'Failed to fetch validation item from server.');
+    } finally {
+      setIsLoading(false);
+    }
+  }, [id, fetchItemById]);
+
+  useEffect(() => {
+    if (!item) {
+      loadItem();
+    }
+  }, [item, loadItem]);
+
+  if (isLoading) {
+    return (
+      <div className="space-y-6">
+        <Link
+          href={ADMIN_ROUTES.VALIDATION}
+          className="inline-flex items-center text-xs font-mono text-[#526176] hover:text-[#2563A8] transition-colors"
+        >
+          <ChevronLeft className="h-4 w-4 mr-1" /> Back to Validation Queue
+        </Link>
+        <div className="p-12 rounded-xl bg-white border border-[#C9D4E1] flex flex-col items-center justify-center space-y-3">
+          <div className="h-6 w-6 border-2 border-[#2563A8] border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-mono text-[#526176]">Loading validation item from server...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (loadError || !item) {
     return (
       <div className="space-y-6">
         <Link
@@ -59,40 +100,77 @@ export default function ValidationDetailPage() {
         </Link>
         <EmptyState
           title="Validation Item Not Found"
-          description={`No validation record exists with ID "${id}".`}
+          description={loadError || `No validation record exists with ID "${id}".`}
           action={
-            <Button variant="primary" size="sm" onClick={() => router.push(ADMIN_ROUTES.VALIDATION)}>
-              Return to Validation Queue
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button variant="secondary" size="sm" onClick={loadItem}>
+                Retry
+              </Button>
+              <Button variant="primary" size="sm" onClick={() => router.push(ADMIN_ROUTES.VALIDATION)}>
+                Return to Validation Queue
+              </Button>
+            </div>
           }
         />
       </div>
     );
   }
 
-  const handleApprove = () => {
+  const handleApprove = async () => {
+    if (!item || isSubmitting) return;
     setIsSubmitting(true);
-    setTimeout(() => {
-      approveItem(item.id, reviewerNote);
-      setIsSubmitting(false);
+    setActionError(null);
+    try {
+      await approveItem(item.id, reviewerNote);
+      setItem((prev) =>
+        prev
+          ? {
+              ...prev,
+              status: 'APPROVED',
+              reviewedBy: 'Current Administrator',
+              reviewedAt: new Date().toISOString(),
+              reviewNote: reviewerNote || prev.reviewNote,
+            }
+          : prev
+      );
       setConfirmModal(null);
       setActionFeedback('Validation item successfully approved into the Trusted Knowledge Layer.');
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to approve validation item on server.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleReject = () => {
+  const handleReject = async () => {
+    if (!item || isSubmitting) return;
     if (!reviewerNote.trim()) {
       setRejectError('A reviewer note/reason is required for rejection quality logging.');
       return;
     }
     setIsSubmitting(true);
-    setTimeout(() => {
-      rejectItem(item.id, reviewerNote);
-      setIsSubmitting(false);
+    setActionError(null);
+    try {
+      await rejectItem(item.id, reviewerNote);
+      setItem((prev) =>
+        prev
+          ? {
+              ...prev,
+              status: 'REJECTED',
+              reviewedBy: 'Current Administrator',
+              reviewedAt: new Date().toISOString(),
+              reviewNote: reviewerNote.trim(),
+            }
+          : prev
+      );
       setConfirmModal(null);
       setRejectError(null);
       setActionFeedback('Validation item successfully rejected and flagged in quality logs.');
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to reject validation item on server.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const openRejectDialog = () => {
@@ -135,6 +213,22 @@ export default function ValidationDetailPage() {
         <span className="text-xs font-mono text-[#718096]">ID: {item.id}</span>
       </div>
 
+      {/* Action Error Banner */}
+      {actionError && (
+        <div className="p-4 rounded-xl bg-[#FBE8E8] border border-[#F4B8B8] text-[#8B2E2E] text-xs font-mono flex items-center justify-between animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>{actionError}</span>
+          </div>
+          <button
+            onClick={() => setActionError(null)}
+            className="text-[#8B2E2E] font-bold hover:underline cursor-pointer"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
       {/* Action Feedback Banner */}
       {actionFeedback && (
         <div className="p-4 rounded-xl bg-[#D0EDDB] border border-[#A1DBB7] text-[#1E6B45] text-xs font-mono flex items-center justify-between animate-in fade-in">
@@ -174,12 +268,14 @@ export default function ValidationDetailPage() {
                 <FileText className="h-4 w-4 text-[#2563A8]" />
                 <h3 className="text-sm font-bold text-[#17253A]">Source Document & Context</h3>
               </div>
-              <Link
-                href={ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(item.sourceDocumentId)}
-                className="inline-flex items-center text-xs font-mono text-[#2563A8] hover:underline"
-              >
-                View Source Document <ExternalLink className="h-3 w-3 ml-1" />
-              </Link>
+              {item.sourceDocumentId && (
+                <Link
+                  href={ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(item.sourceDocumentId)}
+                  className="inline-flex items-center text-xs font-mono text-[#2563A8] hover:underline"
+                >
+                  View Source Document <ExternalLink className="h-3 w-3 ml-1" />
+                </Link>
+              )}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
@@ -208,10 +304,10 @@ export default function ValidationDetailPage() {
                 Extracted Source Evidence
               </span>
               <div className="p-3.5 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA] text-xs font-mono text-[#17253A] leading-relaxed italic relative">
-                "{item.sourceTextSnippet}"
+                "{item.sourceTextSnippet || 'No evidence excerpt provided.'}"
               </div>
               <p className="text-[11px] font-mono text-[#718096]">
-                Note: Mock evidence excerpt provided for human verification of NLP extraction accuracy.
+                Extracted evidence text from source document for human verification.
               </p>
             </div>
           </div>
@@ -312,7 +408,7 @@ export default function ValidationDetailPage() {
 
             <div className="p-4 rounded-xl bg-[#17253A] text-white space-y-3 font-mono text-xs">
               <div className="flex items-center justify-between text-[#A0AEC0] text-[11px]">
-                <span>MOCK GRAPH NODE PREVIEW</span>
+                <span>GRAPH NODE PREVIEW</span>
                 <span>Neo4j Visualization Ready</span>
               </div>
               <div className="flex items-center justify-center py-4 border border-dashed border-[#526176] rounded-lg bg-[#0F172A]">
@@ -433,10 +529,16 @@ export default function ValidationDetailPage() {
                   variant="primary"
                   className="flex-1 bg-[#1E6B45] hover:bg-[#154B30] text-white"
                   onClick={() => setConfirmModal('APPROVE')}
+                  disabled={isSubmitting}
                 >
                   <CheckCircle2 className="h-4 w-4 mr-1.5" /> Approve Item
                 </Button>
-                <Button variant="destructive" className="flex-1" onClick={openRejectDialog}>
+                <Button
+                  variant="destructive"
+                  className="flex-1"
+                  onClick={openRejectDialog}
+                  disabled={isSubmitting}
+                >
                   <XCircle className="h-4 w-4 mr-1.5" /> Reject Item
                 </Button>
               </div>
@@ -532,7 +634,12 @@ export default function ValidationDetailPage() {
                 Cancel
               </Button>
               {confirmModal === 'APPROVE' ? (
-                <Button variant="primary" onClick={handleApprove} isLoading={isSubmitting} className="bg-[#1E6B45] hover:bg-[#154B30]">
+                <Button
+                  variant="primary"
+                  onClick={handleApprove}
+                  isLoading={isSubmitting}
+                  className="bg-[#1E6B45] hover:bg-[#154B30]"
+                >
                   Confirm Approval
                 </Button>
               ) : (
