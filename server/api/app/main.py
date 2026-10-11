@@ -15,17 +15,41 @@ from app.api.routes.history import router as history_router
 from app.api.routes.qa import router as qa_router
 from app.api.routes.retrieval import router as retrieval_router
 from app.api.routes.saved_research import router as saved_research_router
+from contextlib import asynccontextmanager
+import logging
+
 from app.api.routes.settings import router as settings_router
 from app.api.routes.validation import router as validation_router
 from app.core.config import get_settings
 
+logger = logging.getLogger(__name__)
 settings = get_settings()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Application lifespan managing dynamic settings initialization and cleanup."""
+    try:
+        from app.db.session import session_factory
+        from app.core.dynamic_settings import load_persisted_settings
+
+        async with session_factory() as session:
+            await load_persisted_settings(session)
+    except Exception as exc:
+        logger.warning(
+            "Could not load persisted system settings at startup (%s). Using environment defaults.",
+            exc,
+        )
+    yield
+
 
 app = FastAPI(
     title="Juris AI LegalGraph API",
     description="Indian legal research platform powered by GraphRAG and hybrid search.",
     version="0.6.1",
+    lifespan=lifespan,
 )
+
 
 extra_origins_str = getattr(settings, "extra_cors_origins", "") or ""
 frontend_url_str = getattr(settings, "frontend_url", "http://localhost:5173") or ""

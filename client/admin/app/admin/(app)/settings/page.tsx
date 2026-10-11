@@ -43,7 +43,9 @@ export default function SettingsPage() {
     resetSection,
     resetAllSettings,
     feedbackMessage,
+    errorMessage,
     clearFeedback,
+    isSaving,
   } = useSettingsStore();
 
   const activeSection: SettingsSectionData = sections[activeSectionId] || sections.general;
@@ -54,10 +56,12 @@ export default function SettingsPage() {
   const currentUserRole = MOCK_ADMIN_USER.role;
   const userIsSuperAdmin = isSuperAdmin(currentUserRole);
 
-  const handleSaveActiveSection = () => {
-    saveChanges(activeSectionId);
-    setSaveSuccessToast(`Saved changes for ${activeSection.title}.`);
-    setTimeout(() => setSaveSuccessToast(null), 4000);
+  const handleSaveActiveSection = async () => {
+    const success = await saveChanges(activeSectionId);
+    if (success) {
+      setSaveSuccessToast(`Saved changes for ${activeSection.title}.`);
+      setTimeout(() => setSaveSuccessToast(null), 4000);
+    }
   };
 
   const handleConfirmReset = () => {
@@ -109,14 +113,30 @@ export default function SettingsPage() {
             <Button
               variant="primary"
               size="sm"
-              disabled={!isDirty}
+              disabled={!isDirty || isSaving}
               onClick={() => saveChanges()}
             >
-              <Save className="h-3.5 w-3.5 mr-1" /> Save Changes
+              <Save className="h-3.5 w-3.5 mr-1" /> {isSaving ? 'Saving...' : 'Save Changes'}
             </Button>
           </div>
         }
       />
+
+      {/* Global Error Banner */}
+      {errorMessage && (
+        <div className="p-4 rounded-xl bg-[#FCE8E8] border border-[#F5B5B5] text-[#8B2E2E] text-xs font-mono flex items-center justify-between animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <AlertTriangle className="h-4 w-4 shrink-0 text-[#8B2E2E]" />
+            <span>{errorMessage}</span>
+          </div>
+          <button
+            onClick={clearFeedback}
+            className="text-[#8B2E2E] hover:text-[#5C1D1D] font-bold cursor-pointer"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+      )}
 
       {/* Global Feedback Banner */}
       {(feedbackMessage || saveSuccessToast) && (
@@ -259,9 +279,9 @@ export default function SettingsPage() {
                   variant="primary"
                   size="sm"
                   onClick={handleSaveActiveSection}
-                  disabled={!unsavedSectionIds.includes(activeSectionId)}
+                  disabled={!unsavedSectionIds.includes(activeSectionId) || isSaving}
                 >
-                  <Save className="h-3.5 w-3.5 mr-1" /> Save Section
+                  <Save className="h-3.5 w-3.5 mr-1" /> {isSaving ? 'Saving...' : 'Save Section'}
                 </Button>
               </div>
             </div>

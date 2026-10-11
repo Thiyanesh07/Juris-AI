@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "npx tsx --test tests/phase1_audit_validation.test.mjs"
+    "test": "npx tsx --test tests/phase1_audit_validation.test.mjs tests/phase2_settings_mapping.test.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

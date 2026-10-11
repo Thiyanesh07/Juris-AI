@@ -107,6 +107,7 @@ class Settings(BaseSettings):
     embedding_device: str = "auto"
     embedding_batch_size: int = 16
     embedding_max_tokens: int = 512
+    inlegalbert_backend: str = "onnx"
     vector_index_name: str = "legal_chunks"
     retrieval_default_top_k: int = 5
     retrieval_max_top_k: int = 25
@@ -188,9 +189,16 @@ class Settings(BaseSettings):
 
 
 @lru_cache
-def get_settings() -> Settings:
-    """Return the cached settings instance."""
+def _get_base_settings() -> Settings:
+    """Return the cached base environment settings instance."""
     return Settings()
+
+
+def get_settings() -> Settings:
+    """Return the active settings instance with validated dynamic runtime overrides applied."""
+    from app.core.dynamic_settings import get_runtime_settings
+
+    return get_runtime_settings(_get_base_settings())
 
 
 def get_data_dir() -> Path:

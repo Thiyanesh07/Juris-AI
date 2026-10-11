@@ -1,7 +1,13 @@
 'use client';
 
 import React, { createContext, useContext, useState, useMemo, useEffect, useCallback } from 'react';
-import { INITIAL_MOCK_SETTINGS, SettingsSectionData } from '@/data/settings';
+import {
+  INITIAL_MOCK_SETTINGS,
+  SettingsSectionData,
+  FRONTEND_TO_BACKEND_SECTION_MAP,
+  buildBackendConfigPayload,
+  hydrateSectionsFromBackend,
+} from '@/data/settings';
 import { apiClient } from '@/lib/apiClient';
 
 interface SettingsStoreContextType {
@@ -11,13 +17,16 @@ interface SettingsStoreContextType {
   updateSettingValue: (sectionId: string, key: string, value: any) => void;
   isDirty: boolean;
   unsavedSectionIds: string[];
-  saveChanges: (sectionId?: string) => void;
+  saveChanges: (sectionId?: string) => Promise<boolean>;
   resetSection: (sectionId: string) => void;
   resetAllSettings: () => void;
   savedBaseline: Record<string, SettingsSectionData>;
   feedbackMessage: string | null;
+  errorMessage: string | null;
   clearFeedback: () => void;
   isLoading: boolean;
+  isSaving: boolean;
+  fetchSettings: () => Promise<void>;
 }
 
 const SettingsStoreContext = createContext<SettingsStoreContextType | undefined>(undefined);
@@ -27,48 +36,21 @@ export const SettingsStoreProvider: React.FC<{ children: React.ReactNode }> = ({
   const [savedBaseline, setSavedBaseline] = useState<Record<string, SettingsSectionData>>(INITIAL_MOCK_SETTINGS);
   const [activeSectionId, setActiveSectionId] = useState<string>('general');
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isSaving, setIsSaving] = useState<boolean>(false);
 
   const fetchSettings = useCallback(async () => {
     setIsLoading(true);
+    setErrorMessage(null);
     try {
       const res = await apiClient.get<{ sections: Record<string, Record<string, any>> }>('/settings');
       if (res && res.sections) {
-        // Merge backend values into frontend section data definitions
-        setSections((prev) => {
-          const next = JSON.parse(JSON.stringify(prev));
-          Object.keys(res.sections).forEach((secKey) => {
-            const frontendKey = secKey.toLowerCase();
-            const backendValues = res.sections[secKey];
-            if (next[frontendKey] && backendValues) {
-              Object.keys(backendValues).forEach((settingKey) => {
-                if (next[frontendKey].settings[settingKey]) {
-                  next[frontendKey].settings[settingKey].value = backendValues[settingKey];
-                }
-              });
-            }
-          });
-          return next;
-        });
-
-        setSavedBaseline((prev) => {
-          const next = JSON.parse(JSON.stringify(prev));
-          Object.keys(res.sections).forEach((secKey) => {
-            const frontendKey = secKey.toLowerCase();
-            const backendValues = res.sections[secKey];
-            if (next[frontendKey] && backendValues) {
-              Object.keys(backendValues).forEach((settingKey) => {
-                if (next[frontendKey].settings[settingKey]) {
-                  next[frontendKey].settings[settingKey].value = backendValues[settingKey];
-                }
-              });
-            }
-          });
-          return next;
-        });
+        setSections((prev) => hydrateSectionsFromBackend(prev, res.sections));
+        setSavedBaseline((prev) => hydrateSectionsFromBackend(prev, res.sections));
       }
-    } catch {
-      // Keep baseline
+    } catch (err: any) {
+      setErrorMessage(`Failed to load system settings from server: ${err?.message || 'Server unreachable'}`);
     } finally {
       setIsLoading(false);
     }
@@ -121,28 +103,54 @@ export const SettingsStoreProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const isDirty = unsavedSectionIds.length > 0;
 
-  const saveChanges = (sectionId?: string) => {
-    const targetSection = sectionId || activeSectionId;
-    const currentSec = sections[targetSection];
-    if (!currentSec) return;
+  const saveChanges = async (sectionId?: string): Promise<boolean> => {
+    const targets = sectionId ? [sectionId] : (unsavedSectionIds.length > 0 ? unsavedSectionIds : [activeSectionId]);
+    setIsSaving(true);
+    setErrorMessage(null);
+    let allSucceeded = true;
+    const succeededSections: string[] = [];
+    const failedSections: string[] = [];
 
-    // Convert section settings object to plain key-value map for backend
-    const configMap: Record<string, any> = {};
-    Object.keys(currentSec.settings).forEach((key) => {
-      configMap[key] = currentSec.settings[key].value;
-    });
+    for (const targetSection of targets) {
+      const currentSec = sections[targetSection];
+      if (!currentSec) continue;
 
-    const backendSectionName = targetSection.toUpperCase();
-    apiClient.put(`/settings/${backendSectionName}`, { config: configMap }).catch(() => {});
+      const backendSectionName = FRONTEND_TO_BACKEND_SECTION_MAP[targetSection] || targetSection.toUpperCase();
+      const configMap = buildBackendConfigPayload(targetSection, currentSec);
 
-    setSavedBaseline((prev) => ({
-      ...prev,
-      [targetSection]: JSON.parse(JSON.stringify(sections[targetSection])),
-    }));
+      try {
+        const res = await apiClient.put<{ section: string; config: Record<string, any> }>(
+          `/settings/${backendSectionName}`,
+          { config: configMap }
+        );
 
-    setFeedbackMessage(
-      `Settings for "${currentSec.title}" successfully saved and persisted to backend.`
-    );
+        if (!res || !res.section) {
+          throw new Error('Server returned an empty or invalid response');
+        }
+
+        // Commit saved baseline only on server confirmation
+        setSavedBaseline((prev) => ({
+          ...prev,
+          [targetSection]: JSON.parse(JSON.stringify(sections[targetSection])),
+        }));
+        succeededSections.push(currentSec.title);
+      } catch (err: any) {
+        allSucceeded = false;
+        const msg = err?.message || 'Server save rejected';
+        failedSections.push(`${currentSec.title} (${msg})`);
+      }
+    }
+
+    if (failedSections.length > 0) {
+      setErrorMessage(`Failed to save settings for: ${failedSections.join(', ')}`);
+    } else if (succeededSections.length > 0) {
+      setFeedbackMessage(
+        `Settings for ${succeededSections.join(', ')} successfully saved and persisted to backend.`
+      );
+    }
+
+    setIsSaving(false);
+    return allSucceeded;
   };
 
   const resetSection = (sectionId: string) => {
@@ -174,7 +182,10 @@ export const SettingsStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     setFeedbackMessage('All platform settings reset to defaults.');
   };
 
-  const clearFeedback = () => setFeedbackMessage(null);
+  const clearFeedback = () => {
+    setFeedbackMessage(null);
+    setErrorMessage(null);
+  };
 
   return (
     <SettingsStoreContext.Provider
@@ -190,8 +201,11 @@ export const SettingsStoreProvider: React.FC<{ children: React.ReactNode }> = ({
         resetAllSettings,
         savedBaseline,
         feedbackMessage,
+        errorMessage,
         clearFeedback,
         isLoading,
+        isSaving,
+        fetchSettings,
       }}
     >
       {children}

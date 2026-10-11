@@ -130,10 +130,12 @@ export const INITIAL_MOCK_SETTINGS: Record<string, SettingsSectionData> = {
         label: 'LLM Provider Engine',
         description: 'Primary model provider for multi-hop legal query synthesis.',
         type: 'select',
-        value: 'OPENAI',
-        defaultValue: 'OPENAI',
+        value: 'google_genai',
+        defaultValue: 'google_genai',
         options: [
-          { label: 'OpenAI (GPT-4o / GPT-4 Turbo)', value: 'OPENAI' },
+          { label: 'Google GenAI (Gemini 2.5 Flash)', value: 'google_genai' },
+          { label: 'OpenAI Compatible (HTTP API)', value: 'openai_compatible' },
+          { label: 'OpenAI (GPT-4o)', value: 'OPENAI' },
           { label: 'Anthropic (Claude 3.5 Sonnet)', value: 'ANTHROPIC' },
           { label: 'Azure OpenAI Enterprise', value: 'AZURE_OPENAI' },
         ],
@@ -143,9 +145,11 @@ export const INITIAL_MOCK_SETTINGS: Record<string, SettingsSectionData> = {
         label: 'Model Name',
         description: 'Specific model checkpoint requested during reasoning calls.',
         type: 'select',
-        value: 'gpt-4o-2024-08-06',
-        defaultValue: 'gpt-4o-2024-08-06',
+        value: 'gemini-2.5-flash',
+        defaultValue: 'gemini-2.5-flash',
         options: [
+          { label: 'gemini-2.5-flash (Google GenAI Default)', value: 'gemini-2.5-flash' },
+          { label: 'gpt-4o-mini (OpenAI Fast)', value: 'gpt-4o-mini' },
           { label: 'gpt-4o-2024-08-06 (Recommended for Legal GraphRAG)', value: 'gpt-4o-2024-08-06' },
           { label: 'claude-3-5-sonnet-20240620', value: 'claude-3-5-sonnet-20240620' },
           { label: 'gpt-4-turbo-preview', value: 'gpt-4-turbo-preview' },
@@ -156,8 +160,8 @@ export const INITIAL_MOCK_SETTINGS: Record<string, SettingsSectionData> = {
         label: 'Reasoning Temperature',
         description: 'Sampling temperature. Lower values yield deterministic, citation-strict responses.',
         type: 'slider',
-        value: 0.1,
-        defaultValue: 0.1,
+        value: 0.2,
+        defaultValue: 0.2,
         min: 0.0,
         max: 1.0,
         step: 0.05,
@@ -222,10 +226,11 @@ export const INITIAL_MOCK_SETTINGS: Record<string, SettingsSectionData> = {
         label: 'Embedding Model Architecture',
         description: 'Domain-adapted Transformer model trained on Indian Legal Corpus.',
         type: 'select',
-        value: 'InLegalBERT',
-        defaultValue: 'InLegalBERT',
+        value: 'law-ai/InLegalBERT',
+        defaultValue: 'law-ai/InLegalBERT',
         options: [
-          { label: 'InLegalBERT (Law-adapted BERT for India)', value: 'InLegalBERT' },
+          { label: 'law-ai/InLegalBERT (Law-adapted BERT for India)', value: 'law-ai/InLegalBERT' },
+          { label: 'InLegalBERT (Local alias)', value: 'InLegalBERT' },
           { label: 'text-embedding-3-large (OpenAI 3072d)', value: 'text-embedding-3-large' },
           { label: 'Legal-RoBERTa-Base', value: 'Legal-RoBERTa-Base' },
         ],
@@ -569,3 +574,328 @@ export const INITIAL_MOCK_SETTINGS: Record<string, SettingsSectionData> = {
     },
   },
 };
+
+// ── Phase 2 Backend-Frontend Section Mapping ──────────────────────────────
+export const FRONTEND_TO_BACKEND_SECTION_MAP: Record<string, string> = {
+  general: 'GENERAL',
+  ai: 'AI_LLM',
+  embeddings: 'EMBEDDINGS',
+  retrieval: 'RETRIEVAL',
+  ingestion: 'INGESTION',
+  graph: 'KNOWLEDGE_GRAPH',
+  security: 'SECURITY',
+};
+
+export const BACKEND_TO_FRONTEND_SECTION_MAP: Record<string, string> = {
+  GENERAL: 'general',
+  AI_LLM: 'ai',
+  EMBEDDINGS: 'embeddings',
+  RETRIEVAL: 'retrieval',
+  INGESTION: 'ingestion',
+  KNOWLEDGE_GRAPH: 'graph',
+  SECURITY: 'security',
+};
+
+export interface SectionFieldMapping {
+  uiToBackend: Record<string, string>;
+  backendToUi: Record<string, string>;
+}
+
+// ── Explicit, Reversible Field-Name Mappings ─────────────────────────────
+// Derived directly from server/api/app/api/routes/settings.py (_DEFAULT_SETTINGS)
+// and app/core/config.py (Settings schema).
+export const SECTION_FIELD_MAPPINGS: Record<string, SectionFieldMapping> = {
+  GENERAL: {
+    uiToBackend: {
+      platformName: 'platform_name',
+      maintenanceMode: 'maintenance_mode',
+      maxQueryLength: 'max_query_length',
+      supportEmail: 'support_email',
+      environment: 'environment',
+      platformVersion: 'platform_version',
+      defaultLanguage: 'default_language',
+      defaultJurisdiction: 'default_jurisdiction',
+      timezone: 'timezone',
+      dateFormat: 'date_format',
+      researchMode: 'research_mode',
+    },
+    backendToUi: {
+      platform_name: 'platformName',
+      maintenance_mode: 'maintenanceMode',
+      max_query_length: 'maxQueryLength',
+      support_email: 'supportEmail',
+      environment: 'environment',
+      platform_version: 'platformVersion',
+      default_language: 'defaultLanguage',
+      default_jurisdiction: 'defaultJurisdiction',
+      timezone: 'timezone',
+      date_format: 'dateFormat',
+      research_mode: 'researchMode',
+    },
+  },
+  AI_LLM: {
+    uiToBackend: {
+      provider: 'provider',
+      model: 'model',
+      temperature: 'temperature',
+      maxOutputTokens: 'max_output_tokens',
+      timeout: 'llm_timeout_seconds',
+      apiKey: 'api_key',
+    },
+    backendToUi: {
+      provider: 'provider',
+      model: 'model',
+      temperature: 'temperature',
+      max_output_tokens: 'maxOutputTokens',
+      llm_timeout_seconds: 'timeout',
+      api_key: 'apiKey',
+    },
+  },
+  EMBEDDINGS: {
+    uiToBackend: {
+      provider: 'provider',
+      model: 'model_name',
+      dimension: 'embedding_dim',
+      pooling: 'pooling',
+      device: 'device',
+      batchSize: 'batch_size',
+      chunkEmbeddingBatch: 'chunk_embedding_batch',
+    },
+    backendToUi: {
+      provider: 'provider',
+      model_name: 'model',
+      embedding_dim: 'dimension',
+      pooling: 'pooling',
+      device: 'device',
+      batch_size: 'batchSize',
+      chunk_embedding_batch: 'chunkEmbeddingBatch',
+    },
+  },
+  RETRIEVAL: {
+    uiToBackend: {
+      vectorTopK: 'default_top_k',
+      hybridWeight: 'dense_weight',
+      graphWeight: 'graph_weight',
+      fusionAlgorithm: 'fusion_algorithm',
+      graphDepth: 'graph_depth',
+      graphCandidateLimit: 'graph_candidate_limit',
+      minEvidenceScore: 'min_evidence_score',
+      citationRequirement: 'citation_requirement',
+    },
+    backendToUi: {
+      default_top_k: 'vectorTopK',
+      dense_weight: 'hybridWeight',
+      graph_weight: 'graphWeight',
+      fusion_algorithm: 'fusionAlgorithm',
+      graph_depth: 'graphDepth',
+      graph_candidate_limit: 'graphCandidateLimit',
+      min_evidence_score: 'minEvidenceScore',
+      citation_requirement: 'citationRequirement',
+    },
+  },
+  INGESTION: {
+    uiToBackend: {
+      chunkSize: 'chunk_size',
+      chunkOverlap: 'chunk_overlap',
+      enableOcrFallback: 'enable_ocr_fallback',
+      maxFileSizeMb: 'max_file_size_mb',
+      batchSize: 'batch_size',
+      retryAttempts: 'retry_attempts',
+      processingTimeoutMin: 'processing_timeout_min',
+    },
+    backendToUi: {
+      chunk_size: 'chunkSize',
+      chunk_overlap: 'chunkOverlap',
+      enable_ocr_fallback: 'enableOcrFallback',
+      max_file_size_mb: 'maxFileSizeMb',
+      batch_size: 'batchSize',
+      retry_attempts: 'retryAttempts',
+      processing_timeout_min: 'processingTimeoutMin',
+    },
+  },
+  KNOWLEDGE_GRAPH: {
+    uiToBackend: {
+      connectionUri: 'neo4j_uri',
+      database: 'neo4j_database',
+      defaultTraversalDepth: 'default_traversal_depth',
+      maxTraversalDepth: 'max_traversal_depth',
+      provider: 'provider',
+      connectionStatus: 'connection_status',
+    },
+    backendToUi: {
+      neo4j_uri: 'connectionUri',
+      neo4j_database: 'database',
+      default_traversal_depth: 'defaultTraversalDepth',
+      max_traversal_depth: 'maxTraversalDepth',
+      provider: 'provider',
+      connection_status: 'connectionStatus',
+    },
+  },
+  SECURITY: {
+    uiToBackend: {
+      sessionTimeoutMin: 'session_timeout_min',
+      sessionTtlHours: 'session_ttl_hours',
+      requireMfa: 'require_mfa',
+      loginAttemptLimit: 'max_login_attempts',
+      passwordPolicy: 'password_policy',
+      auditLoggingEnabled: 'audit_logging_enabled',
+      auditRetentionDays: 'audit_retention_days',
+    },
+    backendToUi: {
+      session_timeout_min: 'sessionTimeoutMin',
+      session_ttl_hours: 'sessionTtlHours',
+      require_mfa: 'requireMfa',
+      max_login_attempts: 'loginAttemptLimit',
+      password_policy: 'passwordPolicy',
+      audit_logging_enabled: 'auditLoggingEnabled',
+      audit_retention_days: 'auditRetentionDays',
+    },
+  },
+};
+
+/** Get the corresponding backend key name for a given frontend UI key. */
+export function getBackendKey(section: string, uiKey: string): string {
+  const secUpper = section.toUpperCase();
+  const mapping = SECTION_FIELD_MAPPINGS[secUpper]?.uiToBackend;
+  if (mapping && mapping[uiKey]) {
+    return mapping[uiKey];
+  }
+  // Generic reversible fallback: camelCase -> snake_case
+  return uiKey.replace(/([A-Z])/g, '_$1').toLowerCase();
+}
+
+/** Get the corresponding frontend UI key name for a given backend key. */
+export function getUiKey(section: string, backendKey: string): string {
+  const secUpper = section.toUpperCase();
+  const mapping = SECTION_FIELD_MAPPINGS[secUpper]?.backendToUi;
+  if (mapping && mapping[backendKey]) {
+    return mapping[backendKey];
+  }
+  // Generic reversible fallback: snake_case -> camelCase
+  return backendKey.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+}
+
+/**
+ * Returns true if a value represents a masked credential placeholder.
+ * Prevents masked strings from overwriting real server credentials on save.
+ */
+export function isMaskedSecret(value: any): boolean {
+  if (typeof value !== 'string') return false;
+  const trimmed = value.trim();
+  if (!trimmed) return false;
+  // All asterisks or bullet points (e.g., '********', '••••••••')
+  if (/^(\*|•)+$/.test(trimmed)) return true;
+  // Partial-mask pattern returned by backend (e.g., 'val...****', 'sk-...****')
+  if (/^.{0,6}\.\.\.\*+$/.test(trimmed)) return true;
+  // Contains bullet mask sequences
+  if (trimmed.includes('••••')) return true;
+  return false;
+}
+
+/** Transform setting value from UI format to backend payload format. */
+export function transformValueToBackend(section: string, uiKey: string, value: any): any {
+  const secUpper = section.toUpperCase();
+  if (secUpper === 'RETRIEVAL' && uiKey === 'hybridWeight') {
+    const num = Number(value);
+    return isNaN(num) ? value : num;
+  }
+  if (secUpper === 'SECURITY' && uiKey === 'sessionTimeoutMin') {
+    const num = Number(value);
+    return isNaN(num) ? value : num;
+  }
+  return value;
+}
+
+/** Transform setting value from backend response format to UI format. */
+export function transformValueToUi(section: string, backendKey: string, value: any): any {
+  const secUpper = section.toUpperCase();
+  if (secUpper === 'SECURITY' && backendKey === 'session_ttl_hours') {
+    const hours = Number(value);
+    if (!isNaN(hours) && hours > 0) {
+      // Convert hours to minutes bounded by UI limits [5, 480]
+      return Math.min(480, Math.max(5, hours * 60));
+    }
+  }
+  if (secUpper === 'RETRIEVAL' && (backendKey === 'dense_weight' || backendKey === 'default_top_k')) {
+    const num = Number(value);
+    return isNaN(num) ? value : num;
+  }
+  return value;
+}
+
+/**
+ * Build the backend config payload for a given section, excluding masked secrets
+ * and ensuring coupled configuration constraints (such as hybrid vector/graph weights).
+ */
+export function buildBackendConfigPayload(
+  sectionId: string,
+  sectionData: SettingsSectionData
+): Record<string, any> {
+  const backendSectionName = FRONTEND_TO_BACKEND_SECTION_MAP[sectionId] || sectionId.toUpperCase();
+  const configMap: Record<string, any> = {};
+
+  Object.keys(sectionData.settings).forEach((uiKey) => {
+    const def = sectionData.settings[uiKey];
+
+    // Prevent masked secrets (e.g. ********, ••••) from overwriting stored credentials
+    if ((def.isSecret || def.type === 'masked') && isMaskedSecret(def.value)) {
+      return;
+    }
+
+    const backendKey = getBackendKey(backendSectionName, uiKey);
+    const backendVal = transformValueToBackend(backendSectionName, uiKey, def.value);
+    configMap[backendKey] = backendVal;
+
+    // Coupled settings requirements
+    if (backendSectionName === 'RETRIEVAL' && uiKey === 'hybridWeight') {
+      configMap['graph_weight'] = Math.round((1 - Number(def.value)) * 100) / 100;
+    }
+    if (backendSectionName === 'SECURITY' && uiKey === 'sessionTimeoutMin') {
+      configMap['session_ttl_hours'] = Math.round(Number(def.value) / 60) || 1;
+    }
+  });
+
+  return configMap;
+}
+
+/**
+ * Hydrates frontend settings definitions from GET /settings response payload.
+ * Accurately translates section names (e.g. AI_LLM -> ai) and field keys.
+ */
+export function hydrateSectionsFromBackend(
+  currentSections: Record<string, SettingsSectionData>,
+  backendSections: Record<string, Record<string, any>>
+): Record<string, SettingsSectionData> {
+  const next: Record<string, SettingsSectionData> = JSON.parse(JSON.stringify(currentSections));
+
+  Object.keys(backendSections).forEach((backendSecName) => {
+    const frontendSecId = BACKEND_TO_FRONTEND_SECTION_MAP[backendSecName] || backendSecName.toLowerCase();
+    const currentSec = next[frontendSecId];
+    const backendConfig = backendSections[backendSecName];
+
+    if (!currentSec || !backendConfig) return;
+
+    Object.keys(backendConfig).forEach((backendKey) => {
+      const rawVal = backendConfig[backendKey];
+      let uiKey = getUiKey(backendSecName, backendKey);
+
+      // Support fallback where backend returns session_ttl_hours but UI defines sessionTimeoutMin
+      if (
+        backendSecName === 'SECURITY' &&
+        backendKey === 'session_ttl_hours' &&
+        !currentSec.settings[uiKey] &&
+        currentSec.settings['sessionTimeoutMin']
+      ) {
+        uiKey = 'sessionTimeoutMin';
+      }
+
+      if (currentSec.settings[uiKey]) {
+        const transformed = transformValueToUi(backendSecName, backendKey, rawVal);
+        currentSec.settings[uiKey].value = transformed;
+        currentSec.settings[uiKey].defaultValue = transformed;
+      }
+    });
+  });
+
+  return next;
+}

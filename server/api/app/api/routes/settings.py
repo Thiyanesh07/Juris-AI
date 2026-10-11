@@ -114,6 +114,13 @@ async def get_setting_section(
     )
 
 
+from app.core.dynamic_settings import (
+    apply_runtime_overrides,
+    is_masked_secret,
+    validate_section_config,
+)
+
+
 @router.put("/{section}", response_model=SettingSectionResponse)
 async def update_setting_section(
     section: str,
@@ -123,23 +130,44 @@ async def update_setting_section(
 ) -> SettingSectionResponse:
     """Update configuration for a specific section (ADMIN/SUPER_ADMIN only)."""
     section_upper = section.upper()
-    setting = await session.scalar(select(SystemSetting).where(SystemSetting.section == section_upper))
+    current_settings = get_settings()
 
+    # 1. Validate runtime-safe overrides and bounds
+    try:
+        validated_overrides = validate_section_config(section_upper, body.config, current_settings)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
+
+    setting = await session.scalar(select(SystemSetting).where(SystemSetting.section == section_upper))
     before_state = setting.config_json if setting else _DEFAULT_SETTINGS.get(section_upper, {})
+
+    # 2. Merge config while preventing masked secrets from overwriting stored credentials
+    merged_config = dict(before_state)
+    for k, v in body.config.items():
+        if any(secret_term in k.lower() for secret_term in ("key", "secret", "password", "token")) and is_masked_secret(v):
+            continue
+        merged_config[k] = v
 
     if not setting:
         setting = SystemSetting(
             section=section_upper,
-            config_json=body.config,
+            config_json=merged_config,
             updated_by_id=current_user.id,
         )
         session.add(setting)
     else:
-        setting.config_json = body.config
+        setting.config_json = merged_config
         setting.updated_by_id = current_user.id
 
     await session.commit()
     await session.refresh(setting)
+
+    # 3. Apply validated runtime-safe overrides to in-memory settings bridge
+    if validated_overrides:
+        apply_runtime_overrides(validated_overrides)
 
     await log_audit_event(
         session,
