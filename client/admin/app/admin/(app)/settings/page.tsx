@@ -3,7 +3,9 @@
 import React, { useState } from 'react';
 import { useSettingsStore } from '@/context/SettingsStoreContext';
 import { SettingDefinition, SettingsSectionData } from '@/data/settings';
-import { MOCK_ADMIN_USER, isSuperAdmin } from '@/lib/auth';
+import { isSuperAdmin } from '@/lib/auth';
+import { useAuth } from '@/context/AuthContext';
+import { normalizeRoleToUppercase } from '@/lib/apiTypes';
 import { PageHeader } from '@/components/shared/PageHeader';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
@@ -52,8 +54,8 @@ export default function SettingsPage() {
 
   const [resetModalTarget, setResetModalTarget] = useState<'SECTION' | 'ALL' | null>(null);
   const [saveSuccessToast, setSaveSuccessToast] = useState<string | null>(null);
-
-  const currentUserRole = MOCK_ADMIN_USER.role;
+  const { user } = useAuth();
+  const currentUserRole = user?.role ? normalizeRoleToUppercase(user.role) : 'USER';
   const userIsSuperAdmin = isSuperAdmin(currentUserRole);
 
   const handleSaveActiveSection = async () => {

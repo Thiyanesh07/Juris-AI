@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useUserStore } from '@/context/UserStoreContext';
-import { UserRole, UserStatus } from '@/lib/types';
+import { User, UserRole, UserStatus } from '@/lib/types';
 import { ADMIN_ROUTES } from '@/constants/routes';
 import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
@@ -14,15 +14,17 @@ import { Input } from '@/components/ui/Input';
 import { Select } from '@/components/ui/Select';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
-import { ArrowLeft, Edit3, Power, Trash2, Save, X, Shield, ShieldCheck, Building, Calendar, Clock } from 'lucide-react';
+import { ArrowLeft, Edit3, Power, Trash2, Save, X, Shield, ShieldCheck, Building, Calendar, Clock, AlertCircle } from 'lucide-react';
 
 export default function UserDetailPage() {
   const params = useParams();
   const router = useRouter();
   const userId = params?.id as string;
 
-  const { getUserById, updateUser, toggleUserStatus, deleteUser } = useUserStore();
-  const user = getUserById(userId);
+  const { getUserById, fetchUserById, updateUser, toggleUserStatus, deleteUser } = useUserStore();
+  const [user, setUser] = useState<User | undefined>(() => getUserById(userId));
+  const [isInitialLoading, setIsInitialLoading] = useState<boolean>(!user);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user?.name || '');
@@ -33,6 +35,44 @@ export default function UserDetailPage() {
 
   const [confirmDialog, setConfirmDialog] = useState<'toggle' | 'delete' | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    if (!user && userId) {
+      setIsInitialLoading(true);
+      fetchUserById(userId)
+        .then((found) => {
+          if (active && found) {
+            setUser(found);
+            setName(found.name);
+            setEmail(found.email);
+            setOrganization(found.organization || '');
+            setRole(found.role);
+            setStatus(found.status);
+          }
+        })
+        .finally(() => {
+          if (active) setIsInitialLoading(false);
+        });
+    }
+    return () => {
+      active = false;
+    };
+  }, [userId, user, fetchUserById]);
+
+  if (isInitialLoading) {
+    return (
+      <div className="space-y-6 max-w-3xl">
+        <PageHeader
+          title="Loading User..."
+          subtitle={`Account ID: ${userId}`}
+        />
+        <div className="p-8 rounded-2xl bg-white border border-[#C9D4E1] text-center text-sm font-mono text-[#526176]">
+          Fetching account record from backend...
+        </div>
+      </div>
+    );
+  }
 
   if (!user) {
     return (
@@ -49,43 +89,54 @@ export default function UserDetailPage() {
         />
         <EmptyState
           title="User Record Not Found"
-          description="The user ID does not exist in local session store."
+          description="The user account does not exist in the database or could not be loaded."
         />
       </div>
     );
   }
 
-  const handleSaveEdit = (e: React.FormEvent) => {
+  const handleSaveEdit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsProcessing(true);
+    setActionError(null);
 
-    setTimeout(() => {
-      updateUser(user.id, {
+    try {
+      const updated = await updateUser(user.id, {
         name,
-        email,
         organization,
         role: user.isProtected ? 'SUPER_ADMIN' : role,
         status: user.isProtected ? 'ACTIVE' : status,
       });
 
-      setIsProcessing(false);
+      setUser(updated);
       setIsEditing(false);
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to update user record.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
-  const handleConfirmAction = () => {
+  const handleConfirmAction = async () => {
     setIsProcessing(true);
-    setTimeout(() => {
+    setActionError(null);
+
+    try {
       if (confirmDialog === 'toggle') {
-        toggleUserStatus(user.id);
+        const updated = await toggleUserStatus(user.id);
+        setUser(updated);
+        setStatus(updated.status);
+        setConfirmDialog(null);
       } else if (confirmDialog === 'delete') {
-        deleteUser(user.id);
+        await deleteUser(user.id);
         router.push(ADMIN_ROUTES.USERS);
         return;
       }
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to complete requested action.');
+    } finally {
       setIsProcessing(false);
-      setConfirmDialog(null);
-    }, 300);
+    }
   };
 
   return (
@@ -124,13 +175,20 @@ export default function UserDetailPage() {
                   onClick={() => setConfirmDialog('delete')}
                 >
                   <Trash2 className="h-3.5 w-3.5 mr-1.5" />
-                  Delete
+                  Deactivate
                 </Button>
               </>
             )}
           </div>
         }
       />
+
+      {actionError && (
+        <div className="p-4 rounded-xl bg-[#FBEAEB] border border-[#F5C2C7] text-[#8B2E2E] text-xs font-mono flex items-center gap-2 animate-in fade-in">
+          <AlertCircle className="h-4 w-4 shrink-0 text-[#8B2E2E]" />
+          <span>{actionError}</span>
+        </div>
+      )}
 
       {/* User Card */}
       <div className="p-6 rounded-2xl bg-white border border-[#C9D4E1] shadow-xs space-y-6">
@@ -260,9 +318,9 @@ export default function UserDetailPage() {
           isOpen={true}
           onClose={() => setConfirmDialog(null)}
           onConfirm={handleConfirmAction}
-          title="Delete Account?"
-          message={`Are you sure you want to permanently delete user account ${user.name} (${user.email})?`}
-          confirmText="Delete Account"
+          title="Deactivate Account?"
+          message={`Are you sure you want to deactivate user account ${user.name} (${user.email})? Login access will be revoked while historical records are preserved.`}
+          confirmText="Deactivate Account"
           variant="danger"
           isLoading={isProcessing}
         />

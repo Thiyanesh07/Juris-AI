@@ -44,13 +44,18 @@ export async function apiFetch<T>(
 ): Promise<T> {
   const url = `${getApiBaseUrl()}${path}`;
 
+  const isFormData = typeof FormData !== 'undefined' && init.body instanceof FormData;
+  const defaultHeaders: HeadersInit = isFormData
+    ? { Accept: 'application/json' }
+    : JSON_HEADERS;
+
   let res: Response;
   try {
     res = await fetch(url, {
       ...DEFAULT_FETCH_OPTIONS,
       ...init,
       headers: {
-        ...JSON_HEADERS,
+        ...defaultHeaders,
         ...(init.headers ?? {}),
       },
     });

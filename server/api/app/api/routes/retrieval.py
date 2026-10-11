@@ -14,7 +14,7 @@ from app.models import User
 from app.retrieval.embeddings import EmbeddingError
 from app.retrieval.hybrid import hybrid_retrieve
 from app.retrieval.index import IndexError
-from app.retrieval.service import rebuild_index, retrieve
+from app.retrieval.service import rebuild_index, retrieve, retrieve_ready_chunks
 from app.schemas.hybrid import HybridRetrievalRequest, HybridRetrievalResponse
 from app.schemas.retrieval import RetrievalRequest, RetrievalResponse
 
@@ -25,16 +25,19 @@ router = APIRouter(prefix="/retrieval", tags=["retrieval"])
 async def search_evidence(
     payload: RetrievalRequest,
     _user: User = Depends(get_current_user),
+    session: AsyncSession = Depends(get_session),
     settings: Settings = Depends(get_settings),
 ) -> RetrievalResponse:
     try:
         top_k = payload.top_k or settings.retrieval_default_top_k
-        results = await asyncio.to_thread(retrieve, payload.query, top_k, settings)
+        results = await retrieve_ready_chunks(session, payload.query, top_k, settings)
         return RetrievalResponse(query=payload.query, results=results)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except (EmbeddingError, IndexError) as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except SQLAlchemyError as exc:
+        raise HTTPException(status_code=503, detail="PostgreSQL is unavailable") from exc
 
 
 @router.post("/hybrid", response_model=HybridRetrievalResponse)

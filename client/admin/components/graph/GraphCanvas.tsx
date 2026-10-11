@@ -3,7 +3,9 @@
 import React, { useState } from 'react';
 import { useGraphStore } from '@/context/GraphStoreContext';
 import { GraphNodeData, GraphEdgeData, GraphEntityType } from '@/data/graph';
-import { ZoomIn, ZoomOut, Maximize2, Move } from 'lucide-react';
+import { ZoomIn, ZoomOut, Maximize2, Activity, AlertCircle, RefreshCw, GitFork } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+import { EmptyState } from '@/components/shared/EmptyState';
 import { cn } from '@/lib/utils';
 
 export const GraphCanvas: React.FC = () => {
@@ -19,6 +21,9 @@ export const GraphCanvas: React.FC = () => {
     zoomIn,
     zoomOut,
     resetView,
+    isLoading,
+    error,
+    refreshGraph,
   } = useGraphStore();
 
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
@@ -53,7 +58,6 @@ export const GraphCanvas: React.FC = () => {
 
     switch (node.type) {
       case 'ARTICLE':
-        // Circle shape
         return (
           <circle
             cx={node.x}
@@ -65,7 +69,6 @@ export const GraphCanvas: React.FC = () => {
           />
         );
       case 'ACT':
-        // Rounded rectangle
         return (
           <rect
             x={node.x - 22}
@@ -79,7 +82,6 @@ export const GraphCanvas: React.FC = () => {
           />
         );
       case 'AMENDMENT':
-        // Diamond shape
         return (
           <polygon
             points={`${node.x},${node.y - 18} ${node.x + 18},${node.y} ${node.x},${node.y + 18} ${node.x - 18},${node.y}`}
@@ -89,7 +91,6 @@ export const GraphCanvas: React.FC = () => {
           />
         );
       case 'COURT':
-        // Hexagon shape
         return (
           <polygon
             points={`${node.x - 10},${node.y - 16} ${node.x + 10},${node.y - 16} ${node.x + 18},${node.y} ${node.x + 10},${node.y + 16} ${node.x - 10},${node.y + 16} ${node.x - 18},${node.y}`}
@@ -99,15 +100,23 @@ export const GraphCanvas: React.FC = () => {
           />
         );
       case 'JUDGMENT':
-      case 'SECTION':
+        return (
+          <circle
+            cx={node.x}
+            cy={node.y}
+            r={16}
+            fill={color}
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+          />
+        );
       default:
-        // Compact rounded rect
         return (
           <rect
-            x={node.x - 20}
-            y={node.y - 14}
-            width={40}
-            height={28}
+            x={node.x - 18}
+            y={node.y - 12}
+            width={36}
+            height={24}
             rx={4}
             fill={color}
             stroke={strokeColor}
@@ -117,6 +126,51 @@ export const GraphCanvas: React.FC = () => {
     }
   };
 
+  // Loading State
+  if (isLoading && visibleNodes.length === 0) {
+    return (
+      <div className="relative w-full h-[520px] bg-[#F5F7FA] rounded-2xl border border-[#C9D4E1] overflow-hidden flex flex-col items-center justify-center space-y-3 shadow-xs">
+        <Activity className="h-8 w-8 text-[#2563A8] animate-spin" />
+        <p className="font-mono text-xs text-[#526176]">Loading knowledge graph topology from Neo4j…</p>
+      </div>
+    );
+  }
+
+  // Error State
+  if (error && visibleNodes.length === 0) {
+    return (
+      <div className="relative w-full h-[520px] bg-[#F5F7FA] rounded-2xl border border-[#C9D4E1] overflow-hidden flex flex-col items-center justify-center p-6 text-center space-y-3 shadow-xs">
+        <div className="p-3 rounded-full bg-[#F5D9D9] text-[#8B2E2E]">
+          <AlertCircle className="h-6 w-6" />
+        </div>
+        <h3 className="text-sm font-serif font-bold text-[#17253A]">Graph Query Failed</h3>
+        <p className="text-xs font-mono text-[#8B2E2E] max-w-md">{error}</p>
+        <Button variant="secondary" size="sm" onClick={refreshGraph} className="mt-2">
+          <RefreshCw className="h-3.5 w-3.5 mr-1.5" />
+          Retry Connection
+        </Button>
+      </div>
+    );
+  }
+
+  // Empty State
+  if (!isLoading && visibleNodes.length === 0) {
+    return (
+      <div className="relative w-full h-[520px] bg-[#F5F7FA] rounded-2xl border border-[#C9D4E1] overflow-hidden flex flex-col items-center justify-center p-6 text-center shadow-xs">
+        <EmptyState
+          title="No Knowledge Graph Entities"
+          description="No graph nodes or relationships matched the current search query or entity filter, or the Neo4j graph has not yet been populated."
+          action={
+            <Button variant="secondary" size="sm" onClick={resetView}>
+              <RefreshCw className="h-3.5 w-3.5 mr-1.5" />
+              Reset Graph View
+            </Button>
+          }
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="relative w-full h-[520px] bg-[#F5F7FA] rounded-2xl border border-[#C9D4E1] overflow-hidden select-none shadow-xs">
       {/* Canvas Top Bar Overlay */}
@@ -124,6 +178,7 @@ export const GraphCanvas: React.FC = () => {
         <span className="h-2 w-2 rounded-full bg-[#1E6B45]" />
         <span className="font-semibold text-[#17253A]">Legal Knowledge Graph Canvas</span>
         <span className="text-[#718096]">({visibleNodes.length} nodes)</span>
+        {isLoading && <Activity className="h-3 w-3 text-[#2563A8] animate-spin ml-1" />}
       </div>
 
       {/* Canvas Controls Overlay */}
@@ -159,7 +214,6 @@ export const GraphCanvas: React.FC = () => {
           style={{ transform: `scale(${zoomLevel})` }}
         >
           <defs>
-            {/* Arrow Marker Definitions */}
             <marker
               id="arrow-default"
               viewBox="0 0 10 10"
@@ -185,120 +239,93 @@ export const GraphCanvas: React.FC = () => {
             </marker>
           </defs>
 
-          {/* BACKGROUND GRID PATTERN */}
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E7EDF4" strokeWidth="0.8" />
-          </pattern>
-          <rect width="1000" height="650" fill="url(#grid)" />
+          {/* Background Grid Pattern */}
+          <g opacity="0.35">
+            <line x1="0" y1="162" x2="1000" y2="162" stroke="#D9E1EA" strokeDasharray="4 4" />
+            <line x1="0" y1="325" x2="1000" y2="325" stroke="#D9E1EA" strokeDasharray="4 4" />
+            <line x1="0" y1="487" x2="1000" y2="487" stroke="#D9E1EA" strokeDasharray="4 4" />
+            <line x1="250" y1="0" x2="250" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+            <line x1="500" y1="0" x2="500" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+            <line x1="750" y1="0" x2="750" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+          </g>
 
-          {/* RENDER EDGES */}
-          <g className="edges">
+          {/* Edges Layer */}
+          <g id="edges-layer">
             {visibleEdges.map((edge) => {
-              const sourceNode = nodeMap.get(edge.source);
-              const targetNode = nodeMap.get(edge.target);
+              const src = nodeMap.get(edge.source);
+              const tgt = nodeMap.get(edge.target);
+              if (!src || !tgt) return null;
 
-              if (!sourceNode || !targetNode) return null;
-
-              const isEdgeSelected = selectedEdgeId === edge.id;
+              const isEdgeSelected = edge.id === selectedEdgeId;
               const isPathHighlighted =
                 traversalSet.has(edge.source) && traversalSet.has(edge.target);
 
-              const isHovered =
-                hoveredNodeId === edge.source || hoveredNodeId === edge.target;
-
-              const strokeColor = isEdgeSelected
+              const stroke = isEdgeSelected
                 ? '#3B82D0'
                 : isPathHighlighted
                 ? '#2563A8'
-                : isHovered
-                ? '#17253A'
-                : '#C9D4E1';
+                : '#94A3B8';
+              const strokeWidth = isEdgeSelected ? 3 : isPathHighlighted ? 2.5 : 1.5;
+              const strokeDasharray = isPathHighlighted ? 'none' : '4 3';
 
-              const strokeWidth = isEdgeSelected ? 3 : isPathHighlighted ? 2.5 : isHovered ? 2 : 1.2;
-              const opacity = isPathHighlighted || isHovered || !selectedNodeId ? 1 : 0.35;
-
-              // Midpoint for relationship label
-              const midX = (sourceNode.x + targetNode.x) / 2;
-              const midY = (sourceNode.y + targetNode.y) / 2;
+              const midX = (src.x + tgt.x) / 2;
+              const midY = (src.y + tgt.y) / 2;
 
               return (
-                <g
-                  key={edge.id}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    selectEdge(edge.id);
-                  }}
-                  className="cursor-pointer group"
-                  style={{ opacity }}
-                >
+                <g key={edge.id} className="cursor-pointer" onClick={() => selectEdge(edge.id)}>
                   <line
-                    x1={sourceNode.x}
-                    y1={sourceNode.y}
-                    x2={targetNode.x}
-                    y2={targetNode.y}
-                    stroke={strokeColor}
+                    x1={src.x}
+                    y1={src.y}
+                    x2={tgt.x}
+                    y2={tgt.y}
+                    stroke={stroke}
                     strokeWidth={strokeWidth}
-                    strokeDasharray={edge.relationship === 'CONFLICTS_WITH' ? '4 3' : undefined}
-                    markerEnd={
-                      isPathHighlighted || isEdgeSelected
-                        ? 'url(#arrow-highlighted)'
-                        : 'url(#arrow-default)'
-                    }
+                    strokeDasharray={strokeDasharray}
+                    markerEnd={isPathHighlighted ? 'url(#arrow-highlighted)' : 'url(#arrow-default)'}
                   />
-
-                  {/* Relationship Label Tag */}
-                  {(isPathHighlighted || isHovered || isEdgeSelected) && (
-                    <g transform={`translate(${midX}, ${midY})`}>
-                      <rect
-                        x="-36"
-                        y="-8"
-                        width="72"
-                        height="16"
-                        rx="4"
-                        fill="#FFFFFF"
-                        stroke={strokeColor}
-                        strokeWidth="1"
-                        className="shadow-xs"
-                      />
-                      <text
-                        x="0"
-                        y="3"
-                        textAnchor="middle"
-                        fontSize="9"
-                        fontFamily="monospace"
-                        fontWeight="bold"
-                        fill="#17253A"
-                      >
-                        {edge.relationship}
-                      </text>
-                    </g>
-                  )}
+                  <rect
+                    x={midX - 28}
+                    y={midY - 8}
+                    width={56}
+                    height={16}
+                    rx={4}
+                    fill="#FFFFFF"
+                    stroke={stroke}
+                    strokeWidth={1}
+                    opacity={0.9}
+                  />
+                  <text
+                    x={midX}
+                    y={midY + 3.5}
+                    textAnchor="middle"
+                    fontSize="8.5"
+                    fontFamily="monospace"
+                    fontWeight="bold"
+                    fill={isPathHighlighted ? '#2563A8' : '#526176'}
+                    className="pointer-events-none"
+                  >
+                    {edge.relationship}
+                  </text>
                 </g>
               );
             })}
           </g>
 
-          {/* RENDER NODES */}
-          <g className="nodes">
+          {/* Nodes Layer */}
+          <g id="nodes-layer">
             {visibleNodes.map((node) => {
-              const isSelected = selectedNodeId === node.id;
+              const isSelected = node.id === selectedNodeId;
+              const isHovered = node.id === hoveredNodeId;
               const isPathHighlighted = traversalSet.has(node.id);
-              const isHovered = hoveredNodeId === node.id;
-              const opacity = isPathHighlighted || isHovered || !selectedNodeId ? 1 : 0.4;
 
               return (
                 <g
                   key={node.id}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    selectNode(node.id);
-                  }}
+                  onClick={() => selectNode(node.id)}
                   onMouseEnter={() => setHoveredNodeId(node.id)}
                   onMouseLeave={() => setHoveredNodeId(null)}
-                  className="cursor-pointer transition-transform duration-150 group"
-                  style={{ opacity }}
+                  className="cursor-pointer transition-all duration-150"
                 >
-                  {/* Outer Glow Ring for Selected Node */}
                   {isSelected && (
                     <circle
                       cx={node.x}
@@ -313,10 +340,8 @@ export const GraphCanvas: React.FC = () => {
                     />
                   )}
 
-                  {/* Node Shape */}
                   {renderNodeShape(node, isSelected, isPathHighlighted)}
 
-                  {/* Node Type Initial Badge inside Shape */}
                   <text
                     x={node.x}
                     y={node.y + 4}
@@ -330,7 +355,6 @@ export const GraphCanvas: React.FC = () => {
                     {node.type.substring(0, 3)}
                   </text>
 
-                  {/* Node Label Below */}
                   <text
                     x={node.x}
                     y={node.y + 32}

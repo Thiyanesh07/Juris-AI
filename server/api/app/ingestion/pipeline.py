@@ -17,18 +17,23 @@ Usage::
 
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import logging
 import sys
 import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 from uuid import UUID
 
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import Settings, get_data_dir
+from app.graph.client import Neo4jClient
+from app.graph.extraction import Entity, Relation, extract_entities, extract_relations
+from app.graph.population import build_graph_payload
 from app.ingestion.chunker import ChunkConfig, ChunkResult, chunk_pages
 from app.ingestion.extractor import PageRecord, extract_pages
 from app.ingestion.persister import (
@@ -42,11 +47,38 @@ from app.models.chunk import Chunk
 from app.models.document import Document
 from app.models.enums import DocumentStatus, ProcessingJobStage, ProcessingJobStatus
 from app.models.processing_job import ProcessingJob
+from app.retrieval.index import remove_document_from_index, update_index_incremental
+from app.retrieval.service import build_embedder
 
 logger = logging.getLogger(__name__)
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
+
+
+async def _cleanup_faiss_on_failure(
+    *,
+    data_dir: Path,
+    settings: Settings,
+    document_id: str,
+) -> None:
+    """Best-effort cleanup of FAISS vectors following downstream ingestion failure.
+
+    Failure during cleanup is logged safely and will NEVER mask the primary ingestion exception.
+    """
+    try:
+        await remove_document_from_index(
+            data_dir=data_dir,
+            index_name=settings.vector_index_name,
+            document_id=document_id,
+        )
+    except Exception as cleanup_exc:  # noqa: BLE001
+        logger.warning(
+            "Failed to clean up FAISS index after pipeline failure for document %s: %s",
+            document_id,
+            cleanup_exc,
+            exc_info=True,
+        )
 
 
 def _sha256(data: bytes) -> str:
@@ -107,6 +139,8 @@ async def run_pipeline(
     settings: Settings,
     document_version_id: UUID | None = None,
     force: bool = False,
+    embedder: Any | None = None,
+    graph_client: Any | None = None,
 ) -> list[ChunkResult]:
     """Run the full ingestion pipeline for *document_id*.
 
@@ -212,6 +246,7 @@ async def run_pipeline(
     await db.commit()
 
     chunks: list[ChunkResult] = []
+    chunk_rows: list[Chunk] = []
     try:
         config = ChunkConfig(
             target_chars=settings.chunk_target_chars,
@@ -245,21 +280,188 @@ async def run_pipeline(
             for ch in chunks
         ]
         db.add_all(chunk_rows)
+        await db.flush()
 
         save_chunks(data_dir, document_id, document_version_id, chunks)
 
     except Exception as exc:  # noqa: BLE001
+        await db.rollback()
         await _mark_job(db, job_chunk, ProcessingJobStatus.FAILED, str(exc))
         doc.status = DocumentStatus.FAILED
         await db.commit()
         raise IngestionError(str(exc), ProcessingJobStage.CHUNKING) from exc
 
     await _mark_job(db, job_chunk, ProcessingJobStatus.COMPLETED)
+    await db.commit()
+
+    # ── STAGE 4: EMBEDDING ─────────────────────────────────────────────────
+    job_embed = await _get_or_create_job(db, document_id, ProcessingJobStage.EMBEDDING)
+    await _mark_job(db, job_embed, ProcessingJobStatus.RUNNING)
+    await db.commit()
+
+    vectors: Any = None
+    try:
+        enc = embedder or build_embedder(settings)
+        texts = [ch.text for ch in chunks]
+        if texts:
+            vectors = await asyncio.to_thread(enc.embed, texts)
+        else:
+            vectors = []
+    except Exception as exc:  # noqa: BLE001
+        await db.rollback()
+        await _mark_job(db, job_embed, ProcessingJobStatus.FAILED, str(exc))
+        doc.status = DocumentStatus.FAILED
+        await db.commit()
+        raise IngestionError(str(exc), ProcessingJobStage.EMBEDDING) from exc
+
+    await _mark_job(db, job_embed, ProcessingJobStatus.COMPLETED)
+    await db.commit()
+
+    # ── STAGE 5: VECTOR_INDEX ──────────────────────────────────────────────
+    job_vindex = await _get_or_create_job(db, document_id, ProcessingJobStage.VECTOR_INDEX)
+    await _mark_job(db, job_vindex, ProcessingJobStatus.RUNNING)
+    await db.commit()
+
+    try:
+        if chunks:
+            chunk_records = [
+                {
+                    "chunk_id": str(ch_row.id),
+                    "document_id": str(document_id),
+                    "document_version_id": str(document_version_id)
+                    if document_version_id
+                    else None,
+                    "chunk_index": ch_row.chunk_index,
+                    "text": ch_row.text,
+                    "page_start": ch_row.page_start,
+                    "page_end": ch_row.page_end,
+                    "hierarchy": ch_row.hierarchy or {},
+                    "citation_ref": ch_row.citation_ref,
+                    "document_title": doc.title,
+                    "source_url": doc.source_url,
+                }
+                for ch_row in chunk_rows
+            ]
+
+            pooling_method = getattr(enc, "pooling_method", "attention_mask_mean_pooling")
+            await update_index_incremental(
+                data_dir=data_dir,
+                index_name=settings.vector_index_name,
+                new_vectors=vectors,
+                new_chunk_records=chunk_records,
+                document_id=str(document_id),
+                model_name=settings.embedding_model_name,
+                pooling_method=pooling_method,
+                max_tokens=settings.embedding_max_tokens,
+            )
+    except Exception as exc:  # noqa: BLE001
+        await db.rollback()
+        await _mark_job(db, job_vindex, ProcessingJobStatus.FAILED, str(exc))
+        doc.status = DocumentStatus.FAILED
+        await db.commit()
+        raise IngestionError(str(exc), ProcessingJobStage.VECTOR_INDEX) from exc
+
+    await _mark_job(db, job_vindex, ProcessingJobStatus.COMPLETED)
+    await db.commit()
+
+    # ── STAGE 6: ENTITY_EXTRACTION ─────────────────────────────────────────
+    job_entity = await _get_or_create_job(db, document_id, ProcessingJobStage.ENTITY_EXTRACTION)
+    await _mark_job(db, job_entity, ProcessingJobStatus.RUNNING)
+    await db.commit()
+
+    entities_by_chunk: dict[str, list[Entity]] = {}
+    try:
+        for ch_row in chunk_rows:
+            chunk_id_str = str(ch_row.id)
+            entities = extract_entities(
+                ch_row.text,
+                document_title=doc.title,
+                document_id=str(document_id),
+            )
+            entities_by_chunk[chunk_id_str] = entities
+    except Exception as exc:  # noqa: BLE001
+        await db.rollback()
+        await _mark_job(db, job_entity, ProcessingJobStatus.FAILED, str(exc))
+        doc.status = DocumentStatus.FAILED
+        await db.commit()
+        await _cleanup_faiss_on_failure(
+            data_dir=data_dir,
+            settings=settings,
+            document_id=str(document_id),
+        )
+        raise IngestionError(str(exc), ProcessingJobStage.ENTITY_EXTRACTION) from exc
+
+    await _mark_job(db, job_entity, ProcessingJobStatus.COMPLETED)
+    await db.commit()
+
+    # ── STAGE 7: RELATION_EXTRACTION ───────────────────────────────────────
+    job_rel = await _get_or_create_job(db, document_id, ProcessingJobStage.RELATION_EXTRACTION)
+    await _mark_job(db, job_rel, ProcessingJobStatus.RUNNING)
+    await db.commit()
+
+    relations_by_chunk: dict[str, list[Relation]] = {}
+    try:
+        for ch_row in chunk_rows:
+            chunk_id_str = str(ch_row.id)
+            relations = extract_relations(
+                ch_row.text,
+                entities_by_chunk.get(chunk_id_str, []),
+                document_title=doc.title,
+                document_id=str(document_id),
+            )
+            relations_by_chunk[chunk_id_str] = relations
+    except Exception as exc:  # noqa: BLE001
+        await db.rollback()
+        await _mark_job(db, job_rel, ProcessingJobStatus.FAILED, str(exc))
+        doc.status = DocumentStatus.FAILED
+        await db.commit()
+        await _cleanup_faiss_on_failure(
+            data_dir=data_dir,
+            settings=settings,
+            document_id=str(document_id),
+        )
+        raise IngestionError(str(exc), ProcessingJobStage.RELATION_EXTRACTION) from exc
+
+    await _mark_job(db, job_rel, ProcessingJobStatus.COMPLETED)
+    await db.commit()
+
+    # ── STAGE 8: GRAPH_POPULATION ──────────────────────────────────────────
+    job_graph = await _get_or_create_job(db, document_id, ProcessingJobStage.GRAPH_POPULATION)
+    await _mark_job(db, job_graph, ProcessingJobStatus.RUNNING)
+    await db.commit()
+
+    try:
+        doc_type_val = doc.type.value if hasattr(doc.type, "value") else str(doc.type)
+        payload = build_graph_payload(
+            doc_id=document_id,
+            doc_title=doc.title,
+            doc_type=doc_type_val,
+            chunks=chunk_rows,
+            entities_by_chunk=entities_by_chunk,
+            relations_by_chunk=relations_by_chunk,
+        )
+        gclient = graph_client or Neo4jClient(settings)
+        await gclient.replace_document_graph(payload)
+    except Exception as exc:  # noqa: BLE001
+        await db.rollback()
+        await _mark_job(db, job_graph, ProcessingJobStatus.FAILED, str(exc))
+        doc.status = DocumentStatus.FAILED
+        await db.commit()
+        await _cleanup_faiss_on_failure(
+            data_dir=data_dir,
+            settings=settings,
+            document_id=str(document_id),
+        )
+        raise IngestionError(str(exc), ProcessingJobStage.GRAPH_POPULATION) from exc
+
+    await _mark_job(db, job_graph, ProcessingJobStatus.COMPLETED)
+
+    # ── ALL STAGES SUCCEEDED: DOCUMENT IS READY ────────────────────────────
     doc.status = DocumentStatus.READY
     await db.commit()
 
     logger.info(
-        "Pipeline complete: document_id=%s pages=%d chunks=%d",
+        "Pipeline complete (8/8 stages): document_id=%s pages=%d chunks=%d status=READY",
         document_id,
         len(pages),
         len(chunks),

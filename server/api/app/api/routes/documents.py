@@ -30,7 +30,7 @@ from app.ingestion.pipeline import IngestionError, run_pipeline
 from app.models import User
 from app.models.chunk import Chunk
 from app.models.document import Document
-from app.models.enums import DocumentStatus, DocumentType
+from app.models.enums import DocumentStatus, DocumentType, ProcessingJobStage, ProcessingJobStatus
 from app.models.processing_job import ProcessingJob
 from app.schemas.documents import (
     ChunkSchema,
@@ -39,7 +39,9 @@ from app.schemas.documents import (
     DocumentUploadResponse,
     PaginatedChunks,
     PaginatedDocuments,
+    PaginatedProcessingJobs,
     ProcessingJobSchema,
+    ProcessingJobSummary,
     ReprocessResponse,
 )
 
@@ -209,6 +211,87 @@ async def list_documents(
     )
 
 
+# ── Global Processing Jobs (Admin) ─────────────────────────────────────────────
+
+
+@router.get(
+    "/jobs",
+    response_model=PaginatedProcessingJobs,
+    summary="List all processing jobs across documents (admin only)",
+)
+async def list_processing_jobs(
+    page: int = Query(1, ge=1),
+    page_size: int = Query(20, ge=1, le=100),
+    status_filter: str | None = Query(None, alias="status"),
+    stage_filter: str | None = Query(None, alias="stage"),
+    document_id: UUID | None = Query(None),
+    _admin: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> PaginatedProcessingJobs:
+    """Return paginated processing jobs with joined document metadata and persisted errors."""
+    query = select(ProcessingJob, Document.title, Document.type, Document.status).outerjoin(
+        Document, ProcessingJob.document_id == Document.id
+    )
+    count_query = select(func.count()).select_from(ProcessingJob)
+
+    if status_filter:
+        try:
+            pjs = ProcessingJobStatus[status_filter.upper()]
+        except KeyError:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid status: {status_filter!r}. Valid values: {[e.name for e in ProcessingJobStatus]}",
+            ) from None
+        query = query.where(ProcessingJob.status == pjs)
+        count_query = count_query.where(ProcessingJob.status == pjs)
+
+    if stage_filter:
+        try:
+            pstage = ProcessingJobStage[stage_filter.upper()]
+        except KeyError:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid stage: {stage_filter!r}. Valid values: {[e.name for e in ProcessingJobStage]}",
+            ) from None
+        query = query.where(ProcessingJob.stage == pstage)
+        count_query = count_query.where(ProcessingJob.stage == pstage)
+
+    if document_id is not None:
+        query = query.where(ProcessingJob.document_id == document_id)
+        count_query = count_query.where(ProcessingJob.document_id == document_id)
+
+    total = (await session.execute(count_query)).scalar_one()
+    offset = (page - 1) * page_size
+    rows = (
+        await session.execute(
+            query.order_by(ProcessingJob.created_at.desc()).offset(offset).limit(page_size)
+        )
+    ).all()
+
+    items = [
+        ProcessingJobSummary(
+            id=job.id,
+            document_id=job.document_id,
+            document_title=doc_title,
+            document_type=doc_type.value if hasattr(doc_type, "value") else str(doc_type) if doc_type else None,
+            document_status=doc_status.value if hasattr(doc_status, "value") else str(doc_status) if doc_status else None,
+            stage=job.stage.value if hasattr(job.stage, "value") else str(job.stage),
+            status=job.status.value if hasattr(job.status, "value") else str(job.status),
+            error=job.error,
+            created_at=job.created_at,
+            updated_at=job.updated_at,
+        )
+        for job, doc_title, doc_type, doc_status in rows
+    ]
+
+    return PaginatedProcessingJobs(
+        items=items,
+        total=total,
+        page=page,
+        page_size=page_size,
+    )
+
+
 # ── Detail ─────────────────────────────────────────────────────────────────────
 
 
@@ -319,6 +402,12 @@ async def reprocess_document(
     if doc is None:
         raise HTTPException(status_code=404, detail="Document not found")
 
+    if doc.status == DocumentStatus.PROCESSING:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Document is currently being processed",
+        )
+
     if not doc.file_path:
         raise HTTPException(
             status_code=400,
@@ -339,6 +428,10 @@ async def reprocess_document(
 
     pdf_bytes = raw_path.read_bytes()
     doc_id = doc.id
+
+    # Mark document as PROCESSING immediately to prevent concurrent duplicate runs
+    doc.status = DocumentStatus.PROCESSING
+    await session.commit()
 
     async def _run_bg() -> None:
         from app.db.session import session_factory
@@ -363,3 +456,77 @@ async def reprocess_document(
 
     background_tasks.add_task(_run_bg)
     return ReprocessResponse(document_id=doc_id)
+
+
+# ── Archive / Disable / Restore ────────────────────────────────────────────────
+
+
+@router.post(
+    "/{document_id}/archive",
+    response_model=DocumentDetail,
+    summary="Archive (disable) a document (admin only)",
+)
+async def archive_document(
+    document_id: UUID,
+    _admin: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> DocumentDetail:
+    """Mark a document as DISABLED without deleting its data or indexed evidence."""
+    doc = await session.get(Document, document_id)
+    if doc is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    doc.status = DocumentStatus.DISABLED
+    await session.commit()
+    await session.refresh(doc)
+    logger.info("Archived document %s (%s)", doc.id, doc.title)
+    return DocumentDetail.model_validate(doc)
+
+
+@router.post(
+    "/{document_id}/disable",
+    response_model=DocumentDetail,
+    summary="Disable a document (alias for archive, admin only)",
+)
+async def disable_document(
+    document_id: UUID,
+    _admin: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> DocumentDetail:
+    """Disable a document (alias for archive)."""
+    return await archive_document(document_id=document_id, _admin=_admin, session=session)
+
+
+@router.post(
+    "/{document_id}/restore",
+    response_model=DocumentDetail,
+    summary="Restore an archived document to READY (admin only)",
+)
+async def restore_document(
+    document_id: UUID,
+    _admin: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> DocumentDetail:
+    """Restore an archived (DISABLED) document to READY."""
+    doc = await session.get(Document, document_id)
+    if doc is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    if doc.status == DocumentStatus.DISABLED:
+        jobs_result = await session.execute(
+            select(ProcessingJob).where(ProcessingJob.document_id == document_id)
+        )
+        jobs = list(jobs_result.scalars().all())
+        completed_stages = {j.stage for j in jobs if j.status == ProcessingJobStatus.COMPLETED}
+        required_stages = set(ProcessingJobStage)
+
+        if required_stages.issubset(completed_stages):
+            doc.status = DocumentStatus.READY
+        else:
+            doc.status = DocumentStatus.FAILED
+
+        await session.commit()
+        await session.refresh(doc)
+        logger.info("Restored document %s (%s) to %s", doc.id, doc.title, doc.status)
+
+    return DocumentDetail.model_validate(doc)

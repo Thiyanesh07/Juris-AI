@@ -16,8 +16,24 @@ from app.graph.client import Neo4jClient
 from app.graph.population import graph_stats, populate_graph
 from app.retrieval.embeddings import EmbeddingError
 from app.retrieval.hybrid import hybrid_retrieve
-from app.retrieval.index import IndexError
-from app.retrieval.service import rebuild_index, retrieve
+from app.retrieval.service import rebuild_index, retrieve, retrieve_ready_chunks
+
+
+async def _query(query: str, top_k: int | None) -> int:
+    settings = get_settings()
+    try:
+        async with session_factory() as session:
+            results = await retrieve_ready_chunks(
+                session=session,
+                query=query,
+                top_k=top_k or settings.retrieval_default_top_k,
+                settings=settings,
+            )
+        print(json.dumps(results, indent=2))
+        return 0
+    except (EmbeddingError, IndexError, SQLAlchemyError, ValueError) as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
 
 
 async def _qa_query(query: str, top_k: int | None) -> int:
@@ -228,14 +244,10 @@ def main() -> None:
         sys.exit(asyncio.run(_qa_query(args.query, args.top_k)))
     elif args.command == "create-super-admin":
         sys.exit(asyncio.run(_create_super_admin(args.email, args.name)))
+    elif args.command == "query":
+        sys.exit(asyncio.run(_query(args.query, args.top_k)))
     else:
-        settings = get_settings()
-        print(
-            json.dumps(
-                retrieve(args.query, args.top_k or settings.retrieval_default_top_k, settings),
-                indent=2,
-            )
-        )
+        sys.exit(asyncio.run(_query(args.query, args.top_k)))
 
 
 

@@ -6,11 +6,15 @@ import asyncio
 import logging
 from dataclasses import dataclass, field
 from typing import Any, Literal
+from uuid import UUID
 
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import Settings, get_data_dir
 from app.graph.client import GraphError, Neo4jClient
+from app.models.document import Document
+from app.models.enums import DocumentStatus
 from app.retrieval.evidence import load_chunks_by_ids
 from app.retrieval.index import (
     cosine_for_chunk_ids,
@@ -224,13 +228,53 @@ async def hybrid_retrieve(
         settings.retrieval_max_top_k,
         max(top_k, settings.hybrid_dense_seed_top_k),
     )
-    seed_hits = search_index_rows(index, metadata, query_vector, dense_seed_top_k)
+    raw_seed_hits = search_index_rows(index, metadata, query_vector, dense_seed_top_k)
     warnings: list[str] = []
     fallback: Literal["dense_only"] | None = None
     fallback_reason: FallbackReason | None = None
 
-    if not seed_hits:
+    if not raw_seed_hits:
         return _empty_response(query, settings)
+
+    # Collect unique candidate document UUIDs to query authoritative PostgreSQL status in one batch
+    candidate_doc_uuids: set[UUID] = set()
+    for hit in raw_seed_hits:
+        doc_id_val = metadata["chunks"][hit["faiss_row"]].get("document_id")
+        if doc_id_val:
+            try:
+                candidate_doc_uuids.add(UUID(str(doc_id_val)))
+            except (ValueError, TypeError):
+                pass
+
+    ready_doc_ids: set[str] = set()
+    if candidate_doc_uuids:
+        ready_doc_rows = (
+            await session.execute(
+                select(Document.id).where(
+                    Document.id.in_(candidate_doc_uuids),
+                    Document.status == DocumentStatus.READY,
+                )
+            )
+        ).scalars().all()
+        ready_doc_ids = {str(doc_id) for doc_id in ready_doc_rows}
+
+    # Filter to eligible READY seeds only, preserving ranking order and scores
+    seed_hits: list[dict[str, Any]] = []
+    for hit in raw_seed_hits:
+        doc_id_str = str(metadata["chunks"][hit["faiss_row"]].get("document_id"))
+        if doc_id_str in ready_doc_ids:
+            seed_hits.append(hit)
+            if len(seed_hits) == dense_seed_top_k:
+                break
+        else:
+            warnings.append(f"omitted_missing_chunk:{hit['chunk_id']}")
+
+    if not seed_hits:
+        return _empty_response(query, settings, warnings=warnings)
+
+    # Re-assign 1-based ranks to eligible seeds
+    for new_rank, hit in enumerate(seed_hits, start=1):
+        hit["rank"] = new_rank
 
     seed_rank_by_id = {hit["chunk_id"]: int(hit["rank"]) for hit in seed_hits}
     candidates: dict[str, CandidateState] = {}
@@ -392,7 +436,9 @@ async def hybrid_retrieve(
     }
 
 
-def _empty_response(query: str, settings: Settings) -> dict[str, Any]:
+def _empty_response(
+    query: str, settings: Settings, warnings: list[str] | None = None
+) -> dict[str, Any]:
     return {
         "query": query.strip(),
         "mode": "hybrid",
@@ -405,7 +451,7 @@ def _empty_response(query: str, settings: Settings) -> dict[str, Any]:
         "score_type": (
             "hybrid = vector_weight * clamp(cosine, 0, 1) + graph_weight * graph_support"
         ),
-        "warnings": [],
+        "warnings": warnings or [],
         "results": [],
     }
 

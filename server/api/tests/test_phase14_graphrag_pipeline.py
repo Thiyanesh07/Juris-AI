@@ -14,7 +14,7 @@ from app.core.config import Settings, get_settings
 from app.graph.client import GraphError
 from app.models import Document
 from app.models.chunk import Chunk
-from app.models.enums import DocumentType
+from app.models.enums import DocumentStatus, DocumentType
 from app.qa.provider import LLMProvider
 from app.qa.service import ask_legal_question
 from app.retrieval.index import save_index
@@ -108,7 +108,13 @@ class MockNeo4jClient:
 
 
 async def _seed_db(session: AsyncSession) -> None:
-    doc = Document(title="Constitution of India", type=DocumentType.CONSTITUTION, source="test")
+    doc = Document(
+        id=UUID("00000000-0000-0000-0000-000000000010"),
+        title="Constitution of India",
+        type=DocumentType.CONSTITUTION,
+        source="test",
+        status=DocumentStatus.READY,
+    )
     session.add(doc)
     await session.flush()
     for record in _records():

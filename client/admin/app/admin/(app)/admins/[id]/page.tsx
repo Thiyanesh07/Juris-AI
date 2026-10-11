@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useUserStore } from '@/context/UserStoreContext';
-import { UserStatus } from '@/lib/types';
+import { User, UserStatus } from '@/lib/types';
 import { ADMIN_ROUTES } from '@/constants/routes';
 import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
@@ -14,15 +14,17 @@ import { Input } from '@/components/ui/Input';
 import { Select } from '@/components/ui/Select';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
-import { ArrowLeft, Edit3, Power, Trash2, Save, X, ShieldCheck, Lock, Building, Calendar, Clock } from 'lucide-react';
+import { ArrowLeft, Edit3, Power, Trash2, Save, X, ShieldCheck, Lock, Building, Calendar, Clock, AlertCircle } from 'lucide-react';
 
 export default function AdminDetailPage() {
   const params = useParams();
   const router = useRouter();
   const adminId = params?.id as string;
 
-  const { getUserById, updateUser, toggleUserStatus, deleteUser } = useUserStore();
-  const admin = getUserById(adminId);
+  const { getUserById, fetchUserById, updateUser, toggleUserStatus, deleteUser } = useUserStore();
+  const [admin, setAdmin] = useState<User | undefined>(() => getUserById(adminId));
+  const [isInitialLoading, setIsInitialLoading] = useState<boolean>(!admin);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(admin?.name || '');
@@ -32,6 +34,43 @@ export default function AdminDetailPage() {
 
   const [confirmDialog, setConfirmDialog] = useState<'toggle' | 'delete' | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    if (!admin && adminId) {
+      setIsInitialLoading(true);
+      fetchUserById(adminId)
+        .then((found) => {
+          if (active && found) {
+            setAdmin(found);
+            setName(found.name);
+            setEmail(found.email);
+            setOrganization(found.organization || '');
+            setStatus(found.status);
+          }
+        })
+        .finally(() => {
+          if (active) setIsInitialLoading(false);
+        });
+    }
+    return () => {
+      active = false;
+    };
+  }, [adminId, admin, fetchUserById]);
+
+  if (isInitialLoading) {
+    return (
+      <div className="space-y-6 max-w-3xl">
+        <PageHeader
+          title="Loading Administrator..."
+          subtitle={`Administrator ID: ${adminId}`}
+        />
+        <div className="p-8 rounded-2xl bg-white border border-[#C9D4E1] text-center text-sm font-mono text-[#526176]">
+          Fetching administrator record from backend...
+        </div>
+      </div>
+    );
+  }
 
   if (!admin) {
     return (
@@ -48,45 +87,55 @@ export default function AdminDetailPage() {
         />
         <EmptyState
           title="Administrator Record Not Found"
-          description="The operator ID does not exist in local session store."
+          description="The operator ID does not exist in the database or could not be loaded."
         />
       </div>
     );
   }
 
-  const handleSaveEdit = (e: React.FormEvent) => {
+  const handleSaveEdit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (admin.isProtected) return;
 
     setIsProcessing(true);
-    setTimeout(() => {
-      updateUser(admin.id, {
+    setActionError(null);
+    try {
+      const updated = await updateUser(admin.id, {
         name,
-        email,
         organization,
         status,
       });
 
-      setIsProcessing(false);
+      setAdmin(updated);
       setIsEditing(false);
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to update administrator details.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
-  const handleConfirmAction = () => {
+  const handleConfirmAction = async () => {
     if (admin.isProtected) return;
 
     setIsProcessing(true);
-    setTimeout(() => {
+    setActionError(null);
+    try {
       if (confirmDialog === 'toggle') {
-        toggleUserStatus(admin.id);
+        const updated = await toggleUserStatus(admin.id);
+        setAdmin(updated);
+        setStatus(updated.status);
+        setConfirmDialog(null);
       } else if (confirmDialog === 'delete') {
-        deleteUser(admin.id);
+        await deleteUser(admin.id);
         router.push(ADMIN_ROUTES.ADMINS);
         return;
       }
+    } catch (err: any) {
+      setActionError(err?.message || 'Failed to complete requested action.');
+    } finally {
       setIsProcessing(false);
-      setConfirmDialog(null);
-    }, 300);
+    }
   };
 
   return (
@@ -125,13 +174,20 @@ export default function AdminDetailPage() {
                   onClick={() => setConfirmDialog('delete')}
                 >
                   <Trash2 className="h-3.5 w-3.5 mr-1.5" />
-                  Delete Operator
+                  Deactivate Operator
                 </Button>
               </>
             )}
           </div>
         }
       />
+
+      {actionError && (
+        <div className="p-4 rounded-xl bg-[#FBEAEB] border border-[#F5C2C7] text-[#8B2E2E] text-xs font-mono flex items-center gap-2 animate-in fade-in">
+          <AlertCircle className="h-4 w-4 shrink-0 text-[#8B2E2E]" />
+          <span>{actionError}</span>
+        </div>
+      )}
 
       {/* Super Admin Protection Alert Banner */}
       {admin.isProtected && (
@@ -262,9 +318,9 @@ export default function AdminDetailPage() {
           isOpen={true}
           onClose={() => setConfirmDialog(null)}
           onConfirm={handleConfirmAction}
-          title="Delete Operator?"
-          message={`Are you sure you want to permanently delete administrator ${admin.name} (${admin.email})?`}
-          confirmText="Delete Operator"
+          title="Deactivate Operator?"
+          message={`Are you sure you want to deactivate administrative access for ${admin.name} (${admin.email})? Privileged access will be revoked.`}
+          confirmText="Deactivate Operator"
           variant="danger"
           isLoading={isProcessing}
         />

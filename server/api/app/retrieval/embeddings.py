@@ -34,6 +34,7 @@ class EmbeddingConfig:
     device: str = "auto"
     batch_size: int = 16
     max_tokens: int = 512
+    backend: str = "onnx"
 
 
 class InLegalBertEmbedder:
@@ -117,3 +118,103 @@ class InLegalBertEmbedder:
             raise
         except Exception as exc:
             raise EmbeddingError(f"Embedding failed: {exc}") from exc
+
+
+class OnnxInLegalBertEmbedder:
+    """ONNX Runtime embedder for InLegalBERT preserving exact mean pooling and L2 normalization."""
+
+    pooling_method = "attention_mask_mean_pooling"
+    normalization = "l2"
+
+    def __init__(self, config: EmbeddingConfig) -> None:
+        self.config = config
+        self._tokenizer: Any | None = None
+        self._session: Any | None = None
+        self._input_names: list[str] = []
+
+    def _load(self) -> None:
+        if self._session is not None:
+            return
+        try:
+            import onnxruntime as ort
+            from transformers import AutoTokenizer
+            from app.retrieval.export_onnx import export_inlegalbert_onnx, get_onnx_model_path
+            from app.retrieval.quantize_onnx import get_onnx_int8_model_path, quantize_inlegalbert_int8
+        except ImportError as exc:
+            raise EmbeddingError(
+                "ONNX retrieval dependencies are not installed; run `uv sync`."
+            ) from exc
+
+        if self.config.backend.lower() == "onnx_int8":
+            onnx_path = get_onnx_int8_model_path()
+            if not onnx_path.is_file():
+                try:
+                    quantize_inlegalbert_int8(output_int8_path=onnx_path)
+                except Exception as exc:
+                    raise EmbeddingError(
+                        f"Unable to quantize ONNX INT8 model for {self.config.model_name!r}: {exc}"
+                    ) from exc
+        else:
+            onnx_path = get_onnx_model_path()
+            if not onnx_path.is_file():
+                try:
+                    export_inlegalbert_onnx(
+                        model_name=self.config.model_name,
+                        output_path=onnx_path,
+                    )
+                except Exception as exc:
+                    raise EmbeddingError(
+                        f"Unable to export ONNX model for {self.config.model_name!r}: {exc}"
+                    ) from exc
+
+        try:
+            opts = ort.SessionOptions()
+            opts.intra_op_num_threads = 1
+            opts.inter_op_num_threads = 1
+            self._session = ort.InferenceSession(
+                str(onnx_path),
+                sess_options=opts,
+                providers=["CPUExecutionProvider"],
+            )
+            self._tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
+            self._input_names = [i.name for i in self._session.get_inputs()]
+        except Exception as exc:
+            raise EmbeddingError(
+                f"Unable to load ONNX session from {onnx_path}: {exc}"
+            ) from exc
+
+    def embed(self, texts: list[str]) -> Any:
+        """Return a float32 ``(n, 768)`` normalised matrix using ONNX Runtime."""
+        if not texts:
+            raise EmbeddingError("Cannot embed an empty text collection")
+        if any(not text.strip() for text in texts):
+            raise EmbeddingError("Cannot embed blank text")
+        self._load()
+        assert self._tokenizer is not None and self._session is not None
+        try:
+            import numpy as np
+
+            batches: list[Any] = []
+            for start in range(0, len(texts), self.config.batch_size):
+                batch = texts[start : start + self.config.batch_size]
+                inputs = self._tokenizer(
+                    batch,
+                    padding=True,
+                    truncation=True,
+                    max_length=self.config.max_tokens,
+                    return_tensors="np",
+                )
+                feed = {name: inputs[name] for name in self._input_names if name in inputs}
+                outputs = self._session.run(None, feed)
+                hidden = outputs[0]  # last_hidden_state (B, L, 768)
+                mask = np.expand_dims(inputs["attention_mask"], axis=-1).astype(hidden.dtype)
+                pooled = np.sum(hidden * mask, axis=1) / np.clip(np.sum(mask, axis=1), a_min=1e-9, a_max=None)
+                vectors = pooled.astype(np.float32, copy=False)
+                norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+                vectors = vectors / np.maximum(norms, 1e-12)
+                batches.append(vectors)
+            return np.vstack(batches).astype(np.float32, copy=False)
+        except EmbeddingError:
+            raise
+        except Exception as exc:
+            raise EmbeddingError(f"ONNX embedding failed: {exc}") from exc

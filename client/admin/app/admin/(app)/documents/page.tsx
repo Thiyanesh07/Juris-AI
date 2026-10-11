@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useDocumentStore } from '@/context/DocumentStoreContext';
@@ -15,30 +15,70 @@ import { Select } from '@/components/ui/Select';
 import { Dropdown } from '@/components/ui/Dropdown';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
-import { Upload, Eye, Cpu, Archive, MoreVertical, FileText, ChevronLeft, ChevronRight, Activity } from 'lucide-react';
+import {
+  Upload,
+  Eye,
+  Cpu,
+  Archive,
+  RotateCcw,
+  MoreVertical,
+  FileText,
+  ChevronLeft,
+  ChevronRight,
+  Activity,
+  AlertCircle,
+  RefreshCw,
+  CheckCircle2,
+} from 'lucide-react';
 
 export default function DocumentsListPage() {
   const router = useRouter();
-  const { documents, startIngestion, archiveDocument } = useDocumentStore();
+  const {
+    documents,
+    documentsTotal,
+    isLoading,
+    documentsError,
+    fetchDocuments,
+    archiveDocument,
+    restoreDocument,
+    reprocessDocument,
+  } = useDocumentStore();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState<string>('ALL');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 8;
+  const pageSize = 10;
 
   const [archiveTarget, setArchiveTarget] = useState<Document | null>(null);
-  const [isProcessing, setIsProcessing] = useState(false);
+  const [restoreTarget, setRestoreTarget] = useState<Document | null>(null);
+  const [isProcessingAction, setIsProcessingAction] = useState(false);
+  const [actionFeedback, setActionFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+  const loadDocs = useCallback(() => {
+    fetchDocuments({
+      page: 1,
+      page_size: 100,
+      status: statusFilter === 'ALL' ? undefined : statusFilter,
+      type: typeFilter === 'ALL' ? undefined : typeFilter,
+      search: searchQuery.trim() || undefined,
+    });
+  }, [fetchDocuments, statusFilter, typeFilter, searchQuery]);
+
+  useEffect(() => {
+    loadDocs();
+  }, [loadDocs]);
 
   const filteredDocs = useMemo(() => {
     return documents.filter((d) => {
       const matchesSearch =
+        !searchQuery.trim() ||
         d.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         d.fileName.toLowerCase().includes(searchQuery.toLowerCase()) ||
         d.source.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesType = typeFilter === 'ALL' || d.documentType === typeFilter;
-      const matchesStatus = statusFilter === 'ALL' || d.status === statusFilter;
+      const matchesType = typeFilter === 'ALL' || d.documentType.toLowerCase() === typeFilter.toLowerCase();
+      const matchesStatus = statusFilter === 'ALL' || d.status.toLowerCase() === statusFilter.toLowerCase();
 
       return matchesSearch && matchesType && matchesStatus;
     });
@@ -50,18 +90,68 @@ export default function DocumentsListPage() {
     return filteredDocs.slice(start, start + pageSize);
   }, [filteredDocs, currentPage, pageSize]);
 
-  const handleStartIngestion = (doc: Document) => {
-    startIngestion(doc.id);
+  const handleConfirmArchive = async () => {
+    if (!archiveTarget) return;
+    setIsProcessingAction(true);
+    setActionFeedback(null);
+    try {
+      await archiveDocument(archiveTarget.id);
+      setActionFeedback({
+        type: 'success',
+        message: `Document "${archiveTarget.title}" was archived successfully.`,
+      });
+      setArchiveTarget(null);
+      loadDocs();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Failed to archive document.',
+      });
+    } finally {
+      setIsProcessingAction(false);
+    }
   };
 
-  const handleConfirmArchive = () => {
-    if (!archiveTarget) return;
-    setIsProcessing(true);
-    setTimeout(() => {
-      archiveDocument(archiveTarget.id);
-      setIsProcessing(false);
-      setArchiveTarget(null);
-    }, 300);
+  const handleConfirmRestore = async () => {
+    if (!restoreTarget) return;
+    setIsProcessingAction(true);
+    setActionFeedback(null);
+    try {
+      const res = await restoreDocument(restoreTarget.id);
+      setActionFeedback({
+        type: 'success',
+        message: res.message || `Document restored with status ${res.status?.toUpperCase()}.`,
+      });
+      setRestoreTarget(null);
+      loadDocs();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Failed to restore document.',
+      });
+    } finally {
+      setIsProcessingAction(false);
+    }
+  };
+
+  const handleReprocess = async (doc: Document) => {
+    setIsProcessingAction(true);
+    setActionFeedback(null);
+    try {
+      const res = await reprocessDocument(doc.id);
+      setActionFeedback({
+        type: 'success',
+        message: res.message || `Document reprocess initiated for "${doc.title}".`,
+      });
+      loadDocs();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Failed to initiate reprocess.',
+      });
+    } finally {
+      setIsProcessingAction(false);
+    }
   };
 
   const getStatusBadge = (status: DocumentStatus) => {
@@ -89,16 +179,61 @@ export default function DocumentsListPage() {
       {/* Header */}
       <PageHeader
         title="Documents"
-        subtitle="Manage legal corpora, upload legal documents, and track parsing statuses."
+        subtitle="Manage legal corpora, review ingestion statuses, and trigger processing workflows."
         actions={
-          <Link href={ADMIN_ROUTES.DOCUMENTS + '/new'}>
-            <Button variant="primary" size="md">
-              <Upload className="h-4 w-4 mr-2" />
-              Upload Document
+          <div className="flex items-center gap-2">
+            <Button variant="secondary" size="md" onClick={loadDocs} disabled={isLoading}>
+              <RefreshCw className={`h-4 w-4 mr-1.5 ${isLoading ? 'animate-spin' : ''}`} />
+              Refresh
             </Button>
-          </Link>
+            <Link href={ADMIN_ROUTES.DOCUMENTS + '/new'}>
+              <Button variant="primary" size="md">
+                <Upload className="h-4 w-4 mr-2" />
+                Upload Document
+              </Button>
+            </Link>
+          </div>
         }
       />
+
+      {/* Action Notification */}
+      {actionFeedback && (
+        <div
+          className={`p-4 rounded-xl text-xs font-mono flex items-center justify-between border ${
+            actionFeedback.type === 'success'
+              ? 'bg-[#D0EDDB] border-[#B2E2C3] text-[#1E6B45]'
+              : 'bg-[#F5D9D9] border-[#E8B8B8] text-[#8B2E2E]'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            {actionFeedback.type === 'success' ? (
+              <CheckCircle2 className="h-4 w-4 shrink-0" />
+            ) : (
+              <AlertCircle className="h-4 w-4 shrink-0" />
+            )}
+            <span>{actionFeedback.message}</span>
+          </div>
+          <button
+            onClick={() => setActionFeedback(null)}
+            className="underline font-semibold ml-4 cursor-pointer"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
+      {/* API Error Alert */}
+      {documentsError && (
+        <div className="p-4 rounded-xl bg-[#F5D9D9] border border-[#E8B8B8] text-[#8B2E2E] flex items-center justify-between">
+          <div className="flex items-center gap-2 font-mono text-xs">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>Failed to load documents: {documentsError}</span>
+          </div>
+          <Button variant="secondary" size="sm" onClick={loadDocs}>
+            Retry Request
+          </Button>
+        </div>
+      )}
 
       {/* Filter Bar */}
       <FilterBar
@@ -126,14 +261,13 @@ export default function DocumentsListPage() {
               className="w-36 bg-white text-xs"
             >
               <option value="ALL">All Types</option>
-              <option value="Constitution">Constitution</option>
-              <option value="Act">Act</option>
-              <option value="Amendment Act">Amendment Act</option>
-              <option value="Rule">Rule</option>
-              <option value="Regulation">Regulation</option>
-              <option value="Judgment">Judgment</option>
-              <option value="Notification">Notification</option>
-              <option value="Other">Other</option>
+              <option value="constitution">Constitution</option>
+              <option value="act">Act</option>
+              <option value="rule">Rule</option>
+              <option value="regulation">Regulation</option>
+              <option value="judgment">Judgment</option>
+              <option value="notification">Notification</option>
+              <option value="other">Other</option>
             </Select>
 
             <Select
@@ -146,25 +280,42 @@ export default function DocumentsListPage() {
               className="w-32 bg-white text-xs"
             >
               <option value="ALL">All Statuses</option>
-              <option value="UPLOADED">Uploaded</option>
-              <option value="PROCESSING">Processing</option>
-              <option value="READY">Ready</option>
-              <option value="FAILED">Failed</option>
-              <option value="ARCHIVED">Archived</option>
+              <option value="uploaded">Uploaded</option>
+              <option value="processing">Processing</option>
+              <option value="ready">Ready</option>
+              <option value="failed">Failed</option>
+              <option value="disabled">Archived</option>
             </Select>
           </>
         }
       />
 
-      {/* Main Table / List Container */}
-      {filteredDocs.length === 0 ? (
+      {/* Main Table / Empty State */}
+      {isLoading && documents.length === 0 ? (
+        <div className="p-12 text-center rounded-xl border border-[#C9D4E1] bg-white">
+          <Activity className="h-6 w-6 text-[#2563A8] animate-spin mx-auto mb-2" />
+          <p className="font-mono text-xs text-[#526176]">Loading documents from repository...</p>
+        </div>
+      ) : filteredDocs.length === 0 ? (
         <EmptyState
           title="No documents found"
-          description="No records match your search or filter parameters."
+          description={
+            documentsError
+              ? 'Could not connect to the document repository. Please check backend status and retry.'
+              : 'No documents match your query or filter criteria in the legal corpus.'
+          }
+          action={
+            <Link href={ADMIN_ROUTES.DOCUMENTS + '/new'}>
+              <Button variant="primary" size="sm">
+                <Upload className="h-4 w-4 mr-1.5" />
+                Upload New Document
+              </Button>
+            </Link>
+          }
         />
       ) : (
         <div className="space-y-4">
-          {/* DESKTOP TABLE */}
+          {/* Desktop Table */}
           <div className="hidden md:block w-full overflow-hidden rounded-xl border border-[#C9D4E1] bg-white shadow-xs">
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm border-collapse">
@@ -172,10 +323,9 @@ export default function DocumentsListPage() {
                   <tr className="bg-[#EFF3F7] border-b border-[#C9D4E1] font-mono text-xs font-bold text-[#526176] uppercase tracking-wider">
                     <th className="px-4 py-3">Document</th>
                     <th className="px-4 py-3">Type</th>
-                    <th className="px-4 py-3">Source</th>
+                    <th className="px-4 py-3">Legal Source</th>
                     <th className="px-4 py-3">Ingestion Status</th>
-                    <th className="px-4 py-3">Uploaded</th>
-                    <th className="px-4 py-3">Size</th>
+                    <th className="px-4 py-3">Created</th>
                     <th className="px-4 py-3 text-right">Actions</th>
                   </tr>
                 </thead>
@@ -196,7 +346,7 @@ export default function DocumentsListPage() {
                               {doc.title}
                             </span>
                             <span className="text-[11px] font-mono text-[#718096] truncate">
-                              {doc.fileName}
+                              {doc.id}
                             </span>
                           </div>
                         </div>
@@ -210,9 +360,6 @@ export default function DocumentsListPage() {
                       <td className="px-4 py-3.5">{getStatusBadge(doc.status)}</td>
                       <td className="px-4 py-3.5 font-mono text-xs text-[#718096]">
                         {formatDate(doc.createdAt)}
-                      </td>
-                      <td className="px-4 py-3.5 font-mono text-xs text-[#718096]">
-                        {formatBytes(doc.fileSizeBytes)}
                       </td>
                       <td className="px-4 py-3.5 text-right" onClick={(e) => e.stopPropagation()}>
                         <Dropdown
@@ -229,31 +376,36 @@ export default function DocumentsListPage() {
                               onClick: () => router.push(ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(doc.id)),
                             },
                             {
-                              id: 'ingest',
-                              label: doc.status === 'PROCESSING' ? 'Processing...' : 'Start Ingestion',
+                              id: 'ingestion-page',
+                              label: 'View Pipeline Stages',
                               icon: <Cpu className="h-3.5 w-3.5" />,
-                              disabled: doc.status === 'PROCESSING',
-                              onClick: () => handleStartIngestion(doc),
+                              onClick: () => router.push(ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(doc.id)),
                             },
-                            ...(doc.latestJobId
+                            ...(doc.status !== 'ARCHIVED'
                               ? [
                                   {
-                                    id: 'view-ingest',
-                                    label: 'View Ingestion Job',
-                                    icon: <Activity className="h-3.5 w-3.5" />,
-                                    onClick: () =>
-                                      router.push(ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(doc.latestJobId!)),
+                                    id: 'reprocess',
+                                    label: doc.status === 'PROCESSING' ? 'Processing...' : 'Reprocess Ingestion',
+                                    icon: <RotateCcw className="h-3.5 w-3.5" />,
+                                    disabled: doc.status === 'PROCESSING' || isProcessingAction,
+                                    onClick: () => handleReprocess(doc),
+                                  },
+                                  {
+                                    id: 'archive',
+                                    label: 'Archive Document',
+                                    icon: <Archive className="h-3.5 w-3.5" />,
+                                    danger: true,
+                                    onClick: () => setArchiveTarget(doc),
                                   },
                                 ]
-                              : []),
-                            {
-                              id: 'archive',
-                              label: 'Archive Document',
-                              icon: <Archive className="h-3.5 w-3.5" />,
-                              danger: true,
-                              disabled: doc.status === 'ARCHIVED',
-                              onClick: () => setArchiveTarget(doc),
-                            },
+                              : [
+                                  {
+                                    id: 'restore',
+                                    label: 'Restore Document',
+                                    icon: <RotateCcw className="h-3.5 w-3.5" />,
+                                    onClick: () => setRestoreTarget(doc),
+                                  },
+                                ]),
                           ]}
                         />
                       </td>
@@ -264,7 +416,7 @@ export default function DocumentsListPage() {
             </div>
           </div>
 
-          {/* MOBILE CARDS LIST */}
+          {/* Mobile Cards List */}
           <div className="md:hidden space-y-3">
             {paginatedDocs.map((doc) => (
               <div
@@ -281,7 +433,7 @@ export default function DocumentsListPage() {
 
                 <div className="flex items-center justify-between text-xs font-mono text-[#718096]">
                   <Badge variant="outline">{doc.documentType}</Badge>
-                  <span>{formatBytes(doc.fileSizeBytes)}</span>
+                  <span>{formatDate(doc.createdAt)}</span>
                 </div>
               </div>
             ))}
@@ -323,17 +475,31 @@ export default function DocumentsListPage() {
         </div>
       )}
 
-      {/* Archive Modal */}
+      {/* Archive Confirm Dialog */}
       {archiveTarget && (
         <ConfirmDialog
           isOpen={true}
           onClose={() => setArchiveTarget(null)}
           onConfirm={handleConfirmArchive}
-          title="Archive Document?"
-          message={`Are you sure you want to archive "${archiveTarget.title}"? It will be marked as archived in the document repository.`}
+          title="Archive Legal Document?"
+          message={`Are you sure you want to archive "${archiveTarget.title}"? The document will be marked as disabled/archived, and will not participate in retrieval until restored.`}
           confirmText="Archive Document"
           variant="danger"
-          isLoading={isProcessing}
+          isLoading={isProcessingAction}
+        />
+      )}
+
+      {/* Restore Confirm Dialog */}
+      {restoreTarget && (
+        <ConfirmDialog
+          isOpen={true}
+          onClose={() => setRestoreTarget(null)}
+          onConfirm={handleConfirmRestore}
+          title="Restore Legal Document?"
+          message={`Restore "${restoreTarget.title}"? Note: The document will only be marked READY if all required ingestion stages succeeded; otherwise it will be restored to FAILED status.`}
+          confirmText="Restore Document"
+          variant="primary"
+          isLoading={isProcessingAction}
         />
       )}
     </div>

@@ -27,6 +27,42 @@ export interface AuthUser {
   last_login_at: string | null;
 }
 
+export interface BackendUser {
+  id: string;
+  email: string;
+  name: string | null;
+  role: string;
+  is_active: boolean;
+  created_at: string;
+  last_login_at?: string | null;
+}
+
+export interface PaginatedUsersResponse {
+  items: BackendUser[];
+  total: number;
+  page: number;
+  page_size: number;
+}
+
+export interface UserCreatePayload {
+  email: string;
+  name?: string | null;
+  password?: string | null;
+}
+
+export interface AdminProvisionPayload {
+  email: string;
+  name: string;
+  password: string;
+  role?: string;
+}
+
+export interface UserUpdatePayload {
+  name?: string | null;
+  role?: string | null;
+  is_active?: boolean;
+}
+
 // ── Documents ─────────────────────────────────────────────────────────────────
 
 export type BackendDocumentStatus = 'registered' | 'processing' | 'ready' | 'failed' | 'disabled';
@@ -65,6 +101,19 @@ export interface DocumentUploadResponse {
 export interface ReprocessResponse {
   document_id: string;
   message: string;
+  status?: string;
+}
+
+export interface ArchiveDocumentResponse {
+  document_id: string;
+  status: string;
+  message: string;
+}
+
+export interface RestoreDocumentResponse {
+  document_id: string;
+  status: string;
+  message: string;
 }
 
 export interface DocumentChunk {
@@ -96,6 +145,26 @@ export interface ProcessingJob {
   error: string | null;
   created_at: string;
   updated_at: string;
+}
+
+export interface ProcessingJobSummary {
+  id: string;
+  document_id: string;
+  document_title?: string | null;
+  document_type?: string | null;
+  document_status?: string | null;
+  stage: string;
+  status: string;
+  error: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface PaginatedProcessingJobs {
+  items: ProcessingJobSummary[];
+  total: number;
+  page: number;
+  page_size: number;
 }
 
 // ── Health & Stats ─────────────────────────────────────────────────────────────

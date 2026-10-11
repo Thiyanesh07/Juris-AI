@@ -2,6 +2,8 @@
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
 *.pem
 *.key
 credentials.json
@@ -34,6 +36,7 @@ build/
 coverage/
 .turbo/
 .vercel/
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -46,6 +49,8 @@ yarn-error.log*
 logs/
 PID
 pids/
+data/chunks/
+data/models/
 
 # OS & IDE
 .DS_Store

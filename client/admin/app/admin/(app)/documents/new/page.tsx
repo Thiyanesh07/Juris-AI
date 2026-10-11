@@ -2,19 +2,20 @@
 
 import React, { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useDocumentStore } from '@/context/DocumentStoreContext';
 import { DocumentTypeCategory } from '@/lib/types';
-import { ADMIN_ROUTES } from '@/constants/routes';
+import { ADMIN_ROUTES, ADMIN_DYNAMIC_ROUTES } from '@/constants/routes';
 import { PageHeader } from '@/components/shared/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Select } from '@/components/ui/Select';
 import { formatBytes } from '@/lib/utils';
-import { Upload, ArrowLeft, CheckCircle2, AlertCircle, FileText, X, HardDrive } from 'lucide-react';
+import { Upload, ArrowLeft, CheckCircle2, AlertCircle, FileText, X, HardDrive, Cpu } from 'lucide-react';
 
 export default function CreateDocumentPage() {
   const router = useRouter();
-  const { addDocument } = useDocumentStore();
+  const { uploadDocument } = useDocumentStore();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [title, setTitle] = useState('');
@@ -22,31 +23,27 @@ export default function CreateDocumentPage() {
   const [source, setSource] = useState('');
   const [authority, setAuthority] = useState('');
   const [jurisdiction, setJurisdiction] = useState('Union of India');
-  const [publicationDate, setPublicationDate] = useState('');
-  const [effectiveDate, setEffectiveDate] = useState('');
-  const [version, setVersion] = useState('');
 
-  // Selected file state (simulation)
-  const [selectedFile, setSelectedFile] = useState<{ name: string; size: number; type: string } | null>(null);
+  // Real File state
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
 
   const [errors, setErrors] = useState<{ title?: string; file?: string }>({});
   const [isLoading, setIsLoading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
+  const [createdDocId, setCreatedDocId] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
   const handleFileChange = (file: File | null) => {
     if (!file) return;
-    setSelectedFile({
-      name: file.name,
-      size: file.size,
-      type: file.type || 'application/pdf',
-    });
+    setSelectedFile(file);
     if (!title) {
       // Auto-populate title from filename
       const baseName = file.name.replace(/\.[^/.]+$/, '').replace(/_/g, ' ');
       setTitle(baseName.charAt(0).toUpperCase() + baseName.slice(1));
     }
     setErrors((prev) => ({ ...prev, file: undefined }));
+    setUploadError(null);
   };
 
   const validate = (): boolean => {
@@ -57,43 +54,45 @@ export default function CreateDocumentPage() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
+    if (!validate() || !selectedFile) return;
 
     setIsLoading(true);
+    setUploadError(null);
     setSuccessMessage(null);
+    setCreatedDocId(null);
 
-    setTimeout(() => {
-      addDocument({
-        title,
-        fileName: selectedFile?.name || 'document.pdf',
-        fileSizeBytes: selectedFile?.size || 5242880,
-        mimeType: selectedFile?.type || 'application/pdf',
-        documentType,
-        source: source || 'Ministry of Law and Justice',
-        authority: authority || 'Parliament of India',
-        jurisdiction: jurisdiction || 'Union of India',
-        publicationDate,
-        effectiveDate,
-        version,
-        uploadedBy: 'admin@example.com',
+    try {
+      const res = await uploadDocument(selectedFile, {
+        title: title.trim(),
+        type: documentType,
+        source: source.trim() || 'Official Gazette / Parliament of India',
+        source_url: authority.trim() || undefined,
       });
 
+      if (res && res.document_id) {
+        setCreatedDocId(res.document_id);
+        setSuccessMessage(
+          `Document accepted by backend pipeline. Document ID: ${res.document_id}${
+            res.duplicate ? ' (Existing file hash detected)' : ''
+          }`
+        );
+      } else {
+        throw new Error('Backend did not return a valid document identity.');
+      }
+    } catch (err) {
+      setUploadError(err instanceof Error ? err.message : 'Upload failed. Please check backend connection.');
+    } finally {
       setIsLoading(false);
-      setSuccessMessage('Document added to development workspace.');
-
-      setTimeout(() => {
-        router.push(ADMIN_ROUTES.DOCUMENTS);
-      }, 800);
-    }, 400);
+    }
   };
 
   return (
     <div className="space-y-6 max-w-4xl">
       <PageHeader
-        title="Upload Document"
-        subtitle="Ingest legal statutory texts, acts, constitutional provisions, or precedent judgments."
+        title="Upload Legal Document"
+        subtitle="Ingest statutory texts, constitutional acts, or court judgments into the real retrieval pipeline."
         actions={
           <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
             <ArrowLeft className="h-4 w-4 mr-1.5" />
@@ -102,15 +101,40 @@ export default function CreateDocumentPage() {
         }
       />
 
-      {successMessage && (
-        <div className="p-4 rounded-xl bg-[#D0EDDB] border border-[#B2E2C3] text-[#1E6B45] text-sm font-mono flex items-center gap-2 animate-in fade-in">
-          <CheckCircle2 className="h-5 w-5 shrink-0" />
-          <span>{successMessage}</span>
+      {/* Success Notification */}
+      {successMessage && createdDocId && (
+        <div className="p-4 rounded-xl bg-[#D0EDDB] border border-[#B2E2C3] text-[#1E6B45] text-xs font-mono space-y-3 animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-5 w-5 shrink-0" />
+            <span className="font-semibold">{successMessage}</span>
+          </div>
+          <div className="flex items-center gap-3 pt-2 border-t border-[#B2E2C3]/60">
+            <Link href={ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(createdDocId)}>
+              <Button variant="primary" size="sm">
+                <Cpu className="h-3.5 w-3.5 mr-1.5" />
+                Track Ingestion Stages
+              </Button>
+            </Link>
+            <Link href={ADMIN_DYNAMIC_ROUTES.DOCUMENT_DETAIL(createdDocId)}>
+              <Button variant="secondary" size="sm">
+                <FileText className="h-3.5 w-3.5 mr-1.5" />
+                View Document
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Upload Error Alert */}
+      {uploadError && (
+        <div className="p-4 rounded-xl bg-[#F5D9D9] border border-[#E8B8B8] text-[#8B2E2E] text-xs font-mono flex items-center gap-2">
+          <AlertCircle className="h-5 w-5 shrink-0" />
+          <span>Upload failed: {uploadError}</span>
         </div>
       )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Drag and Drop Upload Area */}
+        {/* File Drag and Drop Selection */}
         <div className="p-6 rounded-2xl bg-white border border-[#C9D4E1] shadow-xs space-y-4">
           <h3 className="text-sm font-mono font-bold text-[#17253A] uppercase tracking-wider">
             1. Document File Selection
@@ -119,7 +143,7 @@ export default function CreateDocumentPage() {
           <input
             type="file"
             ref={fileInputRef}
-            accept=".pdf,.docx,.txt"
+            accept=".pdf,.txt,.docx"
             className="hidden"
             onChange={(e) => handleFileChange(e.target.files?.[0] || null)}
           />
@@ -147,10 +171,10 @@ export default function CreateDocumentPage() {
                 <Upload className="h-6 w-6" />
               </div>
               <p className="text-sm font-semibold text-[#17253A]">
-                Drag and drop document file here, or <span className="text-[#2563A8] underline">browse</span>
+                Drag and drop legal document file here, or <span className="text-[#2563A8] underline">browse files</span>
               </p>
               <p className="text-xs text-[#718096] font-mono mt-1">
-                Supported formats: PDF, TXT, DOCX &bull; Max file size ~50 MB
+                Accepted: PDF, TXT, DOCX &bull; Maximum upload size: 50 MB
               </p>
             </div>
           ) : (
@@ -162,7 +186,7 @@ export default function CreateDocumentPage() {
                 <div>
                   <h4 className="text-xs font-semibold text-[#17253A] font-mono">{selectedFile.name}</h4>
                   <p className="text-[11px] text-[#718096] font-mono">
-                    {formatBytes(selectedFile.size)} &bull; {selectedFile.type}
+                    {formatBytes(selectedFile.size)} &bull; {selectedFile.type || 'application/octet-stream'}
                   </p>
                 </div>
               </div>
@@ -173,6 +197,7 @@ export default function CreateDocumentPage() {
                 size="sm"
                 onClick={() => setSelectedFile(null)}
                 className="text-[#8B2E2E]"
+                disabled={isLoading}
               >
                 <X className="h-4 w-4 mr-1" /> Remove
               </Button>
@@ -205,6 +230,7 @@ export default function CreateDocumentPage() {
                 }}
                 placeholder="e.g. Bharatiya Nagarik Suraksha Sanhita, 2023"
                 error={!!errors.title}
+                disabled={isLoading}
               />
               {errors.title && (
                 <p className="text-xs text-[#8B2E2E] font-mono mt-1 flex items-center gap-1">
@@ -221,10 +247,10 @@ export default function CreateDocumentPage() {
                 <Select
                   value={documentType}
                   onChange={(e) => setDocumentType(e.target.value as DocumentTypeCategory)}
+                  disabled={isLoading}
                 >
                   <option value="Constitution">Constitution</option>
                   <option value="Act">Act</option>
-                  <option value="Amendment Act">Amendment Act</option>
                   <option value="Rule">Rule</option>
                   <option value="Regulation">Regulation</option>
                   <option value="Judgment">Judgment</option>
@@ -241,17 +267,19 @@ export default function CreateDocumentPage() {
                   value={source}
                   onChange={(e) => setSource(e.target.value)}
                   placeholder="e.g. Ministry of Law and Justice"
+                  disabled={isLoading}
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Enacting Authority
+                  Enacting Authority / Source URL
                 </label>
                 <Input
                   value={authority}
                   onChange={(e) => setAuthority(e.target.value)}
-                  placeholder="e.g. Parliament of India / Supreme Court"
+                  placeholder="e.g. Parliament of India / https://indiacode.nic.in"
+                  disabled={isLoading}
                 />
               </div>
 
@@ -263,39 +291,7 @@ export default function CreateDocumentPage() {
                   value={jurisdiction}
                   onChange={(e) => setJurisdiction(e.target.value)}
                   placeholder="e.g. Union of India"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Publication Date
-                </label>
-                <Input
-                  type="date"
-                  value={publicationDate}
-                  onChange={(e) => setPublicationDate(e.target.value)}
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Effective Date
-                </label>
-                <Input
-                  type="date"
-                  value={effectiveDate}
-                  onChange={(e) => setEffectiveDate(e.target.value)}
-                />
-              </div>
-
-              <div className="md:col-span-2">
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Version / Act Number Reference
-                </label>
-                <Input
-                  value={version}
-                  onChange={(e) => setVersion(e.target.value)}
-                  placeholder="e.g. Act No. 46 of 2023"
+                  disabled={isLoading}
                 />
               </div>
             </div>
@@ -312,7 +308,7 @@ export default function CreateDocumentPage() {
             </Button>
             <Button type="submit" variant="primary" isLoading={isLoading}>
               <HardDrive className="h-4 w-4 mr-1.5" />
-              Add Document to Workspace
+              Upload & Ingest Document
             </Button>
           </div>
         </div>

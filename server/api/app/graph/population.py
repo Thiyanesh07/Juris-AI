@@ -99,7 +99,7 @@ async def _mark_job(
     await db.flush()
 
 
-def _build_graph_payload(
+def build_graph_payload(
     doc_id: UUID,
     doc_title: str,
     doc_type: str,
@@ -179,6 +179,9 @@ def _build_graph_payload(
         "defines": defines,
         "relations": other_relations,
     }
+
+
+_build_graph_payload = build_graph_payload
 
 
 

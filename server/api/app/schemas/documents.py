@@ -111,6 +111,34 @@ class ProcessingJobSchema(BaseModel):
     updated_at: datetime
 
 
+class ProcessingJobSummary(BaseModel):
+    """A processing job record joined with document metadata."""
+
+    model_config = ConfigDict(extra="forbid", from_attributes=True)
+
+    id: UUID
+    document_id: UUID
+    document_title: str | None = None
+    document_type: str | None = None
+    document_status: str | None = None
+    stage: str
+    status: str
+    error: str | None = None
+    created_at: datetime
+    updated_at: datetime
+
+
+class PaginatedProcessingJobs(BaseModel):
+    """Paginated list of processing jobs across documents."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    items: list[ProcessingJobSummary]
+    total: int
+    page: int
+    page_size: int
+
+
 # ── Reprocess ─────────────────────────────────────────────────────────────────
 
 

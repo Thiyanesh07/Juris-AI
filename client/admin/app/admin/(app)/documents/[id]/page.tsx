@@ -1,25 +1,22 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useDocumentStore } from '@/context/DocumentStoreContext';
-import { DocumentTypeCategory, DocumentStatus } from '@/lib/types';
+import { Document, DocumentTypeCategory, DocumentStatus } from '@/lib/types';
+import { ProcessingJob } from '@/lib/apiTypes';
 import { ADMIN_ROUTES, ADMIN_DYNAMIC_ROUTES } from '@/constants/routes';
-import { formatDate, formatBytes } from '@/lib/utils';
+import { formatDate } from '@/lib/utils';
 import { PageHeader } from '@/components/shared/PageHeader';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
-import { Select } from '@/components/ui/Select';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
 import {
   ArrowLeft,
-  Edit3,
   Cpu,
   Archive,
-  Save,
-  X,
   FileText,
   Building,
   Calendar,
@@ -28,6 +25,8 @@ import {
   CheckCircle2,
   AlertCircle,
   ExternalLink,
+  RotateCcw,
+  RefreshCw,
 } from 'lucide-react';
 
 export default function DocumentDetailPage() {
@@ -35,67 +34,112 @@ export default function DocumentDetailPage() {
   const router = useRouter();
   const docId = params?.id as string;
 
-  const { getDocumentById, updateDocument, archiveDocument, startIngestion, getJobById } = useDocumentStore();
-  const doc = getDocumentById(docId);
-  const latestJob = doc?.latestJobId ? getJobById(doc.latestJobId) : undefined;
+  const {
+    getDocumentById,
+    fetchDocumentDetail,
+    archiveDocument,
+    restoreDocument,
+    reprocessDocument,
+    fetchDocumentStages,
+  } = useDocumentStore();
 
-  const [isEditing, setIsEditing] = useState(false);
-  const [title, setTitle] = useState(doc?.title || '');
-  const [source, setSource] = useState(doc?.source || '');
-  const [authority, setAuthority] = useState(doc?.authority || '');
-  const [jurisdiction, setJurisdiction] = useState(doc?.jurisdiction || '');
-  const [version, setVersion] = useState(doc?.version || '');
-  const [documentType, setDocumentType] = useState<DocumentTypeCategory>(doc?.documentType || 'Act');
+  const [doc, setDoc] = useState<Document | null>(null);
+  const [stages, setStages] = useState<ProcessingJob[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const [isArchiveDialogOpen, setIsArchiveDialogOpen] = useState(false);
+  const [isRestoreDialogOpen, setIsRestoreDialogOpen] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [actionFeedback, setActionFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
-  if (!doc) {
-    return (
-      <div className="space-y-6 max-w-3xl">
-        <PageHeader
-          title="Document Not Found"
-          subtitle="The requested document record could not be found."
-          actions={
-            <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
-              <ArrowLeft className="h-4 w-4 mr-1.5" />
-              Back to Documents
-            </Button>
-          }
-        />
-        <EmptyState title="Document Record Not Found" description="The document ID does not exist in local session store." />
-      </div>
-    );
-  }
+  const loadDocumentData = useCallback(async () => {
+    if (!docId) return;
+    setIsLoading(true);
+    setLoadError(null);
+    try {
+      const fetched = await fetchDocumentDetail(docId);
+      if (fetched) {
+        setDoc(fetched);
+        const st = await fetchDocumentStages(docId);
+        setStages(st);
+      } else {
+        setDoc(null);
+      }
+    } catch (err) {
+      setLoadError(err instanceof Error ? err.message : 'Failed to fetch document');
+    } finally {
+      setIsLoading(false);
+    }
+  }, [docId, fetchDocumentDetail, fetchDocumentStages]);
 
-  const handleSaveEdit = (e: React.FormEvent) => {
-    e.preventDefault();
+  useEffect(() => {
+    loadDocumentData();
+  }, [loadDocumentData]);
+
+  const handleReprocess = async () => {
+    if (!doc || isProcessing) return;
     setIsProcessing(true);
-    setTimeout(() => {
-      updateDocument(doc.id, {
-        title,
-        source,
-        authority,
-        jurisdiction,
-        version,
-        documentType,
+    setActionFeedback(null);
+    try {
+      const res = await reprocessDocument(doc.id);
+      setActionFeedback({
+        type: 'success',
+        message: res.message || 'Pipeline reprocess initiated.',
       });
+      await loadDocumentData();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Reprocess request failed.',
+      });
+    } finally {
       setIsProcessing(false);
-      setIsEditing(false);
-    }, 300);
+    }
   };
 
-  const handleStartIngestion = () => {
-    startIngestion(doc.id);
-  };
-
-  const handleConfirmArchive = () => {
+  const handleConfirmArchive = async () => {
+    if (!doc) return;
     setIsProcessing(true);
-    setTimeout(() => {
-      archiveDocument(doc.id);
-      setIsProcessing(false);
+    setActionFeedback(null);
+    try {
+      await archiveDocument(doc.id);
+      setActionFeedback({
+        type: 'success',
+        message: 'Document archived successfully.',
+      });
       setIsArchiveDialogOpen(false);
-    }, 300);
+      await loadDocumentData();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Archive failed.',
+      });
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
+  const handleConfirmRestore = async () => {
+    if (!doc) return;
+    setIsProcessing(true);
+    setActionFeedback(null);
+    try {
+      const res = await restoreDocument(doc.id);
+      setActionFeedback({
+        type: 'success',
+        message: res.message || `Document restored to ${res.status?.toUpperCase()}.`,
+      });
+      setIsRestoreDialogOpen(false);
+      await loadDocumentData();
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message: err instanceof Error ? err.message : 'Restore failed.',
+      });
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const getStatusBadge = (status: DocumentStatus) => {
@@ -109,14 +153,56 @@ export default function DocumentDetailPage() {
           </Badge>
         );
       case 'FAILED':
-        return <Badge variant="error">Parsing Failed</Badge>;
+        return <Badge variant="error">Ingestion Failed</Badge>;
       case 'ARCHIVED':
-        return <Badge variant="outline">Archived</Badge>;
+        return <Badge variant="outline">Archived / Disabled</Badge>;
       case 'UPLOADED':
       default:
         return <Badge variant="default">Uploaded</Badge>;
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="space-y-6 max-w-4xl">
+        <PageHeader
+          title="Loading Document..."
+          subtitle={`Fetching document ${docId} from backend`}
+          actions={
+            <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
+              <ArrowLeft className="h-4 w-4 mr-1.5" />
+              Back to Documents
+            </Button>
+          }
+        />
+        <div className="p-12 text-center rounded-xl border border-[#C9D4E1] bg-white">
+          <Activity className="h-6 w-6 text-[#2563A8] animate-spin mx-auto mb-2" />
+          <p className="font-mono text-xs text-[#526176]">Loading document metadata...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!doc) {
+    return (
+      <div className="space-y-6 max-w-3xl">
+        <PageHeader
+          title="Document Not Found"
+          subtitle={`The document with ID "${docId}" could not be found in the database.`}
+          actions={
+            <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
+              <ArrowLeft className="h-4 w-4 mr-1.5" />
+              Back to Documents
+            </Button>
+          }
+        />
+        <EmptyState
+          title="Document Record Not Found"
+          description={loadError || 'The document ID does not exist in the PostgreSQL repository.'}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 max-w-4xl">
@@ -130,27 +216,79 @@ export default function DocumentDetailPage() {
               <ArrowLeft className="h-4 w-4 mr-1.5" />
               Back to Documents
             </Button>
-            <Button variant="secondary" size="sm" onClick={() => setIsEditing(!isEditing)}>
-              <Edit3 className="h-3.5 w-3.5 mr-1.5" />
-              {isEditing ? 'Cancel Edit' : 'Edit Metadata'}
+            <Button variant="secondary" size="sm" onClick={loadDocumentData} disabled={isLoading}>
+              <RefreshCw className={`h-3.5 w-3.5 mr-1.5 ${isLoading ? 'animate-spin' : ''}`} />
+              Refresh
             </Button>
-            {doc.status !== 'PROCESSING' && doc.status !== 'ARCHIVED' && (
-              <Button variant="primary" size="sm" onClick={handleStartIngestion}>
+            <Link href={ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(doc.id)}>
+              <Button variant="secondary" size="sm">
                 <Cpu className="h-3.5 w-3.5 mr-1.5" />
-                Start Ingestion
+                Pipeline Stages
+              </Button>
+            </Link>
+            {doc.status !== 'ARCHIVED' && (
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={handleReprocess}
+                disabled={isProcessing || doc.status === 'PROCESSING'}
+              >
+                <RotateCcw className={`h-3.5 w-3.5 mr-1.5 ${isProcessing ? 'animate-spin' : ''}`} />
+                {doc.status === 'PROCESSING' ? 'Processing...' : 'Reprocess Ingestion'}
               </Button>
             )}
-            {doc.status !== 'ARCHIVED' && (
-              <Button variant="destructive" size="sm" onClick={() => setIsArchiveDialogOpen(true)}>
+            {doc.status === 'ARCHIVED' ? (
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() => setIsRestoreDialogOpen(true)}
+                disabled={isProcessing}
+              >
+                <RotateCcw className="h-3.5 w-3.5 mr-1.5" />
+                Restore Document
+              </Button>
+            ) : (
+              <Button
+                variant="destructive"
+                size="sm"
+                onClick={() => setIsArchiveDialogOpen(true)}
+                disabled={isProcessing}
+              >
                 <Archive className="h-3.5 w-3.5 mr-1.5" />
-                Archive
+                Archive Document
               </Button>
             )}
           </div>
         }
       />
 
-      {/* Identity & Ingestion Status Section */}
+      {/* Action Feedback */}
+      {actionFeedback && (
+        <div
+          className={`p-4 rounded-xl text-xs font-mono flex items-center justify-between border ${
+            actionFeedback.type === 'success'
+              ? 'bg-[#D0EDDB] border-[#B2E2C3] text-[#1E6B45]'
+              : 'bg-[#F5D9D9] border-[#E8B8B8] text-[#8B2E2E]'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            {actionFeedback.type === 'success' ? (
+              <CheckCircle2 className="h-4 w-4 shrink-0" />
+            ) : (
+              <AlertCircle className="h-4 w-4 shrink-0" />
+            )}
+            <span>{actionFeedback.message}</span>
+          </div>
+          <button
+            onClick={() => setActionFeedback(null)}
+            className="underline font-semibold ml-4 cursor-pointer"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
+      {/* Identity & Metadata Card */}
       <div className="p-6 rounded-2xl bg-white border border-[#C9D4E1] shadow-xs space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-[#D9E1EA] gap-4">
           <div className="flex items-center gap-4">
@@ -168,153 +306,73 @@ export default function DocumentDetailPage() {
           <div>{getStatusBadge(doc.status)}</div>
         </div>
 
-        {/* View / Edit Mode */}
-        {isEditing ? (
-          <form onSubmit={handleSaveEdit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Document Title
-                </label>
-                <Input value={title} onChange={(e) => setTitle(e.target.value)} required />
-              </div>
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Document Type
-                </label>
-                <Select
-                  value={documentType}
-                  onChange={(e) => setDocumentType(e.target.value as DocumentTypeCategory)}
-                >
-                  <option value="Constitution">Constitution</option>
-                  <option value="Act">Act</option>
-                  <option value="Amendment Act">Amendment Act</option>
-                  <option value="Rule">Rule</option>
-                  <option value="Regulation">Regulation</option>
-                  <option value="Judgment">Judgment</option>
-                  <option value="Notification">Notification</option>
-                  <option value="Other">Other</option>
-                </Select>
-              </div>
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Source
-                </label>
-                <Input value={source} onChange={(e) => setSource(e.target.value)} />
-              </div>
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Authority
-                </label>
-                <Input value={authority} onChange={(e) => setAuthority(e.target.value)} />
-              </div>
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Jurisdiction
-                </label>
-                <Input value={jurisdiction} onChange={(e) => setJurisdiction(e.target.value)} />
-              </div>
-              <div>
-                <label className="block text-xs font-mono font-medium text-[#17253A] mb-1">
-                  Version
-                </label>
-                <Input value={version} onChange={(e) => setVersion(e.target.value)} />
-              </div>
-            </div>
-            <div className="flex items-center justify-end gap-3 pt-4 border-t border-[#D9E1EA]">
-              <Button type="button" variant="ghost" onClick={() => setIsEditing(false)}>
-                <X className="h-4 w-4 mr-1.5" /> Cancel
-              </Button>
-              <Button type="submit" variant="primary" isLoading={isProcessing}>
-                <Save className="h-4 w-4 mr-1.5" /> Save Changes
-              </Button>
-            </div>
-          </form>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-xs font-mono">
-            <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
-              <span className="text-[#718096] flex items-center gap-1.5">
-                <Building className="h-3.5 w-3.5 text-[#2563A8]" /> Source & Authority
-              </span>
-              <p className="font-semibold text-[#17253A]">{doc.source || '—'}</p>
-              {doc.authority && <p className="text-[11px] text-[#526176]">{doc.authority}</p>}
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
-              <span className="text-[#718096] flex items-center gap-1.5">
-                <Layers className="h-3.5 w-3.5 text-[#2563A8]" /> Jurisdiction & Version
-              </span>
-              <p className="font-semibold text-[#17253A]">{doc.jurisdiction || 'Union of India'}</p>
-              {doc.version && <p className="text-[11px] text-[#526176]">{doc.version}</p>}
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
-              <span className="text-[#718096] flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5 text-[#2563A8]" /> Dates & File Metadata
-              </span>
-              <p className="font-semibold text-[#17253A]">Uploaded: {formatDate(doc.createdAt)}</p>
-              <p className="text-[11px] text-[#526176]">
-                Size: {formatBytes(doc.fileSizeBytes)} &bull; {doc.pageCount ? `${doc.pageCount} pages` : 'PDF'}
-              </p>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-xs font-mono">
+          <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
+            <span className="text-[#718096] flex items-center gap-1.5">
+              <Building className="h-3.5 w-3.5 text-[#2563A8]" /> Source & Authority
+            </span>
+            <p className="font-semibold text-[#17253A]">{doc.source || '—'}</p>
+            {doc.authority && <p className="text-[11px] text-[#526176]">{doc.authority}</p>}
           </div>
-        )}
+
+          <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
+            <span className="text-[#718096] flex items-center gap-1.5">
+              <Layers className="h-3.5 w-3.5 text-[#2563A8]" /> Jurisdiction & Type
+            </span>
+            <p className="font-semibold text-[#17253A]">{doc.jurisdiction || 'Union of India'}</p>
+            <p className="text-[11px] text-[#526176]">Category: {doc.documentType}</p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-[#EFF3F7] border border-[#D9E1EA] space-y-1">
+            <span className="text-[#718096] flex items-center gap-1.5">
+              <Calendar className="h-3.5 w-3.5 text-[#2563A8]" /> Dates & Tracking
+            </span>
+            <p className="font-semibold text-[#17253A]">Registered: {formatDate(doc.createdAt)}</p>
+            <p className="text-[11px] text-[#526176]">Modified: {formatDate(doc.updatedAt)}</p>
+          </div>
+        </div>
       </div>
 
-      {/* Ingestion Relationship Card */}
+      {/* Ingestion Relationship & Stages Summary */}
       <div className="p-6 rounded-2xl bg-[#F5F7FA] border border-[#C9D4E1] shadow-xs space-y-4">
         <div className="flex items-center justify-between pb-3 border-b border-[#D9E1EA]">
           <div className="flex items-center gap-2">
             <Cpu className="h-4 w-4 text-[#2563A8]" />
             <h3 className="text-sm font-mono font-bold text-[#17253A] uppercase tracking-wider">
-              Ingestion Job Link
+              Ingestion Pipeline Status
             </h3>
           </div>
-          {latestJob && (
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => router.push(ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(latestJob.id))}
-            >
-              View Ingestion Job Details
+          <Link href={ADMIN_DYNAMIC_ROUTES.INGESTION_JOB_DETAIL(doc.id)}>
+            <Button variant="secondary" size="sm">
+              View Detailed Stages
               <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
             </Button>
-          )}
+          </Link>
         </div>
 
-        {latestJob ? (
+        {stages.length > 0 ? (
           <div className="p-4 rounded-xl bg-white border border-[#D9E1EA] space-y-3 font-mono text-xs">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-[#17253A]">Job ID: {latestJob.id}</span>
-              <Badge variant={latestJob.status === 'COMPLETED' ? 'success' : latestJob.status === 'FAILED' ? 'error' : 'primary'}>
-                {latestJob.status}
+              <span className="font-bold text-[#17253A]">
+                Stages Executed: {stages.filter((s) => s.status?.toLowerCase() === 'completed').length} / {stages.length}
+              </span>
+              <Badge variant={doc.status === 'READY' ? 'success' : doc.status === 'FAILED' ? 'error' : 'primary'}>
+                Pipeline: {doc.status}
               </Badge>
             </div>
 
-            <div className="w-full bg-[#C9D4E1] h-2 rounded-full overflow-hidden">
-              <div
-                className="bg-[#2563A8] h-full transition-all duration-300"
-                style={{ width: `${latestJob.progressPercentage}%` }}
-              />
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-[#EFF3F7]">
+              {stages.slice(0, 4).map((s) => (
+                <div key={s.id} className="p-2 rounded bg-[#EFF3F7] border border-[#D9E1EA]">
+                  <p className="font-semibold text-[11px] text-[#17253A] capitalize">{s.stage.replace(/_/g, ' ')}</p>
+                  <p className="text-[10px] text-[#526176] uppercase">{s.status}</p>
+                </div>
+              ))}
             </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-2 border-t border-[#EFF3F7] text-[11px] text-[#526176]">
-              <div>Worker: {latestJob.workerNode || 'worker-01'}</div>
-              <div>Progress: {latestJob.progressPercentage}%</div>
-              <div>Chunks: {latestJob.chunksCount || '—'}</div>
-              <div>Entities: {latestJob.entitiesExtractedCount || '—'}</div>
-            </div>
-
-            {latestJob.errorMessage && (
-              <div className="p-2.5 rounded bg-[#F5D9D9] text-[#8B2E2E] text-xs flex items-center gap-2 border border-[#E8B8B8]">
-                <AlertCircle className="h-4 w-4 shrink-0" />
-                <span>{latestJob.errorMessage}</span>
-              </div>
-            )}
           </div>
         ) : (
           <div className="p-6 text-center text-xs font-mono text-[#718096] bg-white rounded-xl border border-[#D9E1EA]">
-            No ingestion job initiated yet for this document. Click "Start Ingestion" above to queue processing.
+            No processing stages recorded yet for this document. Click "Reprocess Ingestion" above to execute the pipeline.
           </div>
         )}
       </div>
@@ -325,10 +383,24 @@ export default function DocumentDetailPage() {
           isOpen={true}
           onClose={() => setIsArchiveDialogOpen(false)}
           onConfirm={handleConfirmArchive}
-          title="Archive Document?"
-          message={`Are you sure you want to archive "${doc.title}"?`}
+          title="Archive Legal Document?"
+          message={`Are you sure you want to archive "${doc.title}"? The document will be disabled and will not be retrieved during search.`}
           confirmText="Archive Document"
           variant="danger"
+          isLoading={isProcessing}
+        />
+      )}
+
+      {/* Confirm Restore Dialog */}
+      {isRestoreDialogOpen && (
+        <ConfirmDialog
+          isOpen={true}
+          onClose={() => setIsRestoreDialogOpen(false)}
+          onConfirm={handleConfirmRestore}
+          title="Restore Document?"
+          message={`Are you sure you want to restore "${doc.title}"? The backend will verify if all required stages succeeded before marking it READY.`}
+          confirmText="Restore Document"
+          variant="primary"
           isLoading={isProcessing}
         />
       )}

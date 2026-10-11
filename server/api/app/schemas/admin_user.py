@@ -36,6 +36,14 @@ class UserUpdateRequest(BaseModel):
     is_active: bool | None = None
 
 
+class UserCreateRequest(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    email: EmailStr
+    name: str | None = None
+    password: str | None = Field(default=None, min_length=8)
+
+
 class AdminProvisionRequest(BaseModel):
     email: EmailStr
     name: str

@@ -3,18 +3,19 @@
 from __future__ import annotations
 
 from pathlib import Path
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 import numpy as np
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import get_current_user
 from app.core.config import Settings, get_settings
 from app.graph.client import GraphError
 from app.main import app
-from app.models import User
-from app.models.enums import UserRole
+from app.models import Document, User
+from app.models.enums import DocumentStatus, DocumentType, UserRole
 from app.retrieval.index import save_index
 from tests.test_retrieval import (
     TEST_MODEL,
@@ -63,6 +64,19 @@ def patch_settings(retrieval_settings: Settings):
 @pytest.fixture(autouse=True)
 def patch_embedder(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr("app.retrieval.service.build_embedder", lambda _settings: FakeEmbedder())
+
+
+@pytest.fixture(autouse=True)
+async def seed_ready_doc(session: AsyncSession) -> None:
+    doc = Document(
+        id=UUID("00000000-0000-0000-0000-000000000010"),
+        title="Constitution",
+        type=DocumentType.CONSTITUTION,
+        source="test",
+        status=DocumentStatus.READY,
+    )
+    session.add(doc)
+    await session.commit()
 
 
 def test_hybrid_requires_authentication(client: TestClient) -> None:

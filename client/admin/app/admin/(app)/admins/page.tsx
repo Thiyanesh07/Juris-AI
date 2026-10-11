@@ -20,7 +20,7 @@ import { ShieldAlert, ShieldCheck, Eye, Power, Trash2, Lock, MoreVertical } from
 
 export default function AdminsListPage() {
   const router = useRouter();
-  const { admins, toggleUserStatus, deleteUser } = useUserStore();
+  const { admins, isLoading, error, toggleUserStatus, deleteUser, refreshUsers } = useUserStore();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
@@ -28,6 +28,7 @@ export default function AdminsListPage() {
   const [targetAdmin, setTargetAdmin] = useState<User | null>(null);
   const [actionType, setActionType] = useState<'toggle' | 'delete' | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   const filteredAdmins = useMemo(() => {
     return admins.filter((a) => {
@@ -39,21 +40,24 @@ export default function AdminsListPage() {
     });
   }, [admins, searchQuery, statusFilter]);
 
-  const handleActionConfirm = () => {
+  const handleActionConfirm = async () => {
     if (!targetAdmin || !actionType || targetAdmin.isProtected) return;
     setIsProcessing(true);
+    setActionError(null);
 
-    setTimeout(() => {
+    try {
       if (actionType === 'toggle') {
-        toggleUserStatus(targetAdmin.id);
+        await toggleUserStatus(targetAdmin.id);
       } else if (actionType === 'delete') {
-        deleteUser(targetAdmin.id);
+        await deleteUser(targetAdmin.id);
       }
-
-      setIsProcessing(false);
       setTargetAdmin(null);
       setActionType(null);
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Operation failed. Please try again.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   return (
@@ -84,6 +88,18 @@ export default function AdminsListPage() {
           </p>
         </div>
       </div>
+
+      {(error || actionError) && (
+        <div className="p-4 rounded-xl bg-[#FBEAEB] border border-[#F5C2C7] text-[#8B2E2E] text-xs font-mono flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <ShieldAlert className="h-4 w-4 shrink-0 text-[#8B2E2E]" />
+            <span>{actionError || error}</span>
+          </div>
+          <Button variant="ghost" size="sm" onClick={() => { setActionError(null); refreshUsers(); }}>
+            Retry
+          </Button>
+        </div>
+      )}
 
       {/* Filter Bar */}
       <FilterBar
@@ -284,9 +300,9 @@ export default function AdminsListPage() {
             setActionType(null);
           }}
           onConfirm={handleActionConfirm}
-          title="Delete Administrator Operator?"
-          message={`Are you sure you want to permanently remove operator ${targetAdmin.name} (${targetAdmin.email})?`}
-          confirmText="Delete Operator"
+          title="Deactivate Administrator?"
+          message={`Are you sure you want to deactivate administrative access for ${targetAdmin.name} (${targetAdmin.email})? Privileged access will be revoked.`}
+          confirmText="Deactivate Operator"
           variant="danger"
           isLoading={isProcessing}
         />

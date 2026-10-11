@@ -6,8 +6,6 @@ import {
   GraphEdgeData,
   GraphEntityType,
   GraphRelationType,
-  INITIAL_GRAPH_NODES,
-  INITIAL_GRAPH_EDGES,
 } from '@/data/graph';
 import { apiClient } from '@/lib/apiClient';
 
@@ -24,6 +22,7 @@ interface GraphStoreContextType {
   zoomLevel: number;
   panOffset: { x: number; y: number };
   isLoading: boolean;
+  error: string | null;
   selectNode: (id: string | null) => void;
   selectEdge: (id: string | null) => void;
   setSearchQuery: (query: string) => void;
@@ -35,6 +34,7 @@ interface GraphStoreContextType {
   resetView: () => void;
   zoomIn: () => void;
   zoomOut: () => void;
+  refreshGraph: () => Promise<void>;
   visibleNodes: GraphNodeData[];
   visibleEdges: GraphEdgeData[];
   getSelectedNode: () => GraphNodeData | undefined;
@@ -47,7 +47,7 @@ interface GraphStoreContextType {
 
 const GraphStoreContext = createContext<GraphStoreContextType | undefined>(undefined);
 
-function mapRawType(rawType?: string): GraphEntityType {
+export function mapRawType(rawType?: string): GraphEntityType {
   if (!rawType) return 'ARTICLE';
   const u = rawType.toUpperCase();
   if (['ARTICLE', 'ACT', 'SECTION', 'AMENDMENT', 'RULE', 'REGULATION', 'JUDGMENT', 'COURT'].includes(u)) {
@@ -57,9 +57,13 @@ function mapRawType(rawType?: string): GraphEntityType {
   return 'ACT';
 }
 
-function layoutNodes(rawNodes: any[], rawEdges: any[], centerId?: string): { nodes: GraphNodeData[]; edges: GraphEdgeData[] } {
+export function layoutNodes(
+  rawNodes: any[],
+  rawEdges: any[],
+  centerId?: string
+): { nodes: GraphNodeData[]; edges: GraphEdgeData[] } {
   if (!rawNodes || rawNodes.length === 0) {
-    return { nodes: INITIAL_GRAPH_NODES, edges: INITIAL_GRAPH_EDGES };
+    return { nodes: [], edges: [] };
   }
 
   const cx = 500;
@@ -69,7 +73,7 @@ function layoutNodes(rawNodes: any[], rawEdges: any[], centerId?: string): { nod
   const firstHop = new Set<string>();
   const secondHop = new Set<string>();
 
-  if (centerId) {
+  if (centerId && rawEdges && rawEdges.length > 0) {
     rawEdges.forEach((e: any) => {
       const src = String(e.sourceId || e.source);
       const tgt = String(e.targetId || e.target);
@@ -100,41 +104,40 @@ function layoutNodes(rawNodes: any[], rawEdges: any[], centerId?: string): { nod
       x = cx;
       y = cy;
     } else if (firstHop.has(id)) {
-      const i = firstHopList.indexOf(id);
-      const angle = (2 * Math.PI * i) / Math.max(firstHopList.length, 1);
-      x = cx + Math.round(180 * Math.cos(angle));
-      y = cy + Math.round(160 * Math.sin(angle));
+      const posIdx = firstHopList.indexOf(id);
+      const angle = (2 * Math.PI * posIdx) / Math.max(1, firstHopList.length);
+      const radius = 160;
+      x = cx + Math.cos(angle) * radius;
+      y = cy + Math.sin(angle) * radius;
     } else if (secondHop.has(id)) {
-      const i = secondHopList.indexOf(id);
-      const angle = (2 * Math.PI * i) / Math.max(secondHopList.length, 1);
-      x = cx + Math.round(320 * Math.cos(angle));
-      y = cy + Math.round(260 * Math.sin(angle));
+      const posIdx = secondHopList.indexOf(id);
+      const angle = (2 * Math.PI * posIdx) / Math.max(1, secondHopList.length);
+      const radius = 280;
+      x = cx + Math.cos(angle) * radius;
+      y = cy + Math.sin(angle) * radius;
     } else {
-      const i = remainingList.indexOf(id);
-      const row = Math.floor(i / 6);
-      const col = i % 6;
-      x = 100 + col * 150;
-      y = 100 + row * 120;
+      const posIdx = remainingList.indexOf(id);
+      const angle = (2 * Math.PI * (posIdx >= 0 ? posIdx : idx)) / Math.max(1, remainingList.length);
+      const radius = 240;
+      x = cx + Math.cos(angle) * radius;
+      y = cy + Math.sin(angle) * radius;
     }
-
-    const type = mapRawType(n.type || n.label);
-    const label = n.label || n.name || id;
 
     nodeMap.set(id, {
       id,
-      label,
-      type,
-      x,
-      y,
-      identifier: n.properties?.citation_ref || n.properties?.id || label,
-      description: n.properties?.description || `${type} entity in legal knowledge graph`,
-      sourceDocId: n.properties?.document_id,
-      jurisdiction: n.properties?.jurisdiction || 'India',
+      label: String(n.label || n.name || id),
+      type: mapRawType(n.type || n.label),
+      x: Math.round(x),
+      y: Math.round(y),
+      description: n.description || n.properties?.description || (n.properties ? JSON.stringify(n.properties) : 'Legal entity record'),
+      identifier: n.identifier || n.properties?.id || id,
+      sourceDocId: n.sourceDocId || n.properties?.document_id,
+      jurisdiction: n.jurisdiction || n.properties?.jurisdiction || 'Union of India',
     });
   });
 
-  const parsedEdges: GraphEdgeData[] = rawEdges.map((e: any, idx: number) => ({
-    id: String(e.id || `e_${idx}`),
+  const parsedEdges: GraphEdgeData[] = (rawEdges || []).map((e: any, idx: number) => ({
+    id: String(e.id || `edge_${idx}`),
     source: String(e.sourceId || e.source),
     target: String(e.targetId || e.target),
     relationship: (e.label || e.relationship || 'REFERENCES').toUpperCase() as GraphRelationType,
@@ -145,17 +148,18 @@ function layoutNodes(rawNodes: any[], rawEdges: any[], centerId?: string): { nod
 }
 
 export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [nodes, setNodes] = useState<GraphNodeData[]>(INITIAL_GRAPH_NODES);
-  const [edges, setEdges] = useState<GraphEdgeData[]>(INITIAL_GRAPH_EDGES);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [nodes, setNodes] = useState<GraphNodeData[]>([]);
+  const [edges, setEdges] = useState<GraphEdgeData[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>('n_art21');
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [entityTypeFilter, setEntityTypeFilter] = useState<string>('ALL');
   const [relationTypeFilter, setRelationTypeFilter] = useState<string>('ALL');
   const [traversalDepth, setTraversalDepth] = useState<number>(2);
-  const [traversalPath, setTraversalPath] = useState<string[]>(['n_art21', 'n_const', 'n_j_maneka']);
+  const [traversalPath, setTraversalPath] = useState<string[]>([]);
 
   const [zoomLevel, setZoomLevel] = useState<number>(1.0);
   const [panOffset, setPanOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -163,6 +167,7 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   // Fetch live neighbors when node is selected
   const fetchNeighborsFromApi = useCallback(async (nodeId: string, depth: number) => {
     setIsLoading(true);
+    setError(null);
     try {
       const res = await apiClient.get<{
         center_node: any;
@@ -175,36 +180,111 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         const layout = layoutNodes(res.nodes, res.edges, nodeId);
         setNodes(layout.nodes);
         setEdges(layout.edges);
-        setTraversalPath(res.nodes.map(n => String(n.id)));
+        setTraversalPath(res.nodes.map((n) => String(n.id)));
+      } else {
+        // Center node exists without neighbors
+        if (res?.center_node) {
+          const layout = layoutNodes([res.center_node], [], nodeId);
+          setNodes(layout.nodes);
+          setEdges([]);
+          setTraversalPath([nodeId]);
+        }
       }
-    } catch {
-      // Keep existing local nodes on error
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to retrieve node neighbors');
     } finally {
       setIsLoading(false);
     }
   }, []);
 
   // Fetch graph nodes matching search query
-  const searchGraphFromApi = useCallback(async (query: string) => {
-    if (!query.trim()) return;
+  const searchGraphFromApi = useCallback(
+    async (query: string, typeFilter?: string) => {
+      if (!query.trim()) return;
+      setIsLoading(true);
+      setError(null);
+      try {
+        const typeParam = typeFilter && typeFilter !== 'ALL' ? `&entity_type=${encodeURIComponent(typeFilter)}` : '';
+        const res = await apiClient.get<{ nodes: any[]; total: number }>(
+          `/graph/search?query=${encodeURIComponent(query.trim())}${typeParam}`
+        );
+
+        if (res && res.nodes && res.nodes.length > 0) {
+          const firstId = res.nodes[0]?.id;
+          if (firstId) {
+            setSelectedNodeId(firstId);
+            await fetchNeighborsFromApi(firstId, traversalDepth);
+          } else {
+            const layout = layoutNodes(res.nodes, []);
+            setNodes(layout.nodes);
+            setEdges([]);
+          }
+        } else {
+          setNodes([]);
+          setEdges([]);
+          setSelectedNodeId(null);
+          setTraversalPath([]);
+        }
+      } catch (err) {
+        setNodes([]);
+        setEdges([]);
+        setSelectedNodeId(null);
+        setError(err instanceof Error ? err.message : 'Graph search request failed');
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [fetchNeighborsFromApi, traversalDepth]
+  );
+
+  // Initial load: search for initial seed entities without hardcoded mocks
+  const initialLoad = useCallback(async () => {
     setIsLoading(true);
+    setError(null);
     try {
-      const res = await apiClient.get<{ nodes: any[]; total: number }>(
-        `/graph/search?query=${encodeURIComponent(query.trim())}`
-      );
+      const res = await apiClient.get<{ nodes: any[]; total: number }>('/graph/search?query=Act&limit=15');
       if (res && res.nodes && res.nodes.length > 0) {
-        const layout = layoutNodes(res.nodes, [], res.nodes[0]?.id);
-        setNodes(layout.nodes);
-        if (res.nodes[0]?.id) {
-          fetchNeighborsFromApi(res.nodes[0].id, traversalDepth);
+        const firstId = res.nodes[0]?.id;
+        if (firstId) {
+          setSelectedNodeId(firstId);
+          await fetchNeighborsFromApi(firstId, 2);
+        } else {
+          const layout = layoutNodes(res.nodes, []);
+          setNodes(layout.nodes);
+          setEdges([]);
+        }
+      } else {
+        // Fallback search with single letter
+        const fallbackRes = await apiClient.get<{ nodes: any[]; total: number }>('/graph/search?query=a&limit=15');
+        if (fallbackRes && fallbackRes.nodes && fallbackRes.nodes.length > 0) {
+          const firstId = fallbackRes.nodes[0]?.id;
+          if (firstId) {
+            setSelectedNodeId(firstId);
+            await fetchNeighborsFromApi(firstId, 2);
+          } else {
+            const layout = layoutNodes(fallbackRes.nodes, []);
+            setNodes(layout.nodes);
+            setEdges([]);
+          }
+        } else {
+          setNodes([]);
+          setEdges([]);
+          setSelectedNodeId(null);
         }
       }
-    } catch {
-      // Keep existing nodes
+    } catch (err) {
+      setNodes([]);
+      setEdges([]);
+      setSelectedNodeId(null);
+      setError(err instanceof Error ? err.message : 'Unable to connect to Neo4j Knowledge Graph');
     } finally {
       setIsLoading(false);
     }
-  }, [fetchNeighborsFromApi, traversalDepth]);
+  }, [fetchNeighborsFromApi]);
+
+  useEffect(() => {
+    initialLoad();
+  }, [initialLoad]);
 
   const selectNode = (id: string | null) => {
     setSelectedNodeId(id);
@@ -219,27 +299,23 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     if (id) {
       const e = edges.find((item) => item.id === id);
       if (e) {
-        setSelectedNodeId(e.source);
+        setTraversalPath([e.source, e.target]);
       }
     }
   };
 
-  const getSelectedNode = (): GraphNodeData | undefined => {
-    return nodes.find((n) => n.id === selectedNodeId);
-  };
-
-  const getSelectedEdge = (): GraphEdgeData | undefined => {
-    return edges.find((e) => e.id === selectedEdgeId);
-  };
-
   const startTraversal = (startNodeId: string) => {
+    setSelectedNodeId(startNodeId);
+    setSelectedEdgeId(null);
     fetchNeighborsFromApi(startNodeId, traversalDepth);
   };
 
   const resetTraversal = () => {
-    setSelectedNodeId(null);
-    setSelectedEdgeId(null);
-    setTraversalPath([]);
+    if (selectedNodeId) {
+      setTraversalPath([selectedNodeId]);
+    } else {
+      setTraversalPath([]);
+    }
   };
 
   const resetView = () => {
@@ -248,57 +324,70 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     setSearchQuery('');
     setEntityTypeFilter('ALL');
     setRelationTypeFilter('ALL');
-    setTraversalDepth(2);
-    setNodes(INITIAL_GRAPH_NODES);
-    setEdges(INITIAL_GRAPH_EDGES);
+    initialLoad();
   };
 
-  const zoomIn = () => setZoomLevel((prev) => Math.min(2.0, prev + 0.15));
-  const zoomOut = () => setZoomLevel((prev) => Math.max(0.6, prev - 0.15));
+  const zoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 2.5));
+  const zoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.2, 0.4));
 
-  // Compute visible nodes based on search, entity filter, and depth
-  const visibleNodes = useMemo(() => {
-    let filtered = nodes;
+  // Trigger search when searchQuery changes (debounced by caller or direct)
+  const handleSetSearchQuery = (query: string) => {
+    setSearchQuery(query);
+    if (query.trim().length >= 2) {
+      searchGraphFromApi(query, entityTypeFilter);
+    } else if (query.trim().length === 0) {
+      initialLoad();
+    }
+  };
 
+  const handleSetEntityTypeFilter = (type: string) => {
+    setEntityTypeFilter(type);
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      filtered = filtered.filter(
-        (n) =>
-          n.label.toLowerCase().includes(q) ||
-          n.identifier.toLowerCase().includes(q) ||
-          n.type.toLowerCase().includes(q)
-      );
+      searchGraphFromApi(searchQuery, type);
     }
+  };
 
-    if (entityTypeFilter !== 'ALL') {
-      filtered = filtered.filter((n) => n.type === entityTypeFilter);
-    }
-
-    return filtered;
-  }, [nodes, searchQuery, entityTypeFilter]);
+  // Filtered views based on user controls
+  const visibleNodes = useMemo(() => {
+    return nodes.filter((node) => {
+      const matchesType = entityTypeFilter === 'ALL' || node.type === entityTypeFilter;
+      const matchesSearch =
+        !searchQuery ||
+        node.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        node.identifier.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        node.description.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesType && matchesSearch;
+    });
+  }, [nodes, entityTypeFilter, searchQuery]);
 
   const visibleNodeIds = useMemo(() => new Set(visibleNodes.map((n) => n.id)), [visibleNodes]);
 
-  // Compute visible edges based on visible nodes & relationship filter
   const visibleEdges = useMemo(() => {
-    return edges.filter((e) => {
-      const endpointsVisible = visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target);
-      const matchesRelFilter = relationTypeFilter === 'ALL' || e.relationship === relationTypeFilter;
-      return endpointsVisible && matchesRelFilter;
+    return edges.filter((edge) => {
+      const endpointsVisible = visibleNodeIds.has(edge.source) && visibleNodeIds.has(edge.target);
+      const matchesRelation = relationTypeFilter === 'ALL' || edge.relationship === relationTypeFilter;
+      return endpointsVisible && matchesRelation;
     });
   }, [edges, visibleNodeIds, relationTypeFilter]);
 
+  const getSelectedNode = () => nodes.find((n) => n.id === selectedNodeId);
+  const getSelectedEdge = () => edges.find((e) => e.id === selectedEdgeId);
+
   const getNodeRelationships = (nodeId: string) => {
     const nodeMap = new Map(nodes.map((n) => [n.id, n]));
-    const incoming = edges
-      .filter((e) => e.target === nodeId)
-      .map((edge) => ({ edge, node: nodeMap.get(edge.source)! }))
-      .filter((item) => item.node !== undefined);
+    const incoming: { edge: GraphEdgeData; node: GraphNodeData }[] = [];
+    const outgoing: { edge: GraphEdgeData; node: GraphNodeData }[] = [];
 
-    const outgoing = edges
-      .filter((e) => e.source === nodeId)
-      .map((edge) => ({ edge, node: nodeMap.get(edge.target)! }))
-      .filter((item) => item.node !== undefined);
+    edges.forEach((edge) => {
+      if (edge.target === nodeId) {
+        const srcNode = nodeMap.get(edge.source);
+        if (srcNode) incoming.push({ edge, node: srcNode });
+      }
+      if (edge.source === nodeId) {
+        const tgtNode = nodeMap.get(edge.target);
+        if (tgtNode) outgoing.push({ edge, node: tgtNode });
+      }
+    });
 
     return { incoming, outgoing };
   };
@@ -318,13 +407,11 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         zoomLevel,
         panOffset,
         isLoading,
+        error,
         selectNode,
         selectEdge,
-        setSearchQuery: (q: string) => {
-          setSearchQuery(q);
-          if (q.length > 2) searchGraphFromApi(q);
-        },
-        setEntityTypeFilter,
+        setSearchQuery: handleSetSearchQuery,
+        setEntityTypeFilter: handleSetEntityTypeFilter,
         setRelationTypeFilter,
         setTraversalDepth,
         startTraversal,
@@ -332,6 +419,7 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         resetView,
         zoomIn,
         zoomOut,
+        refreshGraph: initialLoad,
         visibleNodes,
         visibleEdges,
         getSelectedNode,
@@ -351,4 +439,3 @@ export const useGraphStore = () => {
   }
   return context;
 };
-

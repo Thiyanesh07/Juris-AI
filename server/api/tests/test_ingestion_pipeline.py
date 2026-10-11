@@ -71,15 +71,27 @@ async def test_pipeline_succeeds_on_valid_pdf(
         assert ch.char_count == len(ch.text)
         assert isinstance(ch.hierarchy, dict)
 
-    # Processing jobs should be COMPLETED
+    # Processing jobs should be COMPLETED for all 8 stages of the modern pipeline lifecycle
     jobs = (
         await session.execute(
             select(ProcessingJob).where(ProcessingJob.document_id == registered_doc.id)
         )
     ).scalars().all()
-    assert len(jobs) == 3  # INGESTION, EXTRACTION, CHUNKING
+    assert len(jobs) == 8
+    expected_stages = {
+        ProcessingJobStage.INGESTION,
+        ProcessingJobStage.EXTRACTION,
+        ProcessingJobStage.CHUNKING,
+        ProcessingJobStage.EMBEDDING,
+        ProcessingJobStage.VECTOR_INDEX,
+        ProcessingJobStage.ENTITY_EXTRACTION,
+        ProcessingJobStage.RELATION_EXTRACTION,
+        ProcessingJobStage.GRAPH_POPULATION,
+    }
+    assert {job.stage for job in jobs} == expected_stages
     for job in jobs:
         assert job.status == ProcessingJobStatus.COMPLETED
+        assert job.error is None
 
 
 async def test_pipeline_fails_on_invalid_pdf(

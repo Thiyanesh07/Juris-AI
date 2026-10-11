@@ -20,7 +20,7 @@ import { UserPlus, Eye, ShieldAlert, Power, Trash2, ChevronLeft, ChevronRight, M
 
 export default function UsersListPage() {
   const router = useRouter();
-  const { users, toggleUserStatus, deleteUser } = useUserStore();
+  const { users, isLoading, error, toggleUserStatus, deleteUser, refreshUsers } = useUserStore();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
@@ -32,6 +32,7 @@ export default function UsersListPage() {
   const [targetUser, setTargetUser] = useState<User | null>(null);
   const [actionType, setActionType] = useState<'toggle' | 'delete' | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   // Filtered dataset
   const filteredUsers = useMemo(() => {
@@ -54,21 +55,24 @@ export default function UsersListPage() {
     return filteredUsers.slice(start, start + pageSize);
   }, [filteredUsers, currentPage, pageSize]);
 
-  const handleActionConfirm = () => {
+  const handleActionConfirm = async () => {
     if (!targetUser || !actionType) return;
     setIsProcessing(true);
+    setActionError(null);
 
-    setTimeout(() => {
+    try {
       if (actionType === 'toggle') {
-        toggleUserStatus(targetUser.id);
+        await toggleUserStatus(targetUser.id);
       } else if (actionType === 'delete') {
-        deleteUser(targetUser.id);
+        await deleteUser(targetUser.id);
       }
-
-      setIsProcessing(false);
       setTargetUser(null);
       setActionType(null);
-    }, 300);
+    } catch (err: any) {
+      setActionError(err?.message || 'Operation failed. Please try again.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const handleResetFilters = () => {
@@ -93,6 +97,18 @@ export default function UsersListPage() {
           </Link>
         }
       />
+
+      {(error || actionError) && (
+        <div className="p-4 rounded-xl bg-[#FBEAEB] border border-[#F5C2C7] text-[#8B2E2E] text-xs font-mono flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <ShieldAlert className="h-4 w-4 shrink-0 text-[#8B2E2E]" />
+            <span>{actionError || error}</span>
+          </div>
+          <Button variant="ghost" size="sm" onClick={() => { setActionError(null); refreshUsers(); }}>
+            Retry
+          </Button>
+        </div>
+      )}
 
       {/* Filter Bar */}
       <FilterBar
@@ -340,9 +356,9 @@ export default function UsersListPage() {
             setActionType(null);
           }}
           onConfirm={handleActionConfirm}
-          title="Delete User Account?"
-          message={`Are you sure you want to permanently delete ${targetUser.name} (${targetUser.email})? This action cannot be undone.`}
-          confirmText="Delete Account"
+          title="Deactivate User Account?"
+          message={`Are you sure you want to deactivate ${targetUser.name} (${targetUser.email})? Login access will be revoked while historical records are safely retained.`}
+          confirmText="Deactivate Account"
           variant="danger"
           isLoading={isProcessing}
         />

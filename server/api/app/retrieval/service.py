@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 from functools import lru_cache
 from typing import Any
+from uuid import UUID
 
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -12,9 +13,14 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.config import Settings, get_data_dir
 from app.models.chunk import Chunk
 from app.models.document import Document
-from app.models.enums import ProcessingJobStage, ProcessingJobStatus
+from app.models.enums import DocumentStatus, ProcessingJobStage, ProcessingJobStatus
 from app.models.processing_job import ProcessingJob
-from app.retrieval.embeddings import EmbeddingConfig, InLegalBertEmbedder
+from app.retrieval.embeddings import (
+    EmbeddingConfig,
+    EmbeddingError,
+    InLegalBertEmbedder,
+    OnnxInLegalBertEmbedder,
+)
 from app.retrieval.index import (
     IndexError,
     load_index,
@@ -27,24 +33,32 @@ from app.retrieval.index import (
 
 @lru_cache(maxsize=4)
 def _cached_embedder(
-    model_name: str, device: str, batch_size: int, max_tokens: int
-) -> InLegalBertEmbedder:
-    return InLegalBertEmbedder(
-        EmbeddingConfig(
-            model_name=model_name,
-            device=device,
-            batch_size=batch_size,
-            max_tokens=max_tokens,
-        )
+    model_name: str, device: str, batch_size: int, max_tokens: int, backend: str = "onnx"
+) -> Any:
+    cfg = EmbeddingConfig(
+        model_name=model_name,
+        device=device,
+        batch_size=batch_size,
+        max_tokens=max_tokens,
+        backend=backend,
     )
+    if backend.lower() in {"onnx", "onnx_int8"}:
+        return OnnxInLegalBertEmbedder(cfg)
+    elif backend.lower() == "pytorch":
+        return InLegalBertEmbedder(cfg)
+    else:
+        raise EmbeddingError(
+            f"Unsupported embedding backend {backend!r}. Must be 'onnx', 'onnx_int8', or 'pytorch'."
+        )
 
 
-def build_embedder(settings: Settings) -> InLegalBertEmbedder:
+def build_embedder(settings: Settings) -> Any:
     return _cached_embedder(
         settings.embedding_model_name,
         settings.embedding_device,
         settings.embedding_batch_size,
         settings.embedding_max_tokens,
+        settings.inlegalbert_backend,
     )
 
 
@@ -155,15 +169,98 @@ def embed_query_vector(
 
 
 def retrieve(
-    query: str, top_k: int, settings: Settings, embedder: Any | None = None
+    query: str,
+    top_k: int,
+    settings: Settings,
+    embedder: Any | None = None,
+    eligible_document_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     if not 1 <= top_k <= settings.retrieval_max_top_k:
         raise ValueError(f"top_k must be between 1 and {settings.retrieval_max_top_k}")
     index, metadata, vector, _encoder = embed_query_vector(query, settings, embedder=embedder)
-    hits = search_index_rows(index, metadata, vector, top_k)
+    candidate_k = (
+        min(index.ntotal, max(top_k * 3, top_k + 20))
+        if eligible_document_ids is not None
+        else top_k
+    )
+    hits = search_index_rows(index, metadata, vector, candidate_k)
     results: list[dict[str, Any]] = []
     for hit in hits:
-        result = dict(metadata["chunks"][hit["faiss_row"]])
-        result.update(rank=hit["rank"], score=hit["score"])
+        chunk_rec = metadata["chunks"][hit["faiss_row"]]
+        if (
+            eligible_document_ids is not None
+            and str(chunk_rec.get("document_id")) not in eligible_document_ids
+        ):
+            continue
+        result = dict(chunk_rec)
+        result.update(score=hit["score"])
         results.append(result)
+        if len(results) >= top_k:
+            break
+    for rank, item in enumerate(results, start=1):
+        item["rank"] = rank
+    return results
+
+
+async def retrieve_ready_chunks(
+    session: AsyncSession,
+    query: str,
+    top_k: int,
+    settings: Settings,
+    embedder: Any | None = None,
+) -> list[dict[str, Any]]:
+    """Retrieve dense evidence chunks belonging ONLY to READY documents in PostgreSQL.
+
+    1. Oversamples FAISS hits to prevent candidate starvation.
+    2. Queries authoritative PostgreSQL Document.status == READY in a single batch query (no N+1).
+    3. Excludes chunks for FAILED, PROCESSING, DISABLED, or deleted/missing documents.
+    4. Preserves ranking and scores of eligible chunks and handles empty results safely.
+    """
+    if not 1 <= top_k <= settings.retrieval_max_top_k:
+        raise ValueError(f"top_k must be between 1 and {settings.retrieval_max_top_k}")
+    index, metadata, vector, _encoder = embed_query_vector(query, settings, embedder=embedder)
+    if index.ntotal == 0:
+        return []
+
+    candidate_k = min(index.ntotal, max(top_k * 3, top_k + 20))
+    hits = search_index_rows(index, metadata, vector, candidate_k)
+    if not hits:
+        return []
+
+    candidate_doc_uuids: set[UUID] = set()
+    for hit in hits:
+        doc_id_val = metadata["chunks"][hit["faiss_row"]].get("document_id")
+        if doc_id_val:
+            try:
+                candidate_doc_uuids.add(UUID(str(doc_id_val)))
+            except (ValueError, TypeError):
+                pass
+
+    if not candidate_doc_uuids:
+        return []
+
+    ready_doc_rows = (
+        await session.execute(
+            select(Document.id).where(
+                Document.id.in_(candidate_doc_uuids),
+                Document.status == DocumentStatus.READY,
+            )
+        )
+    ).scalars().all()
+    ready_doc_ids = {str(doc_id) for doc_id in ready_doc_rows}
+
+    results: list[dict[str, Any]] = []
+    for hit in hits:
+        chunk_rec = metadata["chunks"][hit["faiss_row"]]
+        if str(chunk_rec.get("document_id")) not in ready_doc_ids:
+            continue
+        result = dict(chunk_rec)
+        result.update(score=hit["score"])
+        results.append(result)
+        if len(results) >= top_k:
+            break
+
+    for rank, item in enumerate(results, start=1):
+        item["rank"] = rank
+
     return results

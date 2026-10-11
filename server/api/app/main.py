@@ -28,16 +28,18 @@ settings = get_settings()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Application lifespan managing dynamic settings initialization and cleanup."""
+    """Application lifespan managing dynamic settings initialization, startup recovery, and cleanup."""
     try:
         from app.db.session import session_factory
         from app.core.dynamic_settings import load_persisted_settings
+        from app.ingestion.recovery import recover_interrupted_jobs
 
         async with session_factory() as session:
             await load_persisted_settings(session)
+            await recover_interrupted_jobs(session)
     except Exception as exc:
         logger.warning(
-            "Could not load persisted system settings at startup (%s). Using environment defaults.",
+            "Lifespan startup initialization encountered error (%s). Continuing startup.",
             exc,
         )
     yield

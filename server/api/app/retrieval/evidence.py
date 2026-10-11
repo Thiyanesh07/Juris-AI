@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.chunk import Chunk
 from app.models.document import Document
+from app.models.enums import DocumentStatus
 
 
 async def load_chunks_by_ids(
@@ -31,7 +32,10 @@ async def load_chunks_by_ids(
         await session.execute(
             select(Chunk, Document)
             .join(Document, Document.id == Chunk.document_id)
-            .where(Chunk.id.in_(uuid_ids))
+            .where(
+                Chunk.id.in_(uuid_ids),
+                Document.status == DocumentStatus.READY,
+            )
         )
     ).all()
     evidence: dict[str, dict[str, Any]] = {}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import tempfile
 from datetime import UTC, datetime
@@ -58,21 +59,221 @@ def save_index(
         "chunk_ids": [record["chunk_id"] for record in chunk_records],
         "chunks": chunk_records,
     }
-    with tempfile.NamedTemporaryFile(dir=directory, suffix=".faiss", delete=False) as tmp:
-        tmp_index = Path(tmp.name)
-    with tempfile.NamedTemporaryFile(dir=directory, suffix=".npy", delete=False) as tmp:
-        tmp_vectors = Path(tmp.name)
-    with tempfile.NamedTemporaryFile(
-        mode="w", encoding="utf-8", dir=directory, suffix=".json", delete=False
-    ) as tmp:
-        json.dump(metadata, tmp, ensure_ascii=False, indent=2)
-        tmp_metadata = Path(tmp.name)
-    faiss.write_index(index, str(tmp_index))
-    np.save(str(tmp_vectors), matrix)
-    tmp_index.replace(directory / "index.faiss")
-    tmp_vectors.replace(directory / "embeddings.npy")
-    tmp_metadata.replace(directory / "metadata.json")
+    # Temporary files staged for atomic filesystem replacement.
+    # Note on atomicity: Each individual Path.replace is atomic at the filesystem
+    # level, but sequential replacement of three distinct files (.faiss, .npy, .json)
+    # is not multi-file transactional. If a replacement fails midway, temporary files
+    # are safely unlinked without deleting valid destination files, but the remaining
+    # destination files may be out of sync, which subsequent load_index calls will
+    # detect and reject via _validate_mapping.
+    temp_files: list[Path] = []
+    try:
+        with tempfile.NamedTemporaryFile(dir=directory, suffix=".faiss", delete=False) as tmp:
+            tmp_index = Path(tmp.name)
+            temp_files.append(tmp_index)
+        with tempfile.NamedTemporaryFile(dir=directory, suffix=".npy", delete=False) as tmp:
+            tmp_vectors = Path(tmp.name)
+            temp_files.append(tmp_vectors)
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=directory, suffix=".json", delete=False
+        ) as tmp:
+            tmp_metadata = Path(tmp.name)
+            temp_files.append(tmp_metadata)
+            json.dump(metadata, tmp, ensure_ascii=False, indent=2)
+
+        faiss.write_index(index, str(tmp_index))
+        np.save(str(tmp_vectors), matrix)
+
+        tmp_index.replace(directory / "index.faiss")
+        temp_files.remove(tmp_index)
+        tmp_vectors.replace(directory / "embeddings.npy")
+        temp_files.remove(tmp_vectors)
+        tmp_metadata.replace(directory / "metadata.json")
+        temp_files.remove(tmp_metadata)
+    except BaseException:
+        for temp_file in temp_files:
+            try:
+                temp_file.unlink(missing_ok=True)
+            except OSError:
+                pass
+        raise
     return directory
+
+
+_INDEX_LOCK = asyncio.Lock()
+
+
+async def update_index_incremental(
+    *,
+    data_dir: Path,
+    index_name: str,
+    new_vectors: Any,
+    new_chunk_records: list[dict[str, Any]],
+    document_id: str,
+    model_name: str,
+    pooling_method: str,
+    max_tokens: int,
+) -> Path:
+    """Safely update the FAISS index with newly ingested or reprocessed document chunks.
+
+    Guarantees:
+    1. Single-process write synchronization using an asyncio lock.
+    2. Idempotency: if chunks for `document_id` already exist in the index,
+       they are pruned before appending new vectors, preventing duplicates.
+    3. Safe preservation: all vectors and metadata for other documents are preserved.
+    4. Dimension and integrity verification before writing.
+    5. Atomic replace via `save_index`.
+    """
+    try:
+        import numpy as np
+    except ImportError as exc:  # pragma: no cover
+        raise EmbeddingError("NumPy is required; run `uv sync`.") from exc
+
+    new_matrix = np.asarray(new_vectors, dtype=np.float32)
+    if (
+        new_matrix.ndim != 2
+        or new_matrix.shape[0] != len(new_chunk_records)
+        or new_matrix.shape[0] == 0
+    ):
+        raise IndexError("New index vectors and chunk mapping must be non-empty and matching")
+    if not np.isfinite(new_matrix).all():
+        raise IndexError("New embedding matrix contains non-finite values")
+
+    async with _INDEX_LOCK:
+        directory = index_directory(data_dir, index_name)
+        index_file = directory / "index.faiss"
+        meta_file = directory / "metadata.json"
+        matrix_file = directory / "embeddings.npy"
+
+        if index_file.is_file() and meta_file.is_file() and matrix_file.is_file():
+            try:
+                existing_meta = json.loads(meta_file.read_text(encoding="utf-8"))
+                existing_matrix = np.load(str(matrix_file))
+            except Exception as exc:
+                raise IndexError(
+                    f"Failed to load existing index during incremental update: {exc}"
+                ) from exc
+
+            existing_chunks = existing_meta.get("chunks", [])
+            if existing_matrix.shape[0] != len(existing_chunks):
+                raise IndexError("Existing index vectors and chunk metadata are out of sync")
+
+            if new_matrix.shape[1] != existing_matrix.shape[1]:
+                raise IndexError(
+                    f"New vector dimension ({new_matrix.shape[1]}) does not match "
+                    f"existing index dimension ({existing_matrix.shape[1]})"
+                )
+
+            # Filter out existing chunks for this document (idempotent replacement)
+            keep_indices = [
+                i
+                for i, record in enumerate(existing_chunks)
+                if record.get("document_id") != document_id
+            ]
+            preserved_chunks = [existing_chunks[i] for i in keep_indices]
+
+            if len(keep_indices) == len(existing_chunks):
+                preserved_matrix = existing_matrix
+            elif len(keep_indices) > 0:
+                preserved_matrix = existing_matrix[keep_indices]
+            else:
+                preserved_matrix = np.empty((0, new_matrix.shape[1]), dtype=np.float32)
+
+            if preserved_chunks:
+                combined_matrix = np.vstack([preserved_matrix, new_matrix])
+                combined_chunks = preserved_chunks + new_chunk_records
+            else:
+                combined_matrix = new_matrix
+                combined_chunks = new_chunk_records
+        else:
+            combined_matrix = new_matrix
+            combined_chunks = new_chunk_records
+
+        return save_index(
+            data_dir=data_dir,
+            index_name=index_name,
+            vectors=combined_matrix,
+            chunk_records=combined_chunks,
+            model_name=model_name,
+            pooling_method=pooling_method,
+            max_tokens=max_tokens,
+        )
+
+
+async def remove_document_from_index(
+    *,
+    data_dir: Path,
+    index_name: str,
+    document_id: str,
+) -> bool:
+    """Safely remove all vectors and metadata belonging to document_id from the FAISS index.
+
+    Guarantees:
+    1. Single-process write synchronization using _INDEX_LOCK.
+    2. Idempotency: if the document is not present in the index, does nothing and returns False.
+    3. Safe preservation: all vectors and metadata for other documents are preserved.
+    4. If no documents remain after removal, unlinks index files cleanly.
+    5. Atomic replace via save_index when other documents remain.
+    """
+    try:
+        import numpy as np
+    except ImportError as exc:  # pragma: no cover
+        raise EmbeddingError("NumPy is required; run `uv sync`.") from exc
+
+    async with _INDEX_LOCK:
+        directory = index_directory(data_dir, index_name)
+        index_file = directory / "index.faiss"
+        meta_file = directory / "metadata.json"
+        matrix_file = directory / "embeddings.npy"
+
+        if not (index_file.is_file() and meta_file.is_file() and matrix_file.is_file()):
+            return False
+
+        try:
+            existing_meta = json.loads(meta_file.read_text(encoding="utf-8"))
+            existing_matrix = np.load(str(matrix_file))
+        except Exception as exc:
+            raise IndexError(
+                f"Failed to load existing index during document removal: {exc}"
+            ) from exc
+
+        existing_chunks = existing_meta.get("chunks", [])
+        if existing_matrix.shape[0] != len(existing_chunks):
+            raise IndexError("Existing index vectors and chunk metadata are out of sync")
+
+        keep_indices = [
+            i
+            for i, record in enumerate(existing_chunks)
+            if record.get("document_id") != document_id
+        ]
+
+        if len(keep_indices) == len(existing_chunks):
+            return False  # Document was not present
+
+        if len(keep_indices) == 0:
+            # All chunks belonged to this document; remove index files cleanly
+            index_file.unlink(missing_ok=True)
+            meta_file.unlink(missing_ok=True)
+            matrix_file.unlink(missing_ok=True)
+            return True
+
+        preserved_chunks = [existing_chunks[i] for i in keep_indices]
+        preserved_matrix = existing_matrix[keep_indices]
+
+        model_name = existing_meta.get("embedding_model", "")
+        pooling_method = existing_meta.get("pooling_method", "attention_mask_mean_pooling")
+        max_tokens = existing_meta.get("max_tokens", 512)
+
+        save_index(
+            data_dir=data_dir,
+            index_name=index_name,
+            vectors=preserved_matrix,
+            chunk_records=preserved_chunks,
+            model_name=model_name,
+            pooling_method=pooling_method,
+            max_tokens=max_tokens,
+        )
+        return True
 
 
 _REQUIRED_CHUNK_FIELDS = (

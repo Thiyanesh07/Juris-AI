@@ -7,6 +7,7 @@ SUPER_ADMINs can provision admins and change roles. Ordinary ADMINs cannot modif
 from uuid import UUID
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import func, select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import get_current_user, require_admin, require_super_admin
@@ -16,6 +17,7 @@ from app.models import User, UserRole
 from app.schemas.admin_user import (
     AdminProvisionRequest,
     PaginatedUsersResponse,
+    UserCreateRequest,
     UserProfileResponse,
     UserResponse,
     UserUpdateRequest,
@@ -70,6 +72,63 @@ async def list_users(
     )
 
 
+@router.post("/admin/users", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
+async def create_user(
+    body: UserCreateRequest,
+    current_user: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> UserResponse:
+    """Provision a new standard user account (ADMIN or SUPER_ADMIN).
+
+    Always assigns UserRole.USER server-side regardless of caller input.
+    Supports optional password or passwordless Google OAuth users.
+    """
+    email = body.email.lower().strip()
+    existing = await session.scalar(select(User).where(User.email == email))
+    if existing:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Email already registered",
+        )
+
+    password_hash = hash_password(body.password) if body.password else None
+    new_user = User(
+        email=email,
+        name=body.name.strip() if body.name and body.name.strip() else None,
+        password_hash=password_hash,
+        role=UserRole.USER,
+        is_active=True,
+    )
+    session.add(new_user)
+    try:
+        await session.commit()
+        await session.refresh(new_user)
+    except IntegrityError:
+        await session.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Email already registered",
+        )
+
+    await log_audit_event(
+        session,
+        category="USER_MANAGEMENT",
+        action="CREATE",
+        result="SUCCESS",
+        severity="INFO",
+        actor_id=current_user.id,
+        target_resource=f"user:{new_user.id}",
+        description=f"Provisioned new user {new_user.email}",
+        after_state={
+            "email": new_user.email,
+            "role": new_user.role.value if hasattr(new_user.role, "value") else str(new_user.role),
+            "is_active": new_user.is_active,
+        },
+    )
+
+    return UserResponse.model_validate(new_user)
+
+
 @router.get("/admin/users/{user_id}", response_model=UserResponse)
 async def get_user_by_id(
     user_id: UUID,
@@ -104,6 +163,13 @@ async def update_user(
         "role": target_user.role,
         "is_active": target_user.is_active,
     }
+
+    # Protection: Administrators cannot deactivate their own account
+    if target_user.id == current_user.id and body.is_active is False:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Administrators cannot deactivate their own account.",
+        )
 
     # Protection: Non-SUPER_ADMIN cannot modify a SUPER_ADMIN account
     if target_user.role == UserRole.SUPER_ADMIN and current_user.role != UserRole.SUPER_ADMIN:
@@ -157,6 +223,73 @@ async def update_user(
         actor_id=current_user.id,
         target_resource=f"user:{target_user.id}",
         description=f"Updated user {target_user.email}",
+        before_state=before_state,
+        after_state=after_state,
+    )
+
+    return UserResponse.model_validate(target_user)
+
+
+@router.delete("/admin/users/{user_id}", response_model=UserResponse)
+async def deactivate_user(
+    user_id: UUID,
+    current_user: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+) -> UserResponse:
+    """Soft-deactivate an account by setting is_active=False.
+
+    Does not permanently delete records. Rejects attempts to deactivate a SUPER_ADMIN.
+    """
+    target_user = await session.get(User, user_id)
+    if not target_user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+
+    # Protection: Non-SUPER_ADMIN cannot modify/deactivate a SUPER_ADMIN account
+    if target_user.role == UserRole.SUPER_ADMIN and current_user.role != UserRole.SUPER_ADMIN:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Cannot modify a Super Administrator account.",
+        )
+
+    # Protection: Cannot deactivate SUPER_ADMIN accounts
+    if target_user.role == UserRole.SUPER_ADMIN:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="SUPER_ADMIN accounts cannot be deactivated.",
+        )
+
+    # Protection: Administrators cannot deactivate their own account
+    if target_user.id == current_user.id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Administrators cannot deactivate their own account.",
+        )
+
+    before_state = {
+        "name": target_user.name,
+        "role": target_user.role.value if hasattr(target_user.role, "value") else str(target_user.role),
+        "is_active": target_user.is_active,
+    }
+
+    target_user.is_active = False
+    await session.commit()
+    await session.refresh(target_user)
+
+    after_state = {
+        "name": target_user.name,
+        "role": target_user.role.value if hasattr(target_user.role, "value") else str(target_user.role),
+        "is_active": target_user.is_active,
+    }
+
+    await log_audit_event(
+        session,
+        category="USER_MANAGEMENT",
+        action="DEACTIVATE",
+        result="SUCCESS",
+        severity="WARNING",
+        actor_id=current_user.id,
+        target_resource=f"user:{target_user.id}",
+        description=f"Deactivated user {target_user.email}",
         before_state=before_state,
         after_state=after_state,
     )

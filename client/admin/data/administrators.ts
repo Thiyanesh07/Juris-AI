@@ -1,3 +1,7 @@
+/**
+ * ISOLATED DEVELOPMENT / TESTING FIXTURES ONLY.
+ * Never use as initial state, fallback, or live production data.
+ */
 import { User } from '@/lib/types';
 
 export const INITIAL_MOCK_ADMINS: User[] = [
