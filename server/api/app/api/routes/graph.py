@@ -4,10 +4,12 @@ Provides read-only multi-hop Neo4j Cypher querying for entity search, node inspe
 and neighbor/subgraph traversal with strict depth bounding (default 3, max 5).
 """
 
+import logging
 from typing import Any
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 
 from app.auth.dependencies import require_admin
+from app.core.config import Settings, get_settings
 from app.graph.client import Neo4jClient
 from app.graph.traversal import traverse_multi_hop
 from app.schemas.graph import (
@@ -18,10 +20,10 @@ from app.schemas.graph import (
     GraphSubgraphResponse,
 )
 
+logger = logging.getLogger(__name__)
+
 router = APIRouter(prefix="/graph", tags=["graph_admin"])
 
-
-from app.core.config import Settings, get_settings
 
 def get_graph_client(settings: Settings = Depends(get_settings)) -> Neo4jClient:
     """Dependency returning Neo4j graph client instance."""
@@ -37,40 +39,44 @@ async def search_graph_nodes(
     graph_client: Neo4jClient = Depends(get_graph_client),
 ) -> GraphSearchResponse:
     """Search legal entity nodes in Neo4j knowledge graph."""
-    if not graph_client._driver:
-        return GraphSearchResponse(nodes=[], total=0)
-
     cypher = """
     MATCH (n)
     WHERE (n.name IS NOT NULL AND toLower(n.name) CONTAINS toLower($q))
        OR (n.id IS NOT NULL AND toLower(n.id) CONTAINS toLower($q))
        OR (n.title IS NOT NULL AND toLower(n.title) CONTAINS toLower($q))
     """
-    if entity_type:
-        cypher += f" AND (n:{entity_type} OR labels(n)[0] = $etype)"
+    params: dict[str, Any] = {"q": query.strip(), "limit": limit}
+    if entity_type and entity_type.upper() != "ALL":
+        cypher += " AND ANY(lbl IN labels(n) WHERE toUpper(lbl) = toUpper($etype))"
+        params["etype"] = entity_type
 
-    cypher += " RETURN n, labels(n)[0] AS label_type LIMIT $limit"
+    cypher += " RETURN n, [lbl IN labels(n) WHERE lbl <> 'Chunk'][0] AS label_type LIMIT $limit"
 
     nodes: list[GraphNodeSchema] = []
     try:
-        async with graph_client._driver.session(database=graph_client._database) as session:
-            result = await session.run(cypher, q=query.strip(), etype=entity_type, limit=limit)
-            records = await result.data()
+        driver = await graph_client._driver_for_use()
+        async with driver.session(database=graph_client.settings.neo4j_database) as session:
+            result = await session.run(cypher, **params)
+            records = [record async for record in result]
             for r in records:
-                node_obj = r["n"]
-                label = r["label_type"] or "Entity"
+                node_obj = dict(r["n"])
+                label = r["label_type"] or (r["n"].labels[0] if hasattr(r["n"], "labels") and r["n"].labels else "Entity")
                 node_id = str(node_obj.get("id") or node_obj.get("name") or "")
                 name = str(node_obj.get("name") or node_obj.get("title") or node_id)
                 nodes.append(
                     GraphNodeSchema(
                         id=node_id,
                         label=name,
-                        type=label,
-                        properties=dict(node_obj),
+                        type=str(label),
+                        properties=node_obj,
                     )
                 )
-    except Exception:
-        pass
+    except Exception as exc:
+        logger.error("Neo4j graph search failed for query %r: %s", query, exc)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Knowledge graph database is currently unavailable",
+        )
 
     return GraphSearchResponse(nodes=nodes, total=len(nodes))
 
@@ -82,28 +88,32 @@ async def get_graph_node(
     graph_client: Neo4jClient = Depends(get_graph_client),
 ) -> GraphNodeSchema:
     """Get single node attributes by ID."""
-    if not graph_client._driver:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Node not found")
-
-    cypher = "MATCH (n {id: $node_id}) RETURN n, labels(n)[0] AS label_type LIMIT 1"
+    cypher = "MATCH (n {id: $node_id}) RETURN n, [lbl IN labels(n) WHERE lbl <> 'Chunk'][0] AS label_type LIMIT 1"
     try:
-        async with graph_client._driver.session(database=graph_client._database) as session:
+        driver = await graph_client._driver_for_use()
+        async with driver.session(database=graph_client.settings.neo4j_database) as session:
             result = await session.run(cypher, node_id=node_id)
             record = await result.single()
             if record:
-                node_obj = record["n"]
-                label = record["label_type"] or "Entity"
+                node_obj = dict(record["n"])
+                label = record["label_type"] or (record["n"].labels[0] if hasattr(record["n"], "labels") and record["n"].labels else "Entity")
                 name = str(node_obj.get("name") or node_obj.get("title") or node_id)
                 return GraphNodeSchema(
                     id=node_id,
                     label=name,
-                    type=label,
-                    properties=dict(node_obj),
+                    type=str(label),
+                    properties=node_obj,
                 )
-    except Exception:
-        pass
+    except HTTPException:
+        raise
+    except Exception as exc:
+        logger.error("Neo4j get_node failed for %s: %s", node_id, exc)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Knowledge graph database is currently unavailable",
+        )
 
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Node not found")
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Node '{node_id}' not found")
 
 
 @router.get("/neighbors/{node_id}", response_model=GraphNeighborsResponse)
@@ -117,21 +127,27 @@ async def get_graph_neighbors(
     """Retrieve multi-hop neighbors surrounding a target node (bounded depth 1–5)."""
     bounded_depth = min(max(depth, 1), 5)
 
-    if not graph_client._driver:
-        return GraphNeighborsResponse(center_node=None, nodes=[], edges=[], depth=bounded_depth)
-
-    res = await traverse_multi_hop(
-        client=graph_client,
-        seed_entity_ids=[node_id],
-        hops=bounded_depth,
-        limit_per_hop=limit,
-    )
+    try:
+        res = await traverse_multi_hop(
+            graph_client=graph_client,
+            seed_entity_ids=[node_id],
+            seed_chunk_ids=[],
+            max_hops=bounded_depth,
+            max_nodes=limit,
+        )
+    except Exception as exc:
+        logger.error("Multi-hop traversal failed for node %s: %s", node_id, exc)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Knowledge graph database is currently unavailable",
+        )
 
     nodes = [
         GraphNodeSchema(
             id=str(n.get("id")),
             label=str(n.get("label") or n.get("name") or n.get("id")),
             type=str(n.get("type") or "Entity"),
+            properties=dict(n.get("properties") or {}),
         )
         for n in res.get("nodes", [])
     ]
@@ -141,11 +157,25 @@ async def get_graph_neighbors(
             sourceId=str(e.get("sourceId")),
             targetId=str(e.get("targetId")),
             label=str(e.get("label")),
+            properties={
+                k: v for k, v in e.items()
+                if k not in ("id", "sourceId", "targetId", "label")
+            },
         )
         for e in res.get("edges", [])
     ]
 
     center = next((n for n in nodes if n.id == node_id), None)
+    if not center:
+        # Check if center node exists standalone in Neo4j
+        try:
+            center_record = await get_graph_node(node_id, current_user, graph_client)
+            center = center_record
+            if center not in nodes:
+                nodes.insert(0, center)
+        except HTTPException:
+            pass
+
     return GraphNeighborsResponse(center_node=center, nodes=nodes, edges=edges, depth=bounded_depth)
 
 
@@ -159,21 +189,27 @@ async def get_subgraph(
     """Retrieve connected subgraph spanning multiple seed node IDs."""
     bounded_depth = min(max(depth, 1), 5)
 
-    if not graph_client._driver:
-        return GraphSubgraphResponse(nodes=[], edges=[])
-
-    res = await traverse_multi_hop(
-        client=graph_client,
-        seed_entity_ids=node_ids,
-        hops=bounded_depth,
-        limit_per_hop=30,
-    )
+    try:
+        res = await traverse_multi_hop(
+            graph_client=graph_client,
+            seed_entity_ids=node_ids,
+            seed_chunk_ids=[],
+            max_hops=bounded_depth,
+            max_nodes=min(max(len(node_ids) * 20, 20), 100),
+        )
+    except Exception as exc:
+        logger.error("Subgraph traversal failed for node_ids %s: %s", node_ids, exc)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Knowledge graph database is currently unavailable",
+        )
 
     nodes = [
         GraphNodeSchema(
             id=str(n.get("id")),
             label=str(n.get("label") or n.get("name") or n.get("id")),
             type=str(n.get("type") or "Entity"),
+            properties=dict(n.get("properties") or {}),
         )
         for n in res.get("nodes", [])
     ]
@@ -183,6 +219,10 @@ async def get_subgraph(
             sourceId=str(e.get("sourceId")),
             targetId=str(e.get("targetId")),
             label=str(e.get("label")),
+            properties={
+                k: v for k, v in e.items()
+                if k not in ("id", "sourceId", "targetId", "label")
+            },
         )
         for e in res.get("edges", [])
     ]

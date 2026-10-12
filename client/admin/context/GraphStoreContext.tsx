@@ -21,6 +21,7 @@ interface GraphStoreContextType {
   traversalPath: string[];
   zoomLevel: number;
   panOffset: { x: number; y: number };
+  setPanOffset: React.Dispatch<React.SetStateAction<{ x: number; y: number }>>;
   isLoading: boolean;
   error: string | null;
   selectNode: (id: string | null) => void;
@@ -406,6 +407,7 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         traversalPath,
         zoomLevel,
         panOffset,
+        setPanOffset,
         isLoading,
         error,
         selectNode,

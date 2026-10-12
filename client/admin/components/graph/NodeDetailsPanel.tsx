@@ -41,6 +41,19 @@ export const NodeDetailsPanel: React.FC = () => {
     );
   }
 
+  const formatDescription = (raw: string) => {
+    if (!raw) return 'Legal entity record';
+    if (raw.startsWith('{') && raw.endsWith('}')) {
+      try {
+        const parsed = JSON.parse(raw);
+        return parsed.title || parsed.description || parsed.name || raw;
+      } catch {
+        return raw;
+      }
+    }
+    return raw;
+  };
+
   if (selectedNode) {
     const { incoming, outgoing } = getNodeRelationships(selectedNode.id);
 
@@ -70,7 +83,7 @@ export const NodeDetailsPanel: React.FC = () => {
             Description / Scope
           </span>
           <p className="text-xs text-[#17253A] leading-relaxed bg-[#EFF3F7] p-3 rounded-lg border border-[#D9E1EA]">
-            {selectedNode.description}
+            {formatDescription(selectedNode.description)}
           </p>
         </div>
 
@@ -157,6 +170,69 @@ export const NodeDetailsPanel: React.FC = () => {
             </div>
           )}
         </div>
+      </div>
+    );
+  }
+
+  if (selectedEdge) {
+    const { nodes } = useGraphStore();
+    const srcNode = nodes.find((n) => n.id === selectedEdge.source);
+    const tgtNode = nodes.find((n) => n.id === selectedEdge.target);
+
+    return (
+      <div className="p-6 rounded-2xl bg-white border border-[#C9D4E1] shadow-xs space-y-5">
+        <div className="flex items-start justify-between pb-4 border-b border-[#D9E1EA]">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge variant="primary" size="sm" className="font-mono">
+                {selectedEdge.relationship}
+              </Badge>
+              <span className="text-[11px] font-mono text-[#718096]">RELATIONSHIP EDGE</span>
+            </div>
+            <h3 className="text-base font-bold font-serif text-[#17253A]">{selectedEdge.relationship}</h3>
+            <p className="text-xs font-mono text-[#526176] mt-0.5">{selectedEdge.id}</p>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <span className="text-xs font-mono font-bold text-[#526176] uppercase tracking-wider">
+            Connected Entities
+          </span>
+          <div className="space-y-2">
+            <div
+              onClick={() => selectNode(selectedEdge.source)}
+              className="p-3 rounded-lg bg-[#EFF3F7] hover:bg-[#D9E7F5] border border-[#D9E1EA] flex items-center justify-between text-xs font-mono cursor-pointer transition-colors"
+            >
+              <div>
+                <span className="text-[10px] text-[#718096] uppercase block">Source Node</span>
+                <span className="font-semibold text-[#17253A]">{srcNode?.label || selectedEdge.source}</span>
+              </div>
+              <ArrowRight className="h-4 w-4 text-[#2563A8] shrink-0" />
+            </div>
+
+            <div
+              onClick={() => selectNode(selectedEdge.target)}
+              className="p-3 rounded-lg bg-[#EFF3F7] hover:bg-[#D9E7F5] border border-[#D9E1EA] flex items-center justify-between text-xs font-mono cursor-pointer transition-colors"
+            >
+              <div>
+                <span className="text-[10px] text-[#718096] uppercase block">Target Node</span>
+                <span className="font-semibold text-[#17253A]">{tgtNode?.label || selectedEdge.target}</span>
+              </div>
+              <ArrowRight className="h-4 w-4 text-[#2563A8] shrink-0" />
+            </div>
+          </div>
+        </div>
+
+        {selectedEdge.description && (
+          <div className="space-y-1">
+            <span className="text-xs font-mono font-bold text-[#526176] uppercase tracking-wider">
+              Legal Evidence / Scope
+            </span>
+            <p className="text-xs text-[#17253A] leading-relaxed bg-[#EFF3F7] p-3 rounded-lg border border-[#D9E1EA]">
+              {selectedEdge.description}
+            </p>
+          </div>
+        )}
       </div>
     );
   }

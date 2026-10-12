@@ -100,8 +100,8 @@ async def fetch_entity_nodes_by_ids(
 
 async def traverse_multi_hop(
     graph_client: Neo4jClient,
-    seed_entity_ids: list[str],
-    seed_chunk_ids: list[str],
+    seed_entity_ids: list[str] | None = None,
+    seed_chunk_ids: list[str] | None = None,
     max_hops: int = 3,
     max_nodes: int = 30,
     mode: str | None = None,
@@ -113,7 +113,9 @@ async def traverse_multi_hop(
     hops = min(max(max_hops, 1), 5)
     limit = min(max(max_nodes, 1), 50)
 
-    all_seed_ids = list(dict.fromkeys(seed_entity_ids + seed_chunk_ids))
+    entity_ids = seed_entity_ids or []
+    chunk_ids = seed_chunk_ids or []
+    all_seed_ids = list(dict.fromkeys(entity_ids + chunk_ids))
     if not all_seed_ids:
         return {
             "nodes": [],

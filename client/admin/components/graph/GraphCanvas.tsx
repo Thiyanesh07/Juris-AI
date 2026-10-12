@@ -20,6 +20,8 @@ export const GraphCanvas: React.FC = () => {
     zoomLevel,
     zoomIn,
     zoomOut,
+    panOffset,
+    setPanOffset,
     resetView,
     isLoading,
     error,
@@ -27,6 +29,27 @@ export const GraphCanvas: React.FC = () => {
   } = useGraphStore();
 
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
+  const [isPanning, setIsPanning] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    const target = e.target as SVGElement;
+    if (target.id === 'canvas-bg' || target.id === 'bg-grid' || target.tagName === 'svg' || target.tagName === 'line') {
+      setIsPanning(true);
+      setDragStart({ x: e.clientX - panOffset.x, y: e.clientY - panOffset.y });
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (isPanning) {
+      setPanOffset({
+        x: Math.round(e.clientX - dragStart.x),
+        y: Math.round(e.clientY - dragStart.y),
+      });
+    }
+  };
+
+  const handleMouseUp = () => setIsPanning(false);
 
   const nodeMap = new Map(visibleNodes.map((n) => [n.id, n]));
   const traversalSet = new Set(traversalPath);
@@ -177,7 +200,7 @@ export const GraphCanvas: React.FC = () => {
       <div className="absolute top-3 left-3 z-10 flex items-center gap-2 bg-white/90 backdrop-blur-xs px-3 py-1.5 rounded-lg border border-[#C9D4E1] text-xs font-mono">
         <span className="h-2 w-2 rounded-full bg-[#1E6B45]" />
         <span className="font-semibold text-[#17253A]">Legal Knowledge Graph Canvas</span>
-        <span className="text-[#718096]">({visibleNodes.length} nodes)</span>
+        <span className="text-[#718096]">({visibleNodes.length} nodes • {Math.round(zoomLevel * 100)}%)</span>
         {isLoading && <Activity className="h-3 w-3 text-[#2563A8] animate-spin ml-1" />}
       </div>
 
@@ -207,11 +230,19 @@ export const GraphCanvas: React.FC = () => {
       </div>
 
       {/* SVG Canvas Area */}
-      <div className="w-full h-full overflow-hidden flex items-center justify-center">
+      <div
+        className={cn(
+          "w-full h-full overflow-hidden flex items-center justify-center select-none",
+          isPanning ? "cursor-grabbing" : "cursor-grab"
+        )}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+      >
         <svg
           viewBox="0 0 1000 650"
-          className="w-full h-full transition-transform duration-200 ease-out"
-          style={{ transform: `scale(${zoomLevel})` }}
+          className="w-full h-full"
         >
           <defs>
             <marker
@@ -239,137 +270,153 @@ export const GraphCanvas: React.FC = () => {
             </marker>
           </defs>
 
-          {/* Background Grid Pattern */}
-          <g opacity="0.35">
-            <line x1="0" y1="162" x2="1000" y2="162" stroke="#D9E1EA" strokeDasharray="4 4" />
-            <line x1="0" y1="325" x2="1000" y2="325" stroke="#D9E1EA" strokeDasharray="4 4" />
-            <line x1="0" y1="487" x2="1000" y2="487" stroke="#D9E1EA" strokeDasharray="4 4" />
-            <line x1="250" y1="0" x2="250" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
-            <line x1="500" y1="0" x2="500" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
-            <line x1="750" y1="0" x2="750" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
-          </g>
+          {/* Interactive Background Rect for Pan Dragging */}
+          <rect id="canvas-bg" width="1000" height="650" fill="transparent" />
 
-          {/* Edges Layer */}
-          <g id="edges-layer">
-            {visibleEdges.map((edge) => {
-              const src = nodeMap.get(edge.source);
-              const tgt = nodeMap.get(edge.target);
-              if (!src || !tgt) return null;
+          {/* Transform Viewport Layer */}
+          <g
+            id="canvas-viewport"
+            style={{
+              transform: `translate(${panOffset.x}px, ${panOffset.y}px) scale(${zoomLevel})`,
+              transformOrigin: '500px 325px',
+              transition: isPanning ? 'none' : 'transform 120ms ease-out',
+            }}
+          >
+            {/* Background Grid Pattern */}
+            <g id="bg-grid" opacity="0.35">
+              <line x1="0" y1="162" x2="1000" y2="162" stroke="#D9E1EA" strokeDasharray="4 4" />
+              <line x1="0" y1="325" x2="1000" y2="325" stroke="#D9E1EA" strokeDasharray="4 4" />
+              <line x1="0" y1="487" x2="1000" y2="487" stroke="#D9E1EA" strokeDasharray="4 4" />
+              <line x1="250" y1="0" x2="250" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+              <line x1="500" y1="0" x2="500" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+              <line x1="750" y1="0" x2="750" y2="650" stroke="#D9E1EA" strokeDasharray="4 4" />
+            </g>
 
-              const isEdgeSelected = edge.id === selectedEdgeId;
-              const isPathHighlighted =
-                traversalSet.has(edge.source) && traversalSet.has(edge.target);
+            {/* Edges Layer */}
+            <g id="edges-layer">
+              {visibleEdges.map((edge) => {
+                const src = nodeMap.get(edge.source);
+                const tgt = nodeMap.get(edge.target);
+                if (!src || !tgt) return null;
 
-              const stroke = isEdgeSelected
-                ? '#3B82D0'
-                : isPathHighlighted
-                ? '#2563A8'
-                : '#94A3B8';
-              const strokeWidth = isEdgeSelected ? 3 : isPathHighlighted ? 2.5 : 1.5;
-              const strokeDasharray = isPathHighlighted ? 'none' : '4 3';
+                const isEdgeSelected = edge.id === selectedEdgeId;
+                const isPathHighlighted =
+                  traversalSet.has(edge.source) && traversalSet.has(edge.target);
 
-              const midX = (src.x + tgt.x) / 2;
-              const midY = (src.y + tgt.y) / 2;
+                const stroke = isEdgeSelected
+                  ? '#3B82D0'
+                  : isPathHighlighted
+                  ? '#2563A8'
+                  : '#94A3B8';
+                const strokeWidth = isEdgeSelected ? 3 : isPathHighlighted ? 2.5 : 1.5;
+                const strokeDasharray = isPathHighlighted ? 'none' : '4 3';
 
-              return (
-                <g key={edge.id} className="cursor-pointer" onClick={() => selectEdge(edge.id)}>
-                  <line
-                    x1={src.x}
-                    y1={src.y}
-                    x2={tgt.x}
-                    y2={tgt.y}
-                    stroke={stroke}
-                    strokeWidth={strokeWidth}
-                    strokeDasharray={strokeDasharray}
-                    markerEnd={isPathHighlighted ? 'url(#arrow-highlighted)' : 'url(#arrow-default)'}
-                  />
-                  <rect
-                    x={midX - 28}
-                    y={midY - 8}
-                    width={56}
-                    height={16}
-                    rx={4}
-                    fill="#FFFFFF"
-                    stroke={stroke}
-                    strokeWidth={1}
-                    opacity={0.9}
-                  />
-                  <text
-                    x={midX}
-                    y={midY + 3.5}
-                    textAnchor="middle"
-                    fontSize="8.5"
-                    fontFamily="monospace"
-                    fontWeight="bold"
-                    fill={isPathHighlighted ? '#2563A8' : '#526176'}
-                    className="pointer-events-none"
-                  >
-                    {edge.relationship}
-                  </text>
-                </g>
-              );
-            })}
-          </g>
+                const midX = (src.x + tgt.x) / 2;
+                const midY = (src.y + tgt.y) / 2;
+                const pillWidth = Math.max(56, edge.relationship.length * 6.5 + 12);
 
-          {/* Nodes Layer */}
-          <g id="nodes-layer">
-            {visibleNodes.map((node) => {
-              const isSelected = node.id === selectedNodeId;
-              const isHovered = node.id === hoveredNodeId;
-              const isPathHighlighted = traversalSet.has(node.id);
-
-              return (
-                <g
-                  key={node.id}
-                  onClick={() => selectNode(node.id)}
-                  onMouseEnter={() => setHoveredNodeId(node.id)}
-                  onMouseLeave={() => setHoveredNodeId(null)}
-                  className="cursor-pointer transition-all duration-150"
-                >
-                  {isSelected && (
-                    <circle
-                      cx={node.x}
-                      cy={node.y}
-                      r={26}
-                      fill="none"
-                      stroke="#3B82D0"
-                      strokeWidth="2"
-                      strokeDasharray="3 3"
-                      className="animate-spin"
-                      style={{ animationDuration: '6s' }}
+                return (
+                  <g key={edge.id} className="cursor-pointer" onClick={() => selectEdge(edge.id)}>
+                    <line
+                      x1={src.x}
+                      y1={src.y}
+                      x2={tgt.x}
+                      y2={tgt.y}
+                      stroke={stroke}
+                      strokeWidth={strokeWidth}
+                      strokeDasharray={strokeDasharray}
+                      markerEnd={isPathHighlighted ? 'url(#arrow-highlighted)' : 'url(#arrow-default)'}
                     />
-                  )}
+                    <rect
+                      x={midX - pillWidth / 2}
+                      y={midY - 8}
+                      width={pillWidth}
+                      height={16}
+                      rx={4}
+                      fill="#FFFFFF"
+                      stroke={stroke}
+                      strokeWidth={1}
+                      opacity={0.92}
+                    />
+                    <text
+                      x={midX}
+                      y={midY + 3.5}
+                      textAnchor="middle"
+                      fontSize="8.5"
+                      fontFamily="monospace"
+                      fontWeight="bold"
+                      fill={isPathHighlighted ? '#2563A8' : '#526176'}
+                      className="pointer-events-none"
+                    >
+                      {edge.relationship}
+                    </text>
+                  </g>
+                );
+              })}
+            </g>
 
-                  {renderNodeShape(node, isSelected, isPathHighlighted)}
+            {/* Nodes Layer */}
+            <g id="nodes-layer">
+              {visibleNodes.map((node) => {
+                const isSelected = node.id === selectedNodeId;
+                const isHovered = node.id === hoveredNodeId;
+                const isPathHighlighted = traversalSet.has(node.id);
+                const displayLabel = node.label.length > 25 ? `${node.label.slice(0, 23)}…` : node.label;
 
-                  <text
-                    x={node.x}
-                    y={node.y + 4}
-                    textAnchor="middle"
-                    fontSize="10"
-                    fontFamily="monospace"
-                    fontWeight="bold"
-                    fill="#FFFFFF"
-                    className="pointer-events-none"
+                return (
+                  <g
+                    key={node.id}
+                    onClick={() => selectNode(node.id)}
+                    onMouseEnter={() => setHoveredNodeId(node.id)}
+                    onMouseLeave={() => setHoveredNodeId(null)}
+                    className="cursor-pointer transition-all duration-150"
                   >
-                    {node.type.substring(0, 3)}
-                  </text>
+                    <title>{`${node.label} (${node.type})`}</title>
+                    {isSelected && (
+                      <circle
+                        cx={node.x}
+                        cy={node.y}
+                        r={26}
+                        fill="none"
+                        stroke="#3B82D0"
+                        strokeWidth="2"
+                        strokeDasharray="3 3"
+                        className="animate-spin"
+                        style={{ animationDuration: '6s' }}
+                      />
+                    )}
 
-                  <text
-                    x={node.x}
-                    y={node.y + 32}
-                    textAnchor="middle"
-                    fontSize="11"
-                    fontFamily="sans-serif"
-                    fontWeight={isSelected ? 'bold' : '500'}
-                    fill={isSelected ? '#2563A8' : '#17253A'}
-                    className="pointer-events-none drop-shadow-xs"
-                  >
-                    {node.label}
-                  </text>
-                </g>
-              );
-            })}
+                    {renderNodeShape(node, isSelected, isPathHighlighted)}
+
+                    <text
+                      x={node.x}
+                      y={node.y + 4}
+                      textAnchor="middle"
+                      fontSize="10"
+                      fontFamily="monospace"
+                      fontWeight="bold"
+                      fill="#FFFFFF"
+                      className="pointer-events-none"
+                    >
+                      {node.type.substring(0, 3)}
+                    </text>
+
+                    <text
+                      x={node.x}
+                      y={node.y + 32}
+                      textAnchor="middle"
+                      fontSize="11"
+                      fontFamily="sans-serif"
+                      fontWeight={isSelected ? 'bold' : '500'}
+                      fill={isSelected ? '#2563A8' : '#17253A'}
+                      className="pointer-events-none drop-shadow-xs"
+                    >
+                      {displayLabel}
+                    </text>
+                  </g>
+                );
+              })}
+            </g>
           </g>
         </svg>
       </div>

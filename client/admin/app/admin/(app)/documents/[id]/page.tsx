@@ -61,13 +61,19 @@ export default function DocumentDetailPage() {
       const fetched = await fetchDocumentDetail(docId);
       if (fetched) {
         setDoc(fetched);
-        const st = await fetchDocumentStages(docId);
-        setStages(st);
+        try {
+          const st = await fetchDocumentStages(docId);
+          setStages(st);
+        } catch {
+          setStages([]);
+        }
       } else {
         setDoc(null);
+        setLoadError(`Document "${docId}" was not found.`);
       }
     } catch (err) {
-      setLoadError(err instanceof Error ? err.message : 'Failed to fetch document');
+      setDoc(null);
+      setLoadError(err instanceof Error ? err.message : 'Failed to fetch document metadata');
     } finally {
       setIsLoading(false);
     }
@@ -187,17 +193,23 @@ export default function DocumentDetailPage() {
     return (
       <div className="space-y-6 max-w-3xl">
         <PageHeader
-          title="Document Not Found"
-          subtitle={`The document with ID "${docId}" could not be found in the database.`}
+          title={loadError ? 'Failed to Load Document' : 'Document Not Found'}
+          subtitle={loadError || `The document with ID "${docId}" could not be found in the database.`}
           actions={
-            <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
-              <ArrowLeft className="h-4 w-4 mr-1.5" />
-              Back to Documents
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
+                <ArrowLeft className="h-4 w-4 mr-1.5" />
+                Back to Documents
+              </Button>
+              <Button variant="secondary" size="sm" onClick={loadDocumentData} disabled={isLoading}>
+                <RefreshCw className={`h-3.5 w-3.5 mr-1.5 ${isLoading ? 'animate-spin' : ''}`} />
+                Retry
+              </Button>
+            </div>
           }
         />
         <EmptyState
-          title="Document Record Not Found"
+          title={loadError ? 'Error Loading Document' : 'Document Record Not Found'}
           description={loadError || 'The document ID does not exist in the PostgreSQL repository.'}
         />
       </div>

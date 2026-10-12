@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { Document, DocumentStatus, DocumentTypeCategory, IngestionJob, IngestionJobStatus } from '@/lib/types';
 import { apiClient } from '@/lib/apiClient';
 import {
@@ -197,16 +197,27 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     }
   }, []);
 
+  const documentsRef = useRef<Document[]>(documents);
+  const ingestionJobsRef = useRef<ProcessingJobSummary[]>(ingestionJobs);
+
+  useEffect(() => {
+    documentsRef.current = documents;
+  }, [documents]);
+
+  useEffect(() => {
+    ingestionJobsRef.current = ingestionJobs;
+  }, [ingestionJobs]);
+
   useEffect(() => {
     fetchDocuments();
     fetchJobs();
   }, [fetchDocuments, fetchJobs]);
 
-  const getDocumentById = (id: string): Document | undefined => {
-    return documents.find((d) => d.id === id);
-  };
+  const getDocumentById = useCallback((id: string): Document | undefined => {
+    return documentsRef.current.find((d) => d.id === id);
+  }, []);
 
-  const fetchDocumentDetail = async (id: string): Promise<Document | undefined> => {
+  const fetchDocumentDetail = useCallback(async (id: string): Promise<Document | undefined> => {
     try {
       const res = await apiClient.get<DocumentDetail>(`/documents/${id}`);
       if (res) {
@@ -214,6 +225,10 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
         setDocuments((prev) => {
           const idx = prev.findIndex((d) => d.id === id);
           if (idx >= 0) {
+            const cur = prev[idx];
+            if (cur.status === mapped.status && cur.title === mapped.title && cur.updatedAt === mapped.updatedAt) {
+              return prev;
+            }
             const next = [...prev];
             next[idx] = mapped;
             return next;
@@ -222,36 +237,37 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
         });
         return mapped;
       }
-    } catch {
-      // Return local cached version if available
-      return getDocumentById(id);
+      return undefined;
+    } catch (err) {
+      // Return local cached version if available, otherwise rethrow
+      const cached = documentsRef.current.find((d) => d.id === id);
+      if (cached) return cached;
+      throw err;
     }
-    return undefined;
-  };
+  }, []);
 
-  const getJobById = (id: string): ProcessingJobSummary | undefined => {
-    return ingestionJobs.find((j) => j.id === id);
-  };
+  const getJobById = useCallback((id: string): ProcessingJobSummary | undefined => {
+    return ingestionJobsRef.current.find((j) => j.id === id);
+  }, []);
 
-  const getJobsByDocumentId = (documentId: string): ProcessingJobSummary[] => {
-    return ingestionJobs.filter((j) => j.document_id === documentId);
-  };
+  const getJobsByDocumentId = useCallback((documentId: string): ProcessingJobSummary[] => {
+    return ingestionJobsRef.current.filter((j) => j.document_id === documentId);
+  }, []);
 
-  const fetchDocumentStages = async (documentId: string): Promise<ProcessingJob[]> => {
+  const fetchDocumentStages = useCallback(async (documentId: string): Promise<ProcessingJob[]> => {
     try {
       const res = await apiClient.get<ProcessingJob[]>(`/documents/${documentId}/jobs`);
       return Array.isArray(res) ? res : [];
     } catch {
       return [];
     }
-  };
+  }, []);
 
-  const fetchJobDetail = async (id: string): Promise<{
+  const fetchJobDetail = useCallback(async (id: string): Promise<{
     job?: ProcessingJobSummary;
     document?: Document;
     stages?: ProcessingJob[];
   }> => {
-    // 1. Try finding job in current job list or query by id
     let targetJob = getJobById(id);
     let docId = targetJob?.document_id;
 
@@ -268,14 +284,17 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
       }
     }
 
-    // If ID happens to be a document ID directly:
     if (!docId && id.includes('-')) {
       docId = id;
     }
 
     let doc: Document | undefined = docId ? getDocumentById(docId) : undefined;
     if (docId && !doc) {
-      doc = await fetchDocumentDetail(docId);
+      try {
+        doc = await fetchDocumentDetail(docId);
+      } catch {
+        doc = undefined;
+      }
     }
 
     let stages: ProcessingJob[] = [];
@@ -288,9 +307,9 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
       document: doc,
       stages,
     };
-  };
+  }, [getJobById, getDocumentById, fetchDocumentDetail, fetchDocumentStages]);
 
-  const archiveDocument = async (id: string): Promise<boolean> => {
+  const archiveDocument = useCallback(async (id: string): Promise<boolean> => {
     try {
       await apiClient.post<ArchiveDocumentResponse>(`/documents/${id}/archive`);
       setDocuments((prev) =>
@@ -301,9 +320,9 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     } catch (err) {
       throw err;
     }
-  };
+  }, [fetchJobs]);
 
-  const restoreDocument = async (id: string): Promise<{ success: boolean; status?: string; message?: string }> => {
+  const restoreDocument = useCallback(async (id: string): Promise<{ success: boolean; status?: string; message?: string }> => {
     try {
       const res = await apiClient.post<RestoreDocumentResponse>(`/documents/${id}/restore`);
       const newStatus = mapBackendStatus(res.status);
@@ -315,9 +334,9 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     } catch (err) {
       throw err;
     }
-  };
+  }, [fetchJobs]);
 
-  const reprocessDocument = async (id: string): Promise<{ success: boolean; message?: string }> => {
+  const reprocessDocument = useCallback(async (id: string): Promise<{ success: boolean; message?: string }> => {
     try {
       const res = await apiClient.post<ReprocessResponse>(`/documents/${id}/reprocess`);
       setDocuments((prev) =>
@@ -328,18 +347,18 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     } catch (err) {
       throw err;
     }
-  };
+  }, [fetchJobs]);
 
-  const startIngestion = async (documentId: string): Promise<boolean> => {
+  const startIngestion = useCallback(async (documentId: string): Promise<boolean> => {
     try {
       await reprocessDocument(documentId);
       return true;
     } catch {
       return false;
     }
-  };
+  }, [reprocessDocument]);
 
-  const retryIngestion = async (jobIdOrDocId: string): Promise<boolean> => {
+  const retryIngestion = useCallback(async (jobIdOrDocId: string): Promise<boolean> => {
     const job = getJobById(jobIdOrDocId);
     const targetDocId = job ? job.document_id : jobIdOrDocId;
     if (!targetDocId) return false;
@@ -349,17 +368,16 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     } catch {
       return false;
     }
-  };
+  }, [getJobById, reprocessDocument]);
 
-  const cancelIngestion = (jobId: string): boolean => {
-    // Pipeline operates asynchronously; mark local job state
+  const cancelIngestion = useCallback((jobId: string): boolean => {
     setIngestionJobs((prev) =>
       prev.map((j) => (j.id === jobId ? { ...j, status: 'failed', error: 'Cancelled by operator' } : j))
     );
     return true;
-  };
+  }, []);
 
-  const uploadDocument = async (
+  const uploadDocument = useCallback(async (
     file: File,
     metadata: { title: string; type: string; source?: string; source_url?: string }
   ): Promise<DocumentUploadResponse> => {
@@ -377,43 +395,76 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
       formData
     );
 
-    // Refresh active data
     await fetchDocuments();
     await fetchJobs();
 
     return res;
-  };
+  }, [fetchDocuments, fetchJobs]);
+
+  const refreshDocuments = useCallback(async () => {
+    await fetchDocuments();
+  }, [fetchDocuments]);
+
+  const refreshJobs = useCallback(async () => {
+    await fetchJobs();
+  }, [fetchJobs]);
+
+  const contextValue = useMemo<DocumentStoreContextType>(() => ({
+    documents,
+    documentsTotal,
+    isLoading,
+    documentsError,
+    ingestionJobs,
+    jobsTotal,
+    jobsLoading,
+    jobsError,
+    fetchDocuments,
+    fetchJobs,
+    getDocumentById,
+    fetchDocumentDetail,
+    getJobById,
+    fetchJobDetail,
+    getJobsByDocumentId,
+    fetchDocumentStages,
+    uploadDocument,
+    archiveDocument,
+    restoreDocument,
+    reprocessDocument,
+    startIngestion,
+    retryIngestion,
+    cancelIngestion,
+    refreshDocuments,
+    refreshJobs,
+  }), [
+    documents,
+    documentsTotal,
+    isLoading,
+    documentsError,
+    ingestionJobs,
+    jobsTotal,
+    jobsLoading,
+    jobsError,
+    fetchDocuments,
+    fetchJobs,
+    getDocumentById,
+    fetchDocumentDetail,
+    getJobById,
+    fetchJobDetail,
+    getJobsByDocumentId,
+    fetchDocumentStages,
+    uploadDocument,
+    archiveDocument,
+    restoreDocument,
+    reprocessDocument,
+    startIngestion,
+    retryIngestion,
+    cancelIngestion,
+    refreshDocuments,
+    refreshJobs,
+  ]);
 
   return (
-    <DocumentStoreContext.Provider
-      value={{
-        documents,
-        documentsTotal,
-        isLoading,
-        documentsError,
-        ingestionJobs,
-        jobsTotal,
-        jobsLoading,
-        jobsError,
-        fetchDocuments,
-        fetchJobs,
-        getDocumentById,
-        fetchDocumentDetail,
-        getJobById,
-        fetchJobDetail,
-        getJobsByDocumentId,
-        fetchDocumentStages,
-        uploadDocument,
-        archiveDocument,
-        restoreDocument,
-        reprocessDocument,
-        startIngestion,
-        retryIngestion,
-        cancelIngestion,
-        refreshDocuments: async () => { await fetchDocuments(); },
-        refreshJobs: async () => { await fetchJobs(); },
-      }}
-    >
+    <DocumentStoreContext.Provider value={contextValue}>
       {children}
     </DocumentStoreContext.Provider>
   );
