@@ -149,3 +149,17 @@ class ReprocessResponse(BaseModel):
 
     document_id: UUID
     message: str = "Document queued for reprocessing"
+
+
+class RetryGraphResponse(BaseModel):
+    """Returned when a graph-only recovery attempt completes."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    document_id: UUID
+    status: str
+    message: str
+    success: bool
+    entity_count: int = 0
+    relation_count: int = 0
+

@@ -6,10 +6,13 @@ and neighbor/subgraph traversal with strict depth bounding (default 3, max 5).
 
 import logging
 from typing import Any
+from uuid import UUID
 from fastapi import APIRouter, Depends, HTTPException, Query, status
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import require_admin
 from app.core.config import Settings, get_settings
+from app.db.session import get_session
 from app.graph.client import Neo4jClient
 from app.graph.traversal import traverse_multi_hop
 from app.schemas.graph import (
@@ -228,3 +231,33 @@ async def get_subgraph(
     ]
 
     return GraphSubgraphResponse(nodes=nodes, edges=edges)
+
+
+@router.post("/populate", summary="Trigger knowledge graph population for eligible documents (admin only)")
+async def trigger_graph_population(
+    document_id: UUID | None = Query(None, description="Optional single document ID to populate"),
+    limit: int | None = Query(None, ge=1, le=100, description="Optional maximum number of documents to populate"),
+    clear: bool = Query(False, description="Whether to clear graph first if populating all documents"),
+    current_user: Any = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+    graph_client: Neo4jClient = Depends(get_graph_client),
+) -> dict[str, Any]:
+    """Trigger graph population for eligible documents (READY, or FAILED with chunks)."""
+    from app.graph.population import populate_graph
+
+    try:
+        summary = await populate_graph(
+            session,
+            graph_client,
+            document_id=document_id,
+            limit=limit,
+            clear=clear,
+        )
+        return summary.to_dict()
+    except Exception as exc:
+        logger.error("Graph population execution failed: %s", exc)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Graph population failed: {exc}",
+        )
+

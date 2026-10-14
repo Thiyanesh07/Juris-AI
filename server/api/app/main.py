@@ -1,6 +1,15 @@
 """Application entry point. Routers live under app.api.routes."""
 
-from fastapi import FastAPI, APIRouter
+import asyncio
+import logging
+import sys
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
@@ -15,23 +24,22 @@ from app.api.routes.history import router as history_router
 from app.api.routes.qa import router as qa_router
 from app.api.routes.retrieval import router as retrieval_router
 from app.api.routes.saved_research import router as saved_research_router
-from contextlib import asynccontextmanager
-import logging
-
 from app.api.routes.settings import router as settings_router
 from app.api.routes.validation import router as validation_router
 from app.core.config import get_settings
+from app.core.csrf import CSRFMiddleware
+from app.core.rate_limit import RateLimitMiddleware
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
-    """Application lifespan managing dynamic settings initialization, startup recovery, and cleanup."""
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+    """Manage dynamic settings initialization, startup recovery, and cleanup."""
     try:
-        from app.db.session import session_factory
         from app.core.dynamic_settings import load_persisted_settings
+        from app.db.session import session_factory
         from app.ingestion.recovery import recover_interrupted_jobs
 
         async with session_factory() as session:
@@ -79,6 +87,13 @@ allowed_origins = list({
 })
 
 
+# Session must wrap the inner security middleware so rate limiting and CSRF
+# can inspect the decoded cookie while still running before route handlers.
+app.add_middleware(
+    RateLimitMiddleware,
+    settings=settings,
+)
+app.add_middleware(CSRFMiddleware, settings=settings)
 app.add_middleware(
     SessionMiddleware,
     secret_key=settings.session_secret,

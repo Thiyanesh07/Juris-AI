@@ -131,7 +131,7 @@ async def traverse_multi_hop(
     query = f"""
         MATCH p=(seed)-[rels*1..{hops}]-(target)
         WHERE seed.id IN $seed_ids
-          AND ALL(x IN nodes(p) WHERE single(y IN nodes(p) WHERE y = x))  -- prevent cycles
+          AND ALL(x IN nodes(p) WHERE single(y IN nodes(p) WHERE y = x))
         WITH p, rels, nodes(p) AS n_list
         LIMIT $limit
         RETURN

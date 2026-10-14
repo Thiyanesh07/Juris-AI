@@ -284,8 +284,55 @@ export const GraphStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, [fetchNeighborsFromApi]);
 
   useEffect(() => {
-    initialLoad();
-  }, [initialLoad]);
+    let active = true;
+    (async () => {
+      try {
+        const res = await apiClient.get<{ nodes: any[]; total: number }>('/graph/search?query=Act&limit=15');
+        if (!active) return;
+        if (res && res.nodes && res.nodes.length > 0) {
+          const firstId = res.nodes[0]?.id;
+          if (firstId) {
+            setSelectedNodeId(firstId);
+            await fetchNeighborsFromApi(firstId, 2);
+          } else {
+            const layout = layoutNodes(res.nodes, []);
+            setNodes(layout.nodes);
+            setEdges([]);
+          }
+        } else {
+          const fallbackRes = await apiClient.get<{ nodes: any[]; total: number }>('/graph/search?query=a&limit=15');
+          if (!active) return;
+          if (fallbackRes && fallbackRes.nodes && fallbackRes.nodes.length > 0) {
+            const firstId = fallbackRes.nodes[0]?.id;
+            if (firstId) {
+              setSelectedNodeId(firstId);
+              await fetchNeighborsFromApi(firstId, 2);
+            } else {
+              const layout = layoutNodes(fallbackRes.nodes, []);
+              setNodes(layout.nodes);
+              setEdges([]);
+            }
+          } else {
+            setNodes([]);
+            setEdges([]);
+            setSelectedNodeId(null);
+          }
+        }
+      } catch (err) {
+        if (!active) return;
+        setNodes([]);
+        setEdges([]);
+        setSelectedNodeId(null);
+        setError(err instanceof Error ? err.message : 'Unable to connect to Neo4j Knowledge Graph');
+      } finally {
+        if (active) setIsLoading(false);
+      }
+    })();
+
+    return () => {
+      active = false;
+    };
+  }, [fetchNeighborsFromApi]);
 
   const selectNode = (id: string | null) => {
     setSelectedNodeId(id);

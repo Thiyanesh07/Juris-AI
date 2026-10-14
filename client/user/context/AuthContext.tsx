@@ -54,8 +54,24 @@ export function AuthContextProvider({
   }, []);
 
   useEffect(() => {
-    refreshUser();
-  }, [refreshUser]);
+    let ignore = false;
+    fetchCurrentUser()
+      .then((currentUser) => {
+        if (!ignore) {
+          setUser(currentUser);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        if (!ignore) {
+          setUser(null);
+          setIsLoading(false);
+        }
+      });
+    return () => {
+      ignore = true;
+    };
+  }, []);
 
   return (
     <AuthContext.Provider

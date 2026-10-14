@@ -1,18 +1,23 @@
 """Google OAuth code-exchange boundary and identity resolution."""
 
+import hashlib
+import secrets
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime, timedelta
+from urllib.parse import urlsplit
 
 import httpx
-from fastapi import HTTPException
-from sqlalchemy import select
+from fastapi import HTTPException, Request
+from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import Settings
-from app.models import User, UserRole
+from app.models import OAuthTransaction, User, UserRole
 
 _TOKEN_URL = "https://oauth2.googleapis.com/token"
 _USERINFO_URL = "https://openidconnect.googleapis.com/v1/userinfo"
+OAUTH_SESSION_BINDING_KEY = "oauth_session_binding"
+OAUTH_STATE_TTL_SECONDS = 600
 
 
 @dataclass(frozen=True)
@@ -21,6 +26,120 @@ class GoogleIdentity:
     email: str
     name: str | None
     image_url: str | None
+
+
+def validate_return_path(value: str | None) -> str | None:
+    """Allow only a local application path for post-authentication navigation."""
+    if not value:
+        return None
+    candidate = value.strip()
+    if len(candidate) > 2048 or not candidate.startswith("/") or candidate.startswith("//"):
+        return None
+    parsed = urlsplit(candidate)
+    if parsed.scheme or parsed.netloc:
+        return None
+    return candidate
+
+
+def _digest(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def allowed_redirect_uris(settings: Settings) -> frozenset[str]:
+    values = [settings.google_redirect_uri]
+    values.extend(
+        part.strip()
+        for part in settings.google_allowed_redirect_uris.split(",")
+        if part.strip()
+    )
+    return frozenset(value for value in values if value)
+
+
+def validate_redirect_uri(settings: Settings, redirect_uri: str | None) -> str:
+    """Require an exact, explicitly configured OAuth callback URI."""
+    candidate = redirect_uri or settings.google_redirect_uri
+    if candidate not in allowed_redirect_uris(settings):
+        raise HTTPException(status_code=400, detail="Invalid OAuth redirect URI")
+    parsed = urlsplit(candidate)
+    if (
+        parsed.scheme not in {"http", "https"}
+        or not parsed.netloc
+        or parsed.username
+        or parsed.password
+        or parsed.fragment
+        or (settings.app_env == "production" and parsed.scheme != "https")
+    ):
+        raise HTTPException(status_code=400, detail="Invalid OAuth redirect URI")
+    return candidate
+
+
+async def begin_oauth_state(
+    request: Request,
+    session: AsyncSession,
+    settings: Settings,
+    intent: str,
+    return_to: str | None,
+    redirect_uri: str | None,
+) -> str:
+    """Create a server-side, one-time OAuth transaction."""
+    state = secrets.token_urlsafe(32)
+    binding = secrets.token_urlsafe(32)
+    request.session[OAUTH_SESSION_BINDING_KEY] = binding
+    validated_return_to = validate_return_path(return_to)
+    effective_redirect_uri = validate_redirect_uri(settings, redirect_uri)
+    session.add(
+        OAuthTransaction(
+            state_digest=_digest(state),
+            session_binding=_digest(binding),
+            intent=intent,
+            return_to=validated_return_to,
+            redirect_uri=effective_redirect_uri,
+            expires_at=datetime.now(UTC)
+            + timedelta(seconds=OAUTH_STATE_TTL_SECONDS),
+        )
+    )
+    await session.commit()
+    return state
+
+
+async def consume_oauth_state(
+    request: Request,
+    session: AsyncSession,
+    settings: Settings,
+    received_state: str | None,
+    redirect_uri: str | None,
+) -> tuple[str, str | None, str]:
+    """Atomically consume a matching, unexpired OAuth transaction."""
+    if not isinstance(received_state, str) or not received_state or len(received_state) > 256:
+        raise HTTPException(status_code=400, detail="Invalid OAuth state")
+    binding = request.session.get(OAUTH_SESSION_BINDING_KEY)
+    if not isinstance(binding, str):
+        raise HTTPException(status_code=400, detail="Invalid OAuth state")
+    effective_redirect_uri = validate_redirect_uri(settings, redirect_uri)
+    statement = (
+        delete(OAuthTransaction)
+        .where(
+            OAuthTransaction.state_digest == _digest(received_state),
+            OAuthTransaction.session_binding == _digest(binding),
+            OAuthTransaction.expires_at > datetime.now(UTC),
+            OAuthTransaction.consumed_at.is_(None),
+            OAuthTransaction.redirect_uri == effective_redirect_uri,
+        )
+        .returning(
+            OAuthTransaction.intent,
+            OAuthTransaction.return_to,
+            OAuthTransaction.redirect_uri,
+        )
+    )
+    result = await session.execute(statement)
+    transaction = result.one_or_none()
+    if transaction is None:
+        await session.rollback()
+        raise HTTPException(status_code=400, detail="Invalid OAuth state")
+    await session.commit()
+    request.session.pop(OAUTH_SESSION_BINDING_KEY, None)
+    intent, return_to, effective_redirect_uri = transaction
+    return intent, return_to, effective_redirect_uri
 
 
 def _oauth_not_configured_error(settings: Settings) -> HTTPException:
@@ -44,7 +163,7 @@ def _oauth_not_configured_error(settings: Settings) -> HTTPException:
 
 def google_login_url(settings: Settings, state: str = "", redirect_uri: str | None = None) -> str:
     """Build the provider authorization URL without exposing a client secret."""
-    effective_redirect = redirect_uri or settings.google_redirect_uri
+    effective_redirect = validate_redirect_uri(settings, redirect_uri)
     if not all((settings.google_client_id, effective_redirect)):
         raise _oauth_not_configured_error(settings)
     return str(
@@ -68,7 +187,7 @@ async def exchange_code_for_identity(
     redirect_uri: str | None = None,
 ) -> GoogleIdentity:
     """Exchange an authorization code and fetch verified Google userinfo over TLS."""
-    effective_redirect = redirect_uri or settings.google_redirect_uri
+    effective_redirect = validate_redirect_uri(settings, redirect_uri)
     if not all(
         (settings.google_client_id, settings.google_client_secret, effective_redirect)
     ):
@@ -133,7 +252,7 @@ async def find_or_create_user(
             user.name = identity.name
         if identity.image_url:
             user.image_url = identity.image_url
-        user.last_login_at = datetime.now(timezone.utc)
+        user.last_login_at = datetime.now(UTC)
     elif intent == "signup":
         if user is not None:
             raise HTTPException(
@@ -147,7 +266,7 @@ async def find_or_create_user(
             google_subject=identity.subject,
             role=UserRole.USER,
             is_active=True,
-            last_login_at=datetime.now(timezone.utc),
+            last_login_at=datetime.now(UTC),
         )
         session.add(user)
     else:
@@ -160,7 +279,7 @@ async def find_or_create_user(
                 google_subject=identity.subject,
                 role=UserRole.USER,
                 is_active=True,
-                last_login_at=datetime.now(timezone.utc),
+                last_login_at=datetime.now(UTC),
             )
             session.add(user)
         else:
@@ -169,9 +288,8 @@ async def find_or_create_user(
                 user.name = identity.name
             if identity.image_url:
                 user.image_url = identity.image_url
-            user.last_login_at = datetime.now(timezone.utc)
+            user.last_login_at = datetime.now(UTC)
 
     await session.commit()
     await session.refresh(user)
     return user
-

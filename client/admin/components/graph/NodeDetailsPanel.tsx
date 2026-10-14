@@ -22,6 +22,7 @@ export const NodeDetailsPanel: React.FC = () => {
     selectNode,
     startTraversal,
     traversalDepth,
+    nodes,
   } = useGraphStore();
 
   const selectedNode = getSelectedNode();
@@ -175,7 +176,6 @@ export const NodeDetailsPanel: React.FC = () => {
   }
 
   if (selectedEdge) {
-    const { nodes } = useGraphStore();
     const srcNode = nodes.find((n) => n.id === selectedEdge.source);
     const tgtNode = nodes.find((n) => n.id === selectedEdge.target);
 

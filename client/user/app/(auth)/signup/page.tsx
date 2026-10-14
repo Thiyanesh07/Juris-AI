@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -17,19 +17,18 @@ import { getGoogleLoginUrl } from '@/lib/authClient';
 
 function UserSignUpContent() {
   const searchParams = useSearchParams();
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [isAccountExists, setIsAccountExists] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
 
-  useEffect(() => {
-    const errorParam = searchParams.get('error');
-    if (errorParam === 'account_exists' || errorParam === 'This Google account already has a Juris AI account. Please sign in.') {
-      setIsAccountExists(true);
-      setErrorMsg('This Google account already has a Juris AI account. Please sign in.');
-    } else if (errorParam) {
-      setErrorMsg(decodeURIComponent(errorParam));
-    }
-  }, [searchParams]);
+  const errorParam = searchParams.get('error');
+  let errorMsg: string | null = null;
+  let isAccountExists = false;
+
+  if (errorParam === 'account_exists' || errorParam === 'This Google account already has a Juris AI account. Please sign in.') {
+    isAccountExists = true;
+    errorMsg = 'This Google account already has a Juris AI account. Please sign in.';
+  } else if (errorParam) {
+    errorMsg = decodeURIComponent(errorParam);
+  }
 
   const handleGoogleSignUp = () => {
     setIsRedirecting(true);

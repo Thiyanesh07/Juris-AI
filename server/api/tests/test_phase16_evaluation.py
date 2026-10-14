@@ -22,9 +22,9 @@ async def test_run_evaluation_benchmark(client, session):
     assert run_obj.name == "Test Benchmark Run"
     assert "vector_only" in run_obj.results
 
-    with client:
-        client.post("/auth/login", json={"email": "eval_admin@jurisai.law", "password": "password123"})
-        res = client.get("/evaluation")
-        assert res.status_code == 200
-        data = res.json()
-        assert data["total"] >= 1
+    client.post("/auth/login", json={"email": "eval_admin@jurisai.law", "password": "password123"})
+    res = client.get("/evaluation")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["total"] >= 1
+

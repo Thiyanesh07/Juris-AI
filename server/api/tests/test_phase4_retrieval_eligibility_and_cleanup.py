@@ -299,36 +299,33 @@ async def test_downstream_stage_failure_removes_vectors_on_cleanup_success(
     session.add(doc)
     await session.commit()
 
-    # Simulate Stage 8 (Graph Population) failure after Stage 5 (FAISS) succeeded
-    failing_graph = MockNeo4jClient()
-    failing_graph.replace_document_graph = AsyncMock(side_effect=RuntimeError("Neo4j disk full"))
+    # Simulate Stage 7 (Relation Extraction) failure after Stage 5 (FAISS) succeeded
+    with patch("app.ingestion.pipeline.extract_relations", side_effect=RuntimeError("Extraction engine failure")):
+        with pytest.raises(IngestionError) as exc_info:
+            await run_pipeline(
+                db=session,
+                document_id=doc.id,
+                pdf_bytes=pdf_bytes,
+                settings=isolated_settings,
+                embedder=embedder,
+            )
 
-    with pytest.raises(IngestionError) as exc_info:
-        await run_pipeline(
-            db=session,
-            document_id=doc.id,
-            pdf_bytes=pdf_bytes,
-            settings=isolated_settings,
-            embedder=embedder,
-            graph_client=failing_graph,
-        )
-
-    assert exc_info.value.stage == ProcessingJobStage.GRAPH_POPULATION
-    assert "Neo4j disk full" in str(exc_info.value)
+    assert exc_info.value.stage == ProcessingJobStage.RELATION_EXTRACTION
+    assert "Extraction engine failure" in str(exc_info.value)
 
     # Verify PostgreSQL state: document status is FAILED and job is FAILED
     await session.refresh(doc)
     assert doc.status == DocumentStatus.FAILED
 
-    job_graph = (
+    job_rel = (
         await session.execute(
             select(ProcessingJob).where(
                 ProcessingJob.document_id == doc.id,
-                ProcessingJob.stage == ProcessingJobStage.GRAPH_POPULATION,
+                ProcessingJob.stage == ProcessingJobStage.RELATION_EXTRACTION,
             )
         )
     ).scalar_one()
-    assert job_graph.status == ProcessingJobStatus.FAILED
+    assert job_rel.status == ProcessingJobStatus.FAILED
 
     # Verify FAISS cleanup: vectors were pruned from index
     index_path = tmp_path / "indexes" / isolated_settings.vector_index_name / "index.faiss"

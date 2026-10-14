@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Generator
 from pathlib import Path
 from typing import Any
 from uuid import UUID
@@ -11,7 +12,7 @@ import pytest
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import Settings, get_settings
-from app.graph.client import GraphError
+from app.graph.client import GraphError, Neo4jClient
 from app.models import Document
 from app.models.chunk import Chunk
 from app.models.enums import DocumentStatus, DocumentType
@@ -26,13 +27,13 @@ from tests.test_retrieval import (
 )
 
 
-class FakeGraphClient:
-    def __init__(self, rows: list[dict[str, Any]] | None = None, *, error: Exception | None = None):
+class FakeGraphClient(Neo4jClient):
+    def __init__(self, rows: list[dict[str, Any]] | None = None, *, error: Exception | None = None) -> None:
         self.rows = rows or []
         self.error = error
         self.calls = 0
 
-    async def expand_supported_chunks(self, seed_ids: list[str], max_paths: int) -> list[dict]:
+    async def expand_supported_chunks(self, seed_ids: list[str], max_paths: int) -> list[dict[str, Any]]:
         self.calls += 1
         if self.error is not None:
             raise self.error
@@ -50,17 +51,18 @@ async def _seed_db(session: AsyncSession) -> None:
     session.add(doc)
     await session.flush()
     for record in _records():
+        text_val = str(record["text"])
         session.add(
             Chunk(
-                id=UUID(record["chunk_id"]),
+                id=UUID(str(record["chunk_id"])),
                 document_id=doc.id,
-                chunk_index=record["chunk_index"],
-                text=record["text"],
-                char_count=len(record["text"]),
-                hierarchy=record["hierarchy"],
-                citation_ref=record["citation_ref"],
-                page_start=record["page_start"],
-                page_end=record["page_end"],
+                chunk_index=int(record["chunk_index"]),  # type: ignore[arg-type]
+                text=text_val,
+                char_count=len(text_val),
+                hierarchy=dict(record["hierarchy"]),  # type: ignore[arg-type]
+                citation_ref=str(record["citation_ref"]),
+                page_start=int(record["page_start"]),  # type: ignore[arg-type]
+                page_end=int(record["page_end"]),  # type: ignore[arg-type]
             )
         )
     await session.commit()
@@ -79,7 +81,7 @@ def _save_index(tmp_path: Path) -> None:
 
 
 @pytest.fixture
-def hybrid_settings(tmp_path: Path) -> Settings:
+def hybrid_settings(tmp_path: Path) -> Generator[Settings, None, None]:
     settings = get_settings()
     snapshot = settings.model_dump()
     _configure_settings(settings, tmp_path)
@@ -191,9 +193,12 @@ async def test_empty_dense_skips_neo4j(
     hybrid_settings: Settings,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    def _empty_search(*_args: Any, **_kwargs: Any) -> list[dict[str, Any]]:
+        return []
+
     monkeypatch.setattr(
         "app.retrieval.hybrid.search_index_rows",
-        lambda *_args, **_kwargs: [],
+        _empty_search,
     )
     graph = FakeGraphClient()
     result = await hybrid_retrieve(
@@ -253,7 +258,7 @@ async def test_neo4j_timeout_dense_fallback(
     await _seed_db(session)
 
     class SlowGraph(FakeGraphClient):
-        async def expand_supported_chunks(self, seed_ids: list[str], max_paths: int) -> list[dict]:
+        async def expand_supported_chunks(self, seed_ids: list[str], max_paths: int) -> list[dict[str, Any]]:
             import asyncio
 
             await asyncio.sleep(5)
@@ -332,7 +337,7 @@ async def test_single_postgres_batch_query(
 
     real_loader = evidence_module.load_chunks_by_ids
 
-    async def counted_loader(*args, **kwargs):
+    async def counted_loader(*args: Any, **kwargs: Any) -> dict[str, Any]:
         nonlocal calls
         calls += 1
         return await real_loader(*args, **kwargs)
@@ -464,13 +469,16 @@ async def test_empty_dense_skips_postgres(
     hybrid_settings: Settings,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    def _empty_search(*_args: Any, **_kwargs: Any) -> list[dict[str, Any]]:
+        return []
+
     monkeypatch.setattr(
         "app.retrieval.hybrid.search_index_rows",
-        lambda *_args, **_kwargs: [],
+        _empty_search,
     )
     calls = 0
 
-    async def counted_loader(*_args: Any, **_kwargs: Any) -> dict:
+    async def counted_loader(*_args: Any, **_kwargs: Any) -> dict[str, Any]:
         nonlocal calls
         calls += 1
         return {}
@@ -494,16 +502,19 @@ async def test_graph_only_backfill_is_not_a_dense_match(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     await _seed_db(session)
-    monkeypatch.setattr(
-        "app.retrieval.hybrid.search_index_rows",
-        lambda *_args, **_kwargs: [
+    def _single_hit(*_args: Any, **_kwargs: Any) -> list[dict[str, Any]]:
+        return [
             {
                 "rank": 1,
                 "score": 1.0,
                 "chunk_id": "00000000-0000-0000-0000-000000000001",
                 "faiss_row": 0,
             }
-        ],
+        ]
+
+    monkeypatch.setattr(
+        "app.retrieval.hybrid.search_index_rows",
+        _single_hit,
     )
     result = await hybrid_retrieve(
         session,
@@ -537,16 +548,19 @@ async def test_graph_candidate_missing_faiss_embedding(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     await _seed_db(session)
-    monkeypatch.setattr(
-        "app.retrieval.hybrid.search_index_rows",
-        lambda *_args, **_kwargs: [
+    def _single_hit(*_args: Any, **_kwargs: Any) -> list[dict[str, Any]]:
+        return [
             {
                 "rank": 1,
                 "score": 1.0,
                 "chunk_id": "00000000-0000-0000-0000-000000000001",
                 "faiss_row": 0,
             }
-        ],
+        ]
+
+    monkeypatch.setattr(
+        "app.retrieval.hybrid.search_index_rows",
+        _single_hit,
     )
     missing = "00000000-0000-0000-0000-000000000099"
     result = await hybrid_retrieve(
@@ -593,7 +607,9 @@ async def test_seed_top_k_sizing_rule(
     captured: dict[str, int] = {}
     from app.retrieval.index import search_index_rows as real_search
 
-    def capture_search(index: Any, metadata: dict, query_vector: Any, top_k: int) -> list:
+    def capture_search(
+        index: Any, metadata: dict[str, Any], query_vector: Any, top_k: int
+    ) -> list[dict[str, Any]]:
         captured["top_k"] = top_k
         return real_search(index, metadata, query_vector, top_k)
 

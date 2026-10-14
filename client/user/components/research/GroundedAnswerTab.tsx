@@ -177,7 +177,7 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
               {selectedCitation.excerpt && (
                 <div className="bg-white p-3 rounded-lg border border-[#CBD5E0]">
                   <p className="font-mono text-[10px] text-[#718096] uppercase font-bold mb-1">Direct Excerpt</p>
-                  <p className="text-[#526176] italic font-serif leading-relaxed">"{selectedCitation.excerpt}"</p>
+                  <p className="text-[#526176] italic font-serif leading-relaxed">&ldquo;{selectedCitation.excerpt}&rdquo;</p>
                 </div>
               )}
               <div className="flex items-center justify-between text-[11px] font-mono text-[#718096] pt-1">

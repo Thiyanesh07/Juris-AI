@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   Scale,
@@ -22,18 +22,16 @@ const ERROR_MESSAGES: Record<string, string> = {
 function AdminLoginContent() {
   const searchParams = useSearchParams();
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [isDismissed, setIsDismissed] = useState(false);
 
-  useEffect(() => {
-    const errorCode = searchParams.get('error');
-    if (errorCode && ERROR_MESSAGES[errorCode]) {
-      setErrorMessage(ERROR_MESSAGES[errorCode]);
-    }
-  }, [searchParams]);
+  const errorCode = searchParams.get('error');
+  const errorMessage = !isDismissed && errorCode && ERROR_MESSAGES[errorCode]
+    ? ERROR_MESSAGES[errorCode]
+    : null;
 
   const handleGoogleSignIn = () => {
     setIsLoading(true);
-    setErrorMessage(null);
+    setIsDismissed(true);
     const nextPath = searchParams.get('next') ?? '/admin';
     window.location.href = getGoogleLoginUrl(nextPath);
   };

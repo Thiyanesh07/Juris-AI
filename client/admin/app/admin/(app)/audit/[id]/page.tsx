@@ -57,10 +57,27 @@ export default function AuditEventDetailPage() {
   }, [id, fetchEventById]);
 
   useEffect(() => {
-    if (!event) {
-      loadEvent();
-    }
-  }, [event, loadEvent]);
+    if (event || !id) return;
+    let active = true;
+    fetchEventById(id)
+      .then((fetched) => {
+        if (!active) return;
+        if (fetched) {
+          setEvent(fetched);
+        } else {
+          setError(`No audit event record exists with ID "${id}".`);
+        }
+      })
+      .catch((err: any) => {
+        if (active) setError(err?.message || 'Failed to fetch audit event details.');
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [id, event, fetchEventById]);
 
   if (isLoading) {
     return (

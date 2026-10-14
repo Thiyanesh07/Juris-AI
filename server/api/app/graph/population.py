@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from typing import Any
 from uuid import UUID
 
-from sqlalchemy import select
+from sqlalchemy import and_, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.graph.client import Neo4jClient
@@ -279,6 +279,8 @@ async def _populate_one_document(
         await db.commit()
         await client.replace_document_graph(payload)
         await _mark_job(db, job_graph, ProcessingJobStatus.COMPLETED)
+        # On successful graph population, document satisfies full readiness contract
+        document.status = DocumentStatus.READY
         await db.commit()
         outcome.success = True
         return outcome
@@ -303,12 +305,18 @@ async def populate_graph(
     limit: int | None = None,
     clear: bool = False,
 ) -> PopulationSummary:
-    """Populate Neo4j from READY documents; failures are isolated per document."""
+    """Populate Neo4j from eligible documents (READY, or FAILED with persisted chunks); failures are isolated."""
     summary = PopulationSummary()
     if clear and document_id is None:
         await client.clear_graph()
 
-    query = select(Document.id).where(Document.status == DocumentStatus.READY)
+    has_chunks = select(Chunk.id).where(Chunk.document_id == Document.id).exists()
+    query = select(Document.id).where(
+        or_(
+            Document.status == DocumentStatus.READY,
+            and_(Document.status == DocumentStatus.FAILED, has_chunks),
+        )
+    )
     if document_id is not None:
         query = query.where(Document.id == document_id)
     query = query.order_by(Document.created_at)

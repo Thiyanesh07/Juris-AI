@@ -26,29 +26,28 @@ async def test_user_history_and_saved_research_ownership(client, session):
     await session.commit()
 
     # User A accesses own history
-    with client:
-        client.post("/auth/login", json={"email": "hist_a@jurisai.law", "password": "password123"})
-        res = client.get("/research/history")
-        assert res.status_code == 200
-        data = res.json()
-        assert data["total"] == 1
-        assert data["items"][0]["title"] == "User A Research Session"
+    client.post("/auth/login", json={"email": "hist_a@jurisai.law", "password": "password123"})
+    res = client.get("/research/history")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["total"] == 1
+    assert data["items"][0]["title"] == "User A Research Session"
 
-        # User A bookmarks session
-        save_res = client.post("/research/saved", json={"session_id": str(sess_a.id)})
-        assert save_res.status_code == 201
-        saved_id = save_res.json()["id"]
+    # User A bookmarks session
+    save_res = client.post("/research/saved", json={"session_id": str(sess_a.id)})
+    assert save_res.status_code == 201
+    saved_id = save_res.json()["id"]
 
-        # List saved research
-        list_saved = client.get("/research/saved")
-        assert list_saved.status_code == 200
-        assert len(list_saved.json()) == 1
+    # List saved research
+    list_saved = client.get("/research/saved")
+    assert list_saved.status_code == 200
+    assert len(list_saved.json()) == 1
 
     # User B tries to access User A's history or saved research
-    with client:
-        client.post("/auth/login", json={"email": "hist_b@jurisai.law", "password": "password123"})
-        res_history = client.get(f"/research/history/{sess_a.id}")
-        assert res_history.status_code == 404
+    client.post("/auth/login", json={"email": "hist_b@jurisai.law", "password": "password123"})
+    res_history = client.get(f"/research/history/{sess_a.id}")
+    assert res_history.status_code == 404
 
-        res_saved = client.get(f"/research/saved/{saved_id}")
-        assert res_saved.status_code == 404
+    res_saved = client.get(f"/research/saved/{saved_id}")
+    assert res_saved.status_code == 404
+

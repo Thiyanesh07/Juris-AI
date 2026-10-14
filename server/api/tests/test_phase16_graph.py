@@ -151,9 +151,8 @@ async def auth_admin(client, session):
     admin = User(email="graph_admin@jurisai.law", password_hash=hash_password("password123"), role=UserRole.ADMIN)
     session.add(admin)
     await session.commit()
-    with client:
-        client.post("/auth/login", json={"email": "graph_admin@jurisai.law", "password": "password123"})
-        yield client
+    client.post("/auth/login", json={"email": "graph_admin@jurisai.law", "password": "password123"})
+    yield client
 
 
 @pytest.mark.asyncio
@@ -267,3 +266,20 @@ async def test_admin_graph_database_unavailability_visible(auth_admin):
         assert "unavailable" in res_subgraph.json()["detail"].lower()
     finally:
         app.dependency_overrides.pop(get_graph_client, None)
+
+
+@pytest.mark.asyncio
+async def test_admin_graph_api_populate(auth_admin):
+    seeded_client = SeededNeo4jClient()
+    app.dependency_overrides[get_graph_client] = lambda: seeded_client
+    try:
+        res = auth_admin.post("/graph/populate?limit=5")
+        assert res.status_code == 200
+        data = res.json()
+        assert "processed" in data
+        assert "skipped" in data
+        assert "successes" in data
+        assert "failures" in data
+    finally:
+        app.dependency_overrides.pop(get_graph_client, None)
+

@@ -85,23 +85,31 @@ async def _check_database(session: AsyncSession) -> ComponentHealth:
 
 
 async def _check_neo4j(settings: Settings) -> ComponentHealth:
-    """Check Neo4j Aura connectivity and node/relationship counts."""
+    """Check Neo4j Aura connectivity and node/relationship counts, distinguishing empty from unavailable."""
     client = Neo4jClient(settings)
     try:
-        await client.health()
+        health_info = await client.health()
         stats = await client.statistics()
         nodes_by_label = stats.get("nodes_by_label", {})
         rels_by_type = stats.get("relationships_by_type", {})
         total_nodes = sum(nodes_by_label.values())
         total_rels = sum(rels_by_type.values())
+        is_empty = health_info.get("is_empty", (total_nodes == 0))
+        detail = (
+            f"Neo4j connected (empty graph: 0 nodes, 0 rels)"
+            if is_empty
+            else f"Neo4j connected ({total_nodes:,} nodes, {total_rels:,} rels)"
+        )
         return ComponentHealth(
             status="ok",
-            detail=f"Neo4j Aura connected ({total_nodes:,} nodes, {total_rels:,} rels)",
+            detail=detail,
             metrics={
                 "total_nodes": total_nodes,
                 "total_relationships": total_rels,
                 "nodes_by_label": nodes_by_label,
                 "relationships_by_type": rels_by_type,
+                "is_empty": is_empty,
+                "database": settings.neo4j_database or "neo4j",
             },
         )
     except Exception as exc:

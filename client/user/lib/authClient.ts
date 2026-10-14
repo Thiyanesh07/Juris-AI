@@ -70,7 +70,10 @@ export function getGoogleLoginUrl(
   const origin =
     typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3002';
   const callbackUrl = `${origin}/auth/google/callback`;
-  const state = redirectPath ? encodeURIComponent(redirectPath) : '';
+  if (typeof window !== 'undefined') {
+    window.sessionStorage.setItem('oauth_return_path', redirectPath || '/home');
+  }
   const apiBase = getApiBaseUrl();
-  return `${apiBase}/auth/google/login?redirect_uri=${encodeURIComponent(callbackUrl)}&state=${state}&intent=${intent}`;
+  const returnTo = redirectPath ? `&return_to=${encodeURIComponent(redirectPath)}` : '';
+  return `${apiBase}/auth/google/login?redirect_uri=${encodeURIComponent(callbackUrl)}${returnTo}&intent=${intent}`;
 }

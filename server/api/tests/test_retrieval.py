@@ -32,6 +32,16 @@ class FakeEmbedder:
         return np.asarray([mapping.get(text, [0.5, 0.5]) for text in texts], dtype=np.float32)
 
 
+@pytest.fixture(autouse=True)
+def restore_settings():
+    settings = get_settings()
+    snapshot = settings.model_dump()
+    yield
+    for key, value in snapshot.items():
+        object.__setattr__(settings, key, value)
+
+
+
 def _configure_settings(settings: Settings, tmp_path: Path, *, index_name: str = "test") -> None:
     object.__setattr__(settings, "data_dir", str(tmp_path))
     object.__setattr__(settings, "vector_index_name", index_name)

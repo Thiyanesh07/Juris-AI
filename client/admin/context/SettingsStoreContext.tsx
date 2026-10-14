@@ -57,8 +57,27 @@ export const SettingsStoreProvider: React.FC<{ children: React.ReactNode }> = ({
   }, []);
 
   useEffect(() => {
-    fetchSettings();
-  }, [fetchSettings]);
+    let active = true;
+    apiClient
+      .get<{ sections: Record<string, Record<string, any>> }>('/settings')
+      .then((res) => {
+        if (!active) return;
+        if (res && res.sections) {
+          setSections((prev) => hydrateSectionsFromBackend(prev, res.sections));
+          setSavedBaseline((prev) => hydrateSectionsFromBackend(prev, res.sections));
+        }
+      })
+      .catch((err: any) => {
+        if (!active) return;
+        setErrorMessage(`Failed to load system settings from server: ${err?.message || 'Server unreachable'}`);
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const updateSettingValue = (sectionId: string, key: string, value: any) => {
     setSections((prev) => {

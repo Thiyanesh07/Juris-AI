@@ -39,7 +39,6 @@ export default function UserDetailPage() {
   useEffect(() => {
     let active = true;
     if (!user && userId) {
-      setIsInitialLoading(true);
       fetchUserById(userId)
         .then((found) => {
           if (active && found) {

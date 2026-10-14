@@ -36,7 +36,7 @@ export const PipelineStatusBanner: React.FC<PipelineStatusProps> = ({ stages, st
               </span>
             </div>
             <p className="text-xs text-[#526176] font-mono mt-0.5 truncate max-w-md">
-              "{query}"
+              &ldquo;{query}&rdquo;
             </p>
           </div>
         </div>

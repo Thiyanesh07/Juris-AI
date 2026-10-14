@@ -2,16 +2,17 @@
 
 from collections.abc import Iterator
 from unittest.mock import AsyncMock, patch
+from urllib.parse import parse_qs, urlparse
 from uuid import uuid4
 
 import pytest
 from fastapi import APIRouter, Depends
 from fastapi.testclient import TestClient
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import get_current_user, require_admin, require_super_admin
-from app.auth.google import GoogleIdentity, find_or_create_user
-from app.auth.password import hash_password
+from app.auth.google import GoogleIdentity
 from app.cli import _create_super_admin
 from app.core.config import Settings, get_settings
 from app.main import app
@@ -41,6 +42,22 @@ def _mock_settings() -> Settings:
         google_client_secret="test-client-secret",
         google_redirect_uri="http://localhost:5173/auth/google/callback",
     )
+
+
+def _begin_google_oauth(client: TestClient, *, intent: str, return_to: str = "/home") -> str:
+    response = client.get(
+        "/auth/google/login",
+        params={
+            "intent": intent,
+            "return_to": return_to,
+            "redirect_uri": "http://localhost:5173/auth/google/callback",
+        },
+        follow_redirects=False,
+    )
+    assert response.status_code == 307
+    state = parse_qs(urlparse(response.headers["location"]).query)["state"][0]
+    assert len(state) >= 32
+    return state
 
 
 @pytest.fixture(autouse=True)
@@ -74,7 +91,7 @@ def test_register_login_and_me(client: TestClient) -> None:
     assert me_res.status_code == 200
     assert me_res.json()["email"] == email
 
-    client.post("/auth/logout")
+    client.post("/auth/logout", headers={"Origin": "http://localhost:5173"})
     client.cookies.clear()
 
     login = client.post("/auth/login", json={"email": email, "password": "password123"})
@@ -83,12 +100,14 @@ def test_register_login_and_me(client: TestClient) -> None:
 
 
 def test_google_login_redirect_url(client: TestClient) -> None:
-    response = client.get("/auth/google/login?state=/home", follow_redirects=False)
+    response = client.get("/auth/google/login?return_to=/home", follow_redirects=False)
     assert response.status_code == 307
     location = response.headers.get("location", "")
     assert "https://accounts.google.com/o/oauth2/v2/auth" in location
     assert "client_id=test-client-id" in location
-    assert "state=intent%3Dsignin" in location
+    state = parse_qs(urlparse(location).query)["state"][0]
+    assert len(state) >= 32
+    assert state != "/home"
 
 
 
@@ -111,7 +130,8 @@ def test_google_callback_success(mock_exchange: AsyncMock, client: TestClient) -
     )
 
     # First sign up
-    res = client.get("/auth/google/callback?code=mock-code&intent=signup&state=/home")
+    state = _begin_google_oauth(client, intent="signup")
+    res = client.get(f"/auth/google/callback?code=mock-code&state={state}")
     assert res.status_code == 200
     user_data = res.json()
     assert user_data["email"] == "googleuser@example.com"
@@ -122,30 +142,36 @@ def test_google_callback_success(mock_exchange: AsyncMock, client: TestClient) -
     assert me.status_code == 200
     assert me.json()["email"] == "googleuser@example.com"
 
-    client.post("/auth/logout")
+    client.post("/auth/logout", headers={"Origin": "http://localhost:5173"})
     client.cookies.clear()
 
     # Next sign in with existing user succeeds
-    res_signin = client.get("/auth/google/callback?code=mock-code&intent=signin&state=/home")
+    signin_state = _begin_google_oauth(client, intent="signin")
+    res_signin = client.get(f"/auth/google/callback?code=mock-code&state={signin_state}")
     assert res_signin.status_code == 200
     assert res_signin.json()["email"] == "googleuser@example.com"
 
 
 @patch("app.api.routes.auth.exchange_code_for_identity")
-def test_google_callback_signin_intent_no_account(mock_exchange: AsyncMock, client: TestClient) -> None:
+def test_google_callback_signin_intent_no_account(
+    mock_exchange: AsyncMock, client: TestClient
+) -> None:
     mock_exchange.return_value = GoogleIdentity(
         subject="google-sub-unknown",
         email="unknown@example.com",
         name="Unknown User",
         image_url=None,
     )
-    res = client.get("/auth/google/callback?code=mock-code&intent=signin&state=/home")
+    state = _begin_google_oauth(client, intent="signin")
+    res = client.get(f"/auth/google/callback?code=mock-code&state={state}")
     assert res.status_code == 404
     assert "No Juris AI account found" in res.json()["detail"]
 
 
 @patch("app.api.routes.auth.exchange_code_for_identity")
-def test_google_callback_signup_intent_duplicate_account(mock_exchange: AsyncMock, client: TestClient) -> None:
+def test_google_callback_signup_intent_duplicate_account(
+    mock_exchange: AsyncMock, client: TestClient
+) -> None:
     mock_exchange.return_value = GoogleIdentity(
         subject="google-sub-dup",
         email="dup@example.com",
@@ -153,17 +179,87 @@ def test_google_callback_signup_intent_duplicate_account(mock_exchange: AsyncMoc
         image_url=None,
     )
     # Register once
-    client.get("/auth/google/callback?code=mock-code&intent=signup&state=/home")
-    client.post("/auth/logout")
+    state = _begin_google_oauth(client, intent="signup")
+    client.get(f"/auth/google/callback?code=mock-code&state={state}")
+    client.post("/auth/logout", headers={"Origin": "http://localhost:5173"})
     client.cookies.clear()
 
     # Attempt second signup with same Google account
-    res_signup = client.get("/auth/google/callback?code=mock-code&intent=signup&state=/home")
+    signup_state = _begin_google_oauth(client, intent="signup")
+    res_signup = client.get(f"/auth/google/callback?code=mock-code&state={signup_state}")
     assert res_signup.status_code == 409
     assert "already has a Juris AI account" in res_signup.json()["detail"]
 
 
-from sqlalchemy import select
+def test_google_callback_rejects_missing_and_mismatched_state(client: TestClient) -> None:
+    state = _begin_google_oauth(client, intent="signin")
+
+    missing = client.get("/auth/google/callback?code=mock-code")
+    assert missing.status_code == 400
+    assert missing.json()["detail"] == "Invalid OAuth state"
+
+    _begin_google_oauth(client, intent="signin")
+    mismatched = client.get("/auth/google/callback?code=mock-code&state=wrong-state")
+    assert mismatched.status_code == 400
+    assert mismatched.json()["detail"] == "Invalid OAuth state"
+    assert state != "wrong-state"
+
+
+@patch("app.api.routes.auth.exchange_code_for_identity")
+def test_google_callback_rejects_replayed_state(
+    mock_exchange: AsyncMock, client: TestClient
+) -> None:
+    mock_exchange.return_value = GoogleIdentity(
+        subject=f"google-replay-{uuid4().hex}",
+        email=f"replay-{uuid4().hex}@example.com",
+        name="Replay User",
+        image_url=None,
+    )
+    state = _begin_google_oauth(client, intent="signup")
+    first = client.get(f"/auth/google/callback?code=mock-code&state={state}")
+    assert first.status_code == 200
+
+    replay = client.get(f"/auth/google/callback?code=mock-code&state={state}")
+    assert replay.status_code == 400
+    assert replay.json()["detail"] == "Invalid OAuth state"
+
+
+@patch("app.api.routes.auth.exchange_code_for_identity")
+def test_google_callback_rejects_state_from_another_browser_session(
+    mock_exchange: AsyncMock, client: TestClient
+) -> None:
+    mock_exchange.return_value = GoogleIdentity(
+        subject=f"google-independent-{uuid4().hex}",
+        email=f"independent-{uuid4().hex}@example.com",
+        name="Independent User",
+        image_url=None,
+    )
+    state = _begin_google_oauth(client, intent="signup")
+    with TestClient(app) as other_client:
+        response = other_client.get(f"/auth/google/callback?code=mock-code&state={state}")
+    assert response.status_code == 400
+    assert response.json()["detail"] == "Invalid OAuth state"
+
+
+@patch("app.api.routes.auth.exchange_code_for_identity")
+def test_google_oauth_uses_opaque_state_for_invalid_return_path(
+    mock_exchange: AsyncMock, client: TestClient
+) -> None:
+    mock_exchange.return_value = GoogleIdentity(
+        subject=f"google-return-{uuid4().hex}",
+        email=f"return-{uuid4().hex}@example.com",
+        name="Return User",
+        image_url=None,
+    )
+    state = _begin_google_oauth(
+        client,
+        intent="signup",
+        return_to="https://evil.example/steal",
+    )
+    assert "evil.example" not in state
+    response = client.get(f"/auth/google/callback?code=mock-code&state={state}")
+    assert response.status_code == 200
+
 
 def test_disabled_user_login_blocked(client: TestClient) -> None:
     disabled_user = User(
@@ -185,7 +281,12 @@ def test_disabled_user_login_blocked(client: TestClient) -> None:
 def test_role_enforcement_hierarchy(client: TestClient) -> None:
     norm_user = User(id=uuid4(), email="user@example.com", role=UserRole.USER, is_active=True)
     admin_user = User(id=uuid4(), email="admin@example.com", role=UserRole.ADMIN, is_active=True)
-    super_admin_user = User(id=uuid4(), email="superadmin@example.com", role=UserRole.SUPER_ADMIN, is_active=True)
+    super_admin_user = User(
+        id=uuid4(),
+        email="superadmin@example.com",
+        role=UserRole.SUPER_ADMIN,
+        is_active=True,
+    )
 
     # USER
     app.dependency_overrides[get_current_user] = lambda: norm_user

@@ -129,8 +129,39 @@ export const UserStoreProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   }, [fetchUsers, fetchAdmins]);
 
   useEffect(() => {
-    refreshUsers();
-  }, [refreshUsers]);
+    let active = true;
+    Promise.all([
+      apiClient.get<PaginatedUsersResponse>('/admin/users?page=1&page_size=100'),
+      apiClient.get<PaginatedUsersResponse>('/admin/admins?page=1&page_size=100'),
+    ])
+      .then(([usersRes, adminsRes]) => {
+        if (!active) return;
+        const uItems = usersRes?.items || [];
+        const uMapped = uItems.map(mapBackendUser);
+        setUsers(uMapped);
+        setUsersTotal(usersRes?.total ?? uMapped.length);
+
+        const aItems = adminsRes?.items || [];
+        const aMapped = aItems.map(mapBackendUser);
+        setAdmins(aMapped);
+        setAdminsTotal(adminsRes?.total ?? aMapped.length);
+      })
+      .catch((err: any) => {
+        if (!active) return;
+        const msg = err?.message || 'Failed to fetch users from backend.';
+        setError(msg);
+        setUsers([]);
+        setUsersTotal(0);
+        setAdmins([]);
+        setAdminsTotal(0);
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const getUserById = useCallback(
     (id: string): User | undefined => {

@@ -134,8 +134,27 @@ export const ValidationStoreProvider: React.FC<{ children: React.ReactNode }> = 
   }, []);
 
   useEffect(() => {
-    fetchValidationItems();
-  }, [fetchValidationItems]);
+    let active = true;
+    apiClient
+      .get<{ items: BackendValidationItem[]; total: number }>('/validation?page_size=100')
+      .then((res) => {
+        if (!active) return;
+        const items = res?.items || [];
+        const mapped: ValidationItem[] = items.map(mapBackendValidationItem);
+        setValidationItems(mapped);
+      })
+      .catch((err: any) => {
+        if (!active) return;
+        setError(err?.message || 'Failed to load validation queue from server.');
+        setValidationItems([]);
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const getItemById = useCallback(
     (id: string): ValidationItem | undefined => {

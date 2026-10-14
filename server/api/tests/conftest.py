@@ -50,14 +50,26 @@ def _test_database_url() -> str:
 
 # Pin the test database before any app module (and therefore Settings) loads.
 os.environ["DATABASE_URL"] = _test_database_url()
+os.environ.setdefault("APP_ENV", "test")
 os.environ.setdefault("SESSION_SECRET", "test-session-secret-not-for-production")
 
 from alembic.config import Config  # noqa: E402
 
 from alembic import command  # noqa: E402
+from app.core.config import get_settings  # noqa: E402
 from app.db.base import Base  # noqa: E402
 from app.db.session import get_session  # noqa: E402
 from app.main import app  # noqa: E402
+
+_ORIGINAL_SETTINGS = get_settings().model_dump()
+
+
+@pytest.fixture(autouse=True)
+def restore_global_settings():
+    yield
+    settings = get_settings()
+    for key, value in _ORIGINAL_SETTINGS.items():
+        object.__setattr__(settings, key, value)
 
 
 def _alembic_config() -> Config:

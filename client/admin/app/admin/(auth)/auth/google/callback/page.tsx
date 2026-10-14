@@ -11,29 +11,27 @@ type Status = 'processing' | 'success' | 'error';
 function AdminGoogleCallbackContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [status, setStatus] = useState<Status>('processing');
-  const [errorMessage, setErrorMessage] = useState<string>('');
+
+  const code = searchParams.get('code');
+  const state = searchParams.get('state');
+  const error = searchParams.get('error');
+
+  const paramError = error
+    ? (error === 'access_denied' ? 'Sign-in was cancelled.' : `Google returned an error: ${error}`)
+    : (!code ? 'Missing authorization code from Google.' : null);
+
+  const [asyncStatus, setAsyncStatus] = useState<Status>('processing');
+  const [asyncError, setAsyncError] = useState<string>('');
+
+  const status = paramError ? 'error' : asyncStatus;
+  const errorMessage = paramError || asyncError;
 
   useEffect(() => {
-    const code = searchParams.get('code');
-    const state = searchParams.get('state');
-    const error = searchParams.get('error');
-
-    if (error) {
-      setErrorMessage(
-        error === 'access_denied'
-          ? 'Sign-in was cancelled.'
-          : `Google returned an error: ${error}`
-      );
-      setStatus('error');
+    if (paramError || !code) {
       return;
     }
 
-    if (!code) {
-      setErrorMessage('Missing authorization code from Google.');
-      setStatus('error');
-      return;
-    }
+    let active = true;
 
     // Forward the code + state to the backend for secure server-side exchange
     const apiBase = getApiBaseUrl();
@@ -48,38 +46,54 @@ function AdminGoogleCallbackContent() {
       redirect: 'manual',
     })
       .then(async (res) => {
+        if (!active) return;
         if (res.ok || res.status === 0 /* opaque redirect */) {
           const meRes = await fetch(`${apiBase}/auth/me`, {
             credentials: 'include',
           });
+          if (!active) return;
           if (!meRes.ok) {
-            setErrorMessage('Authentication failed. Please try again.');
-            setStatus('error');
+            setAsyncError('Authentication failed. Please try again.');
+            setAsyncStatus('error');
             return;
           }
           const user = await meRes.json() as { role: string };
           if (user.role !== 'admin' && user.role !== 'super_admin') {
-            setErrorMessage(
+            setAsyncError(
               'Your account does not have administrator access. Contact a Super Administrator to grant access.'
             );
-            setStatus('error');
+            setAsyncStatus('error');
             return;
           }
-          setStatus('success');
-          setTimeout(() => router.replace('/admin'), 800);
+          setAsyncStatus('success');
+          const storedPath = window.sessionStorage.getItem('oauth_return_path');
+          window.sessionStorage.removeItem('oauth_return_path');
+          const targetPath =
+            storedPath?.startsWith('/') && !storedPath.startsWith('//')
+              ? storedPath
+              : '/admin';
+          setTimeout(() => {
+            if (active) router.replace(targetPath);
+          }, 800);
         } else {
           const data = await res.json().catch(() => null);
-          setErrorMessage(
+          if (!active) return;
+          setAsyncError(
             (data as { detail?: string } | null)?.detail ?? 'Authentication failed. Please try again.'
           );
-          setStatus('error');
+          setAsyncStatus('error');
         }
       })
       .catch(() => {
-        setErrorMessage('Could not reach the authentication server. Please try again.');
-        setStatus('error');
+        if (!active) return;
+        setAsyncError('Could not reach the authentication server. Please try again.');
+        setAsyncStatus('error');
       });
-  }, [searchParams, router]);
+
+    return () => {
+      active = false;
+    };
+  }, [code, state, paramError, router]);
 
   return (
     <div className="min-h-screen bg-[#E7EDF4] flex flex-col items-center justify-center p-6">

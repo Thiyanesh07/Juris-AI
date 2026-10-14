@@ -67,10 +67,27 @@ export default function ValidationDetailPage() {
   }, [id, fetchItemById]);
 
   useEffect(() => {
-    if (!item) {
-      loadItem();
-    }
-  }, [item, loadItem]);
+    if (item || !id) return;
+    let active = true;
+    fetchItemById(id)
+      .then((fetched) => {
+        if (!active) return;
+        if (fetched) {
+          setItem(fetched);
+        } else {
+          setLoadError(`No validation record exists with ID "${id}".`);
+        }
+      })
+      .catch((err: any) => {
+        if (active) setLoadError(err?.message || 'Failed to fetch validation item from server.');
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [id, item, fetchItemById]);
 
   if (isLoading) {
     return (
@@ -304,7 +321,7 @@ export default function ValidationDetailPage() {
                 Extracted Source Evidence
               </span>
               <div className="p-3.5 rounded-lg bg-[#EFF3F7] border border-[#D9E1EA] text-xs font-mono text-[#17253A] leading-relaxed italic relative">
-                "{item.sourceTextSnippet || 'No evidence excerpt provided.'}"
+                &ldquo;{item.sourceTextSnippet || 'No evidence excerpt provided.'}&rdquo;
               </div>
               <p className="text-[11px] font-mono text-[#718096]">
                 Extracted evidence text from source document for human verification.
@@ -596,7 +613,7 @@ export default function ValidationDetailPage() {
                     <span className="text-[11px] text-[#718096] block">{formatDate(item.reviewedAt)}</span>
                     {item.reviewNote && (
                       <div className="p-2.5 rounded bg-[#EFF3F7] border border-[#D9E1EA] text-[11px] text-[#17253A] mt-1">
-                        "{item.reviewNote}"
+                        &ldquo;{item.reviewNote}&rdquo;
                       </div>
                     )}
                   </div>

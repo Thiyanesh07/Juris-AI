@@ -1,10 +1,9 @@
 import pytest
+
 from app.auth.password import hash_password
 from app.core.config import get_settings
 from app.core.dynamic_settings import (
     clear_runtime_overrides,
-    get_runtime_overrides,
-    get_runtime_settings,
     is_masked_secret,
     validate_section_config,
 )
@@ -86,81 +85,84 @@ async def test_dynamic_settings_api_and_runtime_consumption(client, session):
     session.add(admin)
     await session.commit()
 
-    with client:
-        client.post(
-            "/auth/login",
-            json={"email": "dyn_admin@jurisai.law", "password": "admin_pass"},
-        )
+    client.post(
+        "/auth/login",
+        json={"email": "dyn_admin@jurisai.law", "password": "admin_pass"},
+    )
 
-        # Baseline check
-        initial_cfg = get_settings()
-        assert initial_cfg.retrieval_default_top_k == 5
+    # Baseline check
+    initial_cfg = get_settings()
+    assert initial_cfg.retrieval_default_top_k == 5
 
-        # 1. Reject invalid retrieval weights with HTTP 422
-        bad_res = client.put(
-            "/settings/RETRIEVAL",
-            json={"config": {"dense_weight": 0.8, "graph_weight": 0.5}},
-        )
-        assert bad_res.status_code == 422
-        assert "must sum to 1.0" in bad_res.json()["detail"]
+    # 1. Reject invalid retrieval weights with HTTP 422
+    bad_res = client.put(
+        "/settings/RETRIEVAL",
+        json={"config": {"dense_weight": 0.8, "graph_weight": 0.5}},
+        headers={"Origin": "http://localhost:5173"},
+    )
+    assert bad_res.status_code == 422
+    assert "must sum to 1.0" in bad_res.json()["detail"]
 
-        # Settings remain unchanged
-        assert get_settings().retrieval_default_top_k == 5
+    # Settings remain unchanged
+    assert get_settings().retrieval_default_top_k == 5
 
-        # 2. Successfully update RETRIEVAL settings
-        res = client.put(
-            "/settings/RETRIEVAL",
-            json={
-                "config": {
-                    "default_top_k": 10,
-                    "dense_weight": 0.75,
-                    "graph_weight": 0.25,
-                    "graph_depth": 4,
-                    "graph_candidate_limit": 35,
-                }
-            },
-        )
-        assert res.status_code == 200
+    # 2. Successfully update RETRIEVAL settings
+    res = client.put(
+        "/settings/RETRIEVAL",
+        json={
+            "config": {
+                "default_top_k": 10,
+                "dense_weight": 0.75,
+                "graph_weight": 0.25,
+                "graph_depth": 4,
+                "graph_candidate_limit": 35,
+            }
+        },
+        headers={"Origin": "http://localhost:5173"},
+    )
+    assert res.status_code == 200
 
-        # Runtime consumption check: get_settings() must immediately reflect new values
-        active_cfg = get_settings()
-        assert active_cfg.retrieval_default_top_k == 10
-        assert active_cfg.hybrid_vector_weight == 0.75
-        assert active_cfg.hybrid_graph_weight == 0.25
-        assert active_cfg.graph_max_hops == 4
-        assert active_cfg.hybrid_max_graph_candidates == 35
+    # Runtime consumption check: get_settings() must immediately reflect new values
+    active_cfg = get_settings()
+    assert active_cfg.retrieval_default_top_k == 10
+    assert active_cfg.hybrid_vector_weight == 0.75
+    assert active_cfg.hybrid_graph_weight == 0.25
+    assert active_cfg.graph_max_hops == 4
+    assert active_cfg.hybrid_max_graph_candidates == 35
 
-        # 3. Update AI_LLM safe parameters
-        ai_res = client.put(
-            "/settings/AI_LLM",
-            json={
-                "config": {
-                    "max_output_tokens": 1600,
-                    "llm_timeout_seconds": 55.0,
-                    "api_key": "********",  # Masked secret
-                }
-            },
-        )
-        assert ai_res.status_code == 200
+    # 3. Update AI_LLM safe parameters
+    ai_res = client.put(
+        "/settings/AI_LLM",
+        json={
+            "config": {
+                "max_output_tokens": 1600,
+                "llm_timeout_seconds": 55.0,
+                "api_key": "********",  # Masked secret
+            }
+        },
+        headers={"Origin": "http://localhost:5173"},
+    )
+    assert ai_res.status_code == 200
 
-        updated_ai_cfg = get_settings()
-        assert updated_ai_cfg.llm_max_output_tokens == 1600
-        assert updated_ai_cfg.llm_timeout_seconds == 55.0
+    updated_ai_cfg = get_settings()
+    assert updated_ai_cfg.llm_max_output_tokens == 1600
+    assert updated_ai_cfg.llm_timeout_seconds == 55.0
 
-        # 4. Update INGESTION upload limit
-        ingest_res = client.put(
-            "/settings/INGESTION",
-            json={"config": {"max_file_size_mb": 20}},
-        )
-        assert ingest_res.status_code == 200
-        assert get_settings().max_upload_bytes == 20 * 1024 * 1024
+    # 4. Update INGESTION upload limit
+    ingest_res = client.put(
+        "/settings/INGESTION",
+        json={"config": {"max_file_size_mb": 20}},
+        headers={"Origin": "http://localhost:5173"},
+    )
+    assert ingest_res.status_code == 200
+    assert get_settings().max_upload_bytes == 20 * 1024 * 1024
 
-        # 5. Fallback behavior: Clearing overrides reverts cleanly to base environment defaults
-        clear_runtime_overrides()
-        reverted_cfg = get_settings()
-        assert reverted_cfg.retrieval_default_top_k == 5
-        assert reverted_cfg.llm_max_output_tokens == 800
-        assert reverted_cfg.max_upload_bytes == 50 * 1024 * 1024
+    # 5. Fallback behavior: Clearing overrides reverts cleanly to base environment defaults
+    clear_runtime_overrides()
+    reverted_cfg = get_settings()
+    assert reverted_cfg.retrieval_default_top_k == 5
+    assert reverted_cfg.llm_max_output_tokens == 800
+    assert reverted_cfg.max_upload_bytes == 50 * 1024 * 1024
 
 
 @pytest.mark.asyncio
@@ -213,7 +215,7 @@ async def test_load_persisted_settings_safe_fallback(session):
     await session.commit()
 
     clear_runtime_overrides()
-    # Loading invalid settings should not crash, it should skip the invalid config and retain defaults
+    # Invalid settings are skipped while defaults remain available.
     overrides = await load_persisted_settings(session)
     assert len(overrides) == 0
 
@@ -225,8 +227,9 @@ async def test_load_persisted_settings_safe_fallback(session):
 
 @pytest.mark.asyncio
 async def test_load_persisted_settings_db_exception_handled():
-    from app.core.dynamic_settings import load_persisted_settings
     from unittest.mock import AsyncMock
+
+    from app.core.dynamic_settings import load_persisted_settings
 
     mock_session = AsyncMock()
     mock_session.execute.side_effect = RuntimeError("Database connection failed")

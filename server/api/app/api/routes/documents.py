@@ -8,6 +8,8 @@ Authentication:
 from __future__ import annotations
 
 import logging
+import tempfile
+from pathlib import Path
 from uuid import UUID
 
 from fastapi import (
@@ -27,6 +29,7 @@ from app.auth.dependencies import get_current_user, require_admin
 from app.core.config import Settings, get_settings
 from app.db.session import get_session
 from app.ingestion.pipeline import IngestionError, run_pipeline
+from app.ingestion.validator import validate_pdf
 from app.models import User
 from app.models.chunk import Chunk
 from app.models.document import Document
@@ -43,10 +46,12 @@ from app.schemas.documents import (
     ProcessingJobSchema,
     ProcessingJobSummary,
     ReprocessResponse,
+    RetryGraphResponse,
 )
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/documents", tags=["documents"])
+_UPLOAD_READ_CHUNK_BYTES = 1024 * 1024
 
 
 # ── Upload ─────────────────────────────────────────────────────────────────────
@@ -82,18 +87,40 @@ async def upload_document(
             detail="Only PDF files are accepted",
         )
 
-    pdf_bytes = await file.read()
-
-    if len(pdf_bytes) > settings.max_upload_bytes:
-        raise HTTPException(
-            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail=f"File exceeds {settings.max_upload_bytes // (1024 * 1024)} MB limit",
+    chunks: list[bytes] = []
+    bytes_read = 0
+    while True:
+        read_size = min(
+            _UPLOAD_READ_CHUNK_BYTES,
+            settings.max_upload_bytes - bytes_read + 1,
         )
+        chunk = await file.read(read_size)
+        if not chunk:
+            break
+        chunks.append(chunk)
+        bytes_read += len(chunk)
+        if bytes_read > settings.max_upload_bytes:
+            raise HTTPException(
+                status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+                detail=f"File exceeds {settings.max_upload_bytes // (1024 * 1024)} MB limit",
+            )
+
+    pdf_bytes = b"".join(chunks)
 
     if len(pdf_bytes) == 0:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Uploaded file is empty",
+        )
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        temp_pdf = Path(temp_dir) / "upload.pdf"
+        temp_pdf.write_bytes(pdf_bytes)
+        validation = validate_pdf(temp_pdf)
+    if not validation.valid:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Invalid PDF: {validation.error_summary}",
         )
 
     # Validate doc_type
@@ -458,7 +485,85 @@ async def reprocess_document(
     return ReprocessResponse(document_id=doc_id)
 
 
+@router.post(
+    "/{document_id}/retry-graph",
+    response_model=RetryGraphResponse,
+    summary="Retry graph population for a document without re-embedding (admin only)",
+)
+async def retry_graph_population(
+    document_id: UUID,
+    _admin: User = Depends(require_admin),
+    session: AsyncSession = Depends(get_session),
+    settings: Settings = Depends(get_settings),
+) -> RetryGraphResponse:
+    """Populate knowledge graph for an existing document without touching chunks or FAISS vectors."""
+    doc = await session.get(Document, document_id)
+    if doc is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    if doc.status == DocumentStatus.PROCESSING:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Document is currently processing",
+        )
+
+    if doc.status == DocumentStatus.DISABLED:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Cannot retry graph for disabled document. Restore the document first.",
+        )
+
+    # Check if document has chunks
+    chunks_count = (
+        await session.execute(
+            select(func.count()).select_from(Chunk).where(Chunk.document_id == document_id)
+        )
+    ).scalar_one()
+
+    if chunks_count == 0:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Document has no chunks. Run full reprocess instead.",
+        )
+
+    from app.graph.client import Neo4jClient
+    from app.graph.population import populate_graph
+
+    client = Neo4jClient(settings)
+    try:
+        summary = await populate_graph(session, client, document_id=document_id)
+    except Exception as exc:
+        logger.error("Graph retry failed for %s: %s", document_id, exc)
+        return RetryGraphResponse(
+            document_id=document_id,
+            status=doc.status.value,
+            message=f"Graph population failed: {exc}",
+            success=False,
+        )
+
+    await session.refresh(doc)
+    if summary.successes:
+        outcome = summary.successes[0]
+        return RetryGraphResponse(
+            document_id=document_id,
+            status=doc.status.value,
+            message="Graph population succeeded",
+            success=True,
+            entity_count=outcome.entity_count,
+            relation_count=outcome.relation_count,
+        )
+
+    err = summary.failures[0].error if summary.failures else "Unknown graph population error"
+    return RetryGraphResponse(
+        document_id=document_id,
+        status=doc.status.value,
+        message=f"Graph population failed: {err}",
+        success=False,
+    )
+
+
 # ── Archive / Disable / Restore ────────────────────────────────────────────────
+
 
 
 @router.post(

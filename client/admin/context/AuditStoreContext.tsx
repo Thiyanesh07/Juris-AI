@@ -83,6 +83,7 @@ const AuditStoreContext = createContext<AuditStoreContextType | undefined>(undef
 
 export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [auditEvents, setAuditEvents] = useState<AuditEvent[]>([]);
+  const [lastFetchedAt, setLastFetchedAt] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -101,6 +102,7 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       const items = res?.items || [];
       const mapped: AuditEvent[] = items.map(mapBackendAuditEvent);
       setAuditEvents(mapped);
+      setLastFetchedAt(Date.now());
     } catch (err: any) {
       setError(err?.message || 'Failed to load audit events from server.');
       setAuditEvents([]);
@@ -110,8 +112,28 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, []);
 
   useEffect(() => {
-    fetchAuditEvents();
-  }, [fetchAuditEvents]);
+    let active = true;
+    apiClient
+      .get<{ items: BackendAuditEvent[]; total: number }>('/audit?page_size=100')
+      .then((res) => {
+        if (!active) return;
+        const items = res?.items || [];
+        const mapped: AuditEvent[] = items.map(mapBackendAuditEvent);
+        setAuditEvents(mapped);
+        setLastFetchedAt(Date.now());
+      })
+      .catch((err: any) => {
+        if (!active) return;
+        setError(err?.message || 'Failed to load audit events from server.');
+        setAuditEvents([]);
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const getEventById = useCallback(
     (id: string): AuditEvent | undefined => {
@@ -193,14 +215,17 @@ export const AuditStoreProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     const total = auditEvents.length;
     const success = auditEvents.filter((e) => e.result === 'SUCCESS').length;
     const failure = auditEvents.filter((e) => e.result === 'FAILURE').length;
-    const oneDayAgo = Date.now() - 24 * 60 * 60 * 1000;
-    const today = auditEvents.filter((e) => {
-      const t = new Date(e.timestamp).getTime();
-      return !isNaN(t) && t >= oneDayAgo;
-    }).length;
+    const baseline = lastFetchedAt;
+    const oneDayAgo = baseline > 0 ? baseline - 24 * 60 * 60 * 1000 : 0;
+    const today = baseline > 0
+      ? auditEvents.filter((e) => {
+          const t = new Date(e.timestamp).getTime();
+          return !isNaN(t) && t >= oneDayAgo;
+        }).length
+      : 0;
 
     return { total, success, failure, today };
-  }, [auditEvents]);
+  }, [auditEvents, lastFetchedAt]);
 
   return (
     <AuditStoreContext.Provider

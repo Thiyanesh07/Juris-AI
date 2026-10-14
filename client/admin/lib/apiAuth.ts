@@ -68,5 +68,8 @@ export function buildGoogleLoginUrl(
 ): string {
   const redirectUri = encodeURIComponent(`${callbackOrigin}${callbackPath}`);
   const apiBase = getApiBaseUrl();
-  return `${apiBase}/auth/google/login?intent=${intent}&redirect_uri=${redirectUri}`;
+  if (typeof window !== 'undefined') {
+    window.sessionStorage.setItem('oauth_return_path', '/admin');
+  }
+  return `${apiBase}/auth/google/login?intent=${intent}&redirect_uri=${redirectUri}&return_to=%2Fadmin`;
 }

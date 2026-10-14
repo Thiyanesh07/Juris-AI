@@ -4,9 +4,12 @@ There is deliberately a single configuration system for the whole backend.
 `DATABASE_URL` follows the naming established in the root `.env.example`.
 """
 
+import ipaddress
 import json
 from functools import lru_cache
 from pathlib import Path
+from typing import ClassVar
+from urllib.parse import urlsplit
 
 from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -64,13 +67,18 @@ _DEFAULT_DATABASE_URL = (
 class Settings(BaseSettings):
     """Environment-driven application settings."""
 
+    _ALLOWED_APP_ENVS: ClassVar[frozenset[str]] = frozenset(
+        {"development", "test", "production"}
+    )
+
     model_config = SettingsConfigDict(
         env_file=(str(_ENV_FILE), str(_ENV_LOCAL)),
         env_file_encoding="utf-8",
         extra="ignore",
     )
 
-    app_env: str = "development"
+    # Required deployment mode; local/test callers must set it explicitly.
+    app_env: str
     backend_host: str = "127.0.0.1"
     backend_port: int = 8000
     frontend_url: str = "http://localhost:5173"
@@ -80,11 +88,53 @@ class Settings(BaseSettings):
     session_secret: str = "dev-secret-change-in-production-min-32-chars-long"
     session_cookie_secure: bool = False
     session_max_age_seconds: int = 60 * 60 * 24 * 7
+    # Rate limiting is process-local; use an edge/shared-store limiter for a
+    # global quota across multiple workers or application instances.
+    rate_limit_enabled: bool = True
+    rate_limit_window_seconds: int = 60
+    rate_limit_auth_requests: int = 30
+    rate_limit_qa_requests: int = 30
+    rate_limit_upload_requests: int = 20
+    # Only immediate proxy IPs listed here may supply a trusted X-Forwarded-For.
+    # Comma-separated IPs or CIDRs; empty means use the direct peer address.
+    trusted_proxy_ips: str = ""
     google_client_id: str = ""
     google_client_secret: str = ""
+    # Exact primary OAuth callback URI; Google Cloud Console must contain it.
     google_redirect_uri: str = ""
+    # Comma-separated exact additional callback URIs; no wildcards or variants.
+    google_allowed_redirect_uris: str = ""
     # Optional path to Google Cloud OAuth client JSON (Web application download).
     google_oauth_credentials_file: str = ""
+
+    @model_validator(mode="after")
+    def _validate_production_secrets(self) -> "Settings":
+        """Normalize the environment and enforce secure production settings."""
+        self.app_env = self.app_env.strip().lower()
+        if self.app_env not in self._ALLOWED_APP_ENVS:
+            raise ValueError(
+                "APP_ENV must be one of: development, test, production."
+            )
+
+        if self.app_env == "production":
+            # 1. Reject the development fallback secret
+            dev_fallback = "dev-secret-change-in-production-min-32-chars-long"
+            if self.session_secret == dev_fallback:
+                raise ValueError(
+                    "Production environment cannot use the development session secret."
+                )
+
+            # 2. Enforce minimum session secret strength
+            if len(self.session_secret) < 32:
+                raise ValueError("Production session secret must be at least 32 characters long.")
+
+            # 3. Require secure session cookies
+            if not self.session_cookie_secure:
+                raise ValueError("Production environment requires session_cookie_secure=True.")
+
+        return self
+
+    # PostgreSQL (async driver) — see .env.example.
 
     # PostgreSQL (async driver) — see .env.example.
     database_url: str = _DEFAULT_DATABASE_URL
@@ -133,6 +183,7 @@ class Settings(BaseSettings):
     llm_base_url: str = "https://api.openai.com/v1"
     llm_timeout_seconds: float = 30.0
     llm_max_output_tokens: int = 800
+    llm_max_retries: int = 3
     qa_max_evidence: int = 5
     qa_max_context_chars: int = 12000
     qa_max_chunk_chars: int = 4000
@@ -154,7 +205,49 @@ class Settings(BaseSettings):
         return self
 
     @model_validator(mode="after")
+    def _validate_oauth_redirect_configuration(self) -> "Settings":
+        """Validate configured OAuth callback URIs without normalizing them."""
+        configured = [self.google_redirect_uri]
+        configured.extend(
+            value.strip()
+            for value in self.google_allowed_redirect_uris.split(",")
+            if value.strip()
+        )
+        for redirect_uri in configured:
+            parsed = urlsplit(redirect_uri)
+            if (
+                "*" in redirect_uri
+                or parsed.scheme not in {"http", "https"}
+                or not parsed.netloc
+                or parsed.username
+                or parsed.password
+                or parsed.fragment
+                or parsed.query
+                or parsed.path not in {"/auth/google/callback", "/admin/auth/google/callback"}
+            ):
+                raise ValueError("OAuth redirect URIs must be exact callback URLs.")
+            if self.app_env == "production" and parsed.scheme != "https":
+                raise ValueError("Production OAuth redirect URIs must use HTTPS.")
+        return self
+
+    @model_validator(mode="after")
     def _validate_hybrid_settings(self) -> "Settings":
+        if self.rate_limit_window_seconds <= 0:
+            raise ValueError("rate_limit_window_seconds must be greater than 0")
+        for name, value in (
+            ("rate_limit_auth_requests", self.rate_limit_auth_requests),
+            ("rate_limit_qa_requests", self.rate_limit_qa_requests),
+            ("rate_limit_upload_requests", self.rate_limit_upload_requests),
+        ):
+            if value <= 0:
+                raise ValueError(f"{name} must be greater than 0")
+        for proxy in self.trusted_proxy_ips.split(","):
+            proxy = proxy.strip()
+            if proxy:
+                try:
+                    ipaddress.ip_network(proxy, strict=False)
+                except ValueError as exc:
+                    raise ValueError(f"Invalid trusted proxy IP or CIDR: {proxy!r}") from exc
         if not 1 <= self.hybrid_dense_seed_top_k <= self.retrieval_max_top_k:
             raise ValueError(
                 "hybrid_dense_seed_top_k must be between 1 and retrieval_max_top_k"

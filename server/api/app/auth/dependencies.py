@@ -22,6 +22,10 @@ async def get_current_user(request: Request, session: AsyncSession = Depends(get
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid session"
         ) from exc
+    raw_session_version = request.session.get("session_version")
+    if isinstance(raw_session_version, bool) or not isinstance(raw_session_version, int):
+        request.session.clear()
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid session")
     user = await session.get(User, user_id)
     if user is None:
         request.session.clear()
@@ -29,6 +33,9 @@ async def get_current_user(request: Request, session: AsyncSession = Depends(get
     if not user.is_active:
         request.session.clear()
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Account is disabled")
+    if raw_session_version != user.session_version:
+        request.session.clear()
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Session revoked")
     return user
 
 

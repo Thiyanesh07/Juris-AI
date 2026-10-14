@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -17,23 +17,22 @@ import { getGoogleLoginUrl } from '@/lib/authClient';
 
 function UserLoginContent() {
   const searchParams = useSearchParams();
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [isNoAccount, setIsNoAccount] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
 
-  useEffect(() => {
-    const errorParam = searchParams.get('error');
-    if (errorParam === 'no_account_found' || errorParam === 'No Juris AI account found. Please sign up first.') {
-      setIsNoAccount(true);
-      setErrorMsg('No Juris AI account found for this Google account. Please sign up first.');
-    } else if (errorParam === 'unauthorized') {
-      setErrorMsg('Please sign in to access the Juris AI Legal Research Portal.');
-    } else if (errorParam === 'session_expired') {
-      setErrorMsg('Your session has expired. Please sign in again.');
-    } else if (errorParam) {
-      setErrorMsg(decodeURIComponent(errorParam));
-    }
-  }, [searchParams]);
+  const errorParam = searchParams.get('error');
+  let errorMsg: string | null = null;
+  let isNoAccount = false;
+
+  if (errorParam === 'no_account_found' || errorParam === 'No Juris AI account found. Please sign up first.') {
+    isNoAccount = true;
+    errorMsg = 'No Juris AI account found for this Google account. Please sign up first.';
+  } else if (errorParam === 'unauthorized') {
+    errorMsg = 'Please sign in to access the Juris AI Legal Research Portal.';
+  } else if (errorParam === 'session_expired') {
+    errorMsg = 'Your session has expired. Please sign in again.';
+  } else if (errorParam) {
+    errorMsg = decodeURIComponent(errorParam);
+  }
 
   const handleGoogleSignIn = () => {
     setIsRedirecting(true);

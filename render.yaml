@@ -1,0 +1,59 @@
+# Render Infrastructure-as-Code configuration for Juris AI backend.
+# This file documents the Render service settings.
+# The actual service is already deployed at: https://juris-ai-fhjw.onrender.com
+#
+# IMPORTANT: Docker build context must be the repository root (not server/api)
+# because the Dockerfile copies data/indexes/legal_chunks from the root.
+#
+# Render dashboard settings that must match:
+#   Root Directory: (empty / repo root)
+#   Dockerfile Path: server/api/Dockerfile
+#   Docker Build Context: . (repo root)
+#
+services:
+  - type: web
+    name: juris-ai-api
+    runtime: docker
+    dockerfilePath: server/api/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false   # Set in Render dashboard — PostgreSQL connection string
+      - key: NEO4J_URI
+        sync: false   # Set in Render dashboard — Neo4j Aura bolt URI
+      - key: NEO4J_USERNAME
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: NEO4J_DATABASE
+        value: neo4j
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REDIRECT_URI
+        sync: false   # Exact primary HTTPS callback URI; must match Google Cloud Console
+      - key: GOOGLE_ALLOWED_REDIRECT_URIS
+        sync: false   # Exact comma-separated additional HTTPS callback URIs; no wildcards
+      - key: FRONTEND_URL
+        sync: false   # Exact primary production frontend origin; do not use a placeholder
+      - key: EXTRA_CORS_ORIGINS
+        sync: false   # Exact comma-separated additional frontend origins only
+      - key: TRUSTED_PROXY_IPS
+        sync: false   # Optional exact proxy IPs/CIDRs; leave empty unless explicitly approved
+      - key: SESSION_SECRET
+        sync: false
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_BASE_URL
+        sync: false
+      - key: LLM_MODEL
+        sync: false
+      - key: DATA_DIR
+        value: /app/data
+      - key: APP_ENV
+        value: production

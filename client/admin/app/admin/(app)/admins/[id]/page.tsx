@@ -38,7 +38,6 @@ export default function AdminDetailPage() {
   useEffect(() => {
     let active = true;
     if (!admin && adminId) {
-      setIsInitialLoading(true);
       fetchUserById(adminId)
         .then((found) => {
           if (active && found) {

@@ -93,6 +93,7 @@ def patch_settings(qa_settings: Settings):
     app.dependency_overrides.pop(get_settings, None)
 
 
+
 @pytest.fixture(autouse=True)
 def patch_embedder(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr("app.retrieval.service.build_embedder", lambda _settings: FakeEmbedder())

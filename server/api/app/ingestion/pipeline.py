@@ -447,10 +447,12 @@ async def run_pipeline(
         await _mark_job(db, job_graph, ProcessingJobStatus.FAILED, str(exc))
         doc.status = DocumentStatus.FAILED
         await db.commit()
-        await _cleanup_faiss_on_failure(
-            data_dir=data_dir,
-            settings=settings,
-            document_id=str(document_id),
+        # Preserve already-valid PostgreSQL chunks and FAISS vectors when graph population fails.
+        # The document is marked FAILED and the job stage is FAILED, but dense retrieval data is preserved.
+        logger.warning(
+            "Graph population failed for document_id=%s: %s (chunks and vectors preserved)",
+            document_id,
+            exc,
         )
         raise IngestionError(str(exc), ProcessingJobStage.GRAPH_POPULATION) from exc
 

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import logging
+import random
+import asyncio
 from typing import Protocol, runtime_checkable
 
 import httpx
@@ -77,22 +79,44 @@ class OpenAICompatibleProvider:
             "response_format": {"type": "json_object"},
         }
         timeout = httpx.Timeout(timeout_seconds)
-        try:
-            async with httpx.AsyncClient(timeout=timeout) as client:
-                response = await client.post(self._url, headers=headers, json=payload)
-        except httpx.TimeoutException as exc:
-            logger.warning("LLM request timed out after %ss", timeout_seconds)
-            raise LLMProviderTimeout("LLM request timed out") from exc
-        except httpx.RequestError as exc:
-            logger.warning("LLM request failed: %s", type(exc).__name__)
-            raise LLMProviderUnavailable("LLM provider is unreachable") from exc
 
-        if response.status_code >= 500:
-            logger.warning("LLM provider returned HTTP %s", response.status_code)
-            raise LLMProviderUnavailable("LLM provider error")
-        if response.status_code >= 400:
-            logger.warning("LLM provider rejected request with HTTP %s", response.status_code)
-            raise LLMProviderUnavailable("LLM provider rejected the request")
+        max_retries = self._settings.llm_max_retries
+        for attempt in range(max_retries + 1):
+            try:
+                async with httpx.AsyncClient(timeout=timeout) as client:
+                    response = await client.post(self._url, headers=headers, json=payload)
+
+                if response.status_code == 200:
+                    break
+
+                if response.status_code == 429 or 500 <= response.status_code < 600:
+                    if attempt == max_retries:
+                        logger.warning("LLM provider returned HTTP %s after %d retries", response.status_code, max_retries)
+                        raise LLMProviderUnavailable(f"LLM provider error (HTTP {response.status_code})")
+
+                    # Respect Retry-After header or use exponential backoff
+                    retry_after = response.headers.get("Retry-After")
+                    if retry_after and retry_after.isdigit():
+                        wait_time = float(retry_after)
+                    else:
+                        wait_time = (2 ** attempt) + random.uniform(0, 1)
+
+                    logger.info("LLM provider returned HTTP %s. Retrying in %.2fs (attempt %d/%d)", response.status_code, wait_time, attempt + 1, max_retries)
+                    await asyncio.sleep(wait_time)
+                    continue
+
+                if response.status_code >= 400:
+                    logger.warning("LLM provider rejected request with HTTP %s", response.status_code)
+                    raise LLMProviderUnavailable("LLM provider rejected the request")
+
+            except (httpx.TimeoutException, httpx.RequestError) as exc:
+                if attempt == max_retries:
+                    logger.warning("LLM request failed after %d retries: %s", max_retries, type(exc).__name__)
+                    raise LLMProviderUnavailable("LLM provider is unreachable") from exc
+
+                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                logger.info("LLM request failed (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
+                await asyncio.sleep(wait_time)
 
         try:
             body = response.json()
@@ -174,22 +198,44 @@ class GoogleGenAIProvider:
         }
 
         timeout = httpx.Timeout(timeout_seconds)
-        try:
-            async with httpx.AsyncClient(timeout=timeout) as client:
-                response = await client.post(self._url, headers=headers, json=payload)
-        except httpx.TimeoutException as exc:
-            logger.warning("Google GenAI LLM request timed out after %ss", timeout_seconds)
-            raise LLMProviderTimeout("LLM request timed out") from exc
-        except httpx.RequestError as exc:
-            logger.warning("Google GenAI LLM request failed: %s", type(exc).__name__)
-            raise LLMProviderUnavailable("LLM provider is unreachable") from exc
 
-        if response.status_code >= 500:
-            logger.warning("Google GenAI returned HTTP %s: %s", response.status_code, response.text[:200])
-            raise LLMProviderUnavailable("LLM provider error")
-        if response.status_code >= 400:
-            logger.warning("Google GenAI rejected request with HTTP %s: %s", response.status_code, response.text[:200])
-            raise LLMProviderUnavailable(f"LLM provider rejected request (HTTP {response.status_code})")
+        max_retries = self._settings.llm_max_retries
+        for attempt in range(max_retries + 1):
+            try:
+                async with httpx.AsyncClient(timeout=timeout) as client:
+                    response = await client.post(self._url, headers=headers, json=payload)
+
+                if response.status_code == 200:
+                    break
+
+                if response.status_code == 429 or 500 <= response.status_code < 600:
+                    if attempt == max_retries:
+                        logger.warning("Google GenAI returned HTTP %s after %d retries: %s", response.status_code, max_retries, response.text[:200])
+                        raise LLMProviderUnavailable(f"LLM provider error (HTTP {response.status_code})")
+
+                    # Respect Retry-After header or use exponential backoff
+                    retry_after = response.headers.get("Retry-After")
+                    if retry_after and retry_after.isdigit():
+                        wait_time = float(retry_after)
+                    else:
+                        wait_time = (2 ** attempt) + random.uniform(0, 1)
+
+                    logger.info("Google GenAI returned HTTP %s. Retrying in %.2fs (attempt %d/%d)", response.status_code, wait_time, attempt + 1, max_retries)
+                    await asyncio.sleep(wait_time)
+                    continue
+
+                if response.status_code >= 400:
+                    logger.warning("Google GenAI rejected request with HTTP %s: %s", response.status_code, response.text[:200])
+                    raise LLMProviderUnavailable(f"LLM provider rejected request (HTTP {response.status_code})")
+
+            except (httpx.TimeoutException, httpx.RequestError) as exc:
+                if attempt == max_retries:
+                    logger.warning("Google GenAI LLM request failed after %d retries: %s", max_retries, type(exc).__name__)
+                    raise LLMProviderUnavailable("LLM provider is unreachable") from exc
+
+                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                logger.info("Google GenAI LLM request failed (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
+                await asyncio.sleep(wait_time)
 
         try:
             body = response.json()

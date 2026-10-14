@@ -4,9 +4,12 @@ from __future__ import annotations
 from collections import Counter
 from collections.abc import Awaitable, Callable
 import json
+import logging
 from typing import Any
 
 from app.core.config import Settings
+
+logger = logging.getLogger(__name__)
 
 
 _LABELS = {
@@ -69,10 +72,26 @@ class GraphError(RuntimeError):
     pass
 
 
+class GraphConnectionError(GraphError):
+    """Raised when unable to establish connection to Neo4j (timeout, refused, DNS failure)."""
+    pass
+
+
+class GraphAuthenticationError(GraphError):
+    """Raised when Neo4j credentials are rejected."""
+    pass
+
+
 class Neo4jClient:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self._driver: Any | None = None
+
+    async def __aenter__(self) -> Neo4jClient:
+        return self
+
+    async def __aexit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
+        await self.close()
 
     async def _driver_for_use(self) -> Any:
         if self._driver is None:
@@ -85,13 +104,41 @@ class Neo4jClient:
                 auth=(self.settings.neo4j_username, self.settings.neo4j_password),
                 max_connection_lifetime=60.0,
                 liveness_check_timeout=30.0,
+                connection_timeout=5.0,
+                connection_acquisition_timeout=5.0,
             )
         return self._driver
 
     async def close(self) -> None:
         if self._driver is not None:
-            await self._driver.close()
-            self._driver = None
+            try:
+                await self._driver.close()
+            except Exception as exc:  # pragma: no cover
+                logger.debug("Error while closing Neo4j driver: %s", exc)
+            finally:
+                self._driver = None
+
+    def _classify_error(self, exc: Exception) -> GraphError:
+        err_msg = str(exc)
+        exc_name = type(exc).__name__
+        if "Auth" in exc_name or "Authentication" in err_msg or "unauthorized" in err_msg.lower():
+            return GraphAuthenticationError(f"Neo4j authentication failed: {exc}")
+        if any(term in exc_name for term in ("ServiceUnavailable", "SessionExpired", "Timeout", "Connection")) or "refused" in err_msg.lower():
+            return GraphConnectionError(f"Neo4j connection failed: {exc}")
+        return GraphError(f"Neo4j is unavailable: {exc}")
+
+    async def verify_connectivity(self) -> bool:
+        """Explicit connection verification with live 'RETURN 1 AS ping' query."""
+        try:
+            driver = await self._driver_for_use()
+            await driver.verify_connectivity()
+            async with driver.session(database=self.settings.neo4j_database) as session:
+                result = await session.run("RETURN 1 AS ping")
+                record = await result.single()
+                return bool(record and record["ping"] == 1)
+        except Exception as exc:
+            logger.warning("Neo4j connectivity check failed: %s (%s)", exc, type(exc).__name__)
+            raise self._classify_error(exc) from exc
 
     async def execute_write(
         self,
@@ -103,19 +150,41 @@ class Neo4jClient:
             return await session.execute_write(work)
 
     async def health(self) -> dict[str, Any]:
+        """Health check that verifies connectivity, version, and distinguishes empty from populated graph."""
         try:
             driver = await self._driver_for_use()
             await driver.verify_connectivity()
             async with driver.session(database=self.settings.neo4j_database) as session:
-                record = await (
-                    await session.run(
-                        "CALL dbms.components() YIELD name, versions "
-                        "RETURN name, versions[0] AS version LIMIT 1"
-                    )
+                name = "Neo4j"
+                version = "unknown"
+                try:
+                    comp_record = await (
+                        await session.run(
+                            "CALL dbms.components() YIELD name, versions "
+                            "RETURN name, versions[0] AS version LIMIT 1"
+                        )
+                    ).single()
+                    if comp_record:
+                        name = comp_record["name"]
+                        version = comp_record["version"]
+                except Exception:
+                    pass
+
+                count_record = await (
+                    await session.run("MATCH (n) RETURN count(n) AS node_count")
                 ).single()
-            return {"status": "ok", "name": record["name"], "version": record["version"]}
+                node_count = count_record["node_count"] if count_record else 0
+
+            return {
+                "status": "ok",
+                "name": name,
+                "version": version,
+                "is_empty": (node_count == 0),
+                "node_count": node_count,
+            }
         except Exception as exc:
-            raise GraphError("Neo4j is unavailable") from exc
+            logger.warning("Neo4j health check failed: %s (%s)", exc, type(exc).__name__)
+            raise self._classify_error(exc) from exc
 
     async def ensure_schema(self) -> None:
         driver = await self._driver_for_use()

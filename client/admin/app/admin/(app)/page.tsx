@@ -190,8 +190,105 @@ export default function AdminDashboardPage() {
   }, []);
 
   useEffect(() => {
-    refreshHealthAndStats();
-  }, [refreshHealthAndStats]);
+    let active = true;
+    (async () => {
+      try {
+        const [healthResult, statsData, auditRes] = await Promise.all([
+          checkHealth(),
+          fetchPublicStats(),
+          apiClient
+            .get<{ items: any[] }>('/audit?page_size=5')
+            .catch((err) => {
+              if (active) setAuditError(err instanceof Error ? err.message : 'Audit unavailable');
+              return { items: [] };
+            }),
+        ]);
+
+        if (!active) return;
+        if (statsData) {
+          setStats(statsData);
+        } else {
+          setStats(null);
+          setStatsError('Public telemetry endpoint unavailable');
+        }
+
+        setAuditEvents(auditRes.items || []);
+
+        const comps = healthResult.raw?.components;
+
+        setServices([
+          {
+            name: 'API Gateway',
+            status: healthResult.status === 'NOT_CONNECTED' ? 'NOT_CONNECTED' : 'CONNECTED',
+            type: 'FastAPI REST',
+            detail: healthResult.raw ? `v${healthResult.raw.version} Production API` : healthResult.detail,
+          },
+          {
+            name: 'PostgreSQL DB',
+            status: comps?.database?.status === 'ok' ? 'CONNECTED' : 'ERROR',
+            type: 'Relational Store',
+            detail:
+              comps?.database?.detail ||
+              (statsData
+                ? `${statsData.total_documents} documents, ${statsData.total_chunks} chunks`
+                : comps?.database?.error || 'PostgreSQL unreachable'),
+          },
+          {
+            name: 'Neo4j Database',
+            status:
+              comps?.neo4j?.status === 'ok'
+                ? 'CONNECTED'
+                : comps?.neo4j?.status === 'degraded'
+                ? 'DEGRADED'
+                : 'ERROR',
+            type: 'Neo4j Aura Cloud',
+            detail:
+              comps?.neo4j?.detail ||
+              (statsData
+                ? `${statsData.graph_nodes.toLocaleString()} nodes, ${statsData.graph_relationships.toLocaleString()} rels`
+                : comps?.neo4j?.error || 'Neo4j connection unreachable'),
+          },
+          {
+            name: 'Vector Index',
+            status: comps?.vector_index?.status === 'ok' ? 'CONNECTED' : 'ERROR',
+            type: 'FAISS IndexFlatIP',
+            detail:
+              comps?.vector_index?.detail ||
+              (statsData
+                ? `${statsData.vector_count.toLocaleString()} vectors (${statsData.vector_dimension}d)`
+                : comps?.vector_index?.error || 'Vector index unavailable'),
+          },
+          {
+            name: 'LLM Provider',
+            status: comps?.llm?.status === 'ok' ? 'CONNECTED' : 'DEGRADED',
+            type: 'Legal AI Reasoning Engine',
+            detail: comps?.llm?.detail || comps?.llm?.error || 'Provider unconfigured',
+          },
+        ]);
+        setLastChecked(new Date().toLocaleTimeString());
+      } catch (err) {
+        if (!active) return;
+        setStats(null);
+        setStatsError(err instanceof Error ? err.message : 'Failed to query system health');
+        setServices((prev) =>
+          prev.map((s) => ({
+            ...s,
+            status: 'ERROR',
+            detail: 'System check failed',
+          }))
+        );
+      } finally {
+        if (active) {
+          setIsRefreshing(false);
+          setStatsLoading(false);
+        }
+      }
+    })();
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   return (
     <div className="space-y-8">

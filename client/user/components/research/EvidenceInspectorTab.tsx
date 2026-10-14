@@ -126,7 +126,7 @@ export const EvidenceInspectorTab: React.FC<EvidenceTabProps> = ({ evidence }) =
               </div>
 
               <div className="bg-[#F8FAFC] p-3 rounded-lg border border-[#E2E8F0] font-serif text-xs leading-relaxed text-[#17253A]">
-                "{item.excerpt}"
+                &ldquo;{item.excerpt}&rdquo;
               </div>
 
               <div className="flex items-center justify-between text-[11px] font-mono text-[#718096] pt-1 border-t border-[#E2E8F0]">

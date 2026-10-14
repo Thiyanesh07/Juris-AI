@@ -75,8 +75,31 @@ export default function IngestionJobDetailPage() {
   }, [targetId, fetchJobDetail]);
 
   useEffect(() => {
-    loadData();
-  }, [loadData]);
+    if (!targetId) return;
+    let active = true;
+    fetchJobDetail(targetId)
+      .then((res) => {
+        if (!active) return;
+        if (!res.job && !res.document && res.stages?.length === 0) {
+          setJob(null);
+          setDocument(null);
+          setStages([]);
+        } else {
+          setJob(res.job || null);
+          setDocument(res.document || null);
+          setStages(res.stages || []);
+        }
+      })
+      .catch((err) => {
+        if (active) setLoadError(err instanceof Error ? err.message : 'Failed to load job details');
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [targetId, fetchJobDetail]);
 
   // Periodic refresh if any stage is running
   useEffect(() => {

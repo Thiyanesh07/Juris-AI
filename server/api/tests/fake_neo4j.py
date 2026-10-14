@@ -5,23 +5,9 @@ from collections import Counter
 from dataclasses import dataclass, field
 from typing import Any
 
-from app.graph.client import GraphError
+from app.graph.client import GraphError, _LEGAL_ENTITY_LABELS
 
-_LEGAL_ENTITY_LABELS = frozenset(
-    {
-        "Article",
-        "Section",
-        "Act",
-        "Court",
-        "Concept",
-        "Amendment",
-        "Judgment",
-        "Rule",
-        "Regulation",
-        "Person",
-        "Organization",
-    }
-)
+_LEGAL_ENTITY_LABELS = frozenset(_LEGAL_ENTITY_LABELS)
 
 
 @dataclass
@@ -217,8 +203,18 @@ class FakeNeo4jClient:
     async def ensure_schema(self) -> None:
         self.schema_calls += 1
 
+    async def verify_connectivity(self) -> bool:
+        return True
+
     async def health(self) -> dict[str, Any]:
-        return {"status": "ok", "name": "fake-neo4j", "version": "0"}
+        node_count = len(self.graph.nodes)
+        return {
+            "status": "ok",
+            "name": "fake-neo4j",
+            "version": "0",
+            "is_empty": (node_count == 0),
+            "node_count": node_count,
+        }
 
     async def statistics(self) -> dict[str, Any]:
         return self.graph.statistics()

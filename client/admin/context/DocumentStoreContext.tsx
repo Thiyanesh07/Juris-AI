@@ -209,9 +209,55 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
   }, [ingestionJobs]);
 
   useEffect(() => {
-    fetchDocuments();
-    fetchJobs();
-  }, [fetchDocuments, fetchJobs]);
+    let active = true;
+    apiClient
+      .get<PaginatedDocuments>('/documents?page=1&page_size=100')
+      .then((res) => {
+        if (!active) return;
+        if (res && Array.isArray(res.items)) {
+          setDocuments(res.items.map(mapDocumentRecord));
+          setDocumentsTotal(res.total ?? res.items.length);
+        } else {
+          setDocuments([]);
+          setDocumentsTotal(0);
+        }
+      })
+      .catch((err) => {
+        if (!active) return;
+        setDocuments([]);
+        setDocumentsTotal(0);
+        setDocumentsError(err instanceof Error ? err.message : 'Failed to fetch documents');
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+
+    apiClient
+      .get<PaginatedProcessingJobs>('/documents/jobs?page=1&page_size=50')
+      .then((res) => {
+        if (!active) return;
+        if (res && Array.isArray(res.items)) {
+          setIngestionJobs(res.items);
+          setJobsTotal(res.total ?? res.items.length);
+        } else {
+          setIngestionJobs([]);
+          setJobsTotal(0);
+        }
+      })
+      .catch((err) => {
+        if (!active) return;
+        setIngestionJobs([]);
+        setJobsTotal(0);
+        setJobsError(err instanceof Error ? err.message : 'Failed to fetch processing jobs');
+      })
+      .finally(() => {
+        if (active) setJobsLoading(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const getDocumentById = useCallback((id: string): Document | undefined => {
     return documentsRef.current.find((d) => d.id === id);

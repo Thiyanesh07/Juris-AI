@@ -4,7 +4,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING
 from uuid import UUID
 
-from sqlalchemy import Boolean, DateTime, String, Uuid
+from sqlalchemy import Boolean, DateTime, Integer, String, Uuid
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base, TimestampMixin, new_uuid, pg_enum
@@ -29,7 +29,12 @@ class User(TimestampMixin, Base):
     role: Mapped[UserRole] = mapped_column(
         pg_enum(UserRole, "user_role"), default=UserRole.USER, nullable=False
     )
-    is_active: Mapped[bool] = mapped_column(Boolean, default=True, server_default="true", nullable=False)
+    is_active: Mapped[bool] = mapped_column(
+        Boolean, default=True, server_default="true", nullable=False
+    )
+    session_version: Mapped[int] = mapped_column(
+        Integer, default=0, server_default="0", nullable=False
+    )
     last_login_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
     sessions: Mapped[list["ResearchSession"]] = relationship(

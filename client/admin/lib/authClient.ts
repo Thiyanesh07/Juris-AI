@@ -43,7 +43,13 @@ export function getGoogleLoginUrl(returnTo?: string): string {
   const apiBase = getApiBaseUrl();
   const base = `${apiBase}/auth/google/login?intent=signin&redirect_uri=${encodeURIComponent(callbackUrl)}`;
   if (returnTo) {
+    if (typeof window !== 'undefined') {
+      window.sessionStorage.setItem('oauth_return_path', returnTo);
+    }
     return `${base}&return_to=${encodeURIComponent(returnTo)}`;
+  }
+  if (typeof window !== 'undefined') {
+    window.sessionStorage.setItem('oauth_return_path', '/admin');
   }
   return base;
 }

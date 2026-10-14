@@ -9,25 +9,29 @@ import { getApiBaseUrl } from '@/lib/apiClient';
 function UserCallbackContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [status, setStatus] = useState<'processing' | 'success' | 'error'>('processing');
-  const [errorMessage, setErrorMessage] = useState<string>('');
+
+  const code = searchParams.get('code');
+  const errorParam = searchParams.get('error');
+  const stateParam = searchParams.get('state');
+
+  const paramError = errorParam
+    ? `Authentication declined: ${errorParam}`
+    : !code
+    ? 'Authorization code missing from identity provider callback.'
+    : null;
+
+  const [asyncStatus, setAsyncStatus] = useState<'processing' | 'success' | 'error'>('processing');
+  const [asyncError, setAsyncError] = useState<string>('');
+
+  const status = paramError ? 'error' : asyncStatus;
+  const errorMessage = paramError || asyncError;
 
   useEffect(() => {
-    const code = searchParams.get('code');
-    const errorParam = searchParams.get('error');
-    const stateParam = searchParams.get('state');
-
-    if (errorParam) {
-      setStatus('error');
-      setErrorMessage(`Authentication declined: ${errorParam}`);
+    if (paramError || !code) {
       return;
     }
 
-    if (!code) {
-      setStatus('error');
-      setErrorMessage('Authorization code missing from identity provider callback.');
-      return;
-    }
+    let active = true;
 
     const processOAuth = async () => {
       try {
@@ -50,31 +54,34 @@ function UserCallbackContent() {
           throw new Error(errorData.detail || 'Identity verification failed at backend.');
         }
 
-        setStatus('success');
+        if (!active) return;
+        setAsyncStatus('success');
 
         let targetPath = '/home';
-        if (stateParam) {
-          try {
-            const decoded = decodeURIComponent(stateParam);
-            if (decoded.startsWith('/') && !decoded.startsWith('//')) {
-              targetPath = decoded;
-            }
-          } catch {
-            // keep default
-          }
+        const storedPath = window.sessionStorage.getItem('oauth_return_path');
+        window.sessionStorage.removeItem('oauth_return_path');
+        if (storedPath?.startsWith('/') && !storedPath.startsWith('//')) {
+          targetPath = storedPath;
         }
 
         setTimeout(() => {
-          router.push(targetPath);
+          if (active) {
+            router.push(targetPath);
+          }
         }, 1000);
       } catch (err: any) {
-        setStatus('error');
-        setErrorMessage(err.message || 'Verification error during authentication exchange.');
+        if (!active) return;
+        setAsyncStatus('error');
+        setAsyncError(err.message || 'Verification error during authentication exchange.');
       }
     };
 
     processOAuth();
-  }, [searchParams, router]);
+
+    return () => {
+      active = false;
+    };
+  }, [code, stateParam, paramError, router]);
 
   return (
     <div className="min-h-screen bg-[#F0F4F8] flex flex-col justify-center items-center p-4">

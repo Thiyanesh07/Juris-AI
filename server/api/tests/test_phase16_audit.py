@@ -20,12 +20,12 @@ async def test_audit_event_logging_and_retrieval(client, session):
         description="Admin login successful",
     )
 
-    with client:
-        client.post("/auth/login", json={"email": "audit_admin@jurisai.law", "password": "password123"})
-        
-        # Query audit log
-        res = client.get("/audit?category=SECURITY")
-        assert res.status_code == 200
-        data = res.json()
-        assert data["total"] >= 1
-        assert any(item["id"] == str(evt.id) for item in data["items"])
+    client.post("/auth/login", json={"email": "audit_admin@jurisai.law", "password": "password123"})
+    
+    # Query audit log
+    res = client.get("/audit?category=SECURITY")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["total"] >= 1
+    assert any(item["id"] == str(evt.id) for item in data["items"])
+

@@ -18,6 +18,7 @@ from app.models.enums import (
     ValidationStatus,
 )
 from app.models.evaluation_run import EvaluationRun
+from app.models.oauth_transaction import OAuthTransaction
 from app.models.processing_job import ProcessingJob
 from app.models.research_answer import ResearchAnswer
 from app.models.research_query import ResearchQuery
@@ -49,4 +50,5 @@ __all__ = [
     "UserRole",
     "ValidationItem",
     "ValidationStatus",
+    "OAuthTransaction",
 ]

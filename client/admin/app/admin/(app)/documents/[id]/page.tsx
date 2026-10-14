@@ -80,8 +80,36 @@ export default function DocumentDetailPage() {
   }, [docId, fetchDocumentDetail, fetchDocumentStages]);
 
   useEffect(() => {
-    loadDocumentData();
-  }, [loadDocumentData]);
+    let active = true;
+    if (!docId) return;
+    fetchDocumentDetail(docId)
+      .then(async (fetched) => {
+        if (!active) return;
+        if (fetched) {
+          setDoc(fetched);
+          try {
+            const st = await fetchDocumentStages(docId);
+            if (active) setStages(st);
+          } catch {
+            if (active) setStages([]);
+          }
+        } else {
+          setDoc(null);
+          setLoadError(`Document "${docId}" was not found.`);
+        }
+      })
+      .catch((err) => {
+        if (!active) return;
+        setDoc(null);
+        setLoadError(err instanceof Error ? err.message : 'Failed to fetch document metadata');
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [docId, fetchDocumentDetail, fetchDocumentStages]);
 
   const handleReprocess = async () => {
     if (!doc || isProcessing) return;
@@ -384,7 +412,7 @@ export default function DocumentDetailPage() {
           </div>
         ) : (
           <div className="p-6 text-center text-xs font-mono text-[#718096] bg-white rounded-xl border border-[#D9E1EA]">
-            No processing stages recorded yet for this document. Click "Reprocess Ingestion" above to execute the pipeline.
+            No processing stages recorded yet for this document. Click &ldquo;Reprocess Ingestion&rdquo; above to execute the pipeline.
           </div>
         )}
       </div>
