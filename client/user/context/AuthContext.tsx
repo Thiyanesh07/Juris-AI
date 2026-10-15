@@ -13,7 +13,7 @@ interface AuthContextValue {
   user: AuthUser | null;
   isLoading: boolean;
   isAuthenticated: boolean;
-  refreshUser: () => Promise<void>;
+  refreshUser: () => Promise<AuthUser | null>;
   logout: () => Promise<void>;
 }
 
@@ -21,7 +21,7 @@ const AuthContext = createContext<AuthContextValue>({
   user: null,
   isLoading: true,
   isAuthenticated: false,
-  refreshUser: async () => {},
+  refreshUser: async () => null,
   logout: async () => {},
 });
 
@@ -33,13 +33,15 @@ export function AuthContextProvider({
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const refreshUser = useCallback(async () => {
+  const refreshUser = useCallback(async (): Promise<AuthUser | null> => {
     setIsLoading(true);
     try {
       const currentUser = await fetchCurrentUser();
       setUser(currentUser);
+      return currentUser;
     } catch {
       setUser(null);
+      return null;
     } finally {
       setIsLoading(false);
     }

@@ -1,14 +1,16 @@
 'use client';
 
-import React, { useEffect, useState, Suspense } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import React, { useEffect, useState, useRef, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Scale, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 import { getApiBaseUrl } from '@/lib/apiClient';
+import { useAuth } from '@/context/AuthContext';
 
 function UserCallbackContent() {
   const searchParams = useSearchParams();
-  const router = useRouter();
+  const { refreshUser } = useAuth();
+  const hasExecutedRef = useRef(false);
 
   const code = searchParams.get('code');
   const errorParam = searchParams.get('error');
@@ -31,6 +33,11 @@ function UserCallbackContent() {
       return;
     }
 
+    if (hasExecutedRef.current) {
+      return;
+    }
+    hasExecutedRef.current = true;
+
     let active = true;
 
     const processOAuth = async () => {
@@ -51,7 +58,21 @@ function UserCallbackContent() {
 
         if (!res.ok) {
           const errorData = await res.json().catch(() => ({}));
-          throw new Error(errorData.detail || 'Identity verification failed at backend.');
+          const detail = errorData.detail || 'Identity verification failed at backend.';
+          if (
+            detail.includes('Google authorization failed') ||
+            detail.includes('Invalid OAuth state') ||
+            detail.includes('invalid_grant')
+          ) {
+            throw new Error('This authorization link has expired or has already been used. Please sign in again.');
+          }
+          throw new Error(detail);
+        }
+
+        // Synchronize in-memory auth state and verify session in one step
+        const verifiedUser = await refreshUser();
+        if (!verifiedUser) {
+          throw new Error('Session could not be verified in the browser. Please ensure cookies are enabled and try signing in again.');
         }
 
         if (!active) return;
@@ -60,15 +81,22 @@ function UserCallbackContent() {
         let targetPath = '/home';
         const storedPath = window.sessionStorage.getItem('oauth_return_path');
         window.sessionStorage.removeItem('oauth_return_path');
-        if (storedPath?.startsWith('/') && !storedPath.startsWith('//')) {
+        if (
+          storedPath &&
+          storedPath.startsWith('/') &&
+          !storedPath.startsWith('//') &&
+          !storedPath.startsWith('/login') &&
+          !storedPath.startsWith('/signup') &&
+          !storedPath.startsWith('/auth')
+        ) {
           targetPath = storedPath;
         }
 
         setTimeout(() => {
           if (active) {
-            router.push(targetPath);
+            window.location.href = targetPath;
           }
-        }, 1000);
+        }, 800);
       } catch (err: any) {
         if (!active) return;
         setAsyncStatus('error');
@@ -81,7 +109,7 @@ function UserCallbackContent() {
     return () => {
       active = false;
     };
-  }, [code, stateParam, paramError, router]);
+  }, [code, stateParam, paramError, refreshUser]);
 
   return (
     <div className="min-h-screen bg-[#F0F4F8] flex flex-col justify-center items-center p-4">
