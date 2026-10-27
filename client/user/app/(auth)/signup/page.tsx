@@ -6,9 +6,6 @@ import Link from 'next/link';
 import {
   Scale,
   ShieldCheck,
-  BookOpen,
-  Search,
-  Sparkles,
   AlertCircle,
   Loader2,
   LogIn,
@@ -123,29 +120,13 @@ function UserSignUpContent() {
                 Sign In
               </Link>
             </div>
-
-            {/* Platform feature badges */}
-            <div className="pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs text-slate-500">
-              <div className="flex flex-col items-center gap-1">
-                <BookOpen className="w-4 h-4 text-blue-600" />
-                <span>Statute Graph</span>
-              </div>
-              <div className="flex flex-col items-center gap-1">
-                <Search className="w-4 h-4 text-blue-600" />
-                <span>Precedent RAG</span>
-              </div>
-              <div className="flex flex-col items-center gap-1">
-                <Sparkles className="w-4 h-4 text-blue-600" />
-                <span>Verified Citations</span>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Footer info */}
         <div className="mt-6 text-center text-xs text-slate-500 flex items-center justify-center gap-2">
           <ShieldCheck className="w-4 h-4 text-emerald-600" />
-          <span>Public accounts are assigned standard USER privileges</span>
+          <span>Role-Based Access Control</span>
         </div>
       </div>
     </div>

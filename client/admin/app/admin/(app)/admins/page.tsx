@@ -16,7 +16,7 @@ import { Select } from '@/components/ui/Select';
 import { Dropdown } from '@/components/ui/Dropdown';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
-import { ShieldAlert, ShieldCheck, Eye, Power, Trash2, Lock, MoreVertical } from 'lucide-react';
+import { ShieldAlert, Eye, Power, Trash2, Lock, MoreVertical } from 'lucide-react';
 
 export default function AdminsListPage() {
   const router = useRouter();
@@ -65,7 +65,6 @@ export default function AdminsListPage() {
       {/* Header */}
       <PageHeader
         title="Administrators"
-        subtitle="Manage administrative roles, privilege levels, and security operators."
         actions={
           <Link href={ADMIN_ROUTES.ADMIN_NEW}>
             <Button variant="primary" size="md">
@@ -75,19 +74,6 @@ export default function AdminsListPage() {
           </Link>
         }
       />
-
-      {/* System Bootstrap Super Admin Banner Notice */}
-      <div className="p-4 rounded-xl bg-[#D9E7F5] border border-[#B5D3EE] flex items-start gap-3">
-        <div className="p-2 rounded-lg bg-[#2563A8] text-white shrink-0 mt-0.5">
-          <ShieldCheck className="h-5 w-5" />
-        </div>
-        <div className="text-xs text-[#17253A]">
-          <h4 className="font-bold text-sm font-serif">Super Administrator Privilege Model</h4>
-          <p className="text-[#526176] mt-0.5 leading-relaxed">
-            The Super Administrator account is system-bootstrapped and protected. It cannot be deleted, disabled, or demoted through normal administrative UI interfaces.
-          </p>
-        </div>
-      </div>
 
       {(error || actionError) && (
         <div className="p-4 rounded-xl bg-[#FBEAEB] border border-[#F5C2C7] text-[#8B2E2E] text-xs font-mono flex items-center justify-between">

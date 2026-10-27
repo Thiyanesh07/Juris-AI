@@ -79,12 +79,12 @@ export const AdminTopbar: React.FC<AdminTopbarProps> = ({
           items={[
             {
               id: 'notif-1',
-              label: 'Backend integration pending',
+              label: 'Audit logging active',
               onClick: () => {},
             },
             {
               id: 'notif-2',
-              label: 'Authentication layer active (Phase 10.5)',
+              label: 'System services connected',
               onClick: () => {},
             },
           ]}

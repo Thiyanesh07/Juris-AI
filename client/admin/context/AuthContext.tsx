@@ -34,9 +34,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const logout = useCallback(async () => {
-    await signOut();
-    setUser(null);
-    window.location.href = '/admin/login';
+    try {
+      await signOut();
+    } catch (err) {
+      console.error('Logout error:', err);
+      throw err;
+    } finally {
+      setUser(null);
+      if (typeof window !== 'undefined') {
+        window.sessionStorage.removeItem('oauth_return_path');
+        window.location.href = '/admin/login';
+      }
+    }
   }, []);
 
   useEffect(() => {

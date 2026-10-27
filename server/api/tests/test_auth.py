@@ -324,3 +324,105 @@ async def test_create_super_admin_cli(session: AsyncSession) -> None:
     assert user.role is UserRole.SUPER_ADMIN
     assert user.is_active is True
     assert user.name == "Chief Admin"
+
+
+@patch("app.api.routes.auth.exchange_code_for_identity")
+async def test_admin_oauth_lifecycle(
+    mock_exchange: AsyncMock, client: TestClient, session: AsyncSession
+) -> None:
+    """Test callback validation, login initiation, callback handling, session persistence, admin access, and logout."""
+    client.cookies.clear()
+    admin_callback = "http://localhost:3001/admin/auth/google/callback"
+
+    # 1. Reject invalid redirect_uri
+    invalid_login = client.get(
+        "/auth/google/login",
+        params={"intent": "signin", "redirect_uri": "http://evil.com/callback"},
+    )
+    assert invalid_login.status_code == 400
+    assert invalid_login.json()["detail"] == "Invalid OAuth redirect URI"
+
+    # 2. Login initiation with admin callback
+    login_res = client.get(
+        "/auth/google/login",
+        params={"intent": "signup", "redirect_uri": admin_callback, "return_to": "/admin"},
+        follow_redirects=False,
+    )
+    assert login_res.status_code == 307
+    location = login_res.headers["location"]
+    query_params = parse_qs(urlparse(location).query)
+    assert query_params["redirect_uri"][0] == admin_callback
+    state = query_params["state"][0]
+
+    # 3. Successful callback with admin redirect_uri
+    admin_email = f"admin-{uuid4().hex[:8]}@example.com"
+    mock_exchange.return_value = GoogleIdentity(
+        subject=f"google-admin-{uuid4().hex[:8]}",
+        email=admin_email,
+        name="Admin Test User",
+        image_url=None,
+    )
+    cb_res = client.get(
+        f"/auth/google/callback?code=mock-code&state={state}&redirect_uri={admin_callback}"
+    )
+    assert cb_res.status_code == 200
+    user_body = cb_res.json()
+    assert user_body["email"] == admin_email
+
+    # 4. Session persistence via /auth/me
+    me_res = client.get("/auth/me")
+    assert me_res.status_code == 200
+    assert me_res.json()["email"] == admin_email
+
+    # Promote user to ADMIN in the test database to verify admin access
+    user = await session.scalar(select(User).where(User.email == admin_email))
+    assert user is not None
+    user.role = UserRole.ADMIN
+    await session.commit()
+
+    # Admin protected route access check
+    admin_gate = client.get("/test-roles/admin")
+    assert admin_gate.status_code == 200
+    assert admin_gate.json()["role"] == "admin"
+
+    # 5. Logout clears session
+    logout_res = client.post("/auth/logout", headers={"Origin": "http://localhost:5173"})
+    assert logout_res.status_code == 204
+    client.cookies.clear()
+
+    # Protected admin access now rejected
+    after_logout = client.get("/test-roles/admin")
+    assert after_logout.status_code == 401
+
+
+def test_production_oauth_allowlist_validation() -> None:
+    """Verify that allowed_redirect_uris strictly accepts production admin and user callbacks and rejects invalid paths."""
+    from app.auth.google import allowed_redirect_uris, validate_redirect_uri
+    from fastapi import HTTPException
+
+    prod_settings = Settings(
+        app_env="production",
+        session_secret="prod-secret-minimum-32-characters-length",
+        session_cookie_secure=True,
+        google_client_id="prod-client",
+        google_client_secret="prod-secret",
+        google_redirect_uri="https://juris-ai-user.vercel.app/auth/google/callback",
+        google_allowed_redirect_uris="https://juris-ai-admin.vercel.app/auth/google/callback",
+    )
+    allowed = allowed_redirect_uris(prod_settings)
+    assert "https://juris-ai-admin.vercel.app/admin/auth/google/callback" in allowed
+    assert "https://juris-ai-user.vercel.app/auth/google/callback" in allowed
+
+    # Validated without error
+    validated = validate_redirect_uri(prod_settings, "https://juris-ai-admin.vercel.app/admin/auth/google/callback")
+    assert validated == "https://juris-ai-admin.vercel.app/admin/auth/google/callback"
+
+    # Insecure HTTP rejected in production
+    with pytest.raises(HTTPException) as exc:
+        validate_redirect_uri(prod_settings, "http://juris-ai-admin.vercel.app/admin/auth/google/callback")
+    assert exc.value.status_code == 400
+
+    # Arbitrary domain rejected
+    with pytest.raises(HTTPException) as exc:
+        validate_redirect_uri(prod_settings, "https://attacker.com/admin/auth/google/callback")
+    assert exc.value.status_code == 400

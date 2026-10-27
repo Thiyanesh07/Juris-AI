@@ -1,0 +1,1 @@
+"""Standalone InLegalBERT Microservice Package."""

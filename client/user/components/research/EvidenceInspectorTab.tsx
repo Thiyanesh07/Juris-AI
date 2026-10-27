@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { EvidenceItem, RetrievalSource, EntityType } from '@/lib/types';
 import { Badge } from '@/components/ui/Badge';
-import { Filter, Layers, Search, Database, Scale, BookOpen } from 'lucide-react';
+import { Filter, Layers, Search, Database, Scale, BookOpen, Info, CheckCircle2, FileText, ExternalLink } from 'lucide-react';
 
 interface EvidenceTabProps {
   evidence: EvidenceItem[];
@@ -38,6 +38,17 @@ export const EvidenceInspectorTab: React.FC<EvidenceTabProps> = ({ evidence }) =
     }
   };
 
+  const getVerificationBadge = (status?: EvidenceItem['verificationStatus']) => {
+    switch (status) {
+      case 'VERIFIED':
+        return <Badge variant="success">Verified Citation</Badge>;
+      case 'PARTIALLY_VERIFIED':
+        return <Badge variant="warning">Cited in Answer</Badge>;
+      default:
+        return <Badge variant="default">Retrieved Source</Badge>;
+    }
+  };
+
   const getEntityIcon = (type: EntityType) => {
     switch (type) {
       case 'ARTICLE':
@@ -52,6 +63,14 @@ export const EvidenceInspectorTab: React.FC<EvidenceTabProps> = ({ evidence }) =
 
   return (
     <div className="space-y-6">
+      {/* Educational Score Semantics Banner */}
+      <div className="card p-3.5 bg-[#F0F4F8] border border-[#CBD5E0] flex items-start gap-3">
+        <Info className="h-4 w-4 text-[#1D4E8A] shrink-0 mt-0.5" />
+        <p className="text-xs text-[#526176] font-mono leading-relaxed">
+          <span className="font-bold text-[#17253A]">Retrieval Scoring Note:</span> A high retrieval score indicates similarity or ranking relevance within the index, not proof that a legal claim is correct. Items are ordered by calibrated rank.
+        </p>
+      </div>
+
       {/* Header Controls */}
       <div className="card p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-2">
@@ -118,11 +137,16 @@ export const EvidenceInspectorTab: React.FC<EvidenceTabProps> = ({ evidence }) =
                   <div>
                     <h3 className="text-sm font-bold text-[#17253A] font-sans">{item.entityName}</h3>
                     <p className="text-[11px] font-mono text-[#718096]">
-                      {item.sourceDocumentTitle} {item.year ? `(${item.year})` : ''}
+                      {item.sourceDocumentTitle}
+                      {item.pageStart != null ? ` · p. ${item.pageStart}${item.pageEnd && item.pageEnd !== item.pageStart ? `–${item.pageEnd}` : ''}` : ''}
+                      {item.year ? ` (${item.year})` : ''}
                     </p>
                   </div>
                 </div>
-                {getSourceBadge(item.retrievalSource)}
+                <div className="flex flex-col items-end gap-1.5 shrink-0">
+                  {getSourceBadge(item.retrievalSource)}
+                  {getVerificationBadge(item.verificationStatus)}
+                </div>
               </div>
 
               <div className="bg-[#F8FAFC] p-3 rounded-lg border border-[#E2E8F0] font-serif text-xs leading-relaxed text-[#17253A]">
@@ -131,18 +155,40 @@ export const EvidenceInspectorTab: React.FC<EvidenceTabProps> = ({ evidence }) =
 
               <div className="flex items-center justify-between text-[11px] font-mono text-[#718096] pt-1 border-t border-[#E2E8F0]">
                 <span>Source: {item.provision}</span>
-                <span className="font-bold text-[#1D4E8A]">
-                  {/* Show hybrid score from backend */}
-                  Score: {(item.relevanceScore * 100).toFixed(0)}%
-                </span>
+                {item.pdfUrl ? (
+                  <a
+                    href={item.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-[#1D4E8A] hover:underline"
+                  >
+                    <FileText className="h-3 w-3" /> PDF Source
+                  </a>
+                ) : item.sourceUrl ? (
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-[#1D4E8A] hover:underline"
+                  >
+                    <ExternalLink className="h-3 w-3" /> View Source
+                  </a>
+                ) : null}
               </div>
 
-              {/* Rank from backend */}
-              {item.rank !== undefined && (
-                <div className="text-[10px] font-mono text-[#718096]">
-                  Rank #{item.rank} · Chunk {item.chunkId?.substring(0, 8)}…
-                </div>
-              )}
+              {/* Explicit Rank and Calibrated Relevance Score from backend */}
+              <div className="flex items-center justify-between text-[11px] font-mono text-[#718096] pt-1">
+                <span className="px-2 py-0.5 rounded bg-[#E2E8F0] text-[#17253A] font-bold">
+                  {item.rank !== undefined ? `Rank ${item.rank}` : 'Unranked'}
+                </span>
+                {item.relevanceScore > 0 ? (
+                  <span className="font-semibold text-[#1D4E8A]">
+                    Score: {item.relevanceScore.toFixed(3)} ({item.scoreType || 'Calibrated Fusion Score'})
+                  </span>
+                ) : (
+                  <span className="text-[#A0AEC0]">Score unavailable</span>
+                )}
+              </div>
             </div>
           ))}
         </div>

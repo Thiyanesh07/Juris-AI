@@ -19,8 +19,13 @@ Do NOT invent statutes, sections, cases, dates, citations, or legal rules.
 Distinguish statements supported by evidence from unsupported conclusions.
 When the evidence is insufficient, set insufficient_evidence to true and explain briefly.
 Preserve citation references exactly as they appear in the evidence blocks.
-Citations in your JSON must reference evidence ranks (1-based) matching [n] markers in the answer.
-Place [n] markers on supported statements in the answer text.
+
+CRITICAL INLINE CITATION RULES:
+1. Every claim, holding, rule, or factual proposition derived from evidence MUST be immediately followed by an inline marker like [1], [2] directly inside the answer text (e.g., 'In Maneka Gandhi, the Supreme Court held that personal liberty under Article 21 is of the widest amplitude [1].').
+2. You MUST include these bracketed [n] markers directly inside the answer prose itself. Do NOT omit them from the answer text.
+3. For every inline marker [n] appearing in the answer text, include a matching citation object in the 'citations' array with marker=n and evidence_rank=n.
+4. When providing an answer grounded in the evidence, at least one inline marker [n] is strictly required in the answer text. If the evidence does not contain the requested authority and you provide a general legal background or note the omission pursuant to special guidance, do not fabricate citations or markers for absent documents.
+
 Return exactly one JSON object with fields: answer, insufficient_evidence, citations.
 Each citation object must contain only marker and evidence_rank (integers).
 Do NOT output a separate source list or prose outside the JSON object.
@@ -115,15 +120,18 @@ def build_system_message() -> str:
     return SYSTEM_INSTRUCTIONS
 
 
-def build_user_message(question: str, evidence_blocks: list[str]) -> str:
+def build_user_message(question: str, evidence_blocks: list[str], guidance: str | None = None) -> str:
     evidence_text = "\n\n".join(evidence_blocks) if evidence_blocks else "(no evidence)"
+    instructions = "INSTRUCTIONS: Answer using the evidence above. Place inline [n] citation markers directly inside the answer text immediately following each supported statement. Return one JSON object only."
+    if guidance:
+        instructions += f"\n\nSPECIAL GUIDANCE:\n{guidance.strip()}"
     return (
         "USER QUESTION\n"
         f"{question.strip()}\n\n"
         "BEGIN UNTRUSTED LEGAL EVIDENCE\n"
         f"{evidence_text}\n"
         "END UNTRUSTED LEGAL EVIDENCE\n\n"
-        "Respond with one JSON object only."
+        f"{instructions}"
     )
 
 
@@ -131,8 +139,8 @@ def build_correction_user_message(base_user_message: str, problem: str) -> str:
     return (
         f"{base_user_message}\n\n"
         "CORRECTION REQUIRED\n"
-        f"{problem}\n"
-        "Return a corrected JSON object that satisfies all citation rules."
+        f"Your previous response failed validation: {problem}\n"
+        "Return a corrected JSON object that satisfies all citation rules. Ensure all claims supported by evidence have matching inline [n] markers placed directly inside the answer text."
     )
 
 

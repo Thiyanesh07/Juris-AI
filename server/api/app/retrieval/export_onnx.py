@@ -13,7 +13,12 @@ logger = logging.getLogger(__name__)
 
 def get_onnx_model_path(data_dir: Path | None = None) -> Path:
     base_data = (data_dir or get_data_dir()).resolve()
-    return base_data / "models" / "inlegalbert" / "model.onnx"
+    target = base_data / "models" / "inlegalbert" / "model.onnx"
+    if not target.is_file():
+        default_target = Path("data/models/inlegalbert/model.onnx").resolve()
+        if default_target.is_file():
+            return default_target
+    return target
 
 
 def export_inlegalbert_onnx(

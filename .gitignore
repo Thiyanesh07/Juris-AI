@@ -51,6 +51,17 @@ PID
 pids/
 data/chunks/
 data/models/
+data/raw/
+data/processed/
+data/indexes/legal_chunks_backup/
+data/indexes/legal_chunks.backup*
+data/indexes/legal_chunks.old*
+
+# Session cookies and scratch files
+server/api/*.txt
+server/api/*_res.json
+server/api/scratch/
+server/api/server/
 
 # OS & IDE
 .DS_Store

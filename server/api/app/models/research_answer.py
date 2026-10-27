@@ -8,7 +8,8 @@ arrives in a later slice — this model only stores the resulting status.
 from typing import TYPE_CHECKING
 from uuid import UUID
 
-from sqlalchemy import Enum, ForeignKey, Text, Uuid
+from sqlalchemy import Enum, ForeignKey, String, Text, Uuid
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base, TimestampMixin, new_uuid
@@ -40,6 +41,16 @@ class ResearchAnswer(TimestampMixin, Base):
         default=ValidationStatus.PENDING,
         nullable=False,
     )
+    mode: Mapped[str] = mapped_column(
+        String(32),
+        server_default="COMPREHENSIVE",
+        default="COMPREHENSIVE",
+        nullable=False,
+    )
+    evidence_json: Mapped[list[dict[str, object]] | None] = mapped_column(JSONB, nullable=True)
+    graph_json: Mapped[dict[str, object] | None] = mapped_column(JSONB, nullable=True)
+    reasoning_steps_json: Mapped[list[dict[str, object]] | None] = mapped_column(JSONB, nullable=True)
+    citation_validation_json: Mapped[dict[str, object] | None] = mapped_column(JSONB, nullable=True)
 
     query: Mapped["ResearchQuery"] = relationship(back_populates="answers")
     citations: Mapped[list["Citation"]] = relationship(

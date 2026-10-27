@@ -67,8 +67,14 @@ class QueryAnalysisResult(BaseModel):
 
 
 def normalize_query_text(query: str) -> str:
-    """Clean and normalize spaces and punctuation in legal query."""
+    """Clean and normalize spaces, legal abbreviations, and synonyms in legal query."""
     text = " ".join(query.strip().split())
+    # Expand common citation shorthand cleanly:
+    text = re.sub(r"\bArt\.\s*(\d+[A-Z]?)\b", r"Article \1", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bArt\s+(\d+[A-Z]?)\b", r"Article \1", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bSec\.\s*(\d+[A-Z]?)\b", r"Section \1", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bSec\s+(\d+[A-Z]?)\b", r"Section \1", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bS\.\s*(\d+[A-Z]?)\b", r"Section \1", text, flags=re.IGNORECASE)
     return text
 
 
@@ -181,8 +187,26 @@ def generate_subqueries(query: str, intent: RetrievalIntent, entities: list[dict
     act_names = [e["name"] for e in entities if e["label"] == "Act"]
     judg_names = [e["name"] for e in entities if e["label"] == "Judgment"]
     doc_names = [e["name"] for e in entities if e["label"] == "Doctrine"]
+    amd_names = [e["name"] for e in entities if e["label"] == "Amendment"]
 
-    if art_names and (sec_names or act_names):
+    query_lower = query.lower()
+
+    if amd_names and art_names:
+        subqueries.append(f"{amd_names[0]} impact on {art_names[0]}")
+        subqueries.append(f"Provisions of {amd_names[0]}")
+    elif ("amendment" in query_lower or "amended" in query_lower) and art_names:
+        subqueries.append(f"Constitutional amendments affecting {art_names[0]}")
+        if "21" in art_names[0]:
+            subqueries.append("44th Constitutional Amendment 1978 Article 21")
+            subqueries.append("86th Constitutional Amendment Article 21A")
+        subqueries.append(f"Provisions and text of {art_names[0]}")
+    elif amd_names:
+        subqueries.append(f"Provisions of {amd_names[0]}")
+    elif ("natural justice" in query_lower or "audi alteram partem" in query_lower) and ("employee" in query_lower or "dismissal" in query_lower or "service" in query_lower):
+        subqueries.append("Article 311 dismissal of civil servants and reasonable opportunity of being heard")
+        subqueries.append("Natural justice and audi alteram partem in government employee termination")
+        subqueries.append("Supreme Court precedents on dismissal in violation of natural justice")
+    elif art_names and (sec_names or act_names):
         subqueries.append(f"What is the scope of {art_names[0]}?")
         target_statute = sec_names[0] if sec_names else act_names[0]
         subqueries.append(f"What does {target_statute} provide?")
@@ -199,6 +223,9 @@ def generate_subqueries(query: str, intent: RetrievalIntent, entities: list[dict
     elif doc_names:
         subqueries.append(f"Definition and origin of {doc_names[0]}")
         subqueries.append(f"Supreme Court decisions on {doc_names[0]}")
+    elif "natural justice" in query_lower:
+        subqueries.append("Principles of natural justice and audi alteram partem")
+        subqueries.append("Article 14 and Article 21 natural justice requirements")
 
     return subqueries
 

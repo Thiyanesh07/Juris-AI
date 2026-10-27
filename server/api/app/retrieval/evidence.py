@@ -54,5 +54,67 @@ async def load_chunks_by_ids(
             "hierarchy": chunk.hierarchy,
             "citation_ref": chunk.citation_ref,
             "source_url": document.source_url,
+            "pdf_url": f"/api/v1/documents/{chunk.document_id}/pdf",
         }
     return evidence
+
+
+async def search_chunks_by_identifiers(
+    session: AsyncSession,
+    terms: list[str],
+    top_k: int = 15,
+) -> list[dict[str, Any]]:
+    """Retrieve chunks matching explicit legal identifiers, section numbers, or judgment names."""
+    if not terms:
+        return []
+
+    from sqlalchemy import or_
+
+    conditions = []
+    seen_terms: set[str] = set()
+    for term in terms:
+        clean = " ".join(term.strip().split())
+        if len(clean) >= 3 and clean.lower() not in seen_terms:
+            seen_terms.add(clean.lower())
+            conditions.append(Chunk.citation_ref.ilike(f"%{clean}%"))
+            conditions.append(Document.title.ilike(f"%{clean}%"))
+            # For short phrases like "Section 66A" or "Article 21", also match in chunk text
+            if len(clean) <= 40:
+                conditions.append(Chunk.text.ilike(f"%{clean}%"))
+
+    if not conditions:
+        return []
+
+    stmt = (
+        select(Chunk, Document)
+        .join(Document, Document.id == Chunk.document_id)
+        .where(
+            Document.status == DocumentStatus.READY,
+            or_(*conditions[:12]),
+        )
+        .limit(top_k)
+    )
+
+    try:
+        rows = (await session.execute(stmt)).all()
+    except Exception:
+        return []
+
+    results: list[dict[str, Any]] = []
+    for rank, (chunk, document) in enumerate(rows, start=1):
+        results.append({
+            "chunk_id": str(chunk.id),
+            "score": 0.88,
+            "rank": rank,
+            "document_title": document.title,
+            "citation_ref": chunk.citation_ref,
+            "text": chunk.text,
+            "document_id": str(document.id),
+            "chunk_index": chunk.chunk_index,
+            "page_start": chunk.page_start,
+            "page_end": chunk.page_end,
+            "hierarchy": chunk.hierarchy,
+            "pdf_url": f"/api/v1/documents/{chunk.document_id}/pdf",
+            "source_url": document.source_url,
+        })
+    return results

@@ -13,7 +13,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.api.routes.history import _to_session_response
 from app.auth.dependencies import get_current_user
 from app.db.session import get_session
-from app.models import ResearchQuery, ResearchSession, SavedResearch, User
+from app.models import ResearchAnswer, ResearchQuery, ResearchSession, SavedResearch, User
 from app.schemas.history import SavedResearchCreateRequest, SavedResearchResponse
 from app.services.audit import log_audit_event
 
@@ -30,7 +30,11 @@ async def create_saved_research(
     res_session = await session.scalar(
         select(ResearchSession)
         .where(ResearchSession.id == body.session_id, ResearchSession.user_id == current_user.id)
-        .options(selectinload(ResearchSession.queries).selectinload(ResearchQuery.answers))
+        .options(
+            selectinload(ResearchSession.queries)
+            .selectinload(ResearchQuery.answers)
+            .selectinload(ResearchAnswer.citations)
+        )
     )
     if not res_session:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Research session not found")
@@ -92,6 +96,7 @@ async def list_saved_research(
             selectinload(SavedResearch.session)
             .selectinload(ResearchSession.queries)
             .selectinload(ResearchQuery.answers)
+            .selectinload(ResearchAnswer.citations)
         )
         .order_by(SavedResearch.created_at.desc())
     )
@@ -129,6 +134,7 @@ async def get_saved_research(
             selectinload(SavedResearch.session)
             .selectinload(ResearchSession.queries)
             .selectinload(ResearchQuery.answers)
+            .selectinload(ResearchAnswer.citations)
         )
     )
     saved = await session.scalar(query)

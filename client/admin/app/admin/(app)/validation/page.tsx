@@ -28,8 +28,6 @@ import {
   ChevronRight,
   MoreVertical,
   CheckSquare,
-  Sparkles,
-  ArrowRight,
   RefreshCw,
 } from 'lucide-react';
 
@@ -149,7 +147,6 @@ export default function ValidationListPage() {
       {/* Page Header */}
       <PageHeader
         title="Validation Queue"
-        subtitle="Review extracted legal entities, relationships, citations, and metadata before they enter the trusted knowledge layer."
         actions={
           <Button
             variant="secondary"
@@ -163,23 +160,6 @@ export default function ValidationListPage() {
           </Button>
         }
       />
-
-      {/* Workflow Banner */}
-      <div className="p-4 rounded-xl bg-white border border-[#C9D4E1] shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs font-mono">
-        <div className="flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-[#2563A8]" />
-          <span className="font-bold text-[#17253A]">Quality Control Lifecycle:</span>
-        </div>
-        <div className="flex flex-wrap items-center gap-1.5 text-[#526176]">
-          <span className="px-2 py-0.5 rounded bg-[#EFF3F7]">Extracted</span>
-          <ArrowRight className="h-3 w-3 text-[#718096]" />
-          <span className="px-2 py-0.5 rounded bg-[#FBF3D4] text-[#7A5A0F] font-bold">Validation Queue</span>
-          <ArrowRight className="h-3 w-3 text-[#718096]" />
-          <span className="px-2 py-0.5 rounded bg-[#EFF3F7]">Reviewer</span>
-          <ArrowRight className="h-3 w-3 text-[#718096]" />
-          <span className="px-2 py-0.5 rounded bg-[#D0EDDB] text-[#1E6B45] font-bold">Trusted Knowledge Layer</span>
-        </div>
-      </div>
 
       {/* Action Error Banner */}
       {actionError && (
@@ -232,6 +212,23 @@ export default function ValidationListPage() {
           />
         </div>
       </div>
+
+      {/* API Error Alert */}
+      {error && (
+        <div className="p-4 rounded-xl bg-[#F5D9D9] border border-[#E8B8B8] text-[#8B2E2E] flex items-center justify-between">
+          <div className="flex items-center gap-2 font-mono text-xs">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>Failed to load validation queue: {error}</span>
+          </div>
+          <Button
+            variant="secondary"
+            size="sm"
+            onClick={() => refreshValidationItems()}
+          >
+            Retry
+          </Button>
+        </div>
+      )}
 
       {/* Filter Bar */}
       <FilterBar

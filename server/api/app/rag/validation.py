@@ -35,22 +35,24 @@ def validate_response_groundedness(
     insufficient_evidence: bool = False,
 ) -> ValidationReport:
     """Perform end-to-end temporal, citation, and provenance validation before returning answer."""
+    from app.qa.citations import _markers_in_answer
+
     warnings: list[str] = []
-    grounded = True
     temporal_valid = True
     citation_valid = True
+    grounded = True
 
     if insufficient_evidence or not answer:
         return ValidationReport(
-            grounded=True,
+            grounded=False,
             temporal_valid=True,
-            citation_valid=True,
+            citation_valid=False,
             verified_count=0,
             unverified_count=0,
             warnings=["insufficient_evidence_flagged"],
         )
 
-    # 1. Citation Validation
+    # 1. Citation Verification & Grounding Check
     verified_cits = [c for c in citations if c.verification_status in ("VERIFIED", "PARTIALLY_VERIFIED")]
     unverified_cits = [c for c in citations if c.verification_status not in ("VERIFIED", "PARTIALLY_VERIFIED")]
 
@@ -59,13 +61,25 @@ def validate_response_groundedness(
 
     if unverified_count > 0:
         citation_valid = False
+        grounded = False
         warnings.append(f"{unverified_count} unverified citation(s) detected in answer.")
 
-    # Check if answer contains citation markers but zero verified citations exist
-    if "[1]" in answer and verified_count == 0:
-        grounded = False
+    # Never treat zero verified citations as a successful grounding result
+    if verified_count == 0:
         citation_valid = False
-        warnings.append("Answer contains citation markers but no verified source evidence exists.")
+        grounded = False
+        warnings.append("Answer has no verified supporting citations.")
+
+    # Validate that every citation marker in the answer resolves to a verified citation
+    markers_in_text = _markers_in_answer(answer)
+    verified_markers = {c.marker for c in verified_cits}
+    missing_or_unverified = markers_in_text - verified_markers
+    if missing_or_unverified:
+        citation_valid = False
+        grounded = False
+        warnings.append(
+            f"Answer contains unverified or unresolvable citation marker(s): {sorted(missing_or_unverified)}."
+        )
 
     # 2. Temporal Validation
     if query_analysis.is_temporal:
@@ -91,7 +105,13 @@ def validate_response_groundedness(
         if not c.provenance_intact:
             warnings.append(f"Citation marker [{c.marker}] lacks full provenance (missing chunk/document ID).")
 
-    is_overall_grounded = grounded and temporal_valid and citation_valid
+    is_overall_grounded = (
+        grounded
+        and temporal_valid
+        and citation_valid
+        and verified_count > 0
+        and not insufficient_evidence
+    )
 
     return ValidationReport(
         grounded=is_overall_grounded,

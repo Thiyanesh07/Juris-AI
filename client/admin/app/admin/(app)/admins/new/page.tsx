@@ -80,7 +80,6 @@ export default function CreateAdminPage() {
     <div className="space-y-6 max-w-3xl">
       <PageHeader
         title="Create Administrator"
-        subtitle="Provision operational administrative access for system operators."
         actions={
           <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.ADMINS)}>
             <ArrowLeft className="h-4 w-4 mr-1.5" />

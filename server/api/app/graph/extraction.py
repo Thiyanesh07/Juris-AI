@@ -125,7 +125,9 @@ _AMENDMENT = re.compile(
 _DOCTRINE = re.compile(
     r"\b(Basic Structure(?: Doctrine)?|Due Process(?: of Law)?|Procedure Established by Law|"
     r"Pith and Substance|Doctrine of Severability|Doctrine of Eclipse|Colorable Legislation|"
-    r"Public Trust Doctrine)\b",
+    r"Public Trust Doctrine|Natural Justice|Audi Alteram Partem|Nemo Judex In Causa Sua|"
+    r"Doctrine of Pleasure|Rule of Law|Promissory Estoppel|Legitimate Expectation|"
+    r"Reasonable Classification|Proportionality)\b",
     re.IGNORECASE,
 )
 _JUDGMENT_NAMES = re.compile(
@@ -211,7 +213,7 @@ def extract_entities(text: str, document_title: str = "", document_id: str = "")
     instrument = _instrument_slug(document_title, document_id)
 
     # 1. Constitution
-    if re.search(r"\bConstitution\s+of\s+India\b|\bthe\s+Constitution\b", text, re.IGNORECASE) or document_id == "constitution_of_india":
+    if re.search(r"\b(?:the\s+)?Constitution\s+of\s+India\b|\b(?:the\s+)?Indian\s+Constitution\b|\bthe\s+Constitution\b", text, re.IGNORECASE) or document_id == "constitution_of_india":
         entities["constitution:india"] = Entity(
             id="constitution:india",
             label="Constitution",
@@ -219,7 +221,17 @@ def extract_entities(text: str, document_title: str = "", document_id: str = "")
             confidence=1.0,
         )
 
-    # 2. Articles
+    # 2. Articles (support single "Article 21" and plural "Articles 14, 19 and 21")
+    for match in re.finditer(r"\b(?:Articles?|Arts?\.)\s+((?:\d+[A-Z]?(?:,\s*|\s+and\s+|\s+&\s+)?)+)", text, re.IGNORECASE):
+        for number in re.findall(r"\b(\d+[A-Z]?)\b", match.group(1), re.IGNORECASE):
+            canonical = number.upper()
+            entity = Entity(
+                f"article:constitution_of_india:{canonical.lower()}",
+                "Article",
+                f"Article {canonical}",
+            )
+            entities[entity.id] = entity
+
     for number in _ARTICLE.findall(text):
         canonical = number.upper()
         entity = Entity(
@@ -229,10 +241,20 @@ def extract_entities(text: str, document_title: str = "", document_id: str = "")
         )
         entities[entity.id] = entity
 
-    # 3. Sections
+    # 3. Sections (support single "Section 66A" and plural "Sections 66A and 67")
+    sec_inst = "constitution_of_india" if "constitution" in instrument else instrument
+    for match in re.finditer(r"\b(?:Sections?|Secs?\.|S\.)\s+((?:\d+[A-Z]?(?:,\s*|\s+and\s+|\s+&\s+)?)+)", text, re.IGNORECASE):
+        for number in re.findall(r"\b(\d+[A-Z]?)\b", match.group(1), re.IGNORECASE):
+            canonical = number.upper()
+            entity = Entity(
+                f"section:{sec_inst}:{canonical.lower()}",
+                "Section",
+                f"Section {canonical}",
+            )
+            entities[entity.id] = entity
+
     for number in _SECTION.findall(text):
         canonical = number.upper()
-        sec_inst = "constitution_of_india" if "constitution" in instrument else instrument
         entity = Entity(
             f"section:{sec_inst}:{canonical.lower()}",
             "Section",

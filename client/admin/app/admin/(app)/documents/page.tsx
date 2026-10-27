@@ -15,6 +15,7 @@ import { Select } from '@/components/ui/Select';
 import { Dropdown } from '@/components/ui/Dropdown';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
 import { EmptyState } from '@/components/shared/EmptyState';
+import { ApiError } from '@/lib/apiErrors';
 import {
   Upload,
   Eye,
@@ -57,38 +58,20 @@ export default function DocumentsListPage() {
 
   const loadDocs = useCallback(() => {
     fetchDocuments({
-      page: 1,
-      page_size: 100,
+      page: currentPage,
+      page_size: pageSize,
       status: statusFilter === 'ALL' ? undefined : statusFilter,
       type: typeFilter === 'ALL' ? undefined : typeFilter,
       search: searchQuery.trim() || undefined,
     });
-  }, [fetchDocuments, statusFilter, typeFilter, searchQuery]);
+  }, [fetchDocuments, currentPage, pageSize, statusFilter, typeFilter, searchQuery]);
 
   useEffect(() => {
     loadDocs();
   }, [loadDocs]);
 
-  const filteredDocs = useMemo(() => {
-    return documents.filter((d) => {
-      const matchesSearch =
-        !searchQuery.trim() ||
-        d.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        d.fileName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        d.source.toLowerCase().includes(searchQuery.toLowerCase());
-
-      const matchesType = typeFilter === 'ALL' || d.documentType.toLowerCase() === typeFilter.toLowerCase();
-      const matchesStatus = statusFilter === 'ALL' || d.status.toLowerCase() === statusFilter.toLowerCase();
-
-      return matchesSearch && matchesType && matchesStatus;
-    });
-  }, [documents, searchQuery, typeFilter, statusFilter]);
-
-  const totalPages = Math.ceil(filteredDocs.length / pageSize) || 1;
-  const paginatedDocs = useMemo(() => {
-    const start = (currentPage - 1) * pageSize;
-    return filteredDocs.slice(start, start + pageSize);
-  }, [filteredDocs, currentPage, pageSize]);
+  const totalPages = Math.ceil(documentsTotal / pageSize) || 1;
+  const paginatedDocs = documents;
 
   const handleConfirmArchive = async () => {
     if (!archiveTarget) return;
@@ -105,7 +88,12 @@ export default function DocumentsListPage() {
     } catch (err) {
       setActionFeedback({
         type: 'error',
-        message: err instanceof Error ? err.message : 'Failed to archive document.',
+        message:
+          err instanceof ApiError
+            ? err.userMessage
+            : err instanceof Error
+            ? err.message
+            : 'Failed to archive document.',
       });
     } finally {
       setIsProcessingAction(false);
@@ -127,7 +115,12 @@ export default function DocumentsListPage() {
     } catch (err) {
       setActionFeedback({
         type: 'error',
-        message: err instanceof Error ? err.message : 'Failed to restore document.',
+        message:
+          err instanceof ApiError
+            ? err.userMessage
+            : err instanceof Error
+            ? err.message
+            : 'Failed to restore document.',
       });
     } finally {
       setIsProcessingAction(false);
@@ -147,7 +140,12 @@ export default function DocumentsListPage() {
     } catch (err) {
       setActionFeedback({
         type: 'error',
-        message: err instanceof Error ? err.message : 'Failed to initiate reprocess.',
+        message:
+          err instanceof ApiError
+            ? err.userMessage
+            : err instanceof Error
+            ? err.message
+            : 'Failed to initiate reprocess.',
       });
     } finally {
       setIsProcessingAction(false);
@@ -179,7 +177,6 @@ export default function DocumentsListPage() {
       {/* Header */}
       <PageHeader
         title="Documents"
-        subtitle="Manage legal corpora, review ingestion statuses, and trigger processing workflows."
         actions={
           <div className="flex items-center gap-2">
             <Button variant="secondary" size="md" onClick={loadDocs} disabled={isLoading}>
@@ -296,7 +293,7 @@ export default function DocumentsListPage() {
           <Activity className="h-6 w-6 text-[#2563A8] animate-spin mx-auto mb-2" />
           <p className="font-mono text-xs text-[#526176]">Loading documents from repository...</p>
         </div>
-      ) : filteredDocs.length === 0 ? (
+      ) : paginatedDocs.length === 0 ? (
         <EmptyState
           title="No documents found"
           description={
@@ -442,8 +439,8 @@ export default function DocumentsListPage() {
           {/* Pagination */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-4 py-3 rounded-xl bg-[#EFF3F7] border border-[#C9D4E1] text-xs font-mono">
             <span className="text-[#526176]">
-              Showing {Math.min((currentPage - 1) * pageSize + 1, filteredDocs.length)} to{' '}
-              {Math.min(currentPage * pageSize, filteredDocs.length)} of {filteredDocs.length} documents
+              Showing {documentsTotal === 0 ? 0 : (currentPage - 1) * pageSize + 1} to{' '}
+              {Math.min(currentPage * pageSize, documentsTotal)} of {documentsTotal} documents
             </span>
 
             <div className="flex items-center gap-2">

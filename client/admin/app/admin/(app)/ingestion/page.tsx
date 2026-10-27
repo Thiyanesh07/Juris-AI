@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/Button';
 import { Select } from '@/components/ui/Select';
 import { Dropdown } from '@/components/ui/Dropdown';
 import { EmptyState } from '@/components/shared/EmptyState';
+import { ApiError } from '@/lib/apiErrors';
 import {
   Cpu,
   Eye,
@@ -46,6 +47,7 @@ export default function IngestionDashboardPage() {
   const {
     ingestionJobs,
     jobsTotal,
+    jobCounts,
     jobsLoading,
     jobsError,
     fetchJobs,
@@ -57,24 +59,29 @@ export default function IngestionDashboardPage() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [reprocessingDocId, setReprocessingDocId] = useState<string | null>(null);
+  const [actionFeedback, setActionFeedback] = useState<{
+    type: 'success' | 'error';
+    message: string;
+  } | null>(null);
   const pageSize = 15;
 
-  // Load jobs with server-side query parameters
+  // Load jobs with server-side query parameters including search
   const loadJobs = useCallback(
-    (page: number, status: string, stage: string) => {
+    (page: number, status: string, stage: string, search: string) => {
       fetchJobs({
         page,
         page_size: pageSize,
         status: status === 'ALL' ? undefined : status,
         stage: stage === 'ALL' ? undefined : stage,
+        search: search.trim() || undefined,
       });
     },
     [fetchJobs, pageSize]
   );
 
   useEffect(() => {
-    loadJobs(currentPage, statusFilter, stageFilter);
-  }, [loadJobs, currentPage, statusFilter, stageFilter]);
+    loadJobs(currentPage, statusFilter, stageFilter, searchQuery);
+  }, [loadJobs, currentPage, statusFilter, stageFilter, searchQuery]);
 
   // Active-job polling: only poll while jobs are running or pending, and page is active
   const hasActiveJobs = useMemo(() => {
@@ -93,44 +100,48 @@ export default function IngestionDashboardPage() {
 
     const interval = setInterval(() => {
       if (typeof document !== 'undefined' && document.hidden) return;
-      loadJobs(currentPage, statusFilter, stageFilter);
+      loadJobs(currentPage, statusFilter, stageFilter, searchQuery);
     }, 5000);
 
     pollingRef.current = interval;
     return () => clearInterval(interval);
-  }, [hasActiveJobs, loadJobs, currentPage, statusFilter, stageFilter]);
+  }, [hasActiveJobs, loadJobs, currentPage, statusFilter, stageFilter, searchQuery]);
 
-  // Client-side text filter (for document title or job ID search)
-  const displayedJobs = useMemo(() => {
-    if (!searchQuery.trim()) return ingestionJobs;
-    const q = searchQuery.toLowerCase().trim();
-    return ingestionJobs.filter(
-      (job) =>
-        job.id.toLowerCase().includes(q) ||
-        (job.document_title && job.document_title.toLowerCase().includes(q)) ||
-        job.stage.toLowerCase().includes(q)
-    );
-  }, [ingestionJobs, searchQuery]);
+  // Jobs are already filtered by the server across all pages
+  const displayedJobs = ingestionJobs;
 
-  // Derived counts from current queried job records
+  // True system-wide counts from server aggregation, not limited to single page
   const counts = useMemo(() => {
-    const queued = ingestionJobs.filter((j) => j.status?.toLowerCase() === 'pending').length;
-    const running = ingestionJobs.filter((j) => j.status?.toLowerCase() === 'running').length;
-    const completed = ingestionJobs.filter((j) => j.status?.toLowerCase() === 'completed').length;
-    const failed = ingestionJobs.filter((j) => j.status?.toLowerCase() === 'failed').length;
+    const queued = jobCounts.pending ?? 0;
+    const running = jobCounts.running ?? 0;
+    const completed = jobCounts.completed ?? 0;
+    const failed = jobCounts.failed ?? 0;
     return { queued, running, completed, failed };
-  }, [ingestionJobs]);
+  }, [jobCounts]);
 
   const totalPages = Math.ceil(jobsTotal / pageSize) || 1;
 
   const handleRetryJob = async (job: ProcessingJobSummary) => {
     if (reprocessingDocId) return;
     setReprocessingDocId(job.document_id);
+    setActionFeedback(null);
     try {
-      await reprocessDocument(job.document_id);
-      loadJobs(currentPage, statusFilter, stageFilter);
-    } catch {
-      // Handled in store
+      const res = await reprocessDocument(job.document_id);
+      setActionFeedback({
+        type: 'success',
+        message: res.message || `Reprocessing triggered for "${job.document_title || job.id}".`,
+      });
+      loadJobs(currentPage, statusFilter, stageFilter, searchQuery);
+    } catch (err) {
+      setActionFeedback({
+        type: 'error',
+        message:
+          err instanceof ApiError
+            ? err.userMessage
+            : err instanceof Error
+            ? err.message
+            : 'Failed to trigger reprocessing.',
+      });
     } finally {
       setReprocessingDocId(null);
     }
@@ -165,12 +176,11 @@ export default function IngestionDashboardPage() {
       {/* Header */}
       <PageHeader
         title="Ingestion Jobs"
-        subtitle="Real-time pipeline execution, stage progression, and persisted task audit trail."
         actions={
           <Button
             variant="secondary"
             size="sm"
-            onClick={() => loadJobs(currentPage, statusFilter, stageFilter)}
+            onClick={() => loadJobs(currentPage, statusFilter, stageFilter, searchQuery)}
             disabled={jobsLoading}
           >
             <RefreshCw className={`h-4 w-4 mr-1.5 ${jobsLoading ? 'animate-spin' : ''}`} />
@@ -178,6 +188,33 @@ export default function IngestionDashboardPage() {
           </Button>
         }
       />
+
+      {/* Action Notification */}
+      {actionFeedback && (
+        <div
+          className={`p-4 rounded-xl text-xs font-mono flex items-center justify-between border ${
+            actionFeedback.type === 'success'
+              ? 'bg-[#D0EDDB] border-[#B2E2C3] text-[#1E6B45]'
+              : 'bg-[#F5D9D9] border-[#E8B8B8] text-[#8B2E2E]'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            {actionFeedback.type === 'success' ? (
+              <CheckCircle2 className="h-4 w-4 shrink-0" />
+            ) : (
+              <AlertCircle className="h-4 w-4 shrink-0" />
+            )}
+            <span>{actionFeedback.message}</span>
+          </div>
+          <button
+            onClick={() => setActionFeedback(null)}
+            className="text-xs hover:opacity-75 font-semibold px-2 py-0.5"
+            aria-label="Dismiss notification"
+          >
+            ✕
+          </button>
+        </div>
+      )}
 
       {/* Summary Metrics */}
       <div className="space-y-2">
@@ -227,7 +264,7 @@ export default function IngestionDashboardPage() {
           <Button
             variant="secondary"
             size="sm"
-            onClick={() => loadJobs(currentPage, statusFilter, stageFilter)}
+            onClick={() => loadJobs(currentPage, statusFilter, stageFilter, searchQuery)}
           >
             Retry
           </Button>
@@ -237,7 +274,10 @@ export default function IngestionDashboardPage() {
       {/* Filter Bar */}
       <FilterBar
         searchValue={searchQuery}
-        onSearchChange={setSearchQuery}
+        onSearchChange={(val) => {
+          setSearchQuery(val);
+          setCurrentPage(1);
+        }}
         placeholder="Filter by job ID, document title, or stage..."
         onReset={() => {
           setSearchQuery('');

@@ -93,3 +93,19 @@ def make_image_only_pdf() -> bytes:
 def make_truncated_pdf() -> bytes:
     """Return deliberately truncated bytes that look like a PDF but are corrupt."""
     return b"%PDF-1.4\n1 0 obj\n<< /Type /Catalog >>"
+
+
+def make_encrypted_pdf(password: str = "secret") -> bytes:
+    """Return a password-protected PDF to verify that encrypted documents are rejected."""
+    doc = fitz.open()
+    page = doc.new_page(width=595, height=842)
+    page.insert_text((50, 50), "Confidential Protected Legal Record", fontsize=12)
+    buf = io.BytesIO()
+    doc.save(
+        buf,
+        encryption=fitz.PDF_ENCRYPT_AES_256,
+        user_pw=password,
+        owner_pw=password,
+    )
+    doc.close()
+    return buf.getvalue()

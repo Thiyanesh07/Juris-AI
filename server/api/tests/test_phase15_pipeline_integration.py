@@ -86,14 +86,38 @@ async def test_pipeline_non_temporal_query_end_to_end(session):
 
 
 def test_validate_response_groundedness_unit():
+    from app.rag.citation_verifier import VerifiedCitation
+
     qa = analyze_query("What did Article 21 protect in 1978?")
-    report = validate_response_groundedness(
+    # 1. Without citations, grounded must be False (JAI-004)
+    report_no_cit = validate_response_groundedness(
         answer="In 1978, Maneka Gandhi expanded Article 21.",
         citations=[],
         query_analysis=qa,
         resolved_version=None,
         insufficient_evidence=False,
     )
-    assert report.grounded is True
-    assert report.temporal_valid is True
-    assert report.citation_valid is True
+    assert report_no_cit.grounded is False
+    assert report_no_cit.citation_valid is False
+
+    # 2. With verified citation matching marker in answer, grounded must be True
+    cit = VerifiedCitation(
+        marker=1,
+        citation_text="(1978) 1 SCC 248",
+        source_chunk_id="chunk_1",
+        source_document_id="doc_1",
+        source_document_title="Maneka Gandhi v. Union of India",
+        verification_status="VERIFIED",
+        confidence=1.0,
+        provenance_intact=True,
+    )
+    report_verified = validate_response_groundedness(
+        answer="In 1978, Maneka Gandhi expanded Article 21 [1].",
+        citations=[cit],
+        query_analysis=qa,
+        resolved_version=None,
+        insufficient_evidence=False,
+    )
+    assert report_verified.grounded is True
+    assert report_verified.temporal_valid is True
+    assert report_verified.citation_valid is True

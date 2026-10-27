@@ -22,11 +22,13 @@ from fastapi import (
     UploadFile,
     status,
 )
-from sqlalchemy import func, select
+from sqlalchemy import String, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from fastapi.responses import FileResponse
+
 from app.auth.dependencies import get_current_user, require_admin
-from app.core.config import Settings, get_settings
+from app.core.config import Settings, get_data_dir, get_settings
 from app.db.session import get_session
 from app.ingestion.pipeline import IngestionError, run_pipeline
 from app.ingestion.validator import validate_pdf
@@ -204,10 +206,12 @@ async def list_documents(
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
     status_filter: str | None = Query(None, alias="status"),
+    type_filter: str | None = Query(None, alias="type"),
+    search: str | None = Query(None),
     _user: User = Depends(get_current_user),
     session: AsyncSession = Depends(get_session),
 ) -> PaginatedDocuments:
-    """Return a paginated list of registered documents."""
+    """Return a paginated list of registered documents with optional filtering and search."""
     query = select(Document)
     count_query = select(func.count()).select_from(Document)
 
@@ -221,6 +225,23 @@ async def list_documents(
             ) from None
         query = query.where(Document.status == ds)
         count_query = count_query.where(Document.status == ds)
+
+    if type_filter:
+        try:
+            dt = DocumentType[type_filter.upper()]
+        except KeyError:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid type: {type_filter!r}",
+            ) from None
+        query = query.where(Document.type == dt)
+        count_query = count_query.where(Document.type == dt)
+
+    if search and search.strip():
+        term = f"%{search.strip()}%"
+        search_filter = Document.title.ilike(term) | Document.source.ilike(term)
+        query = query.where(search_filter)
+        count_query = count_query.where(search_filter)
 
     total = (await session.execute(count_query)).scalar_one()
     offset = (page - 1) * page_size
@@ -252,10 +273,11 @@ async def list_processing_jobs(
     status_filter: str | None = Query(None, alias="status"),
     stage_filter: str | None = Query(None, alias="stage"),
     document_id: UUID | None = Query(None),
+    search: str | None = Query(None),
     _admin: User = Depends(require_admin),
     session: AsyncSession = Depends(get_session),
 ) -> PaginatedProcessingJobs:
-    """Return paginated processing jobs with joined document metadata and persisted errors."""
+    """Return paginated processing jobs with joined document metadata, search, and global status counts."""
     query = select(ProcessingJob, Document.title, Document.type, Document.status).outerjoin(
         Document, ProcessingJob.document_id == Document.id
     )
@@ -287,6 +309,15 @@ async def list_processing_jobs(
         query = query.where(ProcessingJob.document_id == document_id)
         count_query = count_query.where(ProcessingJob.document_id == document_id)
 
+    if search and search.strip():
+        term = f"%{search.strip()}%"
+        id_col = func.cast(ProcessingJob.id, String)
+        search_filter = Document.title.ilike(term) | id_col.ilike(term)
+        query = query.where(search_filter)
+        count_query = count_query.outerjoin(
+            Document, ProcessingJob.document_id == Document.id
+        ).where(search_filter)
+
     total = (await session.execute(count_query)).scalar_one()
     offset = (page - 1) * page_size
     rows = (
@@ -294,6 +325,17 @@ async def list_processing_jobs(
             query.order_by(ProcessingJob.created_at.desc()).offset(offset).limit(page_size)
         )
     ).all()
+
+    # Calculate global status counts across all jobs in system (not limited to current page)
+    status_counts_rows = (
+        await session.execute(
+            select(ProcessingJob.status, func.count(ProcessingJob.id)).group_by(ProcessingJob.status)
+        )
+    ).all()
+    counts = {
+        (s.value if hasattr(s, "value") else str(s)).lower(): c
+        for s, c in status_counts_rows
+    }
 
     items = [
         ProcessingJobSummary(
@@ -316,6 +358,7 @@ async def list_processing_jobs(
         total=total,
         page=page,
         page_size=page_size,
+        counts=counts,
     )
 
 
@@ -336,6 +379,42 @@ async def get_document(
     if doc is None:
         raise HTTPException(status_code=404, detail="Document not found")
     return DocumentDetail.model_validate(doc)
+
+
+@router.get(
+    "/{document_id}/pdf",
+    summary="Get source PDF for a document",
+    response_class=FileResponse,
+)
+async def get_document_pdf(
+    document_id: UUID,
+    _user: User = Depends(get_current_user),
+    session: AsyncSession = Depends(get_session),
+    settings: Settings = Depends(get_settings),
+) -> FileResponse:
+    doc = await session.get(Document, document_id)
+    if doc is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    data_dir = Path(settings.data_dir).resolve() if settings.data_dir else get_data_dir()
+
+    candidate_paths: list[Path] = []
+    if doc.file_path:
+        candidate_paths.append(Path(doc.file_path))
+    candidate_paths.append(data_dir / "raw" / str(document_id) / "original.pdf")
+
+    for candidate in candidate_paths:
+        if candidate.is_file():
+            return FileResponse(
+                path=candidate,
+                media_type="application/pdf",
+                filename=f"{doc.title or 'document'}.pdf",
+            )
+
+    raise HTTPException(
+        status_code=404,
+        detail="Source PDF file is not available on this server",
+    )
 
 
 # ── Chunks ─────────────────────────────────────────────────────────────────────

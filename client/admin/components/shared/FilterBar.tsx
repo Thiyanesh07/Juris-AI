@@ -24,25 +24,26 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   return (
     <div
       className={cn(
-        'p-3 rounded-xl bg-[#EFF3F7] border border-[#C9D4E1] flex flex-col md:flex-row items-center gap-3 justify-between',
+        'p-3 rounded-xl bg-[#EFF3F7] border border-[#C9D4E1] flex flex-col sm:flex-row items-stretch sm:items-center gap-3 justify-between',
         className
       )}
     >
-      <div className="relative w-full md:w-80">
+      <div className="relative w-full sm:w-80 shrink-0">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#718096]" />
         <Input
           value={searchValue}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder={placeholder}
           density="dense"
-          className="pl-9 bg-white"
+          className="pl-9 bg-white w-full"
+          aria-label={placeholder}
         />
       </div>
 
-      <div className="flex items-center gap-2.5 w-full md:w-auto overflow-x-auto justify-end">
-        {filters && <div className="flex items-center gap-2">{filters}</div>}
+      <div className="flex flex-wrap items-center gap-2.5 w-full sm:w-auto justify-start sm:justify-end">
+        {filters && <div className="flex flex-wrap items-center gap-2">{filters}</div>}
         {onReset && (
-          <Button variant="ghost" size="sm" onClick={onReset} className="text-xs text-[#526176]">
+          <Button variant="ghost" size="sm" onClick={onReset} className="text-xs text-[#526176] shrink-0">
             <RotateCcw className="h-3.5 w-3.5 mr-1.5" />
             Reset
           </Button>

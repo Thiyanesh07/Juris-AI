@@ -97,9 +97,9 @@ class OpenAICompatibleProvider:
                     # Respect Retry-After header or use exponential backoff
                     retry_after = response.headers.get("Retry-After")
                     if retry_after and retry_after.isdigit():
-                        wait_time = float(retry_after)
+                        wait_time = min(float(retry_after), 2.0)
                     else:
-                        wait_time = (2 ** attempt) + random.uniform(0, 1)
+                        wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
 
                     logger.info("LLM provider returned HTTP %s. Retrying in %.2fs (attempt %d/%d)", response.status_code, wait_time, attempt + 1, max_retries)
                     await asyncio.sleep(wait_time)
@@ -109,12 +109,20 @@ class OpenAICompatibleProvider:
                     logger.warning("LLM provider rejected request with HTTP %s", response.status_code)
                     raise LLMProviderUnavailable("LLM provider rejected the request")
 
-            except (httpx.TimeoutException, httpx.RequestError) as exc:
+            except httpx.TimeoutException as exc:
+                if attempt == max_retries:
+                    logger.warning("LLM request timed out after %d retries: %s", max_retries, type(exc).__name__)
+                    raise LLMProviderTimeout("LLM provider timed out") from exc
+
+                wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
+                logger.info("LLM request timed out (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
+                await asyncio.sleep(wait_time)
+            except httpx.RequestError as exc:
                 if attempt == max_retries:
                     logger.warning("LLM request failed after %d retries: %s", max_retries, type(exc).__name__)
                     raise LLMProviderUnavailable("LLM provider is unreachable") from exc
 
-                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
                 logger.info("LLM request failed (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
                 await asyncio.sleep(wait_time)
 
@@ -155,13 +163,16 @@ class GoogleGenAIProvider:
         self._settings = settings
         self._api_key = settings.llm_api_key.strip()
         self._model = settings.llm_model.strip() or "gemini-1.5-flash"
-        
-        base = settings.llm_base_url.rstrip("/") if settings.llm_base_url else ""
-        if base and "openai" in base:
-            self._openai_provider: OpenAICompatibleProvider | None = OpenAICompatibleProvider(settings)
+        model_id = self._model if self._model.startswith("models/") else f"models/{self._model}"
+
+        # Google GenAI uses the Generative Language API endpoint.
+        # If an explicit Google GenAI base URL is provided (e.g. custom proxy or private endpoint
+        # targeting generativelanguage or googleapis.com), respect it.
+        # Otherwise, or if base_url points to an unrelated/OpenAI endpoint, default to the official endpoint.
+        base = (settings.llm_base_url or "").strip().rstrip("/")
+        if base and ("googleapis.com" in base or "generativelanguage" in base):
+            self._url = f"{base}/{model_id}:generateContent?key={self._api_key}"
         else:
-            self._openai_provider = None
-            model_id = self._model if self._model.startswith("models/") else f"models/{self._model}"
             self._url = f"https://generativelanguage.googleapis.com/v1beta/{model_id}:generateContent?key={self._api_key}"
 
     async def generate(
@@ -174,14 +185,6 @@ class GoogleGenAIProvider:
     ) -> str:
         if not self._api_key:
             raise LLMProviderUnavailable("LLM API key is not configured")
-
-        if self._openai_provider is not None:
-            return await self._openai_provider.generate(
-                system_message=system_message,
-                user_message=user_message,
-                timeout_seconds=timeout_seconds,
-                max_output_tokens=max_output_tokens,
-            )
 
         headers = {"Content-Type": "application/json"}
         payload = {
@@ -216,9 +219,9 @@ class GoogleGenAIProvider:
                     # Respect Retry-After header or use exponential backoff
                     retry_after = response.headers.get("Retry-After")
                     if retry_after and retry_after.isdigit():
-                        wait_time = float(retry_after)
+                        wait_time = min(float(retry_after), 2.0)
                     else:
-                        wait_time = (2 ** attempt) + random.uniform(0, 1)
+                        wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
 
                     logger.info("Google GenAI returned HTTP %s. Retrying in %.2fs (attempt %d/%d)", response.status_code, wait_time, attempt + 1, max_retries)
                     await asyncio.sleep(wait_time)
@@ -228,12 +231,20 @@ class GoogleGenAIProvider:
                     logger.warning("Google GenAI rejected request with HTTP %s: %s", response.status_code, response.text[:200])
                     raise LLMProviderUnavailable(f"LLM provider rejected request (HTTP {response.status_code})")
 
-            except (httpx.TimeoutException, httpx.RequestError) as exc:
+            except httpx.TimeoutException as exc:
+                if attempt == max_retries:
+                    logger.warning("Google GenAI LLM request timed out after %d retries: %s", max_retries, type(exc).__name__)
+                    raise LLMProviderTimeout("Google GenAI LLM provider timed out") from exc
+
+                wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
+                logger.info("Google GenAI LLM request timed out (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
+                await asyncio.sleep(wait_time)
+            except httpx.RequestError as exc:
                 if attempt == max_retries:
                     logger.warning("Google GenAI LLM request failed after %d retries: %s", max_retries, type(exc).__name__)
                     raise LLMProviderUnavailable("LLM provider is unreachable") from exc
 
-                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                wait_time = min((2 ** attempt) + random.uniform(0, 0.5), 2.0)
                 logger.info("Google GenAI LLM request failed (%s). Retrying in %.2fs (attempt %d/%d)", type(exc).__name__, wait_time, attempt + 1, max_retries)
                 await asyncio.sleep(wait_time)
 
@@ -280,13 +291,16 @@ def build_llm_provider(settings: Settings) -> LLMProvider:
     if not settings.llm_api_key.strip():
         raise LLMProviderUnavailable("LLM API key is not configured")
 
+    if not provider_name:
+        raise LLMProviderUnavailable("LLM provider is not configured")
+
     if provider_name in ("google_genai", "gemini"):
         return GoogleGenAIProvider(settings)
     elif provider_name in ("openai_compatible", "openai", "groq", "together"):
+        if not settings.llm_base_url.strip():
+            raise LLMProviderUnavailable("LLM base URL is not configured for OpenAI-compatible provider")
         return OpenAICompatibleProvider(settings)
     else:
-        if settings.llm_base_url and settings.llm_base_url.startswith("http"):
-            return OpenAICompatibleProvider(settings)
         raise LLMProviderUnavailable(
             f"Unsupported LLM provider: {settings.llm_provider!r}"
         )

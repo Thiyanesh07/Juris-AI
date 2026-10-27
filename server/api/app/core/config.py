@@ -185,13 +185,32 @@ class Settings(BaseSettings):
     llm_max_output_tokens: int = 800
     llm_max_retries: int = 3
     qa_max_evidence: int = 5
-    qa_max_context_chars: int = 12000
+    qa_max_context_chars: int = 24000
     qa_max_chunk_chars: int = 4000
 
     @model_validator(mode="after")
     def _apply_google_oauth_defaults(self) -> "Settings":
         if not self.google_redirect_uri:
-            self.google_redirect_uri = f"http://{self.backend_host}:{self.backend_port}/auth/google/callback"
+            if self.app_env == "production":
+                self.google_redirect_uri = "https://juris-ai-user.vercel.app/auth/google/callback"
+            else:
+                self.google_redirect_uri = f"http://{self.backend_host}:{self.backend_port}/auth/google/callback"
+
+        if self.app_env == "production":
+            allowed_parts = [p.strip() for p in self.google_allowed_redirect_uris.split(",") if p.strip()]
+            if not allowed_parts or any(p.startswith("http://localhost") for p in allowed_parts):
+                self.google_allowed_redirect_uris = (
+                    "https://juris-ai-admin.vercel.app/admin/auth/google/callback,"
+                    "https://juris-ai-user.vercel.app/auth/google/callback"
+                )
+            elif "https://juris-ai-admin.vercel.app/admin/auth/google/callback" not in allowed_parts and any("juris-ai-admin" in p for p in allowed_parts):
+                allowed_parts.append("https://juris-ai-admin.vercel.app/admin/auth/google/callback")
+                self.google_allowed_redirect_uris = ",".join(allowed_parts)
+        elif not self.google_allowed_redirect_uris:
+            self.google_allowed_redirect_uris = (
+                "http://localhost:3001/admin/auth/google/callback,"
+                "http://localhost:3002/auth/google/callback"
+            )
 
         if not self.google_client_id or not self.google_client_secret:
             creds_path = (
@@ -278,6 +297,12 @@ class Settings(BaseSettings):
             raise ValueError(
                 "qa_max_chunk_chars must be between 500 and qa_max_context_chars"
             )
+        return self
+
+    @model_validator(mode="after")
+    def _normalize_llm_settings(self) -> "Settings":
+        self.llm_provider = (self.llm_provider or "").strip().lower()
+        self.llm_base_url = (self.llm_base_url or "").strip()
         return self
 
 

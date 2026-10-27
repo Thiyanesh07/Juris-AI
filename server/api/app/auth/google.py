@@ -46,13 +46,30 @@ def _digest(value: str) -> str:
 
 
 def allowed_redirect_uris(settings: Settings) -> frozenset[str]:
-    values = [settings.google_redirect_uri]
-    values.extend(
-        part.strip()
-        for part in settings.google_allowed_redirect_uris.split(",")
-        if part.strip()
-    )
-    return frozenset(value for value in values if value)
+    values: set[str] = set()
+    if settings.google_redirect_uri and settings.google_redirect_uri.strip():
+        values.add(settings.google_redirect_uri.strip())
+    for part in settings.google_allowed_redirect_uris.split(","):
+        candidate = part.strip()
+        if candidate:
+            values.add(candidate)
+            # Accept admin portal callback when configured with either prefix
+            if "juris-ai-admin" in candidate and candidate.endswith("/auth/google/callback"):
+                values.add(candidate.replace("/auth/google/callback", "/admin/auth/google/callback"))
+            elif "juris-ai-admin" in candidate and candidate.endswith("/admin/auth/google/callback"):
+                values.add(candidate.replace("/admin/auth/google/callback", "/auth/google/callback"))
+            elif ":3001" in candidate and candidate.endswith("/auth/google/callback"):
+                values.add(candidate.replace("/auth/google/callback", "/admin/auth/google/callback"))
+
+    # Include known first-party portal callbacks according to environment
+    if settings.app_env != "production":
+        values.add("http://localhost:3001/admin/auth/google/callback")
+        values.add("http://localhost:3002/auth/google/callback")
+    else:
+        values.add("https://juris-ai-admin.vercel.app/admin/auth/google/callback")
+        values.add("https://juris-ai-user.vercel.app/auth/google/callback")
+
+    return frozenset(values)
 
 
 def validate_redirect_uri(settings: Settings, redirect_uri: str | None) -> str:

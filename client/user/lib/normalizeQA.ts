@@ -26,10 +26,10 @@ import type {
   TimelineEvent,
 } from './types';
 
-function normalizeEvidence(items: BackendHybridEvidence[]): EvidenceItem[] {
-  return items.map((item) => {
-    const hasDense = item.evidence_sources.includes('dense');
-    const hasGraph = item.evidence_sources.includes('graph');
+export function normalizeEvidence(items: BackendHybridEvidence[]): EvidenceItem[] {
+  return (items || []).map((item) => {
+    const hasDense = item.evidence_sources ? item.evidence_sources.includes('dense') : true;
+    const hasGraph = item.evidence_sources ? item.evidence_sources.includes('graph') : false;
     const retrievalSource: EvidenceItem['retrievalSource'] =
       hasDense && hasGraph ? 'HYBRID' : hasGraph ? 'GRAPH' : 'VECTOR';
 
@@ -41,12 +41,43 @@ function normalizeEvidence(items: BackendHybridEvidence[]): EvidenceItem[] {
       }
     }
 
+    const docTitle = item.document_title || '';
+    const citRef = item.citation_ref || '';
+    const isJudgment =
+      docTitle.includes(' v. ') ||
+      docTitle.includes(' v ') ||
+      docTitle.includes(' Versus ') ||
+      docTitle.toLowerCase().includes('union of india');
+    const isConstitution = docTitle.toLowerCase().includes('constitution of india');
+    const isAmendment = docTitle.toLowerCase().includes('amendment');
+    const isRule = docTitle.toLowerCase().includes('rule') || docTitle.toLowerCase().includes('regulation');
+
+    let entityType: EntityType = 'ACT';
+    let docType: EvidenceItem['sourceDocumentType'] = 'ACT';
+
+    if (isJudgment) {
+      entityType = 'JUDGMENT';
+      docType = 'JUDGMENT';
+    } else if (isConstitution) {
+      docType = 'CONSTITUTION';
+      entityType = /article|art\./i.test(citRef) ? 'ARTICLE' : 'ACT';
+    } else if (isAmendment) {
+      entityType = 'AMENDMENT';
+      docType = 'AMENDMENT';
+    } else if (isRule) {
+      entityType = 'RULE';
+      docType = 'RULE';
+    } else if (/section|sec\.|s\./i.test(citRef)) {
+      entityType = 'SECTION';
+      docType = 'ACT';
+    }
+
     return {
       id: `ev_${item.chunk_id}`,
       entityName: item.document_title,
-      entityType: 'ACT' as const,
+      entityType,
       sourceDocumentTitle: item.document_title,
-      sourceDocumentType: 'ACT' as const,
+      sourceDocumentType: docType,
       provision: item.citation_ref ?? `Chunk ${item.chunk_index}`,
       relevanceScore: item.hybrid_score,
       excerpt: item.text,
@@ -54,16 +85,26 @@ function normalizeEvidence(items: BackendHybridEvidence[]): EvidenceItem[] {
       denseScore: item.dense_score,
       graphScore: item.graph_score,
       hybridScore: item.hybrid_score,
+      scoreType: item.score_type ?? 'Calibrated Fusion Score',
+      verificationStatus: item.verification_status ?? 'UNVERIFIED',
+      pageStart: item.page_start,
+      pageEnd: item.page_end,
       rank: item.rank,
       chunkId: item.chunk_id,
       documentId: item.document_id,
       sourceUrl: item.source_url ?? undefined,
+      pdfUrl: item.pdf_url ?? (item.document_id ? `/api/v1/documents/${item.document_id}/pdf` : undefined),
       hierarchy: item.hierarchy,
     };
   });
 }
 
-function normalizeCitations(citations: BackendQACitation[]): Citation[] {
+export function normalizeCitations(
+  citations: BackendQACitation[],
+  evidenceItems: BackendHybridEvidence[] = []
+): Citation[] {
+  const evidenceByChunkId = new Map(evidenceItems.map(ev => [ev.chunk_id, ev]));
+
   return citations.map((cit) => {
     let sourceLocation = cit.document_title;
     if (cit.page_start != null) {
@@ -81,20 +122,46 @@ function normalizeCitations(citations: BackendQACitation[]): Citation[] {
     };
     const status = statusMap[cit.verification_status ?? 'UNVERIFIED'] ?? 'UNVERIFIED';
 
+    const docTitle = cit.document_title || '';
+    const isJudgment =
+      docTitle.includes(' v. ') ||
+      docTitle.includes(' v ') ||
+      docTitle.includes(' Versus ') ||
+      docTitle.toLowerCase().includes('union of india');
+
+    const isConstitution = docTitle.toLowerCase().includes('constitution of india');
+    const docType: Citation['documentType'] = isJudgment
+      ? 'JUDGMENT'
+      : isConstitution
+        ? 'CONSTITUTION'
+        : 'ACT';
+
+    let displayProvision = cit.citation_ref ?? `Chunk ${cit.chunk_index}`;
+    if (isJudgment && cit.citation_ref) {
+      displayProvision = `${cit.citation_ref} (in ${docTitle})`;
+    }
+
+    const matchingEv = evidenceByChunkId.get(cit.chunk_id);
+    const excerpt = matchingEv?.text || '';
+    const pdfUrl = cit.pdf_url ?? matchingEv?.pdf_url ?? (cit.document_id ? `/api/v1/documents/${cit.document_id}/pdf` : undefined);
+
     return {
       id: `cit_${cit.chunk_id}_${cit.marker}`,
       index: cit.marker,
-      caseName: undefined,
-      court: undefined,
+      caseName: isJudgment ? docTitle : undefined,
+      court: isJudgment ? 'Supreme Court of India' : undefined,
       year: undefined,
       citation: cit.citation_ref ?? cit.document_title,
-      documentType: 'ACT' as const,
-      provision: cit.citation_ref ?? `Chunk ${cit.chunk_index}`,
+      documentType: docType,
+      provision: displayProvision,
       sourceDocumentTitle: cit.document_title,
       sourceLocation,
-      excerpt: '',
+      excerpt,
       status,
       sourceUrl: cit.source_url ?? undefined,
+      pdfUrl: pdfUrl ?? undefined,
+      pageStart: cit.page_start,
+      pageEnd: cit.page_end,
       chunkId: cit.chunk_id,
       documentId: cit.document_id,
       evidenceRank: cit.evidence_rank,
@@ -102,21 +169,86 @@ function normalizeCitations(citations: BackendQACitation[]): Citation[] {
   });
 }
 
+
+
+import { layoutGraphNodes } from './graphLayout';
+
+export function normalizeGraphNodes(rawNodes: any[]): GraphNode[] {
+  const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  return (rawNodes || []).map((n, idx) => {
+    const rawType = (n.type || '').toUpperCase();
+    let entityType: EntityType | 'QUERY' | 'INTERPRETATION' = 'ACT';
+    if (n.isQuery || rawType === 'QUERY') entityType = 'QUERY';
+    else if (rawType === 'ARTICLE') entityType = 'ARTICLE';
+    else if (rawType === 'SECTION') entityType = 'SECTION';
+    else if (rawType === 'JUDGMENT') entityType = 'JUDGMENT';
+    else if (rawType === 'AMENDMENT') entityType = 'AMENDMENT';
+    else if (rawType === 'COURT') entityType = 'COURT';
+    else if (rawType === 'RULE' || rawType === 'REGULATION') entityType = 'RULE';
+    else if (rawType === 'PRINCIPLE' || rawType === 'DOCTRINE' || rawType === 'CONCEPT') entityType = 'PRINCIPLE';
+    else if (rawType === 'ACT' || rawType === 'STATUTE' || rawType === 'CONSTITUTION') entityType = 'ACT';
+
+    let displayLabel = String(n.label || '').trim();
+    if (!displayLabel || UUID_REGEX.test(displayLabel)) {
+      displayLabel = entityType === 'ARTICLE'
+        ? 'Constitutional Article'
+        : entityType === 'SECTION'
+        ? 'Statutory Section'
+        : entityType === 'JUDGMENT'
+        ? 'Judicial Precedent'
+        : entityType === 'AMENDMENT'
+        ? 'Constitutional Amendment'
+        : entityType === 'COURT'
+        ? 'Judicial Authority'
+        : 'Legal Authority';
+    }
+
+    const x = typeof n.x === 'number' && !isNaN(n.x) ? n.x : 500;
+    const y = typeof n.y === 'number' && !isNaN(n.y) ? n.y : 300;
+
+    return {
+      id: String(n.id || `node_${idx}`),
+      label: displayLabel,
+      type: entityType,
+      x,
+      y,
+      isQuery: Boolean(n.isQuery),
+      isSeed: Boolean(n.isSeed),
+    };
+  });
+}
+
+export function normalizeGraphEdges(rawEdges: any[]): GraphEdge[] {
+  return (rawEdges || []).map((e, idx) => ({
+    id: String(e.id || `edge_${idx}`),
+    sourceId: String(e.sourceId || e.source_id || e.source),
+    targetId: String(e.targetId || e.target_id || e.target),
+    label: String(e.label || e.type || e.relationship || 'CONNECTS_TO').toUpperCase(),
+  }));
+}
+
 export function normalizeQAResponse(
   response: BackendQAAskResponse,
 ): ResearchResult {
-  const citations = normalizeCitations(response.citations);
+  const citations = normalizeCitations(response.citations, response.evidence);
   const evidence = normalizeEvidence(response.evidence);
 
   let citationStatus: ResearchResult['citationStatus'] = 'UNVERIFIED';
   if (response.citation_validation) {
     const val = response.citation_validation;
-    if (val.total > 0 && val.unverified === 0 && val.verified > 0) {
+    const verifiedCount = val.verified_count ?? val.verified ?? 0;
+    const unverifiedCount = val.unverified_count ?? val.unverified ?? 0;
+    const isGrounded = val.grounded ?? false;
+
+    // Never treat zero verified citations as ALL_VERIFIED or fully grounded
+    if (isGrounded && verifiedCount > 0 && unverifiedCount === 0) {
       citationStatus = 'ALL_VERIFIED';
-    } else if (val.verified > 0 || val.partially_verified > 0) {
+    } else if (verifiedCount > 0) {
       citationStatus = 'PARTIAL';
+    } else {
+      citationStatus = 'UNVERIFIED';
     }
-  } else if (citations.some((c) => c.status === 'VERIFIED')) {
+  } else if (citations.length > 0 && citations.some((c) => c.status === 'VERIFIED')) {
     citationStatus = citations.every((c) => c.status === 'VERIFIED') ? 'ALL_VERIFIED' : 'PARTIAL';
   }
 
@@ -138,24 +270,10 @@ export function normalizeQAResponse(
     llmCalled: response.llm_called,
   };
 
-  // Phase 14: Real Knowledge Graph Nodes & Edges from Backend
-  const graphNodes: GraphNode[] = (response.graph?.nodes || []).map((n) => ({
-    id: n.id,
-    label: n.label,
-    type: (n.type || 'ACT') as EntityType | 'QUERY' | 'INTERPRETATION',
-    x: n.x ?? 380,
-    y: n.y ?? 200,
-    isQuery: n.isQuery,
-    isSeed: n.isSeed,
-  }));
-
-  const graphEdges: GraphEdge[] = (response.graph?.edges || []).map((e) => ({
-    id: e.id,
-    sourceId: e.sourceId,
-    targetId: e.targetId,
-    label: e.label,
-  }));
-
+  // Phase 14 / Phase 5: Knowledge Graph with deterministic radial layout
+  const rawGraphNodes = normalizeGraphNodes(response.graph?.nodes || []);
+  const graphEdges = normalizeGraphEdges(response.graph?.edges || []);
+  const graphNodes = layoutGraphNodes(rawGraphNodes, graphEdges);
   const graphAvailable = (response.graph?.available ?? false) && graphNodes.length > 0;
 
   // Phase 14: Real Structured Reasoning Steps from Backend
@@ -174,12 +292,30 @@ export function normalizeQAResponse(
     id: te.id,
     year: te.year,
     title: te.title,
-    documentType: (te.document_type || 'ACT') as unknown as TimelineEvent['documentType'],
+    documentType: ((te as any).documentType || te.document_type || 'ACT') as unknown as TimelineEvent['documentType'],
     description: te.description,
     importance: (te.importance || 'MEDIUM') as 'HIGH' | 'MEDIUM' | 'LOW',
   }));
 
   const timelineAvailable = timeline.length > 0;
+
+  // Determine user-friendly non-blocking banner state
+  let infoBannerState: ResearchResult['infoBannerState'] = 'supported';
+  if (response.answer_status === 'technical_timeout') {
+    infoBannerState = 'timeout';
+  } else if (response.answer_status === 'general_fallback') {
+    infoBannerState = 'absent';
+  } else if (response.answer_status === 'partial_answer') {
+    infoBannerState = 'partial';
+  } else if (response.answer_status === 'insufficient_evidence') {
+    infoBannerState = evidence.length > 0 ? 'best_available' : 'absent';
+  } else if (response.insufficient_evidence) {
+    infoBannerState = evidence.length > 0 ? 'best_available' : 'absent';
+  } else if (citationStatus === 'PARTIAL' || citationStatus === 'UNVERIFIED') {
+    infoBannerState = evidence.length > 0 ? 'partial' : 'supported';
+  } else {
+    infoBannerState = 'supported';
+  }
 
   return {
     summary: answer,
@@ -189,6 +325,11 @@ export function normalizeQAResponse(
     disclaimer: response.disclaimer,
     insufficientEvidence: response.insufficient_evidence,
     status: response.status,
+    answerStatus: response.answer_status ?? (response.insufficient_evidence ? 'insufficient_evidence' : 'full_answer'),
+    missingAuthorities: response.missing_authorities ?? [],
+    gapType: response.gap_type ?? 'none',
+    notice: response.notice ?? null,
+    infoBannerState,
     retrieval,
     sourcesCount: evidence.length,
     citationStatus,

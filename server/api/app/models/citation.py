@@ -10,7 +10,7 @@ removed while evidence still cites it.
 from typing import TYPE_CHECKING
 from uuid import UUID
 
-from sqlalchemy import Float, ForeignKey, String, Text, Uuid
+from sqlalchemy import Float, ForeignKey, Integer, String, Text, Uuid
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base, CreatedAtMixin, new_uuid
@@ -32,7 +32,13 @@ class Citation(CreatedAtMixin, Base):
     document_id: Mapped[UUID | None] = mapped_column(
         ForeignKey("documents.id", ondelete="RESTRICT"), index=True, nullable=True
     )
+    chunk_id: Mapped[UUID | None] = mapped_column(Uuid, nullable=True)
+    marker: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    page_start: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    page_end: Mapped[int | None] = mapped_column(Integer, nullable=True)
     citation: Mapped[str] = mapped_column(Text, nullable=False)
+    citation_ref: Mapped[str | None] = mapped_column(String(256), nullable=True)
+    pdf_url: Mapped[str | None] = mapped_column(Text, nullable=True)
     relevance: Mapped[float | None] = mapped_column(Float, nullable=True)
     source_type: Mapped[str | None] = mapped_column(String(64), nullable=True)
 

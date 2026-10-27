@@ -87,7 +87,6 @@ export default function UsersListPage() {
       {/* Header */}
       <PageHeader
         title="Users"
-        subtitle="Manage client accounts, workspace memberships, and access controls."
         actions={
           <Link href={ADMIN_ROUTES.USER_NEW}>
             <Button variant="primary" size="md">

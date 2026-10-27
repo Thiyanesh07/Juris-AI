@@ -11,6 +11,7 @@ import ipaddress
 import math
 import threading
 import time
+import weakref
 from dataclasses import dataclass
 from typing import Final
 
@@ -33,6 +34,16 @@ _LIMITED_PATHS: Final = {
     "/documents/upload": "upload",
 }
 
+_ALL_LIMITERS: list[weakref.ref["InMemoryRateLimiter"]] = []
+
+
+def reset_rate_limiters() -> None:
+    """Clear all active rate limiter windows across all instances."""
+    for ref in _ALL_LIMITERS:
+        limiter = ref()
+        if limiter is not None:
+            limiter.clear()
+
 
 @dataclass
 class _Window:
@@ -47,6 +58,7 @@ class InMemoryRateLimiter:
         self._windows: dict[tuple[str, str], _Window] = {}
         self._lock = threading.Lock()
         self._max_entries = max_entries
+        _ALL_LIMITERS.append(weakref.ref(self))
 
     def allow(self, key: tuple[str, str], limit: int, window_seconds: int) -> int | None:
         """Return retry seconds when blocked, otherwise record and allow a request."""

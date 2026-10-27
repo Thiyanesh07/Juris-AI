@@ -53,6 +53,7 @@ function UserCallbackContent() {
           credentials: 'include',
           headers: {
             'Accept': 'application/json',
+            'X-Juris-Portal': 'user',
           },
         });
 

@@ -4,7 +4,7 @@ import React from 'react';
 import { ResearchResult, Citation } from '@/lib/types';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
-import { CheckCircle2, AlertCircle, FileText, ExternalLink, Bookmark, Scale } from 'lucide-react';
+import { CheckCircle2, AlertCircle, FileText, ExternalLink, Bookmark, Scale, FileX, Info } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
 
 interface AnswerTabProps {
@@ -24,29 +24,81 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
 }) => {
   const selectedCitation = result.citations.find(c => c.id === selectedCitationId);
 
-  // Helper to render text with clickable citation markers [1], [2] etc.
-  const renderTextWithCitations = (text: string) => {
-    const parts = text.split(/(\[\d+\])/g);
-    return parts.map((part, index) => {
-      const match = part.match(/^\[(\d+)\]$/);
-      if (match) {
-        const citationIndex = parseInt(match[1], 10);
-        const citation = result.citations.find(c => c.index === citationIndex);
-        const isSelected = citation && citation.id === selectedCitationId;
+  // Helper to parse tokens from inside brackets, e.g. "1, 2, 3-5" -> [1, 2, 3, 4, 5]
+  const parseCitationIndices = (rawInner: string): number[] => {
+    const indices: number[] = [];
+    const tokens = rawInner.split(/[,;]/);
+    for (const token of tokens) {
+      const trimmed = token.trim();
+      if (!trimmed) continue;
+      const rangeMatch = trimmed.match(/^(\d{1,2})\s*-\s*(\d{1,2})$/);
+      if (rangeMatch) {
+        const start = parseInt(rangeMatch[1], 10);
+        const end = parseInt(rangeMatch[2], 10);
+        if (start <= end && end - start <= 20) {
+          for (let i = start; i <= end; i++) {
+            if (!indices.includes(i)) indices.push(i);
+          }
+          continue;
+        }
+      }
+      const numMatch = trimmed.match(/^(\d{1,2})$/);
+      if (numMatch) {
+        const val = parseInt(numMatch[1], 10);
+        if (!indices.includes(val)) indices.push(val);
+      }
+    }
+    return indices;
+  };
 
-        return (
-          <sup key={index} className="mx-0.5 inline-block">
-            <button
-              onClick={() => citation && onSelectCitation(isSelected ? null : citation.id)}
-              className={`citation-marker ${
-                isSelected ? '!bg-[#1D4E8A] !text-white !border-[#132F52]' : ''
-              }`}
-              title={citation ? `${citation.caseName || citation.citation}` : `Citation ${citationIndex}`}
-            >
-              [{citationIndex}]
-            </button>
-          </sup>
-        );
+  // Helper to render text with clickable citation markers, supporting grouped markers like [1, 2, 3] or [1-3]
+  const renderTextWithCitations = (text: string) => {
+    // Match bracketed citation sequences with 1-2 digit numbers, excluding 4-digit years like [1978]
+    const groupRegex = /(\[(?:\s*\d{1,2}(?:\s*-\s*\d{1,2})?\s*[,;]?\s*)+\])/g;
+    const parts = text.split(groupRegex);
+
+    return parts.map((part, index) => {
+      const match = part.match(/^\[((?:\s*\d{1,2}(?:\s*-\s*\d{1,2})?\s*[,;]?\s*)+)\]$/);
+      if (match) {
+        const indices = parseCitationIndices(match[1]);
+        if (indices.length > 0) {
+          return (
+            <span key={index} className="inline-flex items-center gap-0.5 mx-0.5">
+              {indices.map((citationIndex) => {
+                const citation = result.citations.find(c => c.index === citationIndex);
+                const isSelected = citation && citation.id === selectedCitationId;
+
+                if (citation) {
+                  return (
+                    <sup key={citationIndex} className="inline-block">
+                      <button
+                        onClick={() => onSelectCitation(isSelected ? null : citation.id)}
+                        className={`citation-marker ${
+                          isSelected ? '!bg-[#1D4E8A] !text-white !border-[#132F52]' : ''
+                        }`}
+                        title={`${citation.caseName || citation.citation}`}
+                      >
+                        [{citationIndex}]
+                      </button>
+                    </sup>
+                  );
+                }
+
+                // Unresolved citation reference (marker in text without matching source in evidence)
+                return (
+                  <sup key={citationIndex} className="inline-block">
+                    <span
+                      className="citation-marker !bg-amber-100 !text-amber-800 !border-amber-400 cursor-help"
+                      title={`Unresolved reference [${citationIndex}]: source not found in retrieved evidence`}
+                    >
+                      [{citationIndex}]
+                    </span>
+                  </sup>
+                );
+              })}
+            </span>
+          );
+        }
       }
       return <React.Fragment key={index}>{part}</React.Fragment>;
     });
@@ -74,6 +126,48 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
               {isSaved ? 'Saved to Workspace' : 'Save Research'}
             </Button>
           </div>
+
+          {/* Non-blocking Notice Banner for Fallback & Partial Answers */}
+          {result.notice && (
+            <div
+              className={`p-4 rounded-lg mb-4 text-xs font-mono border-l-4 ${
+                result.answerStatus === 'general_fallback'
+                  ? 'border-l-blue-600 bg-blue-50 text-[#17253A]'
+                  : result.answerStatus === 'partial_answer'
+                  ? 'border-l-amber-500 bg-amber-50 text-[#17253A]'
+                  : 'border-l-slate-400 bg-slate-50 text-[#526176]'
+              }`}
+            >
+              <div className="flex items-start gap-2.5">
+                <Info
+                  className={`h-4 w-4 shrink-0 mt-0.5 ${
+                    result.answerStatus === 'general_fallback'
+                      ? 'text-blue-600'
+                      : result.answerStatus === 'partial_answer'
+                      ? 'text-amber-600'
+                      : 'text-slate-500'
+                  }`}
+                />
+                <div className="space-y-1">
+                  <p className="font-bold">
+                    {result.answerStatus === 'general_fallback'
+                      ? 'Corpus Coverage Notice (General Background)'
+                      : result.answerStatus === 'partial_answer'
+                      ? 'Partial Analysis Notice'
+                      : 'Retrieval Notice'}
+                  </p>
+                  <p className="leading-relaxed">{result.notice}</p>
+                  {result.missingAuthorities && result.missingAuthorities.length > 0 && (
+                    <p className="text-[11px] text-[#526176]">
+                      <span className="font-semibold">Unverified Authorities:</span>{' '}
+                      {result.missingAuthorities.join(', ')}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Real backend answer rendered with citation markers */}
           {result.answer ? (
             <div className="legal-answer-body text-base leading-relaxed">
@@ -182,20 +276,42 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
               )}
               <div className="flex items-center justify-between text-[11px] font-mono text-[#718096] pt-1">
                 <span>Location: {selectedCitation.sourceLocation}</span>
-                <Badge variant="warning">
+                <Badge variant={selectedCitation.status === 'VERIFIED' ? 'success' : 'warning'}>
                   {selectedCitation.status}
                 </Badge>
               </div>
-              {selectedCitation.sourceUrl && (
+
+              {/* Source Document & PDF Navigation */}
+              {selectedCitation.pdfUrl ? (
+                <a
+                  href={`${selectedCitation.pdfUrl}#page=${selectedCitation.pageStart || 1}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-[11px] text-[#1D4E8A] hover:underline font-mono font-semibold"
+                >
+                  <FileText className="h-3.5 w-3.5" /> View Source PDF {selectedCitation.pageStart != null ? `(p. ${selectedCitation.pageStart})` : ''}
+                </a>
+              ) : null}
+
+              {selectedCitation.sourceUrl && (selectedCitation.sourceUrl.startsWith('http://') || selectedCitation.sourceUrl.startsWith('https://')) ? (
                 <a
                   href={selectedCitation.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-[11px] text-[#1D4E8A] hover:underline font-mono"
+                  className="flex items-center gap-1.5 text-[11px] text-[#1D4E8A] hover:underline font-mono"
                 >
-                  <ExternalLink className="h-3 w-3" /> Source URL
+                  <ExternalLink className="h-3 w-3" /> External Source Link
                 </a>
-              )}
+              ) : selectedCitation.sourceUrl ? (
+                <div className="text-[11px] font-mono text-[#526176] bg-white p-2 rounded border border-[#CBD5E0]">
+                  <span className="font-bold text-[#718096]">Reporter Ref: </span>
+                  {selectedCitation.sourceUrl}
+                </div>
+              ) : !selectedCitation.pdfUrl ? (
+                <div className="flex items-center gap-1.5 text-[11px] text-[#718096] font-mono italic">
+                  <FileX className="h-3.5 w-3.5 text-[#A0AEC0]" /> Source document not available online
+                </div>
+              ) : null}
             </div>
           </div>
         ) : (
@@ -211,8 +327,8 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
               <FileText className="h-4 w-4 text-[#1D4E8A]" />
               Cited Sources ({result.citations.length})
             </h3>
-            <Badge variant="warning">
-              {result.citationStatus === 'ALL_VERIFIED' ? 'All Verified' : 'Unverified'}
+            <Badge variant={result.citationStatus === 'ALL_VERIFIED' ? 'success' : result.citationStatus === 'PARTIAL' ? 'warning' : 'default'}>
+              {result.citationStatus === 'ALL_VERIFIED' ? 'All Verified' : result.citationStatus === 'PARTIAL' ? 'Partial' : 'Unverified'}
             </Badge>
           </div>
 
@@ -236,8 +352,12 @@ export const GroundedAnswerTab: React.FC<AnswerTabProps> = ({
                   >
                     <div className="flex items-start justify-between gap-2 mb-1">
                       <span className="font-mono text-xs font-bold text-[#1D4E8A]">[{cit.index}]</span>
-                      <Badge variant="warning">
-                        <AlertCircle className="h-2.5 w-2.5" />
+                      <Badge variant={cit.status === 'VERIFIED' ? 'success' : cit.status === 'NEEDS_REVIEW' ? 'warning' : 'default'}>
+                        {cit.status === 'VERIFIED' ? (
+                          <CheckCircle2 className="h-2.5 w-2.5" />
+                        ) : (
+                          <AlertCircle className="h-2.5 w-2.5" />
+                        )}
                       </Badge>
                     </div>
                     <p className="text-xs font-semibold text-[#17253A] font-sans line-clamp-1">

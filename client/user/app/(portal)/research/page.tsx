@@ -76,11 +76,18 @@ function ResearchWorkspaceContent() {
     }
   }, [fromId, pipelineStatus, openHistorySession]);
 
+  const isProcessing = pipelineStatus === 'ANALYZING' || pipelineStatus === 'RUNNING';
+
   const handleRunResearch = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    // Allow re-submission from IDLE or ERROR state
-    if (!queryInput.trim() || (pipelineStatus !== 'IDLE' && pipelineStatus !== 'ERROR')) return;
-    startResearch(queryInput.trim(), selectedMode);
+    if (!queryInput.trim() || isProcessing) return;
+    const q = queryInput.trim();
+    startResearch(q, selectedMode);
+  };
+
+  const handleReset = () => {
+    setQueryInput('');
+    clearResearch();
   };
 
   return (
@@ -93,7 +100,7 @@ function ResearchWorkspaceContent() {
             Legal Research Workspace
           </h1>
           <p className="text-xs font-mono text-[#526176] mt-0.5">
-            Graph-RAG Multi-Hop Reasoning over Indian Constitutional and Statutory Law
+            Indian constitutional and statutory research
           </p>
         </div>
 
@@ -110,10 +117,10 @@ function ResearchWorkspaceContent() {
             <Button
               variant="ghost"
               size="sm"
-              onClick={clearResearch}
+              onClick={handleReset}
               className="gap-1.5 text-[#526176]"
             >
-              <RotateCcw className="h-3.5 w-3.5" /> Reset
+              <RotateCcw className="h-3.5 w-3.5" /> New Research
             </Button>
           </div>
         )}
@@ -127,9 +134,13 @@ function ResearchWorkspaceContent() {
               rows={3}
               value={queryInput}
               onChange={e => setQueryInput(e.target.value)}
-              placeholder="Enter your legal research query (e.g., 'How has the interpretation of Article 21 evolved through Supreme Court decisions?')..."
+              placeholder={
+                currentSession?.result && pipelineStatus === 'COMPLETE'
+                  ? "Ask a follow-up question in this session (e.g., 'What are the exceptions to this rule?')..."
+                  : "Enter your legal research query (e.g., 'How has the interpretation of Article 21 evolved through Supreme Court decisions?')..."
+              }
               className="research-textarea p-4 text-sm font-sans"
-              disabled={pipelineStatus !== 'IDLE'}
+              disabled={isProcessing}
             />
           </div>
 
@@ -144,7 +155,7 @@ function ResearchWorkspaceContent() {
                   key={opt.id}
                   type="button"
                   onClick={() => setSelectedMode(opt.id)}
-                  disabled={pipelineStatus !== 'IDLE'}
+                  disabled={isProcessing}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                     selectedMode === opt.id
                       ? 'bg-[#1D4E8A] text-white shadow-xs font-bold'
@@ -161,12 +172,16 @@ function ResearchWorkspaceContent() {
               type="submit"
               variant="primary"
               size="md"
-              disabled={!queryInput.trim() || (pipelineStatus !== 'IDLE' && pipelineStatus !== 'ERROR')}
-              isLoading={pipelineStatus === 'ANALYZING' || pipelineStatus === 'RUNNING'}
+              disabled={!queryInput.trim() || isProcessing}
+              isLoading={isProcessing}
               className="gap-2 shrink-0 px-6 font-semibold"
             >
               <Search className="h-4 w-4" />
-              {(pipelineStatus === 'ANALYZING' || pipelineStatus === 'RUNNING') ? 'Processing...' : 'Execute Research'}
+              {isProcessing
+                ? 'Processing...'
+                : currentSession?.result && pipelineStatus === 'COMPLETE'
+                ? 'Ask Follow-up'
+                : 'Execute Research'}
             </Button>
           </div>
         </form>
@@ -203,20 +218,116 @@ function ResearchWorkspaceContent() {
       {currentSession?.result && pipelineStatus === 'COMPLETE' && (
         <div className="space-y-6 animate-fade-in-up">
 
-          {/* Insufficient evidence notice */}
-          {currentSession.result.insufficientEvidence && (
-            <div className="card p-4 border-l-4 border-l-amber-400 bg-amber-50 flex items-start gap-3">
-              <Info className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-bold text-amber-800">Insufficient Evidence Retrieved</p>
-                <p className="text-xs text-amber-700 mt-1">
-                  The backend retrieved insufficient evidence to produce a confident legal answer for this query.
-                  The result below reflects what was available in the indexed corpus.
-                  No authoritative conclusion should be drawn.
-                </p>
-              </div>
-            </div>
-          )}
+          {/* Retrieval-First State Notice Banner */}
+          {(() => {
+            const res = currentSession.result;
+            const state = res.infoBannerState;
+
+            if (state === 'supported') {
+              return (
+                <div className="card p-3.5 border-l-4 border-l-emerald-600 bg-emerald-50/70 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-700 shrink-0" />
+                    <div>
+                      <p className="text-xs font-bold text-emerald-900 font-sans">
+                        Answer supported by retrieved sources
+                      </p>
+                      <p className="text-[11px] text-emerald-800 font-mono">
+                        Directly synthesized from {res.citations.length} verified citation{res.citations.length === 1 ? '' : 's'} across {res.sourcesCount} retrieved source fragment{res.sourcesCount === 1 ? '' : 's'}.
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="success">Corpus Grounded</Badge>
+                </div>
+              );
+            }
+
+            if (state === 'partial') {
+              return (
+                <div className="card p-3.5 border-l-4 border-l-amber-500 bg-amber-50/70 flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-2.5">
+                    <Info className="h-4 w-4 text-amber-700 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-xs font-bold text-amber-900 font-sans">
+                        Partial answer — some authority could not be verified
+                      </p>
+                      <p className="text-[11px] text-amber-800 font-mono mt-0.5">
+                        {res.notice || 'The available sources support only a portion of the query. Showing best available retrieved information alongside qualified claims.'}
+                      </p>
+                      {res.missingAuthorities && res.missingAuthorities.length > 0 && (
+                        <p className="text-[11px] text-amber-700 font-mono mt-1">
+                          <span className="font-semibold">Unverified:</span> {res.missingAuthorities.join(', ')}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <Badge variant="warning">Partial Grounding</Badge>
+                </div>
+              );
+            }
+
+            if (state === 'absent') {
+              return (
+                <div className="card p-3.5 border-l-4 border-l-blue-600 bg-blue-50/70 flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-2.5">
+                    <Info className="h-4 w-4 text-blue-700 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-xs font-bold text-blue-900 font-sans">
+                        Requested authority not found in the indexed corpus
+                      </p>
+                      <p className="text-[11px] text-blue-800 font-mono mt-0.5">
+                        {res.notice || 'The requested authority is not in the currently indexed Juris AI corpus. The answer provides general background and is not verified against matching indexed sources.'}
+                      </p>
+                      <p className="text-[11px] text-[#526176] font-mono mt-1">
+                        Absence from the current index does not prove the authority does not exist in law or elsewhere. Best available retrieved fragments are displayed below.
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="default">General Background</Badge>
+                </div>
+              );
+            }
+
+            if (state === 'best_available') {
+              return (
+                <div className="card p-3.5 border-l-4 border-l-slate-500 bg-slate-50 flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-2.5">
+                    <Layers className="h-4 w-4 text-slate-700 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-xs font-bold text-slate-900 font-sans">
+                        Showing the best available retrieved information
+                      </p>
+                      <p className="text-[11px] text-slate-700 font-mono mt-0.5">
+                        {res.notice || 'Retrieved legal material is presented with calibrated ranking and source excerpts for researcher review.'}
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="default">Best Available</Badge>
+                </div>
+              );
+            }
+
+            if (state === 'timeout') {
+              return (
+                <div className="card p-3.5 border-l-4 border-l-rose-500 bg-rose-50 flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-2.5">
+                    <AlertTriangle className="h-4 w-4 text-rose-700 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-xs font-bold text-rose-900 font-sans">
+                        Research service timed out — please retry
+                      </p>
+                      <p className="text-[11px] text-rose-800 font-mono mt-0.5">
+                        Downstream LLM or graph evaluation exceeded latency limits. Retrieved evidence before the timeout is preserved below.
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="error">Timeout</Badge>
+                </div>
+              );
+            }
+
+            return null;
+          })()}
 
           {/* Result Tab Navigation */}
           <div className="flex items-center justify-between border-b border-[#CBD5E0] pb-px">
@@ -337,7 +448,7 @@ function ResearchWorkspaceContent() {
         <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#CBD5E0] font-mono text-xs text-[#17253A] space-y-2 max-h-60 overflow-y-auto">
           <p className="font-bold text-[#1D4E8A]"># JURIS AI LEGAL RESEARCH BRIEF</p>
           <p className="text-[#718096]">Query: {currentSession?.query}</p>
-          <p className="text-[#718096]">Mode: {currentSession?.mode} (frontend display only — backend uses hybrid retrieval for all modes)</p>
+          <p className="text-[#718096]">Mode: {currentSession?.mode}</p>
           <p className="text-[#718096]">Date: {new Date().toLocaleDateString('en-IN')}</p>
           <hr className="border-[#E2E8F0]" />
           <p className="font-bold">## Answer</p>

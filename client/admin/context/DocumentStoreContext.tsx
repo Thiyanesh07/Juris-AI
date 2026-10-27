@@ -30,6 +30,7 @@ export interface JobFilterParams {
   status?: string;
   stage?: string;
   document_id?: string;
+  search?: string;
 }
 
 export interface DocumentStoreContextType {
@@ -42,6 +43,7 @@ export interface DocumentStoreContextType {
   jobsTotal: number;
   jobsLoading: boolean;
   jobsError: string | null;
+  jobCounts: Record<string, number>;
 
   fetchDocuments: (params?: DocumentFilterParams) => Promise<void>;
   fetchJobs: (params?: JobFilterParams) => Promise<PaginatedProcessingJobs | undefined>;
@@ -124,6 +126,7 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const [ingestionJobs, setIngestionJobs] = useState<ProcessingJobSummary[]>([]);
   const [jobsTotal, setJobsTotal] = useState<number>(0);
+  const [jobCounts, setJobCounts] = useState<Record<string, number>>({});
   const [jobsLoading, setJobsLoading] = useState<boolean>(false);
   const [jobsError, setJobsError] = useState<string | null>(null);
 
@@ -177,19 +180,27 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
       if (params?.document_id) {
         query.set('document_id', params.document_id);
       }
+      if (params?.search && params.search.trim()) {
+        query.set('search', params.search.trim());
+      }
 
       const res = await apiClient.get<PaginatedProcessingJobs>(`/documents/jobs?${query.toString()}`);
       if (res && Array.isArray(res.items)) {
         setIngestionJobs(res.items);
         setJobsTotal(res.total ?? res.items.length);
+        if (res.counts) {
+          setJobCounts(res.counts);
+        }
       } else {
         setIngestionJobs([]);
         setJobsTotal(0);
+        setJobCounts({});
       }
       return res;
     } catch (err) {
       setIngestionJobs([]);
       setJobsTotal(0);
+      setJobCounts({});
       setJobsError(err instanceof Error ? err.message : 'Failed to fetch processing jobs');
       return undefined;
     } finally {
@@ -464,6 +475,7 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     jobsTotal,
     jobsLoading,
     jobsError,
+    jobCounts,
     fetchDocuments,
     fetchJobs,
     getDocumentById,
@@ -488,6 +500,7 @@ export const DocumentStoreProvider: React.FC<{ children: React.ReactNode }> = ({
     documentsError,
     ingestionJobs,
     jobsTotal,
+    jobCounts,
     jobsLoading,
     jobsError,
     fetchDocuments,

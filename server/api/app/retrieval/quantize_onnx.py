@@ -13,7 +13,12 @@ logger = logging.getLogger(__name__)
 
 def get_onnx_int8_model_path(data_dir: Path | None = None) -> Path:
     base_data = (data_dir or get_data_dir()).resolve()
-    return base_data / "models" / "inlegalbert" / "model_int8.onnx"
+    target = base_data / "models" / "inlegalbert" / "model_int8.onnx"
+    if not target.is_file():
+        default_target = Path("data/models/inlegalbert/model_int8.onnx").resolve()
+        if default_target.is_file():
+            return default_target
+    return target
 
 
 def quantize_inlegalbert_int8(

@@ -15,7 +15,6 @@ function KnowledgeGraphContent() {
       {/* Header */}
       <PageHeader
         title="Knowledge Graph"
-        subtitle="Explore legal entities and their relationships across the Juris AI knowledge graph."
       />
 
       {/* Toolbar Controls */}

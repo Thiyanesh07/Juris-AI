@@ -142,7 +142,6 @@ export default function AuditLogsPage() {
       {/* Page Header */}
       <PageHeader
         title="Audit Logs"
-        subtitle="Review administrative activity and system events across the Juris AI platform."
         actions={
           <Button
             variant="secondary"
@@ -156,22 +155,6 @@ export default function AuditLogsPage() {
           </Button>
         }
       />
-
-      {/* Audit Immutability & Compliance Callout Banner */}
-      <div className="p-4 rounded-xl bg-white border border-[#C9D4E1] shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs font-mono">
-        <div className="flex items-center gap-2">
-          <ShieldCheck className="h-4 w-4 text-[#1E6B45]" />
-          <span className="font-bold text-[#17253A]">Audit Traceability Notice:</span>
-          <span className="text-[#526176]">
-            Audit logs are read-only and immutably recorded for compliance and security auditability.
-          </span>
-        </div>
-        <div className="flex items-center gap-2 text-[#718096]">
-          <span className="px-2 py-0.5 rounded bg-[#EFF3F7] text-[#17253A] font-bold">
-            Live Stream
-          </span>
-        </div>
-      </div>
 
       {/* Summary Telemetry Cards */}
       <div className="space-y-2">

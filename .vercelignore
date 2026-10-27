@@ -1,0 +1,31 @@
+# Ignore backend and root data
+/data/
+/data/**
+/server/
+/server/**
+/embedding-service/
+/embedding-service/**
+*.tar.gz
+*.onnx
+*.npy
+*.faiss
+*.log
+*.pdf
+.venv/
+.venv/**
+__pycache__/
+docs/
+*.md
+
+# Ignore all node_modules and builds (Vercel builds on cloud)
+node_modules
+node_modules/
+**/node_modules
+**/node_modules/**
+.next
+.next/
+**/.next
+**/.next/**
+client/admin/ref 2
+client/admin/ref 2/**
+**/ref 2/**

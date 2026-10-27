@@ -29,6 +29,7 @@ from app.api.routes.validation import router as validation_router
 from app.core.config import get_settings
 from app.core.csrf import CSRFMiddleware
 from app.core.rate_limit import RateLimitMiddleware
+from app.core.session import PortalSessionMiddleware
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -95,9 +96,8 @@ app.add_middleware(
 )
 app.add_middleware(CSRFMiddleware, settings=settings)
 app.add_middleware(
-    SessionMiddleware,
+    PortalSessionMiddleware,
     secret_key=settings.session_secret,
-    session_cookie="legalgraph_session",
     max_age=settings.session_max_age_seconds,
     same_site="none" if settings.session_cookie_secure else "lax",
     https_only=settings.session_cookie_secure,
@@ -127,6 +127,7 @@ app.include_router(saved_research_router)
 
 # Compatibility /api/v1 router prefix
 v1_router = APIRouter(prefix="/api/v1")
+v1_router.include_router(health_router)
 v1_router.include_router(auth_router)
 v1_router.include_router(admin_users_router)
 v1_router.include_router(documents_router)

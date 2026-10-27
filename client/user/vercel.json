@@ -4,6 +4,6 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://juris-ai-fhjw.onrender.com"
+    "NEXT_PUBLIC_API_URL": "https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io"
   }
 }

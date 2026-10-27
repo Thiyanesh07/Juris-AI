@@ -1,18 +1,29 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { getApiBaseUrl } from "@/lib/config";
 
-function AnimatedCounter({ end, suffix = "", prefix = "" }: { end: number; suffix?: string; prefix?: string }) {
-  const [count, setCount] = useState(0);
+interface MetricItem {
+  value: number | null;
+  suffix: string;
+  prefix: string;
+  label: string;
+}
+
+function AnimatedCounter({ end, suffix = "", prefix = "" }: { end: number | null; suffix?: string; prefix?: string }) {
+  const [count, setCount] = useState<number | null>(end);
   const ref = useRef<HTMLDivElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    if (end === null) {
+      setCount(null);
+      return;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
-          let start = 0;
           const duration = 2000;
           const startTime = performance.now();
 
@@ -39,64 +50,72 @@ function AnimatedCounter({ end, suffix = "", prefix = "" }: { end: number; suffi
 
   return (
     <div ref={ref} className="text-6xl lg:text-8xl font-display tracking-tight text-[#183B5B]">
-      {prefix}{count.toLocaleString()}{suffix}
+      {end === null ? (
+        <span className="text-[#899BB1] text-5xl">--</span>
+      ) : (
+        `${prefix}${(count ?? end).toLocaleString()}${suffix}`
+      )}
     </div>
   );
 }
 
-const defaultMetrics = [
-  { 
-    value: 6235, 
-    suffix: "", 
-    prefix: "",
-    label: "Knowledge Graph Nodes",
-  },
-  { 
-    value: 26014, 
-    suffix: "", 
-    prefix: "",
-    label: "Graph Relationships",
-  },
-  { 
-    value: 2412, 
-    suffix: "", 
-    prefix: "",
-    label: "FAISS Vector Chunks",
-  },
-  { 
-    value: 34, 
-    suffix: "", 
-    prefix: "",
-    label: "Indexed Corpus Documents",
-  },
+const initialMetrics: MetricItem[] = [
+  { value: null, suffix: "", prefix: "", label: "Knowledge Graph Nodes" },
+  { value: null, suffix: "", prefix: "", label: "Graph Relationships" },
+  { value: null, suffix: "", prefix: "", label: "FAISS Vector Chunks" },
+  { value: null, suffix: "", prefix: "", label: "Indexed Corpus Documents" },
 ];
 
 export function MetricsSection() {
   const [time, setTime] = useState<Date | null>(null);
   const [mounted, setMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [metrics, setMetrics] = useState(defaultMetrics);
+  const [metrics, setMetrics] = useState<MetricItem[]>(initialMetrics);
+  const [statusMessage, setStatusMessage] = useState<string | null>("Loading live corpus metrics...");
+  const [isError, setIsError] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.endsWith('.local'));
-    const envUrl = process.env.NEXT_PUBLIC_API_URL;
-    const apiBase = isLocal
-      ? (envUrl && envUrl.trim() !== '' ? envUrl.trim() : 'http://localhost:8000')
-      : (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1') ? envUrl.trim() : 'https://juris-ai-fhjw.onrender.com');
-    fetch(`${apiBase.replace(/\/+$/, '')}/api/v1/public/stats`)
-      .then((res) => res.json())
+    const apiBase = getApiBaseUrl();
+    if (!apiBase) {
+      setIsError(true);
+      setStatusMessage("API endpoint not configured");
+      return;
+    }
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 6000);
+
+    fetch(`${apiBase}/stats`, { signal: controller.signal })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
-        if (data.graph && data.vector && data.documents) {
+        if (typeof data.graph_nodes === "number" && typeof data.total_documents === "number") {
           setMetrics([
-            { value: data.graph.total_nodes || 6235, suffix: "", prefix: "", label: "Knowledge Graph Nodes" },
-            { value: data.graph.total_relationships || 26014, suffix: "", prefix: "", label: "Graph Relationships" },
-            { value: data.vector.total_vectors || 2412, suffix: "", prefix: "", label: "FAISS Vector Chunks" },
-            { value: data.documents.total_documents || 34, suffix: "", prefix: "", label: "Indexed Corpus Documents" },
+            { value: data.graph_nodes, suffix: "", prefix: "", label: "Knowledge Graph Nodes" },
+            { value: data.graph_relationships, suffix: "", prefix: "", label: "Graph Relationships" },
+            { value: data.vector_count, suffix: "", prefix: "", label: "FAISS Vector Chunks" },
+            { value: data.total_documents, suffix: "", prefix: "", label: "Indexed Corpus Documents" },
           ]);
+          setStatusMessage(null);
+          setIsError(false);
+        } else {
+          setIsError(true);
+          setStatusMessage("Corpus metrics response malformed");
         }
       })
-      .catch((err) => console.log("Public stats fetch fallback:", err));
+      .catch(() => {
+        setIsError(true);
+        setStatusMessage("Corpus metrics temporarily unavailable");
+      })
+      .finally(() => clearTimeout(timeout));
+
+    return () => {
+      clearTimeout(timeout);
+      controller.abort();
+    };
   }, []);
 
   useEffect(() => {
@@ -140,7 +159,7 @@ export function MetricsSection() {
           </div>
           <div className="flex items-center gap-4 font-mono text-sm text-[#526176]">
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#287A68] animate-pulse" />
+              <span className={`w-2 h-2 rounded-full ${isError ? 'bg-[#C2410C]' : 'bg-[#287A68] animate-pulse'}`} />
               Research System
             </span>
             <span className="text-[#C9D4E1]">|</span>
@@ -158,9 +177,9 @@ export function MetricsSection() {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <AnimatedCounter 
-                end={typeof metric.value === 'number' ? metric.value : 0} 
-                suffix={metric.suffix} 
+              <AnimatedCounter
+                end={metric.value}
+                suffix={metric.suffix}
                 prefix={metric.prefix}
               />
               <div className="mt-4 text-lg text-[#526176]">{metric.label}</div>
@@ -169,8 +188,8 @@ export function MetricsSection() {
         </div>
         
         {/* Footnote */}
-        <p className="mt-6 text-xs text-muted-foreground font-mono">
-          *Live production corpus, vector index, and knowledge graph metrics.
+        <p className={`mt-6 text-xs font-mono ${isError ? 'text-[#8B2E2E]' : 'text-muted-foreground'}`}>
+          {statusMessage ? `*${statusMessage}` : '*Live production corpus, vector index, and knowledge graph metrics.'}
         </p>
       </div>
     </section>

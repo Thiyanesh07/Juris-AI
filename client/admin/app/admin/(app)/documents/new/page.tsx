@@ -92,7 +92,6 @@ export default function CreateDocumentPage() {
     <div className="space-y-6 max-w-4xl">
       <PageHeader
         title="Upload Legal Document"
-        subtitle="Ingest statutory texts, constitutional acts, or court judgments into the real retrieval pipeline."
         actions={
           <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.DOCUMENTS)}>
             <ArrowLeft className="h-4 w-4 mr-1.5" />

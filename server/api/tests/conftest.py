@@ -39,13 +39,17 @@ _FALLBACK_DEV_URL = (
 )
 
 
+from tests.isolation_preflight import (  # noqa: E402
+    IsolationViolationError,
+    ProtectedArtifactGuard,
+    get_safe_test_database_url,
+    verify_database_safety,
+)
+
+
 def _test_database_url() -> str:
-    """Derive the isolated ``<db>_test`` URL from DATABASE_URL or the default."""
-    url = make_url(os.environ.get("DATABASE_URL", _FALLBACK_DEV_URL))
-    database = url.database or "legalgraph"
-    if not re.fullmatch(r"[a-z0-9_]+", database):
-        raise RuntimeError(f"Unsafe database name for tests: {database!r}")
-    return url.set(database=f"{database}_test").render_as_string(hide_password=False)
+    """Derive the strictly verified, loopback-only test database URL."""
+    return get_safe_test_database_url()
 
 
 # Pin the test database before any app module (and therefore Settings) loads.
@@ -57,6 +61,7 @@ from alembic.config import Config  # noqa: E402
 
 from alembic import command  # noqa: E402
 from app.core.config import get_settings  # noqa: E402
+from app.core.rate_limit import reset_rate_limiters  # noqa: E402
 from app.db.base import Base  # noqa: E402
 from app.db.session import get_session  # noqa: E402
 from app.main import app  # noqa: E402
@@ -64,9 +69,19 @@ from app.main import app  # noqa: E402
 _ORIGINAL_SETTINGS = get_settings().model_dump()
 
 
+@pytest.fixture(scope="session", autouse=True)
+def protected_artifact_guard() -> Iterator[None]:
+    """Ensure protected repository assets remain completely untouched across the test session."""
+    guard = ProtectedArtifactGuard()
+    yield
+    guard.verify()
+
+
 @pytest.fixture(autouse=True)
 def restore_global_settings():
+    reset_rate_limiters()
     yield
+    reset_rate_limiters()
     settings = get_settings()
     for key, value in _ORIGINAL_SETTINGS.items():
         object.__setattr__(settings, key, value)
@@ -79,8 +94,8 @@ def _alembic_config() -> Config:
 
 
 async def _reset_test_database() -> None:
-    """Drop and recreate the test database (via the maintenance database)."""
-    url = make_url(os.environ["DATABASE_URL"])
+    """Drop and recreate the test database (via the maintenance database) with safety verification."""
+    url = verify_database_safety(os.environ["DATABASE_URL"])
     database = url.database
     if database is None:
         raise RuntimeError("Test database URL has no database name")
@@ -104,7 +119,8 @@ def migrated_database() -> Iterator[None]:
 @pytest.fixture
 async def engine(migrated_database: None) -> AsyncIterator[AsyncEngine]:
     """Function-scoped engine over the migrated test database."""
-    test_engine = create_async_engine(os.environ["DATABASE_URL"], pool_pre_ping=True)
+    verified_url = verify_database_safety(os.environ["DATABASE_URL"])
+    test_engine = create_async_engine(verified_url, pool_pre_ping=True)
     yield test_engine
     await test_engine.dispose()
 
@@ -112,6 +128,7 @@ async def engine(migrated_database: None) -> AsyncIterator[AsyncEngine]:
 @pytest.fixture
 async def session(engine: AsyncEngine) -> AsyncIterator[AsyncSession]:
     """Session over the migrated schema; truncates all tables afterwards."""
+    verify_database_safety(os.environ["DATABASE_URL"])
     maker = async_sessionmaker(engine, expire_on_commit=False)
     async with maker() as test_session:
         yield test_session
@@ -137,6 +154,6 @@ def client(migrated_database: None) -> Iterator[TestClient]:
                 raise
 
     app.dependency_overrides[get_session] = override_get_session
-    with TestClient(app) as test_client:
+    with TestClient(app, headers={"Origin": "http://localhost:3000"}) as test_client:
         yield test_client
     app.dependency_overrides.clear()

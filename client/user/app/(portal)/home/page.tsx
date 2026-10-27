@@ -32,24 +32,24 @@ const EXAMPLE_QUERIES = [
 
 const CAPABILITIES = [
   {
-    icon: <GitFork className="h-5 w-5 text-[#1D4E8A]" />,
-    title: 'Knowledge Graph Traversal',
-    description: 'Multi-hop reasoning across typed legal relationships: articles, judgments, amendments, and statutes.',
+    icon: <GitFork className="h-4 w-4 text-[#1D4E8A]" />,
+    title: 'Knowledge Graph',
+    description: 'Multi-hop traversal across articles, judgments, amendments, and statutes.',
   },
   {
-    icon: <Cpu className="h-5 w-5 text-[#1D4E8A]" />,
+    icon: <Cpu className="h-4 w-4 text-[#1D4E8A]" />,
     title: 'Hybrid Retrieval',
-    description: 'Combines dense vector semantic search with structured graph traversal for comprehensive coverage.',
+    description: 'Dense vector semantic search fused with structured graph traversal.',
   },
   {
-    icon: <BookOpen className="h-5 w-5 text-[#1D4E8A]" />,
+    icon: <BookOpen className="h-4 w-4 text-[#1D4E8A]" />,
     title: 'Citation Grounding',
-    description: 'Every legal claim is anchored to verified constitutional provisions, statutes, or judicial authorities.',
+    description: 'Claims anchored to verified provisions, statutes, and authorities.',
   },
   {
-    icon: <Layers className="h-5 w-5 text-[#1D4E8A]" />,
-    title: 'Temporal Legal Analysis',
-    description: 'Traces how law has evolved — from original provisions through amendments and landmark judgments.',
+    icon: <Layers className="h-4 w-4 text-[#1D4E8A]" />,
+    title: 'Temporal Tracking',
+    description: 'Evolution across original provisions, amendments, and rulings.',
   },
 ];
 
@@ -60,7 +60,7 @@ const getCitationStatusBadge = (status?: ResearchHistoryRecord['citationStatus']
     case 'PARTIAL':
       return <Badge variant="warning"><AlertCircle className="h-2.5 w-2.5 mr-1" />Partial</Badge>;
     default:
-      return <Badge variant="default"><HelpCircle className="h-2.5 w-2.5 mr-1" />Grounded</Badge>;
+      return <Badge variant="default"><HelpCircle className="h-2.5 w-2.5 mr-1" />Unverified</Badge>;
   }
 };
 
@@ -81,7 +81,7 @@ export default function HomePage() {
               Legal Research, Connected.
             </h1>
             <p className="text-[#526176] mt-2 text-base max-w-2xl leading-relaxed">
-              Juris AI connects constitutional provisions, statutes, amendments, judicial decisions, and legal doctrine through a typed Knowledge Graph — enabling multi-hop legal reasoning across Indian law.
+              Search constitutional provisions, statutes, amendments, and precedents with citation-grounded reasoning across Indian law.
             </p>
           </div>
         </div>
@@ -200,18 +200,18 @@ export default function HomePage() {
       )}
 
       {/* Research Capabilities */}
-      <section className="space-y-4">
-        <h2 className="text-lg text-[#17253A] font-semibold">System Capabilities</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="space-y-3">
+        <h2 className="text-base text-[#17253A] font-semibold">Core Capabilities</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {CAPABILITIES.map((cap, i) => (
-            <div key={i} className="card p-5 flex gap-4">
-              <div className="p-2.5 rounded-xl bg-[#E8F0FD] border border-[#BFDBFE] h-fit">
-                {cap.icon}
+            <div key={i} className="card p-4 flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <div className="p-1.5 rounded-lg bg-[#E8F0FD] border border-[#BFDBFE]">
+                  {cap.icon}
+                </div>
+                <h3 className="text-xs font-semibold text-[#17253A] font-sans">{cap.title}</h3>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold text-[#17253A] mb-1 font-sans">{cap.title}</h3>
-                <p className="text-xs text-[#526176] leading-relaxed">{cap.description}</p>
-              </div>
+              <p className="text-[11px] text-[#526176] leading-relaxed">{cap.description}</p>
             </div>
           ))}
         </div>

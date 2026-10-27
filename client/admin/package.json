@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "npx tsx --test tests/phase1_audit_validation.test.mjs tests/phase2_settings_mapping.test.mjs tests/phase3_ingestion_ui.test.mjs tests/phase3_dashboard_graph.test.mjs tests/phase4_user_admin_integration.test.mjs tests/document_details_and_graph_regression.test.mjs"
+    "test": "npx tsx --test tests/phase1_audit_validation.test.mjs tests/phase2_settings_mapping.test.mjs tests/phase3_ingestion_ui.test.mjs tests/phase3_dashboard_graph.test.mjs tests/phase4_user_admin_integration.test.mjs tests/document_details_and_graph_regression.test.mjs tests/phase5_ui_polish.test.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

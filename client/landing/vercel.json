@@ -4,7 +4,7 @@
   "outputDirectory": ".next",
   "installCommand": "npm install --legacy-peer-deps",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://juris-ai-fhjw.onrender.com",
+    "NEXT_PUBLIC_API_URL": "https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io",
     "NEXT_PUBLIC_USER_URL": "https://juris-ai-user.vercel.app",
     "NEXT_PUBLIC_ADMIN_URL": "https://juris-ai-admin.vercel.app"
   }

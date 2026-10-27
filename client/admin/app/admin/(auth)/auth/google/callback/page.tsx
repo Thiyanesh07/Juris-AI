@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useState, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Scale, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
 
@@ -22,6 +22,7 @@ function AdminGoogleCallbackContent() {
 
   const [asyncStatus, setAsyncStatus] = useState<Status>('processing');
   const [asyncError, setAsyncError] = useState<string>('');
+  const hasExecutedRef = useRef(false);
 
   const status = paramError ? 'error' : asyncStatus;
   const errorMessage = paramError || asyncError;
@@ -30,6 +31,11 @@ function AdminGoogleCallbackContent() {
     if (paramError || !code) {
       return;
     }
+
+    if (hasExecutedRef.current) {
+      return;
+    }
+    hasExecutedRef.current = true;
 
     let active = true;
 
@@ -44,12 +50,14 @@ function AdminGoogleCallbackContent() {
     fetch(backendCallback, {
       credentials: 'include',
       redirect: 'manual',
+      headers: { 'X-Juris-Portal': 'admin' },
     })
       .then(async (res) => {
         if (!active) return;
         if (res.ok || res.status === 0 /* opaque redirect */) {
           const meRes = await fetch(`${apiBase}/auth/me`, {
             credentials: 'include',
+            headers: { 'X-Juris-Portal': 'admin' },
           });
           if (!active) return;
           if (!meRes.ok) {
@@ -73,8 +81,10 @@ function AdminGoogleCallbackContent() {
               ? storedPath
               : '/admin';
           setTimeout(() => {
-            if (active) router.replace(targetPath);
-          }, 800);
+            if (active) {
+              window.location.href = targetPath;
+            }
+          }, 300);
         } else {
           const data = await res.json().catch(() => null);
           if (!active) return;

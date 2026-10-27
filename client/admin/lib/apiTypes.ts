@@ -165,6 +165,7 @@ export interface PaginatedProcessingJobs {
   total: number;
   page: number;
   page_size: number;
+  counts?: Record<string, number>;
 }
 
 // ── Health & Stats ─────────────────────────────────────────────────────────────

@@ -42,6 +42,7 @@ class HybridEvidence(BaseModel):
     hierarchy: dict[str, Any]
     citation_ref: str | None = None
     source_url: str | None = None
+    pdf_url: str | None = None
     dense_score: float
     graph_score: float
     hybrid_score: float
@@ -50,6 +51,8 @@ class HybridEvidence(BaseModel):
     dense_matched: bool
     evidence_sources: list[Literal["dense", "graph"]]
     graph_context: HybridGraphContext | None = None
+    score_type: str | None = Field(default="Calibrated Fusion Score")
+    verification_status: Literal["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "CONTRADICTED"] | None = Field(default="UNVERIFIED")
 
 
 class HybridWeights(BaseModel):

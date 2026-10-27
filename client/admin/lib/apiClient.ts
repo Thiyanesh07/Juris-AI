@@ -24,7 +24,7 @@ export function getApiBaseUrl(): string {
       if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
         return envUrl.trim().replace(/\/+$/, '');
       }
-      return 'https://juris-ai-fhjw.onrender.com';
+      return 'https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io';
     }
 
     const envUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -40,7 +40,7 @@ export function getApiBaseUrl(): string {
     if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
       return envUrl.trim().replace(/\/+$/, '');
     }
-    return 'https://juris-ai-fhjw.onrender.com';
+    return 'https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io';
   }
 
   if (envUrl && envUrl.trim() !== '') {
@@ -54,6 +54,7 @@ export const API_BASE_URL: string = getApiBaseUrl();
 const JSON_HEADERS: HeadersInit = {
   'Content-Type': 'application/json',
   Accept: 'application/json',
+  'X-Juris-Portal': 'admin',
 };
 
 const DEFAULT_FETCH_OPTIONS: RequestInit = {
@@ -79,7 +80,7 @@ export async function apiFetch<T>(path: string, init: RequestInit = {}): Promise
 
   const isFormData = typeof FormData !== 'undefined' && init.body instanceof FormData;
   const defaultHeaders: HeadersInit = isFormData
-    ? { Accept: 'application/json' }
+    ? { Accept: 'application/json', 'X-Juris-Portal': 'admin' }
     : JSON_HEADERS;
 
   let res: Response;

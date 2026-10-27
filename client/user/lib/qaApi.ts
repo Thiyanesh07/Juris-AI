@@ -41,6 +41,7 @@ export interface BackendHybridEvidence {
   hierarchy: Record<string, unknown>;
   citation_ref: string | null;
   source_url: string | null;
+  pdf_url?: string | null;
   dense_score: number;
   graph_score: number;
   hybrid_score: number;
@@ -49,6 +50,8 @@ export interface BackendHybridEvidence {
   dense_matched: boolean;
   evidence_sources: Array<'dense' | 'graph'>;
   graph_context: BackendGraphContext | null;
+  score_type?: string | null;
+  verification_status?: 'VERIFIED' | 'PARTIALLY_VERIFIED' | 'UNVERIFIED' | 'CONTRADICTED' | null;
 }
 
 export interface BackendQACitation {
@@ -63,6 +66,7 @@ export interface BackendQACitation {
   page_start: number | null;
   page_end: number | null;
   source_url: string | null;
+  pdf_url?: string | null;
   verification_status?: 'VERIFIED' | 'PARTIALLY_VERIFIED' | 'UNVERIFIED' | 'CONTRADICTED';
   confidence?: number;
 }
@@ -90,12 +94,15 @@ export interface BackendQATemporalMeta {
 }
 
 export interface BackendQACitationValidation {
-  total: number;
-  verified: number;
-  partially_verified: number;
-  unverified: number;
-  contradicted: number;
+  grounded: boolean;
+  verified_count: number;
+  unverified_count: number;
   warnings: string[];
+  total?: number;
+  verified?: number;
+  partially_verified?: number;
+  unverified?: number;
+  contradicted?: number;
 }
 
 export interface BackendQARetrievalMeta {
@@ -160,7 +167,12 @@ export interface BackendQAAskResponse {
   model: string;
   llm_called: boolean;
   timings_ms: BackendQATimingsMs;
+  session_id?: string | null;
   disclaimer: string;
+  answer_status?: 'full_answer' | 'partial_answer' | 'general_fallback' | 'insufficient_evidence' | 'technical_timeout' | null;
+  missing_authorities?: string[];
+  gap_type?: 'corpus_document' | 'graph_entities' | 'graph_relationships' | 'metadata' | 'none' | null;
+  notice?: string | null;
 }
 
 export interface QAAskRequest {
@@ -169,6 +181,65 @@ export interface QAAskRequest {
   mode?: 'COMPREHENSIVE' | 'CONSTITUTIONAL' | 'STATUTORY' | 'CASE_LAW';
   retrieval_strategy?: 'hybrid' | 'vector_only' | 'graph_only';
   graph_depth?: number;
+  session_id?: string | null;
+}
+
+// ============================================================
+// History API models (Phase 16)
+// ============================================================
+
+export interface BackendCitationSummary {
+  id: string;
+  citation: string;
+  relevance: number | null;
+  source_type: string | null;
+  document_id: string | null;
+  chunk_id?: string | null;
+  marker?: number | null;
+  page_start?: number | null;
+  page_end?: number | null;
+  citation_ref?: string | null;
+  pdf_url?: string | null;
+  document_title?: string | null;
+  verification_status?: string | null;
+  stable_id?: string | null;
+}
+
+export interface BackendAnswerSummary {
+  id: string;
+  answer: string;
+  validation_status: string;
+  created_at: string;
+  mode?: string;
+  citations: BackendCitationSummary[];
+  evidence?: BackendHybridEvidence[];
+  graph?: BackendQAGraphData | null;
+  reasoning_steps?: BackendQAReasoningStep[];
+  citation_validation?: BackendQACitationValidation | null;
+}
+
+export interface BackendQuerySummary {
+  id: string;
+  question: string;
+  created_at: string;
+  answers: BackendAnswerSummary[];
+}
+
+export interface BackendHistoryItem {
+  id: string;
+  title: string;
+  created_at: string;
+  updated_at: string;
+  mode?: string;
+  queries: BackendQuerySummary[];
+  saved: boolean;
+}
+
+export interface BackendPaginatedHistory {
+  items: BackendHistoryItem[];
+  total: number;
+  page: number;
+  page_size: number;
 }
 
 // ============================================================
@@ -182,6 +253,37 @@ export async function askLegalQuestion(
   return apiFetch<BackendQAAskResponse>('/qa/ask', {
     method: 'POST',
     body: JSON.stringify(request),
+    signal,
+  });
+}
+
+export async function fetchResearchHistory(
+  page = 1,
+  pageSize = 20,
+  signal?: AbortSignal,
+): Promise<BackendPaginatedHistory> {
+  return apiFetch<BackendPaginatedHistory>(`/research/history?page=${page}&page_size=${pageSize}`, {
+    method: 'GET',
+    signal,
+  });
+}
+
+export async function fetchResearchHistorySession(
+  sessionId: string,
+  signal?: AbortSignal,
+): Promise<BackendHistoryItem> {
+  return apiFetch<BackendHistoryItem>(`/research/history/${sessionId}`, {
+    method: 'GET',
+    signal,
+  });
+}
+
+export async function deleteResearchHistorySession(
+  sessionId: string,
+  signal?: AbortSignal,
+): Promise<void> {
+  return apiFetch<void>(`/research/history/${sessionId}`, {
+    method: 'DELETE',
     signal,
   });
 }

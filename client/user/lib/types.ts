@@ -77,10 +77,15 @@ export interface EvidenceItem {
   denseScore?: number;
   graphScore?: number;
   hybridScore?: number;
+  scoreType?: string;
+  verificationStatus?: 'VERIFIED' | 'PARTIALLY_VERIFIED' | 'UNVERIFIED' | 'CONTRADICTED';
+  pageStart?: number | null;
+  pageEnd?: number | null;
   rank?: number;
   chunkId?: string;
   documentId?: string;
   sourceUrl?: string;
+  pdfUrl?: string;
   hierarchy?: Record<string, unknown>;
 }
 
@@ -107,9 +112,12 @@ export interface Citation {
   sourceLocation: string;
   // excerpt: NOT in QACitation schema (text is in the evidence item)
   excerpt: string;
-  // status: backend does not verify citations in legal sense → always UNVERIFIED
+  // status: verified by backend Phase 1 grounding validator
   status: CitationStatus;
   sourceUrl?: string;
+  pdfUrl?: string | null;
+  pageStart?: number | null;
+  pageEnd?: number | null;
   chunkId?: string;
   documentId?: string;
   evidenceRank?: number;
@@ -183,6 +191,11 @@ export interface ResearchResult {
   /** True when backend returned status: 'insufficient_evidence' */
   insufficientEvidence: boolean;
   status: 'answered' | 'insufficient_evidence';
+  answerStatus?: 'full_answer' | 'partial_answer' | 'general_fallback' | 'insufficient_evidence' | 'technical_timeout';
+  missingAuthorities?: string[];
+  gapType?: 'corpus_document' | 'graph_entities' | 'graph_relationships' | 'metadata' | 'none';
+  notice?: string | null;
+  infoBannerState?: 'supported' | 'partial' | 'best_available' | 'absent' | 'timeout' | 'none';
 
   /** Retrieval and timing metadata from backend */
   retrieval?: RetrievalMeta;

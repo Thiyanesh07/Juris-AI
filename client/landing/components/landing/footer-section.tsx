@@ -2,39 +2,47 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
+import { getUserPortalUrl } from "@/lib/config";
 
-const footerLinks = {
-  Product: [
-    { name: "Features", href: "#features" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Knowledge Graph", href: "#knowledge-graph" },
-    { name: "Technology", href: "#technology-stack" },
-  ],
-  Research: [
-    { name: "Legal Research", href: "#" },
-    { name: "Retrieval", href: "#features" },
-    { name: "Reasoning", href: "#how-it-works" },
-    { name: "Evaluation", href: "#pricing" },
-  ],
-  Project: [
-    { name: "About", href: "#about" },
-    { name: "Architecture", href: "#technology-stack" },
-    { name: "Documentation", href: "#" },
-  ],
-  Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Security & Trust", href: "#security" },
-  ],
-};
-
-const socialLinks = [
-  { name: "GitHub", href: "#" },
-  { name: "Documentation", href: "#" },
-  { name: "Architecture", href: "#technology-stack" },
-];
+interface FooterLink {
+  name: string;
+  href: string;
+  external?: boolean;
+}
 
 export function FooterSection() {
+  const portalUrl = getUserPortalUrl();
+
+  const footerLinks: Record<string, FooterLink[]> = {
+    Product: [
+      { name: "Features", href: "#features" },
+      { name: "How It Works", href: "#how-it-works" },
+      { name: "Knowledge Graph", href: "#knowledge-graph" },
+      { name: "Technology", href: "#technology" },
+    ],
+    Research: [
+      { name: "Legal Research Portal", href: `${portalUrl}/research`, external: true },
+      { name: "Retrieval", href: "#features" },
+      { name: "Reasoning", href: "#how-it-works" },
+      { name: "Evaluation & Benchmarks", href: "#studio" },
+    ],
+    Project: [
+      { name: "About", href: "#about" },
+      { name: "Architecture", href: "#technology-stack" },
+      { name: "Quality Telemetry", href: "#studio" },
+    ],
+    Legal: [
+      { name: "Security & Trust", href: "#security" },
+      { name: "Data Protection", href: "#security" },
+      { name: "System Compliance", href: "#security" },
+    ],
+  };
+
+  const socialLinks: FooterLink[] = [
+    { name: "GitHub", href: "https://github.com/Thiyanesh07/Juris-AI", external: true },
+    { name: "Architecture", href: "#technology-stack", external: false },
+    { name: "Benchmarks", href: "#studio", external: false },
+  ];
   return (
     <footer className="relative bg-[#DCE5EE] border-t border-[#C1CEDB]">
       {/* Animated wave background */}
@@ -66,6 +74,8 @@ export function FooterSection() {
                   <a
                     key={link.name}
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-sm text-[#526176] hover:text-[#2563A8] transition-colors flex items-center gap-1 group"
                   >
                     {link.name}
@@ -84,6 +94,8 @@ export function FooterSection() {
                     <li key={link.name}>
                       <a
                         href={link.href}
+                        target={link.external ? "_blank" : undefined}
+                        rel={link.external ? "noopener noreferrer" : undefined}
                         className="text-sm text-[#526176] hover:text-[#2563A8] transition-colors inline-flex items-center gap-2"
                       >
                         {link.name}

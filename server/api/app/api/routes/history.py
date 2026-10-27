@@ -16,6 +16,7 @@ from app.models import ResearchAnswer, ResearchQuery, ResearchSession, SavedRese
 from app.schemas.history import (
     PaginatedHistoryResponse,
     ResearchAnswerSummary,
+    ResearchCitationSummary,
     ResearchHistoryItemResponse,
     ResearchQuerySummary,
 )
@@ -23,17 +24,81 @@ from app.schemas.history import (
 router = APIRouter(prefix="/research/history", tags=["research_history"])
 
 
+def _canonical_mode(val: str | None) -> str:
+    if not val:
+        return "COMPREHENSIVE"
+    v = str(val).strip().upper()
+    if v in ("COMPREHENSIVE", "CONSTITUTIONAL", "STATUTORY", "CASE_LAW"):
+        return v
+    if v in ("HYBRID", "VECTOR_ONLY", "GRAPH_ONLY"):
+        return "COMPREHENSIVE"
+    return "COMPREHENSIVE"
+
+
 def _to_session_response(s: ResearchSession, is_saved: bool = False) -> ResearchHistoryItemResponse:
     queries_summary: list[ResearchQuerySummary] = []
+    latest_mode = "COMPREHENSIVE"
+
     for q in getattr(s, "queries", []):
         answers_summary: list[ResearchAnswerSummary] = []
         for a in getattr(q, "answers", []):
+            val_stat = (
+                a.validation_status.value
+                if hasattr(a.validation_status, "value")
+                else str(a.validation_status)
+            )
+            raw_mode = getattr(a, "mode", "COMPREHENSIVE")
+            a_mode = _canonical_mode(raw_mode)
+            latest_mode = a_mode
+
+            cit_summaries = []
+            for c in getattr(a, "citations", []):
+                cid = getattr(c, "chunk_id", None)
+                mkr = getattr(c, "marker", None)
+                stable_id = f"cit_{cid}_{mkr}" if cid and mkr else str(c.id)
+                ver_status = (
+                    "VERIFIED"
+                    if val_stat == "validated"
+                    else "PARTIALLY_VERIFIED"
+                    if val_stat == "warning"
+                    else "UNVERIFIED"
+                )
+                cit_summaries.append(
+                    ResearchCitationSummary(
+                        id=c.id,
+                        citation=c.citation,
+                        relevance=c.relevance,
+                        source_type=c.source_type,
+                        document_id=c.document_id,
+                        chunk_id=cid,
+                        marker=mkr,
+                        page_start=getattr(c, "page_start", None),
+                        page_end=getattr(c, "page_end", None),
+                        citation_ref=getattr(c, "citation_ref", None),
+                        pdf_url=getattr(c, "pdf_url", None),
+                        document_title=c.source_type,
+                        verification_status=ver_status,
+                        stable_id=stable_id,
+                    )
+                )
+
+            evidence_items = getattr(a, "evidence_json", None) or []
+            graph_data = getattr(a, "graph_json", None)
+            reasoning_steps = getattr(a, "reasoning_steps_json", None) or []
+            citation_validation = getattr(a, "citation_validation_json", None)
+
             answers_summary.append(
                 ResearchAnswerSummary(
                     id=a.id,
                     answer=a.answer,
-                    validation_status=a.validation_status.value if hasattr(a.validation_status, "value") else str(a.validation_status),
+                    validation_status=val_stat,
                     created_at=a.created_at,
+                    mode=a_mode,
+                    citations=cit_summaries,
+                    evidence=evidence_items,
+                    graph=graph_data,
+                    reasoning_steps=reasoning_steps,
+                    citation_validation=citation_validation,
                 )
             )
         queries_summary.append(
@@ -50,6 +115,7 @@ def _to_session_response(s: ResearchSession, is_saved: bool = False) -> Research
         title=s.title,
         created_at=s.created_at,
         updated_at=s.updated_at,
+        mode=latest_mode,
         queries=queries_summary,
         saved=is_saved,
     )
@@ -66,7 +132,11 @@ async def list_research_history(
     query = (
         select(ResearchSession)
         .where(ResearchSession.user_id == current_user.id)
-        .options(selectinload(ResearchSession.queries).selectinload(ResearchQuery.answers))
+        .options(
+            selectinload(ResearchSession.queries)
+            .selectinload(ResearchQuery.answers)
+            .selectinload(ResearchAnswer.citations)
+        )
     )
     count_query = select(func.count(ResearchSession.id)).where(ResearchSession.user_id == current_user.id)
 
@@ -101,7 +171,11 @@ async def get_research_history_session(
     query = (
         select(ResearchSession)
         .where(ResearchSession.id == session_id, ResearchSession.user_id == current_user.id)
-        .options(selectinload(ResearchSession.queries).selectinload(ResearchQuery.answers))
+        .options(
+            selectinload(ResearchSession.queries)
+            .selectinload(ResearchQuery.answers)
+            .selectinload(ResearchAnswer.citations)
+        )
     )
     res = await session.scalar(query)
     if not res:

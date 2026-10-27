@@ -9,15 +9,37 @@ RESEARCH_CONTENT.md
 
 # Frontend applications (not needed in backend container)
 client/
+client/**
+client
+**/node_modules/
+**/node_modules
+**/node_modules/**
+node_modules/
+node_modules
+**/.pnpm
+**/.pnpm/**
+**/.next
+**/.next/**
+client/landing/node_modules/
+client/admin/node_modules/
+client/user/node_modules/
 
 # Raw legal corpus and non-runtime data directories
 data/legal_corpus_v1/raw/
 data/raw/
+data/raw/**
 data/chunks/
+data/chunks/**
 data/processed/
+data/processed/**
+data/indexes/legal_chunks_backup/
+data/indexes/legal_chunks_backup/**
+data/indexes/legal_chunks.backup*
+data/indexes/legal_chunks.old*
 data/legal_corpus_v1/processed/
 data/legal_corpus_v1/metadata/
 data/legal_corpus_v1/checksums/
+embedding-service/
 
 # Python caches and virtual environments
 __pycache__/
@@ -41,3 +63,12 @@ Thumbs.db
 .env
 .env.local
 .env.*
+
+# Scratch, cookie, and benchmark files
+*.txt
+server/api/*.txt
+server/api/*.json
+server/api/scratch/
+server/api/benchmarks/
+server/checks/
+data/models/inlegalbert/model_int4*.onnx

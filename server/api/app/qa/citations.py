@@ -11,10 +11,10 @@ from app.qa.prompts import strip_optional_json_fence
 from app.schemas.hybrid import HybridEvidence
 from app.schemas.qa import QACitation
 
-# Citation markers are [n] with 1–2 digits (evidence ranks). Years and other
-# bracketed numbers such as [2024] are not treated as evidence markers.
-# Legal phrasing like "Section [1]" is still a citation marker by design.
-_MARKER_PATTERN = re.compile(r"\[(\d{1,2})\]")
+# Matches single [n], grouped [n, m, ...], ranges [n-m], or combinations
+# Years like [1950], [1978], [2024] (>= 100) are not treated as evidence markers.
+_BRACKETED_GROUP_PATTERN = re.compile(r"\[([0-9\s,;–-]+)\]")
+_SINGLE_MARKER_PATTERN = re.compile(r"\[(\d{1,2})\]")
 
 
 class LLMOutputCitation(BaseModel):
@@ -56,13 +56,39 @@ def parse_llm_output(raw: str) -> LLMOutput:
 
 
 def _markers_in_answer(answer: str) -> set[int]:
-    return {int(match) for match in _MARKER_PATTERN.findall(answer) if int(match) >= 1}
+    """Extract all valid citation marker numbers (1-99) from answer text.
+
+    Supports single [1], grouped [1, 2, 3], [1,2,3,5], [1; 2], and ranges [1-3].
+    Excludes 4-digit years like [1950], [1978], [2024].
+    """
+    markers: set[int] = set()
+    for match in _BRACKETED_GROUP_PATTERN.finditer(answer):
+        group_str = match.group(1).strip()
+        items = re.split(r"[,;]", group_str)
+        for item in items:
+            item = item.strip()
+            if not item:
+                continue
+            range_match = re.match(r"^(\d{1,2})\s*[-–]\s*(\d{1,2})$", item)
+            if range_match:
+                start = int(range_match.group(1))
+                end = int(range_match.group(2))
+                if 1 <= start <= end and (end - start) <= 20:
+                    for num in range(start, end + 1):
+                        markers.add(num)
+                continue
+            if item.isdigit():
+                num = int(item)
+                if 1 <= num < 100:
+                    markers.add(num)
+    return markers
 
 
 def validate_llm_citations(
     output: LLMOutput,
     *,
     evidence_count: int,
+    allow_empty_citations: bool = False,
 ) -> list[LLMOutputCitation]:
     """Validate citation rules; return deduplicated citations used in the answer."""
     if evidence_count < 0:
@@ -77,14 +103,18 @@ def validate_llm_citations(
                 "Citation marker must equal evidence_rank"
             )
         if not 1 <= citation.evidence_rank <= evidence_count:
-            raise CitationValidationError("Citation evidence_rank out of range")
+            raise CitationValidationError(
+                f"Citation evidence_rank out of range: {citation.evidence_rank} > {evidence_count}"
+            )
         by_marker[citation.marker] = citation
 
-    for marker in markers_in_answer:
-        if marker not in by_marker:
+    for marker in sorted(markers_in_answer):
+        if not 1 <= marker <= evidence_count:
             raise CitationValidationError(
-                f"Answer marker [{marker}] has no matching citation"
+                f"Answer marker [{marker}] out of range (available evidence: {evidence_count})"
             )
+        if marker not in by_marker:
+            raise CitationValidationError(f"Missing citation for marker [{marker}]")
 
     used = [by_marker[marker] for marker in sorted(markers_in_answer) if marker in by_marker]
 
@@ -93,7 +123,11 @@ def validate_llm_citations(
             raise CitationValidationError(
                 "Answer text is required when insufficient_evidence is false"
             )
-        if not used:
+        if not markers_in_answer and output.citations:
+            raise CitationValidationError(
+                "Missing inline citation markers in answer text: The answer text must contain bracketed markers like [1] matching the citations list."
+            )
+        if not used and not allow_empty_citations:
             raise CitationValidationError(
                 "At least one citation is required when evidence is present"
             )
@@ -122,6 +156,7 @@ def build_public_citations(
                 page_start=item.page_start,
                 page_end=item.page_end,
                 source_url=item.source_url,
+                pdf_url=getattr(item, "pdf_url", None) or (f"/api/v1/documents/{item.document_id}/pdf" if item.document_id else None),
             )
         )
     return public

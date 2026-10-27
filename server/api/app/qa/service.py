@@ -176,6 +176,15 @@ async def ask_legal_question(
         )
         llm_ms = _ms_since(llm_start)
 
+        legacy_graph = None
+        if "graph" in hybrid_res and hybrid_res["graph"]:
+            g_dict = hybrid_res["graph"]
+            legacy_graph = QAGraphData(
+                nodes=[QAGraphNode(**n) for n in g_dict.get("nodes", [])],
+                edges=[QAGraphEdge(**e) for e in g_dict.get("edges", [])],
+                available=g_dict.get("available", False),
+            )
+
         status_str = "insufficient_evidence" if insufficient else "answered"
         return QAAskResponse(
             query=query.strip(),
@@ -184,6 +193,7 @@ async def ask_legal_question(
             insufficient_evidence=insufficient,
             citations=cits,
             evidence=prepared,
+            graph=legacy_graph,
             retrieval=QARetrievalMeta(
                 mode=retrieval_strategy,
                 fallback=hybrid_res.get("fallback"),
@@ -236,12 +246,18 @@ async def ask_legal_question(
         graph=graph_data,
         reasoning_steps=reasoning_steps,
         query_analysis=res_dict.get("query_analysis"),
+        temporal=res_dict.get("temporal"),
+        citation_validation=res_dict.get("citation_validation"),
         retrieval=res_dict["retrieval"],
         provider=res_dict["provider"],
         model=res_dict["model"],
         llm_called=res_dict["llm_called"],
         timings_ms=res_dict["timings_ms"],
         disclaimer=res_dict.get("disclaimer", "Informational research aid. Not legal advice."),
+        answer_status=res_dict.get("answer_status"),
+        missing_authorities=res_dict.get("missing_authorities", []),
+        gap_type=res_dict.get("gap_type"),
+        notice=res_dict.get("notice"),
     )
 
 

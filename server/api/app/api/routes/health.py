@@ -7,6 +7,7 @@ and public-safe production system statistics.
 
 from typing import Any, Literal
 import asyncio
+import re
 
 from fastapi import APIRouter, Depends
 from fastapi.responses import JSONResponse, Response
@@ -69,27 +70,44 @@ class PublicStatsResponse(BaseModel):
     graph_relationship_types: dict[str, int]
 
 
+def _sanitize_error(exc: Exception) -> str:
+    """Sanitize error messages to prevent exposing credentials, tokens, or connection strings."""
+    msg = str(exc)
+    msg = re.sub(r"://([^:]+):([^@]+)@", r"://\1:***@", msg)
+    msg = re.sub(r"(password|token|key|secret)=([^& \'\"]+)", r"\1=***", msg, flags=re.IGNORECASE)
+    if not msg.strip():
+        msg = f"{type(exc).__name__} error"
+    return msg
+
+
 async def _check_database(session: AsyncSession) -> ComponentHealth:
-    """Ping PostgreSQL."""
+    """Ping PostgreSQL with bounded 5s timeout and sanitized error reporting."""
     try:
-        await ping_database(session)
-        doc_count = await session.scalar(select(func.count(Document.id))) or 0
-        chunk_count = await session.scalar(select(func.count(Chunk.id))) or 0
+        async with asyncio.timeout(5.0):
+            await ping_database(session)
+            doc_count = await session.scalar(select(func.count(Document.id))) or 0
+            chunk_count = await session.scalar(select(func.count(Chunk.id))) or 0
         return ComponentHealth(
             status="ok",
             detail="PostgreSQL connected",
             metrics={"documents": doc_count, "chunks": chunk_count},
         )
+    except TimeoutError:
+        return ComponentHealth(status="unreachable", error="PostgreSQL connection timed out (5s)")
     except Exception as exc:
-        return ComponentHealth(status="unreachable", error=str(exc) or type(exc).__name__)
+        return ComponentHealth(
+            status="unreachable",
+            error=_sanitize_error(exc),
+        )
 
 
 async def _check_neo4j(settings: Settings) -> ComponentHealth:
-    """Check Neo4j Aura connectivity and node/relationship counts, distinguishing empty from unavailable."""
+    """Check Neo4j Aura connectivity with bounded 5s timeout and sanitized error reporting."""
     client = Neo4jClient(settings)
     try:
-        health_info = await client.health()
-        stats = await client.statistics()
+        async with asyncio.timeout(5.0):
+            health_info = await client.health()
+            stats = await client.statistics()
         nodes_by_label = stats.get("nodes_by_label", {})
         rels_by_type = stats.get("relationships_by_type", {})
         total_nodes = sum(nodes_by_label.values())
@@ -112,14 +130,22 @@ async def _check_neo4j(settings: Settings) -> ComponentHealth:
                 "database": settings.neo4j_database or "neo4j",
             },
         )
+    except TimeoutError:
+        return ComponentHealth(status="unreachable", error="Neo4j connection timed out (5s)")
     except Exception as exc:
-        return ComponentHealth(status="unreachable", error=str(exc) or "Neo4j connection failed")
+        return ComponentHealth(
+            status="unreachable",
+            error=_sanitize_error(exc),
+        )
     finally:
-        await client.close()
+        try:
+            await asyncio.wait_for(client.close(), timeout=2.0)
+        except Exception:
+            pass
 
 
 def _check_vector_index(settings: Settings) -> ComponentHealth:
-    """Check FAISS index loading and vector counts."""
+    """Check FAISS index loading and vector counts with sanitized error reporting."""
     try:
         data_dir = get_data_dir()
         index, metadata = load_index(data_dir, settings.vector_index_name)
@@ -134,16 +160,23 @@ def _check_vector_index(settings: Settings) -> ComponentHealth:
             },
         )
     except Exception as exc:
-        return ComponentHealth(status="unavailable", error=str(exc) or "Vector index unavailable")
+        return ComponentHealth(
+            status="unavailable",
+            error=_sanitize_error(exc),
+        )
 
 
 def _check_llm(settings: Settings) -> ComponentHealth:
-    """Check LLM provider configuration."""
+    """Check LLM provider configuration, distinguishing configured state from verified live inference."""
     if settings.llm_api_key or settings.llm_provider in ("google_genai", "openai_compatible"):
         return ComponentHealth(
             status="ok",
-            detail=f"LLM Provider configured ({settings.llm_provider}:{settings.llm_model})",
-            metrics={"provider": settings.llm_provider, "model": settings.llm_model},
+            detail=f"Configured ({settings.llm_provider}:{settings.llm_model})",
+            metrics={
+                "provider": settings.llm_provider,
+                "model": settings.llm_model,
+                "verified_live": False,
+            },
         )
     return ComponentHealth(status="unreachable", error="LLM API key not configured")
 

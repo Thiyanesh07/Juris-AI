@@ -260,3 +260,111 @@ async def test_google_genai_provider_success(monkeypatch: pytest.MonkeyPatch) ->
     )
     assert "gemini_ok" in text
 
+
+@pytest.mark.asyncio
+async def test_google_genai_with_base_url_unset(monkeypatch: pytest.MonkeyPatch) -> None:
+    """When LLM_BASE_URL is not set (defaulting to openai.com), Google GenAI still uses Google API."""
+    captured_url: str = ""
+
+    async def handler(url: str, *, headers: dict[str, str], json: dict[str, Any]) -> httpx.Response:
+        nonlocal captured_url
+        captured_url = url
+        return httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": '{"answer":"gemini_unset_ok"}'}]}}]},
+        )
+
+    monkeypatch.setattr("app.qa.provider.httpx.AsyncClient", _make_client(handler))
+    # Note: _settings() defaults llm_base_url to "https://api.openai.com/v1"
+    settings = _settings(llm_provider="google_genai", llm_model="gemini-1.5-flash")
+    provider = build_llm_provider(settings)
+    assert isinstance(provider, build_llm_provider(settings).__class__)
+    text = await provider.generate(
+        system_message="sys",
+        user_message="user",
+        timeout_seconds=5,
+        max_output_tokens=100,
+    )
+    assert "gemini_unset_ok" in text
+    assert "generativelanguage.googleapis.com" in captured_url
+    assert "api.openai.com" not in captured_url
+
+
+@pytest.mark.asyncio
+async def test_google_genai_with_unexpected_base_url(monkeypatch: pytest.MonkeyPatch) -> None:
+    """When LLM_BASE_URL contains an unexpected host, Google GenAI defaults to Google API."""
+    captured_url: str = ""
+
+    async def handler(url: str, *, headers: dict[str, str], json: dict[str, Any]) -> httpx.Response:
+        nonlocal captured_url
+        captured_url = url
+        return httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": '{"answer":"gemini_unexpected_ok"}'}]}}]},
+        )
+
+    monkeypatch.setattr("app.qa.provider.httpx.AsyncClient", _make_client(handler))
+    settings = _settings(
+        llm_provider="google_genai",
+        llm_model="gemini-1.5-flash",
+        llm_base_url="https://unexpected-proxy.internal/v1",
+    )
+    provider = build_llm_provider(settings)
+    text = await provider.generate(
+        system_message="sys",
+        user_message="user",
+        timeout_seconds=5,
+        max_output_tokens=100,
+    )
+    assert "gemini_unexpected_ok" in text
+    assert "generativelanguage.googleapis.com" in captured_url
+    assert "unexpected-proxy.internal" not in captured_url
+
+
+@pytest.mark.asyncio
+async def test_openai_compatible_with_valid_base_url(monkeypatch: pytest.MonkeyPatch) -> None:
+    """OpenAI-compatible provider respects custom base URL."""
+    captured_url: str = ""
+
+    async def handler(url: str, *, headers: dict[str, str], json: dict[str, Any]) -> httpx.Response:
+        nonlocal captured_url
+        captured_url = url
+        return httpx.Response(
+            200,
+            json={"choices": [{"message": {"content": '{"answer":"openai_custom_ok"}'}}]},
+        )
+
+    monkeypatch.setattr("app.qa.provider.httpx.AsyncClient", _make_client(handler))
+    settings = _settings(
+        llm_provider="openai_compatible",
+        llm_base_url="https://api.together.xyz/v1",
+    )
+    provider = build_llm_provider(settings)
+    text = await provider.generate(
+        system_message="sys",
+        user_message="user",
+        timeout_seconds=5,
+        max_output_tokens=100,
+    )
+    assert "openai_custom_ok" in text
+    assert captured_url == "https://api.together.xyz/v1/chat/completions"
+
+
+def test_missing_or_invalid_provider_configuration() -> None:
+    """Verify robust error handling for missing or invalid provider configuration."""
+    # 1. Missing provider
+    with pytest.raises(LLMProviderUnavailable, match="LLM provider is not configured"):
+        build_llm_provider(_settings(llm_provider=""))
+
+    # 2. Unsupported provider
+    with pytest.raises(LLMProviderUnavailable, match="Unsupported LLM provider"):
+        build_llm_provider(_settings(llm_provider="claude_unsupported"))
+
+    # 3. Missing API key
+    with pytest.raises(LLMProviderUnavailable, match="LLM API key is not configured"):
+        build_llm_provider(_settings(llm_api_key=""))
+
+    # 4. OpenAI-compatible with empty base URL
+    with pytest.raises(LLMProviderUnavailable, match="LLM base URL is not configured"):
+        build_llm_provider(_settings(llm_provider="openai_compatible", llm_base_url=""))
+

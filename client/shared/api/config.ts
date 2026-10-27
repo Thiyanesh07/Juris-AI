@@ -19,7 +19,7 @@ export function getApiBaseUrl(): string {
       if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
         return envUrl.trim().replace(/\/+$/, '');
       }
-      return 'https://juris-ai-fhjw.onrender.com';
+      return 'https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io';
     }
 
     const envUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -35,7 +35,7 @@ export function getApiBaseUrl(): string {
     if (envUrl && envUrl.trim() !== '' && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
       return envUrl.trim().replace(/\/+$/, '');
     }
-    return 'https://juris-ai-fhjw.onrender.com';
+    return 'https://app-juris-ai.calmflower-977aec4b.uaenorth.azurecontainerapps.io';
   }
 
   if (envUrl && envUrl.trim() !== '') {

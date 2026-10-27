@@ -1,0 +1,187 @@
+[
+  {
+    "id": "bench_q01",
+    "query": "What does Article 21 protect under the Constitution of India?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Maneka Gandhi v. Union of India", "K.S. Puttaswamy v. Union of India (Right to Privacy)", "Common Cause v. Union of India"],
+    "expected_citations": ["Article 21"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q02",
+    "query": "What are the fundamental rights guaranteed under Article 14?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Maneka Gandhi v. Union of India", "E.P. Royappa v. State of Tamil Nadu", "Navtej Singh Johar v. Union of India"],
+    "expected_citations": ["Article 14"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q03",
+    "query": "What is the procedure for amending the Constitution under Article 368?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Kesavananda Bharati v. State of Kerala", "Minerva Mills Ltd. v. Union of India"],
+    "expected_citations": ["Article 368"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q04",
+    "query": "What remedies are available for enforcement of fundamental rights under Article 32?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Vishaka v. State of Rajasthan", "Maneka Gandhi v. Union of India", "Romesh Thappar v. State of Madras"],
+    "expected_citations": ["Article 32"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q05",
+    "query": "How did Maneka Gandhi v. Union of India expand the meaning of Article 21?",
+    "category": "CASE_LAW",
+    "is_temporal": true,
+    "target_year": 1978,
+    "expected_titles": ["Maneka Gandhi v. Union of India"],
+    "expected_citations": ["(1978) 1 SCC 248", "Article 21"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q06",
+    "query": "What did the Supreme Court hold in Kesavananda Bharati regarding the Basic Structure Doctrine?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Kesavananda Bharati v. State of Kerala"],
+    "expected_citations": ["AIR 1973 SC 1461"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q07",
+    "query": "How was Section 66A of the Information Technology Act decided in Shreya Singhal?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Shreya Singhal v. Union of India"],
+    "expected_citations": ["(2015) 5 SCC 1", "Section 66A"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q08",
+    "query": "What was the significance of the K.S. Puttaswamy judgment regarding the right to privacy?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["K.S. Puttaswamy v. Union of India (Right to Privacy)", "K.S. Puttaswamy v. Union of India (Aadhaar Constitutional Validity)"],
+    "expected_citations": ["(2017) 10 SCC 1", "Article 21"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q09",
+    "query": "What did the Supreme Court hold in Common Cause v. Union of India regarding passive euthanasia?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Common Cause v. Union of India"],
+    "expected_citations": ["(2018) 5 SCC 1", "Article 21"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q10",
+    "query": "What are the Vishaka guidelines on sexual harassment at the workplace?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Vishaka v. State of Rajasthan"],
+    "expected_citations": ["AIR 1997 SC 3011"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q11",
+    "query": "Does the Indian Constitution guarantee personal liberty and freedom from arbitrary state deprivation?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Maneka Gandhi v. Union of India", "A.K. Gopalan v. State of Madras"],
+    "expected_citations": ["Article 21"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q12",
+    "query": "Can Parliament alter the essential features and framework of the Indian Constitution?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Kesavananda Bharati v. State of Kerala", "Minerva Mills Ltd. v. Union of India"],
+    "expected_citations": ["AIR 1973 SC 1461"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q13",
+    "query": "Is online expression protected from vague criminalization under the IT Act?",
+    "category": "CASE_LAW",
+    "is_temporal": false,
+    "expected_titles": ["Shreya Singhal v. Union of India", "Information Technology Act, 2000"],
+    "expected_citations": ["(2015) 5 SCC 1"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q14",
+    "query": "What is the relationship between Section 66A of the IT Act and freedom of speech under Article 19?",
+    "category": "STATUTORY",
+    "is_temporal": false,
+    "expected_titles": ["Information Technology Act, 2000", "Constitution of India", "Shreya Singhal v. Union of India"],
+    "expected_citations": ["Section 66A", "Article 19"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q15",
+    "query": "How do Articles 14, 19 and 21 interact as the golden triangle in Indian constitutional law?",
+    "category": "CONSTITUTIONAL",
+    "is_temporal": false,
+    "expected_titles": ["Constitution of India", "Maneka Gandhi v. Union of India", "Minerva Mills Ltd. v. Union of India"],
+    "expected_citations": ["Article 21", "Article 14"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q16",
+    "query": "What constitutional amendment modified Article 359 regarding the suspension of Article 21?",
+    "category": "TEMPORAL",
+    "is_temporal": true,
+    "target_year": 1978,
+    "referenced_amendment": "44th Amendment",
+    "expected_titles": ["The Constitution (Forty-Fourth Amendment) Act, 1978", "Constitution of India", "Maneka Gandhi v. Union of India"],
+    "expected_citations": ["44th Constitutional Amendment"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q17",
+    "query": "How did the 44th Constitutional Amendment alter the fundamental right to property under Article 19?",
+    "category": "TEMPORAL",
+    "is_temporal": true,
+    "target_year": 1978,
+    "referenced_amendment": "44th Constitutional Amendment",
+    "expected_titles": ["The Constitution (Forty-Fourth Amendment) Act, 1978", "Constitution of India"],
+    "expected_citations": ["44th Constitutional Amendment"],
+    "is_supported": true
+  },
+  {
+    "id": "bench_q18",
+    "query": "What does Section 9999 of the Galactic Trade and Commercial Navigation Act provide?",
+    "category": "STATUTORY",
+    "is_temporal": false,
+    "expected_titles": [],
+    "expected_citations": [],
+    "is_supported": false
+  },
+  {
+    "id": "bench_q19",
+    "query": "What are the patent registration requirements under the California Space Mineral Extraction Code?",
+    "category": "STATUTORY",
+    "is_temporal": false,
+    "expected_titles": [],
+    "expected_citations": [],
+    "is_supported": false
+  },
+  {
+    "id": "bench_q20",
+    "query": "How does the French Civil Code regulate testamentary succession of immovable property?",
+    "category": "STATUTORY",
+    "is_temporal": false,
+    "expected_titles": [],
+    "expected_citations": [],
+    "is_supported": false
+  }
+]

@@ -101,7 +101,6 @@ export default function SettingsPage() {
       {/* Page Header */}
       <PageHeader
         title="System Settings"
-        subtitle="Configure Juris AI platform behavior and research pipeline preferences."
         actions={
           <div className="flex items-center gap-2">
             <Button
@@ -237,17 +236,6 @@ export default function SettingsPage() {
                 </button>
               );
             })}
-          </div>
-
-          {/* Development Info Box */}
-          <div className="p-4 rounded-xl bg-white border border-[#C9D4E1] shadow-xs space-y-2 text-xs font-mono text-[#526176]">
-            <div className="flex items-center gap-2 text-[#17253A] font-bold">
-              <Server className="h-4 w-4 text-[#2563A8]" />
-              <span>Environment Notice</span>
-            </div>
-            <p className="text-[11px] leading-relaxed">
-              These settings represent prototype configuration fields for the eventual GraphRAG pipeline. Updates are maintained in browser session memory.
-            </p>
           </div>
         </div>
 

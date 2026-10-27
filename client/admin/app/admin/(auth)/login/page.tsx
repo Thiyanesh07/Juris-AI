@@ -4,9 +4,6 @@ import React, { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import {
   Scale,
-  Lock,
-  ShieldCheck,
-  Server,
   AlertCircle,
   Loader2,
 } from 'lucide-react';
@@ -40,41 +37,19 @@ function AdminLoginContent() {
     <div className="min-h-screen bg-[#E7EDF4] flex flex-col justify-center items-center p-4 md:p-8">
       <div className="w-full max-w-4xl bg-[#FFFFFF] rounded-2xl border border-[#C9D4E1] shadow-[0_8px_40px_rgba(23,37,58,0.14)] overflow-hidden grid grid-cols-1 lg:grid-cols-12">
         {/* LEFT COLUMN: Identity & Product Context */}
-        <div className="lg:col-span-5 bg-[#183B5B] text-white p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden">
+        <div className="lg:col-span-5 bg-[#183B5B] text-white p-8 lg:p-10 flex flex-col justify-center relative overflow-hidden">
           {/* Subtle background glow */}
           <div className="absolute -right-16 -bottom-16 w-64 h-64 bg-[#2563A8]/20 rounded-full blur-2xl pointer-events-none" />
 
-          <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2.5 rounded-xl bg-[#2563A8] text-white shadow-sm shrink-0">
-                <Scale className="h-6 w-6" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold font-serif leading-tight">Juris AI</h1>
-                <span className="font-mono text-[10px] text-[#3B82D0] font-bold tracking-widest uppercase">
-                  ADMIN CONSOLE
-                </span>
-              </div>
+          <div className="flex items-center gap-3">
+            <div className="p-2.5 rounded-xl bg-[#2563A8] text-white shadow-sm shrink-0">
+              <Scale className="h-6 w-6" />
             </div>
-
-            <p className="text-sm text-[#D9E7F5]/90 font-sans leading-relaxed mt-4">
-              Administrative access to the Juris AI legal intelligence platform.
-              Sign in with your provisioned Google account.
-            </p>
-          </div>
-
-          <div className="mt-8 lg:mt-0 pt-6 border-t border-[#3B82D0]/30 space-y-3">
-            <div className="flex items-center gap-2.5 text-xs text-[#D9E7F5]">
-              <ShieldCheck className="h-4 w-4 text-[#3B82D0] shrink-0" />
-              <span>Role-Based Access Control (RBAC)</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-xs text-[#D9E7F5]">
-              <Server className="h-4 w-4 text-[#3B82D0] shrink-0" />
-              <span>Server-Side Session Authentication</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-xs text-[#D9E7F5]">
-              <Lock className="h-4 w-4 text-[#3B82D0] shrink-0" />
-              <span>Audit Logging &amp; System Telemetry</span>
+            <div>
+              <h1 className="text-xl font-bold font-serif leading-tight">Juris AI</h1>
+              <span className="font-mono text-[10px] text-[#3B82D0] font-bold tracking-widest uppercase">
+                ADMIN CONSOLE
+              </span>
             </div>
           </div>
         </div>
@@ -83,10 +58,6 @@ function AdminLoginContent() {
         <div className="lg:col-span-7 bg-[#F5F7FA] p-8 lg:p-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-[#C9D4E1]">
           <div className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-[#17253A]">Administrator Sign In</h2>
-            <p className="text-xs text-[#526176] mt-1.5 font-sans leading-relaxed">
-              Sign in with your provisioned Google Workspace account to access admin controls.
-              Access is granted by role — your Google identity is verified by our secure backend.
-            </p>
           </div>
 
           {errorMessage && (
@@ -101,7 +72,7 @@ function AdminLoginContent() {
             id="admin-google-signin-btn"
             onClick={handleGoogleSignIn}
             disabled={isLoading}
-            className="w-full flex items-center justify-center gap-3 h-12 px-6 bg-white border border-[#C9D4E1] rounded-xl shadow-sm hover:bg-[#F0F4F8] hover:border-[#2563A8] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed group"
+            className="w-full flex items-center justify-center gap-3 h-12 px-6 bg-white border border-[#C9D4E1] rounded-xl shadow-sm hover:bg-[#F0F4F8] hover:border-[#2563A8] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed group cursor-pointer"
           >
             {isLoading ? (
               <Loader2 className="h-5 w-5 text-[#526176] animate-spin" />
@@ -130,25 +101,7 @@ function AdminLoginContent() {
               {isLoading ? 'Redirecting to Google…' : 'Continue with Google'}
             </span>
           </button>
-
-          <div className="mt-6 pt-4 border-t border-[#D9E1EA] space-y-2">
-            <p className="text-[11px] font-mono text-[#718096] text-center">
-              Authorized access only. Your role is determined by the administrator database.
-            </p>
-            <p className="text-[11px] font-mono text-[#718096] text-center">
-              Contact your Super Administrator to request access.
-            </p>
-          </div>
-
-          <div className="mt-4 flex items-center justify-between text-[11px] font-mono text-[#718096]">
-            <span>Juris AI Admin Console</span>
-            <span>v0.10.6</span>
-          </div>
         </div>
-      </div>
-
-      <div className="mt-6 text-center text-xs text-[#718096] font-mono">
-        Juris AI Legal Intelligence Platform &bull; System Administration
       </div>
     </div>
   );

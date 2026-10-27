@@ -45,8 +45,8 @@ export default function HistoryPage() {
     }
   };
 
-  const handleOpen = (recordId: string) => {
-    openHistorySession(recordId);
+  const handleOpen = async (recordId: string) => {
+    await openHistorySession(recordId);
     router.push('/research');
   };
 
@@ -60,7 +60,7 @@ export default function HistoryPage() {
             Research History
           </h1>
           <p className="text-xs font-mono text-[#526176] mt-0.5">
-            Audit log of all legal research sessions executed in your workspace
+            Past research sessions and fused authorities
           </p>
         </div>
 
@@ -70,28 +70,31 @@ export default function HistoryPage() {
       </div>
 
       {/* Controls Bar */}
-      <div className="card p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="relative flex-1">
+      <div className="card p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+        <div className="relative flex-1 min-w-[240px]">
           <Search className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#718096]" />
           <input
             type="text"
             placeholder="Search past research queries..."
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
-            className="input-field pl-9 text-xs h-9"
+            className="input-field pl-9 text-xs h-9 w-full"
+            aria-label="Search past research queries"
           />
         </div>
 
-        <div className="flex items-center gap-1 bg-[#F0F4F8] p-1 rounded-lg border border-[#CBD5E0]">
+        <div className="flex flex-wrap items-center gap-1.5 bg-[#F0F4F8] p-1.5 rounded-lg border border-[#CBD5E0]">
           {(['ALL', 'COMPREHENSIVE', 'CONSTITUTIONAL', 'STATUTORY', 'CASE_LAW'] as const).map(mode => (
             <button
               key={mode}
+              type="button"
               onClick={() => setSelectedMode(mode)}
               className={`px-2.5 py-1 text-[11px] font-mono rounded-md font-medium transition-colors cursor-pointer ${
                 selectedMode === mode
                   ? 'bg-white text-[#1D4E8A] shadow-xs font-bold'
                   : 'text-[#526176] hover:text-[#17253A]'
               }`}
+              aria-pressed={selectedMode === mode}
             >
               {mode === 'ALL' ? 'All Modes' : mode}
             </button>

@@ -14,33 +14,35 @@ export function formatBytes(bytes: number, decimals = 1): string {
   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 }
 
-export function formatDate(dateString: string): string {
+const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export function formatDate(dateString: string | null | undefined): string {
   if (!dateString) return '—';
   try {
     const d = new Date(dateString);
-    return d.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-    });
+    if (isNaN(d.getTime())) return '—';
+    const day = d.getUTCDate().toString().padStart(2, '0');
+    const month = MONTH_NAMES[d.getUTCMonth()];
+    const year = d.getUTCFullYear();
+    return `${day} ${month} ${year}`;
   } catch {
-    return dateString;
+    return '—';
   }
 }
 
-export function formatDateTime(dateString: string): string {
+export function formatDateTime(dateString: string | null | undefined): string {
   if (!dateString) return '—';
   try {
     const d = new Date(dateString);
-    return d.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-    });
+    if (isNaN(d.getTime())) return '—';
+    const day = d.getUTCDate().toString().padStart(2, '0');
+    const month = MONTH_NAMES[d.getUTCMonth()];
+    const year = d.getUTCFullYear();
+    const hours = d.getUTCHours().toString().padStart(2, '0');
+    const mins = d.getUTCMinutes().toString().padStart(2, '0');
+    return `${day} ${month} ${year}, ${hours}:${mins} UTC`;
   } catch {
-    return dateString;
+    return '—';
   }
 }
 

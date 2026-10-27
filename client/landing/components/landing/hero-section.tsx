@@ -160,18 +160,15 @@ export function HeroSection() {
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex gap-16">
               {[
-                { value: "GraphRAG", label: "knowledge graph engine", company: "JURIS AI" },
-                { value: "Hybrid Retrieval", label: "semantic & vector search", company: "JURIS AI" },
-                { value: "Multi-Hop", label: "cross-source reasoning", company: "JURIS AI" },
-                { value: "Temporal", label: "amendment-aware logic", company: "JURIS AI" },
-                { value: "Grounding", label: "citation verification", company: "JURIS AI" },
+                { value: "GraphRAG", label: "knowledge graph engine" },
+                { value: "Hybrid Retrieval", label: "semantic & vector search" },
+                { value: "Multi-Hop", label: "cross-source reasoning" },
+                { value: "Temporal", label: "amendment-aware logic" },
+                { value: "Grounding", label: "citation verification" },
               ].map((stat) => (
                 <div key={`${stat.value}-${i}`} className="flex items-baseline gap-4">
                   <span className="text-3xl lg:text-4xl font-display text-[#17253A]">{stat.value}</span>
-                  <span className="text-sm text-[#526176]">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1 text-[#2563A8]">{stat.company}</span>
-                  </span>
+                  <span className="text-sm text-[#526176]">{stat.label}</span>
                 </div>
               ))}
             </div>

@@ -1,0 +1,26 @@
+[project]
+name = "inlegalbert-embedding-service"
+version = "1.0.0"
+description = "Standalone InLegalBERT Embedding Microservice"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pydantic>=2.6.0",
+    "numpy>=1.26.0",
+    "transformers>=4.38.0",
+    "torch>=2.2.0",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

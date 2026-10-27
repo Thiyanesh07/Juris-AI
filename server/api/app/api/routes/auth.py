@@ -15,6 +15,7 @@ from app.auth.google import (
 )
 from app.auth.password import hash_password, verify_password
 from app.core.config import Settings, get_settings
+from app.core.session import get_portal_session_version, increment_portal_session_version
 from app.db.session import get_session
 from app.models import User, UserRole
 from app.schemas.auth import CurrentUserResponse, LoginRequest, RegisterRequest
@@ -23,9 +24,11 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 def _start_session(request: Request, user: User) -> None:
+    portal = request.scope.get("portal") or "user"
     request.session.clear()
     request.session["user_id"] = str(user.id)
-    request.session["session_version"] = user.session_version
+    request.session["session_version"] = get_portal_session_version(user.session_version, portal)
+    request.session["portal"] = portal
 
 
 @router.get("/google/login", response_model=None)
@@ -157,9 +160,18 @@ async def current_user(user: User = Depends(get_current_user)) -> User:
 @router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)
 async def logout(
     request: Request,
-    user: User = Depends(get_current_user),
     session: AsyncSession = Depends(get_session),
 ) -> None:
-    user.session_version += 1
-    await session.commit()
+    portal = request.session.get("portal") or request.scope.get("portal") or "user"
+    raw_user_id = request.session.get("user_id")
+    if isinstance(raw_user_id, str):
+        try:
+            from uuid import UUID
+            user = await session.get(User, UUID(raw_user_id))
+            if user:
+                user.session_version = increment_portal_session_version(user.session_version, portal)
+                await session.commit()
+        except Exception:
+            pass
+    request.scope["session_cleared"] = True
     request.session.clear()

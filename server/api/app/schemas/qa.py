@@ -21,6 +21,7 @@ class QAAskRequest(BaseModel):
         default="hybrid"
     )
     graph_depth: int | None = Field(default=None, ge=1, le=5)
+    session_id: UUID | None = Field(default=None, description="Optional existing research session ID to continue")
 
 
 class QACitation(BaseModel):
@@ -36,6 +37,8 @@ class QACitation(BaseModel):
     page_start: int | None = None
     page_end: int | None = None
     source_url: str | None = None
+    pdf_url: str | None = None
+    verification_status: Literal["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "CONTRADICTED"] | None = None
 
 
 class QARetrievalMeta(BaseModel):
@@ -121,14 +124,14 @@ class QACitationValidation(BaseModel):
     model_config = ConfigDict(extra="forbid")
     verified_count: int = 0
     unverified_count: int = 0
-    grounded: bool = True
+    grounded: bool = False
     warnings: list[str] = Field(default_factory=list)
 
 
 class QAAskResponse(BaseModel):
     model_config = ConfigDict(extra="forbid")
     query: str
-    status: Literal["answered", "insufficient_evidence"]
+    status: Literal["answered", "insufficient_evidence", "failed"]
     answer: str | None
     insufficient_evidence: bool
     citations: list[QACitation]
@@ -143,4 +146,9 @@ class QAAskResponse(BaseModel):
     model: str
     llm_called: bool
     timings_ms: QATimingsMs
+    session_id: UUID | None = Field(default=None, description="Persistent research session ID")
     disclaimer: str = "Informational research aid. Not legal advice."
+    answer_status: Literal["full_answer", "partial_answer", "general_fallback", "insufficient_evidence", "technical_timeout"] | None = Field(default=None)
+    missing_authorities: list[str] = Field(default_factory=list)
+    gap_type: Literal["corpus_document", "graph_entities", "graph_relationships", "metadata", "none"] | None = Field(default=None)
+    notice: str | None = Field(default=None)

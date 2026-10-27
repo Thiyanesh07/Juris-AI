@@ -17,11 +17,9 @@ import { ADMIN_ROUTES } from '@/constants/routes';
 import {
   Upload,
   CheckCircle2,
-  Users,
   History,
   FileText,
   GitFork,
-  CheckSquare,
   Server,
   RefreshCw,
   Cpu,
@@ -35,7 +33,7 @@ import { PublicStatsResponse } from '@/lib/apiTypes';
 
 interface ServiceStatus {
   name: string;
-  status: 'CONNECTED' | 'DEGRADED' | 'NOT_CONNECTED' | 'ERROR' | 'CHECKING';
+  status: 'CONNECTED' | 'DEGRADED' | 'NOT_CONNECTED' | 'ERROR' | 'CHECKING' | 'CONFIGURED';
   type: string;
   detail?: string;
 }
@@ -53,6 +51,13 @@ function StatusPill({ status }: { status: ServiceStatus['status'] }) {
     return (
       <span className="text-[#1A6B3A] bg-[#D6F0E0] px-2 py-0.5 rounded text-[11px] font-medium border border-[#A8D5B8]">
         Connected
+      </span>
+    );
+  }
+  if (status === 'CONFIGURED') {
+    return (
+      <span className="text-[#1D4ED8] bg-[#DBEAFE] px-2 py-0.5 rounded text-[11px] font-medium border border-[#93C5FD]">
+        Configured
       </span>
     );
   }
@@ -167,7 +172,10 @@ export default function AdminDashboardPage() {
         },
         {
           name: 'LLM Provider',
-          status: comps?.llm?.status === 'ok' ? 'CONNECTED' : 'DEGRADED',
+          status:
+            comps?.llm?.status === 'ok'
+              ? (comps?.llm?.metrics?.verified_live ? 'CONNECTED' : 'CONFIGURED')
+              : 'DEGRADED',
           type: 'Legal AI Reasoning Engine',
           detail: comps?.llm?.detail || comps?.llm?.error || 'Provider unconfigured',
         },
@@ -260,7 +268,10 @@ export default function AdminDashboardPage() {
           },
           {
             name: 'LLM Provider',
-            status: comps?.llm?.status === 'ok' ? 'CONNECTED' : 'DEGRADED',
+            status:
+              comps?.llm?.status === 'ok'
+                ? (comps?.llm?.metrics?.verified_live ? 'CONNECTED' : 'CONFIGURED')
+                : 'DEGRADED',
             type: 'Legal AI Reasoning Engine',
             detail: comps?.llm?.detail || comps?.llm?.error || 'Provider unconfigured',
           },
@@ -295,7 +306,6 @@ export default function AdminDashboardPage() {
       {/* Header */}
       <PageHeader
         title="Admin Dashboard"
-        subtitle="Live production status, knowledge graph telemetry, and pipeline oversight."
         actions={
           <div className="flex flex-wrap items-center gap-2">
             <Button
@@ -322,39 +332,6 @@ export default function AdminDashboardPage() {
           </div>
         }
       />
-
-      {/* Quick Action Navigation Bar */}
-      <div className="p-4 rounded-xl bg-[#F5F7FA] border border-[#C9D4E1] shadow-[0_2px_4px_rgba(23,37,58,0.04)] flex flex-wrap items-center justify-between gap-3">
-        <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#526176]">
-          Quick Actions:
-        </span>
-        <div className="flex flex-wrap items-center gap-2.5">
-          <Link href={ADMIN_ROUTES.DOCUMENTS}>
-            <Button variant="secondary" size="sm" className="text-xs">
-              <FileText className="h-3.5 w-3.5 mr-1.5 text-[#526176]" />
-              Upload Document
-            </Button>
-          </Link>
-          <Link href={ADMIN_ROUTES.VALIDATION}>
-            <Button variant="secondary" size="sm" className="text-xs">
-              <CheckSquare className="h-3.5 w-3.5 mr-1.5 text-[#526176]" />
-              View Validation Queue
-            </Button>
-          </Link>
-          <Link href={ADMIN_ROUTES.USERS}>
-            <Button variant="secondary" size="sm" className="text-xs">
-              <Users className="h-3.5 w-3.5 mr-1.5 text-[#526176]" />
-              Manage Users
-            </Button>
-          </Link>
-          <Link href={ADMIN_ROUTES.AUDIT}>
-            <Button variant="secondary" size="sm" className="text-xs">
-              <History className="h-3.5 w-3.5 mr-1.5 text-[#526176]" />
-              View Audit Logs
-            </Button>
-          </Link>
-        </div>
-      </div>
 
       {/* Telemetry Error Banner */}
       {statsError && (
@@ -506,7 +483,7 @@ export default function AdminDashboardPage() {
                 <History className="h-5 w-5 text-[#2563A8] mx-auto mb-2" />
                 <p className="text-xs font-semibold text-[#17253A]">No audit events logged yet.</p>
                 <p className="text-xs text-[#526176] mt-1">
-                  Administrative actions will automatically log events to PostgreSQL.
+                  Administrative actions will appear here.
                 </p>
               </div>
             ) : (
@@ -526,10 +503,6 @@ export default function AdminDashboardPage() {
                 ))}
               </div>
             )}
-          </div>
-
-          <div className="pt-3 border-t border-[#D9E1EA] text-[11px] font-mono text-[#718096] text-center">
-            Audit logs stored in PostgreSQL append-only event table
           </div>
         </div>
       </div>

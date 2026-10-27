@@ -60,7 +60,7 @@ export default function SavedResearchPage() {
             Saved Research Workspace
           </h1>
           <p className="text-xs font-mono text-[#526176] mt-0.5">
-            Bookmarked legal research briefs, authorities, and summaries
+            Bookmarked research briefs and authorities
           </p>
         </div>
 

@@ -74,7 +74,6 @@ export default function CreateUserPage() {
     <div className="space-y-6 max-w-3xl">
       <PageHeader
         title="Create User"
-        subtitle="Provision a new research user account for workspace access."
         actions={
           <Button variant="ghost" size="sm" onClick={() => router.push(ADMIN_ROUTES.USERS)}>
             <ArrowLeft className="h-4 w-4 mr-1.5" />

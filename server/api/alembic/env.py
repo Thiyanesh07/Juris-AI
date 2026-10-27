@@ -16,6 +16,9 @@ from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import create_async_engine
 
+import os
+os.environ.setdefault("APP_ENV", "development")
+
 from alembic import context
 from app import models  # noqa: F401  (import registers all models on Base.metadata)
 from app.core.config import get_settings
